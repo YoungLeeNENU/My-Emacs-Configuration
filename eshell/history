@@ -1,0 +1,128 @@
+ls
+cd code/
+ls
+clear
+cd A-samll-compiler-frontend/
+ls
+clear
+cd python/
+ls
+clear
+(set a 1)
+a
+(setq a 1)
+a
+clear
+(setq a 1)
+(+ 1 a)
+clear
+cd document/python/
+ls
+cd code/
+ls
+clear
+cd practice/
+ls
+cd socket/
+ls
+clear
+cd echo/
+s
+ls
+ls
+clear
+..
+..
+ls
+..
+ls
+cd practice/
+ls
+clear
+..
+..
+..
+cd Cortex-M4-LED/
+ls
+ls
+mkdir python
+mv client.py  server.py  python/
+ls
+cd python/
+ls
+touch echo
+clear
+ls
+mkdir echo
+mv client.py server.py echo/
+ls
+cd echo/
+ls
+mkdir tcp udp
+ls
+mv server.py client.py tcp/
+ls
+cd udp/
+ls
+clear
+ls
+touch server.py client.py
+ls
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+ls
+python server.py 
+clear
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+clear
+python server.py 
+python server.py 
+clear
+..
+cd tcp/
+clear
+python server.py 
+clear
+python server.py 
+python server.py 
+clear
+cd..
+..
+cd udp/
+clear
+ls
+python server.py 
+python server.py 
+clear
+cd
+cd document/Cortex-M4-LED/
+ls
+cd Young/homebrew/
+ls
+cd Project/
+ls
+cd Standalone/
+ls
+cd udp_echo_server/
+clear
+ls
