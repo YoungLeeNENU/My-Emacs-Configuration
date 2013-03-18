@@ -129,3 +129,8 @@ g++ -Wall编译"
           (overlay-put ov 'face 'underline))))))
 ;; 这不是一个好办法，也可以把它加载到 c-mode-hook or c++-mode-hook 中。
 (setq wcy-c/c++-hightligh-included-files-timer (run-with-idle-timer 4 t 'wcy-c/c++-hightligh-included-files))
+
+;; online search
+(require 'online-search)
+(global-set-key [(control c) (s)] 'online-search)
+

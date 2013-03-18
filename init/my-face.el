@@ -1,5 +1,6 @@
 (add-to-list 'load-path "/home/neo/.emacs.d/elisp")
 (add-to-list 'load-path "/home/neo/.emacs.d/color-theme-6.6.0")
+(add-to-list 'load-path "/home/neo/.emacs.d/plugins/solarized/emacs-colors-solarized")
 
 ;;(custom-set-variables
 ;; )
@@ -8,6 +9,8 @@
 
 ;;fullscreen
 (require 'fullscreen)
+
+(require 'color-theme-solarized)
 
 ;;color-theme
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0/")
