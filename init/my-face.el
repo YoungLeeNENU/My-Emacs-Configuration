@@ -111,20 +111,20 @@ Based on the TextMate theme Monokai"
 
 ;;window number
 ;;C-x C-j + window number
-;;(require 'window-number)
-;;(autoload 'window-number-mode "window-number"
-;;  "A global minor mode that enables selection of windows according to
-;; numbers with the C-x C-j prefix.  Another mode,
-;; `window-number-meta-mode' enables the use of the M- prefix."
-;;  t)
+(require 'window-number)
+(autoload 'window-number-mode "window-number"
+  "A global minor mode that enables selection of windows according to
+ numbers with the C-x C-j prefix.  Another mode,
+ `window-number-meta-mode' enables the use of the M- prefix."
+  t)
 
-;;(autoload 'window-number-meta-mode "window-number"
-;;  "A global minor mode that enables use of the M- prefix to select
-;; windows, use `window-number-mode' to display the window numbers in
-;; the mode-line."
-;;  t)
-;;(window-number-mode)
-;;(window-number-meta-mode 1)
+(autoload 'window-number-meta-mode "window-number"
+  "A global minor mode that enables use of the M- prefix to select
+ windows, use `window-number-mode' to display the window numbers in
+ the mode-line."
+  t)
+(window-number-mode)
+(window-number-meta-mode 1)
 
 ;;(defun fullscreen ()
 ;;  (interactive)
@@ -136,9 +136,9 @@ Based on the TextMate theme Monokai"
 ;;24小时制
 (setq display-time-24hr-format t)
 ;;时间显示包括日期和具体时间
-(setq display-time-day-and-date t)
+;;(setq display-time-day-and-date t)
 ;;显示时间的格式
-(setq display-time-format "%m月%d日%A %H:%M")
+;;(setq display-time-format "%H:%M")
 ;;语法高亮
 (global-font-lock-mode t)
 ;;无响铃

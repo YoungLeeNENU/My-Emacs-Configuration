@@ -121,3 +121,12 @@
 
 ;;矩形操作
 (require 'rect-mark)
+
+;; multiple-cursors
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/multiple-cursors")
+(require 'multiple-cursors)
+(global-set-key (kbd "M-S-c M-S-c") 'mc/edit-lines)
+(global-set-key (kbd "M-)") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-(") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c M-(") 'mc/mark-all-like-this)

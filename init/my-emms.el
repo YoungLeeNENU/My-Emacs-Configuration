@@ -9,16 +9,28 @@
 
 (setq emms-show-format "play: %s")
 
+;;(require 'emms-playing-time)
+;;(emms-playing-time 1)
+;;(setq emms-playing-time-enable 1)
+
 (require 'emms-lyrics)
 (emms-lyrics 1)
+(setq emms-lyrics-display-on-minibuffer nil)
+(setq emms-lyrics-display-on-modeline 1)
+;;default lyrics dir
+(setq emms-lyrics-dir "~/music/lrc")
+
+;;(setq emms-browser-default-covers
+;;	  (list "~/document/C++/code/doubanfm-qt/icons/pause.png" nil nil))
 
 ;;(require 'emms-browser)
 ;;(require 'emms-get-lyrics)
 
-;;default play dir
+;;(require 'emms-lyrics-download)
+;;(ad-activate 'emms-lyrics-find-lyric)
 
 (setq emms-source-file-default-directory "~/Music")
-(setq emms-playlist-buffer-name "enjoy music")
+(setq emms-playlist-buffer-name "Music")
 (setq emms-lyrics-enable 1)
 (setq emms-track-type 1)
 

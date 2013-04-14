@@ -214,3 +214,6 @@ vector-fill!
 vector-length
 vector-ref
 vector-set!
+
+#!/usr/bin/guile -s
+!#
