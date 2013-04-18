@@ -1,0 +1,27 @@
+;; Object ch2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch2/"
+  :tables (list 
+   (semanticdb-table "data.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "data.scm"
+    :pointmax 1689
+    :fsize 1798
+    :lastmodtime '(20842 32127 490855 11000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cons.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "cons.scm"
+    :pointmax 108
+    :fsize 107
+    :lastmodtime '(20839 39965 946820 112000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!code!TestSICP!ch2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

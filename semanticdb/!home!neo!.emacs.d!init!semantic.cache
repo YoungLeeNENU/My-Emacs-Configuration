@@ -1,0 +1,162 @@
+;; Object init/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "init/"
+  :tables (list 
+   (semanticdb-table "my-c-pro.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("load-file" code nil nil [250 308])
+            ("add-to-list" code nil nil [456 533])
+            ("add-to-list" code nil nil [534 615])
+            ("add-to-list" code nil nil [616 686])
+            ("semantic-mode" code nil nil [707 724])
+            ("global-ede-mode" code nil nil [770 789])
+            ("setq" code nil nil [800 827])
+            ("setq" code nil nil [828 854])
+            ("setq" code nil nil [855 873])
+            ("setq" code nil nil [874 897])
+            ("my-c-style" variable
+               (:constant-flag t
+                :default-value (quote ((c-tab-always-indent . t) (c-comment-only-line-offset . 4) (c-hanging-braces-alist (substatement-open after) (brace-list-open)) (c-hanging-colons-alist (member-init-intro before) (inher-intro) (case-label after) (label after) (access-label after)) (c-cleanup-list scope-operator empty-defun-braces defun-close-semi) (c-offsets-alist (arglist-close . c-lineup-arglist) (substatement-open . 0) (case-label . 4) (block-open . 0) (knr-argdecl-intro . -)) (c-echo-syntactic-information-p . t))))
+                nil [898 1921])
+            ("setq" code nil nil [1923 1973])
+            ("my-c-mode-common-hook" function nil nil [1975 2211])
+            ("add-hook" code nil nil [2213 2266])
+            ("smart-compile" include nil nil [2275 2299])
+            ("global-set-key" code nil nil [2315 2360])
+            ("smart-compile" function (:user-visible-flag t) nil [2361 3619])
+            ("mapc" code nil nil [3652 3848])
+            ("define-skeleton" code nil nil [3883 4479])
+            ("wcy-c/c++-hightligh-included-files-key-map" variable nil nil [4481 4536])
+            ("if" code nil nil [4537 4757])
+            ("wcy-c/c++-hightligh-included-files" function nil nil [4759 5558])
+            ("setq" code nil nil [5612 5721])
+            ("online-search" include nil nil [5740 5764])
+            ("global-set-key" code nil nil [5765 5814]))          
+    :file "my-c-pro.el"
+    :pointmax 5816
+    :fsize 6073
+    :lastmodtime '(20845 22671 64390 286000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "my-general-pro.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("add-to-list" code nil nil [1 48])
+            ("add-to-list" code nil nil [49 99])
+            ("cc-mode" include nil nil [877 895])
+            ("load-file" code nil nil [896 977])
+            ("xcscope" include nil nil [978 996])
+            ("define-key" code nil nil [997 1063])
+            ("define-key" code nil nil [1064 1132])
+            ("define-key" code nil nil [1133 1194])
+            ("define-key" code nil nil [1195 1262])
+            ("define-key" code nil nil [1263 1343])
+            ("define-key" code nil nil [1344 1397])
+            ("define-key" code nil nil [1398 1454])
+            ("define-key" code nil nil [1455 1509])
+            ("define-key" code nil nil [1510 1566])
+            ("define-key" code nil nil [1567 1621])
+            ("define-key" code nil nil [1622 1687])
+            ("define-key" code nil nil [1688 1760])
+            ("setq" code nil nil [1762 1800])
+            ("global-set-key" code nil nil [1810 1855])
+            ("global-set-key" code nil nil [1864 1909])
+            ("global-set-key" code nil nil [1925 1978])
+            ("global-set-key" code nil nil [1984 2037])
+            ("ska-point-to-register" function (:user-visible-flag t) nil [2038 2252])
+            ("ska-jump-to-register" function (:user-visible-flag t) nil [2254 2514])
+            ("my-c-mode-auto-pair" function nil nil [2524 2998])
+            ("add-hook" code nil nil [2999 3043])
+            ("add-hook" code nil nil [3044 3090])
+            ("add-hook" code nil nil [3091 3155])
+            ("anonymous" code nil nil [3158 6290]))          
+    :file "my-general-pro.el"
+    :pointmax 6291
+    :fsize 6400
+    :lastmodtime '(20845 26505 948831 89000)
+    :unmatched-syntax '((punctuation 3157 . 3158) (punctuation 3157 . 3158))
+    )
+   (semanticdb-table "my-python.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("python-mode" include nil nil [15 37])
+            ("add-to-list" code nil nil [38 96])
+            ("ipython" include nil nil [328 346])
+            ("lambda-mode" include nil nil [362 384])
+            ("add-hook" code nil nil [385 429])
+            ("setq" code nil nil [430 492])
+            ("anything" include nil nil [506 525])
+            ("anything-ipython" include nil nil [526 553])
+            ("when" code nil nil [554 696])
+            ("global-set-key" code nil nil [697 752])
+            ("setq" code nil nil [823 897])
+            ("add-to-list" code nil nil [898 935])
+            ("pylookup" include nil nil [990 1009])
+            ("setq" code nil nil [1046 1106])
+            ("setq" code nil nil [1107 1167])
+            ("pylookup-lookup" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1309 1400])
+            ("pylookup-update" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1401 1512])
+            ("pylookup-lookup" function (:prototype-flag t) nil [1513 1551])
+            ("pylookup-update" function (:prototype-flag t) nil [1552 1590])
+            ("setq" code nil nil [1591 1674])
+            ("setq" code nil nil [1675 1758])
+            ("global-set-key" code nil nil [1759 1800])
+            ("comint" include nil nil [1803 1820])
+            ("define-key" code nil nil [1821 1879])
+            ("define-key" code nil nil [1880 1942])
+            ("define-key" code nil nil [1943 2017])
+            ("define-key" code nil nil [2018 2094])
+            ("autopair-global-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2097 2146])
+            ("autopair-global-mode" code nil nil [2147 2169])
+            ("add-hook" code nil nil [2170 2242])
+            ("add-hook" code nil nil [2244 2486])
+            ("python-pep8" include nil nil [2488 2510])
+            ("python-pylint" include nil nil [2511 2535])
+            ("add-hook" code nil nil [2561 2617])
+            ("pymacs-apply" function (:prototype-flag t) nil [2619 2652])
+            ("pymacs-call" function (:prototype-flag t) nil [2653 2685])
+            ("pymacs-eval" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2686 2724])
+            ("pymacs-exec" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2725 2763])
+            ("pymacs-load" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2764 2802])
+            ("pymacs-autoload" function (:prototype-flag t) nil [2803 2839])
+            ("pymacs-load" code nil nil [2841 2873])
+            ("setq" code nil nil [2874 2909])
+            ("pycomplete" include nil nil [2925 2946])
+            ("setq" code nil nil [2947 3018])
+            ("python-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3019 3081])
+            ("setq" code nil nil [3082 3176])
+            ("setq" code nil nil [3215 3304])
+            ("pdb" function (:arguments ("before" "gud-query-cmdline" "activate")) nil [3305 3529]))          
+    :file "my-python.el"
+    :pointmax 3536
+    :fsize 3529
+    :lastmodtime '(20846 42059 856803 889000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!.emacs.d!init!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

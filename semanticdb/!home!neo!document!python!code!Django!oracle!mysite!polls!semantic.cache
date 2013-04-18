@@ -1,0 +1,45 @@
+;; Object polls/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "polls/"
+  :tables (list 
+   (semanticdb-table "admin.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("polls.models" include nil nil [24 53])
+            ("polls.models" include nil nil [54 85])
+            ("django.contrib" include nil nil [86 118])
+            ("ChoiceInline" type
+               (:superclasses ("admin.TabularInline")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [162 176])
+                    ("extra" variable nil (reparse-symbol indented_block_body) [178 187]))                  
+                :type "class")
+                nil [120 188])
+            ("PollAdmin" type
+               (:superclasses ("admin.ModelAdmin")
+                :members 
+                  ( ("list_display" variable nil (reparse-symbol indented_block_body) [225 266])
+                    ("list_filter" variable nil (reparse-symbol indented_block_body) [268 294])
+                    ("search_fields" variable nil (reparse-symbol indented_block_body) [296 325])
+                    ("date_hierarchy" variable nil (reparse-symbol indented_block_body) [327 354])
+                    ("fieldsets" variable nil (reparse-symbol indented_block_body) [356 485])
+                    ("inlines" variable nil (reparse-symbol indented_block_body) [487 511]))                  
+                :type "class")
+                nil [189 512])
+            ("admin" code nil nil [513 549]))          
+    :file "admin.py"
+    :pointmax 626
+    :fsize 580
+    :lastmodtime '(20845 27004 444829 419000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "models.py"
+    :file "models.py"
+    :fsize 478
+    :lastmodtime '(20844 59236 438485 517000)
+    )
+   )
+  :file "!home!neo!document!python!code!Django!oracle!mysite!polls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

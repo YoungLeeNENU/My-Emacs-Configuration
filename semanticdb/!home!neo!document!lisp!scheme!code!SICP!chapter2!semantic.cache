@@ -1,0 +1,45 @@
+;; Object chapter2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter2/"
+  :tables (list 
+   (semanticdb-table "2-2.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-2.scm"
+    :pointmax 650
+    :fsize 675
+    :lastmodtime '(20847 29293 191926 763000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-1.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-1.scm"
+    :pointmax 1689
+    :fsize 1798
+    :lastmodtime '(20839 43556 602744 256000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-3-1.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-3-1.scm"
+    :pointmax 1
+    :fsize 361
+    :lastmodtime '(20847 51941 573988 694000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-3-2.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-3-2.scm"
+    :pointmax 293
+    :fsize 328
+    :lastmodtime '(20847 52177 769978 840000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!code!SICP!chapter2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

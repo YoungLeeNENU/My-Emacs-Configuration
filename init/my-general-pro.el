@@ -91,7 +91,7 @@
 		  '(lambda ()
 			 (c-set-style "k&r")))
 
-
+'(
 ;;ECB
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -131,3 +131,4 @@
 ;;           (line-beginning-position 2)))))
 ;;(define-key c-mode-base-map (kbd "C-;") 'comment-or-uncomment-region)
 ;;(define-key python-mode-map (kbd "C-;") 'comment-or-uncomment-region)
+)
