@@ -1,0 +1,183 @@
+;; Object guile/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "guile/"
+  :tables (list 
+   (semanticdb-table "getopt.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_NO_PROTO" variable (:constant-flag t) nil [1130 1139])
+            ("stdio.h" include (:system-flag t) nil [1368 1386])
+            ("_" variable (:constant-flag t) nil [2746 2747])
+            ("getopt.h" include nil nil [3460 3479])
+            ("optarg" variable
+               (:pointer 1
+                :type "char")
+                nil [3728 3748])
+            ("optind" variable (:type "int") nil [4291 4306])
+            ("nextchar" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4590 4612])
+            ("opterr" variable (:type "int") nil [4704 4719])
+            ("optopt" variable (:type "int") nil [4887 4904])
+            ("ordering" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("REQUIRE_ORDER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6314 6328])
+                          ("PERMUTE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6329 6337])
+                          ("RETURN_IN_ORDER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6338 6355]))                        
+                      :type "enum")
+                      nil nil))
+                nil [6298 6365])
+            ("posixly_correct" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [6421 6450])
+            ("getenv" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [6816 6832])
+            ("my_index" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("chr" variable (:type "int") nil nil))                  
+                :type "char")
+                nil [6834 7004])
+            ("first_nonopt" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7782 7806])
+            ("last_nonopt" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7807 7830])
+            ("nonoption_flags" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [7968 8003])
+            ("nonoption_flags_len" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [8004 8035])
+            ("exchange" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8543 8551]))                  
+                :type "void")
+                nil [8521 8552])
+            ("exchange" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil))                  
+                :type "void")
+                nil [8561 10008])
+            ("_getopt_initialize" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10150 10163]))                  
+                :type "char")
+                nil [10111 10164])
+            ("_getopt_initialize" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("optstring" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "char")
+                nil [10172 11441])
+            ("_getopt_internal" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil)
+                    ("optstring" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("longopts" variable
+                       (:pointer 1
+                        :type ("option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        nil nil)
+                    ("longind" variable
+                       (:pointer 1
+                        :type "int")
+                        nil nil)
+                    ("long_only" variable (:type "int") nil nil))                  
+                :type "int")
+                nil [14189 22556])
+            ("getopt" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil)
+                    ("optstring" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [22558 22773]))          
+    :file "getopt.c"
+    :pointmax 23984
+    :fsize 23983
+    :lastmodtime '(20783 20415 770748 453000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_NO_PROTO")
+          ("_" (spp-arg-list ("msgid") 2747 . 2754) . ((semantic-list "(msgid)" 2755 . 2762)))
+          )
+
+    )
+   (semanticdb-table "getopt.h"
+    :file "getopt.h"
+    :fsize 4464
+    :lastmodtime '(20783 20415 774748 453000)
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!guile-1.0!guile!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

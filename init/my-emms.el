@@ -98,3 +98,9 @@
                    title)))))
 (setq emms-mode-line-mode-line-function
       'bigclean-emms-mode-line-playlist-current)
+
+
+;; edbfm
+(add-to-list 'load-path
+			 "~/.emacs.d/plugins/edbfm")
+(require 'edbfm)

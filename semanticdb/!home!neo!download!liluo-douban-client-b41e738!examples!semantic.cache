@@ -1,0 +1,26 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "auth_with_password.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("douban_client" include nil nil [1 39])
+            ("KEY" variable nil nil [41 49])
+            ("SECRET" variable nil nil [50 61])
+            ("CALLBACK" variable nil nil [62 75])
+            ("SCOPE" variable nil nil [77 127])
+            ("client" variable nil nil [128 179])
+            ("client" code nil nil [181 237])
+            ("print" code nil nil [239 259]))          
+    :file "auth_with_password.py"
+    :pointmax 260
+    :fsize 259
+    :lastmodtime '(20833 17510 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!download!liluo-douban-client-b41e738!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,58 @@
+;; Object Chapter03/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Chapter03/"
+  :tables (list 
+   (semanticdb-table "packages.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1 22])
+            ("defpackage" code nil nil [24 74]))          
+    :file "packages.lisp"
+    :pointmax 75
+    :fsize 74
+    :lastmodtime '(16907 56747 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "simple-database.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1 40])
+            ("*db*" variable nil nil [42 59])
+            ("make-cd" function (:arguments ("title" "artist" "rating" "ripped")) nil [61 172])
+            ("add-record" function (:arguments ("cd")) nil [174 212])
+            ("dump-db" function nil nil [214 291])
+            ("prompt-read" function (:arguments ("prompt")) nil [293 410])
+            ("prompt-for-cd" function nil nil [412 595])
+            ("add-cds" function nil nil [597 708])
+            ("save-db" function (:arguments ("filename")) nil [710 903])
+            ("load-db" function (:arguments ("filename")) nil [905 1022])
+            ("clear-db" function nil nil [1024 1059])
+            ("select" function (:arguments ("selector-fn")) nil [1061 1124])
+            ("where" function (:arguments ("clauses")) nil [1126 1217])
+            ("make-comparisons-list" function (:arguments ("fields")) nil [1219 1344])
+            ("make-comparison-expr" function (:arguments ("field" "value")) nil [1346 1423])
+            ("update" function (:arguments ("selector-fn" "title" "artist" "rating" "ripped")) nil [1426 1873])
+            ("delete-rows" function (:arguments ("selector-fn")) nil [1875 1951]))          
+    :file "simple-database.lisp"
+    :pointmax 1955
+    :fsize 1954
+    :lastmodtime '(16907 56723 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "simple-database.asd"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("defpackage" code nil nil [1 70])
+            ("in-package" code nil nil [71 123])
+            ("defsystem" code nil nil [125 475]))          
+    :file "simple-database.asd"
+    :pointmax 486
+    :fsize 485
+    :lastmodtime '(16935 30338 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!code!practicals-1.0.3!Chapter03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -4,11 +4,12 @@
   :tables (list 
    (semanticdb-table "ede-projects.el"
     :major-mode 'emacs-lisp-mode
-    :tags nil
+    :tags 
+        '( ("anonymous" code nil nil [82 85]))          
     :file "ede-projects.el"
     :pointmax 86
     :fsize 85
-    :lastmodtime '(20847 56233 57809 663000)
+    :lastmodtime '(20896 51011 30173 699000)
     :unmatched-syntax 'nil
     )
    )

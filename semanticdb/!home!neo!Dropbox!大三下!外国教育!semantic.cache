@@ -1,0 +1,108 @@
+;; Object 外国教育/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "外国教育/"
+  :tables (list 
+   (semanticdb-table "4-24.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "4-24.html"
+    :pointmax 11281
+    :fsize 13464
+    :lastmodtime '(20855 40727 821037 810000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "5-22.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("5-22" section nil nil [240 2245])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2245 3865])
+            ("5-22" section (:members 
+              ( ("5-22" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 赫尔巴特的教育思想" anchor nil nil [4050 4053])
+                        ("1.1 “科学教育学”的理论基础" anchor nil nil [4092 4095])
+                        ("1.1.1 观念" anchor nil nil [4141 4144])
+                        ("1.1.2 统觉" anchor nil nil [4184 4187])
+                        ("1.2 教育目的" anchor nil nil [4239 4242])
+                        ("1.2.1 可能的目的（或选择的目的）" anchor nil nil [4280 4283])
+                        ("1.2.2 必要的目的（或道德的目的）" anchor nil nil [4334 4337])
+                        ("1.3 教学论" anchor nil nil [4400 4403])
+                        ("1.3.1 教育性教学" anchor nil nil [4440 4443])
+                        ("1.3.2 课程论" anchor nil nil [4486 4489])
+                        ("1.4 教学方法论" anchor nil nil [4542 4545])
+                        ("1.4.1 感官的刺激 -&gt; 单纯的提示教学" anchor nil nil [4584 4587])
+                        ("1.4.2 新旧观念的分析和联合 -&gt; 分析教学" anchor nil nil [4644 4647])
+                        ("1.4.3 统觉团的形成 -&gt; 综合教学" anchor nil nil [4706 4709])
+                        ("1.5 教学形式阶段理论" anchor nil nil [4776 4779]))                      ) nil [3980 4899])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5609 5916])
+                            ("1.1.2" section nil nil [5916 6180]))                          ) nil [5346 6180])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [6385 6630])
+                            ("1.2.2" section nil nil [6630 6900]))                          ) nil [6180 6900])
+                        ("1.3" section (:members 
+                          ( ("1.3.1" section nil nil [7074 7342])
+                            ("1.3.2" section nil nil [7342 8353]))                          ) nil [6900 8353])
+                        ("1.4" section (:members 
+                          ( ("1.4.1" section nil nil [8635 8838])
+                            ("1.4.2" section nil nil [8838 9043])
+                            ("1.4.3" section nil nil [9043 9249]))                          ) nil [8353 9249])
+                        ("1.5" section (:members 
+                          ( ("Org" anchor nil nil [9606 9609])
+                            ("Emacs" anchor nil nil [9663 9666])
+                            ("Validate XHTML 1.0" anchor nil nil [9733 9736]))                          ) nil [9249 9832]))                      ) nil [4899 9832]))                  ) nil [3921 9832]))              ) nil [3865 9832]))          
+    :file "5-22.html"
+    :pointmax 9832
+    :fsize 11351
+    :lastmodtime '(20892 32237 664765 878000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!Dropbox!大三下!外国教育!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

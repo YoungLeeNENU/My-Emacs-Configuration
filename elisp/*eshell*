@@ -1,0 +1,7 @@
+~ $ cd .emacs.d/elisp/
+~/.emacs.d/elisp $ guile
+guile> (pair? (cons 'a '()))
+#t
+guile> (list? (cons 'a '()))
+#t
+guile> (pair? (cons 'a 3))

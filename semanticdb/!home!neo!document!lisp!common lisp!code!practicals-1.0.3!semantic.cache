@@ -1,0 +1,9 @@
+;; Object practicals-1.0.3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "practicals-1.0.3/"
+  :tables (list 
+    )
+  :file "!home!neo!document!lisp!common lisp!code!practicals-1.0.3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

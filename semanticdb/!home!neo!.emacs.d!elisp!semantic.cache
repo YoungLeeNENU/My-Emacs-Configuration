@@ -1,0 +1,174 @@
+;; Object elisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elisp/"
+  :tables (list 
+   (semanticdb-table "fullscreen.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("fullscreen" function (:user-visible-flag t) nil [2063 2316])
+            ("fullscreen-toggle" function (:user-visible-flag t) nil [2318 2590])
+            ("fullscreen" package nil nil [2592 2613]))          
+    :file "fullscreen.el"
+    :pointmax 2643
+    :fsize 2642
+    :lastmodtime '(18834 52730 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "r5rs.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cl" include nil nil [2962 2975])
+            ("browse-url" include nil nil [2976 2997])
+            ("thingatpt" include nil nil [3041 3061])
+            ("scheme-r5rs-root" variable (:default-value "http://www.schemers.org/Documents/Standards/R5RS/HTML/") nil [3063 3323])
+            ("scheme-r5rs-history" variable nil nil [3325 3410])
+            ("scheme-r5rs-symbols" variable (:default-value (make-vector 67 0)) nil [3481 3528])
+            ("scheme-r5rs-lookup" function
+               (:user-visible-flag t
+                :arguments ("symbol-name"))
+                nil [3530 5243])
+            ("mapc" code nil nil [5245 14989])
+            ("r5rs" package nil nil [15074 15089])
+            ("let" code nil nil [15113 15163]))          
+    :file "r5rs.el"
+    :pointmax 15180
+    :fsize 15181
+    :lastmodtime '(20858 33238 520152 186000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cursor-chg.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("unless" code nil nil [5182 5581])
+            ("curchg-change-cursor-on-input-method-flag" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [5598 5758])
+            ("curchg-change-cursor-on-overwrite/read-only-flag" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [5775 5944])
+            ("curchg-default-cursor-color" variable
+               (:user-visible-flag t
+                :default-value (or (cdr (assq (quote cursor-color) default-frame-alist)) "Red"))
+                nil [5961 6227])
+            ("curchg-default-cursor-type" variable
+               (:user-visible-flag t
+                :default-value (quote bar))
+                nil [6244 6347])
+            ("curchg-idle-cursor-type" variable
+               (:user-visible-flag t
+                :default-value (quote box))
+                nil [6364 6477])
+            ("curchg-input-method-cursor-color" variable
+               (:user-visible-flag t
+                :default-value "Orange")
+                nil [6494 6744])
+            ("curchg-overwrite/read-only-cursor-type" variable
+               (:user-visible-flag t
+                :default-value (quote box))
+                nil [6761 7040])
+            ("curchg-last-cursor-type" variable (:default-value curchg-default-cursor-type) nil [7105 7190])
+            ("curchg-idle-interval" variable (:default-value 2) nil [7192 7466])
+            ("curchg-idle-timer" variable (:default-value (progn (when (boundp (quote curchg-idle-timer)) (cancel-timer curchg-idle-timer)) (run-with-idle-timer curchg-idle-interval t (quote curchg-change-cursor-to-idle-type)))) nil [7468 7798])
+            ("cancel-timer" code nil nil [7888 7920])
+            ("curchg-change-cursor-when-idle-p" variable nil nil [7922 8119])
+            ("unless" code nil nil [8184 8271])
+            ("curchg-set-cursor-type" function
+               (:user-visible-flag t
+                :arguments ("cursor-type"))
+                nil [8345 8807])
+            ("defalias" code nil nil [8824 8901])
+            ("curchg-toggle-cursor-type-when-idle" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8917 9763])
+            ("curchg-change-cursor-when-idle-interval" function
+               (:user-visible-flag t
+                :arguments ("secs"))
+                nil [9780 10310])
+            ("if" code nil nil [10312 14215])
+            ("curchg-change-cursor-on-input-method" function nil nil [14343 14617])
+            ("curchg-change-cursor-on-overwrite/read-only" function nil nil [14687 15109])
+            ("curchg-change-cursor-to-idle-type" function nil nil [15111 15433])
+            ("curchg-change-cursor-to-idle-type-off" function nil nil [15435 15638])
+            ("cursor-chg" package nil nil [15672 15693]))          
+    :file "cursor-chg.el"
+    :pointmax 15794
+    :fsize 15793
+    :lastmodtime '(20567 7162 530578 986000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "buffer-move.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("windmove" include nil nil [2269 2288])
+            ("buf-move-up" function (:user-visible-flag t) nil [2306 2966])
+            ("buf-move-down" function (:user-visible-flag t) nil [2983 3641])
+            ("buf-move-left" function (:user-visible-flag t) nil [3658 4235])
+            ("buf-move-right" function (:user-visible-flag t) nil [4252 4834])
+            ("buffer-move" package nil nil [4837 4859]))          
+    :file "buffer-move.el"
+    :pointmax 4889
+    :fsize 4888
+    :lastmodtime '(19825 42161 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ipython.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("ipython-version" variable
+               (:constant-flag t
+                :default-value "$Revision: 2927 $")
+                nil [312 381])
+            ("cl" include nil nil [5541 5554])
+            ("shell" include nil nil [5555 5571])
+            ("executable" include nil nil [5572 5593])
+            ("ansi-color" include nil nil [5594 5615])
+            ("ipython-command" variable
+               (:user-visible-flag t
+                :default-value "ipython")
+                nil [5617 5729])
+            ("py-shell-initial-switch-buffers" variable (:default-value t) nil [5760 5885])
+            ("ipython-backup-of-py-python-command" variable nil nil [5887 5944])
+            ("ipython-de-input-prompt-regexp" variable (:default-value "\\(?:
+In \\[[0-9]+\\]: *.*
+----+> \\(.*
+\\)[
+]?\\)\\|\\(?:
+In \\[[0-9]+\\]: *\\(.*
+\\)\\)\\|^[ ]\\{3\\}[.]\\{3,\\}: *\\(.*
+\\)") nil [5947 6340])
+            ("ipython-de-output-prompt-regexp" variable (:default-value "^Out\\[[0-9]+\\]: ") nil [6341 6466])
+            ("if" code nil nil [6469 9800])
+            ("py-shell" function (:arguments ("around" "py-shell-with-history")) nil [9859 10599])
+            ("ad-activate" code nil nil [10600 10623])
+            ("py-execute-region" function (:arguments ("around" "py-execute-buffer-ensure-process")) nil [11038 11381])
+            ("ad-activate" code nil nil [11382 11414])
+            ("ipython-to-doctest" function
+               (:user-visible-flag t
+                :arguments ("start" "end"))
+                nil [11416 12553])
+            ("ipython-completion-command-string" variable (:default-value "print ';'.join(__IP.Completer.all_completions('%s')) #PYTHON-MODE SILENT
+") nil [12555 12745])
+            ("if" code nil nil [12877 18073])
+            ("ipython-autoindent" variable (:default-value t) nil [18253 18354])
+            ("ipython-indenting-buffer-name" variable (:default-value "*IPython Indentation Calculation*") nil [18356 18485])
+            ("ipython-get-indenting-buffer" function nil nil [18487 18752])
+            ("ipython-indentation-string" variable nil nil [18754 18852])
+            ("ipython-send-and-indent" function (:user-visible-flag t) nil [18854 19720])
+            ("ipython-indentation-hook" function (:arguments ("string")) nil [19722 20549])
+            ("add-hook" code nil nil [20551 20698])
+            ("define-key" code nil nil [20700 20762])
+            ("ipython" package nil nil [20793 20811]))          
+    :file "ipython.el"
+    :pointmax 20812
+    :fsize 20811
+    :lastmodtime '(19912 5987 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!.emacs.d!elisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

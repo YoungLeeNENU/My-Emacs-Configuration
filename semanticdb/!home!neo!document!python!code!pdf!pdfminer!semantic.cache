@@ -1,0 +1,21 @@
+;; Object pdfminer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdfminer/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [24 56])
+            ("pdfminer" include nil nil [57 89])
+            ("setup" code nil nil [91 1387]))          
+    :file "setup.py"
+    :pointmax 1388
+    :fsize 1387
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!pdf!pdfminer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

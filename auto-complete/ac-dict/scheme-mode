@@ -215,5 +215,4 @@ vector-length
 vector-ref
 vector-set!
 
-#!/usr/bin/guile -s
-!#
+#!/usr/bin/mzscheme -r

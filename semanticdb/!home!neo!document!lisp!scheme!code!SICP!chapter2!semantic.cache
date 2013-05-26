@@ -4,38 +4,231 @@
   :tables (list 
    (semanticdb-table "2-2.scm"
     :major-mode 'scheme-mode
-    :tags nil
+    :tags 
+        '( ("make-segment" function (:arguments ("point1" "point2")) nil [18 78])
+            ("x-point" function (:arguments ("point")) nil [198 236])
+            ("y-point" function (:arguments ("point")) nil [237 275])
+            ("midpoint-segment" function (:arguments ("segment")) nil [276 490])
+            ("point-A" variable (:default-value ((510 . 564))) nil [492 565]))          
     :file "2-2.scm"
-    :pointmax 650
-    :fsize 675
-    :lastmodtime '(20847 29293 191926 763000)
-    :unmatched-syntax 'nil
+    :pointmax 625
+    :fsize 650
+    :lastmodtime '(20870 6445 314689 208000)
+    :unmatched-syntax '((semantic-list 566 . 624) (semantic-list 163 . 197) (semantic-list 126 . 162) (semantic-list 79 . 117))
     )
    (semanticdb-table "2-1.scm"
     :major-mode 'scheme-mode
-    :tags nil
+    :tags 
+        '( ("one-half" variable (:default-value ((1174 . 1189))) nil [1155 1190])
+            ("one-third" variable (:default-value ((1218 . 1232))) nil [1198 1233])
+            ("another-one-half" variable (:default-value ((1268 . 1282))) nil [1241 1283]))          
     :file "2-1.scm"
-    :pointmax 1689
-    :fsize 1798
-    :lastmodtime '(20839 43556 602744 256000)
-    :unmatched-syntax 'nil
+    :pointmax 1666
+    :fsize 1775
+    :lastmodtime '(20870 6430 426689 589000)
+    :unmatched-syntax '((semantic-list 1285 . 1665) (semantic-list 1056 . 1137) (semantic-list 960 . 1046) (semantic-list 865 . 951) (semantic-list 736 . 856) (semantic-list 607 . 727) (semantic-list 504 . 598) (semantic-list 467 . 495) (semantic-list 430 . 458) (semantic-list 24 . 421))
     )
    (semanticdb-table "2-3-1.scm"
     :major-mode 'scheme-mode
-    :tags nil
+    :tags 
+        '( ("make-rectangle" function (:arguments ("length" "wide")) nil [10 68])
+            ("area" function (:arguments ("rectangle")) nil [69 134])
+            ("perimeter" function (:arguments ("rectangle")) nil [135 211]))          
     :file "2-3-1.scm"
-    :pointmax 1
-    :fsize 361
-    :lastmodtime '(20847 51941 573988 694000)
-    :unmatched-syntax 'nil
+    :pointmax 329
+    :fsize 338
+    :lastmodtime '(20870 6448 946689 116000)
+    :unmatched-syntax '((semantic-list 212 . 328))
     )
    (semanticdb-table "2-3-2.scm"
     :major-mode 'scheme-mode
-    :tags nil
+    :tags 
+        '( ("x-point" function (:arguments ("point")) nil [183 221])
+            ("y-point" function (:arguments ("point")) nil [222 260])
+            ("make-segment" function (:arguments ("point1" "point2")) nil [411 471])
+            ("length" function (:arguments ("segment")) nil [704 1275])
+            ("make-rectangle" function (:arguments ("length" "width")) nil [1434 1494])
+            ("len-rectangle" function (:arguments ("rectangle")) nil [1495 1547])
+            ("wid-rectangle" function (:arguments ("rectangle")) nil [1548 1600])
+            ("area" function (:arguments ("rectangle")) nil [1766 1849])
+            ("perimeter" function (:arguments ("rectangle")) nil [1850 1946])
+            ("rectangle-sample" variable (:default-value ((2125 . 2261))) nil [2098 2262]))          
     :file "2-3-2.scm"
-    :pointmax 293
-    :fsize 328
-    :lastmodtime '(20847 52177 769978 840000)
+    :pointmax 2373
+    :fsize 2570
+    :lastmodtime '(20870 6452 618689 23000)
+    :unmatched-syntax '((semantic-list 2264 . 2372) (semantic-list 509 . 543) (semantic-list 472 . 508) (semantic-list 144 . 182) (semantic-list 509 . 543) (semantic-list 472 . 508) (semantic-list 144 . 182))
+    )
+   (semanticdb-table "test.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("atom-list?" function (:arguments ("items")) nil [11 204]))          
+    :file "test.scm"
+    :pointmax 310
+    :fsize 321
+    :lastmodtime '(20871 25552 144289 646000)
+    :unmatched-syntax '((semantic-list 206 . 309))
+    )
+   (semanticdb-table "2-4.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-4.scm"
+    :pointmax 636
+    :fsize 959
+    :lastmodtime '(20851 27689 42877 718000)
+    :unmatched-syntax '((semantic-list 311 . 635) (semantic-list 270 . 309) (semantic-list 169 . 208) (semantic-list 65 . 107))
+    )
+   (semanticdb-table "2-5.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-5.scm"
+    :pointmax 388
+    :fsize 387
+    :lastmodtime '(20870 6457 194688 906000)
+    :unmatched-syntax '((semantic-list 298 . 387) (semantic-list 249 . 296) (semantic-list 201 . 248) (semantic-list 158 . 200) (semantic-list 24 . 156) (semantic-list 158 . 200) (semantic-list 24 . 156))
+    )
+   (semanticdb-table "2-6.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("zero" variable (:default-value ((39 . 67))) nil [24 68])
+            ("one" variable (:default-value ((147 . 176))) nil [133 177])
+            ("two" variable (:default-value ((193 . 208))) nil [179 209]))          
+    :file "2-6.scm"
+    :pointmax 298
+    :fsize 297
+    :lastmodtime '(20870 6459 926688 836000)
+    :unmatched-syntax '((semantic-list 241 . 297) (semantic-list 211 . 239) (semantic-list 70 . 131))
+    )
+   (semanticdb-table "2-7.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("interval-1" variable (:default-value ((756 . 772))) nil [737 773])
+            ("interval-2" variable (:default-value ((793 . 811))) nil [774 812]))          
+    :file "2-7.scm"
+    :pointmax 892
+    :fsize 891
+    :lastmodtime '(20860 31065 279839 921000)
+    :unmatched-syntax '((semantic-list 814 . 891) (semantic-list 647 . 734) (semantic-list 521 . 645) (semantic-list 253 . 520) (semantic-list 130 . 252) (semantic-list 96 . 128) (semantic-list 63 . 95) (semantic-list 23 . 62) (semantic-list 647 . 734) (semantic-list 521 . 645) (semantic-list 253 . 520) (semantic-list 130 . 252) (semantic-list 96 . 128) (semantic-list 63 . 95) (semantic-list 23 . 62))
+    )
+   (semanticdb-table "2-8.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("interval-1" variable (:default-value ((966 . 982))) nil [947 983])
+            ("interval-2" variable (:default-value ((1003 . 1021))) nil [984 1022]))          
+    :file "2-8.scm"
+    :pointmax 1102
+    :fsize 1101
+    :lastmodtime '(20860 31975 927820 682000)
+    :unmatched-syntax '((semantic-list 1024 . 1101) (semantic-list 857 . 944) (semantic-list 731 . 855) (semantic-list 463 . 730) (semantic-list 253 . 462) (semantic-list 130 . 252) (semantic-list 96 . 128) (semantic-list 63 . 95) (semantic-list 23 . 62))
+    )
+   (semanticdb-table "2-17.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("last-pair" function (:arguments ("sample")) nil [24 117]))          
+    :file "2-17.scm"
+    :pointmax 173
+    :fsize 172
+    :lastmodtime '(20867 6563 36362 260000)
+    :unmatched-syntax '((semantic-list 118 . 172) (semantic-list 118 . 207) (semantic-list 118 . 207))
+    )
+   (semanticdb-table "2-18.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("list-reverse" function (:arguments ("sample")) nil [24 436]))          
+    :file "2-18.scm"
+    :pointmax 492
+    :fsize 491
+    :lastmodtime '(20870 6400 646690 350000)
+    :unmatched-syntax '((semantic-list 438 . 491) (semantic-list 438 . 491) (semantic-list 438 . 495) (semantic-list 436 . 493))
+    )
+   (semanticdb-table "2-19.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("us-coins" variable (:default-value ((41 . 60))) nil [24 61])
+            ("uk-coins" variable (:default-value ((79 . 108))) nil [62 109])
+            ("count-change" function (:arguments ("coin-type" "amount")) nil [111 629]))          
+    :file "2-19.scm"
+    :pointmax 691
+    :fsize 690
+    :lastmodtime '(20865 9685 960765 746000)
+    :unmatched-syntax '((semantic-list 631 . 690))
+    )
+   (semanticdb-table "2-20.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-20.scm"
+    :pointmax 556
+    :fsize 555
+    :lastmodtime '(20865 52481 125762 502000)
+    :unmatched-syntax '((semantic-list 492 . 555) (semantic-list 24 . 490))
+    )
+   (semanticdb-table "2-21.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("square-list-1" function (:arguments ("items")) nil [37 102])
+            ("square-list-2" function (:arguments ("items")) nil [116 247]))          
+    :file "2-21.scm"
+    :pointmax 367
+    :fsize 366
+    :lastmodtime '(20865 53311 537744 958000)
+    :unmatched-syntax '((semantic-list 249 . 366))
+    )
+   (semanticdb-table "2-22.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("square-list" function (:arguments ("items")) nil [51 242]))          
+    :file "2-22.scm"
+    :pointmax 361
+    :fsize 390
+    :lastmodtime '(20866 10354 469013 966000)
+    :unmatched-syntax '((semantic-list 244 . 304))
+    )
+   (semanticdb-table "2-23.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("foreach" function (:arguments ("action" "object")) nil [24 156]))          
+    :file "2-23.scm"
+    :pointmax 258
+    :fsize 257
+    :lastmodtime '(20868 21137 225748 384000)
+    :unmatched-syntax '((semantic-list 158 . 257) (semantic-list 158 . 263))
+    )
+   (semanticdb-table "2-24.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-24.scm"
+    :pointmax 85
+    :fsize 84
+    :lastmodtime '(20866 26670 176333 317000)
+    :unmatched-syntax '((semantic-list 24 . 84))
+    )
+   (semanticdb-table "2-25.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-25.scm"
+    :pointmax 352
+    :fsize 351
+    :lastmodtime '(20867 5991 548376 873000)
+    :unmatched-syntax '((semantic-list 242 . 351) (semantic-list 176 . 240) (semantic-list 138 . 175) (semantic-list 107 . 136) (semantic-list 89 . 106) (semantic-list 50 . 87) (semantic-list 24 . 49) (semantic-list 89 . 106) (semantic-list 50 . 87) (semantic-list 24 . 49))
+    )
+   (semanticdb-table "2-26.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-26.scm"
+    :pointmax 187
+    :fsize 186
+    :lastmodtime '(20867 6088 976374 382000)
+    :unmatched-syntax '((semantic-list 72 . 186) (semantic-list 48 . 71) (semantic-list 24 . 47))
+    )
+   (semanticdb-table "2-27.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("deep-reverse" function (:arguments ("items")) nil [24 518])
+            ("list-reverse" function (:arguments ("sample")) nil [520 936]))          
+    :file "2-27.scm"
+    :pointmax 1266
+    :fsize 1265
+    :lastmodtime '(20871 42959 227844 575000)
     :unmatched-syntax 'nil
     )
    )

@@ -1,0 +1,111 @@
+;; Object matmult/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "matmult/"
+  :tables (list 
+   (semanticdb-table "mm.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [36 54])
+            ("stdlib.h" include (:system-flag t) nil [55 74])
+            ("mm.h" include nil nil [75 90])
+            ("fcycmm.h" include nil nil [91 110])
+            ("clock.h" include nil nil [111 129])
+            ("CLEARCACHE" variable (:constant-flag t) nil [188 198])
+            ("gc" variable (:type ("array" type (:type "class") nil nil)) nil [224 241])
+            ("gb" variable (:type ("array" type (:type "class") nil nil)) nil [224 241])
+            ("ga" variable (:type ("array" type (:type "class") nil nil)) nil [224 241])
+            ("checkresult" function
+               (:arguments 
+                  ( ("c" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [306 314])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [315 321]))                  
+                :type "void")
+                nil [289 560])
+            ("run" function
+               (:arguments 
+                  ( ("f" variable (:type ("test_funct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [628 641])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [642 648]))                  
+                :type "double")
+                nil [617 754])
+            ("reset" function
+               (:arguments 
+                  ( ("c" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [800 808])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [809 815]))                  
+                :type "void")
+                nil [789 923])
+            ("init" function
+               (:arguments 
+                  ( ("a" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 978])
+                    ("b" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [979 987])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [988 994]))                  
+                :type "void")
+                nil [960 1123])
+            ("printarray" function
+               (:arguments 
+                  ( ("a" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1171 1179])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1180 1186]))                  
+                :type "void")
+                nil [1155 1318])
+            ("ijk" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1474 1482])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1491])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1492 1500])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1501 1507]))                  
+                :type "void")
+                nil [1465 1733])
+            ("jik" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1744 1752])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1753 1761])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1762 1770])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1771 1777]))                  
+                :type "void")
+                nil [1735 1998])
+            ("ikj" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2009 2017])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2018 2026])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2027 2035])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2036 2042]))                  
+                :type "void")
+                nil [2000 2251])
+            ("kij" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2262 2270])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2271 2279])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2280 2288])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2289 2295]))                  
+                :type "void")
+                nil [2253 2499])
+            ("kji" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2510 2518])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2519 2527])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2528 2536])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2537 2543]))                  
+                :type "void")
+                nil [2501 2743])
+            ("jki" function
+               (:arguments 
+                  ( ("A" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2754 2762])
+                    ("B" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2763 2771])
+                    ("C" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2772 2780])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2781 2787]))                  
+                :type "void")
+                nil [2745 2987])
+            ("main" function (:type "int") nil [3111 3629]))          
+    :file "mm.c"
+    :pointmax 3631
+    :fsize 3630
+    :lastmodtime '(19320 51907 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CLEARCACHE" . ((number "0" 199 . 200)))
+          )
+
+    )
+   )
+  :file "!home!neo!document!CSAPP!code!mem!matmult!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

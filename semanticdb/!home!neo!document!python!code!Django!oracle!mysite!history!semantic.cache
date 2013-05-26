@@ -1,0 +1,27 @@
+;; Object history/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "history/"
+  :tables (list 
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("datetime" include nil nil [24 39])
+            ("django.http" include nil nil [40 76])
+            ("hello" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [113 120]))              ) nil [103 214])
+            ("current_datetime" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [236 243]))              ) nil [215 360])
+            ("hours_ahead" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [377 384])
+                ("offset" variable nil (reparse-symbol function_parameters) [386 392]))              ) nil [361 674]))          
+    :file "views.py"
+    :pointmax 674
+    :fsize 739
+    :lastmodtime '(20844 59289 802484 152000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!Django!oracle!mysite!history!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

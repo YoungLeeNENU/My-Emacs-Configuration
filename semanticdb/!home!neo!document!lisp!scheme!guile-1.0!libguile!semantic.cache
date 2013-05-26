@@ -1,0 +1,464 @@
+;; Object libguile/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libguile/"
+  :tables (list 
+   (semanticdb-table "alist.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2025 2043])
+            ("_scm.h" include nil nil [2044 2061])
+            ("eq.h" include nil nil [2062 2077])
+            ("list.h" include nil nil [2078 2095])
+            ("alist.h" include nil nil [2097 2115])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_acons" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2129 2137])
+                    ("" variable (:type ("scm_acons" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2156 2166]))                  
+                :type "int")
+                nil [2120 2167])
+            ("scm_acons" function
+               (:arguments 
+                  ( ("w" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("y" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2169 2394])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_sloppy_assq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2409 2423])
+                    ("" variable (:type ("scm_sloppy_assq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2448 2464]))                  
+                :type "int")
+                nil [2399 2465])
+            ("scm_sloppy_assq" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2467 2747])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_sloppy_assv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2761 2775])
+                    ("" variable (:type ("scm_sloppy_assv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2800 2816]))                  
+                :type "int")
+                nil [2751 2817])
+            ("scm_sloppy_assv" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2819 3128])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_sloppy_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3141 3156])
+                    ("" variable (:type ("scm_sloppy_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3182 3199]))                  
+                :type "int")
+                nil [3131 3200])
+            ("scm_sloppy_assoc" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [3202 3514])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3529 3536])
+                    ("" variable (:type ("scm_assq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3554 3563]))                  
+                :type "int")
+                nil [3520 3564])
+            ("scm_assq" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [3566 3945])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3957 3964])
+                    ("" variable (:type ("scm_assv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3982 3991]))                  
+                :type "int")
+                nil [3948 3992])
+            ("scm_assv" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [3994 4424])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4436 4444])
+                    ("" variable (:type ("scm_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4463 4473]))                  
+                :type "int")
+                nil [4427 4474])
+            ("scm_assoc" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4476 4883])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assq_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4899 4910])
+                    ("" variable (:type ("scm_assq_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4932 4945]))                  
+                :type "int")
+                nil [4889 4946])
+            ("scm_assq_ref" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4948 5178])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assv_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5191 5202])
+                    ("" variable (:type ("scm_assv_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5224 5237]))                  
+                :type "int")
+                nil [5181 5238])
+            ("scm_assv_ref" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5240 5470])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assoc_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5483 5495])
+                    ("" variable (:type ("scm_assoc_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5518 5532]))                  
+                :type "int")
+                nil [5473 5533])
+            ("scm_assoc_ref" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5535 5767])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assq_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5785 5798])
+                    ("" variable (:type ("scm_assq_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5821 5836]))                  
+                :type "int")
+                nil [5775 5837])
+            ("scm_assq_set_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("val" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5839 6137])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assv_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6149 6162])
+                    ("" variable (:type ("scm_assv_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6185 6200]))                  
+                :type "int")
+                nil [6139 6201])
+            ("scm_assv_set_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("val" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [6203 6501])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assoc_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6513 6527])
+                    ("" variable (:type ("scm_assoc_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6551 6567]))                  
+                :type "int")
+                nil [6503 6568])
+            ("scm_assoc_set_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("val" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [6570 6870])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assq_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6886 6902])
+                    ("" variable (:type ("scm_assq_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6928 6946]))                  
+                :type "int")
+                nil [6876 6947])
+            ("scm_assq_remove_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [6949 7198])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assv_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7211 7227])
+                    ("" variable (:type ("scm_assv_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7253 7271]))                  
+                :type "int")
+                nil [7201 7272])
+            ("scm_assv_remove_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [7274 7523])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_assoc_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7536 7553])
+                    ("" variable (:type ("scm_assoc_remove_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7580 7599]))                  
+                :type "int")
+                nil [7526 7600])
+            ("scm_assoc_remove_x" function
+               (:arguments 
+                  ( ("alist" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("key" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [7602 7855])
+            ("scm_init_alist" function (:type "void") nil [7863 7908]))          
+    :file "alist.c"
+    :pointmax 7910
+    :fsize 7909
+    :lastmodtime '(20783 20415 778748 454000)
+    :unmatched-syntax '((number 7577 . 7578) (number 7574 . 7575) (number 7571 . 7572) (string 7554 . 7569) (number 7250 . 7251) (number 7247 . 7248) (number 7244 . 7245) (string 7228 . 7242) (number 6925 . 6926) (number 6922 . 6923) (number 6919 . 6920) (string 6903 . 6917) (number 6548 . 6549) (number 6545 . 6546) (number 6542 . 6543) (string 6528 . 6540) (number 6182 . 6183) (number 6179 . 6180) (number 6176 . 6177) (string 6163 . 6174) (number 5818 . 5819) (number 5815 . 5816) (number 5812 . 5813) (string 5799 . 5810) (number 5515 . 5516) (number 5512 . 5513) (number 5509 . 5510) (string 5496 . 5507) (number 5221 . 5222) (number 5218 . 5219) (number 5215 . 5216) (string 5203 . 5213) (number 4929 . 4930) (number 4926 . 4927) (number 4923 . 4924) (string 4911 . 4921) (number 4460 . 4461) (number 4457 . 4458) (number 4454 . 4455) (string 4445 . 4452) (number 3979 . 3980) (number 3976 . 3977) (number 3973 . 3974) (string 3965 . 3971) (number 3551 . 3552) (number 3548 . 3549) (number 3545 . 3546) (string 3537 . 3543) (number 3179 . 3180) (number 3176 . 3177) (number 3173 . 3174) (string 3157 . 3171) (number 2797 . 2798) (number 2794 . 2795) (number 2791 . 2792) (string 2776 . 2789) (number 2445 . 2446) (number 2442 . 2443) (number 2439 . 2440) (string 2424 . 2437) (number 2153 . 2154) (number 2150 . 2151) (number 2147 . 2148) (string 2138 . 2145) (number 6548 . 6549) (number 6545 . 6546) (number 6542 . 6543) (string 6528 . 6540) (number 6182 . 6183) (number 6179 . 6180) (number 6176 . 6177) (string 6163 . 6174) (number 5818 . 5819) (number 5815 . 5816) (number 5812 . 5813) (string 5799 . 5810) (number 5515 . 5516) (number 5512 . 5513) (number 5509 . 5510) (string 5496 . 5507) (number 5221 . 5222) (number 5218 . 5219) (number 5215 . 5216) (string 5203 . 5213) (number 4929 . 4930) (number 4926 . 4927) (number 4923 . 4924) (string 4911 . 4921) (number 4460 . 4461) (number 4457 . 4458) (number 4454 . 4455) (string 4445 . 4452) (number 3979 . 3980) (number 3976 . 3977) (number 3973 . 3974) (string 3965 . 3971) (number 3551 . 3552) (number 3548 . 3549) (number 3545 . 3546) (string 3537 . 3543) (number 3179 . 3180) (number 3176 . 3177) (number 3173 . 3174) (string 3157 . 3171) (number 2797 . 2798) (number 2794 . 2795) (number 2791 . 2792) (string 2776 . 2789) (number 2445 . 2446) (number 2442 . 2443) (number 2439 . 2440) (string 2424 . 2437) (number 2153 . 2154) (number 2150 . 2151) (number 2147 . 2148) (string 2138 . 2145) (number 5221 . 5222) (number 5218 . 5219) (number 5215 . 5216) (string 5203 . 5213) (number 4929 . 4930) (number 4926 . 4927) (number 4923 . 4924) (string 4911 . 4921) (number 4460 . 4461) (number 4457 . 4458) (number 4454 . 4455) (string 4445 . 4452) (number 3979 . 3980) (number 3976 . 3977) (number 3973 . 3974) (string 3965 . 3971) (number 3551 . 3552) (number 3548 . 3549) (number 3545 . 3546) (string 3537 . 3543) (number 3179 . 3180) (number 3176 . 3177) (number 3173 . 3174) (string 3157 . 3171) (number 2797 . 2798) (number 2794 . 2795) (number 2791 . 2792) (string 2776 . 2789) (number 2445 . 2446) (number 2442 . 2443) (number 2439 . 2440) (string 2424 . 2437) (number 2153 . 2154) (number 2150 . 2151) (number 2147 . 2148) (string 2138 . 2145))
+    )
+   (semanticdb-table "strings.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2026 2044])
+            ("_scm.h" include nil nil [2045 2062])
+            ("chars.h" include nil nil [2063 2081])
+            ("strings.h" include nil nil [2083 2103])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2134 2145])
+                    ("" variable (:type ("scm_string_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2166 2179]))                  
+                :type "int")
+                nil [2125 2180])
+            ("scm_string_p" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2182 2312])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_read_only_string_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2344])
+                    ("" variable (:type ("scm_read_only_string_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2375 2398]))                  
+                :type "int")
+                nil [2314 2399])
+            ("scm_read_only_string_p" function
+               (:arguments 
+                  ( ("x" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2401 2543])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_list_to_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2554 2571])
+                    ("" variable (:type ("scm_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2597 2608]))                  
+                :type "int")
+                nil [2545 2609])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2619 2628])
+                    ("" variable (:type ("scm_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2659]))                  
+                :type "int")
+                nil [2610 2660])
+            ("scm_string" function
+               (:arguments 
+                  ( ("chrs" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [2662 3629])
+            ("scm_makstr" function
+               (:arguments 
+                  ( ("len" variable (:type "long") nil nil)
+                    ("slots" variable (:type "int") nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [3632 4128])
+            ("scm_makfromstrs" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4256 4520])
+            ("scm_take0str" function
+               (:arguments 
+                  ( ("it" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4524 4740])
+            ("scm_makfromstr" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("len" variable (:type ("scm_sizet" type (:type "class") nil nil)) nil nil)
+                    ("slots" variable (:type "int") nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4743 4983])
+            ("scm_makfrom0str" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [4987 5130])
+            ("scm_makfrom0str_opt" function
+               (:arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5133 5221])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_make_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5235 5249])
+                    ("" variable (:type ("scm_make_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5274 5290]))                  
+                :type "int")
+                nil [5226 5291])
+            ("scm_make_string" function
+               (:arguments 
+                  ( ("k" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("chr" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5293 5681])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string_length" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5692 5708])
+                    ("" variable (:type ("scm_string_length" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5735 5753]))                  
+                :type "int")
+                nil [5683 5754])
+            ("scm_string_length" function
+               (:arguments 
+                  ( ("str" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5756 5930])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5941 5954])
+                    ("" variable (:type ("scm_string_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5978 5993]))                  
+                :type "int")
+                nil [5932 5994])
+            ("scm_string_ref" function
+               (:arguments 
+                  ( ("str" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("k" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [5996 6405])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6416 6431])
+                    ("" variable (:type ("scm_string_set_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6456 6473]))                  
+                :type "int")
+                nil [6407 6474])
+            ("scm_string_set_x" function
+               (:arguments 
+                  ( ("str" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("k" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("chr" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [6476 6940])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_substring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6953 6965])
+                    ("" variable (:type ("scm_substring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6988 7002]))                  
+                :type "int")
+                nil [6944 7003])
+            ("scm_substring" function
+               (:arguments 
+                  ( ("str" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("start" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("end" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [7005 7745])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_string_append" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7756 7772])
+                    ("" variable (:type ("scm_string_append" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7799 7817]))                  
+                :type "int")
+                nil [7747 7818])
+            ("scm_string_append" function
+               (:arguments 
+                  ( ("args" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [7820 8482])
+            ("SCM_PROC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s_make_shared_substring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8493 8517])
+                    ("" variable (:type ("scm_make_shared_substring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8552 8578]))                  
+                :type "int")
+                nil [8484 8579])
+            ("scm_make_shared_substring" function
+               (:arguments 
+                  ( ("str" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("frm" variable (:type ("SCM" type (:type "class") nil nil)) nil nil)
+                    ("to" variable (:type ("SCM" type (:type "class") nil nil)) nil nil))                  
+                :type ("SCM" type (:type "class") nil nil))
+                nil [8581 9940])
+            ("scm_init_strings" function (:type "void") nil [9943 9992]))          
+    :file "strings.c"
+    :pointmax 9994
+    :fsize 9993
+    :lastmodtime '(20783 20415 782748 454000)
+    :unmatched-syntax '((number 8549 . 8550) (number 8546 . 8547) (number 8543 . 8544) (string 8518 . 8541) (number 7796 . 7797) (number 7793 . 7794) (number 7790 . 7791) (string 7773 . 7788) (number 6985 . 6986) (number 6982 . 6983) (number 6979 . 6980) (string 6966 . 6977) (number 6453 . 6454) (number 6450 . 6451) (number 6447 . 6448) (string 6432 . 6445) (number 5975 . 5976) (number 5972 . 5973) (number 5969 . 5970) (string 5955 . 5967) (number 5732 . 5733) (number 5729 . 5730) (number 5726 . 5727) (string 5709 . 5724) (number 5271 . 5272) (number 5268 . 5269) (number 5265 . 5266) (string 5250 . 5263) (number 2645 . 2646) (number 2642 . 2643) (number 2639 . 2640) (string 2629 . 2637) (number 2594 . 2595) (number 2591 . 2592) (number 2588 . 2589) (string 2572 . 2586) (number 2372 . 2373) (number 2369 . 2370) (number 2366 . 2367) (string 2345 . 2364) (number 2163 . 2164) (number 2160 . 2161) (number 2157 . 2158) (string 2146 . 2155) (number 5732 . 5733) (number 5729 . 5730) (number 5726 . 5727) (string 5709 . 5724) (number 5271 . 5272) (number 5268 . 5269) (number 5265 . 5266) (string 5250 . 5263) (number 2645 . 2646) (number 2642 . 2643) (number 2639 . 2640) (string 2629 . 2637) (number 2594 . 2595) (number 2591 . 2592) (number 2588 . 2589) (string 2572 . 2586) (number 2372 . 2373) (number 2369 . 2370) (number 2366 . 2367) (string 2345 . 2364) (number 2163 . 2164) (number 2160 . 2161) (number 2157 . 2158) (string 2146 . 2155))
+    )
+   (semanticdb-table "_scm.h"
+    :file "_scm.h"
+    :fsize 4423
+    :lastmodtime '(20783 20415 778748 454000)
+    )
+   (semanticdb-table "chars.h"
+    :file "chars.h"
+    :fsize 3668
+    :lastmodtime '(20783 20415 774748 453000)
+    )
+   (semanticdb-table "strings.h"
+    :file "strings.h"
+    :fsize 3219
+    :lastmodtime '(20783 20415 782748 454000)
+    )
+   (semanticdb-table "eq.h"
+    :file "eq.h"
+    :fsize 2299
+    :lastmodtime '(20783 20415 782748 454000)
+    )
+   (semanticdb-table "list.h"
+    :file "list.h"
+    :fsize 3651
+    :lastmodtime '(20783 20415 774748 453000)
+    )
+   (semanticdb-table "alist.h"
+    :file "alist.h"
+    :fsize 3076
+    :lastmodtime '(20783 20415 778748 454000)
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!guile-1.0!libguile!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -28,15 +28,96 @@
                 nil [189 512])
             ("admin" code nil nil [513 549]))          
     :file "admin.py"
-    :pointmax 626
+    :pointmax 581
     :fsize 580
     :lastmodtime '(20845 27004 444829 419000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.db" include nil nil [24 52])
+            ("Poll" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("questions" variable nil (reparse-symbol indented_block_body) [132 178])
+                    ("pub_date" variable nil (reparse-symbol indented_block_body) [180 229])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [248 252]))                          )
+                        (reparse-symbol indented_block_body) [232 279]))                  
+                :type "class")
+                nil [98 279])
+            ("Choice" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("poll" variable nil (reparse-symbol indented_block_body) [309 339])
+                    ("choice" variable nil (reparse-symbol indented_block_body) [341 384])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [386 415])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [434 438]))                          )
+                        (reparse-symbol indented_block_body) [418 462]))                  
+                :type "class")
+                nil [280 462]))          
     :file "models.py"
-    :fsize 478
-    :lastmodtime '(20844 59236 438485 517000)
+    :pointmax 462
+    :fsize 485
+    :lastmodtime '(20849 20726 484201 144000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(20843 60806 451526 767000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("polls.models" include nil nil [50 87])
+            ("django.http" include nil nil [88 155])
+            ("django.template" include nil nil [156 215])
+            ("django.shortcuts" include nil nil [216 282])
+            ("django.core.urlresolvers" include nil nil [283 327])
+            ("index" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [343 350]))              ) nil [333 541])
+            ("detail" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [553 560])
+                ("poll_id" variable nil (reparse-symbol function_parameters) [562 569]))              ) nil [542 898])
+            ("results" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [915 922])
+                ("poll_id" variable nil (reparse-symbol function_parameters) [924 931]))              ) nil [903 1045])
+            ("vote" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1139 1146])
+                ("poll_id" variable nil (reparse-symbol function_parameters) [1148 1155]))              ) nil [1130 1749]))          
+    :file "views.py"
+    :pointmax 1674
+    :fsize 1813
+    :lastmodtime '(20850 14267 172522 618000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [59 110])
+            ("django.views.generic" include nil nil [111 164])
+            ("django.contrib" include nil nil [165 197])
+            ("polls.models" include nil nil [198 227])
+            ("admin" code nil nil [233 253])
+            ("urlpatterns" variable nil nil [266 583])
+            ("urlpatterns" variable nil nil [588 588])
+            ("urlpatterns" variable nil nil [596 1479]))          
+    :file "urls.py"
+    :pointmax 1574
+    :fsize 1635
+    :lastmodtime '(20850 13930 68531 237000)
+    :unmatched-syntax 'nil
     )
    )
   :file "!home!neo!document!python!code!Django!oracle!mysite!polls!semantic.cache"

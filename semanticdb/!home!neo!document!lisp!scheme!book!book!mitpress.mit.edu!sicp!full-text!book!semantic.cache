@@ -1,0 +1,158 @@
+;; Object book/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "book/"
+  :tables (list 
+   (semanticdb-table "book.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Structure and Interpretation 
+of Computer Programs" section nil nil [240 432])
+            ("<p>
+
+
+<p>
+
+
+<p>
+
+<p>
+
+
+<p>
+
+
+
+
+<p>
+
+
+<p>
+
+
+<p>
+
+
+<p>
+
+
+<p>
+
+<p>
+
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+
+<p>
+
+<p>
+
+
+<p>
+
+<p>
+
+
+<p>
+
+
+<p>
+
+
+
+<p>
+
+<p>
+
+
+<p>
+
+<p>
+
+
+
+<p>
+
+<p>
+
+
+
+
+<p>
+
+
+
+
+<p>
+
+
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+
+
+
+
+
+
+
+
+<p>
+
+
+
+
+<p>
+
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+
+
+
+<p>
+
+
+<p>
+
+
+<div align=center>&nbsp;<a href=\"book-Z-H-1.html#titlepage\"><img src=\"cover.jpg\" border=\"0\" >" section (:members 
+              ( ("&nbsp;" anchor nil nil [774 777])
+                ("next" anchor nil nil [976 979])
+                ("contents" anchor nil nil [1055 1058])
+                ("index" anchor nil nil [1145 1148]))              ) nil [432 1230]))          
+    :file "book.html"
+    :pointmax 1230
+    :fsize 1229
+    :lastmodtime '(20870 5748 746707 18000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!book!book!mitpress.mit.edu!sicp!full-text!book!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,978 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "bbdb-gnus.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("bbdb" include nil nil [1008 1023])
+            ("bbdb-snarf" include nil nil [1024 1045])
+            ("gnus" include nil nil [1046 1061])
+            ("bbdb-com" include nil nil [1083 1102])
+            ("rfc822" include nil nil [1105 1122])
+            ("condition-case" code nil nil [1210 1344])
+            ("gnus-optional-headers" variable nil nil [1390 1420])
+            ("bbdb/gnus-get-message-id" function nil nil [1423 1736])
+            ("bbdb/gnus-update-records-mode" variable (:default-value (quote annotating)) nil [1738 2807])
+            ("bbdb/gnus-update-record" function (:arguments ("offer-to-create")) nil [2825 3261])
+            ("bbdb/gnus-update-records" function (:arguments ("offer-to-create")) nil [3278 5382])
+            ("bbdb/gnus-annotate-sender" function
+               (:user-visible-flag t
+                :arguments ("string" "replace"))
+                nil [5399 5897])
+            ("bbdb/gnus-edit-notes" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [5899 6342])
+            ("bbdb/gnus-show-records" function
+               (:user-visible-flag t
+                :arguments ("address-class"))
+                nil [6359 7099])
+            ("bbdb/gnus-show-all-recipients" function (:user-visible-flag t) nil [7116 7338])
+            ("bbdb/gnus-show-sender" function
+               (:user-visible-flag t
+                :arguments ("show-recipients"))
+                nil [7340 7956])
+            ("bbdb/gnus-pop-up-bbdb-buffer" function (:arguments ("offer-to-create")) nil [7958 9131])
+            ("bbdb/gnus-lines-and-from-length" variable
+               (:user-visible-flag t
+                :default-value 18)
+                nil [9189 9419])
+            ("bbdb/gnus-summary-mark-known-posters" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [9421 10079])
+            ("defvaralias" code nil nil [10080 10163])
+            ("bbdb/gnus-summary-known-poster-mark" variable (:default-value "+") nil [10165 10494])
+            ("bbdb/gnus-summary-show-bbdb-names" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [10496 11001])
+            ("defvaralias" code nil nil [11002 11086])
+            ("bbdb/gnus-summary-prefer-bbdb-data" variable (:default-value t) nil [11088 11311])
+            ("bbdb/gnus-summary-prefer-real-names" variable (:default-value t) nil [11313 11952])
+            ("defvaralias" code nil nil [11953 12041])
+            ("bbdb/gnus-summary-user-format-letter" variable (:default-value "B") nil [12043 12756])
+            ("bbdb/gnus-summary-in-bbdb-format-letter" variable (:default-value "b") nil [12758 13292])
+            ("bbdb-message-marker-field" variable
+               (:user-visible-flag t
+                :default-value (quote mark-char))
+                nil [13294 13470])
+            ("bbdb/gnus-summary-get-author" function (:arguments ("header")) nil [13472 15433])
+            ("bbdb/gnus-summary-author-in-bbdb" function (:arguments ("header")) nil [15505 16477])
+            ("bbdb/gnus-snarf-signature" function (:user-visible-flag t) nil [16552 17101])
+            ("bbdb/gnus-score-field" variable (:default-value (quote gnus-score)) nil [17121 17361])
+            ("bbdb/gnus-score-default" variable nil nil [17363 17736])
+            ("bbdb/gnus-score-default-internal" variable nil nil [17738 17941])
+            ("bbdb/gnus-score-alist" variable nil nil [17943 18096])
+            ("bbdb/gnus-score-rebuild-alist" variable (:default-value t) nil [18098 18316])
+            ("bbdb/gnus-score-invalidate-alist" function (:arguments ("rec")) nil [18318 18623])
+            ("bbdb/gnus-score" function (:arguments ("group")) nil [18640 19251])
+            ("bbdb/gnus-score-as-text" function (:arguments ("group")) nil [19253 20257])
+            ("bbdb/gnus-summary-show-all-recipients" function
+               (:user-visible-flag t
+                :arguments ("not-elided"))
+                nil [20274 20698])
+            ("bbdb/gnus-split-default-group" variable
+               (:user-visible-flag t
+                :default-value "mail.misc")
+                nil [22859 23297])
+            ("bbdb/gnus-split-nomatch-function" variable (:user-visible-flag t) nil [23299 23640])
+            ("bbdb/gnus-split-myaddr-regexp" variable
+               (:user-visible-flag t
+                :default-value (concat "^" (user-login-name) "$\\|^" (user-login-name) "@\\([-a-z0-9]+\\.\\)*" (or gnus-local-domain (message-make-domain) (system-name) "") "$"))
+                nil [23642 24261])
+            ("bbdb/gnus-split-crosspost-default" variable (:user-visible-flag t) nil [24263 24586])
+            ("bbdb/gnus-split-private-field" variable
+               (:user-visible-flag t
+                :default-value (quote gnus-private))
+                nil [24588 24921])
+            ("bbdb/gnus-split-public-field" variable
+               (:user-visible-flag t
+                :default-value (quote gnus-public))
+                nil [24923 25424])
+            ("bbdb/gnus-split-method" function nil nil [26841 28626])
+            ("bbdb/gnus-split-to-group" function (:arguments ("addr" "source")) nil [28628 30202])
+            ("bbdb-insinuate-gnus" function nil nil [30241 32615])
+            ("bbdb/gnus-nnimap-folder-list-from-bbdb" function nil nil [32631 34941])
+            ("bbdb-gnus" package nil nil [34944 34964]))          
+    :file "bbdb-gnus.el"
+    :pointmax 34965
+    :fsize 34964
+    :lastmodtime '(17159 2024 0 0)
+    :unmatched-syntax '((close-paren 1420 . 1421) (symbol 1369 . 1386) (open-paren 1368 . 1369) (close-paren 1344 . 1345) (symbol 1191 . 1207) (open-paren 1190 . 1191) (close-paren 1122 . 1123) (symbol 1064 . 1080) (open-paren 1063 . 1064))
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("INSTALL" variable (:default-value ("/usr/bin/install" "-c")) nil [3 33])
+            ("INSTALL_PROGRAM" variable (:default-value ("${INSTALL}")) nil [33 62])
+            ("INSTALL_SCRIPT" variable (:default-value ("${INSTALL}")) nil [62 90])
+            ("INSTALL_DATA" variable (:default-value ("${INSTALL}" "-m" "644")) nil [90 123])
+            ("RM" variable (:default-value ("/bin/rm" "-f")) nil [124 142])
+            ("LN_S" variable (:default-value ("ln" "-s")) nil [142 155])
+            ("EMACS_PROG" variable (:default-value ("/usr/bin/emacs" "-no-site-file" "-no-init-file")) nil [156 212])
+            ("GNUSDIR" variable nil nil [213 224])
+            ("MHEDIR" variable nil nil [224 234])
+            ("VMDIR" variable nil nil [234 243])
+            ("OTHERDIRS" variable nil nil [243 256])
+            ("PACKAGEDIR" variable (:default-value ("/usr/lib/xemacs/site-packages")) nil [257 300])
+            ("SYMLINKS" variable (:default-value ("no")) nil [300 314])
+            ("LINKPATH" variable nil nil [314 326])
+            ("VM" variable (:default-value ("-eval" "'(progn (if (not (string-match \"$(VMDIR)\" \"\"))            \\
+			    (setq load-path (cons \"$(VMDIR)\" load-path))) \\
+			(if (load \"vm-version\" t t)                         \\
+			    (cond ((> (string-to-number vm-version) 5.31) \\
+                                   (load \"vm\" t t))                           \\
+                                  (t (load \"vm-vars\" t t) (load \"vm\" t t)))))'")) nil [397 794])
+            ("GNUS" variable (:default-value ("-eval" "'(if (not (string-match \"$(GNUSDIR)\" \"\"))             \\
+		     (setq load-path (cons \"$(GNUSDIR)\" load-path)))'")) nil [795 920])
+            ("MHE" variable (:default-value ("-eval" "'(progn (if (not (string-match \"$(MHEDIR)\" \"\"))            \\
+			    (setq load-path (cons \"$(MHEDIR)\" load-path))) \\
+			(load \"mh-e\" t t))'")) nil [921 1073])
+            ("PUSHPATH" variable (:default-value ("-l" ".././loadpath.el")) nil [1074 1103])
+            (".SUFFIXES" function (:arguments (".elc" ".el" ".tar" ".Z" ".gz" ".uu")) nil [1104 1140])
+            ("DEPSRCS" variable (:default-value ("bbdb-com.el" "bbdb-hooks.el" "bbdb-gnus.el" "bbdb-mhe.el" "bbdb-rmail.el" "bbdb-vm.el" "bbdb-ftp.el" "bbdb-whois.el" "bbdb-xemacs.el" "bbdb-print.el" "bbdb-srv.el" "bbdb-reportmail.el" "bbdb-merge.el" "bbdb-migrate.el" "bbdb-gui.el")) nil [1141 1369])
+            ("DEPBINS" variable (:default-value ("${DEPSRCS:.el=.elc}")) nil [1370 1399])
+            ("SRCS" variable (:default-value ("bbdb.el" "$(DEPSRCS)")) nil [1399 1426])
+            ("BINS" variable (:default-value ("bbdb.elc" "$(DEPBINS)")) nil [1426 1453])
+            ("all" function (:arguments ("Makefile" "gnus" "bbdb" "autoloadsc")) nil [1454 1492])
+            ("Makefile" function (:arguments ("Makefile.in")) nil [1493 1574])
+            ("install-pkg" function (:arguments ("uninstall-pkg" "bbdb" "autoloadsc")) nil [1575 2467])
+            ("uninstall-pkg" function nil nil [2468 2518])
+            ("bbdb-autoloads.el" function (:arguments ("$(DEPSRCS)")) nil [2519 3537])
+            ("bbdb-autoloads.elc" function (:arguments ("bbdb-autoloads.el")) nil [3538 3629])
+            ("bbdb.elc" function (:arguments ("bbdb.el")) nil [3630 3659])
+            ("bbdb-com.elc" function (:arguments ("bbdb.elc" "bbdb-com.el")) nil [3659 3701])
+            ("bbdb-ftp.elc" function (:arguments ("bbdb.elc" "bbdb-ftp.el")) nil [3701 3743])
+            ("bbdb-gui.elc" function (:arguments ("bbdb.elc" "bbdb-gui.el")) nil [3743 3780])
+            ("bbdb-merge.elc" function (:arguments ("bbdb-merge.el")) nil [3780 3815])
+            ("bbdb-migrate.elc" function (:arguments ("bbdb.elc" "bbdb-migrate.el")) nil [3815 3861])
+            ("bbdb-print.elc" function (:arguments ("bbdb.elc" "bbdb-print.el")) nil [3861 3905])
+            ("bbdb-snarf.elc" function (:arguments ("bbdb.elc" "bbdb-snarf.el")) nil [3905 3949])
+            ("bbdb-whois.elc" function (:arguments ("bbdb.elc" "bbdb-whois.el")) nil [3949 3993])
+            ("bbdb-w3.elc" function (:arguments ("bbdb.elc" "bbdb-w3.el")) nil [3993 4034])
+            ("bbdb-xemacs.elc" function (:arguments ("bbdb.elc" "bbdb-xemacs.el")) nil [4034 4079])
+            (".el.elc" function nil nil [4080 4166])
+            ("bbdb.elc" function (:arguments ("bbdb.el")) nil [4167 4243])
+            ("bbdb-gnus.elc" function (:arguments ("bbdb.elc" "bbdb-gnus.el")) nil [4244 4383])
+            ("bbdb-mhe.elc" function (:arguments ("bbdb.elc" "bbdb-mhe.el")) nil [4383 4520])
+            ("bbdb-rmail.elc" function (:arguments ("bbdb.elc" "bbdb-rmail.el")) nil [4520 4661])
+            ("bbdb-vm.elc" function (:arguments ("bbdb.elc" "bbdb-vm.el")) nil [4661 4796])
+            ("bbdb-srv.elc" function (:arguments ("bbdb.elc" "bbdb-srv.el")) nil [4797 5187])
+            ("bbdb-reportmail.elc" function (:arguments ("bbdb.elc" "bbdb-reportmail.el")) nil [5188 5449])
+            ("bbdb-sc.elc" function (:arguments ("bbdb.elc" "bbdb-sc.el")) nil [5450 5677])
+            ("bbdb-hooks.elc" function (:arguments ("bbdb.elc" "bbdb-hooks.el")) nil [5726 6010])
+            ("autoloads" function (:arguments ("bbdb-autoloads.el")) nil [6011 6040])
+            ("autoloadsc" function (:arguments ("bbdb-autoloads.elc")) nil [6041 6072])
+            ("extras" function (:arguments ("bbdb-print.elc" "bbdb-ftp.elc" "bbdb-whois.elc" "bbdb-xemacs.elc" "bbdb-snarf.elc" "bbdb-w3.elc" "bbdb-sc.elc" "bbdb-merge.elc" "bbdb-migrate.elc" "bbdb-gui.elc")) nil [6073 6233])
+            ("bbdb" function (:arguments ("bbdb.elc" "bbdb-com.elc" "bbdb-hooks.elc" "autoloadsc" "extras")) nil [6233 6294])
+            ("rmail" function (:arguments ("bbdb" "bbdb-rmail.elc")) nil [6294 6321])
+            ("vm" function (:arguments ("bbdb" "bbdb-vm.elc")) nil [6321 6342])
+            ("mhe" function (:arguments ("bbdb" "bbdb-mhe.elc")) nil [6342 6365])
+            ("gnus" function (:arguments ("bbdb" "bbdb-gnus.elc")) nil [6365 6390])
+            ("mh" function (:arguments ("mhe")) nil [6400 6408])
+            ("mh-e" function (:arguments ("mhe")) nil [6408 6418])
+            ("clean" function nil nil [6447 6472])
+            ("distclean" function (:arguments ("clean")) nil [6473 6490])
+            ("reallyclean" function (:arguments ("distclean")) nil [6516 6539])
+            ("cvsclean" function (:arguments ("distclean")) nil [6540 6621]))          
+    :file "Makefile"
+    :pointmax 6621
+    :fsize 6620
+    :lastmodtime '(20851 58336 486937 838000)
+    :unmatched-syntax '((shell-command 6605 . 6620) (bol 6604 . 6604))
+    )
+   (semanticdb-table "bbdb-xemacs.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("or" code nil nil [1250 1346])
+            ("or" code nil nil [1409 1470])
+            ("bbdb" include nil nil [1473 1488])
+            ("bbdb-com" include nil nil [1489 1508])
+            ("bbdb-gui" include nil nil [1509 1528])
+            ("bbdb-xemacs-display-completion-list" function (:arguments ("list" "callback" "data")) nil [1655 2338])
+            ("bbdb-sounds-directory" variable (:default-value (expand-file-name "~/.xemacs/etc/sounds")) nil [2412 2609])
+            ("bbdb-sound-volume" variable (:default-value 50) nil [2626 2735])
+            ("bbdb-load-touchtones" function (:user-visible-flag t) nil [2752 4168])
+            ("if" code nil nil [4170 4340])
+            ("bbdb-xemacs" package nil nil [4342 4364]))          
+    :file "bbdb-xemacs.el"
+    :pointmax 4365
+    :fsize 4364
+    :lastmodtime '(15417 25496 0 0)
+    :unmatched-syntax '((close-paren 1470 . 1471) (symbol 1389 . 1406) (open-paren 1388 . 1389))
+    )
+   (semanticdb-table "bbdb-autoloads.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("bbdb-autoloads" package nil nil [1 26])
+            ("condition-case" code nil nil [48 107])
+            ("if" code nil nil [110 434])
+            ("bbdb-submit-bug-report" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [619 748])
+            ("bbdb-multiple-buffers" variable nil nil [750 918])
+            ("bbdb-initialize" function (:prototype-flag t) nil [920 2265])
+            ("bbdb-insinuate-message" function (:prototype-flag t) nil [2267 2380])
+            ("bbdb-search-invert-set" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3757 4039])
+            ("bbdb" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4041 4203])
+            ("bbdb-name" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4205 4352])
+            ("bbdb-company" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4354 4472])
+            ("bbdb-net" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4474 4597])
+            ("bbdb-notes" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4599 4719])
+            ("bbdb-changed" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [4721 4873])
+            ("bbdb-redisplay-records" function (:prototype-flag t) nil [4875 5068])
+            ("bbdb-create" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [5070 5370])
+            ("bbdb-apply-next-command-to-all-records" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [5372 5663])
+            ("bbdb-append-records-p" function (:prototype-flag t) nil [5665 5728])
+            ("bbdb-append-records" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [5730 6161])
+            ("bbdb-insert-new-field" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [6163 7162])
+            ("bbdb-edit-current-field" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [7164 7527])
+            ("bbdb-record-edit-notes" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [7529 7591])
+            ("bbdb-record-edit-property" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [7593 7658])
+            ("bbdb-transpose-fields" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [7660 8312])
+            ("bbdb-delete-current-field-or-record" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [8314 8621])
+            ("bbdb-delete-current-record" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [8623 8875])
+            ("bbdb-toggle-all-records-display-layout" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [8877 9070])
+            ("bbdb-toggle-records-display-layout" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [9072 9974])
+            ("bbdb-display-all-records-completely" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [9976 10162])
+            ("bbdb-display-record-completely" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [10164 10332])
+            ("bbdb-display-record-with-layout" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [10334 10461])
+            ("bbdb-omit-record" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [10463 10681])
+            ("bbdb-refile-record" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [10683 11324])
+            ("bbdb-sort-notes" function (:prototype-flag t) nil [11326 11485])
+            ("bbdb-sort-phones" function (:prototype-flag t) nil [11487 11637])
+            ("bbdb-sort-addresses" function (:prototype-flag t) nil [11639 11795])
+            ("bbdb-dwim-net-address" function (:prototype-flag t) nil [11797 12420])
+            ("bbdb-send-mail" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [12422 12871])
+            ("bbdb-show-all-recipients" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [12873 13009])
+            ("bbdb-completion-check-record" function (:prototype-flag t) nil [13011 13081])
+            ("bbdb-completion-predicate" function (:prototype-flag t) nil [13083 13248])
+            ("bbdb-read-addresses-with-completion" function (:prototype-flag t) nil [13250 13397])
+            ("bbdb-complete-name" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [13399 14091])
+            ("bbdb-yank" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [14093 14201])
+            ("bbdb-define-all-aliases" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [14203 14748])
+            ("bbdb-add-or-remove-mail-alias" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [14750 15042])
+            ("bbdb-dial" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [15044 15320])
+            ("bbdb-finger" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [15322 16446])
+            ("bbdb-timestamp-older" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [16448 16592])
+            ("bbdb-timestamp-newer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [16594 16738])
+            ("bbdb-creation-older" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [16740 16887])
+            ("bbdb-creation-newer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [16889 17036])
+            ("bbdb-creation-no-change" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [17038 17166])
+            ("bbdb-info" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [17168 17217])
+            ("bbdb-help" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [17219 17268])
+            ("bbdb-update-records-mode" variable (:default-value (quote annotating)) nil [17270 17919])
+            ("bbdb-update-records" function (:prototype-flag t) nil [17921 18527])
+            ("bbdb-get-addresses-headers" variable
+               (:user-visible-flag t
+                :default-value (quote ((authors "From" "Resent-From" "Reply-To") (recipients "Resent-To" "Resent-CC" "To" "CC" "BCC"))))
+                nil [18529 18823])
+            ("bbdb-get-only-first-address-p" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [18825 19064])
+            ("bbdb-ftp" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [19214 19454])
+            ("bbdb-create-ftp-site" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [19456 19671])
+            ("bbdb/gnus-update-record" function (:prototype-flag t) nil [20046 20343])
+            ("bbdb/gnus-update-records" function (:prototype-flag t) nil [20345 20960])
+            ("bbdb/gnus-annotate-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [20962 21200])
+            ("bbdb/gnus-show-records" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21202 21398])
+            ("bbdb/gnus-show-all-recipients" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21400 21545])
+            ("bbdb/gnus-snarf-signature" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21547 21670])
+            ("bbdb/gnus-score" function (:prototype-flag t) nil [21672 22074])
+            ("bbdb/gnus-summary-show-all-recipients" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22076 22210])
+            ("bbdb-insinuate-gnus" function (:prototype-flag t) nil [22212 22317])
+            ("bbdb-fontify-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22468 22527])
+            ("bbdb-menu" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22529 22578])
+            ("bbdb-timestamp-hook" function (:prototype-flag t) nil [22993 23283])
+            ("bbdb-creation-date-hook" function (:prototype-flag t) nil [23285 23461])
+            ("bbdb-header-start" function (:prototype-flag t) nil [23463 23655])
+            ("bbdb-extract-field-value" function (:prototype-flag t) nil [23657 24123])
+            ("bbdb-ignore-most-messages-hook" function (:prototype-flag t) nil [24125 24409])
+            ("bbdb-ignore-selected-messages-hook" function (:prototype-flag t) nil [24411 24989])
+            ("bbdb-ignore-some-messages-hook" function (:prototype-flag t) nil [24991 25269])
+            ("bbdb-auto-notes-hook" function (:prototype-flag t) nil [25271 25621])
+            ("sample-bbdb-canonicalize-net-hook" function (:prototype-flag t) nil [25623 25700])
+            ("bbdb-force-record-create" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [25702 25960])
+            ("bbdb-merge-record" function (:prototype-flag t) nil [26120 26762])
+            ("bbdb-merge-file" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [26764 26862])
+            ("bbdb/mh-update-record" function (:prototype-flag t) nil [27066 27359])
+            ("bbdb/mh-annotate-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [27361 27596])
+            ("bbdb/mh-show-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [27598 27785])
+            ("bbdb-insinuate-mh" function (:prototype-flag t) nil [27787 27889])
+            ("bbdb-migration-query" function (:prototype-flag t) nil [28144 28368])
+            ("bbdb-migrate" function (:prototype-flag t) nil [28370 28560])
+            ("bbdb-unmigrate-record" function (:prototype-flag t) nil [28562 28780])
+            ("bbdb-migrate-rewrite-all" function (:prototype-flag t) nil [28782 29102])
+            ("bbdb-migrate-update-file-version" function (:prototype-flag t) nil [29104 29256])
+            ("bbdb-print" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [29393 29956])
+            ("bbdb-insinuate-reportmail" function (:prototype-flag t) nil [30123 30246])
+            ("bbdb/rmail-update-record" function (:prototype-flag t) nil [30503 30571])
+            ("bbdb/rmail-update-records" function (:prototype-flag t) nil [30573 31194])
+            ("bbdb/rmail-annotate-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [31196 31436])
+            ("bbdb/rmail-show-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [31438 31630])
+            ("bbdb-insinuate-rmail" function (:prototype-flag t) nil [31632 31740])
+            ("bbdb/sc-default" function (:prototype-flag t) nil [31891 32117])
+            ("bbdb-insinuate-sc" function (:prototype-flag t) nil [32119 32225])
+            ("bbdb-snarf" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [32443 33128])
+            ("bbdb-snarf-region" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [33130 33271])
+            ("bbdb-extract-address-components" function (:prototype-flag t) nil [33273 33505])
+            ("bbdb-rfc822-addresses" function (:prototype-flag t) nil [33507 33895])
+            ("bbdb/srv-handle-headers-with-delay" function (:prototype-flag t) nil [34120 34452])
+            ("defalias" code nil nil [34454 34524])
+            ("bbdb/srv-auto-create-mail-news-dispatcher" function (:prototype-flag t) nil [34526 34948])
+            ("bbdb-srv-add-phone" function (:prototype-flag t) nil [34950 35010])
+            ("bbdb/vm-update-record" function (:prototype-flag t) nil [35412 35474])
+            ("bbdb/vm-update-records" function (:prototype-flag t) nil [35476 36087])
+            ("bbdb/vm-annotate-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [36089 36323])
+            ("bbdb/vm-show-records" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [36325 36512])
+            ("bbdb/vm-show-all-recipients" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [36514 36655])
+            ("bbdb/vm-show-sender" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [36657 36942])
+            ("bbdb/vm-set-auto-folder-alist-field" variable
+               (:user-visible-flag t
+                :default-value (quote vm-folder))
+                nil [36944 37073])
+            ("bbdb/vm-set-auto-folder-alist-headers" variable
+               (:user-visible-flag t
+                :default-value (quote ("From:" "To:" "CC:")))
+                nil [37075 37277])
+            ("bbdb/vm-set-auto-folder-alist" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [37279 37995])
+            ("bbdb-insinuate-vm" function (:prototype-flag t) nil [37997 38096])
+            ("bbdb-www" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [38264 38522])
+            ("bbdb-www-grab-homepage" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [38524 38640])
+            ("bbdb-insinuate-w3" function (:prototype-flag t) nil [38642 38741])
+            ("bbdb-whois" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [38879 38931])
+            ("bbdb-xemacs-display-completion-list" function (:prototype-flag t) nil [39166 39495])
+            ("bbdb-sounds-directory" variable (:default-value (expand-file-name "~/.xemacs/etc/sounds")) nil [39497 39643])
+            ("bbdb-sound-volume" variable (:default-value 50) nil [39645 39705])
+            ("bbdb-load-touchtones" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [39707 40017]))          
+    :file "bbdb-autoloads.el"
+    :pointmax 40028
+    :fsize 40027
+    :lastmodtime '(17839 10545 0 0)
+    :unmatched-syntax '((close-paren 434 . 435) (symbol 28 . 45) (open-paren 27 . 28))
+    )
+   (semanticdb-table "bbdb.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("timezone" include nil nil [2365 2384])
+            ("cl" include nil nil [2404 2417])
+            ("widget-group-match" function (:prototype-flag t) nil [2476 2517])
+            ("Electric-pop-up-window" function (:prototype-flag t) nil [2519 2564])
+            ("Electric-command-loop" function (:prototype-flag t) nil [2566 2610])
+            ("bbdb-migration-query" function (:prototype-flag t) nil [2612 2659])
+            ("bbdb-migrate" function (:prototype-flag t) nil [2661 2700])
+            ("bbdb-migrate-rewrite-all" function (:prototype-flag t) nil [2702 2753])
+            ("bbdb-migrate-update-file-version" function (:prototype-flag t) nil [2755 2814])
+            ("bbdb-unmigrate-record" function (:prototype-flag t) nil [2816 2864])
+            ("bbdb-create-internal" function (:prototype-flag t) nil [2866 2909])
+            ("bbdb-append-records-p" function (:prototype-flag t) nil [2911 2955])
+            ("bbdb-redisplay-records" function (:prototype-flag t) nil [2957 3002])
+            ("y-or-n-p-with-timeout" function (:prototype-flag t) nil [3004 3045])
+            ("mail-position-on-field" function (:prototype-flag t) nil [3047 3092])
+            ("bbdb-fontify-buffer" function (:prototype-flag t) nil [3094 3136])
+            ("vm-select-folder-buffer" function (:prototype-flag t) nil [3138 3185])
+            ("bbdb-define-all-aliases-needs-rebuilt" variable nil nil [3228 3274])
+            ("message-mode-map" variable nil nil [3288 3313])
+            ("mail-mode-map" variable nil nil [3329 3351])
+            ("gnus-article-buffer" variable nil nil [3368 3396])
+            ("bbdb-version" variable
+               (:constant-flag t
+                :default-value "2.35")
+                nil [3416 3446])
+            ("bbdb-version-date" variable
+               (:constant-flag t
+                :default-value "$Date: 2007/01/01 21:06:02 $")
+                nil [3447 3506])
+            ("bbdb-gui" variable
+               (:user-visible-flag t
+                :default-value (if (fboundp (quote display-color-p)) (display-color-p) (not (null window-system))))
+                nil [3508 3760])
+            ("bbdb-file-format" variable
+               (:constant-flag t
+                :default-value 6)
+                nil [3777 3806])
+            ("bbdb-file-format-migration" variable nil nil [3807 3995])
+            ("bbdb-no-duplicates-p" variable nil nil [3997 4224])
+            ("if" code nil nil [4354 4512])
+            ("unless" code nil nil [4515 4606])
+            ("if" code nil nil [4609 4697])
+            ("unless" code nil nil [4703 4844])
+            ("unless" code nil nil [4846 4912])
+            ("string>" function (:arguments ("a" "b")) nil [4914 5042])
+            ("or" code nil nil [5064 5137])
+            ("bbdb-submit-bug-report" function (:user-visible-flag t) nil [5192 6378])
+            ("condition-case" code nil nil [6498 6557])
+            ("unless" code nil nil [6560 6941])
+            ("bbdb-have-re-char-classes" variable
+               (:constant-flag t
+                :default-value (string-match "[[:alpha:]]" "x"))
+                nil [6944 7096])
+            ("bbdb" customgroup (:user-visible-flag t) nil [7116 7205])
+            ("put" code nil nil [7207 7259])
+            ("bbdb-hooks" customgroup (:user-visible-flag t) nil [7261 7344])
+            ("bbdb-record-display" customgroup (:user-visible-flag t) nil [7346 7449])
+            ("bbdb-record-creation" customgroup (:user-visible-flag t) nil [7451 7556])
+            ("bbdb-noticing-records" customgroup (:user-visible-flag t) nil [7558 7679])
+            ("put" code nil nil [7680 7738])
+            ("bbdb-record-use" customgroup (:user-visible-flag t) nil [7740 7835])
+            ("bbdb-database" customgroup (:user-visible-flag t) nil [7837 7930])
+            ("bbdb-saving" customgroup (:user-visible-flag t) nil [7932 8027])
+            ("bbdb-mua-specific" customgroup (:user-visible-flag t) nil [8029 8108])
+            ("bbdb-mua-specific-gnus" customgroup (:user-visible-flag t) nil [8110 8213])
+            ("put" code nil nil [8215 8273])
+            ("bbdb-mua-specific-gnus-scoring" customgroup (:user-visible-flag t) nil [8275 8399])
+            ("put" code nil nil [8401 8467])
+            ("bbdb-mua-specific-gnus-splitting" customgroup (:user-visible-flag t) nil [8469 8597])
+            ("put" code nil nil [8599 8667])
+            ("bbdb-mua-specific-vm" customgroup (:user-visible-flag t) nil [8669 8768])
+            ("put" code nil nil [8770 8824])
+            ("bbdb-phone-dialing" customgroup (:user-visible-flag t) nil [8826 8918])
+            ("put" code nil nil [8919 8972])
+            ("bbdb-utilities" customgroup (:user-visible-flag t) nil [8974 9047])
+            ("bbdb-utilities-finger" customgroup (:user-visible-flag t) nil [9049 9188])
+            ("put" code nil nil [9189 9245])
+            ("bbdb-utilities-ftp" customgroup (:user-visible-flag t) nil [9247 9368])
+            ("put" code nil nil [9369 9422])
+            ("bbdb-utilities-print" customgroup (:user-visible-flag t) nil [9424 9549])
+            ("put" code nil nil [9550 9607])
+            ("bbdb-utilities-supercite" customgroup (:user-visible-flag t) nil [9609 9747])
+            ("if" code nil nil [9748 9879])
+            ("bbdb-utilities-server" customgroup (:user-visible-flag t) nil [9881 10036])
+            ("if" code nil nil [10037 10220])
+            ("define-widget" code nil nil [10246 10574])
+            ("bbdb-alist-with-header-match" function (:arguments ("widget" "value")) nil [10576 10726])
+            ("bbdb-file" variable
+               (:user-visible-flag t
+                :default-value "~/.bbdb")
+                nil [10755 10882])
+            ("bbdb-file-remote" variable (:user-visible-flag t) nil [11203 11728])
+            ("bbdb-file-remote-save-always" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [11730 11923])
+            ("unless" code nil nil [11925 12256])
+            ("bbdb-hashtable-size" variable
+               (:user-visible-flag t
+                :default-value 1021)
+                nil [12258 12824])
+            ("bbdb-default-area-code" variable (:user-visible-flag t) nil [12826 13360])
+            ("bbdb-lastname-prefixes" variable
+               (:user-visible-flag t
+                :default-value (quote ("von" "Von" "de" "De")))
+                nil [13362 13609])
+            ("bbdb-default-domain" variable (:user-visible-flag t) nil [13611 14106])
+            ("bbdb-north-american-phone-numbers-p" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [14108 14763])
+            ("bbdb-electric-p" variable (:user-visible-flag t) nil [14765 14916])
+            ("bbdb-case-fold-search" variable
+               (:user-visible-flag t
+                :default-value (default-value (quote case-fold-search)))
+                nil [14918 15175])
+            ("bbdb/mail-auto-create-p" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [15296 16070])
+            ("bbdb/news-auto-create-p" variable (:user-visible-flag t) nil [16072 16899])
+            ("bbdb-quiet-about-name-mismatches" variable (:user-visible-flag t) nil [16901 17639])
+            ("bbdb-use-alternate-names" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [17641 17982])
+            ("bbdb-readonly-p" variable (:user-visible-flag t) nil [17984 18426])
+            ("bbdb-continental-zip-regexp" variable (:default-value "^\\s *[A-Z][A-Z]?\\s *-\\s *[0-9][0-9][0-9]") nil [18428 18787])
+            ("bbdb-auto-revert-p" variable (:user-visible-flag t) nil [18789 19263])
+            ("bbdb-notice-auto-save-file" variable (:user-visible-flag t) nil [19265 19588])
+            ("bbdb-use-pop-up" variable (:default-value t) nil [19590 20020])
+            ("bbdb-pop-up-target-lines" variable
+               (:user-visible-flag t
+                :default-value 5)
+                nil [20022 20178])
+            ("bbdb-completion-type" variable (:user-visible-flag t) nil [20180 21147])
+            ("bbdb-completion-display-record" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [21149 21527])
+            ("bbdb-user-mail-names" variable (:user-visible-flag t) nil [21529 22075])
+            ("bbdb-always-add-addresses" variable
+               (:user-visible-flag t
+                :default-value (quote ask))
+                nil [22077 22987])
+            ("bbdb-new-nets-always-primary" variable (:user-visible-flag t) nil [22989 23650])
+            ("bbdb-send-mail-style" variable (:user-visible-flag t) nil [23652 24344])
+            ("bbdb-offer-save" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [24346 24848])
+            ("bbdb-message-caching-enabled" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [24850 25520])
+            ("bbdb-silent-running" variable (:user-visible-flag t) nil [25522 25897])
+            ("bbdb-mode-hook" variable (:user-visible-flag t) nil [25899 26026])
+            ("bbdb-list-hook" variable (:user-visible-flag t) nil [26028 26190])
+            ("bbdb-create-hook" variable
+               (:user-visible-flag t
+                :default-value (quote bbdb-creation-date-hook))
+                nil [26192 26762])
+            ("bbdb-change-hook" variable
+               (:user-visible-flag t
+                :default-value (quote bbdb-timestamp-hook))
+                nil [26764 27112])
+            ("bbdb-after-change-hook" variable (:user-visible-flag t) nil [27114 27558])
+            ("bbdb-canonicalize-net-hook" variable (:user-visible-flag t) nil [27560 28953])
+            ("bbdb-canonicalize-redundant-nets-p" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [28955 29846])
+            ("bbdb-notice-hook" variable (:user-visible-flag t) nil [29848 31129])
+            ("bbdb-after-read-db-hook" variable (:user-visible-flag t) nil [31131 31380])
+            ("bbdb-load-hook" variable (:user-visible-flag t) nil [31382 31679])
+            ("bbdb-initialize-hook" variable (:user-visible-flag t) nil [31681 31889])
+            ("bbdb-multiple-buffers" variable nil nil [31906 32283])
+            ("bbdb-mode-map" variable nil nil [32285 32367])
+            ("bbdb-mode-search-map" variable nil nil [32368 32457])
+            ("bbdb-file-coding-system" variable
+               (:constant-flag t
+                :default-value (if (fboundp (quote coding-system-p)) (cond ((coding-system-p (quote utf-8-emacs)) (quote utf-8-emacs)) (t (quote iso-2022-7bit)))))
+                nil [32591 32859])
+            ("bbdb-suppress-changed-records-recording" variable nil nil [32861 33520])
+            ("bbdb-records" variable nil nil [33702 33727])
+            ("bbdb-changed-records" variable nil nil [33728 33761])
+            ("bbdb-end-marker" variable nil nil [33762 33790])
+            ("bbdb-hashtable" variable nil nil [33791 33818])
+            ("bbdb-propnames" variable nil nil [33819 33846])
+            ("bbdb-message-cache" variable nil nil [33847 33878])
+            ("bbdb-showing-changed-ones" variable nil nil [33879 33917])
+            ("bbdb-modified-p" variable nil nil [33918 33946])
+            ("bbdb-address-print-formatting-alist" variable nil nil [33947 33991])
+            ("bbdb-debug" variable (:default-value t) nil [34008 34029])
+            ("bbdb-debug" function (:arguments ("body")) nil [34030 34271])
+            ("bbdb-force-dialog-boxes" variable nil nil [34429 34465])
+            ("bbdb-y-or-n-p" function (:arguments ("prompt")) nil [34467 34882])
+            ("bbdb-yes-or-no-p" function (:arguments ("prompt")) nil [34884 35149])
+            ("bbdb-invoke-hook" function (:arguments ("hook" "arg")) nil [35151 35500])
+            ("bbdb-invoke-hook-for-value" function (:arguments ("hook" "args")) nil [35502 35744])
+            ("bbdb-defstruct" function (:arguments ("conc-name" "slots")) nil [35746 37243])
+            ("bbdb-defstruct" code nil nil [37751 37857])
+            ("put" code nil nil [38101 38137])
+            ("put" code nil nil [38138 38172])
+            ("bbdb-defstruct" code nil nil [38348 38421])
+            ("bbdb-defstruct" code nil nil [38591 38666])
+            ("bbdb-defstruct" code nil nil [39061 39129])
+            ("bbdb-record-name-1" function (:arguments ("record")) nil [39167 39499])
+            ("bbdb-record-name" function (:arguments ("record")) nil [39638 39762])
+            ("bbdb-record-sortkey" function (:arguments ("record")) nil [39843 40156])
+            ("bbdb-record-marker" function (:arguments ("record")) nil [40158 40257])
+            ("bbdb-record-deleted-p" function (:arguments ("record")) nil [40259 40364])
+            ("bbdb-record-set-deleted-p" function (:arguments ("record" "val")) nil [40366 40487])
+            ("bbdb-record-set-namecache" function (:arguments ("record" "newval")) nil [40489 40616])
+            ("bbdb-record-set-sortkey" function (:arguments ("record" "newval")) nil [40618 40741])
+            ("bbdb-record-set-marker" function (:arguments ("record" "newval")) nil [40743 40864])
+            ("bbdb-record-notes" function (:arguments ("record")) nil [40933 41107])
+            ("bbdb-record-getprop" function (:arguments ("record" "property")) nil [41154 41661])
+            ("bbdb-get-field" function (:arguments ("rec" "field" "nn")) nil [41663 41970])
+            ("bbdb-record-putprop" function (:arguments ("record" "property" "newval")) nil [42017 43670])
+            ("bbdb-record-set-notes" function (:arguments ("record" "newval")) nil [43672 43894])
+            ("bbdb-phone-string" function (:arguments ("phone")) nil [43896 44688])
+            ("defalias" code nil nil [44853 44906])
+            ("bbdb-record-lessp" function (:arguments ("record1" "record2")) nil [44908 45061])
+            ("bbdb-subint" function (:arguments ("string" "match-number")) nil [45063 45263])
+            ("if" code nil nil [45285 45445])
+            ("bbdb-error-retry" function (:arguments ("form")) nil [45448 45856])
+            ("bbdb-default-label-list" variable
+               (:user-visible-flag t
+                :default-value (quote ("Home" "Office" "Mobile" "Other")))
+                nil [46124 46310])
+            ("bbdb-phones-label-list" variable
+               (:user-visible-flag t
+                :default-value bbdb-default-label-list)
+                nil [46312 46513])
+            ("bbdb-addresses-label-list" variable
+               (:user-visible-flag t
+                :default-value bbdb-default-label-list)
+                nil [46515 46721])
+            ("bbdb-label-completion-list" function (:arguments ("field")) nil [46723 47126])
+            ("bbdb-label-completion-default" function (:arguments ("field")) nil [47128 47628])
+            ("bbdb-data-completion-list" function (:arguments ("field")) nil [47743 48197])
+            ("bbdb-data-completion-default" function (:arguments ("field")) nil [48199 48697])
+            ("bbdb-buffer" variable nil nil [48703 48727])
+            ("bbdb-buffer" function nil nil [48728 49095])
+            ("bbdb-with-db-buffer" function (:arguments ("body")) nil [49097 50065])
+            ("bbdb-string-trim" function (:arguments ("string")) nil [50067 50629])
+            ("bbdb-read-string" function (:arguments ("prompt" "default" "completions")) nil [50631 50918])
+            ("bbdb-time-display-format" variable (:default-value "%d %b %Y") nil [50945 51157])
+            ("bbdb-time-convert" function (:arguments ("date" "format")) nil [51159 51720])
+            ("defalias" code nil nil [51722 51781])
+            ("defalias" code nil nil [51782 51845])
+            ("bbdb-gag-messages" variable (:constant-flag t) nil [51847 51936])
+            ("bbdb-buffer-name" variable
+               (:constant-flag t
+                :default-value "*BBDB*")
+                nil [51938 51974])
+            ("bbdb-display-layout-alist" variable
+               (:user-visible-flag t
+                :default-value (quote ((one-line (order phones mail-alias net notes) (name-end . 24) (toggle . t)) (multi-line (omit creation-date timestamp) (toggle . t)) (pop-up-multi-line) (full-multi-line))))
+                nil [51976 57023])
+            ("bbdb-display-layout" variable
+               (:user-visible-flag t
+                :default-value (quote multi-line))
+                nil [57026 57255])
+            ("bbdb-pop-up-display-layout" variable
+               (:user-visible-flag t
+                :default-value (quote pop-up-multi-line))
+                nil [57257 57537])
+            ("bbdb-display-layout-get-option" function (:arguments ("layout" "option")) nil [57539 57860])
+            ("bbdb-address-formatting-alist" variable (:default-value (quote ((bbdb-address-is-continental . bbdb-format-address-continental) (nil . bbdb-format-address-default)))) nil [57862 58807])
+            ("bbdb-address-print-formatting-alist" variable nil nil [58809 58853])
+            ("bbdb-address-is-continental" function (:arguments ("addr")) nil [58870 59239])
+            ("bbdb-format-streets" function (:arguments ("addr" "indent")) nil [59241 59553])
+            ("bbdb-format-address-continental" function (:arguments ("addr" "indent")) nil [59555 60859])
+            ("bbdb-format-address-default" function (:arguments ("addr" "indent")) nil [60861 62162])
+            ("bbdb-format-address" function (:arguments ("addr" "printing" "indent")) nil [62164 63432])
+            ("bbdb-format-record-name-company" function (:arguments ("record")) nil [63434 63838])
+            ("bbdb-format-record-one-line-phones" function (:arguments ("layout" "record" "phone")) nil [63840 64313])
+            ("bbdb-format-record-one-line-net" function (:arguments ("layout" "record" "net")) nil [64315 64541])
+            ("bbdb-format-record-one-line-notes" function (:arguments ("layout" "record" "notes")) nil [64543 64865])
+            ("bbdb-format-record-layout-one-line" function (:arguments ("layout" "record" "field-list")) nil [64867 67360])
+            ("bbdb-format-record-layout-multi-line" function (:arguments ("layout" "record" "field-list")) nil [67362 71684])
+            ("defalias" code nil nil [71686 71779])
+            ("defalias" code nil nil [71781 71876])
+            ("bbdb-format-record" function (:arguments ("record" "layout")) nil [71878 75213])
+            ("bbdb-frob-mode-line" function (:arguments ("n")) nil [75215 75710])
+            ("bbdb-display-records-1" function (:arguments ("records" "append" "layout")) nil [75712 79021])
+            ("bbdb-undisplay-records" function nil nil [79023 79480])
+            ("bbdb-inside-electric-display" variable (:constant-flag t) nil [79511 79554])
+            ("bbdb-electric-execute-me" variable nil nil [79630 79663])
+            ("bbdb-electric-completed-normally" variable nil nil [79664 79705])
+            ("electric-bbdb-display-records" function (:arguments ("records")) nil [79707 81142])
+            ("bbdb-electric-throw-to-execute" function (:arguments ("form-to-execute")) nil [81144 81596])
+            ("bbdb-done-command" function nil nil [81599 81680])
+            ("bbdb-bury-buffer" function nil nil [81682 81805])
+            ("bbdb-display-records" function (:arguments ("records" "layout" "append")) nil [81807 82916])
+            ("bbdbq" function nil nil [82918 83994])
+            ("bbdb-hashtable" function nil nil [83996 84085])
+            ("bbdb-changed-records" function nil nil [84087 84184])
+            ("bbdb-build-name" function (:arguments ("f" "l")) nil [84186 84386])
+            ("bbdb-remove!" function (:arguments ("e" "l")) nil [84388 84674])
+            ("bbdb-remove-memq-duplicates" function (:arguments ("l")) nil [84676 84925])
+            ("bbdb-gethash" function (:arguments ("name" "ht")) nil [84927 85066])
+            ("bbdb-puthash" function (:arguments ("name" "record" "ht")) nil [85068 85311])
+            ("bbdb-remhash" function (:arguments ("name" "record" "ht")) nil [85313 85611])
+            ("bbdb-search-intertwingle" function (:arguments ("name" "net")) nil [85613 86601])
+            ("bbdb-search-simple" function (:arguments ("name" "net")) nil [86603 88538])
+            ("bbdb-net-convert" function (:arguments ("record")) nil [88540 88796])
+            ("bbdb-split" function (:arguments ("string" "separators")) nil [88798 89580])
+            ("bbdb-join" function (:arguments ("list" "separator")) nil [89582 89789])
+            ("bbdb-hash-record" function (:arguments ("record")) nil [89791 90548])
+            ("inside-bbdb-records" variable nil nil [90574 90644])
+            ("bbdb-write-file-hooks" variable
+               (:user-visible-flag t
+                :default-value (quote (bbdb-write-file-hook-fn)))
+                nil [90646 90780])
+            ("bbdb-records" function (:arguments ("dont-check-disk" "already-in-db-buffer")) nil [90782 95429])
+            ("bbdb-revert-buffer" function (:arguments ("arg" "noconfirm")) nil [95431 95821])
+            ("parse-bbdb-internal" function nil nil [95823 99347])
+            ("parse-bbdb-read" function nil nil [99349 100090])
+            ("parse-bbdb-frobnicate" function (:arguments ("records")) nil [100092 103106])
+            ("bbdb-user-mail-names" function nil nil [103108 103327])
+            ("bbdb-write-file-hook-fn" function nil nil [103329 104787])
+            ("bbdb-delete-record-internal" function (:arguments ("record")) nil [104789 106194])
+            ("bbdb-insert-sorted" function (:arguments ("record" "records")) nil [106196 106688])
+            ("bbdb-insert-record-internal" function (:arguments ("record" "unmigrated")) nil [106690 108820])
+            ("bbdb-overwrite-record-internal" function (:arguments ("record" "unmigrated")) nil [108822 110760])
+            ("inside-bbdb-change-record" variable nil nil [110762 110812])
+            ("inside-bbdb-notice-hook" variable nil nil [110813 111010])
+            ("bbdb-change-record" function (:arguments ("record" "need-to-sort")) nil [111012 112897])
+            ("bbdb-copy-thing" function (:arguments ("thing")) nil [112899 114059])
+            ("bbdb-propnames" function nil nil [114061 114129])
+            ("bbdb-set-propnames" function (:arguments ("newval")) nil [114131 114936])
+            ("bbdb-mode" function nil nil [114955 119071])
+            ("bbdb-next-record" function
+               (:user-visible-flag t
+                :arguments ("p"))
+                nil [119149 119520])
+            ("bbdb-prev-record" function
+               (:user-visible-flag t
+                :arguments ("p"))
+                nil [119522 119814])
+            ("bbdb-maybe-update-display" function (:arguments ("bbdb-record")) nil [119817 120284])
+            ("bbdb-notes-default-separator" variable
+               (:user-visible-flag t
+                :default-value ", ")
+                nil [120286 120634])
+            ("bbdb-annotate-notes" function (:arguments ("bbdb-record" "annotation" "fieldname" "replace")) nil [120636 122053])
+            ("bbdb-offer-save" function nil nil [122055 122220])
+            ("bbdb-save-db-timeout" variable (:user-visible-flag t) nil [122222 122599])
+            ("bbdb-save-db" function
+               (:user-visible-flag t
+                :arguments ("prompt-first" "mention-if-not-saved"))
+                nil [122601 123350])
+            ("bbdb-clean-username" function (:arguments ("string")) nil [123383 125501])
+            ("bbdb-buffers-with-message-caches" variable (:default-value (quote nil)) nil [125561 125772])
+            ("notice-buffer-with-cache" function (:arguments ("buffer")) nil [125774 126535])
+            ("bbdb-message-cache" variable nil nil [126537 126802])
+            ("make-variable-buffer-local" code nil nil [126804 126852])
+            ("bbdb-message-cache-lookup" function (:arguments ("message-key")) nil [126854 127408])
+            ("bbdb-encache-message" function (:arguments ("message-key" "bbdb-records")) nil [127410 127751])
+            ("bbdb-decache-message" function (:arguments ("message-key")) nil [127753 127942])
+            ("bbdb-flush-all-caches" function nil nil [127944 128425])
+            ("bbdb-name-gubbish" variable
+               (:constant-flag t
+                :default-value (concat "[-,. 	/\\]+\\(" "[JjSs]r\\.?" "\\|V?\\(I\\.?\\)+V?" (concat "\\|" (regexp-opt bbdb-lastname-prefixes)) "\\)\\W*\\'"))
+                nil [128428 128643])
+            ("bbdb-divide-name" function (:arguments ("string")) nil [128645 129676])
+            ("bbdb-check-alternate-name" function (:arguments ("possible-name" "record")) nil [129678 130066])
+            ("bbdb-canonicalize-address" function (:arguments ("net")) nil [130069 131017])
+            ("bbdb-net-redundant-p" function (:arguments ("net" "old-nets")) nil [131052 132249])
+            ("bbdb-annotate-message-sender" function (:arguments ("from" "loudly" "create-p" "prompt-to-create-p")) nil [132253 147041])
+            ("bbdb-multiple-buffers-default" function nil nil [147078 147641])
+            ("bbdb-multiple-buffers-set-name" function (:arguments ("buffer-list" "new-name")) nil [147643 148187])
+            ("bbdb-pop-up-bbdb-buffer" function (:arguments ("horiz-predicate")) nil [148189 150818])
+            ("bbdb-pop-up-bbdb-buffer-horizontally" function (:arguments ("predicate")) nil [150820 151602])
+            ("bbdb-version" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [151604 152065])
+            ("bbdb-record-lessp-fn" function (:arguments ("record1" "record2")) nil [152122 152228])
+            ("bbdb-resort-database" function (:user-visible-flag t) nil [152230 153531])
+            ("bbdb-init-forms" variable (:default-value (quote ((gnus (add-hook (quote gnus-startup-hook) (quote bbdb-insinuate-gnus))) (mh-e (add-hook (quote mh-folder-mode-hook) (quote bbdb-insinuate-mh))) (rmail (add-hook (quote rmail-mode-hook) (quote bbdb-insinuate-rmail))) (sendmail (add-hook (quote mail-setup-hook) (quote bbdb-insinuate-sendmail))) (vm-old (add-hook (quote vm-load-hook) (quote bbdb-insinuate-vm))) (vm (progn (eval-after-load "vm" (quote (bbdb-insinuate-vm))))) (message (add-hook (quote message-setup-hook) (quote bbdb-insinuate-message))) (reportmail (add-hook (quote reportmail-load-hook) (quote bbdb-insinuate-reportmail))) (sc (add-hook (quote sc-load-hook) (quote bbdb-insinuate-sc))) (supercite (add-hook (quote sc-load-hook) (quote bbdb-insinuate-sc))) (w3 (add-hook (quote w3-load-hook) (quote bbdb-insinuate-w3)))))) nil [153533 154804])
+            ("bbdb-initialize" function (:arguments ("to-insinuate")) nil [154821 156986])
+            ("unless" code nil nil [157010 157454])
+            ("unless" code nil nil [157456 159940])
+            ("when" code nil nil [160182 160365])
+            ("bbdb-insinuate-sendmail" function nil nil [160367 160529])
+            ("bbdb-insinuate-message" function nil nil [160546 160696])
+            ("safe-require" function (:arguments ("thing")) nil [160794 160894])
+            ("bbdb-warn" function (:arguments ("args")) nil [161144 161209])
+            ("bbdb" package nil nil [161213 161228])
+            ("run-hooks" code nil nil [161283 161310]))          
+    :file "bbdb.el"
+    :pointmax 161311
+    :fsize 161310
+    :lastmodtime '(17818 4430 0 0)
+    :unmatched-syntax '((close-paren 45445 . 45446) (symbol 45266 . 45282) (open-paren 45265 . 45266) (close-paren 6941 . 6942) (symbol 6479 . 6495) (open-paren 6478 . 6479) (close-paren 5137 . 5138) (symbol 5045 . 5061) (open-paren 5044 . 5045) (close-paren 4700 . 4701) (symbol 4335 . 4351) (open-paren 4334 . 4335) (close-paren 3413 . 3414) (symbol 2421 . 2438) (open-paren 2420 . 2421) (close-paren 2417 . 2418) (symbol 2386 . 2403) (open-paren 2385 . 2386) (close-paren 6941 . 6942) (symbol 6479 . 6495) (open-paren 6478 . 6479) (close-paren 5137 . 5138) (symbol 5045 . 5061) (open-paren 5044 . 5045) (close-paren 4700 . 4701) (symbol 4335 . 4351) (open-paren 4334 . 4335) (close-paren 3413 . 3414) (symbol 2421 . 2438) (open-paren 2420 . 2421) (close-paren 2417 . 2418) (symbol 2386 . 2403) (open-paren 2385 . 2386))
+    )
+   (semanticdb-table "bbdb-com.el"
+    :file "bbdb-com.el"
+    :fsize 154663
+    :lastmodtime '(17839 10536 0 0)
+    )
+   (semanticdb-table "bbdb-gui.el"
+    :file "bbdb-gui.el"
+    :fsize 21173
+    :lastmodtime '(16122 39414 0 0)
+    )
+   (semanticdb-table "bbdb-snarf.el"
+    :file "bbdb-snarf.el"
+    :fsize 24720
+    :lastmodtime '(17527 63751 0 0)
+    )
+   )
+  :file "!home!neo!.emacs.d!bbdb-2.35!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

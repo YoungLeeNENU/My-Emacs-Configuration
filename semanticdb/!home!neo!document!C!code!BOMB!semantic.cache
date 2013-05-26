@@ -1,0 +1,97 @@
+;; Object BOMB/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BOMB/"
+  :tables (list 
+   (semanticdb-table "bomb.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cstdio" include (:system-flag t) nil [21 38])
+            ("cstdlib" include (:system-flag t) nil [39 57])
+            ("time.h" include (:system-flag t) nil [58 75])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [76 96])
+            ("SIZE" variable (:constant-flag t) nil [106 110])
+            ("matrix" variable
+               (:dereference 2
+                :type "char")
+                nil [114 138])
+            ("answer" variable
+               (:dereference 2
+                :type "char")
+                nil [139 163])
+            ("y" variable (:type "int") nil [164 173])
+            ("x" variable (:type "int") nil [164 173])
+            ("win_flag" variable (:type "bool") nil [174 196])
+            ("lose_flag" variable (:type "bool") nil [197 220])
+            ("select" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [234 239]))                  
+                :type "void")
+                nil [222 240])
+            ("show" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [251 256]))                  
+                :type "void")
+                nil [241 257])
+            ("init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [268 273]))                  
+                :type "void")
+                nil [258 274])
+            ("process" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [288 293]))                  
+                :type "void")
+                nil [275 294])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [305 314])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [315 328]))                  
+                :type "int")
+                nil [296 711])
+            ("select" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [725 730]))                  
+                :type "void")
+                nil [713 837])
+            ("show" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [868 873]))                  
+                :type "void")
+                nil [858 1241])
+            ("init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1272 1277]))                  
+                :type "void")
+                nil [1262 1689])
+            ("process" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1721 1726]))                  
+                :type "void")
+                nil [1708 2058]))          
+    :file "bomb.cpp"
+    :pointmax 2059
+    :fsize 2070
+    :lastmodtime '(20614 36204 958424 808000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SIZE" . ((number "9" 111 . 112)))
+          )
+
+    )
+   )
+  :file "!home!neo!document!C!code!BOMB!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

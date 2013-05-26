@@ -1,0 +1,365 @@
+;; Object mongoutils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mongoutils/"
+  :tables (list 
+   (semanticdb-table "str.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string" include (:system-flag t) nil [1083 1100])
+            ("sstream" include (:system-flag t) nil [1101 1119])
+            ("../../bson/util/builder.h" include nil nil [1171 1207])
+            ("mongoutils" type
+               (:members 
+                  ( ("str" type
+                       (:members 
+                          ( ("stream" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1504 1511])
+                                    ("ss" variable (:type ("mongo::StringBuilder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1524 1548])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("stream" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1610 1621]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1561 1692])
+                                    ("string" function
+                                       (:parent "std"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1714 1755]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1481 1766])
+                            ("startsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1799 1815])
+                                    ("prefix" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1816 1835]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1776 2052])
+                            ("startsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2084 2105])
+                                    ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2106 2127]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2061 2192])
+                            ("startsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2317 2331])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [2332 2340]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2294 2361])
+                            ("startsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2393 2414])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [2415 2423]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2370 2461])
+                            ("endsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2492 2513])
+                                    ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2514 2535]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2471 2707])
+                            ("endsWith" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2737 2751])
+                                    ("p" variable (:type "char") (reparse-symbol arg-sub-list) [2752 2759]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2716 2848])
+                            ("equals" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2878 2894])
+                                    ("b" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2895 2911]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2858 2944])
+                            ("after" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3065 3079])
+                                    ("x" variable (:type "char") (reparse-symbol arg-sub-list) [3080 3087]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3039 3181])
+                            ("after" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3215 3236])
+                                    ("x" variable (:type "char") (reparse-symbol arg-sub-list) [3237 3244]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3190 3359])
+                            ("after" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3482 3496])
+                                    ("x" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3497 3511]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3456 3613])
+                            ("after" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3647 3668])
+                                    ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3669 3690]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3622 3820])
+                            ("contains" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3975 3996])
+                                    ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3997 4018]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [3954 4084])
+                            ("contains" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4114 4135])
+                                    ("x" variable (:type "char") (reparse-symbol arg-sub-list) [4136 4143]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [4093 4298])
+                            ("before" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4411 4432])
+                                    ("x" variable (:type "char") (reparse-symbol arg-sub-list) [4433 4440]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4385 4562])
+                            ("before" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4672 4693])
+                                    ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4694 4715]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4646 4845])
+                            ("shareCommonPrefix" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5035 5049])
+                                    ("q" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5050 5064]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5006 5323])
+                            ("shareCommonPrefix" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5361 5382])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5383 5404]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [5332 5464])
+                            ("toUnsigned" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5585 5606]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [5558 5870])
+                            ("splitOn" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6140 6161])
+                                    ("c" variable (:type "char") (reparse-symbol arg-sub-list) [6162 6169])
+                                    ("L" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6170 6185])
+                                    ("R" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6186 6201]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6120 6511])
+                            ("rSplitOn" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6608 6629])
+                                    ("c" variable (:type "char") (reparse-symbol arg-sub-list) [6630 6637])
+                                    ("L" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6638 6653])
+                                    ("R" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6654 6669]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6587 6980])
+                            ("count" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7068 7090])
+                                    ("c" variable (:type "char") (reparse-symbol arg-sub-list) [7091 7099]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [7045 7267])
+                            ("ltrim" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7365 7386]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7340 7495])
+                            ("stripTrailing" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7577 7592])
+                                    ("chars" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7593 7611]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7551 7837]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1237 7844]))                  
+                :type "namespace")
+                nil [1209 7847]))          
+    :file "str.h"
+    :pointmax 7848
+    :fsize 7847
+    :lastmodtime '(20854 33965 0 0)
+    :unmatched-syntax '((OPERATOR 1705 . 1713) (symbol 643 . 647) (symbol 636 . 642) (punctuation 635 . 636))
+    )
+   )
+  :file "!home!neo!document!mongoDB!mongodb-src-r2.4.3!src!mongo!util!mongoutils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

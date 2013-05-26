@@ -1,0 +1,73 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "mainwidget.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("mainwidget.h" include nil nil [1 24])
+            ("ui_mainwidget.h" include nil nil [25 51])
+            ("QNetworkReply" include (:system-flag t) nil [52 76])
+            ("maskpausewidget.h" include nil nil [77 105])
+            ("MainWidget" function
+               (:constructor-flag t
+                :parent "MainWidget"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130 146]))                  
+                :type ("MainWidget" type (:type "class") nil nil))
+                nil [107 2019])
+            ("MainWidget" function
+               (:destructor-flag t
+                :parent "MainWidget"
+                :type "void")
+                nil [2021 2317])
+            ("onRecvImage" function
+               (:parent "MainWidget"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("QNetworkReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2350 2371]))                  
+                :type "void")
+                nil [2321 2934])
+            ("onImageChanged" function
+               (:parent "MainWidget"
+                :arguments 
+                  ( ("imgurl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2968 2990]))                  
+                :type "void")
+                nil [2936 3115])
+            ("mousePressEvent" function
+               (:parent "MainWidget"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3150 3169]))                  
+                :type "void")
+                nil [3117 3229])
+            ("onMaskPressed" function
+               (:parent "MainWidget"
+                :type "void")
+                nil [3231 3323])
+            ("onPauseShortcutActivate" function
+               (:parent "MainWidget"
+                :type "void")
+                nil [3325 3551]))          
+    :file "mainwidget.cpp"
+    :pointmax 3552
+    :fsize 3551
+    :lastmodtime '(20822 26693 728187 729000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!C++!code!doubanfm-qt!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

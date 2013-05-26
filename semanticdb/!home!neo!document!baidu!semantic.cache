@@ -1,0 +1,9 @@
+;; Object baidu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "baidu/"
+  :tables (list 
+     )
+  :file "!home!neo!document!baidu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

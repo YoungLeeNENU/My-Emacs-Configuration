@@ -81,15 +81,15 @@ g++ -Wall编译"
 		  (message "Buffer not attached to a file, won't compile!")
 		(if (eq major-mode 'c-mode)
 			(setq command
-				  (concat "gcc -Wall -o "
+				  (concat "gcc -Wall -O2 -o "
 						  (file-name-sans-extension
 						   (file-name-nondirectory buffer-file-name))
 						  " "
 						  (file-name-nondirectory buffer-file-name)
-						  " -g -lm -std=gnu99"))
+						  " -g -lm -std=c99"))
 		  (if (eq major-mode 'c++-mode)
 			  (setq command
-					(concat "g++ -Wall -o "
+					(concat "g++ -Wall -O2 -o "
 							(file-name-sans-extension
 							 (file-name-nondirectory buffer-file-name))
 							" "

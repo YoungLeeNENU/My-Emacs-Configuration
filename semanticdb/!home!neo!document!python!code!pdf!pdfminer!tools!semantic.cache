@@ -1,0 +1,309 @@
+;; Object tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tools/"
+  :tables (list 
+   (semanticdb-table "pdf2txt.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("pdfminer.pdfparser" include nil nil [35 88])
+            ("pdfminer.pdfinterp" include nil nil [89 171])
+            ("pdfminer.pdfdevice" include nil nil [172 226])
+            ("pdfminer.converter" include nil nil [227 300])
+            ("pdfminer.cmapdb" include nil nil [301 335])
+            ("pdfminer.layout" include nil nil [336 372])
+            ("pdfminer.image" include nil nil [373 411])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [429 433]))              ) nil [420 3753])
+            ("if" code nil nil [3754 3806]))          
+    :file "pdf2txt.py"
+    :pointmax 3806
+    :fsize 3805
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "conv_afm.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("fileinput" include nil nil [35 51])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [62 66]))              ) nil [53 1287])
+            ("if" code nil nil [1288 1340]))          
+    :file "conv_afm.py"
+    :pointmax 1340
+    :fsize 1339
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "conv_cmap.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("os.path" include nil nil [35 49])
+            ("gzip" include nil nil [50 61])
+            ("cPickle" include nil nil [62 86])
+            ("process_cid2code" function (:arguments 
+              ( ("fp" variable nil (reparse-symbol function_parameters) [109 111])
+                ("check_codecs" variable nil (reparse-symbol function_parameters) [113 125]))              ) nil [88 3648])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [3665 3669]))              ) nil [3656 4759])
+            ("if" code nil nil [4760 4812]))          
+    :file "conv_cmap.py"
+    :pointmax 4812
+    :fsize 4811
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "conv_glyphlist.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("fileinput" include nil nil [35 51])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [62 66]))              ) nil [53 589])
+            ("if" code nil nil [590 642]))          
+    :file "conv_glyphlist.py"
+    :pointmax 642
+    :fsize 641
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latin2ascii.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [88 98])
+            ("\"\"\" Mappings from Latin-1 characters to ASCII.
+
+This is an in-house mapping table for some Latin-1 characters
+(acutes, umlauts, etc.) to ASCII strings.
+\"\"\"" code nil nil [100 255])
+            ("LATIN2ASCII" variable nil nil [257 1645])
+            ("latin2ascii" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [1663 1664]))              ) nil [1647 1726])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [1737 1741]))              ) nil [1728 2255])
+            ("if" code nil nil [2256 2308]))          
+    :file "latin2ascii.py"
+    :pointmax 2308
+    :fsize 2307
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dumppdf.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [159 173])
+            ("re" include nil nil [159 173])
+            ("pdfminer.psparser" include nil nil [174 224])
+            ("pdfminer.pdfparser" include nil nil [225 293])
+            ("pdfminer.pdftypes" include nil nil [294 368])
+            ("ESC_PAT" variable nil nil [371 434])
+            ("e" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [441 442]))              ) nil [435 507])
+            ("dumpxml" function (:arguments 
+              ( ("out" variable nil (reparse-symbol function_parameters) [531 534])
+                ("obj" variable nil (reparse-symbol function_parameters) [536 539])
+                ("codec" variable nil (reparse-symbol function_parameters) [541 546]))              ) nil [519 2211])
+            ("dumptrailers" function (:arguments 
+              ( ("out" variable nil (reparse-symbol function_parameters) [2244 2247])
+                ("doc" variable nil (reparse-symbol function_parameters) [2249 2252]))              ) nil [2227 2399])
+            ("dumpallobjs" function (:arguments 
+              ( ("out" variable nil (reparse-symbol function_parameters) [2430 2433])
+                ("doc" variable nil (reparse-symbol function_parameters) [2435 2438])
+                ("codec" variable nil (reparse-symbol function_parameters) [2440 2445]))              ) nil [2414 2893])
+            ("dumpoutline" function (:arguments 
+              ( ("outfp" variable nil (reparse-symbol function_parameters) [2924 2929])
+                ("fname" variable nil (reparse-symbol function_parameters) [2931 2936])
+                ("objids" variable nil (reparse-symbol function_parameters) [2938 2944])
+                ("pagenos" variable nil (reparse-symbol function_parameters) [2946 2953])
+                ("password" variable nil (reparse-symbol function_parameters) [2955 2963])
+                ("dumpall" variable nil (reparse-symbol function_parameters) [2984 2991])
+                ("codec" variable nil (reparse-symbol function_parameters) [2999 3004]))              ) nil [2908 4704])
+            ("dumppdf" function (:arguments 
+              ( ("outfp" variable nil (reparse-symbol function_parameters) [4727 4732])
+                ("fname" variable nil (reparse-symbol function_parameters) [4734 4739])
+                ("objids" variable nil (reparse-symbol function_parameters) [4741 4747])
+                ("pagenos" variable nil (reparse-symbol function_parameters) [4749 4756])
+                ("password" variable nil (reparse-symbol function_parameters) [4758 4766])
+                ("dumpall" variable nil (reparse-symbol function_parameters) [4783 4790])
+                ("codec" variable nil (reparse-symbol function_parameters) [4798 4803]))              ) nil [4715 5693])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [5711 5715]))              ) nil [5702 6878])
+            ("if" code nil nil [6879 6931]))          
+    :file "dumppdf.py"
+    :pointmax 6931
+    :fsize 6930
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pdf2html.cgi"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [426 459])
+            ("os" include nil nil [426 459])
+            ("os.path" include nil nil [426 459])
+            ("re" include nil nil [426 459])
+            ("time" include nil nil [426 459])
+            ("cgi" include nil nil [460 498])
+            ("logging" include nil nil [460 498])
+            ("traceback" include nil nil [460 498])
+            ("random" include nil nil [460 498])
+            ("pdfminer" include nil nil [563 578])
+            ("pdfminer.pdfinterp" include nil nil [579 641])
+            ("pdfminer.converter" include nil nil [642 701])
+            ("pdfminer.layout" include nil nil [702 738])
+            ("q" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [775 776]))              ) nil [769 875])
+            ("Q" variable nil nil [905 940])
+            ("url" function (:arguments 
+              ( ("base" variable nil (reparse-symbol function_parameters) [949 953])
+                ("kw" variable nil (reparse-symbol function_parameters) [955 959]))              ) nil [941 1154])
+            ("FileSizeExceeded" type
+               (:superclasses ("ValueError")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [1171 1212])
+            ("convert" function (:arguments 
+              ( ("infp" variable nil (reparse-symbol function_parameters) [1224 1228])
+                ("outfp" variable nil (reparse-symbol function_parameters) [1230 1235])
+                ("path" variable nil (reparse-symbol function_parameters) [1237 1241])
+                ("codec" variable nil (reparse-symbol function_parameters) [1243 1248])
+                ("maxpages" variable nil (reparse-symbol function_parameters) [1270 1278])
+                ("maxfilesize" variable nil (reparse-symbol function_parameters) [1282 1293])
+                ("pagenos" variable nil (reparse-symbol function_parameters) [1297 1304])
+                ("html" variable nil (reparse-symbol function_parameters) [1323 1327]))              ) nil [1212 2086])
+            ("WebApp" type
+               (:superclasses ("object")
+                :members 
+                  ( ("TITLE" variable nil (reparse-symbol indented_block_body) [2129 2152])
+                    ("MAXFILESIZE" variable nil (reparse-symbol indented_block_body) [2157 2179])
+                    ("MAXPAGES" variable nil (reparse-symbol indented_block_body) [2224 2238])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2419 2435])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2444 2462])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2471 2493])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2502 2520])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2529 2551])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2560 2610])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2619 2665])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2674 2737])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2746 2799])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2808 2856])
+                            ("self" code nil (reparse-symbol indented_block_body) [2865 2916])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2925 2958])
+                            ("return" code nil (reparse-symbol indented_block_body) [2967 2973]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2305 2309])
+                            ("infp" variable nil (reparse-symbol function_parameters) [2311 2315])
+                            ("outfp" variable nil (reparse-symbol function_parameters) [2327 2332])
+                            ("environ" variable nil (reparse-symbol function_parameters) [2345 2352])
+                            ("codec" variable nil (reparse-symbol function_parameters) [2382 2387])
+                            ("apppath" variable nil (reparse-symbol function_parameters) [2397 2404]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2292 2974])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2987 2991])
+                            ("args" variable nil (reparse-symbol function_parameters) [2993 2998]))                          )
+                        (reparse-symbol indented_block_body) [2979 3227])
+                    ("response_200" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3249 3253]))                          )
+                        (reparse-symbol indented_block_body) [3232 3531])
+                    ("response_404" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3553 3557]))                          )
+                        (reparse-symbol indented_block_body) [3536 3905])
+                    ("response_301" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3927 3931])
+                            ("url" variable nil (reparse-symbol function_parameters) [3933 3936]))                          )
+                        (reparse-symbol indented_block_body) [3910 4149])
+                    ("coverpage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4168 4172]))                          )
+                        (reparse-symbol indented_block_body) [4154 5162])
+                    ("setup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5177 5181]))                          )
+                        (reparse-symbol indented_block_body) [5167 5481])
+                    ("convert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5498 5502]))                          )
+                        (reparse-symbol indented_block_body) [5486 7211]))                  
+                :type "class")
+                nil [2102 7211])
+            ("if" code nil nil [7220 7306]))          
+    :file "pdf2html.cgi"
+    :pointmax 7306
+    :fsize 7305
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "prof.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("prof_main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [50 54]))              ) nil [36 776])
+            ("if" code nil nil [777 834]))          
+    :file "prof.py"
+    :pointmax 834
+    :fsize 833
+    :lastmodtime '(20889 57085 699322 696000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "runapp.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [100 110])
+            ("urllib" include nil nil [111 124])
+            ("httplib" include nil nil [125 154])
+            ("BaseHTTPServer" include nil nil [155 192])
+            ("SimpleHTTPServer" include nil nil [193 246])
+            ("WebAppHandler" type
+               (:superclasses ("SimpleHTTPRequestHandler")
+                :members 
+                  ( ("APP_CLASS" variable nil (reparse-symbol indented_block_body) [321 337])
+                    ("do_POST" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [355 359]))                          )
+                        (reparse-symbol indented_block_body) [343 392])
+                    ("send_head" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [411 415]))                          )
+                        (reparse-symbol indented_block_body) [397 448])
+                    ("run_cgi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [465 469]))                          )
+                        (reparse-symbol indented_block_body) [453 2735]))                  
+                :type "class")
+                nil [269 2735])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [2752 2756]))              ) nil [2743 3475])
+            ("if" code nil nil [3476 3532]))          
+    :file "runapp.py"
+    :pointmax 3532
+    :fsize 3531
+    :lastmodtime '(20890 7874 902641 39000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!pdf!pdfminer!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

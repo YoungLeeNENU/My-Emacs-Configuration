@@ -1,0 +1,201 @@
+;; Object books/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "books/"
+  :tables (list 
+   (semanticdb-table "time_management.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("time<sub>management" section nil nil [245 2297])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2297 3917])
+            ("time<sub>management" section (:members 
+              ( ("time<sub>management" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 Time Management" anchor nil nil [4123 4126])
+                        ("1.1 Principles" anchor nil nil [4171 4174])
+                        ("1.1.1 Take notes" anchor nil nil [4218 4221])
+                        ("1.1.2 Keep your brain on those which are important" anchor nil nil [4269 4272])
+                        ("1.1.3 Develop a routine work and keep going" anchor nil nil [4354 4357])
+                        ("1.1.4 Form the habbit and faith" anchor nil nil [4432 4435])
+                        ("1.1.5 Keep focus while handling a task" anchor nil nil [4498 4501])
+                        ("1.1.6 Manage your social activities also" anchor nil nil [4571 4574])
+                        ("1.2 Interuptions" anchor nil nil [4658 4661])
+                        ("1.3 The Routine" anchor nil nil [4707 4710])
+                        ("1.4 Loop" anchor nil nil [4755 4758])
+                        ("1.4.1 Loop: Time Table" anchor nil nil [4796 4799])
+                        ("1.4.2 Loop: Life Goal" anchor nil nil [4853 4856])
+                        ("1.5 Priority" anchor nil nil [4921 4924])
+                        ("1.6 Pressure" anchor nil nil [4966 4969])
+                        ("1.7 Avoid Wasting Time" anchor nil nil [5011 5014]))                      ) nil [4053 5144])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5503 5804])
+                            ("1.1.2" section nil nil [5804 6278])
+                            ("1.1.3" section nil nil [6278 6641])
+                            ("1.1.4" section nil nil [6641 6961])
+                            ("1.1.5" section nil nil [6961 7337])
+                            ("1.1.6" section nil nil [7337 7617]))                          ) nil [5322 7617])
+                        ("1.2" section nil nil [7617 7805])
+                        ("1.3" section nil nil [7805 7992])
+                        ("1.4" section (:members 
+                          ( ("1.4.1" section nil nil [8167 8367])
+                            ("1.4.2" section nil nil [8367 8571]))                          ) nil [7992 8571])
+                        ("1.5" section nil nil [8571 8755])
+                        ("1.6" section nil nil [8755 8939])
+                        ("1.7" section (:members 
+                          ( ("Org" anchor nil nil [9222 9225])
+                            ("Emacs" anchor nil nil [9279 9282])
+                            ("Validate XHTML 1.0" anchor nil nil [9349 9352]))                          ) nil [8939 9448]))                      ) nil [5144 9448]))                  ) nil [3973 9448]))              ) nil [3917 9448]))          
+    :file "time_management.html"
+    :pointmax 9448
+    :fsize 9447
+    :lastmodtime '(20872 51715 789421 934000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TimeManagement.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("TimeManagement" section nil nil [245 2275])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2275 3895])
+            ("TimeManagement" section (:members 
+              ( ("TimeManagement" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 Time Management" anchor nil nil [4090 4093])
+                        ("1.1 Principles" anchor nil nil [4138 4141])
+                        ("1.1.1 Take notes" anchor nil nil [4185 4188])
+                        ("1.1.2 Keep your brain on those which are important" anchor nil nil [4236 4239])
+                        ("1.1.3 Develop a routine work and keep going" anchor nil nil [4321 4324])
+                        ("1.1.4 Form the habbit and faith" anchor nil nil [4399 4402])
+                        ("1.1.5 Keep focus while handling a task" anchor nil nil [4465 4468])
+                        ("1.1.6 Manage your social activities also" anchor nil nil [4538 4541])
+                        ("1.2 Interuptions" anchor nil nil [4625 4628])
+                        ("1.2.1 Multi-task" anchor nil nil [4674 4677])
+                        ("1.2.2 Better workspace" anchor nil nil [4725 4728])
+                        ("1.2.3 The first hour" anchor nil nil [4782 4785])
+                        ("1.2.4 Handle interuptions in a team work" anchor nil nil [4837 4840])
+                        ("1.3 The Routine" anchor nil nil [4924 4927])
+                        ("1.4 Loop" anchor nil nil [4972 4975])
+                        ("1.4.1 Loop: Time Table" anchor nil nil [5013 5016])
+                        ("1.4.2 Loop: Life Goal" anchor nil nil [5070 5073])
+                        ("1.5 Priority" anchor nil nil [5138 5141])
+                        ("1.6 Pressure" anchor nil nil [5183 5186])
+                        ("1.7 Avoid Wasting Time" anchor nil nil [5228 5231]))                      ) nil [4020 5361])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5720 6021])
+                            ("1.1.2" section nil nil [6021 6495])
+                            ("1.1.3" section nil nil [6495 6858])
+                            ("1.1.4" section nil nil [6858 7178])
+                            ("1.1.5" section nil nil [7178 7554])
+                            ("1.1.6" section nil nil [7554 7834]))                          ) nil [5539 7834])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [8017 8251])
+                            ("1.2.2" section nil nil [8251 8503])
+                            ("1.2.3" section nil nil [8503 8800])
+                            ("1.2.4" section nil nil [8800 9124]))                          ) nil [7834 9124])
+                        ("1.3" section nil nil [9124 9334])
+                        ("1.4" section (:members 
+                          ( ("1.4.1" section nil nil [9509 9709])
+                            ("1.4.2" section nil nil [9709 9913]))                          ) nil [9334 9913])
+                        ("1.5" section nil nil [9913 10097])
+                        ("1.6" section nil nil [10097 10281])
+                        ("1.7" section (:members 
+                          ( ("Org" anchor nil nil [10564 10567])
+                            ("Emacs" anchor nil nil [10621 10624])
+                            ("Validate XHTML 1.0" anchor nil nil [10691 10694]))                          ) nil [10281 10790]))                      ) nil [5361 10790]))                  ) nil [3951 10790]))              ) nil [3895 10790]))          
+    :file "TimeManagement.html"
+    :pointmax 10790
+    :fsize 10789
+    :lastmodtime '(20872 52857 37392 754000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!books!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,84 @@
+;; Object mysite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysite/"
+  :tables (list 
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [59 110])
+            ("django.contrib" include nil nil [111 143])
+            ("admin" code nil nil [145 165])
+            ("urlpatterns" variable nil nil [167 324]))          
+    :file "urls.py"
+    :pointmax 325
+    :fsize 352
+    :lastmodtime '(20849 24829 312096 241000)
+    :unmatched-syntax '(($EOI 325 . 325) ($EOI 326 . 326))
+    )
+   (semanticdb-table "settings.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("DEBUG" variable nil nil [82 94])
+            ("TEMPLATE_DEBUG" variable nil nil [95 117])
+            ("ADMINS" variable nil nil [119 178])
+            ("MANAGERS" variable nil nil [180 197])
+            ("DATABASES" variable nil nil [208 822])
+            ("TIME_ZONE" variable nil nil [1088 1113])
+            ("LANGUAGE_CODE" variable nil nil [1244 1267])
+            ("SITE_ID" variable nil nil [1269 1280])
+            ("USE_I18N" variable nil nil [1402 1417])
+            ("USE_L10N" variable nil nil [1534 1549])
+            ("USE_TZ" variable nil nil [1625 1638])
+            ("MEDIA_ROOT" variable nil nil [1771 1786])
+            ("MEDIA_URL" variable nil nil [1954 1968])
+            ("STATIC_ROOT" variable nil nil [2226 2242])
+            ("STATIC_URL" variable nil nil [2322 2345])
+            ("STATICFILES_DIRS" variable nil nil [2386 2597])
+            ("STATICFILES_FINDERS" variable nil nil [2683 2894])
+            ("SECRET_KEY" variable nil nil [2949 3022])
+            ("TEMPLATE_LOADERS" variable nil nil [3100 3270])
+            ("MIDDLEWARE_CLASSES" variable nil nil [3272 3707])
+            ("ROOT_URLCONF" variable nil nil [3709 3737])
+            ("WSGI_APPLICATION" variable nil nil [3812 3856])
+            ("TEMPLATE_DIRS" variable nil nil [3858 4145])
+            ("INSTALLED_APPS" variable nil nil [4147 4550])
+            ("LOGGING" variable nil nil [4854 5406]))          
+    :file "settings.py"
+    :pointmax 5407
+    :fsize 5442
+    :lastmodtime '(20844 5229 999272 119000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "wsgi.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+WSGI config for mysite project.
+
+This module contains the WSGI application used by Django's development server
+and any production WSGI deployments. It should expose a module-level variable
+named ``application``. Django's ``runserver`` and ``runfcgi`` commands discover
+this application via the ``WSGI_APPLICATION`` setting.
+
+Usually you will have the standard Django WSGI application here, but it also
+might make sense to replace the whole Django WSGI application with a custom one
+that later delegates to the Django one. For example, you could introduce WSGI
+middleware here, or combine a Django application with an application of another
+framework.
+
+\"\"\"" code nil nil [45 704])
+            ("os" include nil nil [705 714])
+            ("os" code nil nil [716 782])
+            ("django.core.wsgi" include nil nil [958 1007])
+            ("application" variable nil nil [1008 1044]))          
+    :file "wsgi.py"
+    :pointmax 1179
+    :fsize 1200
+    :lastmodtime '(20843 59458 51561 243000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!Django!oracle!mysite!mysite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,142 @@
+;; Object book/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "book/"
+  :tables (list 
+   (semanticdb-table "letter-to-reader.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Letter To Reader" section nil nil [18 359])
+            ("Copyright &copy; 2003-2004, Peter Seibel" section (:members 
+              ( ("Back to index." anchor nil nil [2418 2421]))              ) nil [359 2479]))          
+    :file "letter-to-reader.html"
+    :pointmax 2479
+    :fsize 2478
+    :lastmodtime '(19341 61942 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Practical Common Lisp" section nil nil [21 128])
+            ("-->
+    <style type='text/css'>
+<!-- 
+BODY
+{
+font-family: sans-serif;
+margin: .5in;
+}
+.INTRO
+{
+font-size: 11pt;
+}
+TD.NEWS
+{
+vertical-align: top;
+width: 22em;
+}
+P.BOX-HEADER
+{
+font-weight: bold;
+margin-bottom: -1ex;
+}
+DIV.NEWS
+{
+float: right;
+width: 20em;
+text-align: center;
+background-color: #ffc426;
+margin: 1em;
+padding: 1em;
+border-style: solid;
+border-width: thin;
+}
+LI
+{
+padding: 0pt 2pt;
+}
+H1
+{
+text-align: center;
+margin-bottom: 0pt;
+}
+P.BLURB
+{
+text-align: center;
+font-size: 12pt;
+font-style: italic;
+}
+P.MORE-BLURBS
+{
+margin-top: -12pt;
+text-align: center;
+font-size: 10pt;
+font-family: sans-serif;
+}
+#jolt-logo {
+  float: right;
+  border: none;
+}
+ -->" section nil nil [128 956])
+            ("Practical Common Lisp<a href=\"http://www.ddj.com/dept/architect/187900423?pgno=4\"><img id='jolt-logo' src=\"jolt_logo16_sm.gif\">" section (:members 
+              ( ("Practical Common Lisp<a href=\"http://www.ddj.com/dept/architect/187900423?pgno=4\"><img id='jolt-logo' src=\"jolt_logo16_sm.gif\">" section (:members 
+                  ( ("that book is dead sexy &mdash;Xach on #lisp" anchor nil nil [1236 1239])
+                    ("more blurbs" anchor nil nil [1449 1452])
+                    ("Apress" anchor nil nil [1660 1663])
+                    ("book@gigamonkeys.com" anchor nil nil [1884 1887])
+                    ("letter to the
+               reader" anchor nil nil [2598 2601])
+                    ("Coders at Work" anchor nil nil [2889 2892])
+                    ("Amazon" anchor nil nil [3102 3105])
+                    ("Barnes &amp; Noble" anchor nil nil [3277 3280])
+                    ("Powell's" anchor nil nil [3420 3423])
+                    ("eBook from Apress" anchor nil nil [3551 3554])
+                    ("Amazon" anchor nil nil [3707 3710])
+                    ("Powells" anchor nil nil [4048 4051])
+                    ("Barnes &amp; Noble" anchor nil nil [4139 4142])
+                    ("tar.gz" anchor nil nil [4315 4318])
+                    ("zip" anchor nil nil [4362 4365])
+                    ("review" anchor nil nil [4609 4612])
+                    ("Introduction: Why Lisp?" anchor nil nil [5182 5185])
+                    ("Lather, Rinse, Repeat: A Tour of the REPL" anchor nil nil [5262 5265])
+                    ("Practical: A Simple Database" anchor nil nil [5377 5380])
+                    ("Syntax and Semantics" anchor nil nil [5468 5471])
+                    ("Functions" anchor nil nil [5544 5547])
+                    ("Variables" anchor nil nil [5598 5601])
+                    ("Macros: Standard Control Constructs" anchor nil nil [5652 5655])
+                    ("Macros: Defining Your Own" anchor nil nil [5757 5760])
+                    ("Practical: Building a Unit Test Framework" anchor nil nil [5842 5845])
+                    ("Numbers, Characters, and Strings" anchor nil nil [5959 5962])
+                    ("Collections" anchor nil nil [6057 6060])
+                    ("They Called It LISP for a Reason: List Processing" anchor nil nil [6115 6118])
+                    ("Beyond Lists: Other Uses for Cons Cells" anchor nil nil [6248 6251])
+                    ("Files and File I/O" anchor nil nil [6361 6364])
+                    ("Practical: A Portable Pathname Library" anchor nil nil [6432 6435])
+                    ("Object Reorientation: Generic Functions" anchor nil nil [6543 6546])
+                    ("Object Reorientation: Classes" anchor nil nil [6656 6659])
+                    ("A Few FORMAT Recipes" anchor nil nil [6749 6752])
+                    ("Beyond Exception Handling: Conditions and Restarts" anchor nil nil [6825 6828])
+                    ("The Special Operators" anchor nil nil [6960 6963])
+                    ("Programming in the Large: Packages and Symbols" anchor nil nil [7038 7041])
+                    ("LOOP for Black Belts" anchor nil nil [7165 7168])
+                    ("Practical: A Spam Filter" anchor nil nil [7241 7244])
+                    ("Practical: Parsing Binary Files" anchor nil nil [7324 7327])
+                    ("Practical: An ID3 Parser" anchor nil nil [7421 7424])
+                    ("Practical: Web Programming with AllegroServe" anchor nil nil [7504 7507])
+                    ("Practical: An MP3 Database" anchor nil nil [7627 7630])
+                    ("Practical: A Shoutcast Server" anchor nil nil [7714 7717])
+                    ("Practical: An MP3 Browser" anchor nil nil [7807 7810])
+                    ("Practical: An HTML Generation Library, the Interpreter" anchor nil nil [7892 7895])
+                    ("Practical: An HTML Generation Library, the Compiler" anchor nil nil [8034 8037])
+                    ("Conclusion: What's Next?" anchor nil nil [8170 8173]))                  ) nil [1026 8348]))              ) nil [956 8348]))          
+    :file "index.html"
+    :pointmax 8348
+    :fsize 8347
+    :lastmodtime '(19913 43615 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!book!www.gigamonkeys.com!book!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

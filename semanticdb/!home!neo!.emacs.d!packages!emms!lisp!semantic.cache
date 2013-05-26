@@ -1,0 +1,210 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "emms-lastfm-client.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("md5" include nil nil [1092 1106])
+            ("parse-time" include nil nil [1107 1128])
+            ("emms" include nil nil [1129 1144])
+            ("emms-source-file" include nil nil [1145 1172])
+            ("xml" include nil nil [1173 1187])
+            ("emms-lastfm-client-username" variable nil nil [1189 1306])
+            ("emms-lastfm-client-api-key" variable nil nil [1308 1417])
+            ("emms-lastfm-client-api-secret-key" variable nil nil [1419 1542])
+            ("emms-lastfm-client-api-session-key" variable nil nil [1544 1628])
+            ("emms-lastfm-client-track" variable nil nil [1630 1693])
+            ("emms-lastfm-client-submission-api" variable (:default-value t) nil [1695 1800])
+            ("emms-lastfm-client-token" variable nil nil [1802 1872])
+            ("emms-lastfm-client-api-base-url" variable (:default-value "http://ws.audioscrobbler.com/2.0/") nil [1874 1975])
+            ("emms-lastfm-client-session-key-file" variable (:default-value (concat (file-name-as-directory emms-directory) "emms-lastfm-client-sessionkey")) nil [1977 2157])
+            ("emms-lastfm-client-cache-directory" variable (:default-value (file-name-as-directory (concat (file-name-as-directory emms-directory) "emms-lastfm-client-cache"))) nil [2159 2353])
+            ("emms-lastfm-client-playlist-valid" variable nil nil [2355 2442])
+            ("emms-lastfm-client-playlist-timer" variable nil nil [2444 2517])
+            ("emms-lastfm-client-playlist" variable nil nil [2519 2588])
+            ("emms-lastfm-client-track" variable nil nil [2590 2653])
+            ("emms-lastfm-client-original-next-function" variable nil nil [2655 2740])
+            ("emms-lastfm-client-playlist-buffer-name" variable (:default-value "*Emms Last.fm*") nil [2742 2859])
+            ("emms-lastfm-client-playlist-buffer" variable nil nil [2861 2949])
+            ("emms-lastfm-client-inhibit-cleanup" variable nil nil [2951 3054])
+            ("emms-lastfm-client-image-size" variable (:default-value "mega") nil [3056 3149])
+            ("emms-lastfm-client-artist-info-buffer-name" variable (:default-value "*Emms Last.fm Artist Info*") nil [3151 3277])
+            ("emms-lastfm-client-api-method-dict" variable (:default-value (quote ((auth-get-token "auth.gettoken" emms-lastfm-client-auth-get-token-ok emms-lastfm-client-auth-get-token-failed) (auth-get-session "auth.getsession" emms-lastfm-client-auth-get-session-ok emms-lastfm-client-auth-get-session-failed) (radio-tune "radio.tune" emms-lastfm-client-radio-tune-ok emms-lastfm-client-radio-tune-failed) (radio-getplaylist "radio.getplaylist" emms-lastfm-client-radio-getplaylist-ok emms-lastfm-client-radio-getplaylist-failed) (track-love "track.love" emms-lastfm-client-track-love-ok emms-lastfm-client-track-love-failed) (track-ban "track.ban" emms-lastfm-client-track-ban-ok emms-lastfm-client-track-ban-failed) (artist-getinfo "artist.getinfo" emms-lastfm-client-artist-getinfo-ok emms-lastfm-client-artist-getinfo-failed)))) nil [3279 4496])
+            ("emms-lastfm-client-get-method" function (:arguments ("method")) nil [4661 4910])
+            ("emms-lastfm-client-get-method-name" function (:arguments ("method")) nil [4912 5180])
+            ("emms-lastfm-client-get-method-ok" function (:arguments ("method")) nil [5182 5503])
+            ("emms-lastfm-client-get-method-fail" function (:arguments ("method")) nil [5505 5844])
+            ("emms-lastfm-client-encode-arguments" function (:arguments ("arguments")) nil [5846 6225])
+            ("emms-lastfm-client-construct-arguments" function (:arguments ("str" "arguments")) nil [6227 6520])
+            ("emms-lastfm-client-construct-method-call" function (:arguments ("method" "arguments")) nil [6522 6948])
+            ("emms-lastfm-client-construct-write-method-call" function (:arguments ("method" "arguments")) nil [6950 7349])
+            ("emms-lastfm-client-handle-response" function (:arguments ("method" "xml-response")) nil [7515 8073])
+            ("emms-lastfm-client-construct-urt" function nil nil [8267 8554])
+            ("emms-lastfm-client-make-call-urt" function nil nil [8556 8936])
+            ("emms-lastfm-client-construct-lexi" function (:arguments ("arguments")) nil [10064 10369])
+            ("emms-lastfm-client-construct-signature" function (:arguments ("method" "arguments")) nil [10371 10732])
+            ("emms-lastfm-client-default-error-handler" function (:arguments ("data")) nil [11031 11411])
+            ("emms-lastfm-client-ask-for-auth" function nil nil [11596 11963])
+            ("emms-lastfm-client-xspf-header" function (:arguments ("data")) nil [12123 12574])
+            ("emms-lastfm-client-xspf-tracklist" function (:arguments ("data")) nil [12576 12706])
+            ("emms-lastfm-client-xspf-header-date" function (:arguments ("header-alist")) nil [12708 12967])
+            ("emms-lastfm-client-xspf-header-expiry" function (:arguments ("header-alist")) nil [12969 13234])
+            ("emms-lastfm-client-xspf-header-creator" function (:arguments ("header-alist")) nil [13236 13507])
+            ("emms-lastfm-client-xspf-playlist" function (:arguments ("data")) nil [13509 13732])
+            ("emms-lastfm-client-xspf-extension" function (:arguments ("track")) nil [13829 14259])
+            ("emms-lastfm-client-xspf-get" function (:arguments ("node" "track")) nil [14261 14704])
+            ("emms-lastfm-client-set-timer" function (:arguments ("header")) nil [14920 15522])
+            ("emms-lastfm-client-consume-next-track" function nil nil [15767 16294])
+            ("emms-lastfm-client-set-lastfm-playlist-buffer" function nil nil [16296 16699])
+            ("emms-lastfm-client-load-next-track" function nil nil [16702 17397])
+            ("emms-lastfm-client-love-track" function (:user-visible-flag t) nil [17399 17899])
+            ("emms-lastfm-client-ban-track" function (:user-visible-flag t) nil [17901 18368])
+            ("emms-lastfm-client-track-advance" function
+               (:user-visible-flag t
+                :arguments ("first"))
+                nil [18458 18922])
+            ("emms-lastfm-client-next-function" function nil nil [18924 19191])
+            ("emms-lastfm-client-clean-after-stop" function nil nil [19193 19507])
+            ("emms-lastfm-client-play-playlist" function nil nil [19509 20015])
+            ("emms-lastfm-client-read-artist" function nil nil [20071 20484])
+            ("emms-lastfm-client-initialize-session" function nil nil [20486 20606])
+            ("emms-lastfm-client-info" function (:user-visible-flag t) nil [20608 20754])
+            ("emms-lastfm-client-play-user-station" function (:arguments ("username" "url")) nil [20912 21310])
+            ("emms-lastfm-client-play-similar-artists" function
+               (:user-visible-flag t
+                :arguments ("artist"))
+                nil [21312 21816])
+            ("emms-lastfm-client-play-recommended" function (:user-visible-flag t) nil [21818 22042])
+            ("emms-lastfm-client-play-loved" function (:user-visible-flag t) nil [22044 22250])
+            ("emms-lastfm-client-play-mix" function (:user-visible-flag t) nil [22252 22451])
+            ("emms-lastfm-client-play-neighborhood" function (:user-visible-flag t) nil [22453 22678])
+            ("emms-lastfm-client-play-library" function (:user-visible-flag t) nil [22680 22893])
+            ("emms-lastfm-client-play-user-loved" function (:arguments ("user")) nil [22895 23059])
+            ("emms-lastfm-client-play-user-neighborhood" function (:arguments ("user")) nil [23061 23237])
+            ("emms-lastfm-client-play-user-library" function (:arguments ("user")) nil [23239 23408])
+            ("emms-lastfm-client-convert-track" function (:arguments ("track")) nil [23569 24307])
+            ("emms-lastfm-client-show-track" function (:arguments ("track")) nil [24309 24526])
+            ("emms-lastfm-client-show" function (:user-visible-flag t) nil [24528 24743])
+            ("emms-lastfm-client-user-authorization" function (:user-visible-flag t) nil [24963 25143])
+            ("emms-lastfm-client-get-session" function (:user-visible-flag t) nil [25145 25361])
+            ("emms-lastfm-client-auth-get-token-ok" function (:arguments ("data")) nil [25574 25945])
+            ("emms-lastfm-client-auth-get-token-failed" function (:arguments ("data")) nil [25947 26098])
+            ("emms-lastfm-client-construct-get-session" function nil nil [26313 26645])
+            ("emms-lastfm-client-make-call-get-session" function nil nil [26647 27023])
+            ("emms-lastfm-client-save-session-key" function (:arguments ("key")) nil [27025 27271])
+            ("emms-lastfm-client-load-session-key" function nil nil [27273 27656])
+            ("emms-lastfm-client-check-session-key" function nil nil [27658 27975])
+            ("emms-lastfm-client-auth-get-session-ok" function (:arguments ("data")) nil [27977 28342])
+            ("emms-lastfm-client-auth-get-session-failed" function (:arguments ("data")) nil [28344 28505])
+            ("emms-lastfm-client-construct-radio-tune" function (:arguments ("station")) nil [28715 29083])
+            ("emms-lastfm-client-make-call-radio-tune" function (:arguments ("station")) nil [29085 29613])
+            ("emms-lastfm-client-radio-tune-failed" function (:arguments ("data")) nil [29615 29763])
+            ("emms-lastfm-client-radio-tune-ok" function (:arguments ("data")) nil [29765 30234])
+            ("emms-lastfm-client-construct-radio-getplaylist" function nil nil [30451 30817])
+            ("emms-lastfm-client-make-call-radio-getplaylist" function nil nil [30819 31370])
+            ("emms-lastfm-client-radio-getplaylist-failed" function (:arguments ("data")) nil [31372 31582])
+            ("emms-lastfm-client-list-filter" function (:arguments ("l")) nil [31584 31789])
+            ("emms-lastfm-client-radio-getplaylist-ok" function (:arguments ("data")) nil [31791 32148])
+            ("emms-lastfm-client-construct-track-love" function nil nil [32358 32896])
+            ("emms-lastfm-client-make-call-track-love" function nil nil [32898 33427])
+            ("emms-lastfm-client-track-love-failed" function (:arguments ("data")) nil [33429 33636])
+            ("emms-lastfm-client-track-love-ok" function (:arguments ("data")) nil [33638 33767])
+            ("emms-lastfm-client-cache-file" function (:arguments ("url")) nil [33981 34489])
+            ("emms-lastfm-client-display-artist-getinfo" function (:arguments ("artist-name" "lastfm-url" "artist-image" "stats-listeners" "stats-playcount" "bio-summary" "bio-complete")) nil [34491 35412])
+            ("emms-lastfm-client-parse-artist-getinfo" function (:arguments ("data")) nil [35414 36530])
+            ("emms-lastfm-client-construct-artist-getinfo" function nil nil [36532 37007])
+            ("emms-lastfm-client-make-call-artist-getinfo" function nil nil [37009 37533])
+            ("emms-lastfm-client-artist-getinfo-failed" function (:arguments ("data")) nil [37535 37749])
+            ("emms-lastfm-client-artist-getinfo-ok" function (:arguments ("data")) nil [37751 37910])
+            ("emms-lastfm-client-construct-track-ban" function nil nil [38119 38654])
+            ("emms-lastfm-client-make-call-track-ban" function nil nil [38656 39181])
+            ("emms-lastfm-client-track-ban-failed" function (:arguments ("data")) nil [39183 39387])
+            ("emms-lastfm-client-track-ban-ok" function (:arguments ("data")) nil [39389 39515])
+            ("emms-lastfm-client" package nil nil [39517 39546]))          
+    :file "emms-lastfm-client.el"
+    :pointmax 39584
+    :fsize 39583
+    :lastmodtime '(20618 8776 624100 462000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emms.el"
+    :file "emms.el"
+    :fsize 50456
+    :lastmodtime '(20618 8776 632100 462000)
+    )
+   (semanticdb-table "emms-source-file.el"
+    :file "emms-source-file.el"
+    :fsize 11672
+    :lastmodtime '(20618 8776 632100 462000)
+    )
+   (semanticdb-table "emms-last-played.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("emms" include nil nil [1136 1151])
+            ("emms-last-played-keep-count" variable (:default-value t) nil [1153 1330])
+            ("emms-last-played-format-alist" variable (:default-value (quote (((emms-last-played-seconds-today) . "%k:%M") (604800 . "%a %k:%M") ((emms-last-played-seconds-month) . "%a %d") ((emms-last-played-seconds-year) . "%b %d") (t . "%b %d '%y")))) nil [1332 2574])
+            ("emms-last-played-update-track" function (:arguments ("track")) nil [2577 2718])
+            ("emms-last-played-increment-count" function (:arguments ("track")) nil [2720 3030])
+            ("emms-last-played-update-current" function nil nil [3032 3293])
+            ("emms-last-played-seconds-today" function nil nil [3295 3499])
+            ("emms-last-played-seconds-month" function nil nil [3501 3756])
+            ("emms-last-played-seconds-year" function nil nil [3758 4063])
+            ("emms-last-played-format-date" function (:arguments ("messy-date")) nil [4065 4984])
+            ("emms-last-played" package nil nil [4986 5013]))          
+    :file "emms-last-played.el"
+    :pointmax 5048
+    :fsize 5047
+    :lastmodtime '(20618 8776 624100 462000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emms-lastfm-scrobbler.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("emms" include nil nil [1156 1171])
+            ("emms-playing-time" include nil nil [1172 1200])
+            ("emms-lastfm-client" include nil nil [1201 1230])
+            ("emms-lastfm-scrobbler-submit-track-types" variable (:default-value (quote (file))) nil [1583 2078])
+            ("emms-lastfm-scrobbler-submission-protocol-number" variable (:default-value "1.2.1") nil [2080 2209])
+            ("emms-lastfm-scrobbler-published-version" variable (:default-value "1.0") nil [2211 2327])
+            ("emms-lastfm-scrobbler-submission-session-id" variable nil nil [2329 2451])
+            ("emms-lastfm-scrobbler-submission-now-playing-url" variable nil nil [2453 2569])
+            ("emms-lastfm-scrobbler-submission-url" variable nil nil [2571 2664])
+            ("emms-lastfm-scrobbler-client-identifier" variable (:default-value "emm") nil [2666 2782])
+            ("emms-lastfm-scrobbler-track-play-start-timestamp" variable nil nil [2784 2864])
+            ("emms-lastfm-scrobbler-make-token-for-web-services" function (:arguments ("timestamp")) nil [2970 3229])
+            ("emms-lastfm-scrobbler-handshake" function nil nil [3369 3726])
+            ("emms-lastfm-scrobbler-make-handshake-call" function nil nil [3728 4582])
+            ("emms-lastfm-scrobbler-handle-handshake" function (:arguments ("response")) nil [4584 5833])
+            ("emms-lastfm-scrobbler-assert-submission-handshake" function nil nil [5835 6111])
+            ("emms-lastfm-scrobbler-hexify-encode" function (:arguments ("str")) nil [6113 6255])
+            ("emms-lastfm-scrobbler-timestamp" function nil nil [6257 6360])
+            ("emms-lastfm-scrobbler-get-response-status" function nil nil [6362 6833])
+            ("emms-lastfm-scrobbler-submission-data" function (:arguments ("track" "rating")) nil [6835 8397])
+            ("emms-lastfm-scrobbler-nowplaying-data" function (:arguments ("track")) nil [8399 9327])
+            ("emms-lastfm-scrobbler-allowed-track-type" function (:arguments ("track")) nil [9329 9666])
+            ("emms-lastfm-scrobbler-start-hook" function nil nil [9826 10421])
+            ("emms-lastfm-scrobbler-stop-hook" function nil nil [10423 11142])
+            ("emms-lastfm-scrobbler-enable" function (:user-visible-flag t) nil [11144 11650])
+            ("emms-lastfm-scrobbler-disable" function (:user-visible-flag t) nil [11652 11990])
+            ("emms-lastfm-scrobbler-make-async-submission-call" function (:arguments ("track" "rating")) nil [12164 12657])
+            ("emms-lastfm-scrobbler-async-submission-callback" function (:arguments ("status" "cbargs")) nil [12659 13545])
+            ("emms-lastfm-scrobbler-make-async-nowplaying-call" function (:arguments ("track")) nil [13547 14066])
+            ("emms-lastfm-scrobbler-async-nowplaying-callback" function (:arguments ("status" "cbargs")) nil [14068 14522])
+            ("emms-lastfm-scrobbler" package nil nil [14524 14556]))          
+    :file "emms-lastfm-scrobbler.el"
+    :pointmax 14598
+    :fsize 14597
+    :lastmodtime '(20618 8776 624100 462000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "emms-playing-time.el"
+    :file "emms-playing-time.el"
+    :fsize 8150
+    :lastmodtime '(20618 8776 628100 462000)
+    )
+   )
+  :file "!home!neo!.emacs.d!packages!emms!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,323 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "douban.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [48 91])
+            ("os" include nil nil [48 91])
+            ("time" include nil nil [48 91])
+            ("thread" include nil nil [48 91])
+            ("glib" include nil nil [48 91])
+            ("gobject" include nil nil [48 91])
+            ("pygst" include nil nil [92 104])
+            ("pygst" code nil nil [105 126])
+            ("gst" include nil nil [127 180])
+            ("json" include nil nil [127 180])
+            ("urllib" include nil nil [127 180])
+            ("httplib" include nil nil [127 180])
+            ("contextlib" include nil nil [127 180])
+            ("random" include nil nil [127 180])
+            ("select" include nil nil [181 206])
+            ("Cookie" include nil nil [207 238])
+            ("contextlib" include nil nil [239 269])
+            ("PrivateFM" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [349 366])
+                            ("self" code nil (reparse-symbol indented_block_body) [375 405]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [314 318])
+                            ("username" variable nil (reparse-symbol function_parameters) [320 328])
+                            ("password" variable nil (reparse-symbol function_parameters) [330 338]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [300 406])
+                    ("login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [421 425])
+                            ("username" variable nil (reparse-symbol function_parameters) [427 435])
+                            ("password" variable nil (reparse-symbol function_parameters) [437 445]))                          )
+                        (reparse-symbol indented_block_body) [411 1140])
+                    ("get_params" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1160 1164])
+                            ("typename" variable nil (reparse-symbol function_parameters) [1166 1174]))                          )
+                        (reparse-symbol indented_block_body) [1145 1398])
+                    ("communicate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1419 1423])
+                            ("params" variable nil (reparse-symbol function_parameters) [1425 1431]))                          )
+                        (reparse-symbol indented_block_body) [1403 1787])
+                    ("playlist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1805 1809]))                          )
+                        (reparse-symbol indented_block_body) [1792 1934])
+                    ("del_song" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1952 1956])
+                            ("sid" variable nil (reparse-symbol function_parameters) [1958 1961])
+                            ("aid" variable nil (reparse-symbol function_parameters) [1963 1966]))                          )
+                        (reparse-symbol indented_block_body) [1939 2147])
+                    ("fav_song" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2165 2169])
+                            ("sid" variable nil (reparse-symbol function_parameters) [2171 2174])
+                            ("aid" variable nil (reparse-symbol function_parameters) [2176 2179]))                          )
+                        (reparse-symbol indented_block_body) [2152 2309])
+                    ("unfav_song" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2329 2333])
+                            ("sid" variable nil (reparse-symbol function_parameters) [2335 2338])
+                            ("aid" variable nil (reparse-symbol function_parameters) [2340 2343]))                          )
+                        (reparse-symbol indented_block_body) [2314 2473]))                  
+                :type "class")
+                nil [271 2473])
+            ("DoubanFM_CLI" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2535 2551])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2560 2578])
+                            ("if" code nil (reparse-symbol indented_block_body) [2587 2685])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2693 2752])
+                            ("bus" variable nil (reparse-symbol indented_block_body) [2761 2788])
+                            ("bus" code nil (reparse-symbol indented_block_body) [2797 2819])
+                            ("bus" code nil (reparse-symbol indented_block_body) [2828 2867])
+                            ("self" code nil (reparse-symbol indented_block_body) [2876 2949]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2511 2515])
+                            ("channel" variable nil (reparse-symbol function_parameters) [2517 2524]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2498 2950])
+                    ("on_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2970 2974])
+                            ("bus" variable nil (reparse-symbol function_parameters) [2976 2979])
+                            ("message" variable nil (reparse-symbol function_parameters) [2981 2988]))                          )
+                        (reparse-symbol indented_block_body) [2955 3344])
+                    ("get_songlist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3366 3370]))                          )
+                        (reparse-symbol indented_block_body) [3349 3814])
+                    ("control" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3831 3835])
+                            ("r" variable nil (reparse-symbol function_parameters) [3836 3837]))                          )
+                        (reparse-symbol indented_block_body) [3819 4346])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4361 4365]))                          )
+                        (reparse-symbol indented_block_body) [4351 4925]))                  
+                :type "class")
+                nil [2474 4925])
+            ("channel_info" variable nil nil [4926 5070])
+            ("print" code nil nil [5071 5089])
+            ("c" variable nil nil [5090 5119])
+            ("doubanfm" variable nil nil [5120 5146])
+            ("use_info" variable nil nil [5147 5188])
+            ("print" code nil nil [5189 5203])
+            ("while" code nil nil [5204 5330]))          
+    :file "douban.py"
+    :pointmax 5330
+    :fsize 5521
+    :lastmodtime '(20822 25477 912213 417000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Copyright 2011 Domen Kozar. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of
+      conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list
+      of conditions and the following disclaimer in the documentation and/or other materials
+      provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY DOMEN KOZAR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL DOMEN KOZAR OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the
+authors and should not be interpreted as representing official policies, either expressed
+or implied, of DOMEN KOZAR.
+
+USAGE
+=====
+
+1) clone gist somewhere (eg. /home/user/autovpn/)
+2) add to /etc/rc.local: python /home/user/autovpn/autovpn.py \"myvpn\" 'Auto homenetwork,Auto worknetwork' > /var/log/autovpn.log&
+3) reboot :-)
+
+CHANGELOG
+=========
+
+
+0.1 (1.1.2012)
+--------------
+
+* bug: compatible with NM 0.9, dropped support for 0.8
+* feature: specify networks that vpn is not autoconnected
+
+KNOWN ISSUES
+============
+
+* it will always use first active network connection
+
+\"\"\"" code nil nil [19 1965])
+            ("sys" include nil nil [1966 1976])
+            ("dbus.mainloop.glib" include nil nil [1978 2022])
+            ("dbus" include nil nil [2023 2034])
+            ("gobject" include nil nil [2035 2049])
+            ("AutoVPN" type
+               (:documentation "Solves two jobs, tested with NetworkManager 0.9.x:
+
+    * if VPN connection is not disconnected by user himself, reconnect (configurable max_attempts)
+    * on new active network connection, activate VPN
+
+    :param vpn_name: Name of VPN connection that will be used for autovpn
+    :param ignore_networks: Comma separated network names in NM that will not force VPN usage
+    :param max_attempts: Maximum number of attempts of reconnection VPN session on failures
+    :param delay: Miliseconds to wait before reconnecting VPN
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2708 2732])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2741 2773])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2782 2800])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2809 2833])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2842 2869])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2878 2941])
+                            ("self" code nil (reparse-symbol indented_block_body) [2950 3038])
+                            ("print" code nil (reparse-symbol indented_block_body) [3047 3174]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2635 2639])
+                            ("vpn_name" variable nil (reparse-symbol function_parameters) [2641 2649])
+                            ("ignore_networks" variable nil (reparse-symbol function_parameters) [2651 2666])
+                            ("max_attempts" variable nil (reparse-symbol function_parameters) [2671 2683])
+                            ("delay" variable nil (reparse-symbol function_parameters) [2687 2692]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2622 3175])
+                    ("onNetworkStateChanged" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3206 3210])
+                            ("state" variable nil (reparse-symbol function_parameters) [3212 3217]))                          
+                        :documentation "Handles network status changes and activates the VPN on established connection.")
+                        (reparse-symbol indented_block_body) [3180 3420])
+                    ("onVpnStateChanged" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3447 3451])
+                            ("state" variable nil (reparse-symbol function_parameters) [3453 3458])
+                            ("reason" variable nil (reparse-symbol function_parameters) [3460 3466]))                          
+                        :documentation "Handles different VPN status changes and eventually reconnects the VPN.")
+                        (reparse-symbol indented_block_body) [3425 4390])
+                    ("get_network_manager" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4419 4423]))                          
+                        :documentation "Gets the network manager dbus interface.")
+                        (reparse-symbol indented_block_body) [4395 4711])
+                    ("get_vpn_interface" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4738 4742])
+                            ("name" variable nil (reparse-symbol function_parameters) [4744 4748]))                          )
+                        (reparse-symbol indented_block_body) [4716 5655])
+                    ("get_active_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5686 5690]))                          
+                        :documentation "Gets the dbus interface of the first active
+        network connection or returns None.
+        ")
+                        (reparse-symbol indented_block_body) [5660 6348])
+                    ("activate_vpn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6370 6374]))                          )
+                        (reparse-symbol indented_block_body) [6353 7792]))                  
+                :type "class")
+                nil [2052 7792])
+            ("if" code nil nil [7794 8322]))          
+    :file "test.py"
+    :pointmax 8322
+    :fsize 8321
+    :lastmodtime '(20838 32900 742282 134000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tickets.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("xlrd" include nil nil [24 40])
+            ("urllib" include nil nil [41 101])
+            ("urllib2" include nil nil [41 101])
+            ("cookielib" include nil nil [41 101])
+            ("base64" include nil nil [41 101])
+            ("re" include nil nil [41 101])
+            ("json" include nil nil [41 101])
+            ("hashlib" include nil nil [41 101])
+            ("urllib" include nil nil [102 130])
+            ("BeautifulSoup" include nil nil [131 170])
+            ("urllib" include nil nil [171 213])
+            ("login" function nil nil [215 811])
+            ("if" code nil nil [1341 1410])
+            ("'''
+(Request-Line)	POST /v.php HTTP/1.1
+Host	ziqiangstars.ziqiang.net
+User-Agent	Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0
+Accept	*/*
+Accept-Language	zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3
+Accept-Encoding	gzip, deflate
+Content-Type	application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With	XMLHttpRequest
+Referer	http://ziqiangstars.ziqiang.net/
+Content-Length	50
+Cookie	PHPSESSID=ec74e8b819b13154c8513a3fea3847df; ba385ed3b6f7b2dcc1eff9673d80aff0=1365673393; pgv_pvi=2522037248; pgv_si=s2260199424
+Connection	keep-alive
+Pragma	no-cache
+Cache-Control	no-cache
+'''" code nil nil [1412 2013]))          
+    :file "tickets.py"
+    :pointmax 2105
+    :fsize 2013
+    :lastmodtime '(20862 12113 94972 312000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,45 @@
+;; Object CHAP05/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CHAP05/"
+  :tables (list 
+   (semanticdb-table "Algo0501.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TransposeSMatrix" function
+               (:arguments 
+                  ( ("M" variable (:type ("TSMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25 36])
+                    ("T" variable
+                       (:reference 1
+                        :type ("TSMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37 49]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [1 407]))          
+    :file "Algo0501.cpp"
+    :pointmax 461
+    :fsize 503
+    :lastmodtime '(15834 57880 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Algo0506.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CopyGList" function
+               (:arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :type ("GList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18 27])
+                    ("L" variable (:type ("GList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28 36]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [1 481]))          
+    :file "Algo0506.cpp"
+    :pointmax 495
+    :fsize 564
+    :lastmodtime '(15836 18120 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!media!DSDemo!DS-Algo-VC!CHAP05!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

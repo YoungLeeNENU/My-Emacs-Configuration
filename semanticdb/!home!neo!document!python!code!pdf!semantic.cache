@@ -1,0 +1,29 @@
+;; Object pdf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdf/"
+  :tables (list 
+    (semanticdb-table "pdf2txt.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("pdfminer.pdfparser" include nil nil [35 88])
+            ("pdfminer.pdfinterp" include nil nil [89 171])
+            ("pdfminer.pdfdevice" include nil nil [172 226])
+            ("pdfminer.converter" include nil nil [227 300])
+            ("pdfminer.cmapdb" include nil nil [301 335])
+            ("pdfminer.layout" include nil nil [336 372])
+            ("pdfminer.image" include nil nil [373 411])
+            ("main" function (:arguments 
+              ( ("argv" variable nil (reparse-symbol function_parameters) [429 433]))              ) nil [420 3763])
+            ("if" code nil nil [3764 3820]))          
+    :file "pdf2txt.py"
+    :pointmax 3820
+    :fsize 3819
+    :lastmodtime '(20890 7759 866643 979000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!pdf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

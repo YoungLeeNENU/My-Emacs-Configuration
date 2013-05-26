@@ -1,0 +1,72 @@
+;; Object data/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data/"
+  :tables (list 
+   (semanticdb-table "show-bytes.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [25 43])
+            ("stdlib.h" include (:system-flag t) nil [66 85])
+            ("string.h" include (:system-flag t) nil [86 105])
+            ("byte_pointer" type
+               (:typedef ("unsigned char")
+                :pointer 1
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [131 167])
+            ("show_bytes" function
+               (:arguments 
+                  ( ("start" variable (:type ("byte_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [185 204])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [205 213]))                  
+                :type "void")
+                nil [169 337])
+            ("show_int" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [353 359]))                  
+                :type "void")
+                nil [339 439])
+            ("show_float" function
+               (:arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [457 465]))                  
+                :type "void")
+                nil [441 547])
+            ("show_pointer" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [567 575]))                  
+                :type "void")
+                nil [549 658])
+            ("test_show_bytes" function
+               (:arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [733 741]))                  
+                :type "void")
+                nil [712 885])
+            ("simple_show_a" function (:type "void") nil [914 1143])
+            ("simple_show_b" function (:type "void") nil [1145 1374])
+            ("float_eg" function (:type "void") nil [1376 1593])
+            ("string_ueg" function (:type "void") nil [1595 1734])
+            ("string_leg" function (:type "void") nil [1736 1875])
+            ("show_twocomp" function (:type "void") nil [1877 2101])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2112 2121])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2122 2135]))                  
+                :type "int")
+                nil [2103 2632]))          
+    :file "show-bytes.c"
+    :pointmax 2633
+    :fsize 2632
+    :lastmodtime '(19320 51907 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!CSAPP!code!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

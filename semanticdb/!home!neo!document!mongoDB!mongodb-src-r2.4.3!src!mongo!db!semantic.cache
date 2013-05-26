@@ -1,0 +1,608 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables (list 
+   (semanticdb-table "btreebuilder.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("pch.h" include nil nil [688 704])
+            ("db.h" include nil nil [705 720])
+            ("btree.h" include nil nil [721 739])
+            ("pdfile.h" include nil nil [740 759])
+            ("json.h" include nil nil [760 777])
+            ("clientcursor.h" include nil nil [778 803])
+            ("client.h" include nil nil [804 823])
+            ("dbhelpers.h" include nil nil [824 846])
+            ("curop-inl.h" include nil nil [847 869])
+            ("stats/counters.h" include nil nil [870 897])
+            ("dur_commitjob.h" include nil nil [898 924])
+            ("btreebuilder.h" include nil nil [925 950])
+            ("mongo/db/kill_current_op.h" include nil nil [951 988])
+            ("mongo" type
+               (:members 
+                  ( ("BtreeBuilder" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type ("BtreeBuilder" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("_dupsAllowed" variable (:type "bool") (reparse-symbol arg-sub-list) [1097 1115])
+                            ("_idx" variable
+                               (:reference 1
+                                :type ("IndexDetails" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1116 1135]))                          
+                        :parent "BtreeBuilder"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [1045 1413])
+                    ("newBucket" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "BtreeBuilder")
+                        (reparse-symbol namespacesubparts) [1419 1609])
+                    ("mayCommitProgressDurably" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :parent "BtreeBuilder")
+                        (reparse-symbol namespacesubparts) [1615 1781])
+                    ("addKey" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("_key" variable
+                               (:reference 1
+                                :type ("BSONObj" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1838 1852])
+                            ("loc" variable (:type ("DiskLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1853 1865]))                          
+                        :parent "BtreeBuilder")
+                        (reparse-symbol namespacesubparts) [1787 2898])
+                    ("buildNextLevel" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("loc" variable (:type ("DiskLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2963 2975])
+                            ("mayInterrupt" variable (:type "bool") (reparse-symbol arg-sub-list) [2976 2994]))                          
+                        :parent "BtreeBuilder")
+                        (reparse-symbol namespacesubparts) [2904 5074])
+                    ("commit" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("mayInterrupt" variable (:type "bool") (reparse-symbol arg-sub-list) [5213 5231]))                          
+                        :parent "BtreeBuilder")
+                        (reparse-symbol namespacesubparts) [5162 5310])
+                    ("BtreeBuilder" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("V0" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5325 5348])
+                    ("BtreeBuilder" type
+                       (:prototype t
+                        :template-specifier 
+                          ( ("V1" type nil nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5362 5385]))                  
+                :type "namespace")
+                nil [990 5388]))          
+    :file "btreebuilder.cpp"
+    :pointmax 5389
+    :fsize 5388
+    :lastmodtime '(20854 33965 0 0)
+    :unmatched-syntax '((TEMPLATE 5353 . 5361) (TEMPLATE 5316 . 5324))
+    )
+   (semanticdb-table "client.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("mongo/pch.h" include nil nil [852 874])
+            ("mongo/db/client.h" include nil nil [876 904])
+            ("string" include (:system-flag t) nil [906 923])
+            ("vector" include (:system-flag t) nil [924 941])
+            ("mongo/base/status.h" include nil nil [943 973])
+            ("mongo/db/auth/action_set.h" include nil nil [974 1011])
+            ("mongo/db/auth/action_type.h" include nil nil [1012 1050])
+            ("mongo/db/auth/authorization_manager.h" include nil nil [1051 1099])
+            ("mongo/db/auth/auth_external_state_d.h" include nil nil [1100 1148])
+            ("mongo/db/auth/privilege.h" include nil nil [1149 1185])
+            ("mongo/db/db.h" include nil nil [1186 1210])
+            ("mongo/db/commands.h" include nil nil [1211 1241])
+            ("mongo/db/curop-inl.h" include nil nil [1242 1273])
+            ("mongo/db/kill_current_op.h" include nil nil [1274 1311])
+            ("mongo/db/dbwebserver.h" include nil nil [1312 1345])
+            ("mongo/db/instance.h" include nil nil [1346 1376])
+            ("mongo/db/json.h" include nil nil [1377 1403])
+            ("mongo/db/jsobj.h" include nil nil [1404 1431])
+            ("mongo/db/pagefault.h" include nil nil [1432 1463])
+            ("mongo/db/repl/rs.h" include nil nil [1464 1493])
+            ("mongo/s/chunk_version.h" include nil nil [1494 1528])
+            ("mongo/s/d_logic.h" include nil nil [1529 1557])
+            ("mongo/s/stale_exception.h" include nil nil [1558 1594])
+            ("mongo/scripting/engine.h" include nil nil [1627 1662])
+            ("mongo/util/file_allocator.h" include nil nil [1663 1701])
+            ("mongo/util/mongoutils/checksum.h" include nil nil [1702 1745])
+            ("mongo/util/mongoutils/html.h" include nil nil [1746 1785])
+            ("mongo/util/mongoutils/str.h" include nil nil [1786 1824])
+            ("mongo" type
+               (:members 
+                  ( ("Client::clientsMutex" variable (:type ("mongo::mutex" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1849 1915])
+                    ("Client::clients" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("Client" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1920 1972])
+                    ("initThread" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("desc" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3798 3815])
+                            ("mp" variable
+                               (:pointer 1
+                                :type ("AbstractMessagingPort" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3816 3842]))                          
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3771 4279])
+                    ("Client" function
+                       (:constructor-flag t
+                        :parent "Client"
+                        :arguments 
+                          ( ("desc" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4300 4317])
+                            ("p" variable
+                               (:pointer 1
+                                :type ("AbstractMessagingPort" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4318 4343]))                          
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4285 5021])
+                    ("Client" function
+                       (:destructor-flag t
+                        :parent "Client"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5027 5776])
+                    ("shutdown" function
+                       (:parent "Client"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5782 6158])
+                    ("CachedBSONObj::_tooBig" variable (:type ("BSONObj" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [6164 6256])
+                    ("Context" function
+                       (:constructor-flag t
+                        :parent "Client::Context"
+                        :arguments 
+                          ( ("ns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6286 6309])
+                            ("db" variable
+                               (:pointer 1
+                                :type ("Database" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6310 6324]))                          
+                        :type ("Context" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6261 6692])
+                    ("Context" function
+                       (:constructor-flag t
+                        :parent "Client::Context"
+                        :arguments 
+                          ( ("ns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6723 6740])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6741 6765])
+                            ("doVersion" variable (:type "bool") (reparse-symbol arg-sub-list) [6766 6781]))                          
+                        :type ("Context" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6698 7051])
+                    ("ReadContext" function
+                       (:parent "Client::ReadContext"
+                        :arguments 
+                          ( ("ns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7247 7264])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7265 7289]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7214 8813])
+                    ("WriteContext" function
+                       (:constructor-flag t
+                        :parent "Client::WriteContext"
+                        :arguments 
+                          ( ("ns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8854 8871])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8872 8896]))                          
+                        :type ("WriteContext" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8819 8949])
+                    ("checkNotStale" function
+                       (:parent "Client::Context"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8956 9715])
+                    ("Context" function
+                       (:constructor-flag t
+                        :parent "Client::Context"
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9778 9797])
+                            ("ns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9798 9815])
+                            ("db" variable
+                               (:pointer 1
+                                :type ("Database" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9816 9829]))                          
+                        :type ("Context" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9753 10163])
+                    ("_finishInit" function
+                       (:parent "Client::Context"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10176 10807])
+                    ("Context" function
+                       (:destructor-flag t
+                        :parent "Client::Context"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10817 11082])
+                    ("inDB" function
+                       (:parent "Client::Context"
+                        :arguments 
+                          ( ("db" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11116 11134])
+                            ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11135 11155]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [11088 11414])
+                    ("appendLastOp" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("b" variable
+                               (:reference 1
+                                :type ("BSONObjBuilder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11447 11466]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11420 11655])
+                    ("clientAddress" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("includePort" variable (:type "bool") (reparse-symbol arg-sub-list) [11690 11707]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11661 11818])
+                    ("toString" function
+                       (:parent "Client"
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11824 11982])
+                    ("sayClientState" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [11988 12140])
+                    ("gotHandshake" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BSONObj" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12173 12191]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12146 12676])
+                    ("hasCurrent" function
+                       (:parent "ClientBasic"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12682 12756])
+                    ("getCurrent" function
+                       (:pointer 1
+                        :parent "ClientBasic"
+                        :type ("ClientBasic" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12762 12844])
+                    ("HandshakeCmd" type
+                       (:superclasses 
+                          ( ("Command" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [12892 12899])
+                            ("help" function
+                               (:arguments 
+                                  ( ("h" variable
+                                       (:reference 1
+                                        :type ("stringstream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12918 12934]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12908 12961])
+                            ("HandshakeCmd" function
+                               (:constructor-flag t
+                                :type ("HandshakeCmd" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12970 13012])
+                            ("locktype" function
+                               (:typemodifiers ("virtual")
+                                :type ("LockType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13021 13071])
+                            ("slaveOk" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13080 13125])
+                            ("adminOnly" function
+                               (:typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13134 13182])
+                            ("addRequiredPrivileges" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("dbname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13226 13252])
+                                    ("cmdObj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BSONObj" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13296 13318])
+                                    ("out" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Privilege" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13362 13390]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13191 13579])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13605 13620])
+                                    ("cmdObj" variable
+                                       (:reference 1
+                                        :type ("BSONObj" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13621 13637])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13638 13642])
+                                    ("errmsg" variable
+                                       (:reference 1
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13643 13658])
+                                    ("result" variable
+                                       (:reference 1
+                                        :type ("BSONObjBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13659 13682])
+                                    ("fromRepl" variable (:type "bool") (reparse-symbol arg-sub-list) [13683 13697]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13588 13799]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [12850 13820])
+                    ("handshakeCmd" variable (:type ("HandshakeCmd" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [12850 13820])
+                    ("ClientListPlugin" type
+                       (:superclasses 
+                          ( ("WebStatusPlugin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [13880 13887])
+                            ("ClientListPlugin" function
+                               (:constructor-flag t
+                                :type ("ClientListPlugin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13896 13953])
+                            ("init" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [13962 13984])
+                            ("run" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ss" variable
+                                       (:reference 1
+                                        :type ("stringstream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14012 14030]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13994 16085]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [13826 16110])
+                    ("clientListPlugin" variable (:type ("ClientListPlugin" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [13826 16110])
+                    ("recommendedYieldMicros" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("writers" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16152 16167])
+                            ("readers" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16168 16182])
+                            ("needExact" variable (:type "bool") (reparse-symbol arg-sub-list) [16183 16199]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [16116 17361])
+                    ("getActiveClientCount" function
+                       (:parent "Client"
+                        :arguments 
+                          ( ("writers" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [17401 17414])
+                            ("readers" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [17415 17429]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [17367 17899])
+                    ("allowedToThrowPageFaultException" function
+                       (:parent "Client"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [17905 18463])
+                    ("reset" function
+                       (:parent "OpDebug"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18469 19170])
+                    ("OPDEBUG_TOSTRING_HELP" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19181 19202])
+                    ("OPDEBUG_TOSTRING_HELP_BOOL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19250 19276])
+                    ("report" function
+                       (:parent "OpDebug"
+                        :arguments 
+                          ( ("curop" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CurOp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19339 19359]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19315 21169])
+                    ("OPDEBUG_APPEND_NUMBER" variable (:constant-flag t) (reparse-symbol namespacesubparts) [21179 21200])
+                    ("OPDEBUG_APPEND_BOOL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [21253 21272])
+                    ("append" function
+                       (:parent "OpDebug"
+                        :arguments 
+                          ( ("curop" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CurOp" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21334 21353])
+                            ("b" variable
+                               (:reference 1
+                                :type ("BSONObjBuilder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21354 21372])
+                            ("maxSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21373 21388]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21313 24278]))                  
+                :type "namespace")
+                nil [1826 24281]))          
+    :file "client.cpp"
+    :pointmax 24282
+    :fsize 24281
+    :lastmodtime '(20854 33965 0 0)
+    :unmatched-syntax '((semantic-list 2040 . 2063) (symbol 2030 . 2040))
+    :lexical-table 
+        '(("OPDEBUG_APPEND_NUMBER" (spp-arg-list ("x") 21200 . 21203) . 
+              ((IF "if" 21204 . 21206) (semantic-list "( x != -1 )" 21206 . 21217) (symbol "b" 21218 . 21219) (punctuation "." 21219 . 21220) (symbol "appendNumber" 21220 . 21232) (semantic-list "( #x , (x) )" 21232 . 21244)))
+          ("OPDEBUG_TOSTRING_HELP_BOOL" (spp-arg-list ("x") 19276 . 19279) . 
+              ((IF "if" 19280 . 19282) (semantic-list "( x )" 19282 . 19287) (symbol "s" 19288 . 19289) (punctuation "<" 19290 . 19291) (punctuation "<" 19291 . 19292) (string "\" \"" 19293 . 19296) (punctuation "#" 19297 . 19298) (symbol "x" 19298 . 19299) (string "\":\"" 19300 . 19303) (punctuation "<" 19304 . 19305) (punctuation "<" 19305 . 19306) (semantic-list "(x)" 19307 . 19310)))
+          ("OPDEBUG_TOSTRING_HELP" (spp-arg-list ("x") 19202 . 19205) . 
+              ((IF "if" 19206 . 19208) (semantic-list "( x >= 0 )" 19208 . 19218) (symbol "s" 19219 . 19220) (punctuation "<" 19221 . 19222) (punctuation "<" 19222 . 19223) (string "\" \"" 19224 . 19227) (punctuation "#" 19228 . 19229) (symbol "x" 19229 . 19230) (string "\":\"" 19231 . 19234) (punctuation "<" 19235 . 19236) (punctuation "<" 19236 . 19237) (semantic-list "(x)" 19238 . 19241)))
+          ("OPDEBUG_APPEND_BOOL" (spp-arg-list ("x") 21272 . 21275) . 
+              ((IF "if" 21276 . 21278) (semantic-list "( x )" 21278 . 21283) (symbol "b" 21284 . 21285) (punctuation "." 21285 . 21286) (symbol "appendBool" 21286 . 21296) (semantic-list "( #x , (x) )" 21296 . 21308)))
+          )
+
+    )
+   (semanticdb-table "client.h"
+    :file "client.h"
+    :fsize 8836
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "db.h"
+    :file "db.h"
+    :fsize 3214
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "commands.h"
+    :file "commands.h"
+    :fsize 9002
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "curop-inl.h"
+    :file "curop-inl.h"
+    :fsize 685
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "kill_current_op.h"
+    :file "kill_current_op.h"
+    :fsize 2891
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "dbwebserver.h"
+    :file "dbwebserver.h"
+    :fsize 2737
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "instance.h"
+    :file "instance.h"
+    :fsize 4440
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "json.h"
+    :file "json.h"
+    :fsize 13525
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "jsobj.h"
+    :file "jsobj.h"
+    :fsize 1344
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "pagefault.h"
+    :file "pagefault.h"
+    :fsize 2091
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "btree.h"
+    :file "btree.h"
+    :fsize 46712
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "pdfile.h"
+    :file "pdfile.h"
+    :fsize 25739
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "clientcursor.h"
+    :file "clientcursor.h"
+    :fsize 17226
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "dbhelpers.h"
+    :file "dbhelpers.h"
+    :fsize 6783
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "dur_commitjob.h"
+    :file "dur_commitjob.h"
+    :fsize 8339
+    :lastmodtime '(20854 33965 0 0)
+    )
+   (semanticdb-table "btreebuilder.h"
+    :file "btreebuilder.h"
+    :fsize 2030
+    :lastmodtime '(20854 33965 0 0)
+    )
+   )
+  :file "!home!neo!document!mongoDB!mongodb-src-r2.4.3!src!mongo!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

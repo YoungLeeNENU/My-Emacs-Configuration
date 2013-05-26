@@ -1,0 +1,34 @@
+;; Object guile-programmer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "guile-programmer/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [60 87])
+            ("MAKEINFO" variable (:default-value ("makeinfo" "-I" "../guile-user")) nil [114 151])
+            ("info_TEXINFOS" variable (:default-value ("guile-programmer.texi")) nil [152 190])
+            ("dist_texis" variable (:default-value ("applet-ref.texi" "gh-ref.texi" "scm-ref.texi" "tk.texi" "ci.texi" "pi.texi" "version.texi" "goonix.texi" "threads.texi" "vi.texi" "guile-programmer.texi" "ti.texi" "what-goes.texi" "libguile-procs.texi")) nil [243 438])
+            ("guile_programmer_TEXINFOS" variable (:default-value ("$(dist_texis)")) nil [588 630])
+            ("EXTRA_DIST" variable (:default-value ("$(dist_texis)")) nil [631 658]))          
+    :file "Makefile.am"
+    :pointmax 658
+    :fsize 657
+    :lastmodtime '(20783 20415 794748 452000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vi.texi"
+    :major-mode 'texinfo-mode
+    :tags 
+        '( ("Variable Index" section nil nil [1 150]))          
+    :file "vi.texi"
+    :pointmax 150
+    :fsize 149
+    :lastmodtime '(20783 20415 794748 452000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!guile-1.0!doc!guile-programmer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

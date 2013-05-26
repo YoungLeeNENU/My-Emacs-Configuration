@@ -1,0 +1,18 @@
+;; Object chapter3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter3/"
+  :tables (list 
+   (semanticdb-table "3-1.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "3-1.scm"
+    :pointmax 60
+    :fsize 59
+    :lastmodtime '(20872 28021 965751 769000)
+    :unmatched-syntax '((semantic-list 26 . 59) (semantic-list 14 . 25) (semantic-list 1 . 13) (semantic-list 14 . 23) (semantic-list 1 . 13) (semantic-list 1 . 12))
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!code!SICP!chapter3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

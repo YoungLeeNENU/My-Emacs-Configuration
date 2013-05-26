@@ -1,0 +1,105 @@
+;; Object poj/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "poj/"
+  :tables (list 
+   (semanticdb-table "1000.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 175]))          
+    :file "1000.c"
+    :pointmax 165
+    :fsize 175
+    :lastmodtime '(20881 61566 224661 432000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3086.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("N" variable (:type "int") nil [21 27])
+            ("i" variable (:type "int") nil [28 34])
+            ("input" variable (:type "int") nil [35 45])
+            ("output" variable
+               (:dereference 1
+                :type "int")
+                nil [46 68])
+            ("Tn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [77 87]))                  
+                :type "int")
+                nil [70 88])
+            ("Sum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [97 103]))                  
+                :type "int")
+                nil [89 104])
+            ("Wn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [113 123])
+                    ("time" variable (:type "int") (reparse-symbol arg-sub-list) [124 133]))                  
+                :type "void")
+                nil [105 134])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [145 154])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [155 168]))                  
+                :type "int")
+                nil [136 385])
+            ("Tn" function
+               (:arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [394 404]))                  
+                :type "int")
+                nil [387 506])
+            ("Sum" function
+               (:arguments 
+                  ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [516 522]))                  
+                :type "int")
+                nil [508 638])
+            ("Wn" function
+               (:arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [648 658])
+                    ("time" variable (:type "int") (reparse-symbol arg-sub-list) [659 668]))                  
+                :type "void")
+                nil [640 745]))          
+    :file "3086.c"
+    :pointmax 746
+    :fsize 745
+    :lastmodtime '(20883 11639 257685 818000)
+    :unmatched-syntax '((number 766 . 770) (number 763 . 765) (punctuation 762 . 763) (number 760 . 762) (punctuation 759 . 760) (number 757 . 759) (number 754 . 756) (symbol 750 . 753) (symbol 746 . 749))
+    )
+   (semanticdb-table "list.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("xlrd" include nil nil [24 40])
+            ("data" variable nil nil [41 84])
+            ("table" variable nil nil [85 109])
+            ("for" code nil nil [110 204]))          
+    :file "list.py"
+    :pointmax 204
+    :fsize 215
+    :lastmodtime '(20883 42142 56912 103000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!poj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

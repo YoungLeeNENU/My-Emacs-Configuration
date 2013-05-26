@@ -1,0 +1,419 @@
+;; Object cl-ppcre-1.2.3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cl-ppcre-1.2.3/"
+  :tables (list 
+   (semanticdb-table "api.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1569 1592])
+            ("create-scanner" function (:arguments ("case-insensitive-mode" "multi-line-mode" "single-line-mode" "extended-mode" "destructive")) nil [1594 2248])
+            ("declaim" code nil nil [9820 9853])
+            ("create-scanner" function
+               (:parent "regexp::regular-expression"
+                :arguments ("scanner" "case-insensitive-mode" "multi-line-mode" "single-line-mode" "extended-mode" "destructive"))
+                nil [9881 10544])
+            ("create-scanner" function
+               (:parent "t"
+                :arguments ("parse-tree" "case-insensitive-mode" "multi-line-mode" "single-line-mode" "extended-mode" "destructive"))
+                nil [10572 11191])
+            ("scan" function (:arguments ("target-string" "start" "end")) nil [11193 11717])
+            ("declaim" code nil nil [13474 13497])
+            ("scan" function
+               (:parent "t"
+                :arguments ("parse-tree" "target-string" "start" "end"))
+                nil [13525 14728])
+            ("define-compiler-macro" code nil nil [14730 15068])
+            ("define-compiler-macro" code nil nil [16438 16822])
+            ("register-groups-bind" function (:arguments ("var-list" "regex" "body")) nil [16824 18973])
+            ("do-scans" function (:arguments ("match-start" "body" "env")) nil [18975 22227])
+            ("do-matches" function (:arguments ("match-start" "body")) nil [22229 23290])
+            ("do-matches-as-strings" function (:arguments ("match-var" "body")) nil [23292 24643])
+            ("do-register-groups" function (:arguments ("var-list" "regex" "body")) nil [24645 26960])
+            ("define-compiler-macro" code nil nil [27835 28155])
+            ("define-compiler-macro" code nil nil [29054 29389])
+            ("define-compiler-macro" code nil nil [32647 32987])
+            ("build-replacement-template" function
+               (:parent "function"
+                :arguments ("replacement-function"))
+                nil [39117 39219])
+            ("build-replacement-template" function
+               (:parent "symbol"
+                :arguments ("replacement-function-symbol"))
+                nil [39235 39349])
+            ("build-replacement-template" function
+               (:parent "list"
+                :arguments ("replacement-list"))
+                nil [39373 39456])
+            ("define-compiler-macro" code nil nil [51194 51595])
+            ("define-compiler-macro" code nil nil [53915 54332])
+            ("regex-apropos-aux" function (:arguments ("regex" "body")) nil [54348 55524])
+            ("do-with-all-symbols" function (:arguments ("variable" "body")) nil [55604 55934])
+            ("regex-apropos-aux" function (:arguments ("regex" "body")) nil [55950 56902])
+            ("let*" code nil nil [60345 60695])
+            ("let*" code nil nil [60697 61813])
+            ("let*" code nil nil [61815 63155])
+            ("parse-tree-synonym" function (:arguments ("symbol")) nil [63157 63348])
+            ("define-parse-tree-synonym" function (:arguments ("name" "parse-tree")) nil [63535 63803]))          
+    :file "api.lisp"
+    :pointmax 63804
+    :fsize 63803
+    :lastmodtime '(16885 39686 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "closures.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1596 1619])
+            ("declaim" code nil nil [1621 1664])
+            ("create-matcher-aux" function
+               (:parent "seq"
+                :arguments ("seq" "next-fn"))
+                nil [3659 4074])
+            ("create-matcher-aux" function
+               (:parent "alternation"
+                :arguments ("alternation" "next-fn"))
+                nil [4076 4647])
+            ("create-matcher-aux" function
+               (:parent "register"
+                :arguments ("register" "next-fn"))
+                nil [4649 6604])
+            ("create-matcher-aux" function
+               (:parent "lookahead"
+                :arguments ("lookahead" "next-fn"))
+                nil [6606 7331])
+            ("create-matcher-aux" function
+               (:parent "lookbehind"
+                :arguments ("lookbehind" "next-fn"))
+                nil [7333 8424])
+            ("insert-char-class-tester" function (:arguments ("char-class" "body")) nil [8426 14132])
+            ("create-matcher-aux" function
+               (:parent "char-class"
+                :arguments ("char-class" "next-fn"))
+                nil [14134 14774])
+            ("create-matcher-aux" function
+               (:parent "str"
+                :arguments ("str" "next-fn"))
+                nil [14776 19171])
+            ("declaim" code nil nil [19173 19207])
+            ("create-matcher-aux" function
+               (:parent "word-boundary"
+                :arguments ("word-boundary" "next-fn"))
+                nil [20380 20732])
+            ("create-matcher-aux" function
+               (:parent "back-reference"
+                :arguments ("back-reference" "next-fn"))
+                nil [24034 25840])
+            ("create-matcher-aux" function
+               (:parent "branch"
+                :arguments ("branch" "next-fn"))
+                nil [25842 26769])
+            ("create-matcher-aux" function
+               (:parent "standalone"
+                :arguments ("standalone" "next-fn"))
+                nil [26771 27111])
+            ("create-matcher-aux" function
+               (:parent "filter"
+                :arguments ("filter" "next-fn"))
+                nil [27113 27332])
+            ("create-matcher-aux" function
+               (:parent "void"
+                :arguments ("void" "next-fn"))
+                nil [27334 27466]))          
+    :file "closures.lisp"
+    :pointmax 27467
+    :fsize 27466
+    :lastmodtime '(16750 29639 0 0)
+    :unmatched-syntax '((semantic-list 21437 . 24032) (semantic-list 20734 . 21435) (semantic-list 19209 . 20378) (semantic-list 3178 . 3641) (semantic-list 2412 . 3176) (semantic-list 1666 . 2410))
+    )
+   (semanticdb-table "regex-class.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1687 1710])
+            ("declaim" code nil nil [11934 11984])
+            ("case-mode" function
+               (:parent "str"
+                :arguments ("str" "old-case-mode"))
+                nil [14256 14457])
+            ("case-mode" function
+               (:parent "regex"
+                :arguments ("regex" "old-case-mode"))
+                nil [14459 14551])
+            ("copy-regex" function
+               (:parent "anchor"
+                :arguments ("anchor"))
+                nil [14871 15084])
+            ("copy-regex" function
+               (:parent "everything"
+                :arguments ("everything"))
+                nil [15086 15223])
+            ("copy-regex" function
+               (:parent "word-boundary"
+                :arguments ("word-boundary"))
+                nil [15225 15364])
+            ("copy-regex" function
+               (:parent "void"
+                :arguments ("void"))
+                nil [15366 15426])
+            ("copy-regex" function
+               (:parent "lookahead"
+                :arguments ("lookahead"))
+                nil [15428 15608])
+            ("copy-regex" function
+               (:parent "seq"
+                :arguments ("seq"))
+                nil [15610 15731])
+            ("copy-regex" function
+               (:parent "alternation"
+                :arguments ("alternation"))
+                nil [15733 15884])
+            ("copy-regex" function
+               (:parent "branch"
+                :arguments ("branch"))
+                nil [15886 16251])
+            ("copy-regex" function
+               (:parent "lookbehind"
+                :arguments ("lookbehind"))
+                nil [16253 16477])
+            ("copy-regex" function
+               (:parent "repetition"
+                :arguments ("repetition"))
+                nil [16479 16911])
+            ("copy-regex" function
+               (:parent "register"
+                :arguments ("register"))
+                nil [16913 17076])
+            ("copy-regex" function
+               (:parent "standalone"
+                :arguments ("standalone"))
+                nil [17078 17212])
+            ("copy-regex" function
+               (:parent "back-reference"
+                :arguments ("back-reference"))
+                nil [17214 17420])
+            ("copy-regex" function
+               (:parent "char-class"
+                :arguments ("char-class"))
+                nil [17422 17728])
+            ("copy-regex" function
+               (:parent "str"
+                :arguments ("str"))
+                nil [17730 17881])
+            ("copy-regex" function
+               (:parent "filter"
+                :arguments ("filter"))
+                nil [17883 18017])
+            ("remove-registers" function
+               (:parent "register"
+                :arguments ("register"))
+                nil [18880 19266])
+            ("remove-registers" function
+               (:parent "repetition"
+                :arguments ("repetition"))
+                nil [19268 19902])
+            ("remove-registers" function
+               (:parent "standalone"
+                :arguments ("standalone"))
+                nil [19904 20050])
+            ("remove-registers" function
+               (:parent "lookahead"
+                :arguments ("lookahead"))
+                nil [20052 20244])
+            ("remove-registers" function
+               (:parent "lookbehind"
+                :arguments ("lookbehind"))
+                nil [20246 20482])
+            ("remove-registers" function
+               (:parent "branch"
+                :arguments ("branch"))
+                nil [20484 20873])
+            ("remove-registers" function
+               (:parent "alternation"
+                :arguments ("alternation"))
+                nil [20875 21101])
+            ("remove-registers" function
+               (:parent "regex"
+                :arguments ("regex"))
+                nil [21103 21168])
+            ("remove-registers" function
+               (:parent "seq"
+                :arguments ("seq"))
+                nil [21170 21303])
+            ("everythingp" function
+               (:parent "seq"
+                :arguments ("seq"))
+                nil [21752 22149])
+            ("everythingp" function
+               (:parent "alternation"
+                :arguments ("alternation"))
+                nil [22151 22455])
+            ("everythingp" function
+               (:parent "repetition"
+                :arguments ("repetition"))
+                nil [22457 22746])
+            ("everythingp" function
+               (:parent "register"
+                :arguments ("register"))
+                nil [22748 22826])
+            ("everythingp" function
+               (:parent "standalone"
+                :arguments ("standalone"))
+                nil [22828 22912])
+            ("everythingp" function
+               (:parent "everything"
+                :arguments ("everything"))
+                nil [22914 22976])
+            ("everythingp" function
+               (:parent "regex"
+                :arguments ("regex"))
+                nil [22978 23158])
+            ("regex-length" function
+               (:parent "seq"
+                :arguments ("seq"))
+                nil [23496 23729])
+            ("regex-length" function
+               (:parent "alternation"
+                :arguments ("alternation"))
+                nil [23731 24113])
+            ("regex-length" function
+               (:parent "branch"
+                :arguments ("branch"))
+                nil [24115 24412])
+            ("regex-length" function
+               (:parent "repetition"
+                :arguments ("repetition"))
+                nil [24414 24882])
+            ("regex-length" function
+               (:parent "register"
+                :arguments ("register"))
+                nil [24884 24964])
+            ("regex-length" function
+               (:parent "standalone"
+                :arguments ("standalone"))
+                nil [24966 25052])
+            ("regex-length" function
+               (:parent "back-reference"
+                :arguments ("back-reference"))
+                nil [25054 25226])
+            ("regex-length" function
+               (:parent "char-class"
+                :arguments ("char-class"))
+                nil [25232 25286])
+            ("regex-length" function
+               (:parent "everything"
+                :arguments ("everything"))
+                nil [25288 25342])
+            ("regex-length" function
+               (:parent "str"
+                :arguments ("str"))
+                nil [25344 25392])
+            ("regex-length" function
+               (:parent "filter"
+                :arguments ("filter"))
+                nil [25394 25451])
+            ("regex-length" function
+               (:parent "regex"
+                :arguments ("regex"))
+                nil [25453 25612])
+            ("regex-min-length" function
+               (:parent "seq"
+                :arguments ("seq"))
+                nil [25933 26119])
+            ("regex-min-length" function
+               (:parent "alternation"
+                :arguments ("alternation"))
+                nil [26121 26384])
+            ("regex-min-length" function
+               (:parent "branch"
+                :arguments ("branch"))
+                nil [26386 26566])
+            ("regex-min-length" function
+               (:parent "repetition"
+                :arguments ("repetition"))
+                nil [26568 26768])
+            ("regex-min-length" function
+               (:parent "register"
+                :arguments ("register"))
+                nil [26774 26862])
+            ("regex-min-length" function
+               (:parent "standalone"
+                :arguments ("standalone"))
+                nil [26868 26962])
+            ("regex-min-length" function
+               (:parent "char-class"
+                :arguments ("char-class"))
+                nil [26968 27026])
+            ("regex-min-length" function
+               (:parent "everything"
+                :arguments ("everything"))
+                nil [27028 27086])
+            ("regex-min-length" function
+               (:parent "str"
+                :arguments ("str"))
+                nil [27088 27140])
+            ("regex-min-length" function
+               (:parent "filter"
+                :arguments ("filter"))
+                nil [27146 27220])
+            ("regex-min-length" function
+               (:parent "regex"
+                :arguments ("regex"))
+                nil [27222 27372])
+            ("compute-offsets" function
+               (:parent "seq"
+                :arguments ("seq" "start-pos"))
+                nil [28120 28467])
+            ("compute-offsets" function
+               (:parent "alternation"
+                :arguments ("alternation" "start-pos"))
+                nil [28469 28937])
+            ("compute-offsets" function
+               (:parent "branch"
+                :arguments ("branch" "start-pos"))
+                nil [28939 29246])
+            ("compute-offsets" function
+               (:parent "repetition"
+                :arguments ("repetition" "start-pos"))
+                nil [29248 29659])
+            ("compute-offsets" function
+               (:parent "register"
+                :arguments ("register" "start-pos"))
+                nil [29661 29767])
+            ("compute-offsets" function
+               (:parent "standalone"
+                :arguments ("standalone" "start-pos"))
+                nil [29773 29885])
+            ("compute-offsets" function
+               (:parent "char-class"
+                :arguments ("char-class" "start-pos"))
+                nil [29891 29971])
+            ("compute-offsets" function
+               (:parent "everything"
+                :arguments ("everything" "start-pos"))
+                nil [29977 30057])
+            ("compute-offsets" function
+               (:parent "str"
+                :arguments ("str" "start-pos"))
+                nil [30063 30170])
+            ("compute-offsets" function
+               (:parent "back-reference"
+                :arguments ("back-reference" "start-pos"))
+                nil [30172 30388])
+            ("compute-offsets" function
+               (:parent "filter"
+                :arguments ("filter" "start-pos"))
+                nil [30390 30521])
+            ("compute-offsets" function
+               (:parent "regex"
+                :arguments ("regex" "start-pos"))
+                nil [30523 30703]))          
+    :file "regex-class.lisp"
+    :pointmax 30704
+    :fsize 30703
+    :lastmodtime '(16897 4666 0 0)
+    :unmatched-syntax '((semantic-list 27374 . 27895) (semantic-list 25614 . 25931) (semantic-list 23160 . 23494) (semantic-list 21305 . 21750) (semantic-list 18433 . 18878) (semantic-list 14553 . 14869) (semantic-list 13740 . 14254) (semantic-list 13463 . 13738) (semantic-list 13203 . 13461) (semantic-list 12945 . 13201) (semantic-list 12688 . 12943) (semantic-list 12104 . 12686) (semantic-list 11142 . 11932) (semantic-list 1847 . 11140))
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!code!practicals-1.0.3!libraries!cl-ppcre-1.2.3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

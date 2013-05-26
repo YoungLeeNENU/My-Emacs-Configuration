@@ -1,0 +1,634 @@
+;; Object pyPdf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pyPdf/"
+  :tables (list 
+   (semanticdb-table "pdf.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A pure-Python PDF library with very minimal capabilities.  It was designed to
+be able to split and merge PDF files by page, and that's about all it can do.
+It may be a solid base for future PDF file work in Python.
+\"\"\"" code nil nil [1620 1842])
+            ("__author__" variable nil nil [1843 1873])
+            ("__author_email__" variable nil nil [1874 1921])
+            ("math" include nil nil [1923 1934])
+            ("struct" include nil nil [1935 1948])
+            ("sys" include nil nil [1949 1977])
+            ("try" code nil nil [1978 2072])
+            ("filters" include nil nil [2073 2087])
+            ("utils" include nil nil [2088 2100])
+            ("warnings" include nil nil [2101 2116])
+            ("generic" include nil nil [2117 2138])
+            ("utils" include nil nil [2139 2226])
+            ("if" code nil nil [2228 2302])
+            ("if" code nil nil [2303 2389])
+            ("PdfFileWriter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2589 2614])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2623 2641])
+                            ("pages" variable nil (reparse-symbol indented_block_body) [2722 2748])
+                            ("pages" code nil (reparse-symbol indented_block_body) [2757 2956])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2965 3001])
+                            ("info" variable nil (reparse-symbol indented_block_body) [3033 3058])
+                            ("info" code nil (reparse-symbol indented_block_body) [3067 3210])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3219 3253])
+                            ("root" variable nil (reparse-symbol indented_block_body) [3285 3310])
+                            ("root" code nil (reparse-symbol indented_block_body) [3319 3451])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3460 3494]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2574 2578]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2561 3495])
+                    ("_addObject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3515 3519])
+                            ("obj" variable nil (reparse-symbol function_parameters) [3521 3524]))                          )
+                        (reparse-symbol indented_block_body) [3500 3620])
+                    ("getObject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3639 3643])
+                            ("ido" variable nil (reparse-symbol function_parameters) [3645 3648]))                          )
+                        (reparse-symbol indented_block_body) [3625 3772])
+                    ("_addPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4144 4148])
+                            ("page" variable nil (reparse-symbol function_parameters) [4150 4154])
+                            ("action" variable nil (reparse-symbol function_parameters) [4156 4162]))                          )
+                        (reparse-symbol indented_block_body) [4131 4445])
+                    ("addPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4818 4822])
+                            ("page" variable nil (reparse-symbol function_parameters) [4824 4828]))                          )
+                        (reparse-symbol indented_block_body) [4806 4872])
+                    ("insertPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5238 5242])
+                            ("page" variable nil (reparse-symbol function_parameters) [5244 5248])
+                            ("index" variable nil (reparse-symbol function_parameters) [5250 5255]))                          )
+                        (reparse-symbol indented_block_body) [5223 5321])
+                    ("getPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5463 5467])
+                            ("pageNumber" variable nil (reparse-symbol function_parameters) [5469 5479]))                          )
+                        (reparse-symbol indented_block_body) [5451 5606])
+                    ("getNumPages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5703 5707]))                          )
+                        (reparse-symbol indented_block_body) [5687 5802])
+                    ("addBlankPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6196 6200])
+                            ("width" variable nil (reparse-symbol function_parameters) [6202 6207])
+                            ("height" variable nil (reparse-symbol function_parameters) [6214 6220]))                          )
+                        (reparse-symbol indented_block_body) [6179 6338])
+                    ("insertBlankPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6824 6828])
+                            ("width" variable nil (reparse-symbol function_parameters) [6830 6835])
+                            ("height" variable nil (reparse-symbol function_parameters) [6842 6848])
+                            ("index" variable nil (reparse-symbol function_parameters) [6855 6860]))                          )
+                        (reparse-symbol indented_block_body) [6804 7225])
+                    ("encrypt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7805 7809])
+                            ("user_pwd" variable nil (reparse-symbol function_parameters) [7811 7819])
+                            ("owner_pwd" variable nil (reparse-symbol function_parameters) [7821 7830])
+                            ("use_128bit" variable nil (reparse-symbol function_parameters) [7839 7849]))                          )
+                        (reparse-symbol indented_block_body) [7793 9139])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9462 9466])
+                            ("stream" variable nil (reparse-symbol function_parameters) [9468 9474]))                          )
+                        (reparse-symbol indented_block_body) [9452 12588])
+                    ("_sweepIndirectReferences" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12622 12626])
+                            ("externMap" variable nil (reparse-symbol function_parameters) [12628 12637])
+                            ("data" variable nil (reparse-symbol function_parameters) [12639 12643]))                          )
+                        (reparse-symbol indented_block_body) [12593 15017]))                  
+                :type "class")
+                nil [2528 15017])
+            ("PdfFileReader" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [15419 15445])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15454 15479])
+                            ("self" code nil (reparse-symbol indented_block_body) [15488 15505])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15514 15534])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15543 15576]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15396 15400])
+                            ("stream" variable nil (reparse-symbol function_parameters) [15402 15408]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15383 15577])
+                    ("getDocumentInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16054 16058]))                          )
+                        (reparse-symbol indented_block_body) [16034 16255])
+                    ("documentInfo" variable nil (reparse-symbol indented_block_body) [16464 16536])
+                    ("getXmpMetadata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16961 16965]))                          )
+                        (reparse-symbol indented_block_body) [16942 17147])
+                    ("xmpMetadata" variable nil (reparse-symbol indented_block_body) [17347 17417])
+                    ("getNumPages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17611 17615]))                          )
+                        (reparse-symbol indented_block_body) [17595 17726])
+                    ("numPages" variable nil (reparse-symbol indented_block_body) [17927 17991])
+                    ("getPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18210 18214])
+                            ("pageNumber" variable nil (reparse-symbol function_parameters) [18216 18226]))                          )
+                        (reparse-symbol indented_block_body) [18198 18464])
+                    ("namedDestinations" variable nil (reparse-symbol indented_block_body) [18692 18808])
+                    ("getNamedDestinations" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19084 19088])
+                            ("tree" variable nil (reparse-symbol function_parameters) [19090 19094])
+                            ("retval" variable nil (reparse-symbol function_parameters) [19101 19107]))                          )
+                        (reparse-symbol indented_block_body) [19059 20215])
+                    ("outlines" variable nil (reparse-symbol indented_block_body) [20417 20481])
+                    ("getOutlines" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20730 20734])
+                            ("node" variable nil (reparse-symbol function_parameters) [20736 20740])
+                            ("outlines" variable nil (reparse-symbol function_parameters) [20747 20755]))                          )
+                        (reparse-symbol indented_block_body) [20714 21800])
+                    ("_buildDestination" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21827 21831])
+                            ("title" variable nil (reparse-symbol function_parameters) [21833 21838])
+                            ("array" variable nil (reparse-symbol function_parameters) [21840 21845]))                          )
+                        (reparse-symbol indented_block_body) [21805 21958])
+                    ("_buildOutline" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21991 21995])
+                            ("node" variable nil (reparse-symbol function_parameters) [21997 22001]))                          )
+                        (reparse-symbol indented_block_body) [21973 22975])
+                    ("pages" variable nil (reparse-symbol indented_block_body) [23248 23364])
+                    ("_flatten" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23383 23387])
+                            ("pages" variable nil (reparse-symbol function_parameters) [23389 23394])
+                            ("inherit" variable nil (reparse-symbol function_parameters) [23401 23408])
+                            ("indirectRef" variable nil (reparse-symbol function_parameters) [23415 23426]))                          )
+                        (reparse-symbol indented_block_body) [23370 24656])
+                    ("getObject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24675 24679])
+                            ("indirectReference" variable nil (reparse-symbol function_parameters) [24681 24698]))                          )
+                        (reparse-symbol indented_block_body) [24661 27214])
+                    ("_decryptObject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27238 27242])
+                            ("obj" variable nil (reparse-symbol function_parameters) [27244 27247])
+                            ("key" variable nil (reparse-symbol function_parameters) [27249 27252]))                          )
+                        (reparse-symbol indented_block_body) [27219 27837])
+                    ("readObjectHeader" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27863 27867])
+                            ("stream" variable nil (reparse-symbol function_parameters) [27869 27875]))                          )
+                        (reparse-symbol indented_block_body) [27842 28434])
+                    ("cacheIndirectObject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28463 28467])
+                            ("generation" variable nil (reparse-symbol function_parameters) [28469 28479])
+                            ("idnum" variable nil (reparse-symbol function_parameters) [28481 28486])
+                            ("obj" variable nil (reparse-symbol function_parameters) [28488 28491]))                          )
+                        (reparse-symbol indented_block_body) [28439 28655])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28669 28673])
+                            ("stream" variable nil (reparse-symbol function_parameters) [28675 28681]))                          )
+                        (reparse-symbol indented_block_body) [28660 35717])
+                    ("_pairs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35733 35737])
+                            ("array" variable nil (reparse-symbol function_parameters) [35739 35744]))                          )
+                        (reparse-symbol indented_block_body) [35722 35897])
+                    ("readNextEndLine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35922 35926])
+                            ("stream" variable nil (reparse-symbol function_parameters) [35928 35934]))                          )
+                        (reparse-symbol indented_block_body) [35902 36326])
+                    ("decrypt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37190 37194])
+                            ("password" variable nil (reparse-symbol function_parameters) [37196 37204]))                          )
+                        (reparse-symbol indented_block_body) [37178 37367])
+                    ("_decrypt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37385 37389])
+                            ("password" variable nil (reparse-symbol function_parameters) [37391 37399]))                          )
+                        (reparse-symbol indented_block_body) [37372 38749])
+                    ("_authenticateUserPassword" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38784 38788])
+                            ("password" variable nil (reparse-symbol function_parameters) [38790 38798]))                          )
+                        (reparse-symbol indented_block_body) [38754 39542])
+                    ("getIsEncrypted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39566 39570]))                          )
+                        (reparse-symbol indented_block_body) [39547 39621])
+                    ("isEncrypted" variable nil (reparse-symbol indented_block_body) [39847 39917]))                  
+                :type "class")
+                nil [15350 39918])
+            ("getRectangle" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [39937 39941])
+                    ("name" variable nil (reparse-symbol function_parameters) [39943 39947])
+                    ("defaults" variable nil (reparse-symbol function_parameters) [39949 39957]))                  )
+                nil [39920 40369])
+            ("setRectangle" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [40387 40391])
+                    ("name" variable nil (reparse-symbol function_parameters) [40393 40397])
+                    ("value" variable nil (reparse-symbol function_parameters) [40399 40404]))                  )
+                nil [40370 40503])
+            ("deleteRectangle" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [40524 40528])
+                    ("name" variable nil (reparse-symbol function_parameters) [40530 40534]))                  )
+                nil [40504 40556])
+            ("createRectangleAccessor" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [40585 40589])
+                ("fallback" variable nil (reparse-symbol function_parameters) [40591 40599]))              ) nil [40557 40826])
+            ("PageObject" type
+               (:superclasses ("DictionaryObject")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("DictionaryObject" code nil (reparse-symbol indented_block_body) [41306 41337])
+                            ("self" variable nil (reparse-symbol indented_block_body) [41346 41360])
+                            ("self" variable nil (reparse-symbol indented_block_body) [41451 41481]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41263 41267])
+                            ("pdf" variable nil (reparse-symbol function_parameters) [41269 41272])
+                            ("indirectRef" variable nil (reparse-symbol function_parameters) [41279 41290]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [41250 41482])
+                    ("createBlankPage" function (:arguments 
+                      ( ("pdf" variable nil (reparse-symbol function_parameters) [41977 41980])
+                        ("width" variable nil (reparse-symbol function_parameters) [41987 41992])
+                        ("height" variable nil (reparse-symbol function_parameters) [41999 42005]))                      ) (reparse-symbol indented_block_body) [41957 42769])
+                    ("createBlankPage" variable nil (reparse-symbol indented_block_body) [42773 42820])
+                    ("rotateClockwise" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43074 43078])
+                            ("angle" variable nil (reparse-symbol function_parameters) [43080 43085]))                          )
+                        (reparse-symbol indented_block_body) [43054 43167])
+                    ("rotateCounterClockwise" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43435 43439])
+                            ("angle" variable nil (reparse-symbol function_parameters) [43441 43446]))                          )
+                        (reparse-symbol indented_block_body) [43408 43529])
+                    ("_rotate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43546 43550])
+                            ("angle" variable nil (reparse-symbol function_parameters) [43552 43557]))                          )
+                        (reparse-symbol indented_block_body) [43534 43679])
+                    ("_mergeResources" function (:arguments 
+                      ( ("res1" variable nil (reparse-symbol function_parameters) [43704 43708])
+                        ("res2" variable nil (reparse-symbol function_parameters) [43710 43714])
+                        ("resource" variable nil (reparse-symbol function_parameters) [43716 43724]))                      ) (reparse-symbol indented_block_body) [43684 44305])
+                    ("_mergeResources" variable nil (reparse-symbol indented_block_body) [44309 44356])
+                    ("_contentStreamRename" function (:arguments 
+                      ( ("stream" variable nil (reparse-symbol function_parameters) [44387 44393])
+                        ("rename" variable nil (reparse-symbol function_parameters) [44395 44401])
+                        ("pdf" variable nil (reparse-symbol function_parameters) [44403 44406]))                      ) (reparse-symbol indented_block_body) [44362 44752])
+                    ("_contentStreamRename" variable nil (reparse-symbol indented_block_body) [44756 44813])
+                    ("_pushPopGS" function (:arguments 
+                      ( ("contents" variable nil (reparse-symbol function_parameters) [44834 44842])
+                        ("pdf" variable nil (reparse-symbol function_parameters) [44844 44847]))                      ) (reparse-symbol indented_block_body) [44819 45190])
+                    ("_pushPopGS" variable nil (reparse-symbol indented_block_body) [45194 45231])
+                    ("_addTransformationMatrix" function (:arguments 
+                      ( ("contents" variable nil (reparse-symbol function_parameters) [45266 45274])
+                        ("pdf" variable nil (reparse-symbol function_parameters) [45276 45279])
+                        ("ctm" variable nil (reparse-symbol function_parameters) [45281 45284]))                      ) (reparse-symbol indented_block_body) [45237 45653])
+                    ("_addTransformationMatrix" variable nil (reparse-symbol indented_block_body) [45657 45722])
+                    ("getContents" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45885 45889]))                          )
+                        (reparse-symbol indented_block_body) [45869 46005])
+                    ("mergePage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46583 46587])
+                            ("page2" variable nil (reparse-symbol function_parameters) [46589 46594]))                          )
+                        (reparse-symbol indented_block_body) [46569 46628])
+                    ("_mergePage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47492 47496])
+                            ("page2" variable nil (reparse-symbol function_parameters) [47498 47503])
+                            ("page2transformation" variable nil (reparse-symbol function_parameters) [47505 47524]))                          )
+                        (reparse-symbol indented_block_body) [47477 49285])
+                    ("mergeTransformedPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49620 49624])
+                            ("page2" variable nil (reparse-symbol function_parameters) [49626 49631])
+                            ("ctm" variable nil (reparse-symbol function_parameters) [49633 49636]))                          )
+                        (reparse-symbol indented_block_body) [49595 49770])
+                    ("mergeScaledPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50042 50046])
+                            ("page2" variable nil (reparse-symbol function_parameters) [50048 50053])
+                            ("factor" variable nil (reparse-symbol function_parameters) [50055 50061]))                          )
+                        (reparse-symbol indented_block_body) [50022 50293])
+                    ("mergeRotatedPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50588 50592])
+                            ("page2" variable nil (reparse-symbol function_parameters) [50594 50599])
+                            ("rotation" variable nil (reparse-symbol function_parameters) [50601 50609]))                          )
+                        (reparse-symbol indented_block_body) [50567 50848])
+                    ("mergeTranslatedPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51179 51183])
+                            ("page2" variable nil (reparse-symbol function_parameters) [51185 51190])
+                            ("tx" variable nil (reparse-symbol function_parameters) [51192 51194])
+                            ("ty" variable nil (reparse-symbol function_parameters) [51196 51198]))                          )
+                        (reparse-symbol indented_block_body) [51155 51371])
+                    ("mergeRotatedScaledPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51722 51726])
+                            ("page2" variable nil (reparse-symbol function_parameters) [51728 51733])
+                            ("rotation" variable nil (reparse-symbol function_parameters) [51735 51743])
+                            ("scale" variable nil (reparse-symbol function_parameters) [51745 51750]))                          )
+                        (reparse-symbol indented_block_body) [51695 52393])
+                    ("mergeScaledTranslatedPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52779 52783])
+                            ("page2" variable nil (reparse-symbol function_parameters) [52785 52790])
+                            ("scale" variable nil (reparse-symbol function_parameters) [52792 52797])
+                            ("tx" variable nil (reparse-symbol function_parameters) [52799 52801])
+                            ("ty" variable nil (reparse-symbol function_parameters) [52803 52805]))                          )
+                        (reparse-symbol indented_block_body) [52749 53290])
+                    ("mergeRotatedScaledTranslatedPage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53752 53756])
+                            ("page2" variable nil (reparse-symbol function_parameters) [53758 53763])
+                            ("rotation" variable nil (reparse-symbol function_parameters) [53765 53773])
+                            ("scale" variable nil (reparse-symbol function_parameters) [53775 53780])
+                            ("tx" variable nil (reparse-symbol function_parameters) [53782 53784])
+                            ("ty" variable nil (reparse-symbol function_parameters) [53786 53788]))                          )
+                        (reparse-symbol indented_block_body) [53715 54559])
+                    ("addTransformation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54756 54760])
+                            ("ctm" variable nil (reparse-symbol function_parameters) [54762 54765]))                          )
+                        (reparse-symbol indented_block_body) [54734 55087])
+                    ("scale" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55346 55350])
+                            ("sx" variable nil (reparse-symbol function_parameters) [55352 55354])
+                            ("sy" variable nil (reparse-symbol function_parameters) [55356 55358]))                          )
+                        (reparse-symbol indented_block_body) [55336 55749])
+                    ("scaleBy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55942 55946])
+                            ("factor" variable nil (reparse-symbol function_parameters) [55948 55954]))                          )
+                        (reparse-symbol indented_block_body) [55930 55992])
+                    ("scaleTo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56222 56226])
+                            ("width" variable nil (reparse-symbol function_parameters) [56228 56233])
+                            ("height" variable nil (reparse-symbol function_parameters) [56235 56241]))                          )
+                        (reparse-symbol indented_block_body) [56210 56495])
+                    ("compressContentStreams" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56873 56877]))                          )
+                        (reparse-symbol indented_block_body) [56846 57129])
+                    ("extractText" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57749 57753]))                          )
+                        (reparse-symbol indented_block_body) [57733 58984])
+                    ("mediaBox" variable nil (reparse-symbol indented_block_body) [59272 59323])
+                    ("cropBox" variable nil (reparse-symbol indented_block_body) [59780 59841])
+                    ("bleedBox" variable nil (reparse-symbol indented_block_body) [60137 60211])
+                    ("trimBox" variable nil (reparse-symbol indented_block_body) [60459 60531])
+                    ("artBox" variable nil (reparse-symbol indented_block_body) [60803 60873]))                  
+                :type "class")
+                nil [41210 60874])
+            ("ContentStream" type
+               (:superclasses ("DecodedStreamObject")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [60963 60977])
+                            ("self" variable nil (reparse-symbol indented_block_body) [60986 61006])
+                            ("stream" variable nil (reparse-symbol indented_block_body) [61138 61165])
+                            ("if" code nil (reparse-symbol indented_block_body) [61174 61407])
+                            ("self" code nil (reparse-symbol indented_block_body) [61415 61448]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60935 60939])
+                            ("stream" variable nil (reparse-symbol function_parameters) [60941 60947])
+                            ("pdf" variable nil (reparse-symbol function_parameters) [60949 60952]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [60922 61449])
+                    ("__parseContentStream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61479 61483])
+                            ("stream" variable nil (reparse-symbol function_parameters) [61485 61491]))                          )
+                        (reparse-symbol indented_block_body) [61454 63187])
+                    ("_readInlineImage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [63213 63217])
+                            ("stream" variable nil (reparse-symbol function_parameters) [63219 63225]))                          )
+                        (reparse-symbol indented_block_body) [63192 64311])
+                    ("_getData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [64329 64333]))                          )
+                        (reparse-symbol indented_block_body) [64316 65028])
+                    ("_setData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65046 65050])
+                            ("value" variable nil (reparse-symbol function_parameters) [65052 65057]))                          )
+                        (reparse-symbol indented_block_body) [65033 65111])
+                    ("_data" variable nil (reparse-symbol indented_block_body) [65116 65152]))                  
+                :type "class")
+                nil [60876 65153])
+            ("DocumentInformation" type
+               (:superclasses ("DictionaryObject")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("DictionaryObject" code nil (reparse-symbol indented_block_body) [65773 65804]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65758 65762]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [65745 65805])
+                    ("getText" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65822 65826])
+                            ("key" variable nil (reparse-symbol function_parameters) [65828 65831]))                          )
+                        (reparse-symbol indented_block_body) [65810 65966])
+                    ("title" variable nil (reparse-symbol indented_block_body) [66247 66300])
+                    ("title_raw" variable nil (reparse-symbol indented_block_body) [66305 66358])
+                    ("author" variable nil (reparse-symbol indented_block_body) [66642 66697])
+                    ("author_raw" variable nil (reparse-symbol indented_block_body) [66702 66757])
+                    ("subject" variable nil (reparse-symbol indented_block_body) [67048 67105])
+                    ("subject_raw" variable nil (reparse-symbol indented_block_body) [67110 67167])
+                    ("creator" variable nil (reparse-symbol indented_block_body) [67641 67698])
+                    ("creator_raw" variable nil (reparse-symbol indented_block_body) [67703 67760])
+                    ("producer" variable nil (reparse-symbol indented_block_body) [68199 68258])
+                    ("producer_raw" variable nil (reparse-symbol indented_block_body) [68263 68322]))                  
+                :type "class")
+                nil [65696 68323])
+            ("Destination" type
+               (:superclasses ("DictionaryObject")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("DictionaryObject" code nil (reparse-symbol indented_block_body) [68587 68618])
+                            ("self" variable nil (reparse-symbol indented_block_body) [68627 68661])
+                            ("self" variable nil (reparse-symbol indented_block_body) [68670 68702])
+                            ("self" variable nil (reparse-symbol indented_block_body) [68711 68742])
+                            ("if" code nil (reparse-symbol indented_block_body) [68811 69435]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [68547 68551])
+                            ("title" variable nil (reparse-symbol function_parameters) [68553 68558])
+                            ("page" variable nil (reparse-symbol function_parameters) [68560 68564])
+                            ("typ" variable nil (reparse-symbol function_parameters) [68566 68569])
+                            ("args" variable nil (reparse-symbol function_parameters) [68571 68576]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [68534 69435])
+                    ("title" variable nil (reparse-symbol indented_block_body) [69539 69588])
+                    ("page" variable nil (reparse-symbol indented_block_body) [69684 69731])
+                    ("typ" variable nil (reparse-symbol indented_block_body) [69825 69871])
+                    ("zoom" variable nil (reparse-symbol indented_block_body) [69986 70039])
+                    ("left" variable nil (reparse-symbol indented_block_body) [70169 70222])
+                    ("right" variable nil (reparse-symbol indented_block_body) [70353 70408])
+                    ("top" variable nil (reparse-symbol indented_block_body) [70535 70586])
+                    ("bottom" variable nil (reparse-symbol indented_block_body) [70716 70773]))                  
+                :type "class")
+                nil [68493 70774])
+            ("convertToInt" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [70792 70793])
+                ("size" variable nil (reparse-symbol function_parameters) [70795 70799]))              ) nil [70775 70983])
+            ("_encryption_padding" code nil nil [71031 71213])
+            ("_alg32" function (:arguments 
+              ( ("password" variable nil (reparse-symbol function_parameters) [71340 71348])
+                ("rev" variable nil (reparse-symbol function_parameters) [71350 71353])
+                ("keylen" variable nil (reparse-symbol function_parameters) [71355 71361])
+                ("owner_entry" variable nil (reparse-symbol function_parameters) [71363 71374])
+                ("p_entry" variable nil (reparse-symbol function_parameters) [71376 71383])
+                ("id1_entry" variable nil (reparse-symbol function_parameters) [71385 71394])
+                ("metadata_encrypt" variable nil (reparse-symbol function_parameters) [71396 71412]))              ) nil [71329 73376])
+            ("_alg33" function (:arguments 
+              ( ("owner_pwd" variable nil (reparse-symbol function_parameters) [73502 73511])
+                ("user_pwd" variable nil (reparse-symbol function_parameters) [73513 73521])
+                ("rev" variable nil (reparse-symbol function_parameters) [73523 73526])
+                ("keylen" variable nil (reparse-symbol function_parameters) [73528 73534]))              ) nil [73491 74688])
+            ("_alg33_1" function (:arguments 
+              ( ("password" variable nil (reparse-symbol function_parameters) [74731 74739])
+                ("rev" variable nil (reparse-symbol function_parameters) [74741 74744])
+                ("keylen" variable nil (reparse-symbol function_parameters) [74746 74752]))              ) nil [74718 75666])
+            ("_alg34" function (:arguments 
+              ( ("password" variable nil (reparse-symbol function_parameters) [75792 75800])
+                ("owner_entry" variable nil (reparse-symbol function_parameters) [75802 75813])
+                ("p_entry" variable nil (reparse-symbol function_parameters) [75815 75822])
+                ("id1_entry" variable nil (reparse-symbol function_parameters) [75824 75833]))              ) nil [75781 76351])
+            ("_alg35" function (:arguments 
+              ( ("password" variable nil (reparse-symbol function_parameters) [76477 76485])
+                ("rev" variable nil (reparse-symbol function_parameters) [76487 76490])
+                ("keylen" variable nil (reparse-symbol function_parameters) [76492 76498])
+                ("owner_entry" variable nil (reparse-symbol function_parameters) [76500 76511])
+                ("p_entry" variable nil (reparse-symbol function_parameters) [76513 76520])
+                ("id1_entry" variable nil (reparse-symbol function_parameters) [76522 76531])
+                ("metadata_encrypt" variable nil (reparse-symbol function_parameters) [76533 76549]))              ) nil [76466 78418]))          
+    :file "pdf.py"
+    :pointmax 78987
+    :fsize 78986
+    :lastmodtime '(19706 50580 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filters.py"
+    :file "filters.py"
+    :fsize 9867
+    :lastmodtime '(19706 50580 0 0)
+    )
+   (semanticdb-table "utils.py"
+    :file "utils.py"
+    :fsize 3986
+    :lastmodtime '(19706 50580 0 0)
+    )
+   (semanticdb-table "generic.py"
+    :file "generic.py"
+    :fsize 29121
+    :lastmodtime '(19706 50580 0 0)
+    )
+   )
+  :file "!home!neo!download!pyPdf-1.13!pyPdf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,186 @@
+;; Object Chapter31/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Chapter31/"
+  :tables (list 
+   (semanticdb-table "css.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1 36])
+            ("define-html-special-operator" code nil nil [74 270])
+            ("emit-css-import" function (:arguments ("processor" "sexp")) nil [272 641])
+            ("process-css" function (:arguments ("processor" "sexp")) nil [643 1266])
+            ("emit-css-selector" function (:arguments ("processor" "selector")) nil [1268 2089])
+            ("parse-selector" function (:arguments ("selector")) nil [2091 2397])
+            ("process-css-key-or-value" function (:arguments ("processor" "form")) nil [2399 2551]))          
+    :file "css.lisp"
+    :pointmax 2553
+    :fsize 2552
+    :lastmodtime '(16909 33830 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "html.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("in-package" code nil nil [1 36])
+            ("*pretty*" variable (:default-value t) nil [38 57])
+            ("*html-output*" variable (:default-value *standard-output*) nil [58 98])
+            ("*html-pretty-printer*" variable nil nil [99 133])
+            ("defparameter" code nil nil [135 161])
+            ("with-html-output" function (:arguments ("stream" "body")) nil [250 398])
+            ("with-html-to-file" function (:arguments ("file" "body")) nil [400 642])
+            ("in-html-style" function (:arguments ("syntax")) nil [644 818])
+            ("emit-html" function (:arguments ("sexp")) nil [820 880])
+            ("html" function (:arguments ("whole" "body")) nil [882 1193])
+            ("get-pretty-printer" function nil nil [1223 1402])
+            ("codegen-html" function (:arguments ("ops" "pretty")) nil [1404 1529])
+            ("defparameter" code nil nil [1624 1662])
+            ("defparameter" code nil nil [1663 1706])
+            ("*escapes*" variable (:default-value *element-escapes*) nil [1707 1743])
+            ("escape" function (:arguments ("in" "to-escape")) nil [1923 2309])
+            ("indenting-printer" type
+               (:members 
+                  ( ("out" variable nil nil nil)
+                    ("beginning-of-line-p" variable (:default-value "t") nil nil)
+                    ("indentation" variable (:default-value "0") nil nil)
+                    ("indenting-p" variable (:default-value "t") nil nil))                  
+                :type "class")
+                nil [2405 2707])
+            ("emit/no-newlines" function (:arguments ("ip" "string" "start" "end")) nil [2937 3170])
+            ("emit-freshline" function (:arguments ("ip")) nil [3269 3350])
+            ("raw-string" function (:arguments ("string" "check-for-newlines")) nil [3652 3723])
+            ("newline" function nil nil [3725 3757])
+            ("freshline" function nil nil [3761 3795])
+            ("indent" function nil nil [3797 3828])
+            ("unindent" function nil nil [3830 3863])
+            ("toggle-indenting" function nil nil [3865 3906])
+            ("embed-value" function (:arguments ("value")) nil [3908 3950])
+            ("embed-code" function (:arguments ("code")) nil [3952 3992])
+            ("html-pretty-printer" type
+               (:members 
+                  ( ("printer" variable nil nil nil)
+                    ("tab-width" variable (:default-value "2") nil nil))                  
+                :type "class")
+                nil [4090 4244])
+            ("raw-string" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp" "string" "newlines-p"))
+                nil [4246 4415])
+            ("newline" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp"))
+                nil [4417 4493])
+            ("freshline" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp"))
+                nil [4495 4591])
+            ("indent" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp"))
+                nil [4593 4710])
+            ("unindent" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp"))
+                nil [4712 4831])
+            ("toggle-indenting" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp"))
+                nil [4833 4994])
+            ("embed-value" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp" "value"))
+                nil [4996 5118])
+            ("embed-code" function
+               (:parent "html-pretty-printer"
+                :arguments ("pp" "code"))
+                nil [5120 5236])
+            ("make-op-buffer" function nil nil [5325 5396])
+            ("push-op" function (:arguments ("op" "ops-buffer")) nil [5398 5464])
+            ("html-compiler" type
+               (:members 
+                  ( ("ops" variable (:default-value "(make-op-buffer)") nil nil))                  
+                :type "class")
+                nil [5551 5629])
+            ("raw-string" function
+               (:parent "html-compiler"
+                :arguments ("compiler" "string" "newlines-p"))
+                nil [5631 5770])
+            ("newline" function
+               (:parent "html-compiler"
+                :arguments ("compiler"))
+                nil [5772 5857])
+            ("freshline" function
+               (:parent "html-compiler"
+                :arguments ("compiler"))
+                nil [5861 5950])
+            ("indent" function
+               (:parent "html-compiler"
+                :arguments ("compiler"))
+                nil [5952 6035])
+            ("unindent" function
+               (:parent "html-compiler"
+                :arguments ("compiler"))
+                nil [6037 6124])
+            ("toggle-indenting" function
+               (:parent "html-compiler"
+                :arguments ("compiler"))
+                nil [6126 6229])
+            ("embed-value" function
+               (:parent "html-compiler"
+                :arguments ("compiler" "value"))
+                nil [6231 6348])
+            ("embed-code" function
+               (:parent "html-compiler"
+                :arguments ("compiler" "code"))
+                nil [6350 6452])
+            ("sexp->ops" function (:arguments ("body")) nil [6454 6620])
+            ("optimize-static-output" function (:arguments ("ops")) nil [6622 7193])
+            ("generate-code" function (:arguments ("ops")) nil [7621 7705])
+            ("op->code" function (:arguments ("operands")) nil [7707 7748])
+            ("process" function (:arguments ("processor" "form")) nil [9467 9823])
+            ("sexp-html-p" function (:arguments ("form")) nil [9917 9994])
+            ("self-evaluating-p" function (:arguments ("form")) nil [9996 10086])
+            ("cons-form-p" function (:arguments ("form" "test")) nil [10088 10264])
+            ("macro-form-p" function (:arguments ("form")) nil [10266 10367])
+            ("special-form-p" function (:arguments ("form")) nil [10369 10480])
+            ("parse-cons-form" function (:arguments ("sexp")) nil [10482 10624])
+            ("parse-explicit-attributes-sexp" function (:arguments ("sexp")) nil [10626 10768])
+            ("parse-implicit-attributes-sexp" function (:arguments ("sexp")) nil [10770 11115])
+            ("defparameter" code nil nil [11203 11396])
+            ("defparameter" code nil nil [11398 11603])
+            ("defparameter" code nil nil [11605 11798])
+            ("defparameter" code nil nil [11800 11892])
+            ("defparameter" code nil nil [11894 11962])
+            ("process-sexp-html" function (:arguments ("processor" "form")) nil [11964 12153])
+            ("process-cons-sexp-html" function (:arguments ("processor" "form")) nil [12155 12518])
+            ("emit-open-tag" function (:arguments ("processor" "tag" "body-p" "attributes")) nil [12520 12822])
+            ("emit-attributes" function (:arguments ("processor" "attributes")) nil [12824 13120])
+            ("emit-element-body" function (:arguments ("processor" "tag" "body")) nil [13122 13511])
+            ("emit-close-tag" function (:arguments ("processor" "tag" "body-p")) nil [13513 13767])
+            ("block-element-p" function (:arguments ("tag")) nil [13769 13826])
+            ("paragraph-element-p" function (:arguments ("tag")) nil [13828 13893])
+            ("empty-element-p" function (:arguments ("tag")) nil [13895 13952])
+            ("preserve-whitespace-p" function (:arguments ("tag")) nil [13954 14031])
+            ("define-html-special-operator" function (:arguments ("name" "processor" "body")) nil [14127 14385])
+            ("process-special-form" function (:arguments ("processor" "form")) nil [14387 14504])
+            ("define-html-macro" function (:arguments ("name" "body")) nil [14589 14878])
+            ("generate-macro-with-attributes" function (:arguments ("name" "attribute-args" "args" "body")) nil [14880 15428])
+            ("generate-macro-no-attributes" function (:arguments ("name" "args" "body")) nil [15430 15770])
+            ("parse-html-macro-lambda-list" function (:arguments ("args")) nil [15772 16031])
+            ("expand-macro-form" function (:arguments ("form")) nil [16033 16371])
+            ("define-html-special-operator" code nil nil [16463 16702])
+            ("define-html-special-operator" code nil nil [16704 16914])
+            ("define-html-special-operator" code nil nil [16916 17028])
+            ("define-html-special-operator" code nil nil [17030 17173])
+            ("define-html-special-operator" code nil nil [17175 17335])
+            ("define-html-special-operator" code nil nil [17337 17410]))          
+    :file "html.lisp"
+    :pointmax 17411
+    :fsize 17410
+    :lastmodtime '(16910 57120 0 0)
+    :unmatched-syntax '((semantic-list 9294 . 9373) (semantic-list 8846 . 9292) (semantic-list 8663 . 8844) (semantic-list 8496 . 8661) (semantic-list 8333 . 8494) (semantic-list 8164 . 8331) (semantic-list 8006 . 8158) (semantic-list 7750 . 8004) (semantic-list 7195 . 7619) (semantic-list 3352 . 3549) (semantic-list 3172 . 3267) (semantic-list 2709 . 2935) (semantic-list 1745 . 1921))
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!code!practicals-1.0.3!Chapter31!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

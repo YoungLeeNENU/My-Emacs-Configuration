@@ -1,0 +1,21 @@
+;; Object pyPdf-1.13/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pyPdf-1.13/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [24 56])
+            ("long_description" variable nil nil [58 679])
+            ("setup" code nil nil [681 1409]))          
+    :file "setup.py"
+    :pointmax 1411
+    :fsize 1410
+    :lastmodtime '(19706 51194 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!download!pyPdf-1.13!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

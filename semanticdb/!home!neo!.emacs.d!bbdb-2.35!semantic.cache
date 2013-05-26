@@ -1,0 +1,19 @@
+;; Object bbdb-2.35/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bbdb-2.35/"
+  :tables (list 
+   (semanticdb-table "loadpath.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [1 69]))          
+    :file "loadpath.el"
+    :pointmax 70
+    :fsize 69
+    :lastmodtime '(20851 58335 970937 852000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!.emacs.d!bbdb-2.35!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,233 @@
+;; Object buildscripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "buildscripts/"
+  :tables (list 
+   (semanticdb-table "buildlogger.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+buildlogger.py
+
+Wrap a command (specified on the command line invocation of buildlogger.py)
+and send output in batches to the buildlogs web application via HTTP POST.
+
+The script configures itself from environment variables:
+
+  required env vars:
+    MONGO_BUILDER_NAME (e.g. \"Nightly Linux 64-bit\")
+    MONGO_BUILD_NUMBER (an integer)
+    MONGO_TEST_FILENAME (not required when invoked with -g)
+
+  optional env vars:
+    MONGO_PHASE (e.g. \"core\", \"slow nightly\", etc)
+    MONGO_* (any other environment vars are passed to the web app)
+    BUILDLOGGER_CREDENTIALS (see below)
+
+This script has two modes: a \"test\" mode, intended to wrap the invocation of
+an individual test file, and a \"global\" mode, intended to wrap the mongod
+instances that run throughout the duration of a mongo test phase (the logs
+from \"global\" invocations are displayed interspersed with the logs of each
+test, in order to let the buildlogs web app display the full output sensibly.)
+
+If the BUILDLOGGER_CREDENTIALS environment variable is set, it should be a
+path to a valid Python file containing \"username\" and \"password\" variables,
+which should be valid credentials for authenticating to the buildlogger web
+app. For example:
+
+    username = \"hello\"
+    password = \"world\"
+
+If BUILDLOGGER_CREDENTIALS is a relative path, then the working directory
+and the directories one, two, and three levels up, are searched, in that
+order.
+\"\"\"" code nil nil [1 1413])
+            ("functools" include nil nil [1415 1431])
+            ("os" include nil nil [1432 1441])
+            ("os.path" include nil nil [1442 1456])
+            ("re" include nil nil [1457 1466])
+            ("signal" include nil nil [1467 1480])
+            ("socket" include nil nil [1481 1494])
+            ("subprocess" include nil nil [1495 1512])
+            ("sys" include nil nil [1513 1523])
+            ("time" include nil nil [1524 1535])
+            ("traceback" include nil nil [1536 1552])
+            ("urllib2" include nil nil [1553 1567])
+            ("utils" include nil nil [1568 1580])
+            ("warnings" include nil nil [1673 1688])
+            ("warnings" code nil nil [1689 1740])
+            ("try" code nil nil [1742 1846])
+            ("credentials_file" variable nil nil [1974 2050])
+            ("credentials_loc, credentials_name" code nil nil [2051 2118])
+            ("if" code nil nil [2119 2442])
+            ("username, password" code nil nil [2443 2474])
+            ("for" code nil nil [2475 2917])
+            ("URL_ROOT" variable nil nil [2919 2961])
+            ("TIMEOUT_SECONDS" variable nil nil [2962 2982])
+            ("socket" code nil nil [2983 3024])
+            ("digest_handler" variable nil nil [3026 3074])
+            ("digest_handler" code nil nil [3075 3184])
+            ("HTTPErrorProcessor" type
+               (:superclasses ("urllib2.HTTPErrorProcessor")
+                :members 
+                  ( ("http_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3431 3435])
+                            ("request" variable nil (reparse-symbol function_parameters) [3437 3444])
+                            ("response" variable nil (reparse-symbol function_parameters) [3446 3454]))                          )
+                        (reparse-symbol indented_block_body) [3413 3835]))                  
+                :type "class")
+                nil [3355 3835])
+            ("url_opener" variable nil nil [3836 3907])
+            ("url" function (:arguments 
+              ( ("endpoint" variable nil (reparse-symbol function_parameters) [3917 3925]))              ) nil [3909 4054])
+            ("post" function (:arguments 
+              ( ("endpoint" variable nil (reparse-symbol function_parameters) [4064 4072])
+                ("data" variable nil (reparse-symbol function_parameters) [4074 4078])
+                ("headers" variable nil (reparse-symbol function_parameters) [4080 4087]))              ) nil [4055 5015])
+            ("traceback_to_stderr" function
+               (:documentation "
+    decorator which logs any exceptions encountered to stderr
+    and returns none.
+    "
+                :arguments 
+                  ( ("func" variable nil (reparse-symbol function_parameters) [5040 5044]))                  )
+                nil [5016 5862])
+            ("get_or_create_build" function
+               (:decorators 
+                  ( ("traceback_to_stderr" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("builder" variable nil (reparse-symbol function_parameters) [5909 5916])
+                    ("buildnum" variable nil (reparse-symbol function_parameters) [5918 5926])
+                    ("extra" variable nil (reparse-symbol function_parameters) [5928 5933]))                  )
+                nil [5864 6122])
+            ("create_test" function
+               (:decorators 
+                  ( ("traceback_to_stderr" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("build_id" variable nil (reparse-symbol function_parameters) [6160 6168])
+                    ("test_filename" variable nil (reparse-symbol function_parameters) [6170 6183])
+                    ("test_command" variable nil (reparse-symbol function_parameters) [6185 6197])
+                    ("test_phase" variable nil (reparse-symbol function_parameters) [6199 6209]))                  )
+                nil [6123 6442])
+            ("append_test_logs" function
+               (:decorators 
+                  ( ("traceback_to_stderr" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("build_id" variable nil (reparse-symbol function_parameters) [6485 6493])
+                    ("test_id" variable nil (reparse-symbol function_parameters) [6495 6502])
+                    ("log_lines" variable nil (reparse-symbol function_parameters) [6504 6513]))                  )
+                nil [6443 6656])
+            ("append_global_logs" function
+               (:documentation "
+    \"global\" logs are for the mongod(s) started by smoke.py
+    that last the duration of a test phase -- since there
+    may be output in here that is important but spans individual
+    tests, the buildlogs webapp handles these logs specially.
+    "
+                :arguments 
+                  ( ("build_id" variable nil (reparse-symbol function_parameters) [6701 6709])
+                    ("log_lines" variable nil (reparse-symbol function_parameters) [6711 6720]))                  
+                :decorators 
+                  ( ("traceback_to_stderr" function (:type "decorator") nil nil))                  )
+                nil [6657 7105])
+            ("finish_test" function
+               (:decorators 
+                  ( ("traceback_to_stderr" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("build_id" variable nil (reparse-symbol function_parameters) [7143 7151])
+                    ("test_id" variable nil (reparse-symbol function_parameters) [7153 7160])
+                    ("failed" variable nil (reparse-symbol function_parameters) [7162 7168]))                  )
+                nil [7106 7431])
+            ("run_and_echo" function
+               (:documentation "
+    this just calls the command, and returns its return code,
+    allowing stdout and stderr to work as normal. it is used
+    as a fallback when environment variables or python
+    dependencies cannot be configured, or when the logging
+    webapp is unavailable, etc
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [7449 7456]))                  )
+                nil [7432 8097])
+            ("LogAppender" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8217 8241])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8250 8275])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8285 8325])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8334 8378])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8388 8401])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8410 8428])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8437 8465]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8142 8146])
+                            ("callback" variable nil (reparse-symbol function_parameters) [8148 8156])
+                            ("args" variable nil (reparse-symbol function_parameters) [8158 8162])
+                            ("send_after_lines" variable nil (reparse-symbol function_parameters) [8164 8180])
+                            ("send_after_seconds" variable nil (reparse-symbol function_parameters) [8186 8204]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8129 8466])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8484 8488])
+                            ("line" variable nil (reparse-symbol function_parameters) [8490 8494]))                          )
+                        (reparse-symbol indented_block_body) [8471 8701])
+                    ("submit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8756 8760]))                          )
+                        (reparse-symbol indented_block_body) [8745 9188]))                  
+                :type "class")
+                nil [8098 9188])
+            ("wrap_test" function
+               (:documentation "
+    call the given command, intercept its stdout and stderr,
+    and send results in batches of 100 lines or 10s to the 
+    buildlogger webapp
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [9204 9211]))                  )
+                nil [9190 11555])
+            ("wrap_global" function
+               (:documentation "
+    call the given command, intercept its stdout and stderr,
+    and send results in batches of 100 lines or 10s to the
+    buildlogger webapp. see :func:`append_global_logs` for the
+    difference between \"global\" and \"test\" log output.
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [11572 11579]))                  )
+                nil [11556 13115])
+            ("loop_and_callback" function
+               (:documentation "
+    run the given command (a sequence of arguments, ordinarily
+    from sys.argv), and call the given callback with each line
+    of stdout or stderr encountered. after the command is finished,
+    callback is called once more with None instead of a string.
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [13138 13145])
+                    ("callback" variable nil (reparse-symbol function_parameters) [13147 13155]))                  )
+                nil [13116 14457])
+            ("if" code nil nil [14459 15562]))          
+    :file "buildlogger.py"
+    :pointmax 15563
+    :fsize 15562
+    :lastmodtime '(20854 33965 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "utils.py"
+    :file "utils.py"
+    :fsize 7055
+    :lastmodtime '(20854 33965 0 0)
+    )
+   )
+  :file "!home!neo!document!mongoDB!mongodb-src-r2.4.3!buildscripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

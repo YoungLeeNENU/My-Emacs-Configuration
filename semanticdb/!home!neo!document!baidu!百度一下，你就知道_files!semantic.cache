@@ -1,0 +1,27 @@
+;; Object 百度一下，你就知道_files/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "百度一下，你就知道_files/"
+  :tables (list 
+   (semanticdb-table "home-2.10.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "home-2.10.js"
+    :pointmax 28523
+    :fsize 28568
+    :lastmodtime '(20870 4872 686729 418000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "a.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "a.html"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(20870 5072 886724 301000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!baidu!百度一下，你就知道_files!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

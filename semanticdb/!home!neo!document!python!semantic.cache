@@ -13,6 +13,44 @@
     :lastmodtime '(20845 22931 508383 625000)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "class.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("bio" type
+               (:members 
+                  ( ("who_am_i" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54 58]))                          )
+                        (reparse-symbol indented_block_body) [41 88])
+                    ("is_geek" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104 108]))                          )
+                        (reparse-symbol indented_block_body) [92 131])
+                    ("get_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [148 152]))                          )
+                        (reparse-symbol indented_block_body) [135 433])
+                    ("motto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [447 451]))                          )
+                        (reparse-symbol indented_block_body) [437 486]))                  
+                :type "class")
+                nil [24 486])
+            ("sample" variable nil nil [487 501])
+            ("print" code nil nil [503 526])
+            ("print" code nil nil [527 549])
+            ("print" code nil nil [550 573])
+            ("print" code nil nil [574 594]))          
+    :file "class.py"
+    :pointmax 595
+    :fsize 594
+    :lastmodtime '(20871 14664 877638 48000)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!home!neo!document!python!semantic.cache"
   :semantic-tag-version "2.0"

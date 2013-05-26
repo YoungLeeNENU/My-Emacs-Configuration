@@ -1,0 +1,268 @@
+;; Object yah3c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yah3c/"
+  :tables (list 
+   (semanticdb-table "yah3c.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Main program for YaH3C.
+\"\"\"" code nil nil [46 77])
+            ("__version__" variable nil nil [79 98])
+            ("os" include nil nil [100 114])
+            ("sys" include nil nil [100 114])
+            ("ConfigParser" include nil nil [115 134])
+            ("getpass" include nil nil [135 149])
+            ("argparse" include nil nil [150 165])
+            ("logging" include nil nil [166 180])
+            ("eapauth" include nil nil [182 196])
+            ("usermgr" include nil nil [197 211])
+            ("parse_arguments" function nil nil [214 1029])
+            ("prompt_user_info" function nil nil [1030 1898])
+            ("enter_interactive_usermanager" function nil nil [1899 2952])
+            ("start_yah3c" function (:arguments 
+              ( ("login_info" variable nil (reparse-symbol function_parameters) [2969 2979]))              ) nil [2953 3048])
+            ("main" function nil nil [3049 3923])
+            ("if" code nil nil [3924 3962]))          
+    :file "yah3c.py"
+    :pointmax 3962
+    :fsize 3969
+    :lastmodtime '(20825 22532 219635 584000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eapauth.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+EAP authentication handler
+This module sents EAPOL begin/logoff packet
+and parses received EAP packet
+\"\"\"" code nil nil [1 110])
+            ("__all__" variable nil nil [111 132])
+            ("socket" include nil nil [134 147])
+            ("os" include nil nil [148 167])
+            ("sys" include nil nil [148 167])
+            ("pwd" include nil nil [148 167])
+            ("subprocess" include nil nil [168 195])
+            ("colorama" include nil nil [197 235])
+            ("eappacket" include nil nil [267 290])
+            ("display_prompt" function (:arguments 
+              ( ("color" variable nil (reparse-symbol function_parameters) [311 316])
+                ("string" variable nil (reparse-symbol function_parameters) [318 324]))              ) nil [292 459])
+            ("display_packet" function (:arguments 
+              ( ("packet" variable nil (reparse-symbol function_parameters) [479 485]))              ) nil [460 686])
+            ("EAPAuth" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [796 887])
+                            ("self" code nil (reparse-symbol indented_block_body) [896 963])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1014 1058])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1067 1155])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1164 1192])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1201 1229])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1238 1304]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [719 723])
+                            ("login_info" variable nil (reparse-symbol function_parameters) [725 735]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [706 1305])
+                    ("send_start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1325 1329]))                          )
+                        (reparse-symbol indented_block_body) [1310 1541])
+                    ("send_logoff" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1562 1566]))                          )
+                        (reparse-symbol indented_block_body) [1546 1819])
+                    ("send_response_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1845 1849])
+                            ("packet_id" variable nil (reparse-symbol function_parameters) [1851 1860]))                          )
+                        (reparse-symbol indented_block_body) [1824 2143])
+                    ("send_response_md5" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2170 2174])
+                            ("packet_id" variable nil (reparse-symbol function_parameters) [2176 2185])
+                            ("md5data" variable nil (reparse-symbol function_parameters) [2187 2194]))                          )
+                        (reparse-symbol indented_block_body) [2148 2779])
+                    ("send_response_h3c" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2806 2810])
+                            ("packet_id" variable nil (reparse-symbol function_parameters) [2812 2821]))                          )
+                        (reparse-symbol indented_block_body) [2784 3209])
+                    ("display_login_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3240 3244])
+                            ("msg" variable nil (reparse-symbol function_parameters) [3246 3249]))                          
+                        :documentation "
+		display the messages received form the radius server,
+		including the error meaasge after logging failed or
+		other meaasge from networking centre
+        ")
+                        (reparse-symbol indented_block_body) [3214 3531])
+                    ("EAP_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3552 3556])
+                            ("eap_packet" variable nil (reparse-symbol function_parameters) [3558 3568]))                          )
+                        (reparse-symbol indented_block_body) [3536 6044])
+                    ("serve_forever" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6067 6071]))                          )
+                        (reparse-symbol indented_block_body) [6049 6550]))                  
+                :type "class")
+                nil [687 6550])
+            ("daemonize" function (:arguments 
+              ( ("stdin" variable nil (reparse-symbol function_parameters) [6566 6571])
+                ("stdout" variable nil (reparse-symbol function_parameters) [6585 6591])
+                ("stderr" variable nil (reparse-symbol function_parameters) [6605 6611]))              ) nil [6551 7946]))          
+    :file "eapauth.py"
+    :pointmax 7946
+    :fsize 7945
+    :lastmodtime '(20826 49378 381964 20000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "usermgr.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\" User Management Module
+
+This module reads the 'users.conf' file and gets all users's info.
+\"\"\"" code nil nil [1 99])
+            ("__all__" variable nil nil [101 122])
+            ("ConfigParser" include nil nil [124 143])
+            ("UserMgr" type
+               (:documentation "User Manager
+    The format of the user_info is:
+    user_info = {
+        \"username\": \"maple\",
+        \"password\": \"valley\",
+        \"ethernet_interface\": \"eth0\",
+        \"dhcp_command\": \"dhcpcd\",
+        \"daemon\": True,
+        # following has not implemented yet
+        \"carry_version_info\": True,
+        \"broadcast_logoff\": False
+        \"packet_type\": \"unicast\"
+    }
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [593 715])
+                            ("self" variable nil (reparse-symbol indented_block_body) [723 764])
+                            ("self" code nil (reparse-symbol indented_block_body) [773 810]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [567 571])
+                            ("path" variable nil (reparse-symbol function_parameters) [573 577]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [554 811])
+                    ("save_and_reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [836 840]))                          )
+                        (reparse-symbol indented_block_body) [816 982])
+                    ("get_user_number" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1014 1018]))                          )
+                        (reparse-symbol indented_block_body) [994 1064])
+                    ("get_all_users_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1092 1096]))                          )
+                        (reparse-symbol indented_block_body) [1069 1342])
+                    ("get_user_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1365 1369])
+                            ("username" variable nil (reparse-symbol function_parameters) [1371 1379]))                          )
+                        (reparse-symbol indented_block_body) [1347 1502])
+                    ("add_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1524 1528])
+                            ("user_info" variable nil (reparse-symbol function_parameters) [1530 1539]))                          )
+                        (reparse-symbol indented_block_body) [1511 1638])
+                    ("remove_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1659 1663])
+                            ("username" variable nil (reparse-symbol function_parameters) [1665 1673]))                          )
+                        (reparse-symbol indented_block_body) [1643 1752])
+                    ("update_user_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1778 1782])
+                            ("user_info" variable nil (reparse-symbol function_parameters) [1784 1793]))                          )
+                        (reparse-symbol indented_block_body) [1757 2275]))                  
+                :type "class")
+                nil [145 2275]))          
+    :file "usermgr.py"
+    :pointmax 2275
+    :fsize 2274
+    :lastmodtime '(20825 22158 279645 141000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(20825 22158 279645 141000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eappacket.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("struct" include nil nil [1 21])
+            ("ETHERTYPE_PAE" variable nil nil [84 106])
+            ("PAE_GROUP_ADDR" variable nil nil [107 150])
+            ("BROADCAST_ADDR" variable nil nil [151 194])
+            ("EAPOL_VERSION" variable nil nil [196 213])
+            ("EAPOL_EAPPACKET" variable nil nil [214 233])
+            ("EAPOL_START" variable nil nil [269 284])
+            ("EAPOL_LOGOFF" variable nil nil [285 301])
+            ("EAPOL_KEY" variable nil nil [302 315])
+            ("EAPOL_ASF" variable nil nil [316 329])
+            ("EAP_REQUEST" variable nil nil [331 346])
+            ("EAP_RESPONSE" variable nil nil [347 363])
+            ("EAP_SUCCESS" variable nil nil [364 379])
+            ("EAP_FAILURE" variable nil nil [380 395])
+            ("EAP_TYPE_ID" variable nil nil [653 668])
+            ("EAP_TYPE_MD5" variable nil nil [695 711])
+            ("EAP_TYPE_H3C" variable nil nil [742 758])
+            ("get_EAPOL" function (:arguments 
+              ( ("type" variable nil (reparse-symbol function_parameters) [852 856])
+                ("payload" variable nil (reparse-symbol function_parameters) [858 865]))              ) nil [838 938])
+            ("get_EAP" function (:arguments 
+              ( ("code" variable nil (reparse-symbol function_parameters) [951 955])
+                ("id" variable nil (reparse-symbol function_parameters) [957 959])
+                ("type" variable nil (reparse-symbol function_parameters) [961 965])
+                ("data" variable nil (reparse-symbol function_parameters) [969 973]))              ) nil [939 1136])
+            ("get_ethernet_header" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [1161 1164])
+                ("dst" variable nil (reparse-symbol function_parameters) [1166 1169])
+                ("type" variable nil (reparse-symbol function_parameters) [1171 1175]))              ) nil [1137 1213]))          
+    :file "eappacket.py"
+    :pointmax 1213
+    :fsize 1212
+    :lastmodtime '(20825 22158 279645 141000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!YaH3C!yah3c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

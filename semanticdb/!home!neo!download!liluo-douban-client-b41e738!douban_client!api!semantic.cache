@@ -1,0 +1,101 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables (list 
+   (semanticdb-table "user.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("DoubanApiBase" include nil nil [37 87])
+            ("DEFAULT_START" include nil nil [37 87])
+            ("DEFAULT_COUNT" include nil nil [37 87])
+            ("User" type
+               (:superclasses ("DoubanApiBase")
+                :members 
+                  ( ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [134 138]))                          )
+                        (reparse-symbol indented_block_body) [121 175])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [188 192])
+                            ("id" variable nil (reparse-symbol function_parameters) [194 196]))                          )
+                        (reparse-symbol indented_block_body) [180 242])
+                    ("me" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [272 276]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [251 310])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [326 330])
+                            ("q" variable nil (reparse-symbol function_parameters) [332 333])
+                            ("start" variable nil (reparse-symbol function_parameters) [335 340])
+                            ("count" variable nil (reparse-symbol function_parameters) [356 361]))                          )
+                        (reparse-symbol indented_block_body) [315 446])
+                    ("follow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [462 466])
+                            ("id" variable nil (reparse-symbol function_parameters) [468 470]))                          )
+                        (reparse-symbol indented_block_body) [451 539])
+                    ("unfollow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [557 561])
+                            ("id" variable nil (reparse-symbol function_parameters) [563 565]))                          )
+                        (reparse-symbol indented_block_body) [544 635])
+                    ("block" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [650 654])
+                            ("id" variable nil (reparse-symbol function_parameters) [656 658]))                          )
+                        (reparse-symbol indented_block_body) [640 742])
+                    ("friendships" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [763 767])
+                            ("target_id" variable nil (reparse-symbol function_parameters) [769 778])
+                            ("source_id" variable nil (reparse-symbol function_parameters) [780 789]))                          )
+                        (reparse-symbol indented_block_body) [747 888])
+                    ("following" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [907 911])
+                            ("id" variable nil (reparse-symbol function_parameters) [913 915])
+                            ("start" variable nil (reparse-symbol function_parameters) [917 922])
+                            ("count" variable nil (reparse-symbol function_parameters) [938 943]))                          )
+                        (reparse-symbol indented_block_body) [893 1067])
+                    ("followers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1086 1090])
+                            ("id" variable nil (reparse-symbol function_parameters) [1092 1094])
+                            ("start" variable nil (reparse-symbol function_parameters) [1096 1101])
+                            ("count" variable nil (reparse-symbol function_parameters) [1117 1122]))                          )
+                        (reparse-symbol indented_block_body) [1072 1246])
+                    ("follow_in_common" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1272 1276])
+                            ("id" variable nil (reparse-symbol function_parameters) [1278 1280])
+                            ("start" variable nil (reparse-symbol function_parameters) [1282 1287])
+                            ("count" variable nil (reparse-symbol function_parameters) [1303 1308]))                          )
+                        (reparse-symbol indented_block_body) [1251 1414]))                  
+                :type "class")
+                nil [89 1414]))          
+    :file "user.py"
+    :pointmax 1785
+    :fsize 1784
+    :lastmodtime '(20833 17510 0 0)
+    :unmatched-syntax '((PERIOD 31 . 32))
+    )
+   )
+  :file "!home!neo!download!liluo-douban-client-b41e738!douban_client!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

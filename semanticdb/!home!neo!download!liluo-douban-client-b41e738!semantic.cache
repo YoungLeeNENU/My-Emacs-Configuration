@@ -1,0 +1,20 @@
+;; Object liluo-douban-client-b41e738/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "liluo-douban-client-b41e738/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("setuptools" include nil nil [48 91])
+            ("setup" code nil nil [93 994]))          
+    :file "setup.py"
+    :pointmax 995
+    :fsize 994
+    :lastmodtime '(20833 17510 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!download!liluo-douban-client-b41e738!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

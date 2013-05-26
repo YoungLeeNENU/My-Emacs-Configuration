@@ -1,0 +1,172 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CL-PPCRE - portable Perl-compatible regular expressions for Common Lisp" section nil nil [157 585])
+            ("CL-PPCRE - portable Perl-compatible regular expressions for Common Lisp" section (:members 
+              ( ("CL-PPCRE - portable Perl-compatible regular expressions for Common Lisp" section (:members 
+                  ( ("Abstract" section (:members 
+                      ( ("Allegro Common Lisp" anchor nil nil [2043 2046])
+                        ("CLISP" anchor nil nil [2155 2158])
+                        ("CMUCL" anchor nil nil [2264 2267])
+                        ("Corman Lisp" anchor nil nil [2342 2345])
+                        ("ECL" anchor nil nil [2423 2426])
+                        ("Genera 8.5" anchor nil nil [2502 2505])
+                        ("Macintosh Common Lisp" anchor nil nil [2557 2560])
+                        ("OpenMCL" anchor nil nil [2680 2683])
+                        ("SBCL" anchor nil nil [2795 2798])
+                        ("Scieneer Common Lisp" anchor nil nil [2876 2879])
+                        ("LispWorks" anchor nil nil [3018 3021])
+                        ("test suite" anchor nil nil [3348 3351])
+                        ("SCAN" anchor nil nil [3481 3484])
+                        ("Let us
+know" anchor nil nil [4028 4031])
+                        ("http://weitz.de/files/cl-ppcre.tar.gz" anchor nil nil [5583 5586]))                      ) nil [716 5704])
+                    ("Contents" section (:members 
+                      ( ("Download and installation" anchor nil nil [5767 5770])
+                        ("Support and mailing lists" anchor nil nil [5822 5825])
+                        ("The CL-PPCRE dictionary" anchor nil nil [5874 5877])
+                        ("create-scanner" anchor nil nil [5933 5936])
+                        ("create-scanner" anchor nil nil [6024 6027])
+                        ("parse-tree-synonym" anchor nil nil [6109 6112])
+                        ("define-parse-tree-synonym" anchor nil nil [6183 6186])
+                        ("scan" anchor nil nil [6271 6274])
+                        ("scan-to-strings" anchor nil nil [6317 6320])
+                        ("register-groups-bind" anchor nil nil [6385 6388])
+                        ("do-scans" anchor nil nil [6463 6466])
+                        ("do-matches" anchor nil nil [6517 6520])
+                        ("do-matches-as-strings" anchor nil nil [6575 6578])
+                        ("do-register-groups" anchor nil nil [6655 6658])
+                        ("all-matches" anchor nil nil [6729 6732])
+                        ("all-matches-as-strings" anchor nil nil [6789 6792])
+                        ("split" anchor nil nil [6871 6874])
+                        ("regex-replace" anchor nil nil [6919 6922])
+                        ("regex-replace-all" anchor nil nil [6983 6986])
+                        ("regex-apropos" anchor nil nil [7055 7058])
+                        ("regex-apropos-list" anchor nil nil [7119 7122])
+                        ("*regex-char-code-limit*" anchor nil nil [7193 7196])
+                        ("*use-bmh-matchers*" anchor nil nil [7275 7278])
+                        ("*allow-quoting*" anchor nil nil [7347 7350])
+                        ("quote-meta-chars" anchor nil nil [7415 7418])
+                        ("ppcre-error" anchor nil nil [7485 7488])
+                        ("ppcre-invocation-error" anchor nil nil [7545 7548])
+                        ("ppcre-syntax-error" anchor nil nil [7627 7630])
+                        ("ppcre-syntax-error-string" anchor nil nil [7701 7704])
+                        ("ppcre-syntax-error-pos" anchor nil nil [7789 7792])
+                        ("Filters" anchor nil nil [7877 7880])
+                        ("Testing CL-PPCRE" anchor nil nil [7914 7917])
+                        ("Compatibility with Perl" anchor nil nil [7957 7960])
+                        ("Empty strings instead of <code>undef" anchor nil nil [8020 8023])
+                        ("Strange scoping of embedded modifiers" anchor nil nil [8137 8140])
+                        ("Inconsistent capturing of <code>$1" anchor nil nil [8206 8209])
+                        ("Captured groups not available outside of look-aheads and look-behinds" anchor nil nil [8309 8312])
+                        ("Alternations don't always work from left to right" anchor nil nil [8415 8418])
+                        ("&quot;\\r&quot;" anchor nil nil [8496 8499])
+                        ("What about <code>&quot;\\w&quot;" anchor nil nil [8575 8578])
+                        ("Performance" anchor nil nil [8652 8655])
+                        ("Benchmarking" anchor nil nil [8710 8713])
+                        ("Other performance issues" anchor nil nil [8754 8757])
+                        ("Bugs and problems" anchor nil nil [8816 8819])
+                        ("Stack overflow" anchor nil nil [8869 8872])
+                        ("&quot;\\Q&quot;" anchor nil nil [8913 8916])
+                        ("Backslashes may confuse you..." anchor nil nil [8996 8999])
+                        ("Remarks" anchor nil nil [9066 9069])
+                        ("AllegroCL compatibility mode" anchor nil nil [9103 9106])
+                        ("Acknowledgements" anchor nil nil [9161 9164]))                      ) nil [5704 9218])
+                    ("Download and installation" section (:members 
+                      ( ("Debian" anchor nil nil [9723 9726])
+                        ("Kevin
+Rosenberg" anchor nil nil [9973 9976])
+                        ("Gentoo Linux" anchor nil nil [10043 10046])
+                        ("FreeBSD port" anchor nil nil [10130 10133])
+                        ("common-lisp.net" anchor nil nil [11852 11855])
+                        ("weitz.de" anchor nil nil [11981 11984]))                      ) nil [9218 12038])
+                    ("Support and mailing lists" section (:members 
+                      ( ("common-lisp.net" anchor nil nil [12524 12527]))                      ) nil [12038 12594])
+                    ("The CL-PPCRE dictionary" section (:members 
+                      ( ("CL-INTERPOL" anchor nil nil [14029 14032])
+                        ("the relevant section" anchor nil nil [15139 15142])
+                        ("Bugs and problems" anchor nil nil [15190 15193])
+                        ("SCAN" anchor nil nil [28885 28888])
+                        ("DO-SCANS" anchor nil nil [33699 33702])
+                        ("DO-MATCHES" anchor nil nil [34676 34679])
+                        ("DO-MATCHES" anchor nil nil [35523 35526])
+                        ("PARSE-INTEGER" anchor nil nil [35661 35664])
+                        ("REGISTER-GROUPS-BIND" anchor nil nil [36441 36444])
+                        ("ALL-MATCHES" anchor nil nil [38799 38802])
+                        ("REGEX-REPLACE" anchor nil nil [45549 45552])
+                        ("test suite" anchor nil nil [52542 52545])
+                        ("the relevant section" anchor nil nil [56833 56836])
+                        ("Bugs and problems" anchor nil nil [56884 56887]))                      ) nil [12594 61378])
+                    ("Filters" section (:members 
+                      ( ("above" anchor nil nil [61515 61518])
+                        ("mailing list" anchor nil nil [67694 67697]))                      ) nil [61378 67743])
+                    ("Testing CL-PPCRE" section (:members 
+                      ( ("PCRE" anchor nil nil [67880 67883]))                      ) nil [67743 70285])
+                    ("Compatibility with Perl" section (:members 
+                      ( ("Empty strings instead of <code>undef" section (:members 
+                          ( ("testdata" anchor nil nil [70630 70633]))                          ) nil [70485 70836])
+                        ("Strange scoping of embedded modifiers" section (:members 
+                          ( ("testdata" anchor nil nil [70933 70936]))                          ) nil [70836 71136])
+                        ("Inconsistent capturing of <code>$1" section (:members 
+                          ( ("testdata" anchor nil nil [71267 71270]))                          ) nil [71136 71432])
+                        ("Captured groups not available outside of look-aheads and look-behinds" section (:members 
+                          ( ("testdata" anchor nil nil [71567 71570]))                          ) nil [71432 71822])
+                        ("Alternations don't always work from left to right" section (:members 
+                          ( ("testdata" anchor nil nil [71931 71934]))                          ) nil [71822 72055])
+                        ("&quot;\\r&quot;" section (:members 
+                          ( ("testdata" anchor nil nil [72160 72163]))                          ) nil [72055 72414])
+                        ("What about <code>&quot;\\w&quot;" section nil nil [72414 72835]))                      ) nil [70285 72835])
+                    ("Performance" section (:members 
+                      ( ("Benchmarking" section (:members 
+                          ( ("CL-PPCRE test suite" anchor nil nil [72952 72955])
+                            ("another benchmark" anchor nil nil [87258 87261])
+                            ("perltest.pl" anchor nil nil [87340 87343])
+                            ("testdata" anchor nil nil [87402 87405]))                          ) nil [72894 87912])
+                        ("Other performance issues" section (:members 
+                          ( ("SCAN" anchor nil nil [88651 88654])
+                            ("SCAN-TO-STRINGS" anchor nil nil [88690 88693])
+                            ("SPLIT" anchor nil nil [88751 88754])
+                            ("REGEX-REPLACE" anchor nil nil [88793 88796])
+                            ("REGEX-REPLACE-ALL" anchor nil nil [88853 88856])
+                            ("*USE-BMH-MATCHERS*" anchor nil nil [89129 89132])
+                            ("benchmarks" anchor nil nil [91876 91879]))                          ) nil [87912 92591]))                      ) nil [72835 92591])
+                    ("Bugs and problems" section (:members 
+                      ( ("Stack overflow" section nil nil [92649 95354])
+                        ("&quot;\\Q&quot;" section (:members 
+                          ( ("*ALLOW-QUOTING*" anchor nil nil [96013 96016])
+                            ("CL-INTERPOL" anchor nil nil [96731 96734])
+                            ("S-expression syntax" anchor nil nil [97127 97130]))                          ) nil [95354 97348])
+                        ("Backslashes may confuse you..." section (:members 
+                          ( ("CL-INTERPOL" anchor nil nil [98399 98402]))                          ) nil [97348 98470]))                      ) nil [92591 98470])
+                    ("Remarks" section (:members 
+                      ( ("Gentoo
+Linux" anchor nil nil [98769 98772]))                      ) nil [98470 98840])
+                    ("AllegroCL compatibility mode" section (:members 
+                      ( ("above" anchor nil nil [99576 99579])
+                        ("filters" anchor nil nil [100609 100612])
+                        ("will choke on some regular expressions involving curly braces" anchor nil nil [100666 100669])
+                        (":CASE-INSENSITIVE" anchor nil nil [100976 100979])
+                        ("is currently only effective for ASCII characters" anchor nil nil [101056 101059])
+                        ("named register groups" anchor nil nil [101249 101252])
+                        ("doesn't support" anchor nil nil [101418 101421])
+                        ("quoting of metacharacters" anchor nil nil [101537 101540])
+                        ("CREATE-SCANNER" anchor nil nil [101676 101679])
+                        ("documentation" anchor nil nil [101864 101867])
+                        ("Franz Inc. website" anchor nil nil [101961 101964]))                      ) nil [98840 102181])
+                    ("Acknowledgements" section (:members 
+                      ( ("BACK TO MY HOMEPAGE" anchor nil nil [103510 103513]))                      ) nil [102181 103587]))                  ) nil [607 103587]))              ) nil [585 103587]))          
+    :file "index.html"
+    :pointmax 103587
+    :fsize 103586
+    :lastmodtime '(16897 7562 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!code!practicals-1.0.3!libraries!cl-ppcre-1.2.3!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

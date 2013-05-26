@@ -1,0 +1,126 @@
+;; Object ch1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch1/"
+  :tables (list 
+   (semanticdb-table "cash.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("count-change" function (:arguments ("amount")) nil [8 509]))          
+    :file "cash.scm"
+    :pointmax 565
+    :fsize 570
+    :lastmodtime '(20797 63401 379927 459000)
+    :unmatched-syntax '((semantic-list 511 . 564))
+    )
+   (semanticdb-table "let.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "let.scm"
+    :pointmax 453
+    :fsize 526
+    :lastmodtime '(20822 19640 200336 740000)
+    :unmatched-syntax '((semantic-list 378 . 452) (semantic-list 208 . 376) (semantic-list 40 . 169))
+    )
+   (semanticdb-table "fib2.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "fib2.scm"
+    :pointmax 262
+    :fsize 261
+    :lastmodtime '(20788 46238 244437 336000)
+    :unmatched-syntax '((semantic-list 173 . 261) (semantic-list 21 . 172))
+    )
+   (semanticdb-table "newton.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "newton.scm"
+    :pointmax 610
+    :fsize 635
+    :lastmodtime '(20830 50649 675287 261000)
+    :unmatched-syntax '((semantic-list 531 . 609) (semantic-list 452 . 529) (semantic-list 375 . 450) (semantic-list 344 . 373) (semantic-list 252 . 343) (semantic-list 12 . 240))
+    )
+   (semanticdb-table "pascal.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+计算杨辉三角的python循环版
+'''" code nil nil [24 48])
+            ("sys" include nil nil [49 59])
+            ("matrix" variable nil nil [61 83])
+            ("pascal" function (:arguments 
+              ( ("line" variable nil (reparse-symbol function_parameters) [96 100]))              ) nil [85 400])
+            ("pascal" code nil nil [401 425]))          
+    :file "pascal.py"
+    :pointmax 426
+    :fsize 445
+    :lastmodtime '(20800 35343 890681 103000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "proc.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "proc.scm"
+    :pointmax 287
+    :fsize 302
+    :lastmodtime '(20820 18193 176312 339000)
+    :unmatched-syntax '((semantic-list 235 . 286) (semantic-list 110 . 233) (semantic-list 15 . 109) (semantic-list 110 . 233) (semantic-list 15 . 109))
+    )
+   (semanticdb-table "root.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "root.scm"
+    :pointmax 803
+    :fsize 828
+    :lastmodtime '(20822 56444 559559 231000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stable.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "stable.scm"
+    :pointmax 1076
+    :fsize 1168
+    :lastmodtime '(20825 33959 445655 644000)
+    :unmatched-syntax '((semantic-list 831 . 1075) (semantic-list 778 . 829) (semantic-list 638 . 776) (semantic-list 522 . 623) (semantic-list 255 . 507) (semantic-list 13 . 241))
+    )
+   (semanticdb-table "fast_expt.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "fast_expt.scm"
+    :pointmax 210
+    :fsize 209
+    :lastmodtime '(20810 23571 137750 402000)
+    :unmatched-syntax '((semantic-list 160 . 209) (semantic-list 1 . 159))
+    )
+   (semanticdb-table "lambda.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "lambda.scm"
+    :pointmax 647
+    :fsize 734
+    :lastmodtime '(20821 45210 670856 79000)
+    :unmatched-syntax '((semantic-list 450 . 646) (semantic-list 348 . 448) (semantic-list 205 . 306) (semantic-list 115 . 197) (semantic-list 9 . 103))
+    )
+   (semanticdb-table "new_expt.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "new_expt.scm"
+    :pointmax 210
+    :fsize 219
+    :lastmodtime '(20810 23577 33750 277000)
+    :unmatched-syntax '((semantic-list 165 . 209) (semantic-list 10 . 164))
+    )
+   (semanticdb-table "fibonacci.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "fibonacci.scm"
+    :pointmax 203
+    :fsize 210
+    :lastmodtime '(20883 44154 359570 878000)
+    :unmatched-syntax '((semantic-list 155 . 202) (semantic-list 9 . 153) (semantic-list 155 . 201) (semantic-list 9 . 153))
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!code!TestSICP!ch1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,37 @@
+;; Object oracle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "oracle/"
+  :tables (list 
+   (semanticdb-table "model.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [24 37])
+            ("win" variable nil nil [39 48])
+            ("draw" variable nil nil [49 59])
+            ("lose" variable nil nil [60 70])
+            ("cache" variable nil nil [71 80])
+            ("girls" variable nil nil [82 664])
+            ("Excepted" function (:arguments 
+              ( ("Ra" variable nil (reparse-symbol function_parameters) [679 681])
+                ("Rb" variable nil (reparse-symbol function_parameters) [683 685]))              ) nil [666 813])
+            ("Update" function (:arguments 
+              ( ("Ra" variable nil (reparse-symbol function_parameters) [825 827])
+                ("Rb" variable nil (reparse-symbol function_parameters) [829 831])
+                ("Sa" variable nil (reparse-symbol function_parameters) [833 835])
+                ("Sb" variable nil (reparse-symbol function_parameters) [837 839])
+                ("Ea" variable nil (reparse-symbol function_parameters) [841 843])
+                ("Eb" variable nil (reparse-symbol function_parameters) [845 847]))              ) nil [814 1016])
+            ("Show" function nil nil [1017 1388])
+            ("Range" function nil nil [1389 1614])
+            ("if" code nil nil [1619 3313]))          
+    :file "model.py"
+    :pointmax 3313
+    :fsize 3342
+    :lastmodtime '(20889 35284 160767 289000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!Django!oracle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

@@ -1,0 +1,18 @@
+;; Object themes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "themes/"
+  :tables (list 
+   (semanticdb-table "color-theme-library.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "color-theme-library.el"
+    :pointmax 798981
+    :fsize 798980
+    :lastmodtime '(20726 11846 147285 78000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!.emacs.d!color-theme-6.6.0!themes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

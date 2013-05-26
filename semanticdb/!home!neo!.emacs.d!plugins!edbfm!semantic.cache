@@ -1,0 +1,20 @@
+;; Object edbfm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "edbfm/"
+  :tables (list 
+   (semanticdb-table "edbfm.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("edbfm" function (:user-visible-flag t) nil [961 1089])
+            ("edbfm" package nil nil [1091 1107]))          
+    :file "edbfm.el"
+    :pointmax 1131
+    :fsize 1138
+    :lastmodtime '(20850 37766 627921 774000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!.emacs.d!plugins!edbfm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

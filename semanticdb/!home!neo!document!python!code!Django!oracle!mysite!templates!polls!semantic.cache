@@ -1,0 +1,40 @@
+;; Object polls/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "polls/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{{ poll.questions }}" anchor nil nil [75 78]))          
+    :file "index.html"
+    :pointmax 211
+    :fsize 210
+    :lastmodtime '(20849 22888 528145 862000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "detail.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{{ poll.questions }}" section nil nil [1 640]))          
+    :file "detail.html"
+    :pointmax 640
+    :fsize 639
+    :lastmodtime '(20850 12254 620574 74000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "results.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{{ poll.questions }}" section (:members 
+              ( ("Vote again?" anchor nil nil [215 218]))              ) nil [1 262]))          
+    :file "results.html"
+    :pointmax 262
+    :fsize 261
+    :lastmodtime '(20850 14830 752508 208000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!Django!oracle!mysite!templates!polls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

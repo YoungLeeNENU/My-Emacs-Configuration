@@ -1,0 +1,46 @@
+;; Object document/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "document/"
+  :tables (list 
+   (semanticdb-table "compare.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("MAX_DA_UPDATE_RATE" variable (:constant-flag t) nil [47 65])
+            ("Get_DA_Step" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scanrate" variable (:type "float") (reparse-symbol arg-sub-list) [92 107])
+                    ("mvs" variable (:type "float") (reparse-symbol arg-sub-list) [108 118]))                  
+                :type "short")
+                nil [74 119])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [130 139])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [140 153]))                  
+                :type "int")
+                nil [121 559])
+            ("Get_DA_Step" function
+               (:arguments 
+                  ( ("scanrate" variable (:type "float") (reparse-symbol arg-sub-list) [579 594])
+                    ("mvs" variable (:type "float") (reparse-symbol arg-sub-list) [595 605]))                  
+                :type "short")
+                nil [561 817]))          
+    :file "compare.c"
+    :pointmax 818
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_DA_UPDATE_RATE" . ((number "100000" 66 . 72)))
+          )
+
+    )
+   )
+  :file "!home!neo!document!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

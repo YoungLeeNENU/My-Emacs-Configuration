@@ -363,3 +363,6 @@ variable `scheme-r5rs-root' to point to that location."
 (provide 'r5rs)
 
 ;;; r5rs.el ends here
+(let ((x (list 'a)))
+  (set-cdr! x x)
+  (list? x))                

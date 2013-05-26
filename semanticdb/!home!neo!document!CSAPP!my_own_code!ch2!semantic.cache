@@ -1,0 +1,121 @@
+;; Object ch2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch2/"
+  :tables (list 
+   (semanticdb-table "show_length.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [43 61])
+            ("byte_pointer" type
+               (:typedef ("unsigned char")
+                :pointer 1
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [63 99])
+            ("show_bytes" function
+               (:arguments 
+                  ( ("start" variable (:type ("byte_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117 136])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [137 145]))                  
+                :type "void")
+                nil [101 251])
+            ("show_int" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [267 273]))                  
+                :type "void")
+                nil [253 325])
+            ("show_float" function
+               (:arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [343 351]))                  
+                :type "void")
+                nil [327 405])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [416 425])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [426 439]))                  
+                :type "int")
+                nil [407 537]))          
+    :file "show_length.c"
+    :pointmax 538
+    :fsize 587
+    :lastmodtime '(20888 58891 18330 467000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "p1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("p.h" include nil nil [1 15])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26 35])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36 49]))                  
+                :type "int")
+                nil [17 86]))          
+    :file "p1.c"
+    :pointmax 87
+    :fsize 86
+    :lastmodtime '(20894 5547 266740 888000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "p2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("output" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [21 62]))          
+    :file "p2.c"
+    :pointmax 70
+    :fsize 62
+    :lastmodtime '(20894 5595 170739 664000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "p.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("output" function
+               (:prototype-flag t
+                :type "void")
+                nil [1 15]))          
+    :file "p.h"
+    :pointmax 17
+    :fsize 16
+    :lastmodtime '(20894 5631 766738 728000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hello.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "hello.c"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "code.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("accum" variable (:type "int") nil [1 15])
+            ("sum" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [25 31])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [32 38]))                  
+                :type "int")
+                nil [17 91]))          
+    :file "code.c"
+    :pointmax 96
+    :fsize 95
+    :lastmodtime '(20894 6000 462729 302000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!CSAPP!my_own_code!ch2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

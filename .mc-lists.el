@@ -9,10 +9,12 @@
 		c-electric-delete-forward
 		c-electric-semi&comma
 		end-of-buffer
+		python-indent-dedent-line-backspace
 		))
 
 (setq mc/cmds-to-run-once
       '(
 		eval-print-last-sexp
+		python-indent-electric-colon
 		yas/expand
 		))

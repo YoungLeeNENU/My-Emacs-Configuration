@@ -1,0 +1,39 @@
+;; Object tomatopie/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tomatopie/"
+  :tables (list 
+   (semanticdb-table "tomatopie.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [37 47])
+            ("thread" include nil nil [48 61])
+            ("gtk" include nil nil [62 79])
+            ("pygtk" include nil nil [62 79])
+            ("pyaudio" include nil nil [80 100])
+            ("wave" include nil nil [80 100])
+            ("time" include nil nil [101 123])
+            ("Tkinter" include nil nil [124 145])
+            ("table" variable nil nil [147 194])
+            ("work_str" variable nil nil [195 223])
+            ("rest_str" variable nil nil [224 252])
+            ("work_notice" variable nil nil [253 280])
+            ("rest_notice" variable nil nil [281 310])
+            ("question" function (:arguments 
+              ( ("hello_str" variable nil (reparse-symbol function_parameters) [325 334])
+                ("trigger" variable nil (reparse-symbol function_parameters) [336 343]))              ) nil [312 610])
+            ("play_audio" function (:arguments 
+              ( ("wav_file" variable nil (reparse-symbol function_parameters) [626 634]))              ) nil [611 998])
+            ("createWindow" function (:arguments 
+              ( ("notice" variable nil (reparse-symbol function_parameters) [1016 1022]))              ) nil [999 1238])
+            ("if" code nil nil [1239 1771]))          
+    :file "tomatopie.py"
+    :pointmax 2260
+    :fsize 1788
+    :lastmodtime '(20850 23160 692295 225000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!code!tomatopie!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

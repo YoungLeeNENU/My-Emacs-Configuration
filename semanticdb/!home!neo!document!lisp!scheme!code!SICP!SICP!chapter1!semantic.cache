@@ -1,0 +1,19 @@
+;; Object chapter1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter1/"
+  :tables (list 
+   (semanticdb-table "1-6.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("new-if" function (:arguments ("predicate" "then-clause" "else-clause")) nil [19 124]))          
+    :file "1-6.scm"
+    :pointmax 587
+    :fsize 664
+    :lastmodtime '(20879 26768 223478 571000)
+    :unmatched-syntax '((semantic-list 490 . 535) (semantic-list 126 . 489))
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!code!SICP!SICP!chapter1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

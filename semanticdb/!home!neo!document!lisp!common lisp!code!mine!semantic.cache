@@ -1,0 +1,20 @@
+;; Object mine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mine/"
+  :tables (list 
+   (semanticdb-table "hello.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("a" function nil nil [1 38])
+            ("a" code nil nil [39 42]))          
+    :file "hello.lisp"
+    :pointmax 43
+    :fsize 42
+    :lastmodtime '(20883 37324 161035 289000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!common lisp!code!mine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

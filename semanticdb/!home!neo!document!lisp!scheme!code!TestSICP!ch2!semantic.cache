@@ -11,14 +11,61 @@
     :lastmodtime '(20842 32127 490855 11000)
     :unmatched-syntax 'nil
     )
-   (semanticdb-table "cons.scm"
+   (semanticdb-table "cons.scm.gz"
     :major-mode 'scheme-mode
     :tags nil
-    :file "cons.scm"
+    :file "cons.scm.gz"
     :pointmax 108
-    :fsize 107
+    :fsize 114
     :lastmodtime '(20839 39965 946820 112000)
     :unmatched-syntax 'nil
+    )
+   (semanticdb-table "list-length.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "list-length.scm"
+    :pointmax 134
+    :fsize 133
+    :lastmodtime '(20864 33449 576912 983000)
+    :unmatched-syntax '((semantic-list 79 . 133) (semantic-list 1 . 78) (semantic-list 1 . 70) (semantic-list 1 . 63) (semantic-list 1 . 46) (semantic-list 1 . 46) (semantic-list 1 . 19) (semantic-list 1 . 10) (semantic-list 1 . 10))
+    )
+   (semanticdb-table "list-append.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("list-append" function (:arguments ("list-a" "list-b")) nil [135 260]))          
+    :file "list-append.scm"
+    :pointmax 321
+    :fsize 320
+    :lastmodtime '(20864 34304 604891 122000)
+    :unmatched-syntax '((semantic-list 261 . 320) (semantic-list 261 . 320) (semantic-list 261 . 320) (semantic-list 261 . 320))
+    )
+   (semanticdb-table "list-ref.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "list-ref.scm"
+    :pointmax 152
+    :fsize 151
+    :lastmodtime '(20864 32368 872940 615000)
+    :unmatched-syntax '((semantic-list 90 . 151) (semantic-list 1 . 89))
+    )
+   (semanticdb-table "map.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("map" function (:arguments ("proc" "items")) nil [8 116]))          
+    :file "map.scm"
+    :pointmax 176
+    :fsize 175
+    :lastmodtime '(20866 25967 728362 621000)
+    :unmatched-syntax '((semantic-list 117 . 175))
+    )
+   (semanticdb-table "count-leaves.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "count-leaves.scm"
+    :pointmax 268
+    :fsize 267
+    :lastmodtime '(20888 22519 231949 83000)
+    :unmatched-syntax '((semantic-list 152 . 267) (semantic-list 17 . 151) (semantic-list 152 . 232) (semantic-list 17 . 151) (semantic-list 152 . 213) (semantic-list 17 . 151))
     )
    )
   :file "!home!neo!document!lisp!scheme!code!TestSICP!ch2!semantic.cache"

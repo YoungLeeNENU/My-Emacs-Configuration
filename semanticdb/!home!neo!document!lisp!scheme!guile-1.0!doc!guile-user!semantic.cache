@@ -1,0 +1,22 @@
+;; Object guile-user/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "guile-user/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [60 87])
+            ("info_TEXINFOS" variable (:default-value ("guile-user.texi")) nil [88 120])
+            ("guile_user_TEXINFOS" variable (:default-value ("cindex.texi" "goonix.texi" "i18n.texi" "install-probs.texi" "install.texi" "intro.texi" "libguile.texi" "missing.texi" "more-resources.texi" "other.texi" "pi.texi" "startup.texi" "tk.texi" "using-guile.texi")) nil [121 336])
+            ("EXTRA_DIST" variable (:default-value ("$(guile_user_TEXINFOS)")) nil [391 427]))          
+    :file "Makefile.am"
+    :pointmax 427
+    :fsize 426
+    :lastmodtime '(20783 20415 794748 452000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!guile-1.0!doc!guile-user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

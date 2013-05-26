@@ -1,0 +1,21 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("guile-programmer" "guile-user")) nil [61 99])
+            ("info_TEXINFOS" variable (:default-value ("ctax.texi" "gtcltk.texi" "guile.texi" "in.texi" "lang.texi")) nil [99 166])
+            ("EXTRA_DIST" variable (:default-value ("agenda" "errors.txt" "expect.texi")) nil [166 209]))          
+    :file "Makefile.am"
+    :pointmax 209
+    :fsize 208
+    :lastmodtime '(20783 20415 794748 452000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!lisp!scheme!guile-1.0!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

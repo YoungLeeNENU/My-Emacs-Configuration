@@ -1,0 +1,83 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "6-10.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("assert.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 92]))          
+    :file "6-10.c"
+    :pointmax 93
+    :fsize 92
+    :lastmodtime '(20714 51538 357988 965000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 127]))          
+    :file "test.c"
+    :pointmax 128
+    :fsize 127
+    :lastmodtime '(20869 5397 822037 584000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "foo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("func" function (:type "void") nil [22 203])
+            ("main" function (:type "int") nil [206 248]))          
+    :file "foo.c"
+    :pointmax 235
+    :fsize 248
+    :lastmodtime '(20896 44882 466303 169000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "myfoo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("f" function (:type "void") nil [21 103])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [115 124])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [125 138]))                  
+                :type "int")
+                nil [106 170]))          
+    :file "myfoo.c"
+    :pointmax 138
+    :fsize 170
+    :lastmodtime '(20896 45445 426291 276000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!C!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )
