@@ -1,0 +1,21 @@
+;; Object YaH3C/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "YaH3C/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [48 80])
+            ("yah3c.yah3c" include nil nil [81 99])
+            ("setup" code nil nil [101 514]))          
+    :file "setup.py"
+    :pointmax 547
+    :fsize 514
+    :lastmodtime '(20918 32190)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!YaH3C!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

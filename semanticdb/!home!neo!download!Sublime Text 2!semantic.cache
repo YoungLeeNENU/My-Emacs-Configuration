@@ -1,0 +1,261 @@
+;; Object Sublime Text 2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Sublime Text 2/"
+  :tables (list 
+   (semanticdb-table "PackageSetup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [11 48])
+            ("glob" include nil nil [49 60])
+            ("os.path" include nil nil [61 75])
+            ("shutil" include nil nil [76 89])
+            ("zipfile" include nil nil [90 104])
+            ("isFileEntry" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [123 124]))              ) nil [107 148])
+            ("readFile" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [162 167]))              ) nil [149 218])
+            ("writeFile" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [233 238])
+                ("data" variable nil (reparse-symbol function_parameters) [240 244]))              ) nil [219 295])
+            ("mkdirs" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [307 311]))              ) nil [296 365])
+            ("upgradeArchive" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [385 388])
+                ("dst" variable nil (reparse-symbol function_parameters) [390 393])
+                ("pkgdir" variable nil (reparse-symbol function_parameters) [395 401])
+                ("backupdir" variable nil (reparse-symbol function_parameters) [403 412])
+                ("inhibitOverwrite" variable nil (reparse-symbol function_parameters) [414 430]))              ) nil [366 2485])
+            ("removeArchive" function (:arguments 
+              ( ("dst" variable nil (reparse-symbol function_parameters) [2504 2507])
+                ("pkgdir" variable nil (reparse-symbol function_parameters) [2509 2515]))              ) nil [2486 3023])
+            ("srcNewer" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [3037 3040])
+                ("dst" variable nil (reparse-symbol function_parameters) [3042 3045]))              ) nil [3024 3205])
+            ("upgradePackage" function (:arguments 
+              ( ("pkg" variable nil (reparse-symbol function_parameters) [3225 3228])
+                ("pristinedir" variable nil (reparse-symbol function_parameters) [3230 3241])
+                ("datadir" variable nil (reparse-symbol function_parameters) [3243 3250])
+                ("backupdir" variable nil (reparse-symbol function_parameters) [3252 3261]))              ) nil [3206 3625])
+            ("upgrade" function (:arguments 
+              ( ("appdir" variable nil (reparse-symbol function_parameters) [3638 3644])
+                ("userdir" variable nil (reparse-symbol function_parameters) [3646 3653])
+                ("pristinedir" variable nil (reparse-symbol function_parameters) [3655 3666])
+                ("datadir" variable nil (reparse-symbol function_parameters) [3668 3675])
+                ("backupdir" variable nil (reparse-symbol function_parameters) [3677 3686]))              ) nil [3626 4206]))          
+    :file "PackageSetup.py"
+    :pointmax 4206
+    :fsize 4205
+    :lastmodtime '(20480 47184 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sublime_plugin.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("time" include nil nil [22 33])
+            ("sublime" include nil nil [34 48])
+            ("imp" include nil nil [49 59])
+            ("application_command_classes" variable nil nil [61 93])
+            ("window_command_classes" variable nil nil [94 121])
+            ("text_command_classes" variable nil nil [122 147])
+            ("all_command_classes" variable nil nil [149 246])
+            ("all_callbacks" variable nil nil [248 568])
+            ("unload_module" function (:arguments 
+              ( ("module" variable nil (reparse-symbol function_parameters) [588 594]))              ) nil [570 1108])
+            ("unload_plugin" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [1127 1132]))              ) nil [1109 1359])
+            ("reload_plugin" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [1378 1383]))              ) nil [1360 3036])
+            ("create_application_commands" function nil nil [3037 3179])
+            ("create_window_commands" function (:arguments 
+              ( ("window" variable nil (reparse-symbol function_parameters) [3207 3213]))              ) nil [3180 3324])
+            ("create_text_commands" function (:arguments 
+              ( ("view" variable nil (reparse-symbol function_parameters) [3350 3354]))              ) nil [3325 3461])
+            ("EVENT_TIMEOUT" variable nil nil [3462 3481])
+            ("FAST_EVENT_TIMEOUT" code nil nil [3482 3511])
+            ("first_time_msgs" variable nil nil [3513 3536])
+            ("msgs" variable nil nil [3537 3549])
+            ("show_timeout" function (:arguments 
+              ( ("plugin_name" variable nil (reparse-symbol function_parameters) [3568 3579])
+                ("elapsed" variable nil (reparse-symbol function_parameters) [3581 3588])
+                ("callback" variable nil (reparse-symbol function_parameters) [3590 3598]))              ) nil [3551 4358])
+            ("blocking_api_call_count" variable nil nil [4359 4386])
+            ("on_blocking_api_call" function nil nil [4387 4483])
+            ("run_timed_function" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [4507 4508])
+                ("name" variable nil (reparse-symbol function_parameters) [4510 4514])
+                ("event_name" variable nil (reparse-symbol function_parameters) [4516 4526])
+                ("timeout" variable nil (reparse-symbol function_parameters) [4528 4535]))              ) nil [4484 4822])
+            ("on_new" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [4834 4835]))              ) nil [4823 4996])
+            ("on_clone" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5010 5011]))              ) nil [4997 5178])
+            ("on_load" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5191 5192]))              ) nil [5179 5356])
+            ("on_close" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5370 5371]))              ) nil [5357 5538])
+            ("on_pre_save" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5555 5556]))              ) nil [5539 5732])
+            ("on_post_save" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5750 5751]))              ) nil [5733 5930])
+            ("on_modified" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [5947 5948]))              ) nil [5931 6129])
+            ("on_selection_modified" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [6156 6157]))              ) nil [6130 6368])
+            ("on_activated" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [6386 6387]))              ) nil [6369 6566])
+            ("on_deactivated" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [6586 6587]))              ) nil [6567 6772])
+            ("on_project_load" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [6793 6794]))              ) nil [6773 6982])
+            ("on_project_close" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [7004 7005]))              ) nil [6983 7196])
+            ("on_query_context" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [7218 7219])
+                ("key" variable nil (reparse-symbol function_parameters) [7221 7224])
+                ("operator" variable nil (reparse-symbol function_parameters) [7226 7234])
+                ("operand" variable nil (reparse-symbol function_parameters) [7236 7243])
+                ("match_all" variable nil (reparse-symbol function_parameters) [7245 7254]))              ) nil [7197 7550])
+            ("on_query_completions" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [7576 7577])
+                ("prefix" variable nil (reparse-symbol function_parameters) [7579 7585])
+                ("locations" variable nil (reparse-symbol function_parameters) [7587 7596]))              ) nil [7551 7956])
+            ("Command" type
+               (:superclasses ("object")
+                :members 
+                  ( ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7993 7997]))                          )
+                        (reparse-symbol indented_block_body) [7984 8411])
+                    ("is_enabled_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8432 8436])
+                            ("args" variable nil (reparse-symbol function_parameters) [8438 8442]))                          )
+                        (reparse-symbol indented_block_body) [8416 8723])
+                    ("is_enabled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8743 8747]))                          )
+                        (reparse-symbol indented_block_body) [8728 8770])
+                    ("is_visible_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8791 8795])
+                            ("args" variable nil (reparse-symbol function_parameters) [8797 8801]))                          )
+                        (reparse-symbol indented_block_body) [8775 9007])
+                    ("is_visible" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9027 9031]))                          )
+                        (reparse-symbol indented_block_body) [9012 9054])
+                    ("is_checked_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9075 9079])
+                            ("args" variable nil (reparse-symbol function_parameters) [9081 9085]))                          )
+                        (reparse-symbol indented_block_body) [9059 9291])
+                    ("is_checked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9311 9315]))                          )
+                        (reparse-symbol indented_block_body) [9296 9339])
+                    ("description_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9361 9365])
+                            ("args" variable nil (reparse-symbol function_parameters) [9367 9371]))                          )
+                        (reparse-symbol indented_block_body) [9344 9571])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9592 9596]))                          )
+                        (reparse-symbol indented_block_body) [9576 9619]))                  
+                :type "class")
+                nil [7957 9619])
+            ("ApplicationCommand" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("run_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9669 9673])
+                            ("args" variable nil (reparse-symbol function_parameters) [9675 9679]))                          )
+                        (reparse-symbol indented_block_body) [9660 9846])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9859 9863]))                          )
+                        (reparse-symbol indented_block_body) [9851 9879]))                  
+                :type "class")
+                nil [9621 9879])
+            ("WindowCommand" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9951 9971]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9928 9932])
+                            ("window" variable nil (reparse-symbol function_parameters) [9934 9940]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9915 9972])
+                    ("run_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9986 9990])
+                            ("args" variable nil (reparse-symbol function_parameters) [9992 9996]))                          )
+                        (reparse-symbol indented_block_body) [9977 10163])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10176 10180]))                          )
+                        (reparse-symbol indented_block_body) [10168 10196]))                  
+                :type "class")
+                nil [9881 10196])
+            ("TextCommand" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [10264 10280]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10243 10247])
+                            ("view" variable nil (reparse-symbol function_parameters) [10249 10253]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10230 10281])
+                    ("run_" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10295 10299])
+                            ("args" variable nil (reparse-symbol function_parameters) [10301 10305]))                          )
+                        (reparse-symbol indented_block_body) [10286 10760])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10773 10777])
+                            ("edit" variable nil (reparse-symbol function_parameters) [10779 10783]))                          )
+                        (reparse-symbol indented_block_body) [10765 10799]))                  
+                :type "class")
+                nil [10198 10799])
+            ("EventListener" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [10834 10838]))                  
+                :type "class")
+                nil [10801 10839]))          
+    :file "sublime_plugin.py"
+    :pointmax 10839
+    :fsize 10838
+    :lastmodtime '(20480 47184 0 0)
+    :unmatched-syntax '((INDENT_BLOCK 9547 . 9571) (NEWLINE 9546 . 9547) (COLON 9545 . 9546) (TRY 9382 . 9385) (AS 9541 . 9543))
+    )
+   )
+  :file "!home!neo!download!Sublime Text 2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

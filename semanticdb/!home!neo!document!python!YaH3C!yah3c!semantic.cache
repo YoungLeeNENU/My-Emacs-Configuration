@@ -27,7 +27,7 @@ Main program for YaH3C.
     :file "yah3c.py"
     :pointmax 3962
     :fsize 3969
-    :lastmodtime '(20825 22532 219635 584000)
+    :lastmodtime '(20825 22532)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "eapauth.py"
@@ -128,7 +128,7 @@ and parses received EAP packet
     :file "eapauth.py"
     :pointmax 7946
     :fsize 7945
-    :lastmodtime '(20826 49378 381964 20000)
+    :lastmodtime '(20826 49378)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "usermgr.py"
@@ -211,7 +211,7 @@ This module reads the 'users.conf' file and gets all users's info.
     :file "usermgr.py"
     :pointmax 2275
     :fsize 2274
-    :lastmodtime '(20825 22158 279645 141000)
+    :lastmodtime '(20825 22158)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "__init__.py"
@@ -220,7 +220,7 @@ This module reads the 'users.conf' file and gets all users's info.
     :file "__init__.py"
     :pointmax 1
     :fsize 0
-    :lastmodtime '(20825 22158 279645 141000)
+    :lastmodtime '(20825 22158)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "eappacket.py"
@@ -258,7 +258,7 @@ This module reads the 'users.conf' file and gets all users's info.
     :file "eappacket.py"
     :pointmax 1213
     :fsize 1212
-    :lastmodtime '(20825 22158 279645 141000)
+    :lastmodtime '(20825 22158)
     :unmatched-syntax 'nil
     )
    )

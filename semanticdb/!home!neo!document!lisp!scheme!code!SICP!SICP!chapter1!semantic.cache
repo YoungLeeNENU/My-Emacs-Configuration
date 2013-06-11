@@ -9,8 +9,28 @@
     :file "1-6.scm"
     :pointmax 587
     :fsize 664
-    :lastmodtime '(20879 26768 223478 571000)
+    :lastmodtime '(20879 26768)
     :unmatched-syntax '((semantic-list 490 . 535) (semantic-list 126 . 489))
+    )
+   (semanticdb-table "1-10.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "1-10.scm"
+    :pointmax 390
+    :fsize 515
+    :lastmodtime '(20879 26768)
+    :unmatched-syntax '((semantic-list 301 . 325) (semantic-list 278 . 300) (semantic-list 255 . 277) (semantic-list 232 . 254) (semantic-list 1 . 112))
+    )
+   (semanticdb-table "1-15.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("counter" variable (:default-value ("0")) nil [26 44])
+            ("sine" function (:arguments ("angle")) nil [45 243]))          
+    :file "1-15.scm"
+    :pointmax 320
+    :fsize 337
+    :lastmodtime '(20879 26768)
+    :unmatched-syntax 'nil
     )
    )
   :file "!home!neo!document!lisp!scheme!code!SICP!SICP!chapter1!semantic.cache"

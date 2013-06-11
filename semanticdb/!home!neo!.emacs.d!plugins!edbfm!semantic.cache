@@ -9,8 +9,8 @@
             ("edbfm" package nil nil [1091 1107]))          
     :file "edbfm.el"
     :pointmax 1131
-    :fsize 1138
-    :lastmodtime '(20850 37766 627921 774000)
+    :fsize 1139
+    :lastmodtime '(20904 44877 329595 81000)
     :unmatched-syntax 'nil
     )
    )

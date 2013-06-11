@@ -1,0 +1,387 @@
+;; Object lispbox-0.7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lispbox-0.7/"
+  :tables (list 
+   (semanticdb-table "asdf.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("defpackage" code nil nil [2114 3891])
+            ("error" code nil nil [3899 4059])
+            ("in-package" code nil nil [4062 4081])
+            ("*compile-file-warnings-behaviour*" variable (:default-value :warn) nil [4400 4448])
+            ("*verbose-out*" variable nil nil [4519 4545])
+            ("aif" function (:arguments ("test" "then" "else")) nil [4595 4678])
+            ("pathname-sans-name+type" function (:arguments ("pathname")) nil [4680 4886])
+            ("define-modify-macro" code nil nil [4888 4959])
+            ("define-condition" code nil nil [5558 5869])
+            ("define-condition" code nil nil [5871 6012])
+            ("define-condition" code nil nil [6014 6292])
+            ("define-condition" code nil nil [6294 6419])
+            ("define-condition" code nil nil [6421 6709])
+            ("define-condition" code nil nil [6710 6763])
+            ("define-condition" code nil nil [6764 6816])
+            ("define-condition" code nil nil [6817 6869])
+            ("component" type
+               (:members 
+                  ( ("name" variable (:documentation "Component name: designator for a string composed of portable pathname characters") nil nil)
+                    ("version" variable nil nil nil)
+                    ("in-order-to" variable (:default-value "nil") nil nil)
+                    ("do-first" variable (:default-value "nil") nil nil)
+                    ("inline-methods" variable (:default-value "nil") nil nil)
+                    ("parent" variable (:default-value "nil") nil nil)
+                    ("relative-pathname" variable nil nil nil)
+                    ("operation-times" variable (:default-value "(make-hash-table)") nil nil)
+                    ("properties" variable (:default-value "nil") nil nil))                  
+                :type "class")
+                nil [6871 7966])
+            ("print-object" function
+               (:parent "missing-dependency"
+                :arguments ("c" "s"))
+                nil [7994 8139])
+            ("sysdef-error" function (:arguments ("format" "arguments")) nil [8141 8282])
+            ("print-object" function
+               (:parent "missing-component"
+                :arguments ("c" "s"))
+                nil [8310 8598])
+            ("component-system" function nil nil [8600 8709])
+            ("component-system" function
+               (:parent "component"
+                :arguments ("component"))
+                nil [8711 8846])
+            ("print-object" function
+               (:parent "component"
+                :arguments ("c" "stream"))
+                nil [8848 9021])
+            ("module" type
+               (:superclasses "component"
+                :members 
+                  ( ("components" variable (:default-value "nil") nil nil)
+                    ("if-component-dep-fails" variable (:default-value ":fail") nil nil)
+                    ("default-component-class" variable (:default-value "(quote cl-source-file)") nil nil))                  
+                :type "class")
+                nil [9023 9548])
+            ("component-pathname" function nil nil [9550 9675])
+            ("component-parent-pathname" function (:arguments ("component")) nil [9677 9825])
+            ("component-relative-pathname" function nil nil [9827 9970])
+            ("component-relative-pathname" function
+               (:parent "module"
+                :arguments ("component"))
+                nil [9972 10229])
+            ("component-pathname" function
+               (:parent "component"
+                :arguments ("component"))
+                nil [10231 10425])
+            ("component-property" function (:arguments ("property")) nil [10427 10479])
+            ("component-property" function
+               (:parent "component"
+                :arguments ("c" "property"))
+                nil [10481 10602])
+            ("system" type
+               (:superclasses "module"
+                :members 
+                  ( ("description" variable nil nil nil)
+                    ("long-description" variable nil nil nil)
+                    ("author" variable nil nil nil)
+                    ("maintainer" variable nil nil nil)
+                    ("licence" variable nil nil nil))                  
+                :type "class")
+                nil [10953 11309])
+            ("version-satisfies" function (:arguments ("version")) nil [11805 11855])
+            ("*defined-systems*" variable (:default-value (make-hash-table :test (quote equal))) nil [12461 12518])
+            ("coerce-name" function (:arguments ("name")) nil [12519 12726])
+            ("*system-definition-search-functions*" variable (:default-value (quote (sysdef-central-registry-search))) nil [12856 12937])
+            ("system-definition-pathname" function (:arguments ("system")) nil [12939 13062])
+            ("sysdef-central-registry-search" function (:arguments ("system")) nil [13217 13590])
+            ("register-system" function (:arguments ("name" "system")) nil [14441 14648])
+            ("system-registered-p" function (:arguments ("name")) nil [14650 14733])
+            ("find-component" function (:arguments ("name" "version")) nil [14792 15001])
+            ("find-component" function
+               (:parent "module"
+                :arguments ("module" "name" "version"))
+                nil [15003 15256])
+            ("source-file" type
+               (:superclasses "component"
+                :type "class")
+                nil [15486 15523])
+            ("cl-source-file" type
+               (:superclasses "source-file"
+                :type "class")
+                nil [15525 15567])
+            ("c-source-file" type
+               (:superclasses "source-file"
+                :type "class")
+                nil [15568 15609])
+            ("java-source-file" type
+               (:superclasses "source-file"
+                :type "class")
+                nil [15610 15654])
+            ("static-file" type
+               (:superclasses "source-file"
+                :type "class")
+                nil [15655 15694])
+            ("doc-file" type
+               (:superclasses "static-file"
+                :type "class")
+                nil [15695 15731])
+            ("html-file" type
+               (:superclasses "doc-file"
+                :type "class")
+                nil [15732 15766])
+            ("source-file-type" function (:arguments ("system")) nil [15768 15816])
+            ("source-file-type" function
+               (:parent "cl-source-file"
+                :arguments ("c" "s"))
+                nil [15817 15884])
+            ("source-file-type" function
+               (:parent "c-source-file"
+                :arguments ("c" "s"))
+                nil [15885 15948])
+            ("source-file-type" function
+               (:parent "java-source-file"
+                :arguments ("c" "s"))
+                nil [15949 16018])
+            ("source-file-type" function
+               (:parent "html-file"
+                :arguments ("c" "s"))
+                nil [16019 16081])
+            ("source-file-type" function
+               (:parent "static-file"
+                :arguments ("c" "s"))
+                nil [16082 16143])
+            ("component-relative-pathname" function
+               (:parent "source-file"
+                :arguments ("component"))
+                nil [16145 16584])
+            ("operation" type
+               (:members 
+                  ( ("forced" variable (:default-value "nil") nil nil)
+                    ("original-initargs" variable (:default-value "nil") nil nil)
+                    ("visited-nodes" variable (:default-value "nil") nil nil)
+                    ("visiting-nodes" variable (:default-value "nil") nil nil)
+                    ("parent" variable (:default-value "nil") nil nil))                  
+                :type "class")
+                nil [16699 17108])
+            ("print-object" function
+               (:parent "operation"
+                :arguments ("o" "stream"))
+                nil [17110 17296])
+            ("shared-initialize" function
+               (:parent "operation"
+                :arguments ("operation" "slot-names" "force"))
+                nil [17298 17515])
+            ("perform" function (:arguments ("component")) nil [17517 17559])
+            ("operation-done-p" function (:arguments ("component")) nil [17560 17611])
+            ("explain" function (:arguments ("component")) nil [17612 17654])
+            ("output-files" function (:arguments ("component")) nil [17655 17702])
+            ("input-files" function (:arguments ("component")) nil [17703 17749])
+            ("node-for" function (:arguments ("o" "c")) nil [17751 17810])
+            ("operation-ancestor" function nil nil [17812 17964])
+            ("operation-ancestor" function
+               (:parent "operation"
+                :arguments ("operation"))
+                nil [17966 18105])
+            ("make-sub-operation" function (:arguments ("c" "o" "dep-c" "dep-o")) nil [18108 18745])
+            ("visit-component" function (:arguments ("component" "data")) nil [18748 18803])
+            ("visit-component" function
+               (:parent "operation"
+                :arguments ("o" "c" "data"))
+                nil [18805 18995])
+            ("component-visited-p" function (:arguments ("component")) nil [18997 19051])
+            ("component-visited-p" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [19053 19207])
+            ("component-visiting-p" function (:arguments ("component")) nil [19773 19828])
+            ("component-visiting-p" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [19830 20004])
+            ("component-depends-on" function (:arguments ("component")) nil [20006 20061])
+            ("component-depends-on" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [20063 20200])
+            ("component-self-dependencies" function (:arguments ("component")) nil [20202 20264])
+            ("component-self-dependencies" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [20266 20490])
+            ("input-files" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [20492 20957])
+            ("input-files" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [20959 21021])
+            ("operation-done-p" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [21023 21739])
+            ("traverse" function (:arguments ("component")) nil [22080 22123])
+            ("traverse" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [22124 25132])
+            ("perform" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [25135 25337])
+            ("perform" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [25339 25399])
+            ("explain" function
+               (:parent "operation"
+                :arguments ("operation" "component"))
+                nil [25401 25530])
+            ("compile-op" type
+               (:superclasses "operation"
+                :members 
+                  ( ("proclamations" variable (:default-value "nil") nil nil)
+                    ("on-warnings" variable (:default-value "*compile-file-warnings-behaviour*") nil nil)
+                    ("on-failure" variable (:default-value "*compile-file-failure-behaviour*") nil nil))                  
+                :type "class")
+                nil [25548 25910])
+            ("perform" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [25912 26046])
+            ("perform" function
+               (:parent "operation"
+                :arguments ("operation" "c"))
+                nil [26048 26204])
+            ("perform" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [27471 27537])
+            ("output-files" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [27539 27610])
+            ("load-op" type
+               (:superclasses "operation"
+                :type "class")
+                nil [27625 27658])
+            ("perform" function
+               (:parent "load-op"
+                :arguments ("o" "c"))
+                nil [27660 27748])
+            ("perform" function
+               (:parent "load-op"
+                :arguments ("operation" "c"))
+                nil [27750 27813])
+            ("operation-done-p" function
+               (:parent "load-op"
+                :arguments ("operation" "c"))
+                nil [27814 27884])
+            ("output-files" function
+               (:parent "operation"
+                :arguments ("o" "c"))
+                nil [27886 27946])
+            ("component-depends-on" function
+               (:parent "load-op"
+                :arguments ("operation" "c"))
+                nil [27948 28090])
+            ("load-source-op" type
+               (:superclasses "operation"
+                :type "class")
+                nil [28112 28152])
+            ("perform" function
+               (:parent "load-source-op"
+                :arguments ("o" "c"))
+                nil [28154 28378])
+            ("perform" function
+               (:parent "load-source-op"
+                :arguments ("operation" "c"))
+                nil [28380 28450])
+            ("output-files" function
+               (:parent "load-source-op"
+                :arguments ("operation" "c"))
+                nil [28452 28525])
+            ("component-depends-on" function
+               (:parent "load-source-op"
+                :arguments ("o" "c"))
+                nil [28602 28961])
+            ("operation-done-p" function
+               (:parent "load-source-op"
+                :arguments ("o" "c"))
+                nil [28963 29203])
+            ("test-op" type
+               (:superclasses "operation"
+                :type "class")
+                nil [29205 29238])
+            ("perform" function
+               (:parent "test-op"
+                :arguments ("operation" "c"))
+                nil [29240 29301])
+            ("operate" function (:arguments ("operation-class" "system" "args")) nil [29361 30420])
+            ("oos" function (:arguments ("args")) nil [30422 30501])
+            ("remove-keyword" function (:arguments ("key" "arglist")) nil [30548 30836])
+            ("maybe-add-tree" function (:arguments ("tree" "op1" "op2" "c")) nil [32290 32794])
+            ("union-of-dependencies" function (:arguments ("deps")) nil [32796 33062])
+            ("remove-keys" function (:arguments ("key-names" "args")) nil [33065 33258])
+            ("*serial-depends-on*" variable nil nil [33260 33288])
+            ("parse-component-form" function (:arguments ("parent" "options")) nil [33290 35616])
+            ("check-component-input" function (:arguments ("type" "name" "depends-on" "components" "in-order-to")) nil [35618 36170])
+            ("sysdef-error-component" function (:arguments ("msg" "type" "name" "value")) nil [36172 36339])
+            ("hyperdocumentation" function (:arguments ("name" "doc-type")) nil [38048 38103])
+            ("hyperdocumentation" function
+               (:parent "symbol"
+                :arguments ("package" "name" "doc-type"))
+                nil [38104 38227])
+            ("hyperdoc" function (:arguments ("name" "doc-type")) nil [38229 38320])
+            ("pushnew" code nil nil [38323 38349])
+            ("eval-when" code nil nil [38358 38513])
+            ("and" code nil nil [38517 38546])
+            ("progn" code nil nil [38547 39235])
+            ("asdf" package nil nil [39237 39252]))          
+    :file "asdf.lisp"
+    :pointmax 38922
+    :fsize 39252
+    :lastmodtime '(20899 22883 237308 818000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "asdf-extensions.lisp"
+    :major-mode 'lisp-mode
+    :tags 
+        '( ("defpackage" code nil nil [1 105])
+            ("in-package" code nil nil [107 152])
+            ("*top-level-directories*" variable nil nil [221 256])
+            ("sysdef-crawl-directories" function (:arguments ("system")) nil [258 617])
+            ("register-source-directory" function (:arguments ("dir")) nil [619 719])
+            ("setf" code nil nil [721 792])
+            ("defparameter" code nil nil [853 1030])
+            ("output-files" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [1032 1404])
+            ("output-files" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [1423 1582])
+            ("perform" function
+               (:parent "compile-op"
+                :arguments ("operation" "c"))
+                nil [1584 2076])
+            ("make-relative" function (:arguments ("pathname")) nil [2079 2219])
+            ("clisp-subdirectories-wildcard" function (:arguments ("wildcard")) nil [6589 6769])
+            ("directory-pathname-p" function (:arguments ("p")) nil [6772 7303])
+            ("file-pathname-p" function (:arguments ("p")) nil [7306 7371])
+            ("pathname-as-directory" function (:arguments ("name")) nil [7373 8184])
+            ("pathname-as-file" function (:arguments ("name")) nil [8186 8969])
+            ("walk-directory" function (:arguments ("dirname" "fn" "directories" "test")) nil [8971 9558])
+            ("directory-p" function (:arguments ("name")) nil [9560 9724])
+            ("file-p" function (:arguments ("name")) nil [9726 9897])
+            ("pushnew" code nil nil [9900 9953]))          
+    :file "asdf-extensions.lisp"
+    :pointmax 9954
+    :fsize 9953
+    :lastmodtime '(20899 22871 213309 70000)
+    :unmatched-syntax '((symbol 6582 . 6588) (punctuation 6581 . 6582) (semantic-list 6429 . 6579) (semantic-list 4052 . 6427) (semantic-list 2399 . 4047))
+    )
+   )
+  :file "!home!neo!download!lispbox-0.7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

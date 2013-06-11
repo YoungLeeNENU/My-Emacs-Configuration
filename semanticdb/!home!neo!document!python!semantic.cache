@@ -5,12 +5,14 @@
    (semanticdb-table "a.py"
     :major-mode 'python-mode
     :tags 
-        '( ("a" function nil nil [1 28])
-            ("a" code nil nil [28 31]))          
+        '( ("deriv" function (:arguments 
+              ( ("exp" variable nil (reparse-symbol function_parameters) [34 37])
+                ("var" variable nil (reparse-symbol function_parameters) [39 42]))              ) nil [24 403])
+            ("if" code nil nil [408 564]))          
     :file "a.py"
-    :pointmax 36
-    :fsize 35
-    :lastmodtime '(20845 22931 508383 625000)
+    :pointmax 564
+    :fsize 563
+    :lastmodtime '(20900 31847 978803 653000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "class.py"
@@ -49,6 +51,19 @@
     :pointmax 595
     :fsize 594
     :lastmodtime '(20871 14664 877638 48000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "path.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("sys" variable nil nil [12 35])
+            ("django" include nil nil [36 49])
+            ("print" code nil nil [50 72]))          
+    :file "path.py"
+    :pointmax 73
+    :fsize 72
+    :lastmodtime '(20844 4821 215282 571000)
     :unmatched-syntax 'nil
     )
    )

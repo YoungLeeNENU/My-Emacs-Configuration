@@ -119,6 +119,15 @@
     :lastmodtime '(20883 44154 359570 878000)
     :unmatched-syntax '((semantic-list 155 . 202) (semantic-list 9 . 153) (semantic-list 155 . 201) (semantic-list 9 . 153))
     )
+   (semanticdb-table "expt.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "expt.scm"
+    :pointmax 123
+    :fsize 136
+    :lastmodtime '(20898 44669 267249 35000)
+    :unmatched-syntax '((semantic-list 78 . 122) (semantic-list 12 . 77) (semantic-list 78 . 122) (semantic-list 12 . 77))
+    )
    )
   :file "!home!neo!document!lisp!scheme!code!TestSICP!ch1!semantic.cache"
   :semantic-tag-version "2.0"

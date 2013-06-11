@@ -65,6 +65,89 @@ Content-Length	103
     :lastmodtime '(20833 15168 69497 951000)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "search.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("xlrd" include nil nil [24 40])
+            ("urllib" include nil nil [41 101])
+            ("urllib2" include nil nil [41 101])
+            ("cookielib" include nil nil [41 101])
+            ("base64" include nil nil [41 101])
+            ("re" include nil nil [41 101])
+            ("json" include nil nil [41 101])
+            ("hashlib" include nil nil [41 101])
+            ("urllib" include nil nil [102 130])
+            ("urllib" include nil nil [131 173])
+            ("stable_id" variable nil nil [175 207])
+            ("public_url" variable nil nil [209 256])
+            ("data_1" variable nil nil [258 310])
+            ("table_1" variable nil nil [311 339])
+            ("data_2" variable nil nil [341 378])
+            ("table_2" variable nil nil [379 407])
+            ("search" function (:arguments 
+              ( ("table_1" variable nil (reparse-symbol function_parameters) [420 427])
+                ("table_2" variable nil (reparse-symbol function_parameters) [429 436])
+                ("location" variable nil (reparse-symbol function_parameters) [438 446]))              ) nil [409 1693])
+            ("if" code nil nil [1710 1832]))          
+    :file "search.py"
+    :pointmax 1832
+    :fsize 1857
+    :lastmodtime '(20911 16313 570181 427000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "music.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("urllib" include nil nil [35 65])
+            ("folder" variable nil nil [67 110])
+            ("year" variable nil nil [111 166])
+            ("stuid" variable nil nil [167 177])
+            ("download" function (:arguments 
+              ( ("location" variable nil (reparse-symbol function_parameters) [215 223]))              ) nil [202 632])
+            ("download" code nil nil [633 672])
+            ("print" code nil nil [690 720]))          
+    :file "music.py"
+    :pointmax 721
+    :fsize 720
+    :lastmodtime '(20796 13082 928480 755000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "zhengfa.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("urllib" include nil nil [35 65])
+            ("folder" variable nil nil [67 110])
+            ("year" variable nil nil [111 166])
+            ("stuid" variable nil nil [167 177])
+            ("download" function (:arguments 
+              ( ("location" variable nil (reparse-symbol function_parameters) [215 223]))              ) nil [202 632])
+            ("download" code nil nil [633 672])
+            ("print" code nil nil [690 720]))          
+    :file "zhengfa.py"
+    :pointmax 721
+    :fsize 720
+    :lastmodtime '(20796 13100 428480 308000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "check.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("xlrd" include nil nil [24 40])
+            ("data" variable nil nil [42 77])
+            ("table" variable nil nil [78 102])
+            ("check" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [114 119]))              ) nil [104 396])
+            ("if" code nil nil [397 445]))          
+    :file "check.py"
+    :pointmax 788
+    :fsize 444
+    :lastmodtime '(20910 60685 235505 638000)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!home!neo!document!python!code!face!semantic.cache"
   :semantic-tag-version "2.0"

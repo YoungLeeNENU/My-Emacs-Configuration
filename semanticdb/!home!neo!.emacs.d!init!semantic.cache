@@ -372,9 +372,9 @@
             ("toggle-fullscreen" code nil nil [6873 6892])
             ("global-set-key" code nil nil [6898 6940]))          
     :file "my-face.el"
-    :pointmax 6943
+    :pointmax 6958
     :fsize 7256
-    :lastmodtime '(20856 57712 228713 44000)
+    :lastmodtime '(20899 6080 377663 785000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "my-basic.el"
@@ -428,7 +428,7 @@
     :file "my-basic.el"
     :pointmax 4377
     :fsize 4486
-    :lastmodtime '(20885 40478 770227 328000)
+    :lastmodtime '(20899 3307 553471 373000)
     :unmatched-syntax 'nil
     )
    )

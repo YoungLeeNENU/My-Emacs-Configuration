@@ -1,0 +1,549 @@
+;; Object add/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "add/"
+  :tables (list 
+   (semanticdb-table "clientAdd.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jxc.add" package nil nil [165 181])
+            ("javax.swing.JOptionPane" include nil nil [182 213])
+            ("jxc.BaseManage" include nil nil [214 236])
+            ("jxc.JavaDBCon" include nil nil [237 258])
+            ("clientAdd" type
+               (:typemodifiers ("public")
+                :superclasses "javax.swing.JFrame"
+                :members 
+                  ( ("clientAdd" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [395 447])
+                    ("initComponents" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [820 16812])
+                    ("exitMenuItemActionPerformed" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.ActionEvent") (reparse-symbol formal_parameters) [16900 16930]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16859 17008])
+                    ("jButton2MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [17092 17121]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17058 17413])
+                    ("jButton3MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [17490 17519]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17456 17734])
+                    ("jButton1MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [17811 17840]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17777 19498])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [19639 19652]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19615 21313])
+                    ("aboutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21388 21432])
+                    ("contentsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21437 21484])
+                    ("copyMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21489 21532])
+                    ("cutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21537 21579])
+                    ("deleteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21584 21629])
+                    ("editMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [21634 21669])
+                    ("exitMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21674 21717])
+                    ("fileMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [21722 21757])
+                    ("helpMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [21762 21797])
+                    ("jButton1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [21802 21839])
+                    ("jButton2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [21844 21881])
+                    ("jButton3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [21886 21923])
+                    ("jLabel1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [21928 21963])
+                    ("jLabel2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [21968 22003])
+                    ("jLabel3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22008 22043])
+                    ("jLabel4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22048 22083])
+                    ("jLabel5" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22088 22123])
+                    ("jLabel6" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22128 22163])
+                    ("jLabel7" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22168 22203])
+                    ("jLabel8" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22208 22243])
+                    ("jTextField1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22248 22291])
+                    ("jTextField2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22296 22339])
+                    ("jTextField3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22344 22387])
+                    ("jTextField4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22392 22435])
+                    ("jTextField5" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22440 22483])
+                    ("jTextField6" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22488 22531])
+                    ("jTextField7" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22536 22579])
+                    ("menuBar" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuBar")
+                        (reparse-symbol class_member_declaration) [22584 22621])
+                    ("openMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22626 22669])
+                    ("pasteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22674 22718])
+                    ("saveAsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22723 22768])
+                    ("saveMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22773 22816]))                  
+                :type "class")
+                nil [296 22877]))          
+    :file "clientAdd.java"
+    :pointmax 22878
+    :fsize 22901
+    :lastmodtime '(20899 16571 41442 166000)
+    :unmatched-syntax '((STRING_LITERAL 705 . 716))
+    )
+   (semanticdb-table "ItemAdd.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jxc.add" package nil nil [163 179])
+            ("javax.swing.JOptionPane" include nil nil [181 212])
+            ("jxc.BaseManage" include nil nil [213 235])
+            ("jxc.JavaDBCon" include nil nil [236 257])
+            ("ItemAdd" type
+               (:typemodifiers ("public")
+                :superclasses "javax.swing.JFrame"
+                :members 
+                  ( ("ItemAdd" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [390 440])
+                    ("initComponents" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [813 14181])
+                    ("exitMenuItemActionPerformed" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.ActionEvent") (reparse-symbol formal_parameters) [14269 14299]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14228 14377])
+                    ("jButton2MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [14461 14490]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14427 14726])
+                    ("jButton3MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [14803 14832]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14769 15047])
+                    ("jButton1MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [15124 15153]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15090 16491])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [16632 16645]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16608 18296])
+                    ("aboutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18371 18415])
+                    ("contentsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18420 18467])
+                    ("copyMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18472 18515])
+                    ("cutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18520 18562])
+                    ("deleteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18567 18612])
+                    ("editMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [18617 18652])
+                    ("exitMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [18657 18700])
+                    ("fileMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [18705 18740])
+                    ("helpMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [18745 18780])
+                    ("jButton1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [18785 18822])
+                    ("jButton2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [18827 18864])
+                    ("jButton3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [18869 18906])
+                    ("jLabel1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [18911 18946])
+                    ("jLabel2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [18951 18986])
+                    ("jLabel3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [18991 19026])
+                    ("jLabel4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [19031 19066])
+                    ("jLabel5" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [19071 19106])
+                    ("jTextField1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [19111 19154])
+                    ("jTextField2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [19159 19202])
+                    ("jTextField3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [19207 19250])
+                    ("jTextField4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [19255 19298])
+                    ("menuBar" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuBar")
+                        (reparse-symbol class_member_declaration) [19303 19340])
+                    ("openMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [19345 19388])
+                    ("pasteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [19393 19437])
+                    ("saveAsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [19442 19487])
+                    ("saveMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [19492 19535]))                  
+                :type "class")
+                nil [295 19596]))          
+    :file "ItemAdd.java"
+    :pointmax 19597
+    :fsize 19624
+    :lastmodtime '(20899 16577 981442 18000)
+    :unmatched-syntax '((STRING_LITERAL 698 . 709))
+    )
+   (semanticdb-table "ServesAdd.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("jxc.add" package nil nil [164 180])
+            ("javax.swing.JOptionPane" include nil nil [182 213])
+            ("jxc.BaseManage" include nil nil [214 236])
+            ("jxc.JavaDBCon" include nil nil [237 258])
+            ("ServesAdd" type
+               (:typemodifiers ("public")
+                :superclasses "javax.swing.JFrame"
+                :members 
+                  ( ("ServesAdd" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [395 447])
+                    ("initComponents" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [820 17301])
+                    ("exitMenuItemActionPerformed" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.ActionEvent") (reparse-symbol formal_parameters) [17389 17419]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17348 17497])
+                    ("jButton2MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [17581 17610]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17547 17960])
+                    ("jButton3MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [18037 18066]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18003 18281])
+                    ("jButton1MouseClicked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("evt" variable (:type "java.awt.event.MouseEvent") (reparse-symbol formal_parameters) [18358 18387]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18324 20074])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [20215 20228]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20191 21889])
+                    ("aboutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [21964 22008])
+                    ("contentsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22013 22060])
+                    ("copyMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22065 22108])
+                    ("cutMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22113 22155])
+                    ("deleteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22160 22205])
+                    ("editMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [22210 22245])
+                    ("exitMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [22250 22293])
+                    ("fileMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [22298 22333])
+                    ("helpMenu" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenu")
+                        (reparse-symbol class_member_declaration) [22338 22373])
+                    ("jButton1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [22378 22415])
+                    ("jButton2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [22420 22457])
+                    ("jButton3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JButton")
+                        (reparse-symbol class_member_declaration) [22462 22499])
+                    ("jLabel1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22504 22539])
+                    ("jLabel2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22544 22579])
+                    ("jLabel3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22584 22619])
+                    ("jLabel4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22624 22659])
+                    ("jLabel5" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22664 22699])
+                    ("jLabel6" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22704 22739])
+                    ("jLabel7" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22744 22779])
+                    ("jLabel8" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JLabel")
+                        (reparse-symbol class_member_declaration) [22784 22819])
+                    ("jTextField1" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22824 22867])
+                    ("jTextField2" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22872 22915])
+                    ("jTextField3" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22920 22963])
+                    ("jTextField4" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [22968 23011])
+                    ("jTextField5" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [23016 23059])
+                    ("jTextField6" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [23064 23107])
+                    ("jTextField7" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JTextField")
+                        (reparse-symbol class_member_declaration) [23112 23155])
+                    ("menuBar" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuBar")
+                        (reparse-symbol class_member_declaration) [23160 23197])
+                    ("openMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [23202 23245])
+                    ("pasteMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [23250 23294])
+                    ("saveAsMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [23299 23344])
+                    ("saveMenuItem" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.JMenuItem")
+                        (reparse-symbol class_member_declaration) [23349 23392]))                  
+                :type "class")
+                nil [296 23453]))          
+    :file "ServesAdd.java"
+    :pointmax 23454
+    :fsize 23483
+    :lastmodtime '(20899 16599 369441 566000)
+    :unmatched-syntax '((STRING_LITERAL 705 . 716))
+    )
+   )
+  :file "!home!neo!Dropbox!大三下!oracle!yms!JXC!src!jxc!add!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

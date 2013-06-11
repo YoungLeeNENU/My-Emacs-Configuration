@@ -101,6 +101,200 @@ for the JavaScript code in this tag.
     :lastmodtime '(20892 32237 664765 878000)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "4-10.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("4-10" section nil nil [240 2245])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2245 3865])
+            ("4-10" section (:members 
+              ( ("4-10" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 亚里士多德的课程设计" anchor nil nil [4050 4053])
+                        ("1.1 实用课程" anchor nil nil [4093 4096])
+                        ("1.2 理性自由课程" anchor nil nil [4134 4137])
+                        ("2 亚里士多德的总结" anchor nil nil [4189 4192])
+                        ("3 封建时期的教育" anchor nil nil [4230 4233])
+                        ("3.1 封建社会的教育制度" anchor nil nil [4270 4273])
+                        ("3.1.1 封建社会早期的基督教教育" anchor nil nil [4316 4319])
+                        ("3.1.2 封建社会早期的世俗封建主教育" anchor nil nil [4369 4372])
+                        ("3.1.3 中世纪大学" anchor nil nil [4424 4427])
+                        ("3.1.4 城市学校" anchor nil nil [4470 4473])
+                        ("4 文艺复兴时期的教育" anchor nil nil [4538 4541])
+                        ("4.1 文艺复兴的兴起" anchor nil nil [4580 4583])
+                        ("4.2 人文主义世界观" anchor nil nil [4624 4627])
+                        ("4.2.1 歌颂人的价值和尊严" anchor nil nil [4668 4671])
+                        ("4.2.2 宣扬人的思想解放和个性自由" anchor nil nil [4718 4721])
+                        ("4.2.3 肯定现世生活的价值和尘世的享乐" anchor nil nil [4772 4775])
+                        ("4.2.4 提倡学术，尊崇理性" anchor nil nil [4828 4831])
+                        ("4.3 人文主义教育的特征" anchor nil nil [4890 4893]))                      ) nil [3980 5014])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [5400 5580])
+                        ("1.2" section nil nil [5580 5767]))                      ) nil [5014 5767])
+                    ("2" section nil nil [5767 6254])
+                    ("3" section (:members 
+                      ( ("3.1" section (:members 
+                          ( ("3.1.1" section nil nil [6786 7872])
+                            ("3.1.2" section nil nil [7872 9119])
+                            ("3.1.3" section nil nil [9119 9840])
+                            ("3.1.4" section nil nil [9840 10291]))                          ) nil [6606 10291]))                      ) nil [6254 10291])
+                    ("4" section (:members 
+                      ( ("4.1" section nil nil [10499 10808])
+                        ("4.2" section (:members 
+                          ( ("4.2.1" section nil nil [11063 11256])
+                            ("4.2.2" section nil nil [11256 11453])
+                            ("4.2.3" section nil nil [11453 11652])
+                            ("4.2.4" section nil nil [11652 11850]))                          ) nil [10808 11850])
+                        ("4.3" section (:members 
+                          ( ("Org" anchor nil nil [12263 12266])
+                            ("Emacs" anchor nil nil [12320 12323])
+                            ("Validate XHTML 1.0" anchor nil nil [12390 12393]))                          ) nil [11850 12489]))                      ) nil [10291 12489]))                  ) nil [3921 12489]))              ) nil [3865 12489]))          
+    :file "4-10.html"
+    :pointmax 12489
+    :fsize 15730
+    :lastmodtime '(20897 52391 215021 346000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3-27.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("3-27" section nil nil [240 2245])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2245 3865])
+            ("3-27" section (:members 
+              ( ("3-27" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 柏拉图的教育" anchor nil nil [4050 4053])
+                        ("1.1 35岁" anchor nil nil [4089 4092])
+                        ("1.2 50岁" anchor nil nil [4129 4132])
+                        ("2 继续柏拉图的教育" anchor nil nil [4181 4184])
+                        ("2.1 学习即回忆" anchor nil nil [4222 4225])
+                        ("3 亚里士多德的教育思想" anchor nil nil [4276 4279])
+                        ("3.1 哲学" anchor nil nil [4319 4322])
+                        ("3.1.1 \"形式\"与\"质料\"统一" anchor nil nil [4358 4361])
+                        ("3.2 教育" anchor nil nil [4422 4425])
+                        ("3.3 生平和世界观" anchor nil nil [4461 4464])
+                        ("3.4 教育思想的理论基础" anchor nil nil [4504 4507])
+                        ("3.4.1 哲学观" anchor nil nil [4550 4553])
+                        ("3.4.2 灵魂论" anchor nil nil [4594 4597])
+                        ("3.4.3 教育理论" anchor nil nil [4638 4641])
+                        ("3.4.4 教育目的" anchor nil nil [4683 4686])
+                        ("3.4.5 教育的作用" anchor nil nil [4728 4731])
+                        ("3.4.6 白板说" anchor nil nil [4774 4777])
+                        ("3.4.7 自然教育论" anchor nil nil [4818 4821])
+                        ("3.4.8 自由教育论" anchor nil nil [4864 4867]))                      ) nil [3980 5000])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [5169 5373])
+                        ("1.2" section nil nil [5373 5610]))                      ) nil [5000 5610])
+                    ("2" section (:members 
+                      ( ("2.1" section nil nil [5781 6095]))                      ) nil [5610 6095])
+                    ("3" section (:members 
+                      ( ("3.1" section (:members 
+                          ( ("3.1.1" section nil nil [6441 6676]))                          ) nil [6268 6676])
+                        ("3.2" section nil nil [6676 6890])
+                        ("3.3" section nil nil [6890 7191])
+                        ("3.4" section (:members 
+                          ( ("3.4.1" section nil nil [7371 7711])
+                            ("3.4.2" section nil nil [7711 8630])
+                            ("3.4.3" section nil nil [8630 10401])
+                            ("3.4.4" section nil nil [10401 10654])
+                            ("3.4.5" section nil nil [10654 10951])
+                            ("3.4.6" section nil nil [10951 11225])
+                            ("3.4.7" section nil nil [11225 11719])
+                            ("3.4.8" section (:members 
+                              ( ("Org" anchor nil nil [12246 12249])
+                                ("Emacs" anchor nil nil [12303 12306])
+                                ("Validate XHTML 1.0" anchor nil nil [12373 12376]))                              ) nil [11719 12472]))                          ) nil [7191 12472]))                      ) nil [6095 12472]))                  ) nil [3921 12472]))              ) nil [3865 12472]))          
+    :file "3-27.html"
+    :pointmax 12472
+    :fsize 15471
+    :lastmodtime '(20910 59475 351528 370000)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!home!neo!Dropbox!大三下!外国教育!semantic.cache"
   :semantic-tag-version "2.0"

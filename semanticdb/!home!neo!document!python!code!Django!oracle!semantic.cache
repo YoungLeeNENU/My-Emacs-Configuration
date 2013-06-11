@@ -22,13 +22,13 @@
                 ("Ea" variable nil (reparse-symbol function_parameters) [841 843])
                 ("Eb" variable nil (reparse-symbol function_parameters) [845 847]))              ) nil [814 1016])
             ("Show" function nil nil [1017 1388])
-            ("Range" function nil nil [1389 1614])
-            ("if" code nil nil [1619 3313]))          
+            ("Range" function nil nil [1389 1589])
+            ("if" code nil nil [1594 3288]))          
     :file "model.py"
-    :pointmax 3313
-    :fsize 3342
-    :lastmodtime '(20889 35284 160767 289000)
-    :unmatched-syntax 'nil
+    :pointmax 3288
+    :fsize 3317
+    :lastmodtime '(20897 46207 299179 459000)
+    :unmatched-syntax '((IF 3290 . 3292) ($EOI 3324 . 3324) (IF 3290 . 3292) ($EOI 3313 . 3313))
     )
    )
   :file "!home!neo!document!python!code!Django!oracle!semantic.cache"

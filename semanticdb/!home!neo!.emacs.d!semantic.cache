@@ -9,7 +9,19 @@
     :file "ede-projects.el"
     :pointmax 86
     :fsize 85
-    :lastmodtime '(20896 51011 30173 699000)
+    :lastmodtime '(20918 33544)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "moody.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("deftheme" code nil nil [1 35])
+            ("custom-theme-set-faces" code nil nil [36 922])
+            ("provide-theme" code nil nil [923 945]))          
+    :file "moody.el"
+    :pointmax 946
+    :fsize 945
+    :lastmodtime '(20899 6049)
     :unmatched-syntax 'nil
     )
    )

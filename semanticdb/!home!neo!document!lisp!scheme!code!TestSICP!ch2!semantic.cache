@@ -67,6 +67,29 @@
     :lastmodtime '(20888 22519 231949 83000)
     :unmatched-syntax '((semantic-list 152 . 267) (semantic-list 17 . 151) (semantic-list 152 . 232) (semantic-list 17 . 151) (semantic-list 152 . 213) (semantic-list 17 . 151))
     )
+   (semanticdb-table "deriv.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("same-variable?" function (:arguments ("v1" "v2")) nil [149 253])
+            ("make-sum" function (:arguments ("a1" "a2")) nil [413 584])
+            ("make-product" function (:arguments ("m1" "m2")) nil [756 974])
+            ("make-exponentiation" function (:arguments ("s1" "s2")) nil [1145 1513])
+            ("deriv" function (:arguments ("exp" "var")) nil [1515 2180]))          
+    :file "deriv.scm"
+    :pointmax 2391
+    :fsize 2554
+    :lastmodtime '(20898 45380 487230 849000)
+    :unmatched-syntax '((semantic-list 2182 . 2390) (semantic-list 1098 . 1143) (semantic-list 1057 . 1096) (semantic-list 976 . 1055) (semantic-list 705 . 754) (semantic-list 656 . 703) (semantic-list 586 . 654) (semantic-list 368 . 411) (semantic-list 323 . 366) (semantic-list 255 . 321) (semantic-list 61 . 147) (semantic-list 9 . 59) (semantic-list 2182 . 2386) (semantic-list 1098 . 1143) (semantic-list 1057 . 1096) (semantic-list 976 . 1055) (semantic-list 705 . 754) (semantic-list 656 . 703) (semantic-list 586 . 654) (semantic-list 368 . 411) (semantic-list 323 . 366) (semantic-list 255 . 321) (semantic-list 61 . 147) (semantic-list 9 . 59) (semantic-list 2182 . 2378) (semantic-list 1098 . 1143) (semantic-list 1057 . 1096) (semantic-list 976 . 1055) (semantic-list 705 . 754) (semantic-list 656 . 703) (semantic-list 586 . 654) (semantic-list 368 . 411) (semantic-list 323 . 366) (semantic-list 255 . 321) (semantic-list 61 . 147) (semantic-list 9 . 59))
+    )
+   (semanticdb-table "exp.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "exp.scm"
+    :pointmax 184
+    :fsize 183
+    :lastmodtime '(20898 44867 375243 969000)
+    :unmatched-syntax '((semantic-list 142 . 183) (semantic-list 8 . 140) (semantic-list 142 . 183) (semantic-list 8 . 140) (semantic-list 135 . 186) (semantic-list 1 . 133) (semantic-list 135 . 172) (semantic-list 1 . 133) (semantic-list 135 . 169) (semantic-list 1 . 133) (semantic-list 1 . 133) (semantic-list 1 . 124) (semantic-list 1 . 118) (semantic-list 1 . 101) (semantic-list 1 . 95) (semantic-list 1 . 90) (semantic-list 1 . 89) (semantic-list 1 . 76) (semantic-list 1 . 63) (semantic-list 1 . 60) (semantic-list 1 . 24) (semantic-list 1 . 3))
+    )
    )
   :file "!home!neo!document!lisp!scheme!code!TestSICP!ch2!semantic.cache"
   :semantic-tag-version "2.0"

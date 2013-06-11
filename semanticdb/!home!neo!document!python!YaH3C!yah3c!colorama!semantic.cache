@@ -1,0 +1,384 @@
+;; Object colorama/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "colorama/"
+  :tables (list 
+   (semanticdb-table "ansi.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+This module generates ANSI character codes to printing colors to terminals.
+See: http://en.wikipedia.org/wiki/ANSI_escape_code
+'''" code nil nil [1 135])
+            ("CSI" variable nil nil [137 150])
+            ("code_to_chars" function (:arguments 
+              ( ("code" variable nil (reparse-symbol function_parameters) [170 174]))              ) nil [152 210])
+            ("AnsiCodes" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("for" code nil (reparse-symbol indented_block_body) [275 443]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [253 257])
+                            ("codes" variable nil (reparse-symbol function_parameters) [259 264]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [240 443]))                  
+                :type "class")
+                nil [211 443])
+            ("AnsiFore" type
+               (:members 
+                  ( ("BLACK" variable nil (reparse-symbol indented_block_body) [464 476])
+                    ("RED" variable nil (reparse-symbol indented_block_body) [481 493])
+                    ("GREEN" variable nil (reparse-symbol indented_block_body) [498 510])
+                    ("YELLOW" variable nil (reparse-symbol indented_block_body) [515 527])
+                    ("BLUE" variable nil (reparse-symbol indented_block_body) [532 544])
+                    ("MAGENTA" variable nil (reparse-symbol indented_block_body) [549 561])
+                    ("CYAN" variable nil (reparse-symbol indented_block_body) [566 578])
+                    ("WHITE" variable nil (reparse-symbol indented_block_body) [583 595])
+                    ("RESET" variable nil (reparse-symbol indented_block_body) [600 612]))                  
+                :type "class")
+                nil [444 613])
+            ("AnsiBack" type
+               (:members 
+                  ( ("BLACK" variable nil (reparse-symbol indented_block_body) [634 646])
+                    ("RED" variable nil (reparse-symbol indented_block_body) [651 663])
+                    ("GREEN" variable nil (reparse-symbol indented_block_body) [668 680])
+                    ("YELLOW" variable nil (reparse-symbol indented_block_body) [685 697])
+                    ("BLUE" variable nil (reparse-symbol indented_block_body) [702 714])
+                    ("MAGENTA" variable nil (reparse-symbol indented_block_body) [719 731])
+                    ("CYAN" variable nil (reparse-symbol indented_block_body) [736 748])
+                    ("WHITE" variable nil (reparse-symbol indented_block_body) [753 765])
+                    ("RESET" variable nil (reparse-symbol indented_block_body) [770 782]))                  
+                :type "class")
+                nil [614 783])
+            ("AnsiStyle" type
+               (:members 
+                  ( ("BRIGHT" variable nil (reparse-symbol indented_block_body) [805 818])
+                    ("DIM" variable nil (reparse-symbol indented_block_body) [823 836])
+                    ("NORMAL" variable nil (reparse-symbol indented_block_body) [841 855])
+                    ("RESET_ALL" variable nil (reparse-symbol indented_block_body) [860 873]))                  
+                :type "class")
+                nil [784 874])
+            ("Fore" variable nil nil [875 903])
+            ("Back" variable nil nil [904 932])
+            ("Style" variable nil nil [933 963]))          
+    :file "ansi.py"
+    :pointmax 965
+    :fsize 1013
+    :lastmodtime '(20825 22158)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ansitowin32.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [24 33])
+            ("sys" include nil nil [34 44])
+            ("AnsiFore" include nil nil [57 100])
+            ("AnsiBack" include nil nil [57 100])
+            ("AnsiStyle" include nil nil [57 100])
+            ("Style" include nil nil [57 100])
+            ("WinTerm" include nil nil [115 149])
+            ("WinColor" include nil nil [115 149])
+            ("WinStyle" include nil nil [115 149])
+            ("windll" include nil nil [162 175])
+            ("if" code nil nil [178 225])
+            ("is_a_tty" function (:arguments 
+              ( ("stream" variable nil (reparse-symbol function_parameters) [240 246]))              ) nil [227 306])
+            ("StreamWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    Wraps a stream (such as stdout), acting as a transparent proxy for all
+    attribute access apart from method 'write()', which is delegated to our
+    Converter instance.
+    '''" code nil (reparse-symbol indented_block_body) [341 527])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [681 705])
+                            ("self" variable nil (reparse-symbol indented_block_body) [714 742]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [545 549])
+                            ("wrapped" variable nil (reparse-symbol function_parameters) [551 558])
+                            ("converter" variable nil (reparse-symbol function_parameters) [560 569]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [532 765])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [786 790])
+                            ("name" variable nil (reparse-symbol function_parameters) [792 796]))                          )
+                        (reparse-symbol indented_block_body) [770 844])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [859 863])
+                            ("text" variable nil (reparse-symbol function_parameters) [865 869]))                          )
+                        (reparse-symbol indented_block_body) [849 909]))                  
+                :type "class")
+                nil [308 909])
+            ("AnsiToWin32" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    Implements a 'write()' method which, on Windows, will strip ANSI character
+    sequences from the text, and if outputting to a tty, will convert them into
+    win32 function calls.
+    '''" code nil (reparse-symbol indented_block_body) [942 1138])
+                    ("ANSI_RE" variable nil (reparse-symbol indented_block_body) [1143 1194])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1323 1345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1421 1447])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1511 1553])
+                            ("on_windows" variable nil (reparse-symbol indented_block_body) [1563 1606])
+                            ("if" code nil (reparse-symbol indented_block_body) [1674 1723])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1731 1749])
+                            ("if" code nil (reparse-symbol indented_block_body) [1827 1902])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1910 1932])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2005 2046])
+                            ("self" code nil (reparse-symbol indented_block_body) [2090 2133]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1213 1217])
+                            ("wrapped" variable nil (reparse-symbol function_parameters) [1219 1226])
+                            ("convert" variable nil (reparse-symbol function_parameters) [1228 1235])
+                            ("strip" variable nil (reparse-symbol function_parameters) [1242 1247])
+                            ("autoreset" variable nil (reparse-symbol function_parameters) [1254 1263]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1200 2156])
+                    ("should_wrap" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2178 2182]))                          )
+                        (reparse-symbol indented_block_body) [2162 2622])
+                    ("get_win32_calls" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2648 2652]))                          )
+                        (reparse-symbol indented_block_body) [2628 4106])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4122 4126])
+                            ("text" variable nil (reparse-symbol function_parameters) [4128 4132]))                          )
+                        (reparse-symbol indented_block_body) [4112 4355])
+                    ("reset_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4375 4379]))                          )
+                        (reparse-symbol indented_block_body) [4361 4531])
+                    ("write_and_convert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4559 4563])
+                            ("text" variable nil (reparse-symbol function_parameters) [4565 4569]))                          )
+                        (reparse-symbol indented_block_body) [4537 5046])
+                    ("write_plain_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5073 5077])
+                            ("text" variable nil (reparse-symbol function_parameters) [5079 5083])
+                            ("start" variable nil (reparse-symbol function_parameters) [5085 5090])
+                            ("end" variable nil (reparse-symbol function_parameters) [5092 5095]))                          )
+                        (reparse-symbol indented_block_body) [5052 5203])
+                    ("convert_ansi" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5226 5230])
+                            ("paramstring" variable nil (reparse-symbol function_parameters) [5232 5243])
+                            ("command" variable nil (reparse-symbol function_parameters) [5245 5252]))                          )
+                        (reparse-symbol indented_block_body) [5209 5379])
+                    ("extract_params" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5404 5408])
+                            ("paramstring" variable nil (reparse-symbol function_parameters) [5410 5421]))                          )
+                        (reparse-symbol indented_block_body) [5385 5603])
+                    ("call_win32" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5624 5628])
+                            ("command" variable nil (reparse-symbol function_parameters) [5630 5637])
+                            ("params" variable nil (reparse-symbol function_parameters) [5639 5645]))                          )
+                        (reparse-symbol indented_block_body) [5609 6319]))                  
+                :type "class")
+                nil [911 6319]))          
+    :file "ansitowin32.py"
+    :pointmax 6297
+    :fsize 6499
+    :lastmodtime '(20918 32681)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "initialise.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("atexit" include nil nil [1 14])
+            ("sys" include nil nil [15 25])
+            ("AnsiToWin32" include nil nil [45 63])
+            ("orig_stdout" variable nil nil [66 90])
+            ("orig_stderr" variable nil nil [91 115])
+            ("wrapped_stdout" variable nil nil [117 144])
+            ("wrapped_stderr" variable nil nil [145 172])
+            ("atexit_done" variable nil nil [174 193])
+            ("reset_all" function nil nil [196 254])
+            ("init" function (:arguments 
+              ( ("autoreset" variable nil (reparse-symbol function_parameters) [265 274])
+                ("convert" variable nil (reparse-symbol function_parameters) [282 289])
+                ("strip" variable nil (reparse-symbol function_parameters) [296 301])
+                ("wrap" variable nil (reparse-symbol function_parameters) [308 312]))              ) nil [256 805])
+            ("deinit" function nil nil [807 879])
+            ("reinit" function nil nil [881 959])
+            ("wrap_stream" function (:arguments 
+              ( ("stream" variable nil (reparse-symbol function_parameters) [977 983])
+                ("convert" variable nil (reparse-symbol function_parameters) [985 992])
+                ("strip" variable nil (reparse-symbol function_parameters) [994 999])
+                ("autoreset" variable nil (reparse-symbol function_parameters) [1001 1010])
+                ("wrap" variable nil (reparse-symbol function_parameters) [1012 1016]))              ) nil [961 1221]))          
+    :file "initialise.py"
+    :pointmax 1221
+    :fsize 1273
+    :lastmodtime '(20826 49287)
+    :unmatched-syntax '((FROM 27 . 31) (PERIOD 32 . 33))
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("init" include nil nil [18 45])
+            ("deinit" include nil nil [18 45])
+            ("reinit" include nil nil [18 45])
+            ("Fore" include nil nil [57 81])
+            ("Back" include nil nil [57 81])
+            ("Style" include nil nil [57 81])
+            ("AnsiToWin32" include nil nil [100 118])
+            ("VERSION" variable nil nil [120 137]))          
+    :file "__init__.py"
+    :pointmax 138
+    :fsize 137
+    :lastmodtime '(20918 32695)
+    :unmatched-syntax '((FROM 82 . 86) (PERIOD 87 . 88) (FROM 46 . 50) (PERIOD 51 . 52) (PERIOD 6 . 7) (FROM 82 . 86) (PERIOD 87 . 88) (FROM 46 . 50) (PERIOD 51 . 52) (PERIOD 6 . 7))
+    )
+   (semanticdb-table "win32.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("STDOUT" code nil nil [41 53])
+            ("STDERR" code nil nil [54 66])
+            ("try" code nil nil [68 3692]))          
+    :file "win32.py"
+    :pointmax 3693
+    :fsize 3801
+    :lastmodtime '(20918 32700)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "winterm.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("win32" include nil nil [31 43])
+            ("WinColor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("BLACK" variable nil (reparse-symbol indented_block_body) [90 101])
+                    ("BLUE" variable nil (reparse-symbol indented_block_body) [106 117])
+                    ("GREEN" variable nil (reparse-symbol indented_block_body) [122 133])
+                    ("CYAN" variable nil (reparse-symbol indented_block_body) [138 149])
+                    ("RED" variable nil (reparse-symbol indented_block_body) [154 165])
+                    ("MAGENTA" variable nil (reparse-symbol indented_block_body) [170 181])
+                    ("YELLOW" variable nil (reparse-symbol indented_block_body) [186 197])
+                    ("GREY" variable nil (reparse-symbol indented_block_body) [202 213]))                  
+                :type "class")
+                nil [62 214])
+            ("WinStyle" type
+               (:superclasses ("object")
+                :members 
+                  ( ("NORMAL" variable nil (reparse-symbol indented_block_body) [259 272])
+                    ("BRIGHT" variable nil (reparse-symbol indented_block_body) [304 317]))                  
+                :type "class")
+                nil [231 348])
+            ("WinTerm" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [384 458])
+                            ("self" code nil (reparse-symbol indented_block_body) [467 496])
+                            ("self" variable nil (reparse-symbol indented_block_body) [505 536])
+                            ("self" variable nil (reparse-symbol indented_block_body) [545 576])
+                            ("self" variable nil (reparse-symbol indented_block_body) [585 618]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [391 395]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [378 641])
+                    ("get_attrs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [660 664]))                          )
+                        (reparse-symbol indented_block_body) [646 725])
+                    ("set_attrs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [744 748])
+                            ("value" variable nil (reparse-symbol function_parameters) [750 755]))                          )
+                        (reparse-symbol indented_block_body) [730 873])
+                    ("reset_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [892 896])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [898 907]))                          )
+                        (reparse-symbol indented_block_body) [878 999])
+                    ("fore" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1013 1017])
+                            ("fore" variable nil (reparse-symbol function_parameters) [1019 1023])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [1030 1039]))                          )
+                        (reparse-symbol indented_block_body) [1004 1183])
+                    ("back" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1197 1201])
+                            ("back" variable nil (reparse-symbol function_parameters) [1203 1207])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [1214 1223]))                          )
+                        (reparse-symbol indented_block_body) [1188 1367])
+                    ("style" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1382 1386])
+                            ("style" variable nil (reparse-symbol function_parameters) [1388 1393])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [1400 1409]))                          )
+                        (reparse-symbol indented_block_body) [1372 1558])
+                    ("set_console" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1579 1583])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [1585 1590])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [1597 1606]))                          )
+                        (reparse-symbol indented_block_body) [1563 1817])
+                    ("set_cursor_position" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1846 1850])
+                            ("position" variable nil (reparse-symbol function_parameters) [1852 1860])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [1867 1876]))                          )
+                        (reparse-symbol indented_block_body) [1822 2198])
+                    ("erase_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2218 2222])
+                            ("mode" variable nil (reparse-symbol function_parameters) [2224 2228])
+                            ("on_stderr" variable nil (reparse-symbol function_parameters) [2232 2241]))                          )
+                        (reparse-symbol indented_block_body) [2203 3499]))                  
+                :type "class")
+                nil [350 3499]))          
+    :file "winterm.py"
+    :pointmax 3480
+    :fsize 3600
+    :lastmodtime '(20918 32718)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!YaH3C!yah3c!colorama!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

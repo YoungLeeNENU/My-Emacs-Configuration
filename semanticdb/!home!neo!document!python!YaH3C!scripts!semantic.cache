@@ -1,0 +1,19 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "yah3c"
+    :major-mode 'python-mode
+    :tags 
+        '( ("if" code nil nil [24 97]))          
+    :file "yah3c"
+    :pointmax 97
+    :fsize 96
+    :lastmodtime '(20825 22158)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!neo!document!python!YaH3C!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

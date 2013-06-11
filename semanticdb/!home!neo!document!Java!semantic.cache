@@ -1,0 +1,38 @@
+;; Object Java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Java/"
+  :tables (list 
+   (semanticdb-table "hello.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("hello" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("foo" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [68 76]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [41 103])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [132 145]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [108 200]))                  
+                :type "class")
+                nil [16 202]))          
+    :file "hello.java"
+    :pointmax 203
+    :fsize 202
+    :lastmodtime '(20899 16489 853443 881000)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!home!neo!document!Java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )
