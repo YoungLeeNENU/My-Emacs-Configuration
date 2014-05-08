@@ -4,12 +4,19 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete//ac-dict")
 (ac-config-default)
+(require 'auto-complete-extension)
+(require 'auto-complete+)
+(ac+-apply-source-elisp-faces)
 
 ;;模板
 (add-to-list 'load-path
-              "~/.emacs.d/plugins/yasnippet")
+	     "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas/global-mode 1)
+
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/popup-el")
+(require 'popup)
 
 ;;ido
 (require 'ido)
@@ -34,7 +41,7 @@
 
 ;;改变光标形状
 (add-to-list 'load-path
-			 "~/.emacs.d/elisp")
+	     "~/.emacs.d/elisp")
 (require 'cursor-chg)  ; Load this library
 (change-cursor-mode 1) ; On for overwrite/read-only/input mode
 (toggle-cursor-type-when-idle 1) ; On when idle
@@ -112,9 +119,9 @@
                                         (and string ", ") buffname))))
             (buffer-list))
     (if string (message "清理buffer: %s" string)
-    ;(if string (message "Deleted: %s" string)
-       (message "没有多余的buffer"))))
-      ;(message "No buffers deleted"))))
+					;(if string (message "Deleted: %s" string)
+      (message "没有多余的buffer"))))
+					;(message "No buffers deleted"))))
 
 ;;智能行号
 (require 'linum+)
@@ -124,9 +131,18 @@
 
 ;; multiple-cursors
 (add-to-list 'load-path
-              "~/.emacs.d/plugins/multiple-cursors")
+	      "~/.emacs.d/plugins/multiple-cursors")
 (require 'multiple-cursors)
 (global-set-key (kbd "M-S-c M-S-c") 'mc/edit-lines)
 (global-set-key (kbd "M-)") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-(") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c M-(") 'mc/mark-all-like-this)
+
+(require 'install-elisp)
+(setq install-elisp-repository-directory "~/.emacs.d/elisp/")
+
+;; (require 'highlight)
+;; (require 'region-list-edit)
+
+;; compile-dwim
+(require 'compile-dwim)

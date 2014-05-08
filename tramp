@@ -1,23 +1,9 @@
-;; -*- emacs-lisp -*- <13/05/27 22:59:14 /home/neo/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/02/01 22:38:30 /home/lee/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["sudo" "root" "localhost" nil]
-  ("uname" "Linux 3.2.0-39-generic-pae")
-  ("test" "test")
-  ("remote-path"
-   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
-  ("remote-shell" "/bin/sh")
-  ("busybox" nil)
-  ("file-exists" "test -e")
-  ("tmpdir" "/sudo:root@localhost:/tmp")
-  ("id" "/usr/bin/id")
-  ("uid-integer" 0)
-  ("stat" "\\stat")
-  ("gid-integer" 0)
-  ("readlink" "\\readlink"))
- (["sudo" "root" "localhost" nil nil]
-  ("uname" "Linux 3.2.0-41-generic-pae")
+((["sudo" "root" "localhost" nil nil]
+  ("uname" "Linux 3.2.0-51-generic-pae")
   ("test" "test")
   ("remote-path"
    ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
@@ -27,4 +13,6 @@
   ("readlink" "\\readlink")
   ("stat" "\\stat")
   ("id" "/usr/bin/id")
-  ("gid-integer" 0)))
+  ("gid-integer" 0)
+  ("uid-integer" 0)
+  ("trash" nil)))

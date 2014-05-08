@@ -1,0 +1,18 @@
+;; Object TestSICP/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "TestSICP/"
+  :tables (list 
+   (semanticdb-table "loop.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "loop.scm"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21029 60487 987219 354000)
+    :unmatched-syntax '((semantic-list 40 . 98))
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!TestSICP!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

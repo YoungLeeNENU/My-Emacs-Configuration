@@ -1,0 +1,142 @@
+;; Object 2008/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2008/"
+  :tables (list 
+   (semanticdb-table "4-1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [17 36])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [37 57])
+            ("Elementtype" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [59 83])
+            ("node" type
+               (:members 
+                  ( ("lchild" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [103 116])
+                    ("data" variable (:type ("Elementtype" type (:type "class") nil nil)) (reparse-symbol classsubparts) [121 138])
+                    ("rchild" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [143 156]))                  
+                :type "struct")
+                nil [85 159])
+            ("BTREE" type
+               (:typedef ("node" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "node"
+                :type "typedef")
+                nil [161 181])
+            ("CreateBT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable (:type ("Elementtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [198 212])
+                    ("ltree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [213 225])
+                    ("rtree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226 238]))                  
+                :type ("BTREE" type (:type "class") nil nil))
+                nil [183 239])
+            ("Init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [251 256]))                  
+                :type ("BTREE" type (:type "class") nil nil))
+                nil [240 257])
+            ("MaxBrench" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [272 283]))                  
+                :type "int")
+                nil [258 284])
+            ("MinBrench" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [299 310]))                  
+                :type "int")
+                nil [285 311])
+            ("N10" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N9" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N8" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N7" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N6" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N5" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N4" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N3" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N2" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("N1" variable (:type ("BTREE" type (:type "class") nil nil)) nil [313 359])
+            ("counter" variable (:type "int") nil [360 376])
+            ("maxium" variable (:type "int") nil [377 405])
+            ("minium" variable (:type "int") nil [377 405])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [416 425])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [426 439]))                  
+                :type "int")
+                nil [407 641])
+            ("CreateBT" function
+               (:arguments 
+                  ( ("v" variable (:type ("Elementtype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [658 672])
+                    ("ltree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [673 685])
+                    ("rtree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [686 698]))                  
+                :type ("BTREE" type (:type "class") nil nil))
+                nil [643 834])
+            ("Init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [847 852]))                  
+                :type ("BTREE" type (:type "class") nil nil))
+                nil [836 1205])
+            ("MaxBrench" function
+               (:arguments 
+                  ( ("tree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1230 1241]))                  
+                :type "int")
+                nil [1216 1472])
+            ("MinBrench" function
+               (:arguments 
+                  ( ("tree" variable (:type ("BTREE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1497 1508]))                  
+                :type "int")
+                nil [1483 1805]))          
+    :file "4-1.cpp"
+    :pointmax 1806
+    :fsize 1849
+    :lastmodtime '(21158 51641 57998 471000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "4-2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [52 61])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [62 75]))                  
+                :type "int")
+                nil [43 98]))          
+    :file "4-2.cpp"
+    :pointmax 99
+    :fsize 98
+    :lastmodtime '(21158 51651 281998 213000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!hit!2008!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

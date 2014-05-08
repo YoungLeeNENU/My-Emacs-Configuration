@@ -1,0 +1,214 @@
+;; Object eleven/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eleven/"
+  :tables (list 
+   (semanticdb-table "funpt.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [133 139])
+            ("assert.h" include (:system-flag t) nil [140 159])
+            ("addone" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [172 178]))                  
+                :type "int")
+                nil [161 179])
+            ("apply" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [191 204])
+                    ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [213 224]))                  
+                :type "void")
+                nil [180 225])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [236 245])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [246 259]))                  
+                :type "int")
+                nil [227 563])
+            ("addone" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [576 582]))                  
+                :type "int")
+                nil [565 604])
+            ("apply" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [617 630])
+                    ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [639 650]))                  
+                :type "void")
+                nil [606 735]))          
+    :file "funpt.c"
+    :pointmax 689
+    :fsize 735
+    :lastmodtime '(21333 4116 251919 819000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   (semanticdb-table "oplist.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("string.h" include (:system-flag t) nil [84 103])
+            ("stdlib.h" include (:system-flag t) nil [104 123])
+            ("assert.h" include (:system-flag t) nil [145 164])
+            ("SIZE" variable (:constant-flag t) nil [173 177])
+            ("ADD" variable (:constant-flag t) nil [190 193])
+            ("SUB" variable (:constant-flag t) nil [204 207])
+            ("MUL" variable (:constant-flag t) nil [218 221])
+            ("DIV" variable (:constant-flag t) nil [232 235])
+            ("statement" type
+               (:members 
+                  ( ("num1" variable (:type "double") (reparse-symbol classsubparts) [262 274])
+                    ("num2" variable (:type "double") (reparse-symbol classsubparts) [279 291]))                  
+                :type "struct")
+                nil [239 317])
+            ("SetValue" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [346 356]))                  
+                :type ("statement" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [319 357])
+            ("Add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [369 378])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [379 388]))                  
+                :type "double")
+                nil [358 389])
+            ("Sub" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [401 410])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [411 420]))                  
+                :type "double")
+                nil [390 421])
+            ("Mul" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [433 442])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [443 452]))                  
+                :type "double")
+                nil [422 453])
+            ("Div" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [465 474])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [475 484]))                  
+                :type "double")
+                nil [454 485])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [562 571])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [572 585]))                  
+                :type "int")
+                nil [553 1322])
+            ("SetValue" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1351 1361]))                  
+                :type ("statement" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1324 1759])
+            ("Add" function
+               (:arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [1772 1781])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [1782 1791]))                  
+                :type "double")
+                nil [1761 1813])
+            ("Sub" function
+               (:arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [1826 1835])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [1836 1845]))                  
+                :type "double")
+                nil [1815 1867])
+            ("Mul" function
+               (:arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [1880 1889])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [1890 1899]))                  
+                :type "double")
+                nil [1869 1921])
+            ("Div" function
+               (:arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [1934 1943])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [1944 1953]))                  
+                :type "double")
+                nil [1923 1975]))          
+    :file "oplist.c"
+    :pointmax 1976
+    :fsize 1975
+    :lastmodtime '(21334 389 119835 703000)
+    :unmatched-syntax '((punctuation 550 . 551) (semantic-list 528 . 550) (punctuation 526 . 527) (semantic-list 509 . 525) (semantic-list 494 . 508) (DOUBLE 487 . 493) (punctuation 309 . 310) (OPERATOR 301 . 309) (CHAR 296 . 300))
+    :lexical-table 
+        '(("SIZE" . ((number "100" 178 . 181)))
+          ("SUB" . ((number "1" 208 . 209)))
+          ("DIV" . ((number "3" 236 . 237)))
+          ("MUL" . ((number "2" 222 . 223)))
+          ("ADD" . ((number "0" 194 . 195)))
+          )
+
+    )
+    (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("stdlib.h" include (:system-flag t) nil [84 103])
+            ("string.h" include (:system-flag t) nil [104 123])
+            ("NDEBUG" variable (:constant-flag t) nil [132 138])
+            ("assert.h" include (:system-flag t) nil [139 158])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [169 178])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [179 192]))                  
+                :type "int")
+                nil [160 335]))          
+    :file "test.c"
+    :pointmax 333
+    :fsize 335
+    :lastmodtime '(21334 750 571826 462000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpt!eleven!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

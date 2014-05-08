@@ -1,0 +1,20 @@
+;; Object 2002/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2002/"
+  :tables (list 
+   (semanticdb-table "10.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("filter" function (:arguments ("operation" "data")) nil [101 287])
+            ("even-before-odd" function (:arguments ("list")) nil [299 384]))          
+    :file "10.scm"
+    :pointmax 498
+    :fsize 564
+    :lastmodtime '(21166 36492 143908 273000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!hit!2002!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,104 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "stdlib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 376]))          
+    :file "stdlib.c"
+    :pointmax 377
+    :fsize 376
+    :lastmodtime '(21329 16622 97916 331000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctype.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("ctype.h" include (:system-flag t) nil [20 38])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [49 58])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59 72]))                  
+                :type "int")
+                nil [40 782]))          
+    :file "ctype.c"
+    :pointmax 783
+    :fsize 812
+    :lastmodtime '(21329 17489 549894 154000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "string.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("strings.h" include (:system-flag t) nil [40 60])
+            ("stdlib.h" include (:system-flag t) nil [61 80])
+            ("STRSIZE" variable (:constant-flag t) nil [89 96])
+            ("s" variable
+               (:pointer 1
+                :type "char")
+                nil [102 110])
+            ("c" variable (:type "char") nil [111 124])
+            ("v" variable
+               (:pointer 1
+                :type "char")
+                nil [125 139])
+            ("cc" variable
+               (:pointer 1
+                :type "char")
+                nil [140 156])
+            ("dest" variable
+               (:dereference 1
+                :type "char")
+                nil [157 186])
+            ("_dest" variable
+               (:pointer 1
+                :type "char")
+                nil [187 210])
+            ("ct" variable
+               (:dereference 1
+                :type "char")
+                nil [211 240])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [251 260])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [261 274]))                  
+                :type "int")
+                nil [242 2370]))          
+    :file "string.c"
+    :pointmax 2371
+    :fsize 2398
+    :lastmodtime '(21330 35132 793078 403000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STRSIZE" . ((number "100" 97 . 100)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpro!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

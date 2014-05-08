@@ -1,0 +1,9 @@
+;; Object esay/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "esay/"
+  :tables (list 
+    )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!esay!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

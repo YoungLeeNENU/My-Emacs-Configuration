@@ -1,0 +1,74 @@
+;; Object vinylcontrol/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vinylcontrol/"
+  :tables (list 
+   (semanticdb-table "steadypitch.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [998 1016])
+            ("limits.h" include (:system-flag t) nil [1017 1036])
+            ("vinylcontrolxwax.h" include nil nil [1037 1066])
+            ("steadypitch.h" include nil nil [1067 1091])
+            ("math.h" include (:system-flag t) nil [1092 1109])
+            ("SteadyPitch" function
+               (:constructor-flag t
+                :parent "SteadyPitch"
+                :arguments 
+                  ( ("threshold" variable (:type "double") (reparse-symbol arg-sub-list) [1136 1153]))                  
+                :type ("SteadyPitch" type (:type "class") nil nil))
+                nil [1111 1566])
+            ("reset" function
+               (:parent "SteadyPitch"
+                :arguments 
+                  ( ("pitch" variable (:type "double") (reparse-symbol arg-sub-list) [1593 1606])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [1607 1619]))                  
+                :type "void")
+                nil [1569 1845])
+            ("directionChanged" function
+               (:parent "SteadyPitch"
+                :arguments 
+                  ( ("pitch" variable (:type "double") (reparse-symbol arg-sub-list) [1882 1895]))                  
+                :type "bool")
+                nil [1847 2017])
+            ("resyncDetected" function
+               (:parent "SteadyPitch"
+                :arguments 
+                  ( ("new_time" variable (:type "double") (reparse-symbol arg-sub-list) [2052 2068]))                  
+                :type "bool")
+                nil [2019 2276])
+            ("check" function
+               (:parent "SteadyPitch"
+                :arguments 
+                  ( ("pitch" variable (:type "double") (reparse-symbol arg-sub-list) [2304 2317])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [2318 2330])
+                    ("looping" variable (:type "bool") (reparse-symbol arg-sub-list) [2331 2344])
+                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2344 2350]))                  
+                :type "double")
+                nil [2278 3792])
+            ("steadyValue" function
+               (:parent "SteadyPitch"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3826 3831]))                  
+                :type "double")
+                nil [3794 3865]))          
+    :file "steadypitch.cpp"
+    :pointmax 3866
+    :fsize 3865
+    :lastmodtime '(21194 420 343970 610000)
+    :unmatched-syntax '((punctuation 2343 . 2344))
+    )
+   (semanticdb-table "vinylcontrolxwax.h"
+    :file "vinylcontrolxwax.h"
+    :fsize 4216
+    :lastmodtime '(21194 420 347970 610000)
+    )
+   (semanticdb-table "steadypitch.h"
+    :file "steadypitch.h"
+    :fsize 671
+    :lastmodtime '(21194 420 343970 610000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!src!vinylcontrol!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

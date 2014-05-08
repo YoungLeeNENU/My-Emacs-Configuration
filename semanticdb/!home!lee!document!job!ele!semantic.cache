@@ -1,0 +1,54 @@
+;; Object ele/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ele/"
+  :tables (list 
+    (semanticdb-table "one.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("if" code nil nil [69 105]))          
+    :file "one.py"
+    :pointmax 105
+    :fsize 104
+    :lastmodtime '(21305 23198 679959 129000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "two.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("if" code nil nil [53 89]))          
+    :file "two.py"
+    :pointmax 89
+    :fsize 88
+    :lastmodtime '(21305 21997 131989 851000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "three.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("if" code nil nil [53 89]))          
+    :file "three.py"
+    :pointmax 89
+    :fsize 88
+    :lastmodtime '(21305 21995 59989 905000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "four.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("if" code nil nil [53 89]))          
+    :file "four.py"
+    :pointmax 89
+    :fsize 88
+    :lastmodtime '(21305 22000 351989 768000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!ele!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

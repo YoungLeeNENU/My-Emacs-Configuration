@@ -1,0 +1,26 @@
+;; Object nox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nox/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign" "1.10")) nil [1 33])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [33 57])
+            ("SUBDIRS" variable (:default-value ("src" "$(subdirs)")) nil [58 89])
+            ("doc/doxygen.am" include nil nil [90 113])
+            ("dist-local" function nil nil [114 126])
+            ("nox_installsubdir" variable (:default-value ("$(DESTDIR)$(subst src,$(bindir),$(subdir))")) nil [127 190])
+            ("install-exec-hook" function nil nil [191 210])
+            ("clean-local" function nil nil [211 244]))          
+    :file "Makefile.am"
+    :pointmax 244
+    :fsize 243
+    :lastmodtime '(21209 59903 984730 704000)
+    :unmatched-syntax '((shell-command 225 . 243) (bol 224 . 224))
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!nox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

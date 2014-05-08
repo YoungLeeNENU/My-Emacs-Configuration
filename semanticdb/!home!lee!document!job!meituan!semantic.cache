@@ -1,0 +1,93 @@
+;; Object meituan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "meituan/"
+  :tables (list 
+   (semanticdb-table "three.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("intersection-set" function (:arguments ("set1" "set2")) nil [316 570])
+            ("union-set" function (:arguments ("set1" "set2")) nil [591 840]))          
+    :file "three.scm"
+    :pointmax 1001
+    :fsize 1076
+    :lastmodtime '(21305 15955 367494 830000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "three.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("testcase1" variable nil nil [182 286])
+            ("testcase2" variable nil nil [287 377])
+            ("result" variable nil nil [379 390])
+            ("IntersectionSet" function (:arguments 
+              ( ("set1" variable nil (reparse-symbol function_parameters) [412 416])
+                ("set2" variable nil (reparse-symbol function_parameters) [418 422]))              ) nil [392 612])
+            ("if" code nil nil [613 688]))          
+    :file "three.py"
+    :pointmax 688
+    :fsize 913
+    :lastmodtime '(21306 32931 611671 712000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "two.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("array1" variable nil nil [248 284])
+            ("array2" variable nil nil [285 321])
+            ("result" variable nil nil [322 333])
+            ("MinStep" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [347 350]))              ) nil [335 915])
+            ("if" code nil nil [925 1029]))          
+    :file "two.py"
+    :pointmax 1029
+    :fsize 1432
+    :lastmodtime '(21305 13191 951565 486000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "one.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("solutions" variable nil nil [122 136])
+            ("Guess" function (:arguments 
+              ( ("psum" variable nil (reparse-symbol function_parameters) [148 152])
+                ("pxor" variable nil (reparse-symbol function_parameters) [154 158]))              ) nil [138 1055])
+            ("if" code nil nil [1057 1356]))          
+    :file "one.py"
+    :pointmax 1356
+    :fsize 1613
+    :lastmodtime '(21305 16220 475488 51000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "light.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("light" variable nil nil [41 51])
+            ("for" code nil nil [52 95])
+            ("switch" function nil nil [96 322])
+            ("switch" code nil nil [323 331]))          
+    :file "light.py"
+    :pointmax 323
+    :fsize 339
+    :lastmodtime '(21315 40468 595991 916000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "maxtotal.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("seq" variable nil nil [41 62])
+            ("part" variable nil nil [63 72])
+            ("sums" variable nil nil [73 82])
+            ("GiveMax" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [96 99]))              ) nil [84 1388])
+            ("if" code nil nil [1414 1458]))          
+    :file "maxtotal.py"
+    :pointmax 907
+    :fsize 1465
+    :lastmodtime '(21315 48951 755949 50000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!meituan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

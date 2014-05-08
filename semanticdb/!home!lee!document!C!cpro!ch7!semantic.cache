@@ -1,0 +1,134 @@
+;; Object ch7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch7/"
+  :tables (list 
+   (semanticdb-table "in.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [16 34])
+            ("stdlib.h" include (:system-flag t) nil [35 54])
+            ("SIZE" variable (:constant-flag t) nil [64 68])
+            ("getline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88 99])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [100 108]))                  
+                :type "int")
+                nil [76 109])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [120 129])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130 143]))                  
+                :type "int")
+                nil [111 334])
+            ("getline" function
+               (:arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [348 359])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [360 368]))                  
+                :type "int")
+                nil [336 548]))          
+    :file "in.c"
+    :pointmax 550
+    :fsize 555
+    :lastmodtime '(21329 15555 925943 589000)
+    :unmatched-syntax '((symbol 549 . 554))
+    :lexical-table 
+        '(("SIZE" . ((number "10000" 69 . 74)))
+          )
+
+    )
+   (semanticdb-table "varg.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [133 139])
+            ("assert.h" include (:system-flag t) nil [140 159])
+            ("stdarg.h" include (:system-flag t) nil [160 179])
+            ("Printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nvalues" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [193 207])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [208 213]))                  
+                :type "void")
+                nil [181 214])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [225 234])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [235 248]))                  
+                :type "int")
+                nil [216 304])
+            ("Printf" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [318 328])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [329 334]))                  
+                :type "void")
+                nil [306 1119]))          
+    :file "varg.c"
+    :pointmax 1120
+    :fsize 1119
+    :lastmodtime '(21332 34014 867972 851000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   (semanticdb-table "out.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [133 139])
+            ("assert.h" include (:system-flag t) nil [140 159])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [161 195])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [206 215])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [216 229]))                  
+                :type "int")
+                nil [197 280]))          
+    :file "out.c"
+    :pointmax 281
+    :fsize 280
+    :lastmodtime '(21332 34588 207997 680000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpro!ch7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

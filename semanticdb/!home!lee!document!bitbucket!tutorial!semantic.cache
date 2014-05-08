@@ -1,0 +1,21 @@
+;; Object tutorial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial/"
+  :tables (list 
+   (semanticdb-table "sample.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Not My First File!" section (:members 
+              ( ("Not My First File!" section (:members 
+                  ( ("link" anchor nil nil [93 96]))                  ) nil [32 218]))              ) nil [24 218]))          
+    :file "sample.html"
+    :pointmax 218
+    :fsize 217
+    :lastmodtime '(21311 29859 982258 468000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!tutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

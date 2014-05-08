@@ -1,0 +1,147 @@
+;; Object download/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "download/"
+  :tables (list 
+   (semanticdb-table "参考书目.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("参考书目" section nil nil [240 2246])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2246 3866])
+            ("参考书目" section (:members 
+              ( ("参考书目" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 计算机科学与技术学院" anchor nil nil [4051 4054])
+                        ("1.1 854 计算机基础" anchor nil nil [4094 4097])
+                        ("1.2 834 软件工程基础" anchor nil nil [4140 4143]))                      ) nil [3981 4265])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4438 4775])
+                        ("1.2" section (:members 
+                          ( ("Org" anchor nil nil [5477 5480])
+                            ("Emacs" anchor nil nil [5534 5537])
+                            ("Validate XHTML 1.0" anchor nil nil [5604 5607]))                          ) nil [4775 5703]))                      ) nil [4265 5703]))                  ) nil [3922 5703]))              ) nil [3866 5703]))          
+    :file "参考书目.html"
+    :pointmax 5703
+    :fsize 6388
+    :lastmodtime '(20998 58379 882038 203000)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "院系联系方式.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("院系联系方式" section nil nil [240 2250])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2250 3870])
+            ("院系联系方式" section (:members 
+              ( ("院系联系方式" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 计算机科学与技术学院" anchor nil nil [4057 4060])
+                        ("2 深圳研究生院" anchor nil nil [4100 4103])
+                        ("3 威海校区" anchor nil nil [4139 4142])
+                        ("4 软件学院" anchor nil nil [4176 4179]))                      ) nil [3987 4279])
+                    ("1" section (:members 
+                      ( ("http://new.cs.hit.edu.cn" anchor nil nil [4433 4436]))                      ) nil [4279 4575])
+                    ("2" section (:members 
+                      ( ("http://www.hitsz.edu.cn" anchor nil nil [4730 4733]))                      ) nil [4575 4870])
+                    ("3" section (:members 
+                      ( ("http://www.hitwh.edu.cn" anchor nil nil [5023 5026]))                      ) nil [4870 5163])
+                    ("4" section (:members 
+                      ( ("http://software.hit.edu.cn" anchor nil nil [5314 5317])
+                        ("Org" anchor nil nil [5545 5548])
+                        ("Emacs" anchor nil nil [5602 5605])
+                        ("Validate XHTML 1.0" anchor nil nil [5672 5675]))                      ) nil [5163 5771]))                  ) nil [3926 5771]))              ) nil [3870 5771]))          
+    :file "院系联系方式.html"
+    :pointmax 5771
+    :fsize 5922
+    :lastmodtime '(20998 58767 886028 283000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!yzb_hit!download!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

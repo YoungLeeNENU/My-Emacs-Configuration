@@ -1,0 +1,25 @@
+;; Object Shingeki_no_Kyojin_50/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Shingeki_no_Kyojin_50/"
+  :tables (list 
+   (semanticdb-table "downlaod_50.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 55])
+            ("sys" include nil nil [41 55])
+            ("urllib" include nil nil [56 86])
+            ("token" variable nil nil [88 153])
+            ("page" variable nil nil [155 174])
+            ("Get" function nil nil [190 490])
+            ("if" code nil nil [491 525]))          
+    :file "downlaod_50.py"
+    :pointmax 554
+    :fsize 524
+    :lastmodtime '(21143 20809 349332 898000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!commic!images!Shingeki_no_Kyojin_50!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

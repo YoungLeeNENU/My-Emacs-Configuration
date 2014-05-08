@@ -1,0 +1,75 @@
+;; Object update/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "update/"
+  :tables (list 
+   (semanticdb-table "one_update.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [283 294])
+            ("pickle" include nil nil [295 308])
+            ("hashlib" include nil nil [309 323])
+            ("itertools" include nil nil [324 351])
+            ("cache" variable nil nil [353 363])
+            ("is_obsolete" function (:arguments 
+              ( ("entry" variable nil (reparse-symbol function_parameters) [391 396])
+                ("duration" variable nil (reparse-symbol function_parameters) [398 406]))              ) nil [375 459])
+            ("compute_key" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [477 485])
+                ("args" variable nil (reparse-symbol function_parameters) [487 491])
+                ("kw" variable nil (reparse-symbol function_parameters) [493 495]))              ) nil [461 594])
+            ("memoize" function (:arguments 
+              ( ("duration" variable nil (reparse-symbol function_parameters) [608 616]))              ) nil [596 1114])
+            ("" code nil nil [1160 1162])
+            ("GetRange" function (:arguments 
+              ( ("pxor" variable nil (reparse-symbol function_parameters) [1176 1180]))              ) nil [1163 1288])
+            ("" code nil nil [1297 1299])
+            ("Guess" function (:arguments 
+              ( ("psum" variable nil (reparse-symbol function_parameters) [1310 1314])
+                ("pxor" variable nil (reparse-symbol function_parameters) [1316 1320]))              ) nil [1300 1665])
+            ("if" code nil nil [1666 2018]))          
+    :file "one_update.py"
+    :pointmax 2018
+    :fsize 2533
+    :lastmodtime '(21308 5989 560079 337000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "two_update.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [326 336])
+            ("sys" code nil nil [337 368])
+            ("array1" variable nil nil [382 418])
+            ("array2" variable nil nil [419 455])
+            ("array3" variable nil nil [456 468])
+            ("result" variable nil nil [469 480])
+            ("ahead" variable nil nil [481 490])
+            ("MinStep" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [527 530]))              ) nil [515 1571])
+            ("if" code nil nil [1573 1756]))          
+    :file "two_update.py"
+    :pointmax 1755
+    :fsize 2427
+    :lastmodtime '(21306 31481 359708 793000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "three_update.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("collections" include nil nil [357 386])
+            ("test1" variable nil nil [388 488])
+            ("test2" variable nil nil [489 575])
+            ("IntersectionSet" function (:arguments 
+              ( ("set1" variable nil (reparse-symbol function_parameters) [653 657])
+                ("set2" variable nil (reparse-symbol function_parameters) [659 663]))              ) nil [633 1296])
+            ("if" code nil nil [1568 1635]))          
+    :file "three_update.py"
+    :pointmax 1635
+    :fsize 2314
+    :lastmodtime '(21306 32704 451677 519000)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!home!lee!document!job!meituan!update!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

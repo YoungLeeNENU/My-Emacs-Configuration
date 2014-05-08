@@ -1,0 +1,63 @@
+;; Object rsense/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rsense/"
+  :tables (list 
+   (semanticdb-table "CodeAssistResult.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("org.cx4a.rsense" package nil nil [1 25])
+            ("java.util.List" include nil nil [27 49])
+            ("java.util.ArrayList" include nil nil [50 77])
+            ("java.util.Collections" include nil nil [78 107])
+            ("org.jruby.ast.Node" include nil nil [109 135])
+            ("CodeAssistResult" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("ast" variable
+                       (:typemodifiers ("private")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [173 190])
+                    ("CodeAssistResult" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [238 271])
+                    ("setAST" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ast" variable (:type "Node") (reparse-symbol formal_parameters) [296 304]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [277 337])
+                    ("getAST" function
+                       (:typemodifiers ("public")
+                        :type "Node")
+                        (reparse-symbol class_member_declaration) [343 391])
+                    ("addError" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("error" variable (:type "CodeAssistError") (reparse-symbol formal_parameters) [418 439]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [397 570])
+                    ("getErrors" function (:constructor-flag t) (reparse-symbol class_member_declaration) [605 707])
+                    ("setErrors" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "errors") (reparse-symbol formal_parameters) [757 763]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [713 802])
+                    ("hasError" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [808 872]))                  
+                :type "class")
+                nil [137 874]))          
+    :file "CodeAssistResult.java"
+    :pointmax 875
+    :fsize 874
+    :lastmodtime '(19303 15739 0 0)
+    :unmatched-syntax '((GT 755 . 756) (IDENTIFIER 735 . 739) (LT 739 . 740) (GT 603 . 604) (PUBLIC 576 . 582) (LT 587 . 588) (SEMICOLON 231 . 232) (GT 223 . 224) (PRIVATE 195 . 202) (LT 207 . 208))
+    )
+   )
+  :file "!home!lee!.emacs.d!rsense-0.3!src!org!cx4a!rsense!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

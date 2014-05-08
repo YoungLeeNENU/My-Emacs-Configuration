@@ -25,7 +25,7 @@ END-INFO-DIR-ENTRY
 
 Indirect:
 auctex.info-1: 961
-auctex.info-2: 291546
+auctex.info-2: 291542
 
 Tag Table:
 (Indirect)
@@ -102,18 +102,18 @@ Node: Adding Environments187859
 Node: Adding Other192128
 Node: Hacking the Parser192715
 Node: Appendices196588
-Node: Copying this Manual196839
-Node: GNU Free Documentation License197762
-Node: Changes222900
-Node: Development246154
-Node: Mid-term Goals246800
-Node: Wishlist248362
-Node: Bugs255300
-Node: FAQ256695
-Node: Indices262843
-Node: Key Index263006
-Node: Function Index268016
-Node: Variable Index275687
-Node: Concept Index291546
+Node: Copying this Manual196835
+Node: GNU Free Documentation License197758
+Node: Changes222896
+Node: Development246150
+Node: Mid-term Goals246796
+Node: Wishlist248358
+Node: Bugs255296
+Node: FAQ256691
+Node: Indices262839
+Node: Key Index263002
+Node: Function Index268012
+Node: Variable Index275683
+Node: Concept Index291542
 
 End Tag Table

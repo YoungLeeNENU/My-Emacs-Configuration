@@ -1,4 +1,3 @@
-
 (require 'url)
 (require 'emms)
 (require 'emms-url)
@@ -44,20 +43,20 @@
 
 (defvar emms-cover-download-queue '() "Download queue")
 
-  ;; Looks for the path to a cover, or downloads the cover.
-  ;; For some reason the track object isn't passed as a parameter so
-  ;; the artist and album name have to be pulled from the directory
-  ;; name with a regexp.
-  ;; Then file-name-completion is used to locate the extension.
-  ;; For some reason file-name-completion doesn't work with unicode
-  ;; characters so an attempt is made to find the file with a jpg
-  ;; extension if it returns nil.
-  ;; If that doesn't work either, a command line tool is run that
-  ;; will download the cover. 
+;; Looks for the path to a cover, or downloads the cover.
+;; For some reason the track object isn't passed as a parameter so
+;; the artist and album name have to be pulled from the directory
+;; name with a regexp.
+;; Then file-name-completion is used to locate the extension.
+;; For some reason file-name-completion doesn't work with unicode
+;; characters so an attempt is made to find the file with a jpg
+;; extension if it returns nil.
+;; If that doesn't work either, a command line tool is run that
+;; will download the cover. 
 (defun emms-cover-find (path size)
-    "Extract artist and album from path and search for cover"
-    (let ((clean-path (emms-cover-clean-path path)))
-      (if (string-match (car emms-cover-pathregexp) clean-path)
+  "Extract artist and album from path and search for cover"
+  (let ((clean-path (emms-cover-clean-path path)))
+    (if (string-match (car emms-cover-pathregexp) clean-path)
 	(let
 	    ((artist (match-string (nth 1 emms-cover-pathregexp) clean-path))
 	     (album (match-string (nth 2 emms-cover-pathregexp) clean-path)))
@@ -68,7 +67,7 @@
                 (emms-cover-download artist album size)              
                 )
               ))
-        )))
+      )))
 
 (defun emms-cover-find-existing (artist album size)
   "Try each extention and test for file existance.  emms-cover-savepath should
@@ -96,7 +95,7 @@
                (string= (cdr item) album))
           (throw 'emms-cover-in-queue t)
         ))
-  ))
+    ))
 
 (defun emms-cover-remove-from-queue (artist album)
   (catch 'emms-cover-removed
@@ -114,8 +113,8 @@
           (progn
             (setq previous item)
             (setq item (cdr item)))
-        ))
-    )))
+	  ))
+      )))
 
 (defun emms-cover-clean-path (path)
   "Replace characters that may not occur in a file name such as ':'"
@@ -128,46 +127,46 @@
     (dolist (func emms-cover-download-functions)
       (let ((url (funcall func artist album))
             (coverpath))
-	  (when url
-              (setq coverpath (emms-cover-download-image url artist album))
-              (emms-cover-remove-from-queue artist album)
-	      (throw 'emms-cover-download
-		     (replace-regexp-in-string "%size" (symbol-name size) coverpath))
-	    )
-	  ))
-      nil
-      )
+	(when url
+	  (setq coverpath (emms-cover-download-image url artist album))
+	  (emms-cover-remove-from-queue artist album)
+	  (throw 'emms-cover-download
+		 (replace-regexp-in-string "%size" (symbol-name size) coverpath))
+	  )
+	))
+    nil
     )
+  )
 
 (defun emms-cover-download-rhapsody (artist album)
   (let ((url "http://www.rhapsody.com/%artist/%album/data.xml"))
     (setq url (replace-regexp-in-string "%artist" (emms-url-quote artist) url))
     (setq url (replace-regexp-in-string "%album" (emms-url-quote album) url))
-   (let ((url-show-status nil)
+    (let ((url-show-status nil)
 	  (url-request-method "GET"))
-     (emms-cover-download-rhapsody-parse (url-retrieve-synchronously url))
-    )
-  ))
+      (emms-cover-download-rhapsody-parse (url-retrieve-synchronously url))
+      )
+    ))
 
 (defun emms-cover-download-rhapsody-parse (buffer)
-    "Parses the server reponse and calls callback with the url of the cover image."
-    (let ((cover nil))
-      (with-current-buffer buffer
-	(emms-http-decode-buffer buffer)
-	(goto-char (point-min))
-	;; skip to the first empty line and go one line further.  There the 
-	;; response starts.
-	(re-search-forward "^$" nil t)
-	(forward-line)
-	;; an xml parser and xpath would be better but not as easily available in emacs
-	(if (re-search-forward
-	     "<album-art[^>]*size=\"large\"[^>]*>[[:space:]]*<img[^>]+src=\"\\([^\"]*\\)\"[^>]*>[[:space:]]*</album-art>" nil t)
-	    (setq cover (match-string 1))
-	  )
+  "Parses the server reponse and calls callback with the url of the cover image."
+  (let ((cover nil))
+    (with-current-buffer buffer
+      (emms-http-decode-buffer buffer)
+      (goto-char (point-min))
+      ;; skip to the first empty line and go one line further.  There the 
+      ;; response starts.
+      (re-search-forward "^$" nil t)
+      (forward-line)
+      ;; an xml parser and xpath would be better but not as easily available in emacs
+      (if (re-search-forward
+	   "<album-art[^>]*size=\"large\"[^>]*>[[:space:]]*<img[^>]+src=\"\\([^\"]*\\)\"[^>]*>[[:space:]]*</album-art>" nil t)
+	  (setq cover (match-string 1))
 	)
-      (kill-buffer buffer)
-      cover
       )
+    (kill-buffer buffer)
+    cover
+    )
   )
 
 (defun emms-cover-download-lastfm (artist album)
@@ -203,7 +202,7 @@ well or if an error occured."
 (defun emms-cover-download-dummy (artist album)
   "file:///Users/bram/.covers/No Image.large.gif"
   )
-  
+
 (defun emms-cover-download-image (url artist album)
   (let ((coverpath emms-cover-savepath)
         (largecover)
@@ -236,6 +235,6 @@ well or if an error occured."
     (setq command (replace-regexp-in-string "%width" (number-to-string width) command))
     (setq command (replace-regexp-in-string "%height" (number-to-string height) command))
     (call-process-shell-command command)
-  ))
+    ))
 
 (provide 'emms-cover)

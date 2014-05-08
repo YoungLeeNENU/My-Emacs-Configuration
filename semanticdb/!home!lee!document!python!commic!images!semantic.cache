@@ -1,0 +1,26 @@
+;; Object images/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "images/"
+  :tables (list 
+    (semanticdb-table "directory.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Commics from
+\"http://www.mangahere.com/manga/shingeki_no_kyojin/\"
+'''" code nil nil [41 114])
+            ("os" include nil nil [115 124])
+            ("sys" include nil nil [125 135])
+            ("Init" function nil nil [137 240])
+            ("if" code nil nil [243 281]))          
+    :file "directory.py"
+    :pointmax 236
+    :fsize 280
+    :lastmodtime '(21143 20271 961346 639000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!commic!images!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

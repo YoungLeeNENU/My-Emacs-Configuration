@@ -1,0 +1,130 @@
+;; Object polls/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "polls/"
+  :tables (list 
+   (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.db" include nil nil [24 52])
+            ("Poll" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("questions" variable nil (reparse-symbol indented_block_body) [132 178]))                  
+                :type "class")
+                nil [98 179])
+            ("Choice" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("poll" variable nil (reparse-symbol indented_block_body) [309 339])
+                    ("choice" variable nil (reparse-symbol indented_block_body) [341 384])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [386 415])
+                    ("__unicode__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [434 438]))                          )
+                        (reparse-symbol indented_block_body) [418 462]))                  
+                :type "class")
+                nil [280 462]))          
+    :file "models.py"
+    :pointmax 462
+    :fsize 485
+    :lastmodtime '(21315 21319 710182 543000)
+    :unmatched-syntax '((INDENT_BLOCK 179 . 279) (INDENT_BLOCK 124 . 179) (INDENT_BLOCK 124 . 275) (INDENT_BLOCK 179 . 279))
+    )
+   (semanticdb-table "tests.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+This file demonstrates writing tests using the unittest module. These will pass
+when you run \"manage.py test\".
+
+Replace this with more appropriate tests for your application.
+\"\"\"" code nil nil [1 183])
+            ("django.test" include nil nil [185 217])
+            ("SimpleTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("test_basic_addition" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [275 279]))                          
+                        :documentation "
+        Tests that 1 + 1 always equals 2.
+        ")
+                        (reparse-symbol indented_block_body) [251 383]))                  
+                :type "class")
+                nil [219 383]))          
+    :file "tests.py"
+    :pointmax 383
+    :fsize 382
+    :lastmodtime '(21314 1834 59586 372000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("polls.models" include nil nil [50 87])
+            ("django.http" include nil nil [88 155])
+            ("django.template" include nil nil [156 215])
+            ("django.shortcuts" include nil nil [216 282])
+            ("django.core.urlresolvers" include nil nil [283 327])
+            ("'''
+def index(request):
+    latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
+    return render_to_response('polls/index.html',
+                              {'latest_poll_list': latest_poll_list})
+
+def detail(request, poll_id):
+    p = get_object_or_404(Poll, pk = poll_id)
+    # try:
+    #     p = Poll.objects.get(pk = poll_id)
+    # except Poll.DoesNotExist:
+    #     raise Http404
+    return render_to_response('polls/detail.html',
+                              {'poll': p},
+                              context_instance = RequestContext(request))
+    
+def results(request, poll_id):
+    p = get_object_or_404(Poll, pk = poll_id)
+    return render_to_response('polls/results.html', {'poll': p})
+    # return HttpResponse(\"You are looking at the result of poll %s\" % poll_id)
+'''" code nil nil [329 1128])
+            ("vote" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1139 1146])
+                ("poll_id" variable nil (reparse-symbol function_parameters) [1148 1155]))              ) nil [1130 1749]))          
+    :file "views.py"
+    :pointmax 1814
+    :fsize 1813
+    :lastmodtime '(21314 1834 59586 372000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [59 110])
+            ("django.views.generic" include nil nil [111 164])
+            ("django.contrib" include nil nil [165 197])
+            ("polls.models" include nil nil [198 227])
+            ("admin" code nil nil [233 253])
+            ("urlpatterns" variable nil nil [596 1479])
+            ("urlpatterns" variable nil nil [1491 1587]))          
+    :file "urls.py"
+    :pointmax 1588
+    :fsize 1635
+    :lastmodtime '(21314 1834 59586 372000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21314 1834 55586 372000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!meituan!cvproj!a-vote-website!mysite!polls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,227 @@
+;; Object queue/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "queue/"
+  :tables (list 
+   (semanticdb-table "queue.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Queue" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [81 97]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72 76]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [59 98])
+                    ("queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [109 113]))                          )
+                        (reparse-symbol indented_block_body) [99 137])
+                    ("clear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [148 152]))                          )
+                        (reparse-symbol indented_block_body) [138 174])
+                    ("if_empty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [188 192]))                          )
+                        (reparse-symbol indented_block_body) [175 252])
+                    ("en_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [266 270])
+                            ("item" variable nil (reparse-symbol function_parameters) [272 276]))                          )
+                        (reparse-symbol indented_block_body) [253 327])
+                    ("de_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [341 345]))                          )
+                        (reparse-symbol indented_block_body) [328 418])
+                    ("front" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [429 433]))                          )
+                        (reparse-symbol indented_block_body) [419 476])
+                    ("rear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [486 490]))                          )
+                        (reparse-symbol indented_block_body) [477 536]))                  
+                :type "class")
+                nil [43 536]))          
+    :file "queue.py"
+    :pointmax 536
+    :fsize 535
+    :lastmodtime '(21014 45077 963986 952000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "testcase.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("queue" include nil nil [43 66])
+            ("dequeue" include nil nil [67 94])
+            ("sample" variable nil nil [96 112])
+            ("sample" code nil nil [114 132])
+            ("sample" code nil nil [133 151])
+            ("sample" code nil nil [152 171])
+            ("sample" code nil nil [172 190])
+            ("print" code nil nil [191 229])
+            ("print" code nil nil [230 264])
+            ("print" code nil nil [265 295])
+            ("print" code nil nil [296 326])
+            ("print" code nil nil [327 355])
+            ("sample" variable nil nil [357 376])
+            ("sample" code nil nil [378 396])
+            ("sample" code nil nil [397 415])
+            ("sample" code nil nil [416 434])
+            ("sample" code nil nil [435 453])
+            ("sample" code nil nil [454 473]))          
+    :file "testcase.py"
+    :pointmax 474
+    :fsize 473
+    :lastmodtime '(21014 45233 135982 988000)
+    :unmatched-syntax '(($EOI 472 . 472))
+    )
+   (semanticdb-table "dequeue.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Dequeue" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [98 115])
+                            ("self" variable nil (reparse-symbol indented_block_body) [124 142])
+                            ("for" code nil (reparse-symbol indented_block_body) [151 218])
+                            ("self" variable nil (reparse-symbol indented_block_body) [226 288])
+                            ("self" variable nil (reparse-symbol indented_block_body) [297 327])
+                            ("self" variable nil (reparse-symbol indented_block_body) [336 365]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77 81])
+                            ("size" variable nil (reparse-symbol function_parameters) [83 87]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [64 366])
+                    ("queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [380 384]))                          )
+                        (reparse-symbol indented_block_body) [370 737])
+                    ("clear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [751 755]))                          )
+                        (reparse-symbol indented_block_body) [741 1037])
+                    ("if_empty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1054 1058]))                          )
+                        (reparse-symbol indented_block_body) [1041 1185])
+                    ("front" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1199 1203]))                          )
+                        (reparse-symbol indented_block_body) [1189 1248])
+                    ("rear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1261 1265]))                          )
+                        (reparse-symbol indented_block_body) [1252 1309]))                  
+                :type "class")
+                nil [43 1309])
+            ("'''
+    def queue(self):
+        if self._front > self._rear:
+            result = a[front:] + a[:rear + 1]
+            return result
+        elif self._front == self._rear == None:
+            return []
+        else:
+            return self._dequeue[self.front:self._rear + 1]
+	def clear(self):
+		self._dequeue = []
+        self._front = None
+        self._rear = None
+	def if_empty(self):
+		if self._dequeue == []: return True
+		else: return False
+    def front(self):
+        ele_f = self._dequeue[self._front]
+        return ele_f
+    def rear(self):
+        ele_r = self._dequeue[self._rear]
+        return ele_r
+    def en_queue(self, item):
+        if self._front < self._rear and self._rear - self._front + 1 < self._size:
+            self._rear += 1
+        elif self._front < self._rear and self._rear - self._front + 1 == self._size:
+            print \"FULL\"
+        elif self._front < self._rear and self._rear - self._front + 1 > self._size:
+            print \"OVERFLOW\"
+    def de_queue(self):
+        pass
+'''" code nil nil [1331 2355])
+            ("sample" variable nil nil [2357 2376])
+            ("print" code nil nil [2378 2399])
+            ("print" code nil nil [2400 2418])
+            ("print" code nil nil [2419 2439])
+            ("print" code nil nil [2441 2461])
+            ("print" code nil nil [2462 2482])
+            ("print" code nil nil [2483 2506])
+            ("print" code nil nil [2507 2527])
+            ("print" code nil nil [2528 2547]))          
+    :file "dequeue.py"
+    :pointmax 2548
+    :fsize 2547
+    :lastmodtime '(21014 54914 547894 263000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dequeue.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("SIZE" variable (:constant-flag t) nil [49 53])
+            ("queue" variable
+               (:dereference 1
+                :type "int")
+                nil [58 74])
+            ("clear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [87 92]))                  
+                :type "void")
+                nil [76 93])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [104 113])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [114 127]))                  
+                :type "int")
+                nil [95 240])
+            ("clear" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [253 258]))                  
+                :type "void")
+                nil [242 331]))          
+    :file "dequeue.c"
+    :pointmax 344
+    :fsize 331
+    :lastmodtime '(21015 17656 979188 253000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SIZE" . ((number "10" 54 . 56)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!queue!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

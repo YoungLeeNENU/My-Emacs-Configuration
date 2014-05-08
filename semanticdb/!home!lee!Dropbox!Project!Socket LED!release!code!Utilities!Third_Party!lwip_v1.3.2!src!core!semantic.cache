@@ -1,0 +1,19 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables (list 
+   (semanticdb-table "tcp_out.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lwip/opt.h" include nil nil [1704 1725]))          
+    :file "tcp_out.c"
+    :pointmax 35247
+    :fsize 36300
+    :lastmodtime '(20888 50123 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!Dropbox!Project!Socket LED!release!code!Utilities!Third_Party!lwip_v1.3.2!src!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

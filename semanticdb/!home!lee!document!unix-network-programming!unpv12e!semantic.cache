@@ -1,0 +1,122 @@
+;; Object unpv12e/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unpv12e/"
+  :tables (list 
+   (semanticdb-table "config.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CPU_VENDOR_OS" variable (:constant-flag t) nil [132 145])
+            ("HAVE_POLL_H" variable (:constant-flag t) nil [231 242])
+            ("HAVE_PTHREAD_H" variable (:constant-flag t) nil [253 267])
+            ("HAVE_STRINGS_H" variable (:constant-flag t) nil [278 292])
+            ("HAVE_SYS_IOCTL_H" variable (:constant-flag t) nil [362 378])
+            ("HAVE_SYS_SELECT_H" variable (:constant-flag t) nil [389 406])
+            ("HAVE_SYS_SYSCTL_H" variable (:constant-flag t) nil [448 465])
+            ("HAVE_SYS_TIME_H" variable (:constant-flag t) nil [476 491])
+            ("TIME_WITH_SYS_TIME" variable (:constant-flag t) nil [561 579])
+            ("HAVE_BZERO" variable (:constant-flag t) nil [646 656])
+            ("HAVE_GETHOSTBYNAME2" variable (:constant-flag t) nil [667 686])
+            ("HAVE_POLL" variable (:constant-flag t) nil [697 706])
+            ("HAVE_PSELECT" variable (:constant-flag t) nil [717 729])
+            ("HAVE_VSNPRINTF" variable (:constant-flag t) nil [740 754])
+            ("HAVE_GETADDRINFO_PROTO" variable (:constant-flag t) nil [834 856])
+            ("HAVE_GETNAMEINFO_PROTO" variable (:constant-flag t) nil [867 889])
+            ("HAVE_GETHOSTNAME_PROTO" variable (:constant-flag t) nil [900 922])
+            ("HAVE_GETRUSAGE_PROTO" variable (:constant-flag t) nil [933 953])
+            ("HAVE_HSTRERROR_PROTO" variable (:constant-flag t) nil [964 984])
+            ("HAVE_IF_NAMETOINDEX_PROTO" variable (:constant-flag t) nil [995 1020])
+            ("HAVE_INET_ATON_PROTO" variable (:constant-flag t) nil [1031 1051])
+            ("HAVE_INET_PTON_PROTO" variable (:constant-flag t) nil [1062 1082])
+            ("HAVE_PSELECT_PROTO" variable (:constant-flag t) nil [1126 1144])
+            ("HAVE_SNPRINTF_PROTO" variable (:constant-flag t) nil [1155 1174])
+            ("HAVE_SOCKATMARK_PROTO" variable (:constant-flag t) nil [1185 1206])
+            ("HAVE_ADDRINFO_STRUCT" variable (:constant-flag t) nil [1274 1294])
+            ("HAVE_IF_NAMEINDEX_STRUCT" variable (:constant-flag t) nil [1305 1329])
+            ("HAVE_TIMESPEC_STRUCT" variable (:constant-flag t) nil [1377 1397])
+            ("HAVE_MSGHDR_MSG_CONTROL" variable (:constant-flag t) nil [1494 1517])
+            ("t_scalar_t" variable (:constant-flag t) nil [2184 2194])
+            ("IPV4" variable (:constant-flag t) nil [2295 2299])
+            ("IPv4" variable (:constant-flag t) nil [2310 2314])
+            ("IPV6" variable (:constant-flag t) nil [2325 2329])
+            ("IPv6" variable (:constant-flag t) nil [2340 2344])
+            ("UNIXDOMAIN" variable (:constant-flag t) nil [2355 2365])
+            ("UNIXdomain" variable (:constant-flag t) nil [2376 2386])
+            ("MCAST" variable (:constant-flag t) nil [2397 2402]))          
+    :file "config.h"
+    :pointmax 2405
+    :fsize 2404
+    :lastmodtime '(21216 28372 575241 862000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("HAVE_SYS_TIME_H" . ((number "1" 492 . 493)))
+          ("HAVE_PSELECT" . ((number "1" 730 . 731)))
+          ("HAVE_INET_ATON_PROTO" . ((number "1" 1052 . 1053)))
+          ("IPV6" . ((number "1" 2330 . 2331)))
+          ("HAVE_STRINGS_H" . ((number "1" 293 . 294)))
+          ("HAVE_MSGHDR_MSG_CONTROL" . ((number "1" 1518 . 1519)))
+          ("HAVE_IF_NAMETOINDEX_PROTO" . ((number "1" 1021 . 1022)))
+          ("HAVE_SYS_IOCTL_H" . ((number "1" 379 . 380)))
+          ("HAVE_SYS_SYSCTL_H" . ((number "1" 466 . 467)))
+          ("HAVE_SNPRINTF_PROTO" . ((number "1" 1175 . 1176)))
+          ("t_scalar_t" . ((symbol "int32_t" 2195 . 2202)))
+          ("IPv4" . ((number "1" 2315 . 2316)))
+          ("HAVE_ADDRINFO_STRUCT" . ((number "1" 1295 . 1296)))
+          ("HAVE_PTHREAD_H" . ((number "1" 268 . 269)))
+          ("HAVE_BZERO" . ((number "1" 657 . 658)))
+          ("IPv6" . ((number "1" 2345 . 2346)))
+          ("CPU_VENDOR_OS" . ((string "\"i686-pc-linux-gnu\"" 146 . 165)))
+          ("HAVE_INET_PTON_PROTO" . ((number "1" 1083 . 1084)))
+          ("HAVE_PSELECT_PROTO" . ((number "1" 1145 . 1146)))
+          ("HAVE_SOCKATMARK_PROTO" . ((number "1" 1207 . 1208)))
+          ("HAVE_TIMESPEC_STRUCT" . ((number "1" 1398 . 1399)))
+          ("HAVE_SYS_SELECT_H" . ((number "1" 407 . 408)))
+          ("HAVE_VSNPRINTF" . ((number "1" 755 . 756)))
+          ("HAVE_IF_NAMEINDEX_STRUCT" . ((number "1" 1330 . 1331)))
+          ("MCAST" . ((number "1" 2403 . 2404)))
+          ("HAVE_POLL" . ((number "1" 707 . 708)))
+          ("HAVE_GETHOSTBYNAME2" . ((number "1" 687 . 688)))
+          ("HAVE_POLL_H" . ((number "1" 243 . 244)))
+          ("HAVE_GETRUSAGE_PROTO" . ((number "1" 954 . 955)))
+          ("HAVE_HSTRERROR_PROTO" . ((number "1" 985 . 986)))
+          ("HAVE_GETHOSTNAME_PROTO" . ((number "1" 923 . 924)))
+          ("IPV4" . ((number "1" 2300 . 2301)))
+          ("UNIXDOMAIN" . ((number "1" 2366 . 2367)))
+          ("UNIXdomain" . ((number "1" 2387 . 2388)))
+          ("TIME_WITH_SYS_TIME" . ((number "1" 580 . 581)))
+          ("HAVE_GETADDRINFO_PROTO" . ((number "1" 857 . 858)))
+          ("HAVE_GETNAMEINFO_PROTO" . ((number "1" 890 . 891)))
+          )
+
+    )
+   (semanticdb-table "config.h.in"
+    :major-mode 'c-mode
+    :tags nil
+    :file "config.h.in"
+    :pointmax 3243
+    :fsize 3242
+    :lastmodtime '(13252 64900 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("./Make.defines" include nil nil [1 24])
+            ("all" function nil nil [25 110])
+            ("clean" function nil nil [111 139])
+            ("distclean" function nil nil [140 210]))          
+    :file "Makefile"
+    :pointmax 211
+    :fsize 209
+    :lastmodtime '(21219 37945 366159 750000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Make.defines"
+    :file "Make.defines"
+    :fsize 2341
+    :lastmodtime '(21216 29016 611225 394000)
+    )
+   )
+  :file "!home!lee!document!unix-network-programming!unpv12e!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

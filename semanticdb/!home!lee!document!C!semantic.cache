@@ -1,0 +1,37 @@
+;; Object C/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C/"
+  :tables (list 
+          (semanticdb-table "scratch.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("stdlib.h" include (:system-flag t) nil [84 103])
+            ("string.h" include (:system-flag t) nil [104 123])
+            ("NDEBUG" variable (:constant-flag t) nil [132 138])
+            ("assert.h" include (:system-flag t) nil [139 158])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [169 178])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [179 192]))                  
+                :type "int")
+                nil [160 223]))          
+    :file "scratch.c"
+    :pointmax 224
+    :fsize 223
+    :lastmodtime '(21334 7653 46637 21000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

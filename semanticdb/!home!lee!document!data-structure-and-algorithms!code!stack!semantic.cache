@@ -1,0 +1,85 @@
+;; Object stack/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stack/"
+  :tables (list 
+   (semanticdb-table "stack.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Stack" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [81 97]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72 76]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [59 98])
+                    ("push" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [108 112])
+                            ("item" variable nil (reparse-symbol function_parameters) [114 118]))                          )
+                        (reparse-symbol indented_block_body) [99 169])
+                    ("pop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [178 182]))                          )
+                        (reparse-symbol indented_block_body) [170 226])
+                    ("top" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [235 239]))                          )
+                        (reparse-symbol indented_block_body) [227 282])
+                    ("stack" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [293 297]))                          )
+                        (reparse-symbol indented_block_body) [283 321])
+                    ("length" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [333 337]))                          )
+                        (reparse-symbol indented_block_body) [322 366])
+                    ("if_empty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [380 384]))                          )
+                        (reparse-symbol indented_block_body) [367 444])
+                    ("clear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [455 459]))                          )
+                        (reparse-symbol indented_block_body) [445 502]))                  
+                :type "class")
+                nil [43 502]))          
+    :file "stack.py"
+    :pointmax 502
+    :fsize 501
+    :lastmodtime '(21014 44983 355989 378000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "testcase.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("stack" include nil nil [43 66])
+            ("sample" variable nil nil [68 84])
+            ("sample" code nil nil [86 100])
+            ("sample" code nil nil [101 115])
+            ("sample" code nil nil [116 131])
+            ("sample" code nil nil [132 146])
+            ("sample" code nil nil [147 159])
+            ("print" code nil nil [160 180])
+            ("print" code nil nil [181 202])
+            ("print" code nil nil [203 221]))          
+    :file "testcase.py"
+    :pointmax 222
+    :fsize 221
+    :lastmodtime '(21014 44968 207989 763000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!stack!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

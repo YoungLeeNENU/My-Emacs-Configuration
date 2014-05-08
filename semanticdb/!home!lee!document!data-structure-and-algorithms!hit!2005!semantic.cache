@@ -1,0 +1,69 @@
+;; Object 2005/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2005/"
+  :tables (list 
+   (semanticdb-table "5-2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("datatype" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [43 64])
+            ("node" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("key" variable (:type "int") (reparse-symbol classsubparts) [87 95])
+                          ("data" variable (:type ("datatype" type (:type "class") nil nil)) (reparse-symbol classsubparts) [100 114])
+                          ("count" variable (:type "int") (reparse-symbol classsubparts) [119 129]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [66 136])
+            ("a" variable
+               (:dereference 1
+                :type ("node" type (:type "class") nil nil))
+                nil [138 238])
+            ("selection_sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("unsorted" variable
+                       (:dereference 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 276]))                  
+                :type "void")
+                nil [240 277])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [288 297])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [298 311]))                  
+                :type "int")
+                nil [279 357])
+            ("selection_sort" function
+               (:arguments 
+                  ( ("unsorted" variable
+                       (:dereference 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 395]))                  
+                :type "void")
+                nil [359 947]))          
+    :file "5-2.cpp"
+    :pointmax 925
+    :fsize 947
+    :lastmodtime '(21166 41133 567961 167000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!hit!2005!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

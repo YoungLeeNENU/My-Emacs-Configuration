@@ -1,0 +1,49 @@
+;; Object chap2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chap2/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("escapes" type
+               (:members 
+                  ( ("BELL" variable
+                       (:constant-flag t
+                        :default-value (67 71)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [60 71])
+                    ("BACKSPACE" variable
+                       (:constant-flag t
+                        :default-value (89 93)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [77 93])
+                    ("TAB" variable
+                       (:constant-flag t
+                        :default-value (105 109)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [99 109]))                  
+                :type "enum")
+                nil [41 113])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [124 133])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [134 147]))                  
+                :type "int")
+                nil [115 192]))          
+    :file "test.c"
+    :pointmax 193
+    :fsize 192
+    :lastmodtime '(21207 16971 211800 992000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C!CPL!chap2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

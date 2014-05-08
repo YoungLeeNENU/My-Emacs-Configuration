@@ -1,0 +1,47 @@
+;; Object three/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "three/"
+  :tables (list 
+   (semanticdb-table "enum.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("assert.h" include (:system-flag t) nil [60 79])
+            ("N_VALUES" variable (:constant-flag t) nil [88 96])
+            ("NDEBUG" variable (:constant-flag t) nil [107 113])
+            ("values" variable
+               (:dereference 1
+                :type "float")
+                nil [115 138])
+            ("vp" variable
+               (:pointer 1
+                :type "float")
+                nil [139 149])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [160 169])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170 183]))                  
+                :type "int")
+                nil [151 593]))          
+    :file "enum.c"
+    :pointmax 594
+    :fsize 633
+    :lastmodtime '(21332 23972 371984 211000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("N_VALUES" . ((number "5" 97 . 98)))
+          ("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpt!three!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,70 @@
+;; Object four/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "four/"
+  :tables (list 
+   (semanticdb-table "4.1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [50 56])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [57 63]))                  
+                :type "bool")
+                nil [43 64])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [75 84])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85 98]))                  
+                :type "int")
+                nil [66 293])
+            ("f" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [302 308])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [309 315]))                  
+                :type "bool")
+                nil [295 361]))          
+    :file "4.1.cpp"
+    :pointmax 357
+    :fsize 361
+    :lastmodtime '(21241 63974 661389 522000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "4.2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [52 61])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [62 75]))                  
+                :type "int")
+                nil [43 158]))          
+    :file "4.2.cpp"
+    :pointmax 194
+    :fsize 158
+    :lastmodtime '(21242 3549 533258 845000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C++!code!cpppl!four!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

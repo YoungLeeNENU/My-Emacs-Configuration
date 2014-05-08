@@ -1,0 +1,249 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "de_comment.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [39 48])
+            ("de_comment" function (:arguments 
+              ( ("source" variable nil (reparse-symbol function_parameters) [65 71]))              ) nil [50 560]))          
+    :file "de_comment.py"
+    :pointmax 560
+    :fsize 683
+    :lastmodtime '(20953 27618 811871 403000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [36 46])
+            ("symbol_list" include nil nil [47 65])
+            ("read" include nil nil [76 87])
+            ("lexeme" include nil nil [98 111])
+            ("de_comment" include nil nil [123 140])
+            ("r_d_p" include nil nil [152 164])
+            ("source" variable nil nil [186 222])
+            ("processed" variable nil nil [273 314])
+            ("result" variable nil nil [340 372])
+            ("output" variable nil nil [413 455])
+            ("for" code nil nil [456 508])
+            ("r_d_p" code nil nil [522 540]))          
+    :file "main.py"
+    :pointmax 541
+    :fsize 700
+    :lastmodtime '(20953 27618 879871 400000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "symbol_list.py"
+    :file "symbol_list.py"
+    :fsize 2250
+    :lastmodtime '(20953 27618 899871 399000)
+    )
+   (semanticdb-table "read.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("read_file" function (:arguments 
+              ( ("file_name" variable nil (reparse-symbol function_parameters) [50 59]))              ) nil [36 143]))          
+    :file "read.py"
+    :pointmax 143
+    :fsize 162
+    :lastmodtime '(20953 27618 879871 400000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lexeme.py"
+    :file "lexeme.py"
+    :fsize 2125
+    :lastmodtime '(20953 27618 855871 401000)
+    )
+   (semanticdb-table "r_d_p.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [67 76])
+            ("sys" include nil nil [77 87])
+            ("lexeme" include nil nil [88 101])
+            ("grammar" include nil nil [102 116])
+            ("tree" include nil nil [117 138])
+            ("token_list" variable nil nil [174 189])
+            ("lookahead" variable nil nil [204 218])
+            ("grammar_node" variable nil nil [231 248])
+            ("space" variable nil nil [260 274])
+            ("nt_init" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [317 323])
+                ("init_node" variable nil (reparse-symbol function_parameters) [325 334])
+                ("instance" variable nil (reparse-symbol function_parameters) [336 344])
+                ("children" variable nil (reparse-symbol function_parameters) [346 354]))              ) nil [305 629])
+            ("t_init" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [654 660])
+                ("init_node" variable nil (reparse-symbol function_parameters) [662 671])
+                ("instance" variable nil (reparse-symbol function_parameters) [673 681])
+                ("children" variable nil (reparse-symbol function_parameters) [683 691]))              ) nil [643 857])
+            ("scan" function (:arguments 
+              ( ("lexical_out" variable nil (reparse-symbol function_parameters) [867 878]))              ) nil [858 1063])
+            ("match" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [1074 1075]))              ) nil [1064 1520])
+            ("syntactic_analysis" function nil nil [1521 1969])
+            ("'''
+以下为SNL文法的实现
+每个非终结符对应一个函数，参数为其父节点
+每个函数先产生非终结符号结点，并进行非终结符号的初始化
+然后根据具体的文法
+进行递归下降的语法分析
+遇到终结符号，调用match函数进行匹配
+遇到非终结符号，调用非终结符号对应的函数继续进行语法分析
+'''" code nil nil [1970 2110])
+            ("Program" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [2124 2130]))              ) nil [2112 2326])
+            ("ProgramHead" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [2343 2349]))              ) nil [2327 2578])
+            ("ProgramName" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [2595 2601]))              ) nil [2579 2792])
+            ("DeclarePart" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [2809 2815]))              ) nil [2793 3004])
+            ("TypeDecPart" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [3021 3027]))              ) nil [3005 3161])
+            ("TypeDec" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [3174 3180]))              ) nil [3162 3484])
+            ("TypeDecList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [3501 3507]))              ) nil [3485 3842])
+            ("TypeDecMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [3859 3865]))              ) nil [3843 4094])
+            ("TypeId" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [4106 4112]))              ) nil [4095 4283])
+            ("TypeDef" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [4296 4302]))              ) nil [4284 4628])
+            ("BaseType" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [4642 4648]))              ) nil [4629 4917])
+            ("StructureType" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [4936 4942]))              ) nil [4918 5159])
+            ("ArrayType" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [5174 5180]))              ) nil [5160 5750])
+            ("Low" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [5759 5765]))              ) nil [5751 5930])
+            ("Top" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [5939 5945]))              ) nil [5931 6110])
+            ("RecType" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [6123 6129]))              ) nil [6111 6404])
+            ("FieldDecList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [6422 6428]))              ) nil [6405 6908])
+            ("FieldDecMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [6926 6932]))              ) nil [6909 7231])
+            ("IdList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [7243 7249]))              ) nil [7232 7436])
+            ("IdMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [7448 7454]))              ) nil [7437 7725])
+            ("VarDecPart" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [7741 7747]))              ) nil [7726 7967])
+            ("VarDec" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [7979 7985]))              ) nil [7968 8172])
+            ("VarDecList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [8188 8194]))              ) nil [8173 8453])
+            ("VarDecMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [8469 8475]))              ) nil [8454 8775])
+            ("VarIdList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [8790 8796]))              ) nil [8776 9001])
+            ("VarIdMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [9016 9022]))              ) nil [9002 9314])
+            ("ProcDecpart" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [9331 9337]))              ) nil [9315 9569])
+            ("ProcDec" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [9582 9588]))              ) nil [9570 10132])
+            ("ProcDecMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [10149 10155]))              ) nil [10133 10387])
+            ("ProcName" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [10401 10407]))              ) nil [10388 10586])
+            ("ParamList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [10601 10607]))              ) nil [10587 10905])
+            ("ParamDecList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [10923 10929]))              ) nil [10906 11090])
+            ("ParamMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [11105 11111]))              ) nil [11091 11414])
+            ("Param" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [11425 11431]))              ) nil [11415 11701])
+            ("FormList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [11715 11721]))              ) nil [11702 11919])
+            ("FidMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [11932 11938]))              ) nil [11920 12217])
+            ("ProcDecPart" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [12234 12240]))              ) nil [12218 12378])
+            ("ProcBody" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [12392 12398]))              ) nil [12379 12524])
+            ("ProgramBody" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [12541 12547]))              ) nil [12525 12839])
+            ("StmList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [12852 12858]))              ) nil [12840 12990])
+            ("StmMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [13003 13009]))              ) nil [12991 13295])
+            ("Stm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [13304 13310]))              ) nil [13296 13761])
+            ("AssCall" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [13774 13780]))              ) nil [13762 13970])
+            ("AssignmentRest" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [13990 13996]))              ) nil [13971 14254])
+            ("ConditionalStm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [14274 14280]))              ) nil [14255 14787])
+            ("LoopStm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [14800 14806]))              ) nil [14788 15166])
+            ("InputStm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [15180 15186]))              ) nil [15167 15552])
+            ("Invar" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [15563 15569]))              ) nil [15553 15736])
+            ("OutputStm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [15751 15757]))              ) nil [15737 16132])
+            ("ReturnStm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [16147 16153]))              ) nil [16133 16344])
+            ("CallStmRest" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [16361 16367]))              ) nil [16345 16688])
+            ("ActParamList" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [16706 16712]))              ) nil [16689 17053])
+            ("ActParamMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [17071 17077]))              ) nil [17054 17390])
+            ("RelExp" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [17402 17408]))              ) nil [17391 17537])
+            ("OtherRelE" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [17552 17558]))              ) nil [17538 17698])
+            ("Exp" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [17707 17713]))              ) nil [17699 17828])
+            ("OtherTerm" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [17843 17849]))              ) nil [17829 18085])
+            ("Term" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [18095 18101]))              ) nil [18086 18225])
+            ("OtherFactor" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [18242 18248]))              ) nil [18226 18498])
+            ("Factor" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [18510 18516]))              ) nil [18499 18963])
+            ("Variable" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [18977 18983]))              ) nil [18964 19182])
+            ("VariMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [19196 19202]))              ) nil [19183 19708])
+            ("FieldVar" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [19722 19728]))              ) nil [19709 19931])
+            ("FieldVarMore" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [19949 19955]))              ) nil [19932 20368])
+            ("CmpOp" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [20379 20385]))              ) nil [20369 20675])
+            ("AddOp" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [20686 20692]))              ) nil [20676 20974])
+            ("MultOp" function (:arguments 
+              ( ("father" variable nil (reparse-symbol function_parameters) [20986 20992]))              ) nil [20975 21279]))          
+    :file "r_d_p.py"
+    :pointmax 21279
+    :fsize 22054
+    :lastmodtime '(20953 27618 879871 400000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "grammar.py"
+    :file "grammar.py"
+    :fsize 4163
+    :lastmodtime '(20953 27618 835871 402000)
+    )
+   (semanticdb-table "tree.py"
+    :file "tree.py"
+    :fsize 1295
+    :lastmodtime '(20953 27618 915871 399000)
+    )
+   )
+  :file "!home!lee!document!python!A-samll-compiler-frontend!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

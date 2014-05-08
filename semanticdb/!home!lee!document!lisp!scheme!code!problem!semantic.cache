@@ -1,0 +1,18 @@
+;; Object problem/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "problem/"
+  :tables (list 
+     (semanticdb-table "test.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "test.scm"
+    :pointmax 121
+    :fsize 120
+    :lastmodtime '(20975 18456 347864 760000)
+    :unmatched-syntax '((semantic-list 81 . 120) (semantic-list 1 . 79) (semantic-list 81 . 112) (semantic-list 1 . 79) (semantic-list 73 . 104) (semantic-list 1 . 71) (semantic-list 77 . 118) (semantic-list 73 . 75) (semantic-list 1 . 71) (semantic-list 73 . 114) (semantic-list 1 . 71) (semantic-list 1 . 71) (semantic-list 1 . 41) (semantic-list 1 . 22))
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!problem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

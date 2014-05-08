@@ -1,0 +1,68 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "make_xone.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [587 597])
+            ("getopt" include nil nil [598 611])
+            ("help" function nil nil [613 887])
+            ("if" code nil nil [888 937])
+            ("MASTER_SYNC_LAYOUT" variable nil nil [942 968])
+            ("MAX_DECKS" variable nil nil [969 982])
+            ("fname" variable nil nil [983 993])
+            ("try" code nil nil [995 1403])
+            ("if" code nil nil [1404 1447])
+            ("try" code nil nil [1448 1566])
+            ("button_definitions" variable nil nil [1567 2137])
+            ("controls" variable nil nil [2139 2248])
+            ("controls" code nil nil [2249 2267])
+            ("colors" variable nil nil [2268 2303])
+            ("cur_color" variable nil nil [2304 2317])
+            ("midi" variable nil nil [2401 2410])
+            ("current_control" variable nil nil [2411 2443])
+            ("for" code nil nil [2444 2919])
+            ("cc_controls" variable nil nil [3042 3097])
+            ("cc_code" variable nil nil [3098 3107])
+            ("midi_cc" variable nil nil [3108 3120])
+            ("for" code nil nil [3121 3256])
+            ("cc_mapping" variable nil nil [3587 3883])
+            ("button_mapping" variable nil nil [3899 4658])
+            ("if" code nil nil [4671 5442])
+            ("light_mapping" variable nil nil [5455 5985])
+            ("if" code nil nil [5987 6529])
+            ("master_knobs" variable nil nil [6564 8079])
+            ("if" code nil nil [8093 9919])
+            ("xml" variable nil nil [9929 9937])
+            ("xml" code nil nil [9938 10519])
+            ("xml" code nil nil [10547 10601])
+            ("for" code nil nil [10603 10991])
+            ("for" code nil nil [11190 11619])
+            ("for" code nil nil [11660 12507])
+            ("xml" code nil nil [12520 12556])
+            ("for" code nil nil [12594 13458])
+            ("xml" code nil nil [13463 13503])
+            ("for" code nil nil [13519 14486])
+            ("xml" code nil nil [14491 14542])
+            ("xml" code nil nil [14574 14598])
+            ("xml" code nil nil [14646 14701])
+            ("if" code nil nil [14726 15145])
+            ("xml" code nil nil [15168 15202])
+            ("for" code nil nil [15243 15653])
+            ("xml" code nil nil [15658 15694])
+            ("for" code nil nil [15714 16197])
+            ("xml" code nil nil [16202 16281])
+            ("fh" code nil nil [16283 16312])
+            ("fh" code nil nil [16313 16323]))          
+    :file "make_xone.py"
+    :pointmax 16324
+    :fsize 16323
+    :lastmodtime '(21194 420 135970 617000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

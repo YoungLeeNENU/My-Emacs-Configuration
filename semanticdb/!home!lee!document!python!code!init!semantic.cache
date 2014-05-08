@@ -1,0 +1,192 @@
+;; Object init/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "init/"
+  :tables (list 
+   (semanticdb-table "set.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("s1" variable nil nil [68 90])
+            ("s2" variable nil nil [91 110])
+            ("setop" function (:arguments 
+              ( ("set1" variable nil (reparse-symbol function_parameters) [122 126])
+                ("set2" variable nil (reparse-symbol function_parameters) [128 132]))              ) nil [112 330])
+            ("if" code nil nil [331 376]))          
+    :file "set.py"
+    :pointmax 376
+    :fsize 387
+    :lastmodtime '(21285 20674 655744 398000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "listop.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("a" variable nil nil [68 81])
+            ("b" variable nil nil [82 101])
+            ("even" variable nil nil [102 143])
+            ("print" code nil nil [144 154])
+            ("for" code nil nil [155 209]))          
+    :file "listop.py"
+    :pointmax 209
+    :fsize 208
+    :lastmodtime '(21285 45397 301649 926000)
+    :unmatched-syntax '(($EOI 202 . 202))
+    )
+   (semanticdb-table "init.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("math" include nil nil [68 79])
+            ("random" include nil nil [80 93])
+            ("D" variable nil nil [95 157])
+            ("matrix" variable nil nil [159 221])
+            ("list_foo" function (:arguments 
+              ( ("row_num" variable nil (reparse-symbol function_parameters) [236 243]))              ) nil [223 346])
+            ("dic_foo" function (:arguments 
+              ( ("dictionary" variable nil (reparse-symbol function_parameters) [359 369])
+                ("key" variable nil (reparse-symbol function_parameters) [371 374]))              ) nil [347 433])
+            ("if" code nil nil [434 514]))          
+    :file "init.py"
+    :pointmax 514
+    :fsize 521
+    :lastmodtime '(21283 48980 523829 524000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pyclass.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("TestClass" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [92 96]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77 81]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [64 97])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [109 113])
+                            ("string" variable nil (reparse-symbol function_parameters) [115 121]))                          )
+                        (reparse-symbol indented_block_body) [101 146]))                  
+                :type "class")
+                nil [41 146])
+            ("if" code nil nil [147 240]))          
+    :file "pyclass.py"
+    :pointmax 321
+    :fsize 320
+    :lastmodtime '(21286 21940 809194 358000)
+    :unmatched-syntax '((NAME 244 . 253) (NEWLINE 254 . 255))
+    )
+   (semanticdb-table "alg.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [68 78])
+            ("math" include nil nil [79 90])
+            ("random" include nil nil [91 104])
+            ("seq" variable nil nil [106 136])
+            ("partition" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [152 157])
+                ("p" variable nil (reparse-symbol function_parameters) [159 160])
+                ("r" variable nil (reparse-symbol function_parameters) [162 163]))              ) nil [138 450])
+            ("Sort" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [510 527]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [488 492])
+                            ("array" variable nil (reparse-symbol function_parameters) [494 499]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [475 528])
+                    ("QuickSort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [546 550])
+                            ("order" variable nil (reparse-symbol function_parameters) [552 558]))                          )
+                        (reparse-symbol indented_block_body) [532 1036])
+                    ("HeapSort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1053 1057])
+                            ("order" variable nil (reparse-symbol function_parameters) [1059 1065]))                          )
+                        (reparse-symbol indented_block_body) [1040 1166]))                  
+                :type "class")
+                nil [457 1166])
+            ("if" code nil nil [1167 1329]))          
+    :file "alg.py"
+    :pointmax 1329
+    :fsize 1348
+    :lastmodtime '(21289 7988 479945 887000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("param" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [51 52])
+                ("b" variable nil (reparse-symbol function_parameters) [54 56])
+                ("c" variable nil (reparse-symbol function_parameters) [58 61]))              ) nil [41 82])
+            ("foo" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [91 92])
+                ("b" variable nil (reparse-symbol function_parameters) [94 95])
+                ("c" variable nil (reparse-symbol function_parameters) [97 98])
+                ("d" variable nil (reparse-symbol function_parameters) [100 101]))              ) nil [83 125])
+            ("args" variable nil nil [126 157])
+            ("args" variable nil nil [158 171])
+            ("param" code nil nil [206 234]))          
+    :file "test.py"
+    :pointmax 214
+    :fsize 234
+    :lastmodtime '(21313 5419 726561 596000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "def.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("L" variable nil nil [53 117])
+            ("key" variable nil nil [119 130])
+            ("" code nil nil [131 241])
+            ("if" code nil nil [243 305]))          
+    :file "def.py"
+    :pointmax 305
+    :fsize 304
+    :lastmodtime '(21313 24074 872535 582000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "apply.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("func" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [62 63])
+                ("y" variable nil (reparse-symbol function_parameters) [65 66])
+                ("z" variable nil (reparse-symbol function_parameters) [68 69]))              ) nil [53 93])
+            ("if" code nil nil [94 154]))          
+    :file "apply.py"
+    :pointmax 154
+    :fsize 153
+    :lastmodtime '(21313 24398 204527 316000)
+    :unmatched-syntax '(($EOI 119 . 119))
+    )
+   (semanticdb-table "yield.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("power" function (:arguments 
+              ( ("values" variable nil (reparse-symbol function_parameters) [189 195]))              ) nil [179 279])
+            ("addr" function (:arguments 
+              ( ("values" variable nil (reparse-symbol function_parameters) [289 295]))              ) nil [280 457])
+            ("if" code nil nil [462 630]))          
+    :file "yield.py"
+    :pointmax 778
+    :fsize 777
+    :lastmodtime '(21285 47309 865601 24000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!init!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

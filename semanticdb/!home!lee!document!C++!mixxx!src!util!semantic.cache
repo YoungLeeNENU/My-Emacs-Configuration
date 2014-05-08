@@ -1,0 +1,24 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "rlimit.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("util/rlimit.h" include nil nil [1 25]))          
+    :file "rlimit.cpp"
+    :pointmax 816
+    :fsize 815
+    :lastmodtime '(21194 420 343970 610000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rlimit.h"
+    :file "rlimit.h"
+    :fsize 237
+    :lastmodtime '(21194 420 343970 610000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!src!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

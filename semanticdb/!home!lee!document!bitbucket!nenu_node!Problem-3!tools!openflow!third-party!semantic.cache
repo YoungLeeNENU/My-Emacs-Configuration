@@ -1,0 +1,19 @@
+;; Object third-party/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "third-party/"
+  :tables (list 
+   (semanticdb-table "automake.mk"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("third-party/README" "third-party/ofp-tcpdump.patch")) nil [1 70]))          
+    :file "automake.mk"
+    :pointmax 70
+    :fsize 72
+    :lastmodtime '(21340 41077 297476 583000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!openflow!third-party!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

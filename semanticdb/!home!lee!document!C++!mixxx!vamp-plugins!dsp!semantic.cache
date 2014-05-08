@@ -1,0 +1,60 @@
+;; Object dsp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dsp/"
+  :tables (list 
+   (semanticdb-table "ChangeDetectionFunction.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ChangeDetectionFunction.h" include nil nil [553 589])
+            ("PI" variable (:constant-flag t) nil [610 612])
+            ("ChangeDetectionFunction" function
+               (:constructor-flag t
+                :parent "ChangeDetectionFunction"
+                :arguments 
+                  ( ("config" variable (:type ("ChangeDFConfig" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [697 719]))                  
+                :type ("ChangeDetectionFunction" type (:type "class") nil nil))
+                nil [648 805])
+            ("ChangeDetectionFunction" function
+               (:destructor-flag t
+                :parent "ChangeDetectionFunction"
+                :type "void")
+                nil [807 862])
+            ("setFilterWidth" function
+               (:parent "ChangeDetectionFunction"
+                :arguments 
+                  ( ("iWidth" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [909 926]))                  
+                :type "void")
+                nil [864 1596])
+            ("process" function
+               (:parent "ChangeDetectionFunction"
+                :arguments 
+                  ( ("rTCSGram" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TCSGram" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1647 1671]))                  
+                :type ("ChangeDistance" type (:type "class") nil nil))
+                nil [1599 3637]))          
+    :file "ChangeDetectionFunction.cpp"
+    :pointmax 3638
+    :fsize 3637
+    :lastmodtime '(21194 420 427970 608000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PI" . ((semantic-list "(3.14159265358979232846)" 613 . 637)))
+          )
+
+    )
+   (semanticdb-table "ChangeDetectionFunction.h"
+    :file "ChangeDetectionFunction.h"
+    :fsize 1158
+    :lastmodtime '(21194 420 427970 608000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!vamp-plugins!dsp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

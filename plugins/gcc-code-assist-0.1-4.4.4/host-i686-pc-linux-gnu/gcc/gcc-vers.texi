@@ -1,0 +1,5 @@
+@set version-GCC 4.4.4
+@clear DEVELOPMENT
+@set srcdir /home/lee/.emacs.d/plugins/gcc-code-assist-0.1-4.4.4/host-i686-pc-linux-gnu/gcc/../.././gcc
+@set VERSION_PACKAGE (GCC) 
+@set BUGURL @uref{http://gcc.gnu.org/bugs.html}

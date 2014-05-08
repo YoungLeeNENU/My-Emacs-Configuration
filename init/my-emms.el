@@ -1,4 +1,5 @@
-(add-to-list 'load-path "/home/neo/.emacs.d/packages/emms")
+(add-to-list 'load-path "~/.emacs.d/packages/emms/")
+(add-to-list 'load-path "~/.emacs.d/packages/emms/lisp")
 (require 'emms-setup)
 (emms-standard)
 (emms-default-players)

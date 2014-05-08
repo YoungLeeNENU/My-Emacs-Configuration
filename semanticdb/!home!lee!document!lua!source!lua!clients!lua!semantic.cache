@@ -1,0 +1,35 @@
+;; Object lua/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lua/"
+  :tables (list 
+   (semanticdb-table "lua.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("rcs_lua" variable
+               (:pointer 1
+                :type "char")
+                nil [57 122])
+            ("stdio.h" include (:system-flag t) nil [124 142])
+            ("lua.h" include nil nil [144 160])
+            ("lualib.h" include nil nil [161 180])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [193 202])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [203 216]))                  
+                :type "void")
+                nil [182 490]))          
+    :file "lua.c"
+    :pointmax 491
+    :fsize 490
+    :lastmodtime '(21351 23795 390205 185000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lua!source!lua!clients!lua!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

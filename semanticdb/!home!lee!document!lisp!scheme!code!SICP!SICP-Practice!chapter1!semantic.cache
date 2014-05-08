@@ -1,0 +1,73 @@
+;; Object chapter1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter1/"
+  :tables (list 
+   (semanticdb-table "1-15.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("counter" variable (:default-value ("0")) nil [26 44])
+            ("sine" function (:arguments ("angle")) nil [46 290]))          
+    :file "1-15.scm"
+    :pointmax 369
+    :fsize 386
+    :lastmodtime '(20953 31763 159765 437000)
+    :unmatched-syntax '((semantic-list 292 . 368))
+    )
+   (semanticdb-table "1-16.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "1-16.scm"
+    :pointmax 1105
+    :fsize 1104
+    :lastmodtime '(20954 53392 137771 889000)
+    :unmatched-syntax '((semantic-list 967 . 1104) (semantic-list 565 . 965) (semantic-list 297 . 563) (semantic-list 24 . 295) (semantic-list 967 . 1094) (semantic-list 565 . 965) (semantic-list 297 . 563) (semantic-list 24 . 295))
+    )
+   (semanticdb-table "1-17.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("double" function (:arguments ("num")) nil [24 59])
+            ("halve" function (:arguments ("num")) nil [61 152]))          
+    :file "1-17.scm"
+    :pointmax 843
+    :fsize 842
+    :lastmodtime '(20954 53367 393772 520000)
+    :unmatched-syntax '((semantic-list 760 . 842) (semantic-list 480 . 758) (semantic-list 154 . 478) (semantic-list 760 . 832) (semantic-list 480 . 758) (semantic-list 154 . 478) (semantic-list 760 . 832) (semantic-list 480 . 758) (semantic-list 154 . 478) (semantic-list 745 . 817) (semantic-list 480 . 743) (semantic-list 154 . 478) (semantic-list 752 . 824) (semantic-list 480 . 750) (semantic-list 154 . 478) (semantic-list 708 . 780) (semantic-list 480 . 706) (semantic-list 154 . 478) (semantic-list 705 . 777) (semantic-list 480 . 703) (semantic-list 154 . 478) (semantic-list 662 . 734) (semantic-list 480 . 660) (semantic-list 154 . 478) (semantic-list 655 . 727) (semantic-list 480 . 653) (semantic-list 154 . 478) (semantic-list 640 . 712) (semantic-list 480 . 638) (semantic-list 154 . 478) (semantic-list 642 . 714) (semantic-list 480 . 640) (semantic-list 154 . 478) (semantic-list 616 . 688) (semantic-list 480 . 614) (semantic-list 154 . 478) (semantic-list 612 . 684) (semantic-list 480 . 610) (semantic-list 154 . 478) (semantic-list 610 . 682) (semantic-list 480 . 608) (semantic-list 154 . 478) (semantic-list 609 . 681) (semantic-list 480 . 607) (semantic-list 154 . 478) (semantic-list 604 . 676) (semantic-list 480 . 602) (semantic-list 154 . 478) (semantic-list 602 . 674) (semantic-list 480 . 600) (semantic-list 154 . 478) (semantic-list 595 . 667) (semantic-list 480 . 593) (semantic-list 154 . 478) (semantic-list 594 . 666) (semantic-list 480 . 592) (semantic-list 154 . 478) (semantic-list 593 . 665) (semantic-list 480 . 591) (semantic-list 154 . 478) (semantic-list 590 . 662) (semantic-list 480 . 588) (semantic-list 154 . 478) (semantic-list 522 . 594) (semantic-list 462 . 520) (semantic-list 154 . 460) (semantic-list 181 . 220) (semantic-list 120 . 179) (semantic-list 85 . 124) (semantic-list 24 . 83))
+    )
+   (semanticdb-table "1-18.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("double" function (:arguments ("num")) nil [24 59])
+            ("halve" function (:arguments ("num")) nil [61 152]))          
+    :file "1-18.scm"
+    :pointmax 807
+    :fsize 830
+    :lastmodtime '(20958 17121 711996 965000)
+    :unmatched-syntax '((semantic-list 724 . 806) (semantic-list 215 . 722) (semantic-list 154 . 213) (semantic-list 724 . 806) (semantic-list 215 . 722) (semantic-list 154 . 213) (semantic-list 731 . 813) (semantic-list 215 . 729) (semantic-list 154 . 213) (semantic-list 732 . 814) (semantic-list 215 . 730) (semantic-list 154 . 213) (semantic-list 713 . 795) (semantic-list 215 . 711) (semantic-list 154 . 213) (semantic-list 712 . 794) (semantic-list 215 . 710) (semantic-list 154 . 213) (semantic-list 710 . 792) (semantic-list 215 . 708) (semantic-list 154 . 213) (semantic-list 699 . 781) (semantic-list 215 . 697) (semantic-list 154 . 213) (semantic-list 694 . 776) (semantic-list 215 . 692) (semantic-list 154 . 213) (semantic-list 689 . 771) (semantic-list 215 . 687) (semantic-list 154 . 213) (semantic-list 682 . 764) (semantic-list 215 . 680) (semantic-list 154 . 213) (semantic-list 675 . 757) (semantic-list 215 . 673) (semantic-list 154 . 213) (semantic-list 673 . 755) (semantic-list 215 . 671) (semantic-list 154 . 213) (semantic-list 668 . 750) (semantic-list 215 . 666) (semantic-list 154 . 213) (semantic-list 668 . 750) (semantic-list 215 . 666) (semantic-list 154 . 213) (semantic-list 667 . 749) (semantic-list 215 . 665) (semantic-list 154 . 213) (semantic-list 664 . 746) (semantic-list 215 . 662) (semantic-list 154 . 213) (semantic-list 646 . 728) (semantic-list 215 . 644) (semantic-list 154 . 213) (semantic-list 683 . 765) (semantic-list 215 . 681) (semantic-list 154 . 213) (semantic-list 917 . 999) (semantic-list 215 . 915) (semantic-list 154 . 213) (semantic-list 707 . 789) (semantic-list 215 . 705) (semantic-list 154 . 213) (semantic-list 678 . 760) (semantic-list 215 . 676) (semantic-list 154 . 213) (semantic-list 671 . 753) (semantic-list 215 . 669) (semantic-list 154 . 213) (semantic-list 682 . 764) (semantic-list 215 . 680) (semantic-list 154 . 213) (semantic-list 668 . 750) (semantic-list 215 . 666) (semantic-list 154 . 213) (semantic-list 657 . 739) (semantic-list 215 . 655) (semantic-list 154 . 213) (semantic-list 639 . 721) (semantic-list 215 . 637) (semantic-list 154 . 213) (semantic-list 671 . 753) (semantic-list 215 . 669) (semantic-list 154 . 213) (semantic-list 657 . 739) (semantic-list 215 . 655) (semantic-list 154 . 213) (semantic-list 657 . 739) (semantic-list 215 . 655) (semantic-list 154 . 213) (semantic-list 639 . 721) (semantic-list 215 . 637) (semantic-list 154 . 213) (semantic-list 641 . 723) (semantic-list 215 . 639) (semantic-list 154 . 213) (semantic-list 637 . 719) (semantic-list 215 . 635) (semantic-list 154 . 213) (semantic-list 641 . 723) (semantic-list 215 . 639) (semantic-list 154 . 213) (semantic-list 637 . 719) (semantic-list 215 . 635) (semantic-list 154 . 213) (semantic-list 626 . 708) (semantic-list 215 . 624) (semantic-list 154 . 213) (semantic-list 625 . 707) (semantic-list 215 . 623) (semantic-list 154 . 213) (semantic-list 622 . 704) (semantic-list 215 . 620) (semantic-list 154 . 213) (semantic-list 628 . 710) (semantic-list 215 . 626) (semantic-list 154 . 213) (semantic-list 618 . 700) (semantic-list 215 . 616) (semantic-list 154 . 213) (semantic-list 606 . 688) (semantic-list 215 . 604) (semantic-list 154 . 213) (semantic-list 602 . 684) (semantic-list 215 . 600) (semantic-list 154 . 213) (semantic-list 685 . 767) (semantic-list 215 . 683) (semantic-list 154 . 213) (semantic-list 686 . 768) (semantic-list 215 . 684) (semantic-list 154 . 213) (semantic-list 670 . 752) (semantic-list 215 . 668) (semantic-list 154 . 213) (semantic-list 666 . 748) (semantic-list 215 . 664) (semantic-list 154 . 213) (semantic-list 666 . 748) (semantic-list 215 . 664) (semantic-list 154 . 213) (semantic-list 665 . 747) (semantic-list 215 . 663) (semantic-list 154 . 213) (semantic-list 646 . 728) (semantic-list 215 . 644) (semantic-list 154 . 213) (semantic-list 638 . 720) (semantic-list 215 . 636) (semantic-list 154 . 213) (semantic-list 636 . 718) (semantic-list 215 . 634) (semantic-list 154 . 213) (semantic-list 628 . 710) (semantic-list 215 . 626) (semantic-list 154 . 213) (semantic-list 627 . 709) (semantic-list 215 . 625) (semantic-list 154 . 213) (semantic-list 636 . 718) (semantic-list 215 . 634) (semantic-list 154 . 213) (semantic-list 627 . 709) (semantic-list 215 . 625) (semantic-list 154 . 213) (semantic-list 624 . 706) (semantic-list 215 . 622) (semantic-list 154 . 213) (semantic-list 623 . 705) (semantic-list 215 . 621) (semantic-list 154 . 213) (semantic-list 614 . 696) (semantic-list 215 . 612) (semantic-list 154 . 213) (semantic-list 610 . 692) (semantic-list 215 . 608) (semantic-list 154 . 213) (semantic-list 603 . 685) (semantic-list 215 . 601) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 762 . 844) (semantic-list 215 . 760) (semantic-list 154 . 213) (semantic-list 756 . 838) (semantic-list 215 . 754) (semantic-list 154 . 213) (semantic-list 747 . 829) (semantic-list 215 . 745) (semantic-list 154 . 213) (semantic-list 739 . 821) (semantic-list 215 . 737) (semantic-list 154 . 213) (semantic-list 735 . 817) (semantic-list 215 . 733) (semantic-list 154 . 213) (semantic-list 730 . 812) (semantic-list 215 . 728) (semantic-list 154 . 213) (semantic-list 726 . 808) (semantic-list 215 . 724) (semantic-list 154 . 213) (semantic-list 722 . 804) (semantic-list 215 . 720) (semantic-list 154 . 213) (semantic-list 716 . 798) (semantic-list 215 . 714) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 699 . 781) (semantic-list 215 . 697) (semantic-list 154 . 213) (semantic-list 700 . 782) (semantic-list 215 . 698) (semantic-list 154 . 213) (semantic-list 662 . 744) (semantic-list 215 . 660) (semantic-list 154 . 213) (semantic-list 678 . 760) (semantic-list 215 . 676) (semantic-list 154 . 213) (semantic-list 601 . 683) (semantic-list 215 . 599) (semantic-list 154 . 213) (semantic-list 583 . 665) (semantic-list 215 . 581) (semantic-list 154 . 213) (semantic-list 580 . 662) (semantic-list 215 . 578) (semantic-list 154 . 213) (semantic-list 575 . 647) (semantic-list 215 . 573) (semantic-list 154 . 213) (semantic-list 577 . 649) (semantic-list 215 . 575) (semantic-list 154 . 213) (semantic-list 577 . 649) (semantic-list 215 . 575) (semantic-list 154 . 213) (semantic-list 604 . 676) (semantic-list 215 . 602) (semantic-list 154 . 213) (semantic-list 589 . 661) (semantic-list 215 . 587) (semantic-list 154 . 213) (semantic-list 428 . 500) (semantic-list 215 . 426) (semantic-list 154 . 213) (semantic-list 354 . 426) (semantic-list 215 . 352) (semantic-list 154 . 213) (semantic-list 354 . 426) (semantic-list 215 . 352) (semantic-list 154 . 213) (semantic-list 363 . 435) (semantic-list 215 . 361) (semantic-list 154 . 213) (semantic-list 356 . 428) (semantic-list 215 . 354) (semantic-list 154 . 213) (semantic-list 367 . 439) (semantic-list 215 . 365) (semantic-list 154 . 213) (semantic-list 327 . 399) (semantic-list 215 . 325) (semantic-list 154 . 213) (semantic-list 324 . 396) (semantic-list 215 . 322) (semantic-list 154 . 213) (semantic-list 320 . 392) (semantic-list 215 . 318) (semantic-list 154 . 213) (semantic-list 305 . 377) (semantic-list 215 . 303) (semantic-list 154 . 213) (semantic-list 289 . 361) (semantic-list 215 . 287) (semantic-list 154 . 213) (semantic-list 288 . 360) (semantic-list 215 . 286) (semantic-list 154 . 213) (semantic-list 284 . 356) (semantic-list 215 . 282) (semantic-list 154 . 213) (semantic-list 281 . 353) (semantic-list 215 . 279) (semantic-list 154 . 213) (semantic-list 280 . 352) (semantic-list 215 . 278) (semantic-list 154 . 213) (semantic-list 279 . 351) (semantic-list 215 . 277) (semantic-list 154 . 213) (semantic-list 268 . 340) (semantic-list 215 . 266) (semantic-list 154 . 213) (semantic-list 255 . 327) (semantic-list 215 . 253) (semantic-list 154 . 213) (semantic-list 251 . 323) (semantic-list 215 . 249) (semantic-list 154 . 213) (semantic-list 251 . 323) (semantic-list 215 . 249) (semantic-list 154 . 213) (semantic-list 250 . 322) (semantic-list 215 . 248) (semantic-list 154 . 213) (semantic-list 247 . 319) (semantic-list 215 . 245) (semantic-list 154 . 213) (semantic-list 246 . 318) (semantic-list 215 . 244) (semantic-list 154 . 213) (semantic-list 245 . 317) (semantic-list 215 . 243) (semantic-list 154 . 213) (semantic-list 239 . 311) (semantic-list 215 . 237) (semantic-list 154 . 213) (semantic-list 177 . 213) (semantic-list 154 . 175) (semantic-list 177 . 211) (semantic-list 154 . 175) (semantic-list 174 . 208) (semantic-list 154 . 172) (semantic-list 172 . 206) (semantic-list 125 . 159) (semantic-list 79 . 113) (semantic-list 70 . 104) (semantic-list 53 . 87) (semantic-list 24 . 33) (semantic-list 42 . 76) (semantic-list 24 . 48))
+    )
+   (semanticdb-table "check.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [42 73])
+            ("re" include nil nil [74 83])
+            ("os" include nil nil [84 93])
+            ("sys" include nil nil [94 104])
+            ("subprocess" include nil nil [105 122])
+            ("num" variable nil nil [124 132])
+            ("chapter" variable nil nil [133 148])
+            ("total" variable nil nil [149 170])
+            ("finished, unfinished" code nil nil [171 200])
+            ("tail" variable nil nil [202 245])
+            ("for" code nil nil [273 796])
+            ("percentage" code nil nil [805 844])
+            ("print" code nil nil [906 955]))          
+    :file "check.py"
+    :pointmax 932
+    :fsize 955
+    :lastmodtime '(20969 17736 869573 636000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!SICP!SICP-Practice!chapter1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

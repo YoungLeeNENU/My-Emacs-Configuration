@@ -1,0 +1,425 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "serial_s3c2410.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [101 126])
+            ("linux/module.h" include (:system-flag t) nil [127 152])
+            ("linux/kernel.h" include (:system-flag t) nil [153 178])
+            ("linux/init.h" include (:system-flag t) nil [179 202])
+            ("linux/slab.h" include (:system-flag t) nil [203 226])
+            ("linux/console.h" include (:system-flag t) nil [227 253])
+            ("linux/serial_core.h" include (:system-flag t) nil [254 284])
+            ("asm/irq.h" include (:system-flag t) nil [327 347])
+            ("asm/hardware.h" include (:system-flag t) nil [348 373])
+            ("asm/arch/cpu_s3c2410.h" include (:system-flag t) nil [420 453])
+            ("CONFIG_USE_ERR_IRQ" variable (:constant-flag t) nil [463 481])
+            ("SERIAL_S3C2410_MAJOR" variable (:constant-flag t) nil [519 539])
+            ("CALLOUT_S3C2410_MAJOR" variable (:constant-flag t) nil [571 592])
+            ("UART_NR" variable (:constant-flag t) nil [624 631])
+            ("MINOR_START" variable (:constant-flag t) nil [666 677])
+            ("UART_ULCON" variable (:constant-flag t) nil [1464 1474])
+            ("UART_UCON" variable (:constant-flag t) nil [1553 1562])
+            ("UART_UFCON" variable (:constant-flag t) nil [1609 1619])
+            ("UART_UTRSTAT" variable (:constant-flag t) nil [1665 1677])
+            ("UART_UERSTAT" variable (:constant-flag t) nil [1721 1733])
+            ("UART_UTXH" variable (:constant-flag t) nil [1777 1786])
+            ("UART_URXH" variable (:constant-flag t) nil [1833 1842])
+            ("UART_UBRDIV" variable (:constant-flag t) nil [1889 1900])
+            ("ERR_IRQ" variable (:constant-flag t) nil [1986 1993])
+            ("TX_IRQ" variable (:constant-flag t) nil [2079 2085])
+            ("RX_IRQ" variable (:constant-flag t) nil [2160 2166])
+            ("callout" variable
+               (:typemodifiers ("static")
+                :type ("tty_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2189 2230])
+            ("normal" variable
+               (:typemodifiers ("static")
+                :type ("tty_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2189 2230])
+            ("s3c2410_table" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("tty_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2259 2308])
+            ("s3c2410_termios_locked" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("termios" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2309 2391])
+            ("s3c2410_termios" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("termios" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2309 2391])
+            ("s3c2410uart_stop_tx" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2451 2474])
+                    ("from_tty" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2475 2490]))                  
+                :type "void")
+                nil [2419 2522])
+            ("s3c2410uart_start_tx" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2583 2606])
+                    ("nonempty" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2607 2622])
+                    ("from_tty" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2623 2638]))                  
+                :type "void")
+                nil [2550 2669])
+            ("s3c2410uart_stop_rx" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2729 2752]))                  
+                :type "void")
+                nil [2697 2784])
+            ("s3c2410uart_enable_ms" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2848 2871]))                  
+                :type "void")
+                nil [2814 2875])
+            ("s3c2410uart_tx_empty" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2986 3009]))                  
+                :type ("u_int" type (:type "class") nil nil))
+                nil [2952 3082])
+            ("s3c2410uart_get_mctrl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3251 3274]))                  
+                :type ("u_int" type (:type "class") nil nil))
+                nil [3216 3326])
+            ("s3c2410uart_set_mctrl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3389 3412])
+                    ("mctrl" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3413 3425]))                  
+                :type "void")
+                nil [3355 3429])
+            ("s3c2410uart_break_ctl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3490 3513])
+                    ("break_state" variable (:type "int") (reparse-symbol arg-sub-list) [3514 3530]))                  
+                :type "void")
+                nil [3456 3737])
+            ("s3c2410uart_rx_interrupt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [3862 3870])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3871 3884])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3885 3906]))                  
+                :type "void")
+                nil [3825 4943])
+            ("s3c2410uart_tx_interrupt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [5018 5026])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5027 5040])
+                    ("reg" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5041 5061]))                  
+                :type "void")
+                nil [4981 6463])
+            ("s3c2410uart_err_interrupt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [6547 6555])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6556 6569])
+                    ("reg" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6570 6590]))                  
+                :type "void")
+                nil [6509 7966])
+            ("s3c2410uart_startup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8086 8109])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("uart_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8110 8133]))                  
+                :type "int")
+                nil [8055 9442])
+            ("s3c2410uart_shutdown" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9495 9518])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("uart_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9519 9542]))                  
+                :type "void")
+                nil [9462 9820])
+            ("s3c2410uart_change_speed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9878 9901])
+                    ("cflag" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9902 9914])
+                    ("iflag" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9915 9927])
+                    ("quot" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9928 9939]))                  
+                :type "void")
+                nil [9841 11262])
+            ("s3c2410uart_type" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11319 11342]))                  
+                :type "char")
+                nil [11283 11485])
+            ("s3c2410uart_config_port" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11542 11565])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [11566 11576]))                  
+                :type "void")
+                nil [11506 11691])
+            ("s3c2410uart_release_port" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11752 11775]))                  
+                :type "void")
+                nil [11715 11779])
+            ("s3c2410uart_request_port" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("uart_port" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11835 11858]))                  
+                :type "int")
+                nil [11799 11873])
+            ("s3c2410_pops" variable
+               (:typemodifiers ("static")
+                :type ("uart_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11913 12537])
+            ("s3c2410_ports" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uart_port" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [12586 13486])
+            ("s3c2410_register_uart" function
+               (:arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [13620 13628])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [13629 13638]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [13591 14648])
+            ("S3C2410_CONSOLE" variable (:constant-flag t) nil [16790 16805])
+            ("s3c2410_reg" variable
+               (:typemodifiers ("static")
+                :type ("uart_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16856 17407])
+            ("s3c2410uart_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17471 17476]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [17447 17549])
+            ("s3c2410uart_exit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17603 17608]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [17579 17676])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s3c2410uart_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17690 17707]))                  
+                :type "int")
+                nil [17678 17708])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("s3c2410uart_exit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17736 17753]))                  
+                :type "int")
+                nil [17724 17754])
+            ("EXPORT_NO_SYMBOLS" variable (:type "int") nil [17770 17788])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [17790 17817])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [17818 17875])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [17876 17898]))          
+    :file "serial_s3c2410.c"
+    :pointmax 17899
+    :fsize 20610
+    :lastmodtime '(21314 1780 635587 738000)
+    :unmatched-syntax '((string 17891 . 17896) (string 17837 . 17873) (string 17804 . 17815) (VOID 17574 . 17578) (STATIC 17567 . 17573) (INT 17443 . 17446) (STATIC 17436 . 17442) (VOID 13586 . 13590))
+    :lexical-table 
+        '(("UART_NR" . ((number "3" 637 . 638)))
+          ("UART_UTXH" (spp-arg-list ("port") 1786 . 1792) . ((symbol "__REG" 1796 . 1801) (semantic-list "((port)->iobase + 0x20)" 1801 . 1824)))
+          ("ERR_IRQ" (spp-arg-list ("port") 1993 . 1999) . ((semantic-list "((port)->irq + 2)" 2000 . 2017)))
+          ("S3C2410_CONSOLE" . ((symbol "NULL" 16807 . 16811)))
+          ("RX_IRQ" (spp-arg-list ("port") 2166 . 2172) . ((semantic-list "((port)->irq)" 2174 . 2187)))
+          ("SERIAL_S3C2410_MAJOR" . ((number "204" 541 . 544)))
+          ("UART_UFCON" (spp-arg-list ("port") 1619 . 1625) . ((symbol "__REG" 1628 . 1633) (semantic-list "((port)->iobase + 0x08)" 1633 . 1656)))
+          ("MINOR_START" . ((number "5" 685 . 686)))
+          ("UART_UERSTAT" (spp-arg-list ("port") 1733 . 1739) . ((symbol "__REG" 1740 . 1745) (semantic-list "((port)->iobase + 0x14)" 1745 . 1768)))
+          ("TX_IRQ" (spp-arg-list ("port") 2085 . 2091) . ((semantic-list "((port)->irq + 1)" 2093 . 2110)))
+          ("CONFIG_USE_ERR_IRQ" . ((number "1" 484 . 485)))
+          ("UART_UCON" (spp-arg-list ("port") 1562 . 1568) . ((symbol "__REG" 1572 . 1577) (semantic-list "((port)->iobase + 0x04)" 1577 . 1600)))
+          ("UART_URXH" (spp-arg-list ("port") 1842 . 1848) . ((symbol "__REG" 1852 . 1857) (semantic-list "((port)->iobase + 0x24)" 1857 . 1880)))
+          ("UART_UBRDIV" (spp-arg-list ("port") 1900 . 1906) . ((symbol "__REG" 1908 . 1913) (semantic-list "((port)->iobase + 0x28)" 1913 . 1936)))
+          ("UART_ULCON" (spp-arg-list ("port") 1474 . 1480) . ((symbol "__REG" 1483 . 1488) (semantic-list "((port)->iobase + 0x00)" 1488 . 1511)))
+          ("UART_UTRSTAT" (spp-arg-list ("port") 1677 . 1683) . ((symbol "__REG" 1684 . 1689) (semantic-list "((port)->iobase + 0x10)" 1689 . 1712)))
+          ("CALLOUT_S3C2410_MAJOR" . ((number "205" 593 . 596)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!job!meituan!cvproj!Serial Port!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

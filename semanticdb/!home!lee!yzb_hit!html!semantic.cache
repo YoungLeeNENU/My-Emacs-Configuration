@@ -1,0 +1,132 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("哈尔滨工业大学研招办 --- yzb.hit.edu.cn" section nil nil [352 461])
+            ("newsFinalTitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=467\"
+      i++;
+      newsFinalTitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=463\"
+      i++;
+      
+	  function  init()   
+	  {   
+	  var left = ($(\"body\").width()-1024)/2;
+	  if(left>=0){
+	  $(\"#content\").css(\"left\",left);  
+	  $(\"#hotNews_new\").css(\"left\",left+350);  
+	  }
+	  if($(\"#popmenu\").length==0){
+	  $(\"body\").append(\"<div id='popmenu'><div class='lt'><span class='rt'>" section nil nil [461 530])
+            ("newsFinalTitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=467\"
+      i++;
+      newsFinalTitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=463\"
+      i++;
+      
+	  function  init()   
+	  {   
+	  var left = ($(\"body\").width()-1024)/2;
+	  if(left>=0){
+	  $(\"#content\").css(\"left\",left);  
+	  $(\"#hotNews_new\").css(\"left\",left+350);  
+	  }
+	  if($(\"#popmenu\").length==0){
+	  $(\"body\").append(\"<div id='popmenu'><div class='lt'><span class='rt'>" section nil nil [530 596])
+            ("newsFinalTitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=467\"
+      i++;
+      newsFinalTitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=463\"
+      i++;
+      
+	  function  init()   
+	  {   
+	  var left = ($(\"body\").width()-1024)/2;
+	  if(left>=0){
+	  $(\"#content\").css(\"left\",left);  
+	  $(\"#hotNews_new\").css(\"left\",left+350);  
+	  }
+	  if($(\"#popmenu\").length==0){
+	  $(\"body\").append(\"<div id='popmenu'><div class='lt'><span class='rt'>" section nil nil [596 665])
+            ("newsFinalTitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年博士研究生报考须知公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=467\"
+      i++;
+      newsFinalTitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newstitle[i]=\"哈尔滨工业大学2014年硕士研究生招生简章公布\"
+      newshref[i]=\"http://yzb.hit.edu.cn/hityzb/news.jsp?id=463\"
+      i++;
+      
+	  function  init()   
+	  {   
+	  var left = ($(\"body\").width()-1024)/2;
+	  if(left>=0){
+	  $(\"#content\").css(\"left\",left);  
+	  $(\"#hotNews_new\").css(\"left\",left+350);  
+	  }
+	  if($(\"#popmenu\").length==0){
+	  $(\"body\").append(\"<div id='popmenu'><div class='lt'><span class='rt'>" section nil nil [665 7364])
+            ("ImageReady Slices (未标题-2.psd) -->
+    <div id=\"content\">
+	  <div id=\"index-01\">
+		<img src=\"images/index/index_01.jpg\" width=\"2\" height=\"101\" alt=\"\">" section (:members 
+              ( ("研究生招生介绍" anchor nil nil [7979 7982])
+                ("硕士招生" anchor nil nil [8029 8032])
+                ("博士招生" anchor nil nil [8087 8090])
+                ("在职专业学位招生" anchor nil nil [8145 8148])
+                ("港澳台招生" anchor nil nil [8207 8210])
+                ("院系设置" anchor nil nil [8240 8243])
+                ("导师队伍" anchor nil nil [8342 8345])
+                ("文档下载" anchor nil nil [8437 8440])
+                ("博士报名" anchor nil nil [8497 8500])
+                ("暑期夏令营报名" anchor nil nil [8617 8620])
+                ("博士准考证打印" anchor nil nil [8733 8736])
+                ("博士报名" anchor nil nil [8830 8833])
+                ("研究生招生介绍" anchor nil nil [8950 8953])
+                ("博士报名" anchor nil nil [9005 9008])
+                ("院系设置" anchor nil nil [9126 9129])
+                ("导师队伍" anchor nil nil [9229 9232])
+                ("考场查询" anchor nil nil [9330 9333])
+                ("校内外推荐攻博" anchor nil nil [9441 9444])
+                ("外校推免硕士" anchor nil nil [9555 9558])
+                ("工程博士报名" anchor nil nil [9674 9677])
+                ("中国研究生招生网" anchor nil nil [12780 12783])
+                ("哈尔滨工业大学" anchor nil nil [12859 12862])
+                ("哈工大研究生院" anchor nil nil [12936 12939])
+                ("深圳研究生院" anchor nil nil [13015 13018])
+                ("威海分校" anchor nil nil [13093 13096])
+                ("校内站点" anchor nil nil [13173 13176])
+                ("导师更新办法" anchor nil nil [13254 13257])
+                ("新浪微博" anchor nil nil [13329 13332])
+                ("信息公告" anchor nil nil [14100 14103])
+                ("招生简章" anchor nil nil [14169 14172])
+                ("信息系统" anchor nil nil [14238 14241])
+                ("信息公告" anchor nil nil [14387 14390])
+                ("招生简章" anchor nil nil [14456 14459])
+                ("信息系统" anchor nil nil [14525 14528])
+                ("信息公告" anchor nil nil [14672 14675])
+                ("招生简章" anchor nil nil [14741 14744])
+                ("信息系统" anchor nil nil [14810 14813]))              ) nil [7364 14898]))          
+    :file "index.html"
+    :pointmax 14898
+    :fsize 16189
+    :lastmodtime '(20996 37238 867978 319000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!yzb_hit!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

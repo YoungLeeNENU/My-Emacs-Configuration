@@ -1,0 +1,357 @@
+;; Object pox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pox/"
+  :tables (list 
+   (semanticdb-table "core.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Some of POX's core API and functionality is here, largely in the POXCore
+class (an instance of which is available as pox.core.core).
+
+This includes things like component rendezvous, logging, system status
+(up and down events), etc.
+\"\"\"" code nil nil [678 917])
+            ("__future__" include nil nil [919 956])
+            ("logging" include nil nil [985 999])
+            ("inspect" include nil nil [1001 1015])
+            ("time" include nil nil [1016 1027])
+            ("os" include nil nil [1028 1037])
+            ("_path" variable nil nil [1039 1068])
+            ("_ext_path" variable nil nil [1069 1110])
+            ("_ext_path" code nil nil [1111 1158])
+            ("_path" code nil nil [1159 1198])
+            ("SQUELCH_TIME" variable nil nil [1200 1216])
+            ("_squelch" variable nil nil [1218 1231])
+            ("_squelchTime" variable nil nil [1232 1248])
+            ("_squelchCount" variable nil nil [1249 1266])
+            ("getLogger" function
+               (:documentation "
+  In general, you don't need to call this directly, and will use
+  core.getLogger() instead.
+  "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [1283 1287])
+                    ("moreFrames" variable nil (reparse-symbol function_parameters) [1294 1304]))                  )
+                nil [1268 3201])
+            ("log" variable nil nil [3252 3282])
+            ("pox.lib.revent" include nil nil [3284 3312])
+            ("_revent_exception_hook" function (:arguments 
+              ( ("source" variable nil (reparse-symbol function_parameters) [3430 3436])
+                ("event" variable nil (reparse-symbol function_parameters) [3438 3443])
+                ("args" variable nil (reparse-symbol function_parameters) [3445 3449])
+                ("kw" variable nil (reparse-symbol function_parameters) [3451 3453])
+                ("exc_info" variable nil (reparse-symbol function_parameters) [3455 3463]))              ) nil [3402 3741])
+            ("pox.lib.revent.revent" include nil nil [3741 3769])
+            ("pox" variable nil nil [3770 3837])
+            ("GoingUpEvent" type
+               (:documentation " Fired when system is going up. "
+                :superclasses ("Event")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [3910 3914]))                  
+                :type "class")
+                nil [3839 3915])
+            ("GoingDownEvent" type
+               (:documentation " Fired when system is going down. "
+                :superclasses ("Event")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [3991 3995]))                  
+                :type "class")
+                nil [3916 3996])
+            ("UpEvent" type
+               (:documentation " Fired when system is up. "
+                :superclasses ("Event")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [4057 4061]))                  
+                :type "class")
+                nil [3997 4062])
+            ("DownEvent" type
+               (:documentation " Fired when system is down. "
+                :superclasses ("Event")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [4127 4131]))                  
+                :type "class")
+                nil [4063 4132])
+            ("ComponentRegistered" type
+               (:documentation "
+  This is raised by core whenever a new component is registered.
+  By watching this, a component can monitor whether other components it
+  depends on are available.
+  "
+                :superclasses ("Event")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Event" code nil (reparse-symbol indented_block_body) [4389 4409])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4414 4430])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4435 4461]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4361 4365])
+                            ("name" variable nil (reparse-symbol function_parameters) [4367 4371])
+                            ("component" variable nil (reparse-symbol function_parameters) [4373 4382]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4347 4462]))                  
+                :type "class")
+                nil [4133 4462])
+            ("pox.lib.recoco" include nil nil [4463 4494])
+            ("POXCore" type
+               (:documentation "
+  A nexus of of the POX API.
+
+  pox.core.core is a reference to an instance of this class.  This class
+  serves a number of functions.
+
+  An important one is that it can serve as a rendezvous point for
+  components.  A component can register objects on core, and they can
+  then be accessed on the core object (e.g., if you register foo, then
+  there will then be a pox.core.core.foo).  In many cases, this means you
+  won't need to import a module.
+
+  Another purpose to the central registration is that it decouples
+  functionality from a specific module.  If myL2Switch and yourL2Switch
+  both register as \"switch\" and both provide the same API, then it doesn't
+  matter.  Doing this with imports is a pain.
+
+  Additionally, a number of commmon API functions are vailable here.
+  "
+                :superclasses ("EventMixin")
+                :members 
+                  ( ("_eventMixin_events" variable nil (reparse-symbol indented_block_body) [5319 5440])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5469 5487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5492 5511])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5516 5536])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5542 5564])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5569 5596])
+                            ("print" code nil (reparse-symbol indented_block_body) [5601 5619])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5625 5671])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5677 5695]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5458 5462]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5444 5725])
+                    ("banner" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5752 5756]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5728 5855])
+                    ("version_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5890 5894]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5858 5976])
+                    ("callDelayed" function
+                       (:documentation "
+    Calls the function at a later time.
+    This is just a wrapper around a recoco timer.
+    "
+                        :arguments 
+                          ( ("_self" variable nil (reparse-symbol function_parameters) [5996 6001])
+                            ("_seconds" variable nil (reparse-symbol function_parameters) [6003 6011])
+                            ("_func" variable nil (reparse-symbol function_parameters) [6013 6018])
+                            ("args" variable nil (reparse-symbol function_parameters) [6020 6025])
+                            ("kw" variable nil (reparse-symbol function_parameters) [6027 6031]))                          )
+                        (reparse-symbol indented_block_body) [5979 6259])
+                    ("callLater" function
+                       (:documentation "
+    Call the given function with the given arguments within the context
+    of the co-operative threading environment.
+    It actually calls it sooner rather than later. ;)
+    Much of POX is written without locks because it's all thread-safe
+    with respect to itself, as it's written using the recoco co-operative
+    threading library.  If you have a real thread outside of the
+    co-operative thread context, you need to be careful about calling
+    things within it.  This function provides a rather simple way that
+    works for most situations: you give it a callable (like a method)
+    and some arguments, and it will call that callable with those
+    arguments from within the co-operative threader, taking care of
+    synchronization for you.
+    "
+                        :arguments 
+                          ( ("_self" variable nil (reparse-symbol function_parameters) [6277 6282])
+                            ("_func" variable nil (reparse-symbol function_parameters) [6284 6289])
+                            ("args" variable nil (reparse-symbol function_parameters) [6291 6296])
+                            ("kw" variable nil (reparse-symbol function_parameters) [6298 6302]))                          )
+                        (reparse-symbol indented_block_body) [6262 7240])
+                    ("raiseLater" function
+                       (:documentation "
+    This is similar to callLater(), but provides an easy way to raise a
+    revent event from outide the co-operative context.
+    Rather than foo.raiseEvent(BarEvent, baz, spam), you just do
+    core.raiseLater(foo, BarEvent, baz, spam).
+    "
+                        :arguments 
+                          ( ("_self" variable nil (reparse-symbol function_parameters) [7259 7264])
+                            ("_obj" variable nil (reparse-symbol function_parameters) [7266 7270])
+                            ("args" variable nil (reparse-symbol function_parameters) [7272 7277])
+                            ("kw" variable nil (reparse-symbol function_parameters) [7279 7283]))                          )
+                        (reparse-symbol indented_block_body) [7243 7714])
+                    ("getLogger" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7732 7736])
+                            ("args" variable nil (reparse-symbol function_parameters) [7738 7743])
+                            ("kw" variable nil (reparse-symbol function_parameters) [7745 7749]))                          
+                        :documentation "
+    Returns a logger.  Pass it the name you want if you'd like to specify
+    one (e.g., core.getLogger(\"foo\")).  If you don't specify a name, it
+    will make one up based on the module name it is called from.
+    ")
+                        (reparse-symbol indented_block_body) [7717 8026])
+                    ("quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8039 8043]))                          
+                        :documentation "
+    Shut down POX.
+    ")
+                        (reparse-symbol indented_block_body) [8029 8254])
+                    ("_quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8268 8272]))                          )
+                        (reparse-symbol indented_block_body) [8257 8734])
+                    ("_get_python_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8762 8766]))                          )
+                        (reparse-symbol indented_block_body) [8737 9033])
+                    ("_get_platform_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9060 9064]))                          )
+                        (reparse-symbol indented_block_body) [9036 9190])
+                    ("goUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9203 9207]))                          )
+                        (reparse-symbol indented_block_body) [9193 10504])
+                    ("hasComponent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10525 10529])
+                            ("name" variable nil (reparse-symbol function_parameters) [10531 10535]))                          
+                        :documentation "
+    Returns True if a component with the given name has been registered.
+    ")
+                        (reparse-symbol indented_block_body) [10507 10662])
+                    ("registerNew" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10682 10686])
+                            ("__componentClass" variable nil (reparse-symbol function_parameters) [10688 10704])
+                            ("args" variable nil (reparse-symbol function_parameters) [10706 10711])
+                            ("kw" variable nil (reparse-symbol function_parameters) [10713 10717]))                          
+                        :documentation "
+    Give it a class (and optional __init__ arguments), and it will
+    create an instance and register it using the class name.  If the
+    instance has a _core_name property, it will use that instead.
+    It returns the new instance.
+    core.registerNew(FooClass, arg) is roughly equivalent to
+    core.register(\"FooClass\", FooClass(arg)).
+    ")
+                        (reparse-symbol indented_block_body) [10665 11289])
+                    ("register" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11306 11310])
+                            ("name" variable nil (reparse-symbol function_parameters) [11312 11316])
+                            ("component" variable nil (reparse-symbol function_parameters) [11318 11327]))                          
+                        :documentation "
+    Makes the object \"component\" available as pox.core.core.name.
+
+    If only one argument is specified, the given argument is registered
+    using its class name as the name.
+    ")
+                        (reparse-symbol indented_block_body) [11292 11985])
+                    ("call_when_ready" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12013 12017])
+                            ("callback" variable nil (reparse-symbol function_parameters) [12019 12027])
+                            ("components" variable nil (reparse-symbol function_parameters) [12029 12039])
+                            ("name" variable nil (reparse-symbol function_parameters) [12044 12048])
+                            ("args" variable nil (reparse-symbol function_parameters) [12055 12059])
+                            ("kw" variable nil (reparse-symbol function_parameters) [12087 12089]))                          
+                        :documentation "
+    Calls a callback when components are ready.
+    ")
+                        (reparse-symbol indented_block_body) [11992 13055])
+                    ("_try_waiter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13075 13079])
+                            ("entry" variable nil (reparse-symbol function_parameters) [13081 13086]))                          
+                        :documentation "
+    Tries a waiting callback.
+
+    Calls the callback, removes from _waiters, and returns True if
+    all are satisfied.
+    ")
+                        (reparse-symbol indented_block_body) [13058 13835])
+                    ("_try_waiters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13856 13860]))                          
+                        :documentation "
+    Tries to satisfy all component-waiting callbacks
+    ")
+                        (reparse-symbol indented_block_body) [13838 14098])
+                    ("listen_to_dependencies" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14129 14133])
+                            ("sink" variable nil (reparse-symbol function_parameters) [14135 14139])
+                            ("components" variable nil (reparse-symbol function_parameters) [14141 14151])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [14158 14163])
+                            ("short_attrs" variable nil (reparse-symbol function_parameters) [14200 14211])
+                            ("listen_args" variable nil (reparse-symbol function_parameters) [14219 14230]))                          
+                        :documentation "
+    Look through *sink* for handlers named like _handle_component_event.
+    Use that to build a list of components, and append any components
+    explicitly specified by *components*.
+
+    listen_args is a dict of \"component_name\"={\"arg_name\":\"arg_value\",...},
+    allowing you to specify additional arguments to addListeners().
+
+    When all the referenced components are registered, do the following:
+    1) Set up all the event listeners
+    2) Call \"_all_dependencies_met\" on *sink* if it exists
+    3) If attrs=True, set attributes on *sink* for each component
+       (e.g, sink._openflow_ would be set to core.openflow)
+    
+    For example, if topology is a dependency, a handler for topology's
+    SwitchJoin event must be defined as so:
+       def _handle_topology_SwitchJoin (self, ...):
+
+    *NOTE*: The semantics of this function changed somewhat in the
+            Summer 2012 milestone, though its intention remains the same.
+    ")
+                        (reparse-symbol indented_block_body) [14101 16734])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16755 16759])
+                            ("name" variable nil (reparse-symbol function_parameters) [16761 16765]))                          )
+                        (reparse-symbol indented_block_body) [16738 16897]))                  
+                :type "class")
+                nil [4496 16897])
+            ("core" variable nil nil [16898 16914]))          
+    :file "core.py"
+    :pointmax 16915
+    :fsize 16914
+    :lastmodtime '(21344 61961 268901 32000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

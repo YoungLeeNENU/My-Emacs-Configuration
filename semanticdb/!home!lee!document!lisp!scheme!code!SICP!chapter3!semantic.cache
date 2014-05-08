@@ -1,0 +1,140 @@
+;; Object chapter3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter3/"
+  :tables (list 
+   (semanticdb-table "3-1.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-accumulator" function (:arguments ("base")) nil [23 104]))          
+    :file "3-1.scm"
+    :pointmax 209
+    :fsize 208
+    :lastmodtime '(21020 48556 675388 27000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3-2.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-monitored" function (:arguments ("foo")) nil [368 590]))          
+    :file "3-2.scm"
+    :pointmax 831
+    :fsize 830
+    :lastmodtime '(21021 52007 883994 273000)
+    :unmatched-syntax '((semantic-list 626 . 830) (semantic-list 592 . 624) (semantic-list 23 . 366) (semantic-list 23 . 366))
+    )
+   (semanticdb-table "3-3.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-account" function (:arguments ("balance" "password")) nil [23 494])
+            ("acc" variable (:default-value ((505 . 540))) nil [496 544]))          
+    :file "3-3.scm"
+    :pointmax 681
+    :fsize 680
+    :lastmodtime '(21021 52840 555976 683000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3-4.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-account" function (:arguments ("balance" "password")) nil [23 661])
+            ("acc" variable (:default-value ((675 . 710))) nil [663 711]))          
+    :file "3-4.scm"
+    :pointmax 1236
+    :fsize 1235
+    :lastmodtime '(21021 53475 947963 259000)
+    :unmatched-syntax '((semantic-list 713 . 1235) (semantic-list 713 . 1299) (semantic-list 713 . 1278) (semantic-list 713 . 1275) (semantic-list 713 . 1235) (semantic-list 714 . 1236) (semantic-list 23 . 662) (semantic-list 714 . 1188) (semantic-list 23 . 662) (semantic-list 714 . 1172) (semantic-list 23 . 662) (semantic-list 23 . 662) (semantic-list 714 . 1241) (semantic-list 23 . 662) (semantic-list 714 . 1226) (semantic-list 23 . 662) (semantic-list 714 . 1241) (semantic-list 23 . 662) (semantic-list 23 . 662) (semantic-list 713 . 1240) (semantic-list 713 . 980))
+    )
+   (semanticdb-table "3-5.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("rand" variable (:default-value ((547 . 659))) nil [547 675])
+            ("estimate-pi" function (:arguments ("trails")) nil [677 754])
+            ("cesaro-test" function nil nil [756 806])
+            ("monte-carlo" function (:arguments ("trails" "experiment")) nil [808 1107]))          
+    :file "3-5.scm"
+    :pointmax 1129
+    :fsize 1140
+    :lastmodtime '(21024 25840 871612 531000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3-6.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "3-6.scm"
+    :pointmax 2331
+    :fsize 2362
+    :lastmodtime '(21115 26021 887950 148000)
+    :unmatched-syntax '((semantic-list 1449 . 2330) (semantic-list 523 . 963) (semantic-list 365 . 521) (semantic-list 209 . 363) (semantic-list 56 . 198) (semantic-list 1449 . 2330) (semantic-list 523 . 963) (semantic-list 365 . 521) (semantic-list 209 . 363) (semantic-list 56 . 198) (semantic-list 1452 . 2333) (semantic-list 526 . 966) (semantic-list 368 . 524) (semantic-list 212 . 366) (semantic-list 59 . 201))
+    )
+   (semanticdb-table "3-7.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-account" function (:arguments ("balance" "password")) nil [23 806])
+            ("make-joint" function (:arguments ("acc-name" "password" "new-password")) nil [808 1472]))          
+    :file "3-7.scm"
+    :pointmax 2329
+    :fsize 2328
+    :lastmodtime '(21029 29207 527994 844000)
+    :unmatched-syntax '((semantic-list 1596 . 2328) (semantic-list 1528 . 1594) (semantic-list 1474 . 1526) (symbol 2328 . 2337) (semantic-list 1594 . 2326) (semantic-list 1528 . 1592) (semantic-list 1474 . 1526) (semantic-list 1594 . 2326) (semantic-list 1528 . 1592) (semantic-list 1474 . 1526) (semantic-list 1594 . 2318) (semantic-list 1528 . 1592) (semantic-list 1474 . 1526) (semantic-list 1594 . 2310) (semantic-list 1528 . 1592) (semantic-list 1474 . 1526) (semantic-list 1528 . 1592) (semantic-list 1474 . 1526) (semantic-list 1590 . 2298))
+    )
+   (semanticdb-table "3-8.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("f-left" function (:arguments ("num")) nil [23 49])
+            ("f-right" function (:arguments ("num")) nil [51 79]))          
+    :file "3-8.scm"
+    :pointmax 232
+    :fsize 263
+    :lastmodtime '(21024 25053 975632 651000)
+    :unmatched-syntax '((semantic-list 81 . 231))
+    )
+   (semanticdb-table "chp3.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-withdraw" function (:arguments ("balance")) nil [1 196])
+            ("W1" variable (:default-value ((209 . 228))) nil [198 229]))          
+    :file "chp3.scm"
+    :pointmax 306
+    :fsize 345
+    :lastmodtime '(21028 32585 815848 146000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "3-9.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("fact-iter" function (:arguments ("product" "counter" "max-count")) nil [146 301])
+            ("chose-fact" function (:arguments ("exp")) nil [303 465]))          
+    :file "3-9.scm"
+    :pointmax 566
+    :fsize 565
+    :lastmodtime '(21078 33943 337335 80000)
+    :unmatched-syntax '((semantic-list 467 . 565) (semantic-list 100 . 144) (semantic-list 23 . 98) (semantic-list 467 . 565) (semantic-list 100 . 144) (semantic-list 23 . 98) (semantic-list 453 . 551) (semantic-list 303 . 451) (semantic-list 100 . 144) (semantic-list 23 . 98) (semantic-list 303 . 451) (semantic-list 23 . 98) (semantic-list 467 . 567) (semantic-list 100 . 144) (semantic-list 23 . 98) (semantic-list 23 . 98))
+    )
+   (semanticdb-table "binding.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "binding.scm"
+    :pointmax 341
+    :fsize 340
+    :lastmodtime '(21029 34713 123956 142000)
+    :unmatched-syntax '((semantic-list 179 . 269) (semantic-list 5 . 177) (semantic-list 5 . 177) (semantic-list 175 . 265) (semantic-list 1 . 173) (semantic-list 1 . 173) (semantic-list 175 . 261) (semantic-list 1 . 173) (semantic-list 207 . 238) (semantic-list 175 . 206) (semantic-list 1 . 173) (semantic-list 206 . 237) (semantic-list 174 . 205) (semantic-list 1 . 172))
+    )
+   (semanticdb-table "help.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("square" variable (:default-value ((120 . 141))) nil [103 142])
+            ("square-vector" function (:arguments ("vector")) nil [160 217])
+            ("sum-vector" function (:arguments ("vector")) nil [219 325])
+            ("num-1" variable (:default-value ((341 . 463))) nil [327 464])
+            ("num-2" variable (:default-value ((480 . 567))) nil [466 568]))          
+    :file "help.scm"
+    :pointmax 692
+    :fsize 711
+    :lastmodtime '(21040 20098 732035 207000)
+    :unmatched-syntax '((semantic-list 580 . 691) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 703) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 702) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 703) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 678) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 677) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 674) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39) (semantic-list 586 . 659) (semantic-list 144 . 158) (semantic-list 64 . 88) (semantic-list 40 . 63) (semantic-list 9 . 39))
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!SICP!chapter3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

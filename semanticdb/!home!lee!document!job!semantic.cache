@@ -1,0 +1,24 @@
+;; Object job/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "job/"
+  :tables (list 
+    (semanticdb-table "xelatex.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [68 77])
+            ("sys" include nil nil [78 88])
+            ("xelatex" variable nil nil [90 110])
+            ("filename" variable nil nil [111 133])
+            ("cmd" code nil nil [134 158])
+            ("if" code nil nil [160 222]))          
+    :file "xelatex.py"
+    :pointmax 223
+    :fsize 222
+    :lastmodtime '(21270 60200 961896 895000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

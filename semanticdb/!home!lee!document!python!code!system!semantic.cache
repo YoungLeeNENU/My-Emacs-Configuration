@@ -1,0 +1,49 @@
+;; Object system/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "system/"
+  :tables (list 
+   (semanticdb-table "more.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("main" function nil nil [63 102])
+            ("if" code nil nil [103 141]))          
+    :file "more.py"
+    :pointmax 141
+    :fsize 407
+    :lastmodtime '(21258 46038 969526 596000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sysdoc.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [68 78])
+            ("help" code nil nil [189 198]))          
+    :file "sysdoc.py"
+    :pointmax 199
+    :fsize 198
+    :lastmodtime '(21258 45454 633550 971000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "givename.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("filename" code nil nil [63 98])
+            ("touch" code nil nil [99 126])
+            ("chmod" code nil nil [127 158])
+            ("os" code nil nil [160 176])
+            ("os" code nil nil [177 193]))          
+    :file "givename.py"
+    :pointmax 194
+    :fsize 193
+    :lastmodtime '(21203 60456 383980 542000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!system!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

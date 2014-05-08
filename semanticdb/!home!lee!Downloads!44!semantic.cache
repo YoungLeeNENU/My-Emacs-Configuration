@@ -1,0 +1,24 @@
+;; Object 44/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "44/"
+  :tables (list 
+   (semanticdb-table "rename.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [41 50])
+            ("os" include nil nil [51 60])
+            ("sys" include nil nil [61 71])
+            ("file_name" variable nil nil [75 1013])
+            ("Rename" function nil nil [1015 1136])
+            ("if" code nil nil [1137 1174]))          
+    :file "rename.py"
+    :pointmax 1174
+    :fsize 1173
+    :lastmodtime '(21140 48139 976704 975000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!Downloads!44!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

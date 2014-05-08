@@ -1,0 +1,35 @@
+;; Object tcp_python_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tcp_python_server/"
+  :tables (list 
+   (semanticdb-table "server.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [67 76])
+            ("sys" include nil nil [77 87])
+            ("time" include nil nil [88 99])
+            ("random" include nil nil [100 113])
+            ("socket" include nil nil [114 134])
+            ("pattern" variable nil nil [136 184])
+            ("default" variable nil nil [258 306])
+            ("case" variable nil nil [308 348])
+            ("if" code nil nil [349 501])
+            ("BUFSIZE" variable nil nil [501 515])
+            ("ADDR" variable nil nil [516 545])
+            ("server" variable nil nil [547 584])
+            ("server" code nil nil [626 643])
+            ("server" code nil nil [644 660])
+            ("while" code nil nil [662 1035])
+            ("client" code nil nil [1036 1050])
+            ("server" code nil nil [1052 1066]))          
+    :file "server.py"
+    :pointmax 1067
+    :fsize 1112
+    :lastmodtime '(21299 26811 610114 428000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!Dropbox!Project!Socket LED!release!code!Project!Standalone!tcp_python_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,16 +1,30 @@
-(add-to-list 'load-path "/home/neo/.emacs.d/elisp")
-(add-to-list 'load-path "/home/neo/.emacs.d/color-theme-6.6.0")
-(add-to-list 'load-path "/home/neo/.emacs.d/plugins/solarized/emacs-colors-solarized")
+(add-to-list 'load-path
+			 "~/.emacs.d/elisp")
+(add-to-list 'load-path
+			 "~/.emacs.d/color-theme-6.6.0")
+(add-to-list 'load-path
+			 "~/.emacs.d/plugins/solarized/emacs-colors-solarized")
+(add-to-list 'load-path
+			 "~/.emacs.d/plugins/emacs-live")
+(add-to-list 'load-path
+			 "~/.emacs.d/packages/emacs-color-themes")
 
-;;(custom-set-variables
-;; )
-;;(custom-set-faces
-;; '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 111 :width normal :foundry "microsoft" :family "YaHei Consolas Hybrid")))))
+;; han fonts
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+                    charset (font-spec :family "Vera Sans YuanTi Medium"
+                                       :size 15)))
+
+;; (require 'oneonone)
+
+(require 'emacs-color-themes)
+(load-theme 'spolsky t)
+;; (load-theme 'dorsey t)
 
 ;;fullscreen
 (require 'fullscreen)
 
-(require 'color-theme-solarized)
+;; (require 'color-theme-solarized)
 
 ;;color-theme
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0/")
@@ -85,7 +99,7 @@ Based on the TextMate theme Monokai"
      )))
 
 (provide 'color-theme-monokai)
-(color-theme-monokai)
+;; (color-theme-monokai)
 
 ;;monokai ends
 
@@ -94,8 +108,7 @@ Based on the TextMate theme Monokai"
 (add-to-list 'default-frame-alist (cons 'alpha (list 100 0)))
 (defun transform-window (a ab)
   (set-frame-parameter (selected-frame) 'alpha (list a ab))
-  (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))
-  )
+  (add-to-list 'default-frame-alist (cons 'alpha (list a ab))))
 (global-set-key [(f5)] (lambda()
                          (interactive)
                          (transform-window 65 0)))
@@ -181,15 +194,18 @@ Based on the TextMate theme Monokai"
 
 ;;可以递归的使用 minibuffer。
 (setq enable-recursive-minibuffers t)
+
 ;;eshell中使用clear
 (defun eshell/clear ()
   (interactive)
   (let ((inhibit-read-only t))
     (erase-buffer)))
+
 ;;滚动页面时比较舒服，不要整页的滚动
 (setq scroll-step 1
-	  scroll-margin 3
-	  scroll-conservatively 10000)
+      scroll-margin 3
+      scroll-conservatively 10000)
+
 ;;启动最大化
 (defun toggle-fullscreen ()
   (interactive)
@@ -198,8 +214,10 @@ Based on the TextMate theme Monokai"
                          '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
   (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
                          '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-  (fullscreen)
-  )
+  (fullscreen))
 (toggle-fullscreen)
+
 ;;全屏
 (global-set-key (kbd "M-s f") 'fullscreen)
+
+;; emacs live

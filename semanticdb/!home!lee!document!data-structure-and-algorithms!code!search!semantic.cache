@@ -1,0 +1,118 @@
+;; Object search/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search/"
+  :tables (list 
+   (semanticdb-table "search.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("copy" include nil nil [41 77])
+            ("Search" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [126 144])
+                            ("self" variable nil (reparse-symbol indented_block_body) [147 177])
+                            ("self" variable nil (reparse-symbol indented_block_body) [180 209]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [109 113])
+                            ("target" variable nil (reparse-symbol function_parameters) [115 121]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [96 210])
+                    ("liner_search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [228 232])
+                            ("item" variable nil (reparse-symbol function_parameters) [234 238]))                          )
+                        (reparse-symbol indented_block_body) [211 350])
+                    ("bin_search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [366 370])
+                            ("item" variable nil (reparse-symbol function_parameters) [372 376]))                          )
+                        (reparse-symbol indented_block_body) [351 721]))                  
+                :type "class")
+                nil [79 752])
+            ("NSearch" type
+               (:members 
+                  ( ("bin_search2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [791 795])
+                            ("item" variable nil (reparse-symbol function_parameters) [797 801])
+                            ("target" variable nil (reparse-symbol function_parameters) [803 809]))                          )
+                        (reparse-symbol indented_block_body) [775 1177]))                  
+                :type "class")
+                nil [757 1177]))          
+    :file "search.py"
+    :pointmax 1177
+    :fsize 1176
+    :lastmodtime '(21031 10045 571154 234000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bin_search.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("search" include nil nil [41 66])
+            ("origin" variable nil nil [68 130])
+            ("if" code nil nil [141 568]))          
+    :file "bin_search.py"
+    :pointmax 568
+    :fsize 567
+    :lastmodtime '(21031 8306 363198 703000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "problem.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("search" include nil nil [41 67])
+            ("origin" variable nil nil [69 131])
+            ("if" code nil nil [142 655]))          
+    :file "problem.py"
+    :pointmax 1091
+    :fsize 654
+    :lastmodtime '(21031 8085 35204 361000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "liner_sort.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("search" include nil nil [41 66])
+            ("origin" variable nil nil [68 130])
+            ("if" code nil nil [132 578]))          
+    :file "liner_sort.py"
+    :pointmax 578
+    :fsize 577
+    :lastmodtime '(21031 10008 587155 180000)
+    :unmatched-syntax '(($EOI 578 . 578))
+    )
+   (semanticdb-table "clac.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Strong" variable nil nil [41 66])
+            ("Mid" variable nil nil [67 91])
+            ("Null" variable nil nil [92 116])
+            ("Strong" variable nil nil [117 154])
+            ("Mid" variable nil nil [155 186])
+            ("Null" variable nil nil [187 220])
+            ("print" code nil nil [221 233])
+            ("print" code nil nil [234 243])
+            ("print" code nil nil [244 254])
+            ("sum_strong" variable nil nil [255 269])
+            ("sum_mid" variable nil nil [270 281])
+            ("sum_null" variable nil nil [282 294])
+            ("for" code nil nil [295 329])
+            ("for" code nil nil [329 357])
+            ("for" code nil nil [357 387])
+            ("print" code nil nil [387 424]))          
+    :file "clac.py"
+    :pointmax 425
+    :fsize 424
+    :lastmodtime '(21031 10634 751139 170000)
+    :unmatched-syntax '((PRINT 244 . 249) ($EOI 425 . 425) (FOR 256 . 259) ($EOI 278 . 278) (FOR 255 . 258) ($EOI 277 . 277) (FOR 255 . 258) ($EOI 283 . 283))
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

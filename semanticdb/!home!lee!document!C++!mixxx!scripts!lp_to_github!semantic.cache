@@ -1,0 +1,27 @@
+;; Object lp_to_github/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lp_to_github/"
+  :tables (list 
+   (semanticdb-table "fix_mixxx_committers.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [93 107])
+            ("sys" include nil nil [93 107])
+            ("if" code nil nil [109 192])
+            ("print" code nil nil [193 252])
+            ("name_email" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [269 270]))              ) nil [254 419])
+            ("f" variable nil nil [420 441])
+            ("for" code nil nil [442 964])
+            ("print" code nil nil [965 1032]))          
+    :file "fix_mixxx_committers.py"
+    :pointmax 1033
+    :fsize 1032
+    :lastmodtime '(21194 420 135970 617000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!scripts!lp_to_github!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

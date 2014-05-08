@@ -1,0 +1,111 @@
+;; Object intro/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "intro/"
+  :tables (list 
+   (semanticdb-table "daytimetcpcli1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 870]))          
+    :file "daytimetcpcli1.c"
+    :pointmax 871
+    :fsize 870
+    :lastmodtime '(13170 20453 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "unp.h"
+    :file "unp.h"
+    :fsize 14524
+    :lastmodtime '(21216 28778 3231 496000)
+    )
+   (semanticdb-table "daytimetcpcli2.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 872]))          
+    :file "daytimetcpcli2.c"
+    :pointmax 873
+    :fsize 872
+    :lastmodtime '(13170 20461 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "daytimetcpsrvv6.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("time.h" include (:system-flag t) nil [18 35])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [46 55])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56 68]))                  
+                :type "int")
+                nil [37 858]))          
+    :file "daytimetcpsrvv6.c"
+    :pointmax 859
+    :fsize 858
+    :lastmodtime '(21216 30200 767195 117000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "daytimetcpcli.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 923]))          
+    :file "daytimetcpcli.c"
+    :pointmax 924
+    :fsize 961
+    :lastmodtime '(21216 38887 537666 618000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "daytimetcpsrv.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("time.h" include (:system-flag t) nil [18 35])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [46 55])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56 68]))                  
+                :type "int")
+                nil [37 705]))          
+    :file "daytimetcpsrv.c"
+    :pointmax 706
+    :fsize 705
+    :lastmodtime '(21216 38306 457681 475000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!unp!unpv12e!intro!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

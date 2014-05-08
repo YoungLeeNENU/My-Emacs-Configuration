@@ -1,0 +1,52 @@
+;; Object tcpcliserv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tcpcliserv/"
+  :tables (list 
+   (semanticdb-table "tcpserv01.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 784]))          
+    :file "tcpserv01.c"
+    :pointmax 785
+    :fsize 784
+    :lastmodtime '(21337 9661 230411 211000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "unp.h"
+    :file "unp.h"
+    :fsize 14524
+    :lastmodtime '(21216 28778 3231 496000)
+    )
+   (semanticdb-table "tcpcli01.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 471]))          
+    :file "tcpcli01.c"
+    :pointmax 472
+    :fsize 471
+    :lastmodtime '(13170 16158 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!unix-network-programming!unpv12e!tcpcliserv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,190 @@
+;; Object cha1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cha1/"
+  :tables (list 
+   (semanticdb-table "hello.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 372]))          
+    :file "hello.c"
+    :pointmax 373
+    :fsize 372
+    :lastmodtime '(21201 58593 834172 481000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctof.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 266]))          
+    :file "ctof.c"
+    :pointmax 602
+    :fsize 601
+    :lastmodtime '(21029 60509 911218 792000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "char.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 183]))          
+    :file "char.c"
+    :pointmax 184
+    :fsize 183
+    :lastmodtime '(21201 59245 110155 830000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "read.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 411]))          
+    :file "read.c"
+    :pointmax 412
+    :fsize 411
+    :lastmodtime '(21206 31678 471767 131000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "chechsum.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MAXLENGTH" variable (:constant-flag t) nil [49 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [74 83])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [84 97]))                  
+                :type "int")
+                nil [65 624]))          
+    :file "chechsum.c"
+    :pointmax 625
+    :fsize 624
+    :lastmodtime '(21201 62629 651994 998000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXLENGTH" . ((number "1000" 59 . 63)))
+          )
+
+    )
+   (semanticdb-table "longest.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("MAXLINE" variable (:constant-flag t) nil [49 56])
+            ("stdlib.h" include (:system-flag t) nil [41 41])
+            ("MAXLINE" variable (:constant-flag t) nil [49 56])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MAXLINE" variable (:constant-flag t) nil [49 56])
+            ("Getline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("line" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75 87])
+                    ("maxline" variable (:type "int") (reparse-symbol arg-sub-list) [88 100]))                  
+                :type "int")
+                nil [63 101])
+            ("Copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131 141])
+                    ("from" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142 154]))                  
+                :type "void")
+                nil [121 155])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [166 175])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [176 189]))                  
+                :type "int")
+                nil [157 523])
+            ("Getline" function
+               (:arguments 
+                  ( ("line" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [537 549])
+                    ("maxline" variable (:type "int") (reparse-symbol arg-sub-list) [550 562]))                  
+                :type "int")
+                nil [525 802])
+            ("Copy" function
+               (:arguments 
+                  ( ("to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [814 824])
+                    ("from" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [825 837]))                  
+                :type "void")
+                nil [804 912]))          
+    :file "longest.c"
+    :pointmax 913
+    :fsize 938
+    :lastmodtime '(21206 32872 935736 592000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXLINE" . ((number "1000" 57 . 61)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cha1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

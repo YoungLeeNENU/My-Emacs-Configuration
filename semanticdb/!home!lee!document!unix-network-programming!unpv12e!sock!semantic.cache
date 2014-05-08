@@ -1,0 +1,105 @@
+;; Object sock/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sock/"
+  :tables (list 
+   (semanticdb-table "error.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("stdarg.h" include (:system-flag t) nil [51 70])
+            ("ourhdr.h" include nil nil [97 116])
+            ("err_doit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [139 143])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [144 157])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158 166]))                  
+                :type "void")
+                nil [118 167])
+            ("pname" variable
+               (:pointer 1
+                :type "char")
+                nil [169 188])
+            ("err_ret" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [341 357])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [358 362]))                  
+                :type "void")
+                nil [309 446])
+            ("err_sys" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [559 575])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [576 580]))                  
+                :type "void")
+                nil [527 665])
+            ("err_dump" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [792 808])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [809 813]))                  
+                :type "void")
+                nil [758 965])
+            ("err_msg" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1080 1096])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1097 1101]))                  
+                :type "void")
+                nil [1048 1185])
+            ("err_quit" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1302 1318])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1319 1323]))                  
+                :type "void")
+                nil [1268 1408])
+            ("err_doit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("errnoflag" variable (:type "int") (reparse-symbol arg-sub-list) [1509 1523])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1524 1540])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1541 1552]))                  
+                :type "void")
+                nil [1488 1930]))          
+    :file "error.c"
+    :pointmax 1931
+    :fsize 1930
+    :lastmodtime '(11579 2624 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ourhdr.h"
+    :file "ourhdr.h"
+    :fsize 4498
+    :lastmodtime '(11579 2626 0 0)
+    )
+   )
+  :file "!home!lee!document!unix-network-programming!unpv12e!sock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

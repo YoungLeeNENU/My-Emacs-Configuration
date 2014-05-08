@@ -4,17 +4,40 @@
 (setq mc/cmds-to-run-for-all
       '(
 		autopair-insert-opening
+		autopair-insert-or-skip-quote
 		autopair-skip-close-maybe
 		beginning-of-buffer
 		c-electric-delete-forward
+		c-electric-lt-gt
+		c-electric-pound
 		c-electric-semi&comma
+		c-electric-star
+		comment-region
+		cperl-electric-paren
+		cperl-electric-rparen
+		cperl-electric-semi
+		cua-cut-region
+		cua-paste
 		end-of-buffer
+		forward-sexp
+		kill-region
+		lua-electric-match
+		org-beginning-of-line
+		org-delete-char
+		org-kill-line
+		org-self-insert-command
+		org-yank
+		py-electric-colon
+		py-electric-comment
 		python-indent-dedent-line-backspace
+		slime-space
+		tempo-x-space
 		))
 
 (setq mc/cmds-to-run-once
       '(
 		eval-print-last-sexp
 		python-indent-electric-colon
+		yas-expand
 		yas/expand
 		))

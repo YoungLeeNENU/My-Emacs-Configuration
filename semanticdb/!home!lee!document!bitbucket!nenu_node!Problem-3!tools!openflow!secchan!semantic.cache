@@ -1,0 +1,190 @@
+;; Object secchan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secchan/"
+  :tables (list 
+   (semanticdb-table "emerg-flow.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("arpa/inet.h" include (:system-flag t) nil [1726 1748])
+            ("config.h" include (:system-flag t) nil [1750 1769])
+            ("stdlib.h" include (:system-flag t) nil [1770 1789])
+            ("stddef.h" include (:system-flag t) nil [1790 1809])
+            ("string.h" include (:system-flag t) nil [1810 1829])
+            ("netinet/in.h" include (:system-flag t) nil [1830 1853])
+            ("errno.h" include (:system-flag t) nil [1854 1872])
+            ("openflow/openflow.h" include nil nil [1874 1904])
+            ("openflow/private-ext.h" include nil nil [1905 1938])
+            ("util.h" include nil nil [1940 1957])
+            ("vconn.h" include nil nil [1958 1976])
+            ("rconn.h" include nil nil [1977 1995])
+            ("secchan.h" include nil nil [1996 2016])
+            ("status.h" include nil nil [2017 2036])
+            ("timeval.h" include nil nil [2037 2057])
+            ("sat-math.h" include nil nil [2058 2079])
+            ("ofpbuf.h" include nil nil [2080 2099])
+            ("emerg-flow.h" include nil nil [2100 2123])
+            ("THIS_MODULE" variable (:constant-flag t) nil [2132 2143])
+            ("vlog.h" include nil nil [2159 2176])
+            ("emerg_flow_context" type
+               (:members 
+                  ( ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2207 2239])
+                    ("secchan" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("secchan" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2241 2271])
+                    ("local_rconn" variable
+                       (:pointer 1
+                        :type ("rconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2273 2299])
+                    ("remote_rconn" variable
+                       (:pointer 1
+                        :type ("rconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2301 2328])
+                    ("prev_state" variable (:type "int") (reparse-symbol classsubparts) [2330 2345])
+                    ("state" variable (:type "int") (reparse-symbol classsubparts) [2347 2357]))                  
+                :type "struct")
+                nil [2178 2360])
+            ("emerg_flow_status_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("status_reply" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2395 2417])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2418 2425]))                  
+                :type "void")
+                nil [2362 2426])
+            ("emerg_flow_periodic_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2462 2469]))                  
+                :type "void")
+                nil [2427 2470])
+            ("emerg_flow_status_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("status_reply" variable
+                       (:pointer 1
+                        :type ("status_reply" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2505 2539])
+                    ("context_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2540 2555]))                  
+                :type "void")
+                nil [2472 2818])
+            ("emerg_flow_periodic_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("context_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2855 2870]))                  
+                :type "void")
+                nil [2820 3874])
+            ("emerg_flow_start" function
+               (:arguments 
+                  ( ("secchan" variable
+                       (:pointer 1
+                        :type ("secchan" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3898 3922])
+                    ("settings" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("settings" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3923 3955])
+                    ("switch_status" variable
+                       (:pointer 1
+                        :type ("switch_status" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3959 3995])
+                    ("local_rconn" variable
+                       (:pointer 1
+                        :type ("rconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3999 4025])
+                    ("remote_rconn" variable
+                       (:pointer 1
+                        :type ("rconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4026 4053]))                  
+                :type "void")
+                nil [3876 4750]))          
+    :file "emerg-flow.c"
+    :pointmax 4751
+    :fsize 4894
+    :lastmodtime '(21340 41708 337460 448000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("THIS_MODULE" . ((symbol "VLM_emerg_flow" 2144 . 2158)))
+          )
+
+    )
+   (semanticdb-table "secchan.h"
+    :file "secchan.h"
+    :fsize 5601
+    :lastmodtime '(21340 41073 905476 671000)
+    )
+   (semanticdb-table "status.h"
+    :file "status.h"
+    :fsize 2483
+    :lastmodtime '(21340 41073 905476 671000)
+    )
+   (semanticdb-table "emerg-flow.h"
+    :file "emerg-flow.h"
+    :fsize 2024
+    :lastmodtime '(21340 41073 905476 671000)
+    )
+   (semanticdb-table "automake.mk"
+    :file "automake.mk"
+    :fsize 827
+    :lastmodtime '(21340 41073 913476 670000)
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!openflow!secchan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,113 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "login.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [68 77])
+            ("sys" include nil nil [78 88])
+            ("md5" include nil nil [89 99])
+            ("urllib" include nil nil [100 113])
+            ("urllib2" include nil nil [114 128])
+            ("uname" variable nil nil [130 148])
+            ("email" variable nil nil [149 180])
+            ("path" variable nil nil [181 209])
+            ("Usr" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [265 288])
+                            ("self" variable nil (reparse-symbol indented_block_body) [297 316])
+                            ("self" variable nil (reparse-symbol indented_block_body) [325 346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [355 373])
+                            ("self" variable nil (reparse-symbol indented_block_body) [382 419])
+                            ("self" variable nil (reparse-symbol indented_block_body) [428 465])
+                            ("self" variable nil (reparse-symbol indented_block_body) [474 510])
+                            ("self" code nil (reparse-symbol indented_block_body) [519 538])
+                            ("if" code nil (reparse-symbol indented_block_body) [579 714])
+                            ("self" code nil (reparse-symbol indented_block_body) [722 741]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [241 245])
+                            ("usrname" variable nil (reparse-symbol function_parameters) [247 254]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [228 742])
+                    ("Login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [756 760]))                          )
+                        (reparse-symbol indented_block_body) [746 935])
+                    ("Logout" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [950 954]))                          )
+                        (reparse-symbol indented_block_body) [939 993]))                  
+                :type "class")
+                nil [211 993])
+            ("me" variable nil nil [994 1009])
+            ("me" code nil nil [1010 1020])
+            ("me" code nil nil [1021 1032]))          
+    :file "login.py"
+    :pointmax 1887
+    :fsize 1938
+    :lastmodtime '(21291 46060 372968 709000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "add.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "add.py"
+    :pointmax 68
+    :fsize 67
+    :lastmodtime '(21290 64459 127990 650000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "local.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "local.py"
+    :pointmax 68
+    :fsize 67
+    :lastmodtime '(21290 64475 87990 242000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nlp.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "nlp.py"
+    :pointmax 68
+    :fsize 67
+    :lastmodtime '(21290 64488 283989 903000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "history.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [68 78])
+            ("urllib" include nil nil [79 92])
+            ("timeit" include nil nil [93 106])
+            ("user" variable nil nil [108 117])
+            ("question" variable nil nil [129 142])
+            ("thanks" variable nil nil [154 165])
+            ("upvote" variable nil nil [177 188]))          
+    :file "history.py"
+    :pointmax 200
+    :fsize 239
+    :lastmodtime '(21291 295 983955 548000)
+    :unmatched-syntax '((NEWLINE 159 . 160))
+    )
+   (semanticdb-table "touch.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "touch.py"
+    :pointmax 68
+    :fsize 67
+    :lastmodtime '(21290 64497 971989 658000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

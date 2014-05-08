@@ -1,0 +1,163 @@
+;; Object chapter2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter2/"
+  :tables (list 
+   (semanticdb-table "2-17.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("last-pair" function (:arguments ("sample")) nil [24 123]))          
+    :file "2-17.scm"
+    :pointmax 180
+    :fsize 179
+    :lastmodtime '(20919 13168 304089 474000)
+    :unmatched-syntax '((semantic-list 125 . 179))
+    )
+   (semanticdb-table "2-56.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("same-variable?" function (:arguments ("v1" "v2")) nil [180 284])
+            ("make-sum" function (:arguments ("a1" "a2")) nil [444 612])
+            ("make-product" function (:arguments ("m1" "m2")) nil [784 998])
+            ("make-exponentiation" function (:arguments ("s1" "s2")) nil [1169 1539])
+            ("deriv" function (:arguments ("exp" "var")) nil [1541 2177]))          
+    :file "2-56.scm"
+    :pointmax 2444
+    :fsize 2623
+    :lastmodtime '(20919 13371 544092 977000)
+    :unmatched-syntax '((semantic-list 2179 . 2443) (semantic-list 1122 . 1167) (semantic-list 1081 . 1120) (semantic-list 1000 . 1079) (semantic-list 733 . 782) (semantic-list 684 . 731) (semantic-list 614 . 682) (semantic-list 399 . 442) (semantic-list 354 . 397) (semantic-list 286 . 352) (semantic-list 92 . 178) (semantic-list 40 . 90))
+    )
+   (semanticdb-table "transform.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("transform" function (:arguments ("statement")) nil [18 253]))          
+    :file "transform.scm"
+    :pointmax 676
+    :fsize 675
+    :lastmodtime '(20942 54738 835963 211000)
+    :unmatched-syntax '((semantic-list 443 . 675) (semantic-list 399 . 441) (semantic-list 364 . 398) (semantic-list 333 . 363) (semantic-list 304 . 332) (semantic-list 255 . 303))
+    )
+   (semanticdb-table "2-57.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("same-variable?" function (:arguments ("v1" "v2")) nil [178 259])
+            ("make-sum" function (:arguments ("a1" "a2")) nil [635 803])
+            ("make-product" function (:arguments ("m1" "m2")) nil [1087 1708])
+            ("make-exponentiation" function (:arguments ("s1" "s2")) nil [1879 2249])
+            ("deriv" function (:arguments ("exp" "var")) nil [2251 2887]))          
+    :file "2-57.scm"
+    :pointmax 3200
+    :fsize 3447
+    :lastmodtime '(20919 13384 748093 205000)
+    :unmatched-syntax '((semantic-list 2889 . 3199) (semantic-list 1832 . 1877) (semantic-list 1791 . 1830) (semantic-list 1710 . 1789) (semantic-list 924 . 1061) (semantic-list 875 . 922) (semantic-list 805 . 873) (semantic-list 373 . 633) (semantic-list 334 . 362) (semantic-list 272 . 322) (semantic-list 95 . 156) (semantic-list 35 . 71))
+    )
+   (semanticdb-table "2-59.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("intersection-set" function (:arguments ("set1" "set2")) nil [292 518])
+            ("union-set" function (:arguments ("set1" "set2")) nil [539 746]))          
+    :file "2-59.scm"
+    :pointmax 984
+    :fsize 1023
+    :lastmodtime '(20922 47949 848590 264000)
+    :unmatched-syntax '((semantic-list 748 . 983) (semantic-list 184 . 271) (semantic-list 41 . 164))
+    )
+   (semanticdb-table "2-60.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("union-set" function (:arguments ("set1" "set2")) nil [244 295])
+            ("intersection-set" function (:arguments ("set1" "set2")) nil [316 542]))          
+    :file "2-60.scm"
+    :pointmax 792
+    :fsize 823
+    :lastmodtime '(20958 19275 315941 899000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-61.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "2-61.scm"
+    :pointmax 395
+    :fsize 434
+    :lastmodtime '(20958 45957 773030 444000)
+    :unmatched-syntax '((semantic-list 230 . 394) (semantic-list 56 . 228))
+    )
+   (semanticdb-table "2-62.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("union-set" function (:arguments ("set1" "set2")) nil [53 417]))          
+    :file "2-62.scm"
+    :pointmax 486
+    :fsize 507
+    :lastmodtime '(20958 47750 820984 600000)
+    :unmatched-syntax '((semantic-list 419 . 485))
+    )
+   (semanticdb-table "2-63.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("entry" function (:arguments ("tree")) nil [24 56])
+            ("left-branch" function (:arguments ("tree")) nil [57 96])
+            ("right-branch" function (:arguments ("tree")) nil [97 138])
+            ("make-tree" function (:arguments ("entry" "left" "right")) nil [139 200])
+            ("tree->list-1" function (:arguments ("tree")) nil [202 368])
+            ("tree->list-2" function (:arguments ("tree")) nil [370 629]))          
+    :file "2-63.scm"
+    :pointmax 1234
+    :fsize 1233
+    :lastmodtime '(20967 61900 927501 841000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "check.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [42 73])
+            ("re" include nil nil [74 83])
+            ("os" include nil nil [84 93])
+            ("sys" include nil nil [94 104])
+            ("subprocess" include nil nil [105 122])
+            ("num" variable nil nil [124 132])
+            ("chapter" variable nil nil [133 148])
+            ("total" variable nil nil [149 170])
+            ("finished, unfinished" code nil nil [171 200])
+            ("tail" variable nil nil [202 245])
+            ("for" code nil nil [247 770])
+            ("percentage" code nil nil [779 818])
+            ("print" code nil nil [820 847])
+            ("print" code nil nil [848 879])
+            ("print" code nil nil [880 929]))          
+    :file "check.py"
+    :pointmax 930
+    :fsize 929
+    :lastmodtime '(20969 56670 805196 231000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-64.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-tree" function (:arguments ("entry" "left" "right")) nil [76 139])
+            ("list->tree" function (:arguments ("elements")) nil [141 782]))          
+    :file "2-64.scm"
+    :pointmax 1451
+    :fsize 1480
+    :lastmodtime '(20971 36942 983807 466000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "2-65.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("make-tree" function (:arguments ("entry" "left" "right")) nil [142 205])
+            ("tree->list-1" function (:arguments ("tree")) nil [207 373])
+            ("tree->list-2" function (:arguments ("tree")) nil [375 634])
+            ("list->tree" function (:arguments ("elements")) nil [636 1277])
+            ("intersection-set" function (:arguments ("set1" "set2")) nil [1279 1321])
+            ("union-set" function (:arguments ("set1" "set2")) nil [1323 1358]))          
+    :file "2-65.scm"
+    :pointmax 208
+    :fsize 1462
+    :lastmodtime '(20971 35656 87840 369000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!SICP!SICP-Practice!chapter2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,27 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "cookies.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("setCookie" function (:arguments 
+              ( ("sName" variable nil (reparse-symbol FormalParameterList) [2221 2226])
+                ("sValue" variable nil (reparse-symbol FormalParameterList) [2228 2234])
+                ("options" variable nil (reparse-symbol FormalParameterList) [2236 2243]))              ) nil [2202 3112])
+            ("getCookie" function (:arguments 
+              ( ("sName" variable nil (reparse-symbol FormalParameterList) [3338 3343]))              ) nil [3319 3526])
+            ("deleteCookie" function (:arguments 
+              ( ("sName" variable nil (reparse-symbol FormalParameterList) [3977 3982])
+                ("options" variable nil (reparse-symbol FormalParameterList) [3984 3991]))              ) nil [3955 4084]))          
+    :file "cookies.js"
+    :pointmax 4110
+    :fsize 4109
+    :lastmodtime '(20967 57781 215607 174000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!git!gitweb!static!js!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

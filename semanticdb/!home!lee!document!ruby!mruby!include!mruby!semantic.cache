@@ -1,0 +1,281 @@
+;; Object mruby/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mruby/"
+  :tables (list 
+   (semanticdb-table "proc.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MRUBY_PROC_H" variable (:constant-flag t) nil [104 116])
+            ("mruby/irep.h" include nil nil [118 141])
+            ("REnv" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("MRB_OBJECT_HEADER" variable (:type "int") (reparse-symbol classsubparts) [205 223])
+                    ("stack" variable
+                       (:pointer 1
+                        :type ("mrb_value" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [226 243])
+                    ("mid" variable (:type ("mrb_sym" type (:type "class") nil nil)) (reparse-symbol classsubparts) [246 258])
+                    ("cioff" variable (:type "int") (reparse-symbol classsubparts) [261 271]))                  )
+                (reparse-symbol extern-c-contents) [189 274])
+            ("MRB_ENV_STACK_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [284 301])
+            ("MRB_ENV_UNSHARE_STACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [326 347])
+            ("MRB_ENV_STACK_SHARED_P" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [377 399])
+            ("RProc" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("MRB_OBJECT_HEADER" variable (:type "int") (reparse-symbol classsubparts) [439 457])
+                    ("body" variable (:type ("" type
+                         (:members 
+                            ( ("irep" variable
+                                 (:pointer 1
+                                  :type ("mrb_irep" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [472 487])
+                              ("func" variable (:type ("mrb_func_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [492 508]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [460 518])
+                    ("target_class" variable
+                       (:pointer 1
+                        :type ("RClass" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [521 549])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("REnv" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [552 569]))                  )
+                (reparse-symbol extern-c-contents) [422 572])
+            ("MRB_ASPEC_REQ" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [601 614])
+            ("MRB_ASPEC_OPT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [656 669])
+            ("MRB_ASPEC_REST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [711 725])
+            ("MRB_ASPEC_POST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [761 775])
+            ("MRB_ASPEC_KEY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [815 828])
+            ("MRB_ASPEC_KDICT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [869 884])
+            ("MRB_ASPEC_BLOCK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [918 933])
+            ("MRB_PROC_CFUNC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [963 977])
+            ("MRB_PROC_CFUNC_P" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [990 1006])
+            ("MRB_PROC_STRICT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1055 1070])
+            ("MRB_PROC_STRICT_P" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1083 1100])
+            ("mrb_proc_ptr" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1151 1163])
+            ("mrb_proc_new" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RProc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1228 1239])
+                    ("" variable
+                       (:pointer 1
+                        :type ("mrb_irep" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1240 1250]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1201 1251])
+            ("mrb_proc_new_cfunc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RProc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1285 1296])
+                    ("" variable (:type ("mrb_func_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1297 1308]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1252 1309])
+            ("mrb_closure_new" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RProc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1340 1351])
+                    ("" variable
+                       (:pointer 1
+                        :type ("mrb_irep" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1352 1362]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1310 1363])
+            ("mrb_closure_new_cfunc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RProc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("mrb" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1400 1415])
+                    ("func" variable (:type ("mrb_func_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1416 1432])
+                    ("nlocals" variable (:type "int") (reparse-symbol arg-sub-list) [1433 1445]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1364 1446])
+            ("mrb_proc_copy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("RProc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1466 1482])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("RProc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1483 1499]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1447 1500])
+            ("mrb_f_send" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("mrb_value" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mrb" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1560 1575])
+                    ("self" variable (:type ("mrb_value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1576 1591]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1539 1592])
+            ("mrb_proc_new_cfunc_with_env" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RProc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1724 1735])
+                    ("" variable (:type ("mrb_func_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1736 1747])
+                    ("" variable (:type ("mrb_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1748 1756])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mrb_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1774]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1682 1775])
+            ("mrb_cfunc_env_get" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("mrb_value" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1804 1815])
+                    ("" variable (:type ("mrb_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1816 1824]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1776 1825])
+            ("mruby/khash.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1827 1851]))          
+    :file "proc.h"
+    :pointmax 1983
+    :fsize 1982
+    :lastmodtime '(21311 30568 54240 362000)
+    :unmatched-syntax '((semantic-list 1865 . 1899) (symbol 1852 . 1865))
+    :lexical-table 
+        '(("MRB_ASPEC_OPT" (spp-arg-list ("a") 669 . 672) . ((semantic-list "(((a) >> 13) & 0x1f)" 682 . 702)))
+          ("MRB_ASPEC_REST" (spp-arg-list ("a") 725 . 728) . ((semantic-list "((a) & (1<<12))" 737 . 752)))
+          ("MRB_ASPEC_KEY" (spp-arg-list ("a") 828 . 831) . ((semantic-list "(((a) >> 2) & 0x1f)" 841 . 860)))
+          ("MRB_ENV_STACK_LEN" (spp-arg-list ("e") 301 . 304) . ((semantic-list "((e)->flags)" 305 . 317)))
+          ("MRB_ENV_STACK_SHARED_P" (spp-arg-list ("e") 399 . 402) . ((semantic-list "((e)->cioff >= 0)" 403 . 420)))
+          ("MRUBY_PROC_H")
+          ("MRB_ASPEC_REQ" (spp-arg-list ("a") 614 . 617) . ((semantic-list "(((a) >> 18) & 0x1f)" 627 . 647)))
+          ("MRB_PROC_STRICT_P" (spp-arg-list ("p") 1100 . 1103) . ((semantic-list "(((p)->flags & MRB_PROC_STRICT) != 0)" 1104 . 1141)))
+          ("MRB_PROC_STRICT" . ((number "256" 1071 . 1074)))
+          ("mrb_proc_ptr" (spp-arg-list ("v") 1163 . 1166) . ((semantic-list "((struct RProc*)(mrb_ptr(v)))" 1170 . 1199)))
+          ("MRB_ENV_UNSHARE_STACK" (spp-arg-list ("e") 347 . 350) . ((semantic-list "((e)->cioff = -1)" 351 . 368)))
+          ("MRB_PROC_CFUNC" . ((number "128" 978 . 981)))
+          ("MRB_PROC_CFUNC_P" (spp-arg-list ("p") 1006 . 1009) . ((semantic-list "(((p)->flags & MRB_PROC_CFUNC) != 0)" 1010 . 1046)))
+          ("MRB_ASPEC_POST" (spp-arg-list ("a") 775 . 778) . ((semantic-list "(((a) >> 7) & 0x1f)" 787 . 806)))
+          ("MRB_ASPEC_KDICT" (spp-arg-list ("a") 884 . 887) . ((semantic-list "((a) & (1<<1))" 895 . 909)))
+          ("MRB_ASPEC_BLOCK" (spp-arg-list ("a") 933 . 936) . ((semantic-list "((a) & 1)" 944 . 953)))
+          )
+
+    )
+   (semanticdb-table "irep.h"
+    :file "irep.h"
+    :fsize 1145
+    :lastmodtime '(21311 30568 50240 362000)
+    )
+   (semanticdb-table "khash.h"
+    :file "khash.h"
+    :fsize 13278
+    :lastmodtime '(21311 30568 54240 362000)
+    )
+   )
+  :file "!home!lee!document!ruby!mruby!include!mruby!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

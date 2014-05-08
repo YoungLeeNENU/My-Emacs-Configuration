@@ -1,0 +1,396 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "wrapsock.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [871 887])
+            ("Accept" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [900 907])
+                    ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [908 928])
+                    ("salenptr" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [929 949]))                  
+                :type "int")
+                nil [889 1183])
+            ("Bind" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1195 1202])
+                    ("sa" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1203 1229])
+                    ("salen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1230 1246]))                  
+                :type "void")
+                nil [1185 1305])
+            ("Connect" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1320 1327])
+                    ("sa" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1328 1354])
+                    ("salen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1355 1371]))                  
+                :type "void")
+                nil [1307 1436])
+            ("Getpeername" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1455 1462])
+                    ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1463 1483])
+                    ("salenptr" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1484 1504]))                  
+                :type "void")
+                nil [1438 1580])
+            ("Getsockname" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1599 1606])
+                    ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1607 1627])
+                    ("salenptr" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1628 1648]))                  
+                :type "void")
+                nil [1582 1724])
+            ("Getsockopt" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1742 1749])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1750 1760])
+                    ("optname" variable (:type "int") (reparse-symbol arg-sub-list) [1761 1773])
+                    ("optval" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1774 1787])
+                    ("optlenptr" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1788 1809]))                  
+                :type "void")
+                nil [1726 1904])
+            ("Isfdtype" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1919 1926])
+                    ("fdtype" variable (:type "int") (reparse-symbol arg-sub-list) [1927 1938]))                  
+                :type "int")
+                nil [1906 2031])
+            ("Listen" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2066 2073])
+                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [2074 2086]))                  
+                :type "void")
+                nil [2054 2285])
+            ("Recv" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2506 2513])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2514 2524])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2539])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2540 2550]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [2493 2651])
+            ("Recvfrom" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2670 2677])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2678 2688])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2689 2703])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2704 2714])
+                    ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2718 2738])
+                    ("salenptr" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2739 2759]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [2653 2882])
+            ("Recvmsg" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2900 2907])
+                    ("msg" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2908 2927])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2928 2938]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [2884 3037])
+            ("Select" function
+               (:arguments 
+                  ( ("nfds" variable (:type "int") (reparse-symbol arg-sub-list) [3050 3059])
+                    ("readfds" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3060 3076])
+                    ("writefds" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3077 3094])
+                    ("exceptfds" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3095 3113])
+                    ("timeout" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3121 3145]))                  
+                :type "int")
+                nil [3039 3298])
+            ("Send" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3310 3317])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3318 3334])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3335 3349])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [3350 3360]))                  
+                :type "void")
+                nil [3300 3434])
+            ("Sendto" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3448 3455])
+                    ("ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3456 3472])
+                    ("nbytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3473 3487])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [3488 3498])
+                    ("sa" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3503 3529])
+                    ("salen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3530 3546]))                  
+                :type "void")
+                nil [3436 3635])
+            ("Sendmsg" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3650 3657])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3658 3683])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [3684 3694]))                  
+                :type "void")
+                nil [3637 3941])
+            ("Setsockopt" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3959 3966])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [3967 3977])
+                    ("optname" variable (:type "int") (reparse-symbol arg-sub-list) [3978 3990])
+                    ("optval" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3991 4010])
+                    ("optlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4011 4028]))                  
+                :type "void")
+                nil [3943 4120])
+            ("Shutdown" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [4136 4143])
+                    ("how" variable (:type "int") (reparse-symbol arg-sub-list) [4144 4152]))                  
+                :type "void")
+                nil [4122 4213])
+            ("Sockatmark" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [4230 4237]))                  
+                :type "int")
+                nil [4215 4326])
+            ("Socket" function
+               (:arguments 
+                  ( ("family" variable (:type "int") (reparse-symbol arg-sub-list) [4360 4371])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4372 4381])
+                    ("protocol" variable (:type "int") (reparse-symbol arg-sub-list) [4382 4395]))                  
+                :type "int")
+                nil [4349 4496])
+            ("Socketpair" function
+               (:arguments 
+                  ( ("family" variable (:type "int") (reparse-symbol arg-sub-list) [4531 4542])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4543 4552])
+                    ("protocol" variable (:type "int") (reparse-symbol arg-sub-list) [4553 4566])
+                    ("fd" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4567 4575]))                  
+                :type "void")
+                nil [4515 4676]))          
+    :file "wrapsock.c"
+    :pointmax 4677
+    :fsize 4676
+    :lastmodtime '(13275 24782 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "error.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("stdarg.h" include (:system-flag t) nil [19 38])
+            ("syslog.h" include (:system-flag t) nil [65 84])
+            ("daemon_proc" variable (:type "int") nil [106 123])
+            ("err_doit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [182 186])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [187 191])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [192 205])
+                    ("" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [206 214]))                  
+                :type "void")
+                nil [161 215])
+            ("err_ret" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [309 325])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [326 330]))                  
+                :type "void")
+                nil [296 424])
+            ("err_sys" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [518 534])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [535 539]))                  
+                :type "void")
+                nil [505 633])
+            ("err_dump" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [740 756])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [757 761]))                  
+                :type "void")
+                nil [726 922])
+            ("err_msg" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1018 1034])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1035 1039]))                  
+                :type "void")
+                nil [1005 1133])
+            ("err_quit" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1230 1246])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1247 1251]))                  
+                :type "void")
+                nil [1216 1345])
+            ("err_doit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("errnoflag" variable (:type "int") (reparse-symbol arg-sub-list) [1458 1472])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1473 1483])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1484 1500])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1501 1512]))                  
+                :type "void")
+                nil [1437 2050]))          
+    :file "error.c"
+    :pointmax 2051
+    :fsize 2050
+    :lastmodtime '(21219 6464 390754 761000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "unp.h"
+    :file "unp.h"
+    :fsize 14524
+    :lastmodtime '(21216 28778 3231 496000)
+    )
+   (semanticdb-table "addrinfo.h"
+    :file "addrinfo.h"
+    :fsize 1964
+    :lastmodtime '(13193 60439 0 0)
+    )
+   (semanticdb-table "str_echo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("str_echo" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [33 44]))                  
+                :type "void")
+                nil [19 230]))          
+    :file "str_echo.c"
+    :pointmax 231
+    :fsize 230
+    :lastmodtime '(12619 65369 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!unix-network-programming!unpv12e!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

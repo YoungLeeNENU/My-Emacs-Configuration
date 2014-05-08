@@ -1,0 +1,28 @@
+;; Object etc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "etc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("../Make.vars" include nil nil [1 22])
+            ("dist_bin_SCRIPTS" variable (:default-value ("gen-nox-cert.sh")) nil [23 62])
+            ("bin_SCRIPTS" variable (:default-value ("gen-nox-cert.sh")) nil [62 96])
+            ("data_DATA" variable (:default-value ("noxca.cnf")) nil [96 121])
+            ("pkgsysconf_DATA" variable (:default-value ("noxca.key.insecure" "noxca.cert" "nox.meta.json")) nil [122 193])
+            ("EXTRA_DIST" variable (:default-value ("noxca.cnf" "nox.meta.json")) nil [194 237])
+            ("noxca.key.insecure" function nil nil [238 501])
+            ("noxca.cert" function nil nil [238 501])
+            ("all-local" function (:arguments ("noxca.key.insecure" "noxca.cert")) nil [502 680])
+            ("clean-local" function nil nil [681 780]))          
+    :file "Makefile.am"
+    :pointmax 780
+    :fsize 779
+    :lastmodtime '(21209 59903 780730 709000)
+    :unmatched-syntax '((shell-command 733 . 779) (bol 732 . 732))
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!nox!src!etc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object web-spider/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web-spider/"
+  :tables (list 
+   (semanticdb-table "listening.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "listening.py"
+    :pointmax 2617
+    :fsize 2746
+    :lastmodtime '(21314 1935 647583 775000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!meituan!cvproj!web-spider!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

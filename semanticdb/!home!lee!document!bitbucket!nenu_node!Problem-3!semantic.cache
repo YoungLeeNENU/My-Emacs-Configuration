@@ -1,0 +1,75 @@
+;; Object Problem-3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Problem-3/"
+  :tables (list 
+   (semanticdb-table "README.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("README" section nil nil [240 2250])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2250 3870])
+            ("README" section (:members 
+              ( ("README" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 第三题" anchor nil nil [4057 4060])
+                        ("1.1 要求" anchor nil nil [4093 4096])
+                        ("1.1.1 流量负载均衡调度" anchor nil nil [4132 4135]))                      ) nil [3987 4271])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section (:members 
+                              ( ("Org" anchor nil nil [6332 6335])
+                                ("Emacs" anchor nil nil [6389 6392])
+                                ("Validate XHTML 1.0" anchor nil nil [6459 6462]))                              ) nil [5232 6558]))                          ) nil [4677 6558]))                      ) nil [4271 6558]))                  ) nil [3926 6558]))              ) nil [3870 6558]))          
+    :file "README.html"
+    :pointmax 6558
+    :fsize 8243
+    :lastmodtime '(21340 33514 193669 959000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,52 @@
+;; Object Body/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Body/"
+  :tables (list 
+   (semanticdb-table "01_ab.htm"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CLHS: Section 1.1.2" section nil nil [123 588])
+            ("1.1.2 History" section (:members 
+              ( ("1.1.2 History" section (:members 
+                  ( ("1.1.2 History" section (:members 
+                      ( ("John McCarthy" anchor nil nil [1338 1341])
+                        ("Digital Equipment Corporation" anchor nil nil [1689 1692])
+                        ("DEC" anchor nil nil [3445 3448])
+                        ("Massachusetts Institute of Technology" anchor nil nil [3608 3611])
+                        ("Stanford University" anchor nil nil [3687 3690])
+                        ("Richard Greenblatt" anchor nil nil [5196 5199])
+                        ("MIT" anchor nil nil [5320 5323])
+                        ("Xerox" anchor nil nil [5522 5525])
+                        ("Xerox" anchor nil nil [5771 5774])
+                        ("Symbolics" anchor nil nil [5839 5842])
+                        ("Scott Fahlman" anchor nil nil [6372 6375])
+                        ("CMU" anchor nil nil [6437 6440])
+                        ("MIT" anchor nil nil [6697 6700])
+                        ("Stanford University" anchor nil nil [7067 7070])
+                        ("Richard P. Gabriel" anchor nil nil [7179 7182])
+                        ("Anthony Hearn" anchor nil nil [7630 7633])
+                        ("University of Utah" anchor nil nil [7718 7721])
+                        ("Scheme" anchor nil nil [8467 8470])
+                        ("Guy L. Steele Jr." anchor nil nil [8598 8601])
+                        ("MIT" anchor nil nil [9709 9712])
+                        ("Howard Cannon" anchor nil nil [9967 9970])
+                        ("Xerox" anchor nil nil [10033 10036])
+                        ("Symbolics" anchor nil nil [10917 10920])
+                        ("Xerox" anchor nil nil [11105 11108])
+                        ("CMU" anchor nil nil [11198 11201])
+                        ("Fahlman" anchor nil nil [11612 11615])
+                        ("Daniel Weinreb" anchor nil nil [11658 11661])
+                        ("Steele" anchor nil nil [11719 11722])
+                        ("Gabriel" anchor nil nil [11776 11779])
+                        ("Copyright 1996-2005, LispWorks Ltd.  All rights reserved." anchor nil nil [13394 13397]))                      ) nil [1217 13653]))                  ) nil [595 13653]))              ) nil [588 13653]))          
+    :file "01_ab.htm"
+    :pointmax 13653
+    :fsize 13652
+    :lastmodtime '(16986 46037 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lisp!common lisp!hyperspec!HyperSpec!Body!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

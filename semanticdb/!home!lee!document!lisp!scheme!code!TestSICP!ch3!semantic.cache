@@ -1,0 +1,32 @@
+;; Object ch3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch3/"
+  :tables (list 
+   (semanticdb-table "rand.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("rand" variable (:default-value ((552 . 664))) nil [544 672])
+            ("estimate-pi" function (:arguments ("trails")) nil [674 751])
+            ("cesaro-test" function nil nil [753 803])
+            ("monte-carlo" function (:arguments ("trails" "experiment")) nil [805 1104]))          
+    :file "rand.scm"
+    :pointmax 1155
+    :fsize 1173
+    :lastmodtime '(21024 27797 523562 503000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "env.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("square" variable (:default-value ((63 . 84))) nil [46 85]))          
+    :file "env.scm"
+    :pointmax 130
+    :fsize 137
+    :lastmodtime '(21024 28273 767550 328000)
+    :unmatched-syntax '((semantic-list 87 . 129) (semantic-list 81 . 123) (semantic-list 9 . 38) (semantic-list 76 . 118) (semantic-list 9 . 33) (semantic-list 65 . 107) (semantic-list 9 . 22) (semantic-list 66 . 108) (semantic-list 9 . 23))
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!TestSICP!ch3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

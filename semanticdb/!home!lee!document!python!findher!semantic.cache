@@ -1,0 +1,65 @@
+;; Object findher/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "findher/"
+  :tables (list 
+   (semanticdb-table "listening.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("xlrd" include nil nil [62 73])
+            ("urllib" include nil nil [74 104])
+            ("token" variable nil nil [106 157])
+            ("data_1" variable nil nil [179 231])
+            ("table_1" variable nil nil [232 260])
+            ("data_2" variable nil nil [261 302])
+            ("table_2" variable nil nil [303 331])
+            ("check" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [343 348]))              ) nil [333 1109])
+            ("cet" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [1118 1123]))              ) nil [1110 1710])
+            ("'''		
+		if dpt == \"信息与软件工程学院\" and year == \"2010\":
+			# print stuname, dpt, year
+			filename = stuname + \".jpg\"
+			cmd = \"cp -rf ../english/\" + filename + \" ./ruanjian10\"
+			print cmd
+			os.system(cmd)
+		if dpt == \"经济学院\" and year == \"2011\":		
+			print stuname, dpt, year
+			# filename = stuname + \".jpg\"
+			# cmd = \"cp -rf ../english/\" + filename + \" ./ruanjian11\"
+			# print cmd
+			# os.system(cmd)			
+'''" code nil nil [1714 2119])
+            ("listening" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [2138 2143]))              ) nil [2124 2509])
+            ("if" code nil nil [2536 2617]))          
+    :file "listening.py"
+    :pointmax 2617
+    :fsize 2746
+    :lastmodtime '(21194 49035 20390 436000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cet.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 33])
+            ("sys" include nil nil [34 44])
+            ("xlrd" include nil nil [45 56])
+            ("data" variable nil nil [58 108])
+            ("table" variable nil nil [109 133])
+            ("check" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [145 150]))              ) nil [135 1426])
+            ("if" code nil nil [1427 1471]))          
+    :file "cet.py"
+    :pointmax 1471
+    :fsize 1564
+    :lastmodtime '(21332 64577 525178 339000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!findher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

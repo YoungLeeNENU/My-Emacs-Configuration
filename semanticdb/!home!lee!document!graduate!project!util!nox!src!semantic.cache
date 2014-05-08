@@ -1,0 +1,213 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("Make.vars" include nil nil [1 19])
+            ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [20 47])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [47 71])
+            ("EXTRA_DIST" variable (:default-value ("LICENSE")) nil [71 98])
+            ("bin_PROGRAMS" variable (:default-value ("nox_core")) nil [155 179])
+            ("pkglib_LTLIBRARIES" variable nil nil [179 200])
+            ("nox_core_SOURCES" variable (:default-value ("include/component.hh" "include/connection-manager.hh" "include/deployer.hh" "include/dso-deployer.hh" "include/kernel.hh" "include/static-deployer.hh" "builtin/component.cc" "builtin/connection-manager.cc" "builtin/deployer.cc" "builtin/dso-deployer.cc" "builtin/event-dispatcher.cc" "builtin/kernel.cc" "builtin/static-deployer.cc" "nox_main.cc")) nil [201 861])
+            ("CLEANFILES" variable nil nil [862 875])
+            ("nox_core_CPPFLAGS" variable (:default-value ("$(AM_CPPFLAGS)")) nil [876 941])
+            ("nox_core_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-dlopen" "force")) nil [942 1020])
+            ("nox_core_LDADD" variable (:default-value ("$(LDADD)" "$(builddir)/lib/libnoxcore.la" "$(BOOST_THREAD_LIB)" "$(BOOST_FILESYSTEM_LIB)" "$(BOOST_SYSTEM_LIB)" "$(OPENSSL_LIBS)" "$(LIBADD_DL)" "$(LIBADD_DLOPEN)" "$(LIBADD_SHL_LOAD)" "$(LIBLTDL)")) nil [1021 1496])
+            ("nox_core_DEPENDENCIES" variable nil nil [1497 1521])
+            ("all-local" function (:arguments ("nox-all-local")) nil [2132 2158])
+            ("clean-local" function (:arguments ("nox-clean-local")) nil [2158 2187]))          
+    :file "Makefile.am"
+    :pointmax 2224
+    :fsize 2223
+    :lastmodtime '(21209 59903 788730 709000)
+    :unmatched-syntax '((symbol 2206 . 2223) (punctuation 2204 . 2205) (symbol 2187 . 2204) (bol 2187 . 2187) (semantic-list 135 . 152) (punctuation 134 . 135) (symbol 130 . 133) (symbol 120 . 129) (symbol 116 . 119) (INCLUDE 108 . 115) (punctuation 106 . 107) (symbol 98 . 105) (bol 98 . 98))
+    )
+   (semanticdb-table "Make.vars"
+    :file "Make.vars"
+    :fsize 2598
+    :lastmodtime '(21209 59903 956730 705000)
+    )
+   (semanticdb-table "nox_main.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("config.h" include nil nil [1907 1926])
+            ("fcntl.h" include (:system-flag t) nil [1928 1946])
+            ("getopt.h" include (:system-flag t) nil [1947 1966])
+            ("signal.h" include (:system-flag t) nil [1967 1986])
+            ("sys/types.h" include (:system-flag t) nil [1987 2009])
+            ("sys/stat.h" include (:system-flag t) nil [2010 2031])
+            ("netinet/in.h" include (:system-flag t) nil [2032 2055])
+            ("netinet/ip6.h" include (:system-flag t) nil [2056 2080])
+            ("inttypes.h" include (:system-flag t) nil [2081 2102])
+            ("unistd.h" include (:system-flag t) nil [2103 2122])
+            ("list" include (:system-flag t) nil [2124 2139])
+            ("set" include (:system-flag t) nil [2140 2154])
+            ("string" include (:system-flag t) nil [2155 2172])
+            ("boost/bind.hpp" include (:system-flag t) nil [2174 2199])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [2200 2231])
+            ("boost/function.hpp" include (:system-flag t) nil [2232 2261])
+            ("boost/foreach.hpp" include (:system-flag t) nil [2262 2290])
+            ("boost/lambda/lambda.hpp" include (:system-flag t) nil [2291 2325])
+            ("boost/thread.hpp" include (:system-flag t) nil [2326 2353])
+            ("bootstrap-complete-event.hh" include nil nil [2355 2393])
+            ("event-dispatcher.hh" include nil nil [2394 2424])
+            ("command-line.hh" include nil nil [2425 2451])
+            ("component.hh" include nil nil [2452 2475])
+            ("connection-manager.hh" include nil nil [2476 2508])
+            ("dso-deployer.hh" include nil nil [2509 2535])
+            ("event.hh" include nil nil [2536 2555])
+            ("fault.hh" include nil nil [2556 2575])
+            ("kernel.hh" include nil nil [2576 2596])
+            ("shutdown-event.hh" include nil nil [2597 2625])
+            ("static-deployer.hh" include nil nil [2626 2655])
+            ("vlog.hh" include nil nil [2656 2674])
+            ("vlog-socket.hh" include nil nil [2699 2724])
+            ("vigil" using (:type ("vigil" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2819 2841])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2842 2862])
+            ("unnamed" type
+               (:members 
+                  ( ("lg" function
+                       (:prototype-flag t
+                        :type ("Vlog_module" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2921 2944])
+                    ("Application_name" type
+                       (:typedef ("std::string" type (:type "class") nil nil)
+                        :superclasses "std::string"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2946 2983])
+                    ("Application_param" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("Application_name" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::pair"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2984 3051])
+                    ("Application_list" type
+                       (:typedef ("std::list" type
+                             (:template-specifier 
+                                ( ("Application_param" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::list"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3052 3106])
+                    ("parse_application_list" function
+                       (:arguments 
+                          ( ("optind" variable (:type "int") (reparse-symbol arg-sub-list) [3148 3159])
+                            ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3160 3169])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3170 3182]))                          
+                        :type ("Application_list" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3108 4332])
+                    ("hello" function
+                       (:arguments 
+                          ( ("program_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4345 4370]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4334 4477])
+                    ("usage" function
+                       (:arguments 
+                          ( ("program_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4543 4568]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4532 6216])
+                    ("daemon" function (:type "int") (reparse-symbol namespacesubparts) [6218 6954])
+                    ("verbose" variable (:type "bool") (reparse-symbol namespacesubparts) [6956 6977])
+                    ("verbosity" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [7002 7027])
+                    ("init_log" function (:type "void") (reparse-symbol namespacesubparts) [7036 7625]))                  
+                :type "namespace")
+                nil [2908 7628])
+            ("remove_pid_file" function
+               (:arguments 
+                  ( ("pid_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7679 7700])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7701 7714]))                  
+                :type ("Disposition" type (:type "class") nil nil))
+                nil [7651 7762])
+            ("finish_booting" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Kernel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7791 7799])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Application_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7800 7824]))                  
+                :type "void")
+                nil [7764 7825])
+            ("post_shutdown" variable (:type "int") nil [7882 7896])
+            ("shutdown" function
+               (:arguments 
+                  ( ("param" variable (:type "int") (reparse-symbol arg-sub-list) [7911 7921]))                  
+                :type "void")
+                nil [7897 8006])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8017 8026])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8027 8040]))                  
+                :type "int")
+                nil [8008 16058])
+            ("finish_booting" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("kernel" variable
+                       (:pointer 1
+                        :type ("Kernel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16087 16102])
+                    ("applications" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Application_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16103 16140]))                  
+                :type "void")
+                nil [16060 17119]))          
+    :file "nox_main.cc"
+    :pointmax 17120
+    :fsize 17119
+    :lastmodtime '(21209 59903 864730 707000)
+    :unmatched-syntax '((punctuation 7880 . 7881) (semantic-list 7878 . 7880) (VOID 7874 . 7878) (punctuation 7873 . 7874) (symbol 7865 . 7873) (punctuation 7864 . 7865) (punctuation 7863 . 7864) (symbol 7858 . 7863) (string 2936 . 2942))
+    )
+   )
+  :file "!home!lee!document!graduate!project!util!nox!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

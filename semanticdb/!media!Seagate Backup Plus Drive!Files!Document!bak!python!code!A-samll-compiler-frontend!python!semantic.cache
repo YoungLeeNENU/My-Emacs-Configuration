@@ -1,0 +1,60 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "error.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [32 41])
+            ("sys" include nil nil [42 52])
+            ("tag" include nil nil [53 63])
+            ("de_comment" include nil nil [64 81])
+            ("symbol_list" include nil nil [82 100])
+            ("lexeme" include nil nil [101 114])
+            ("lex_error" variable nil nil [116 159])
+            ("cmt_error" variable nil nil [173 232])
+            ("ch_error" variable nil nil [244 284])
+            ("flag" variable nil nil [300 308])
+            ("error_sence" function (:arguments 
+              ( ("element" variable nil (reparse-symbol function_parameters) [334 341])
+                ("line" variable nil (reparse-symbol function_parameters) [343 347]))              ) nil [318 1577]))          
+    :file "error.py"
+    :pointmax 1577
+    :fsize 1706
+    :lastmodtime '(20707 2311 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tag.py"
+    :file "tag.py"
+    :fsize 280
+    :lastmodtime '(20707 2311 0 0)
+    )
+   (semanticdb-table "de_comment.py"
+    :file "de_comment.py"
+    :fsize 683
+    :lastmodtime '(20749 53411 0 0)
+    )
+   (semanticdb-table "symbol_list.py"
+    :file "symbol_list.py"
+    :fsize 2250
+    :lastmodtime '(20707 2311 0 0)
+    )
+   (semanticdb-table "lexeme.py"
+    :file "lexeme.py"
+    :fsize 2125
+    :lastmodtime '(20707 2311 0 0)
+    )
+   (semanticdb-table "r_d_p.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "r_d_p.py"
+    :pointmax 21279
+    :fsize 22054
+    :lastmodtime '(20707 2311 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!media!Seagate Backup Plus Drive!Files!Document!bak!python!code!A-samll-compiler-frontend!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

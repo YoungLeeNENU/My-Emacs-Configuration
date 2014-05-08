@@ -1,0 +1,30 @@
+;; Object ch4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch4/"
+  :tables (list 
+   (semanticdb-table "quick.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 96]))          
+    :file "quick.c"
+    :pointmax 97
+    :fsize 96
+    :lastmodtime '(21319 47368 516979 62000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C!cpro!ch4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

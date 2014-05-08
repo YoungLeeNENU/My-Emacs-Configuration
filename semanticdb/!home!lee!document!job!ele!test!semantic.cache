@@ -1,0 +1,18 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "utree.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "utree.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21304 8936 667441 145000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!ele!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

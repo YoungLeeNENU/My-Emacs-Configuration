@@ -1,0 +1,227 @@
+;; Object C++/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C++/"
+  :tables (list 
+   (semanticdb-table "dynamic.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("dynamic.h" include nil nil [21 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [43 63])
+            ("Dynamic" function
+               (:constructor-flag t
+                :parent "Dynamic"
+                :type ("Dynamic" type (:type "class") nil nil))
+                nil [65 112])
+            ("Dynamic" function
+               (:constructor-flag t
+                :parent "Dynamic"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [131 139]))                  
+                :type ("Dynamic" type (:type "class") nil nil))
+                nil [114 168])
+            ("getNum" function
+               (:parent "Dynamic"
+                :type "int")
+                nil [170 211])
+            ("getTotal" function
+               (:parent "Dynamic"
+                :type "int")
+                nil [213 258])
+            ("setNum" function
+               (:parent "Dynamic"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [281 289]))                  
+                :type "void")
+                nil [260 316])
+            ("setTotal" function
+               (:parent "Dynamic"
+                :type "void")
+                nil [318 395])
+            ("Dynamic" function
+               (:destructor-flag t
+                :parent "Dynamic"
+                :type "void")
+                nil [397 420]))          
+    :file "dynamic.cpp"
+    :pointmax 421
+    :fsize 420
+    :lastmodtime '(21193 64877 107998 209000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dynamic.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_DYNAMIC_H_" variable (:constant-flag t) nil [29 40])
+            ("iostream" include (:system-flag t) nil [42 61])
+            ("Dynamic" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [79 86])
+                    ("Dynamic" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Dynamic" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [91 101])
+                    ("Dynamic" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [114 122]))                          
+                        :type ("Dynamic" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [106 123])
+                    ("getNum" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [128 141])
+                    ("getTotal" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [146 161])
+                    ("setNum" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [178 186]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [166 187])
+                    ("setTotal" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [192 208])
+                    ("Dynamic" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [213 232])
+                    ("private" label nil (reparse-symbol classsubparts) [238 246])
+                    ("num" variable (:type "int") (reparse-symbol classsubparts) [251 259])
+                    ("total" variable (:type "int") (reparse-symbol classsubparts) [264 274]))                  
+                :type "class")
+                nil [63 277]))          
+    :file "dynamic.h"
+    :pointmax 304
+    :fsize 303
+    :lastmodtime '(21010 14852 247565 286000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_DYNAMIC_H_")
+          )
+
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("dynamic.h" include nil nil [21 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [42 62])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [73 82])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83 96]))                  
+                :type "int")
+                nil [64 592]))          
+    :file "main.cpp"
+    :pointmax 593
+    :fsize 592
+    :lastmodtime '(21010 15564 783577 562000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sample.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_SAMPLE_H_" variable (:constant-flag t) nil [28 38])
+            ("Sample" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [55 62])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [67 79])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [93 99]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [84 100])
+                    ("sub" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [114 120]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [105 121])
+                    ("mul" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [135 141]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [126 142])
+                    ("div" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [156 162]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [147 163]))                  
+                :type "class")
+                nil [40 166]))          
+    :file "sample.hpp"
+    :pointmax 192
+    :fsize 195
+    :lastmodtime '(21324 35453 947940 900000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SAMPLE_H_")
+          )
+
+    )
+   (semanticdb-table "sample.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("init" function
+               (:parent "Sample"
+                :type "void")
+                nil [1 24])
+            ("add" function
+               (:parent "Sample"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [43 49]))                  
+                :type "void")
+                nil [26 53])
+            ("sub" function
+               (:parent "Sample"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [72 78]))                  
+                :type "void")
+                nil [55 82])
+            ("mul" function
+               (:parent "Sample"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [101 107]))                  
+                :type "void")
+                nil [84 111])
+            ("div" function
+               (:parent "Sample"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [130 136]))                  
+                :type "void")
+                nil [113 140]))          
+    :file "sample.cpp"
+    :pointmax 140
+    :fsize 140
+    :lastmodtime '(21324 35479 807940 239000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C++!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,63 @@
+;; Object 1991/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1991/"
+  :tables (list 
+     (semanticdb-table "8.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [22 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [42 62])
+            ("ArcNode" type
+               (:members 
+                  ( ("in_degree" variable (:type "int") (reparse-symbol classsubparts) [196 210])
+                    ("weight" variable (:type "int") (reparse-symbol classsubparts) [215 226])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ArcNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [231 245]))                  
+                :type "struct")
+                nil [175 248])
+            ("GRAPH" variable
+               (:pointer 1
+                :type ("ArcNode" type (:type "class") nil nil))
+                nil [258 273])
+            ("matrix" variable
+               (:dereference 2
+                :type "int")
+                nil [284 465])
+            ("DegreeList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [483 488]))                  
+                :type "void")
+                nil [467 489])
+            ("degree" variable (:type "int") nil [491 506])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [517 526])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [527 540]))                  
+                :type "int")
+                nil [508 691])
+            ("DegreeList" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [723 728]))                  
+                :type "void")
+                nil [707 738]))          
+    :file "8.cpp"
+    :pointmax 720
+    :fsize 822
+    :lastmodtime '(21158 59726 729791 733000)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!home!lee!document!data-structure-and-algorithms!hit!1991!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

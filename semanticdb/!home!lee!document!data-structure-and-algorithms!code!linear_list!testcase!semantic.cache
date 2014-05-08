@@ -1,0 +1,427 @@
+;; Object testcase/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testcase/"
+  :tables (list 
+   (semanticdb-table "llist.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cstdlib" include (:system-flag t) nil [21 39])
+            ("adt.hpp" include nil nil [40 58])
+            ("lib.hpp" include nil nil [59 77])
+            ("llistopts.hpp" include nil nil [78 102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [103 123])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [134 143])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [144 157]))                  
+                :type "int")
+                nil [125 365]))          
+    :file "llist.cpp"
+    :pointmax 366
+    :fsize 365
+    :lastmodtime '(21089 14282 49053 238000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adt.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cstdlib" include (:system-flag t) nil [21 39])
+            ("adt.hpp" include nil nil [40 58])
+            ("lib.hpp" include nil nil [59 77])
+            ("llistopts.hpp" include nil nil [78 102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [103 123])
+            ("InitList" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153 163]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [137 397])
+            ("DestroyList" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [418 428]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [399 625])
+            ("ListInsert" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [645 655])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [656 666])
+                    ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [667 678]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [627 1232])
+            ("ListDelete" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1262])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1263 1273]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [1234 1505])
+            ("ClearList" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1534]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [1507 1759])
+            ("ListEmpty" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1778 1787]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [1761 1911])
+            ("ListLength" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1931 1940]))                  
+                :type ("Length" type (:type "class") nil nil))
+                nil [1913 2092])
+            ("GetElem" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2111 2120])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2121 2131]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [2094 2321])
+            ("Locate" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2337 2346])
+                    ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2347 2358])
+                    ("" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2359 2376]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [2323 2617])
+            ("Map" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2630 2640])
+                    ("" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2641 2660]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [2619 2837])
+            ("First" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2853 2862]))                  
+                :type ("Postion" type (:type "class") nil nil))
+                nil [2839 2904])
+            ("Next" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2920 2929])
+                    ("p" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2930 2940]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [2906 3077])
+            ("Prior" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3094 3103])
+                    ("p" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3104 3114]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [3079 3251]))          
+    :file "adt.cpp"
+    :pointmax 3252
+    :fsize 3251
+    :lastmodtime '(21096 57834 226044 446000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adt.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("llistopts.hpp" include nil nil [33 57])
+            ("TRUE" variable (:constant-flag t) nil [67 71])
+            ("FALSE" variable (:constant-flag t) nil [82 87])
+            ("OK" variable (:constant-flag t) nil [98 100])
+            ("ERROR" variable (:constant-flag t) nil [111 116])
+            ("INFEASIBLE" variable (:constant-flag t) nil [127 137])
+            ("OVERFLOW" variable (:constant-flag t) nil [149 157])
+            ("LIST_INIT_SIZE" variable (:constant-flag t) nil [170 184])
+            ("LIST_EXTRA" variable (:constant-flag t) nil [197 207])
+            ("ElemType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [212 233])
+            ("Status" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [234 253])
+            ("Length" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [254 273])
+            ("Postion" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [274 294])
+            ("Sqlist" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("elem" variable
+                             (:pointer 1
+                              :type ("ElemType" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [334 349])
+                          ("listsize" variable (:type "int") (reparse-symbol classsubparts) [354 367]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [313 376])
+            ("InitList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [508 518]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [492 519])
+            ("DestroyList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [539 549]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [520 550])
+            ("ListInsert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [569 579])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [580 590])
+                    ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [591 602]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [551 603])
+            ("ListDelete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [622 632])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [633 643]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [604 644])
+            ("ClearList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [662 672]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [645 673])
+            ("ListEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [691 700]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [674 701])
+            ("ListLength" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [720 729]))                  
+                :type ("Length" type (:type "class") nil nil))
+                nil [702 730])
+            ("GetElem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [748 757])
+                    ("i" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [758 768]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [731 769])
+            ("Locate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [784 793])
+                    ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [794 805])
+                    ("" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [806 823]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [770 845])
+            ("Map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [857 867])
+                    ("" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 887]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [846 899])
+            ("First" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [914 923]))                  
+                :type ("Postion" type (:type "class") nil nil))
+                nil [900 924])
+            ("Next" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [939 948])
+                    ("p" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [949 959]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [925 960])
+            ("Prior" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [976 985])
+                    ("p" variable (:type ("Postion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [986 996]))                  
+                :type ("ElemType" type (:type "class") nil nil))
+                nil [961 997]))          
+    :file "adt.hpp"
+    :pointmax 1020
+    :fsize 1019
+    :lastmodtime '(21096 58079 70053 16000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OK" . ((number "1" 76 . 77)))
+          ("_ADT_H_")
+          ("TRUE" . ((number "1" 47 . 48)))
+          ("INFEASIBLE" . ((punctuation "-" 113 . 114) (number "1" 114 . 115)))
+          ("LIST_INIT_SIZE" . ((number "100" 160 . 163)))
+          ("FALSE" . ((number "0" 63 . 64)))
+          ("LIST_EXTRA" . ((number "10" 183 . 185)))
+          ("OVERFLOW" . ((punctuation "-" 133 . 134) (number "2" 134 . 135)))
+          ("ERROR" . ((number "0" 92 . 93)))
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("llist_array" function nil nil [1 70])
+            ("llist_pointer" function nil nil [80 80])
+            ("llist_cursor" function nil nil [80 80])
+            ("clean" function nil nil [72 93]))          
+    :file "Makefile"
+    :pointmax 93
+    :fsize 92
+    :lastmodtime '(21086 30001 259975 190000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lib.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LIB_H_" variable (:constant-flag t) nil [25 32])
+            ("Same" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59 70])
+                    ("b" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71 82]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [47 83])
+            ("Double" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98 109]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [84 110])
+            ("SetList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126 136]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [111 137])
+            ("CheckList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155 164]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [138 165]))          
+    :file "lib.hpp"
+    :pointmax 188
+    :fsize 187
+    :lastmodtime '(21095 43266 643999 18000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LIB_H_")
+          )
+
+    )
+   (semanticdb-table "lib.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cstdlib" include (:system-flag t) nil [21 39])
+            ("adt.hpp" include nil nil [40 58])
+            ("lib.hpp" include nil nil [59 77])
+            ("llistopts.hpp" include nil nil [78 102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [103 123])
+            ("Same" function
+               (:arguments 
+                  ( ("a" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150 161])
+                    ("b" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162 173]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [138 245])
+            ("Double" function
+               (:arguments 
+                  ( ("e" variable (:type ("ElemType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261 272]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [247 306])
+            ("SetList" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("Sqlist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 333]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [308 507])
+            ("CheckList" function
+               (:arguments 
+                  ( ("L" variable (:type ("Sqlist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [526 535]))                  
+                :type ("Status" type (:type "class") nil nil))
+                nil [509 698]))          
+    :file "lib.cpp"
+    :pointmax 700
+    :fsize 699
+    :lastmodtime '(21089 14313 49052 443000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "llistopts.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LLISTOPTS_H_" variable (:constant-flag t) nil [31 44])
+            ("USE_ARRAY" variable (:constant-flag t) nil [63 72]))          
+    :file "llistopts.hpp"
+    :pointmax 166
+    :fsize 195
+    :lastmodtime '(21089 13542 41072 160000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("USE_ARRAY")
+          ("_LLISTOPTS_H_")
+          )
+
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!linear_list!testcase!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

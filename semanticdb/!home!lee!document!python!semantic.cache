@@ -1,0 +1,377 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+   (semanticdb-table "another.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 38])
+            ("sys" include nil nil [24 38])
+            ("xlrd" include nil nil [39 50])
+            ("urllib" include nil nil [51 81])
+            ("data" variable nil nil [83 133])
+            ("table" variable nil nil [134 158])
+            ("find" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [169 174]))              ) nil [160 919])
+            ("download" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [945 949])
+                ("id_num" variable nil (reparse-symbol function_parameters) [951 957])
+                ("location" variable nil (reparse-symbol function_parameters) [959 967]))              ) nil [932 1236])
+            ("if" code nil nil [1241 1284]))          
+    :file "another.py"
+    :pointmax 1284
+    :fsize 1307
+    :lastmodtime '(21104 60838 603642 50000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "target.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("xlrd" include nil nil [35 46])
+            ("data" variable nil nil [48 98])
+            ("table" variable nil nil [99 123])
+            ("check" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [135 140]))              ) nil [125 889])
+            ("if" code nil nil [890 935]))          
+    :file "target.py"
+    :pointmax 935
+    :fsize 1016
+    :lastmodtime '(21105 2699 576263 782000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tmp.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("main" function nil nil [24 65])
+            ("if" code nil nil [70 108]))          
+    :file "tmp.py"
+    :pointmax 108
+    :fsize 107
+    :lastmodtime '(20940 6564 951978 438000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dig.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [24 33])
+            ("os" include nil nil [34 43])
+            ("sys" include nil nil [44 54])
+            ("origin_url_list" variable nil nil [56 92])
+            ("new_url_list" variable nil nil [93 130])
+            ("dig" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [140 143]))              ) nil [132 192])
+            ("ping" function (:arguments 
+              ( ("url_list" variable nil (reparse-symbol function_parameters) [202 210]))              ) nil [193 565])
+            ("if" code nil nil [566 720]))          
+    :file "dig.py"
+    :pointmax 720
+    :fsize 727
+    :lastmodtime '(20964 51056 378567 167000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dayi.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 34])
+            ("xlrd" include nil nil [35 46])
+            ("urllib" include nil nil [47 77])
+            ("public_url" variable nil nil [79 126])
+            ("cm_file" variable nil nil [128 156])
+            ("cm" variable nil nil [157 189])
+            ("cm_table" variable nil nil [190 215])
+            ("cm_col" variable nil nil [216 252])
+            ("jsj_file" variable nil nil [253 288])
+            ("jsj" variable nil nil [289 323])
+            ("jsj_table" variable nil nil [324 351])
+            ("jsj_col" variable nil nil [352 390])
+            ("jj_file" variable nil nil [391 417])
+            ("jj" variable nil nil [418 450])
+            ("jj_table" variable nil nil [451 476])
+            ("jj_col" variable nil nil [477 513])
+            ("ms_file" variable nil nil [514 540])
+            ("ms" variable nil nil [541 573])
+            ("ms_table" variable nil nil [574 599])
+            ("ms_col" variable nil nil [600 636])
+            ("s_file" variable nil nil [637 661])
+            ("s" variable nil nil [662 692])
+            ("s_table" variable nil nil [693 716])
+            ("s_col" variable nil nil [717 751])
+            ("yy_file" variable nil nil [752 778])
+            ("yy" variable nil nil [779 811])
+            ("yy_table" variable nil nil [812 837])
+            ("yy_col" variable nil nil [838 874])
+            ("zf_file" variable nil nil [875 901])
+            ("zf" variable nil nil [902 934])
+            ("zf_table" variable nil nil [935 960])
+            ("zf_col" variable nil nil [961 997])
+            ("rj_file" variable nil nil [998 1029])
+            ("rj" variable nil nil [1030 1062])
+            ("rj_table" variable nil nil [1063 1088])
+            ("rj_col" variable nil nil [1089 1125])
+            ("get_image" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [1141 1146])
+                ("length" variable nil (reparse-symbol function_parameters) [1148 1154])
+                ("location" variable nil (reparse-symbol function_parameters) [1156 1164]))              ) nil [1127 1645])
+            ("main" function nil nil [1646 2155])
+            ("if" code nil nil [2156 2195]))          
+    :file "dayi.py"
+    :pointmax 2195
+    :fsize 2382
+    :lastmodtime '(21040 25198 452006 987000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bsearch.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("search" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [12 17])
+                ("element" variable nil (reparse-symbol function_parameters) [19 26]))              ) nil [1 527])
+            ("if" code nil nil [532 761])
+            ("'''
+def bin_search(array):
+    print array
+    head = array[0:len(array) - 1]
+    tail = array[len(array) - 1]
+    front = head[0]
+    back = head[-1:][0]
+    
+    position, end = 0, len(head) - 1
+
+    if tail < front:
+        print \"no\"
+        print array[position + 1:end + 1]
+        return position, end
+    elif tail > back:
+        print \"yes\"
+        print array[position + 1:end + 1]        
+        return end, end
+    else:
+        left, right = 0, len(head) - 1
+        while left < right:
+            mid = (left + right) / 2
+            print head[left], head[mid], head[right]
+            if tail < head[mid]:
+                print tail, \"<\", head[mid]
+                position = mid - 1
+                right = mid - 1
+                print head[left], head[right], head[position], \"\\n\"
+            elif tail > head[mid]:
+                print tail, \">\", head[mid]
+                position = mid
+                left = mid + 1
+                print head[left], head[right], head[position], \"\\n\"
+            else:
+                print tail, \"==\", head[mid], \"\\n\"
+                position = mid
+                return position, end
+        print array[position + 1:end + 1]
+        return position, end
+
+num = raw_input()
+test = [98, 51, 74, 49, 39, 2, 57, 39, 14]
+test.sort()
+test.append(int(num))
+
+print bin_search(test)
+'''" code nil nil [763 2104]))          
+    :file "bsearch.py"
+    :pointmax 2105
+    :fsize 2104
+    :lastmodtime '(20933 33178 961840 984000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "read.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 38])
+            ("sys" include nil nil [24 38])
+            ("xlrd" include nil nil [39 50])
+            ("urllib" include nil nil [51 81])
+            ("public_url" variable nil nil [83 130])
+            ("data" variable nil nil [131 181])
+            ("table" variable nil nil [182 206])
+            ("find" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [217 222])
+                ("location" variable nil (reparse-symbol function_parameters) [224 232]))              ) nil [208 1275])
+            ("if" code nil nil [1276 1350]))          
+    :file "read.py"
+    :pointmax 1858
+    :fsize 1899
+    :lastmodtime '(20937 24463 825118 837000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "insert.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [16 29])
+            ("insert_sort" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [47 52]))              ) nil [31 339])
+            ("testcase" function nil nil [340 498])
+            ("if" code nil nil [499 541]))          
+    :file "insert.py"
+    :pointmax 541
+    :fsize 540
+    :lastmodtime '(21059 310 255978 113000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "class.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("FirstClass" type
+               (:members 
+                  ( ("setdata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [112 116])
+                            ("value" variable nil (reparse-symbol function_parameters) [118 123]))                          )
+                        (reparse-symbol indented_block_body) [100 152])
+                    ("display" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [168 172]))                          )
+                        (reparse-symbol indented_block_body) [156 199]))                  
+                :type "class")
+                nil [76 199])
+            ("SecondClass" type
+               (:superclasses ("FirstClass")
+                :members 
+                  ( ("display" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [247 251]))                          )
+                        (reparse-symbol indented_block_body) [235 303]))                  
+                :type "class")
+                nil [200 303])
+            ("ThirdClass" type
+               (:superclasses ("SecondClass")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [374 391]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [352 356])
+                            ("value" variable nil (reparse-symbol function_parameters) [358 363]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [339 392])
+                    ("__add__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [408 412])
+                            ("other" variable nil (reparse-symbol function_parameters) [414 419]))                          )
+                        (reparse-symbol indented_block_body) [396 482])
+                    ("__mul__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [498 502])
+                            ("other" variable nil (reparse-symbol function_parameters) [504 509]))                          )
+                        (reparse-symbol indented_block_body) [486 550]))                  
+                :type "class")
+                nil [304 550])
+            ("a" variable nil nil [551 572])
+            ("a" code nil nil [573 584])
+            ("b" code nil nil [586 599])
+            ("b" code nil nil [600 611])
+            ("a" code nil nil [619 630]))          
+    :file "class.py"
+    :pointmax 837
+    :fsize 836
+    :lastmodtime '(21000 54461 163027 13000)
+    :unmatched-syntax '((NEWLINE 599 . 600) (NEWLINE 584 . 585) (PAREN_BLOCK 582 . 584) (PERIOD 574 . 575) (NEWLINE 572 . 573) ($EOI 932 . 932))
+    )
+   (semanticdb-table "cmodule.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("FirstClass" type
+               (:members 
+                  ( ("setdata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [79 83])
+                            ("value" variable nil (reparse-symbol function_parameters) [85 90]))                          )
+                        (reparse-symbol indented_block_body) [67 119])
+                    ("display" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [135 139]))                          )
+                        (reparse-symbol indented_block_body) [123 166]))                  
+                :type "class")
+                nil [43 166]))          
+    :file "cmodule.py"
+    :pointmax 166
+    :fsize 165
+    :lastmodtime '(21000 53530 342990 295000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "binsert.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [23 36])
+            ("binsert_sort" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [55 60]))              ) nil [38 273])
+            ("bin_search" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [289 294])
+                ("element" variable nil (reparse-symbol function_parameters) [296 303]))              ) nil [274 747])
+            ("move" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [757 762])
+                ("begin" variable nil (reparse-symbol function_parameters) [764 769])
+                ("end" variable nil (reparse-symbol function_parameters) [771 774]))              ) nil [748 962])
+            ("testcase" function nil nil [967 1130])
+            ("if" code nil nil [1131 1286]))          
+    :file "binsert.py"
+    :pointmax 1286
+    :fsize 1285
+    :lastmodtime '(20928 1145 935886 132000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "copy.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [24 38])
+            ("sys" include nil nil [24 38])
+            ("xlrd" include nil nil [39 50])
+            ("urllib" include nil nil [51 81])
+            ("data" variable nil nil [83 122])
+            ("table" variable nil nil [123 147])
+            ("find" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [158 163]))              ) nil [149 205])
+            ("'''
+def find(table):
+	for x in range(1, 5051):
+		stuname = table.row_values(x)[2].strip()
+		stuname = stuname.encode('utf-8')
+		print stuname
+        # stu_id = str(table.row_values(x)[7]).strip()        
+        # department = table.row_values(x)[4].strip()
+        # department = department.encode('utf-8')
+        # year = table.row_values(x)[6][:4].strip()
+		
+        # if department == \"\" and year == \"2010\":
+			# jpg = stuname + \".jpg\"
+			# cmd = \"cp -rf ~/document/python/english/\" + jpg + \" 2_jingji\"
+			# print cmd
+			# os.system(cmd)
+'''" code nil nil [208 755])
+            ("if" code nil nil [763 806]))          
+    :file "copy.py"
+    :pointmax 806
+    :fsize 817
+    :lastmodtime '(21104 61581 871623 47000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("xlrd" include nil nil [1 12]))          
+    :file "test.py"
+    :pointmax 13
+    :fsize 12
+    :lastmodtime '(21132 50614 880754 265000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

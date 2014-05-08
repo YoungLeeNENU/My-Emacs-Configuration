@@ -1,0 +1,20 @@
+;; Object data-structure-and-algorithms/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data-structure-and-algorithms/"
+  :tables (list 
+   (semanticdb-table "select.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("min" function (:arguments ("data")) nil [39 239])
+            ("select-sort" function (:arguments ("data")) nil [241 281]))          
+    :file "select.scm"
+    :pointmax 373
+    :fsize 372
+    :lastmodtime '(21141 58712 51996 811000)
+    :unmatched-syntax '((semantic-list 283 . 372) (semantic-list 1 . 37))
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

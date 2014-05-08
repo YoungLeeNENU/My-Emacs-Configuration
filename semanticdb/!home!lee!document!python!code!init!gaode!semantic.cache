@@ -1,0 +1,35 @@
+;; Object gaode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gaode/"
+  :tables (list 
+   (semanticdb-table "2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("num" variable nil nil [41 77])
+            ("if" code nil nil [80 115]))          
+    :file "2.py"
+    :pointmax 115
+    :fsize 114
+    :lastmodtime '(21289 16843 815985 498000)
+    :unmatched-syntax '(($EOI 115 . 115) ($EOI 119 . 119))
+    )
+   (semanticdb-table "1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("array" variable nil nil [41 51])
+            ("a" variable nil nil [52 61])
+            ("divide" function (:arguments 
+              ( ("array" variable nil (reparse-symbol function_parameters) [74 79])
+                ("num" variable nil (reparse-symbol function_parameters) [81 84]))              ) nil [63 196])
+            ("if" code nil nil [197 245]))          
+    :file "1.py"
+    :pointmax 249
+    :fsize 244
+    :lastmodtime '(21313 26940 876462 303000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!init!gaode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

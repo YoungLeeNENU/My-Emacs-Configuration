@@ -1,0 +1,28 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("../Make.vars" include nil nil [1 22])
+            ("CONFIGURE_DEPENCIES" variable (:default-value ("$(srcdir)/Makefile.am")) nil [23 67])
+            ("NOXCORE_LIB_VERSION" variable (:default-value ("1:0:0")) nil [68 96])
+            ("lib_LTLIBRARIES" variable (:default-value ("libnoxcore.la")) nil [97 129])
+            ("EXTRA_DIST" variable (:default-value ("dh1024.pem" "dh2048.pem" "dh4096.pem")) nil [130 331])
+            ("libnoxcore_la_SOURCES" variable (:default-value ("command-line.cc" "connection.cc" "dhparams.h" "errno_exception.cc" "fault.cc" "network_iarchive.cc" "network_oarchive.cc" "sigset.cc" "string.cc" "timeval.cc" "vlog.cc")) nil [332 1026])
+            ("nodist_libnoxcore_la_SOURCES" variable (:default-value ("dhparams.c")) nil [1027 1104])
+            ("libnoxcore_la_LIBADD" variable (:default-value ("$(BOOST_FILESYSTEM_LIB)" "$(BOOST_SYSTEM_LIB)" "$(BOOST_SERIALIZATION_LIB)" "$(BOOST_THREAD_LIB)" "$(BOOST_UNIT_TEST_FRAMEWORK_LIB)" "$(OPENSSL_LIBS)")) nil [1105 1497])
+            ("libnoxcore_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-version-info" "$(NOXCORE_LIB_VERSION)")) nil [1498 1612])
+            ("dhparams.c" function (:arguments ("dh1024.pem" "dh2048.pem" "dh4096.pem")) nil [1613 1993]))          
+    :file "Makefile.am"
+    :pointmax 2375
+    :fsize 2374
+    :lastmodtime '(21209 59903 832730 708000)
+    :unmatched-syntax '((symbol 2370 . 2374) (punctuation 2320 . 2321) (symbol 2318 . 2320) (punctuation 2316 . 2317) (punctuation 2315 . 2316) (ELSE 2310 . 2314) (symbol 2277 . 2278) (punctuation 2276 . 2277) (punctuation 2275 . 2276) (symbol 2274 . 2275) (semantic-list 2266 . 2274) (punctuation 2265 . 2266) (semantic-list 2256 . 2265) (punctuation 2255 . 2256) (symbol 2250 . 2254) (semantic-list 2191 . 2206) (punctuation 2190 . 2191) (punctuation 2189 . 2190) (symbol 2188 . 2189) (symbol 2140 . 2144) (punctuation 2138 . 2139) (symbol 2137 . 2138) (punctuation 2136 . 2137) (punctuation 2135 . 2136) (symbol 2132 . 2134) (symbol 2127 . 2131) (IF 2124 . 2126) (symbol 2105 . 2107) (punctuation 2103 . 2104) (symbol 2099 . 2103) (punctuation 2098 . 2099) (punctuation 2097 . 2098) (symbol 2094 . 2096) (symbol 2092 . 2093) (symbol 2088 . 2091) (punctuation 2086 . 2087) (string 2066 . 2086) (punctuation 2065 . 2066) (symbol 2061 . 2065) (punctuation 2060 . 2061) (punctuation 2011 . 2012) (symbol 1994 . 2011) (bol 1994 . 1994))
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!nox!src!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

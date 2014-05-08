@@ -1,0 +1,194 @@
+;; Object local/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "local/"
+  :tables (list 
+   (semanticdb-table "proxy.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "proxy.py"
+    :pointmax 149299
+    :fsize 149414
+    :lastmodtime '(21344 62159 608895 961000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "goagent-gtk.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__version__" variable nil nil [97 116])
+            ("GOAGENT_LOGO_DATA" variable nil nil [118 4859])
+            ("sys" include nil nil [4861 4871])
+            ("os" include nil nil [4872 4881])
+            ("re" include nil nil [4882 4891])
+            ("thread" include nil nil [4892 4905])
+            ("base64" include nil nil [4906 4919])
+            ("platform" include nil nil [4920 4935])
+            ("try" code nil nil [4937 5225])
+            ("try" code nil nil [5225 5326])
+            ("try" code nil nil [5326 5399])
+            ("try" code nil nil [5399 5555])
+            ("spawn_later" function (:arguments 
+              ( ("seconds" variable nil (reparse-symbol function_parameters) [5573 5580])
+                ("target" variable nil (reparse-symbol function_parameters) [5582 5588])
+                ("args" variable nil (reparse-symbol function_parameters) [5590 5595])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [5597 5605]))              ) nil [5557 5781])
+            ("drop_desktop" function nil nil [5783 6443])
+            ("should_visible" function nil nil [6445 6804])
+            ("GoAgentGTK" type
+               (:members 
+                  ( ("command" variable nil (reparse-symbol indented_block_body) [6881 6929])
+                    ("message" variable nil (reparse-symbol indented_block_body) [6934 6970])
+                    ("fail_message" variable nil (reparse-symbol indented_block_body) [6975 7019])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7071 7091])
+                            ("self" code nil (reparse-symbol indented_block_body) [7100 7138])
+                            ("self" code nil (reparse-symbol indented_block_body) [7147 7191])
+                            ("self" code nil (reparse-symbol indented_block_body) [7200 7253])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7262 7286])
+                            ("for" code nil (reparse-symbol indented_block_body) [7296 7454])
+                            ("self" code nil (reparse-symbol indented_block_body) [7463 7488])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7497 7583])
+                            ("if" code nil (reparse-symbol indented_block_body) [7592 7833])
+                            ("spawn_later" code nil (reparse-symbol indented_block_body) [7842 7884])
+                            ("if" code nil (reparse-symbol indented_block_body) [7894 7950])
+                            ("logo_filename" variable nil (reparse-symbol indented_block_body) [7959 8051])
+                            ("if" code nil (reparse-symbol indented_block_body) [8060 8210])
+                            ("self" code nil (reparse-symbol indented_block_body) [8218 8263])
+                            ("if" code nil (reparse-symbol indented_block_body) [8273 9083]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7038 7042])
+                            ("window" variable nil (reparse-symbol function_parameters) [7044 7050])
+                            ("terminal" variable nil (reparse-symbol function_parameters) [7052 7060]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7025 9083])
+                    ("make_menu" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9102 9106]))                          )
+                        (reparse-symbol indented_block_body) [9088 9633])
+                    ("show_notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9654 9658])
+                            ("message" variable nil (reparse-symbol function_parameters) [9660 9667])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [9674 9681]))                          )
+                        (reparse-symbol indented_block_body) [9638 9992])
+                    ("show_startup_notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10021 10025]))                          )
+                        (reparse-symbol indented_block_body) [9997 10120])
+                    ("check_child_exists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10148 10152]))                          )
+                        (reparse-symbol indented_block_body) [10125 10382])
+                    ("on_child_exited" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10407 10411])
+                            ("term" variable nil (reparse-symbol function_parameters) [10413 10417]))                          )
+                        (reparse-symbol indented_block_body) [10387 10565])
+                    ("on_show" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10582 10586])
+                            ("widget" variable nil (reparse-symbol function_parameters) [10588 10594])
+                            ("data" variable nil (reparse-symbol function_parameters) [10596 10600]))                          )
+                        (reparse-symbol indented_block_body) [10570 10702])
+                    ("on_hide" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10719 10723])
+                            ("widget" variable nil (reparse-symbol function_parameters) [10725 10731])
+                            ("data" variable nil (reparse-symbol function_parameters) [10733 10737]))                          )
+                        (reparse-symbol indented_block_body) [10707 10776])
+                    ("on_stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10793 10797])
+                            ("widget" variable nil (reparse-symbol function_parameters) [10799 10805])
+                            ("data" variable nil (reparse-symbol function_parameters) [10807 10811]))                          )
+                        (reparse-symbol indented_block_body) [10781 10951])
+                    ("on_reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10970 10974])
+                            ("widget" variable nil (reparse-symbol function_parameters) [10976 10982])
+                            ("data" variable nil (reparse-symbol function_parameters) [10984 10988]))                          )
+                        (reparse-symbol indented_block_body) [10956 11353])
+                    ("show_hide_toggle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11379 11383])
+                            ("widget" variable nil (reparse-symbol function_parameters) [11385 11391])
+                            ("data" variable nil (reparse-symbol function_parameters) [11393 11397]))                          )
+                        (reparse-symbol indented_block_body) [11358 11546])
+                    ("delete_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11568 11572])
+                            ("widget" variable nil (reparse-symbol function_parameters) [11574 11580])
+                            ("data" variable nil (reparse-symbol function_parameters) [11582 11586]))                          )
+                        (reparse-symbol indented_block_body) [11551 11668])
+                    ("on_quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11685 11689])
+                            ("widget" variable nil (reparse-symbol function_parameters) [11691 11697])
+                            ("data" variable nil (reparse-symbol function_parameters) [11699 11703]))                          )
+                        (reparse-symbol indented_block_body) [11673 11734]))                  
+                :type "class")
+                nil [6858 11734])
+            ("main" function nil nil [11737 12191])
+            ("if" code nil nil [12192 12230]))          
+    :file "goagent-gtk.py"
+    :pointmax 12229
+    :fsize 12325
+    :lastmodtime '(21344 63351 360865 490000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "addto-startup.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("WriteIniVisible" function (:arguments 
+              ( ("isVisible" variable nil (reparse-symbol FormalParameterList) [26 35]))              ) nil [1 362])
+            ("CreateShortcut" function (:arguments 
+              ( ("target_path" variable nil (reparse-symbol FormalParameterList) [388 399]))              ) nil [364 749])
+            ("main" function nil nil [751 1289]))          
+    :file "addto-startup.js"
+    :pointmax 1299
+    :fsize 2686
+    :lastmodtime '(21304 63126 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "addto-startup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [39 76])
+            ("__version__" variable nil nil [78 97])
+            ("sys" include nil nil [99 109])
+            ("os" include nil nil [110 119])
+            ("re" include nil nil [120 129])
+            ("time" include nil nil [130 141])
+            ("ctypes" include nil nil [142 155])
+            ("platform" include nil nil [156 171])
+            ("addto_startup_linux" function nil nil [174 1000])
+            ("addto_startup_osx" function nil nil [1040 2599])
+            ("install_sharp_osx" function nil nil [2601 3421])
+            ("addto_startup_windows" function nil nil [3423 3656])
+            ("addto_startup_unknown" function nil nil [3658 3725])
+            ("main" function nil nil [3727 3994])
+            ("if" code nil nil [3996 4086]))          
+    :file "addto-startup.py"
+    :pointmax 4086
+    :fsize 4137
+    :lastmodtime '(21304 63126 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!goagent!goagent-goagent-c68ccfd!local!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

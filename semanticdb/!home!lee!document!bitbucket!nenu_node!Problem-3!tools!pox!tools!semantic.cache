@@ -1,0 +1,151 @@
+;; Object tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tools/"
+  :tables (list 
+   (semanticdb-table "pox-log.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("json" include nil nil [697 708])
+            ("sys" include nil nil [709 719])
+            ("socket" include nil nil [720 733])
+            ("decoder" variable nil nil [735 763])
+            ("host" variable nil nil [765 783])
+            ("port" variable nil nil [784 795])
+            ("if" code nil nil [797 840])
+            ("if" code nil nil [840 888])
+            ("while" code nil nil [889 1698]))          
+    :file "pox-log.py"
+    :pointmax 1698
+    :fsize 1697
+    :lastmodtime '(21344 59391 636966 733000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "reindent-pox.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"reindent [-d][-r][-v] [ path ... ]
+
+-d (--dryrun)   Dry run.   Analyze, but don't make any changes to, files.
+-r (--recurse)  Recurse.   Search for all .py files in subdirectories too.
+-n (--nobackup) No backup. Does not make a \".bak\" file before reindenting.
+-v (--verbose)  Verbose.   Print informative msgs; else no output.
+-h (--help)     Help.      Print this usage information and exit.
+
+Change Python (.py) files to use 2-space indents and no hard tab characters.
+Also trim excess spaces and tabs from ends of lines, and remove empty lines
+at the end of files.  Also ensure the last line ends with a newline.
+
+If no paths are given on the command line, reindent operates as a filter,
+reading a single source file from standard input and writing the transformed
+source to standard output.  In this case, the -d, -r and -v flags are
+ignored.
+
+You can pass one or more file and/or directory paths.  When a directory
+path, all .py files within the directory will be examined, and, if the -r
+option is given, likewise recursively for subdirectories.
+
+If output is not to standard output, reindent overwrites files in place,
+renaming the originals with a .bak extension.  If it finds nothing to
+change, the file is left alone.  If reindent does change a file, the changed
+file is a fixed-point for future runs (i.e., running reindent on the
+resulting .py file won't change it again).
+
+The hard part of reindenting is figuring out what to do with comment
+lines.  So long as the input files get a clean bill of health from
+tabnanny.py, reindent should do a good job.
+
+The backup file is a copy of the one that is being reindented. The \".bak\"
+file is generated with shutil.copy(), but some corner cases regarding
+user/group and permissions could leave the backup file more readable that
+you'd prefer. You can always use the --nobackup option to prevent this.
+\"\"\"" code nil nil [91 1954])
+            ("__version__" variable nil nil [1956 1973])
+            ("tokenize" include nil nil [1975 1990])
+            ("os" include nil nil [1991 2008])
+            ("shutil" include nil nil [1991 2008])
+            ("sys" include nil nil [2009 2019])
+            ("verbose" variable nil nil [2021 2035])
+            ("recurse" variable nil nil [2036 2050])
+            ("dryrun" variable nil nil [2051 2065])
+            ("makebackup" variable nil nil [2066 2083])
+            ("usage" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [2095 2098]))              ) nil [2085 2196])
+            ("errprint" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [2210 2215]))              ) nil [2197 2338])
+            ("main" function nil nil [2339 3132])
+            ("check" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [3143 3147]))              ) nil [3133 4477])
+            ("_rstrip" function
+               (:documentation "Return line stripped of trailing spaces, tabs, newlines.
+
+    Note that line.rstrip() instead also strips sundry control characters,
+    but at least one known Emacs user expects to keep junk like that, not
+    mentioning Barry by name or anything <wink>.
+    "
+                :arguments 
+                  ( ("line" variable nil (reparse-symbol function_parameters) [4490 4494])
+                    ("JUNK" variable nil (reparse-symbol function_parameters) [4496 4500]))                  )
+                nil [4478 4875])
+            ("Reindenter" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4930 4948])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4992 5006])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5070 5094])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5297 5388])
+                            ("self" code nil (reparse-symbol indented_block_body) [5397 5423])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5432 5446])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5737 5752]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4912 4916])
+                            ("f" variable nil (reparse-symbol function_parameters) [4918 4919]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4899 5753])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5766 5770]))                          )
+                        (reparse-symbol indented_block_body) [5758 8705])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8720 8724])
+                            ("f" variable nil (reparse-symbol function_parameters) [8726 8727]))                          )
+                        (reparse-symbol indented_block_body) [8710 8763])
+                    ("getline" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8812 8816]))                          )
+                        (reparse-symbol indented_block_body) [8800 8987])
+                    ("tokeneater" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9038 9042])
+                            ("type" variable nil (reparse-symbol function_parameters) [9044 9048])
+                            ("token" variable nil (reparse-symbol function_parameters) [9050 9055])
+                            ("end" variable nil (reparse-symbol function_parameters) [9072 9075])
+                            ("line" variable nil (reparse-symbol function_parameters) [9077 9081])
+                            ("INDENT" variable nil (reparse-symbol function_parameters) [9102 9108])
+                            ("DEDENT" variable nil (reparse-symbol function_parameters) [9145 9151])
+                            ("NEWLINE" variable nil (reparse-symbol function_parameters) [9188 9195])
+                            ("COMMENT" variable nil (reparse-symbol function_parameters) [9233 9240])
+                            ("NL" variable nil (reparse-symbol function_parameters) [9278 9280]))                          )
+                        (reparse-symbol indented_block_body) [9023 10308]))                  
+                :type "class")
+                nil [4876 10308])
+            ("getlspace" function (:arguments 
+              ( ("line" variable nil (reparse-symbol function_parameters) [10357 10361]))              ) nil [10343 10452])
+            ("if" code nil nil [10453 10491]))          
+    :file "reindent-pox.py"
+    :pointmax 10491
+    :fsize 10490
+    :lastmodtime '(21344 58702 60984 365000)
+    :unmatched-syntax '((COMMA 9070 . 9071) (PAREN_BLOCK 9057 . 9070))
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

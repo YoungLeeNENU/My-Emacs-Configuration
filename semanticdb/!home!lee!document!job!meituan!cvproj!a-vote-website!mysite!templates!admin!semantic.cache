@@ -1,0 +1,19 @@
+;; Object admin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "admin/"
+  :tables (list 
+   (semanticdb-table "base_site.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{% trans 'Tickets Count!' %}" section nil nil [149 255]))          
+    :file "base_site.html"
+    :pointmax 255
+    :fsize 254
+    :lastmodtime '(21314 1834 59586 372000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!meituan!cvproj!a-vote-website!mysite!templates!admin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

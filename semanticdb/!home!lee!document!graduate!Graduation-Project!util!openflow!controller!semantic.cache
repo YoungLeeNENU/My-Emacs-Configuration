@@ -1,0 +1,193 @@
+;; Object controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controller/"
+  :tables (list 
+   (semanticdb-table "controller.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("config.h" include (:system-flag t) nil [1721 1740])
+            ("errno.h" include (:system-flag t) nil [1742 1760])
+            ("getopt.h" include (:system-flag t) nil [1761 1780])
+            ("limits.h" include (:system-flag t) nil [1781 1800])
+            ("signal.h" include (:system-flag t) nil [1801 1820])
+            ("stdlib.h" include (:system-flag t) nil [1821 1840])
+            ("string.h" include (:system-flag t) nil [1841 1860])
+            ("command-line.h" include nil nil [1862 1887])
+            ("compiler.h" include nil nil [1888 1909])
+            ("daemon.h" include nil nil [1910 1929])
+            ("fault.h" include nil nil [1930 1948])
+            ("learning-switch.h" include nil nil [1949 1977])
+            ("ofpbuf.h" include nil nil [1978 1997])
+            ("openflow/openflow.h" include nil nil [1998 2028])
+            ("poll-loop.h" include nil nil [2029 2051])
+            ("rconn.h" include nil nil [2052 2070])
+            ("timeval.h" include nil nil [2071 2091])
+            ("util.h" include nil nil [2092 2109])
+            ("vconn-ssl.h" include nil nil [2110 2132])
+            ("vconn.h" include nil nil [2133 2151])
+            ("vlog-socket.h" include nil nil [2152 2176])
+            ("vlog.h" include nil nil [2178 2195])
+            ("THIS_MODULE" variable (:constant-flag t) nil [2204 2215])
+            ("MAX_SWITCHES" variable (:constant-flag t) nil [2240 2252])
+            ("MAX_LISTENERS" variable (:constant-flag t) nil [2264 2277])
+            ("switch_" type
+               (:members 
+                  ( ("lswitch" variable
+                       (:pointer 1
+                        :type ("lswitch" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2303 2327])
+                    ("rconn" variable
+                       (:pointer 1
+                        :type ("rconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2332 2352]))                  
+                :type "struct")
+                nil [2282 2355])
+            ("learn_macs" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2410 2440])
+            ("setup_flows" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2518 2549])
+            ("max_idle" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2621 2646])
+            ("do_switching" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("switch_" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2672 2689]))                  
+                :type "int")
+                nil [2648 2690])
+            ("new_switch" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("switch_" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2714 2731])
+                    ("" variable
+                       (:pointer 1
+                        :type ("vconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2732 2747])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2748 2765]))                  
+                :type "void")
+                nil [2691 2766])
+            ("parse_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2793 2802])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2803 2816]))                  
+                :type "void")
+                nil [2767 2817])
+            ("NO_RETURN" variable (:type "int") nil [2842 2852])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2863 2872])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2873 2886]))                  
+                :type "int")
+                nil [2854 6728])
+            ("new_switch" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sw" variable
+                       (:pointer 1
+                        :type ("switch_" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6753 6772])
+                    ("vconn" variable
+                       (:pointer 1
+                        :type ("vconn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6773 6793])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6794 6811]))                  
+                :type "void")
+                nil [6730 6985])
+            ("do_switching" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sw" variable
+                       (:pointer 1
+                        :type ("switch_" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7011 7030]))                  
+                :type "int")
+                nil [6987 7443])
+            ("parse_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7471 7480])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7481 7494]))                  
+                :type "void")
+                nil [7445 9481])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9501 9506]))                  
+                :type "void")
+                nil [9483 10186]))          
+    :file "controller.c"
+    :pointmax 10187
+    :fsize 10522
+    :lastmodtime '(21338 22994 827154 771000)
+    :unmatched-syntax '((semantic-list 2835 . 2841) (symbol 2830 . 2835) (VOID 2825 . 2829) (STATIC 2818 . 2824) (semantic-list 2835 . 2841) (symbol 2830 . 2835) (VOID 2825 . 2829) (STATIC 2818 . 2824) (semantic-list 2835 . 2841) (symbol 2830 . 2835) (VOID 2825 . 2829) (STATIC 2818 . 2824))
+    :lexical-table 
+        '(("THIS_MODULE" . ((symbol "VLM_controller" 2216 . 2230)))
+          ("MAX_LISTENERS" . ((number "16" 2278 . 2280)))
+          ("MAX_SWITCHES" . ((number "16" 2253 . 2255)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!openflow!controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

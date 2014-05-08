@@ -1,0 +1,29 @@
+;; Object forwarding/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "forwarding/"
+  :tables (list 
+   (semanticdb-table "l2_pairs.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A super simple OpenFlow learning switch that installs rules for
+each pair of L2 addresses.
+\"\"\"" code nil nil [673 771])
+            ("pox.core" include nil nil [824 849])
+            ("pox.openflow.libopenflow_01" include nil nil [850 890])
+            ("log" variable nil nil [955 977])
+            ("table" variable nil nil [1158 1168])
+            ("_handle_PacketIn" function (:arguments 
+              ( ("event" variable nil (reparse-symbol function_parameters) [1269 1274]))              ) nil [1247 2721])
+            ("launch" function nil nil [2723 2849]))          
+    :file "l2_pairs.py"
+    :pointmax 2849
+    :fsize 2848
+    :lastmodtime '(21350 58809 923989 573000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!forwarding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

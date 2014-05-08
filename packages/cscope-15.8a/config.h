@@ -5,7 +5,7 @@
 /* #undef BSD */
 
 /* Found some version of curses that we're going to use */
-#define HAS_CURSES 1
+/* #undef HAS_CURSES */
 
 /* Define to 1 if you have the `asprintf' function. */
 #define HAVE_ASPRINTF 1
@@ -213,7 +213,7 @@
 #define STDC_HEADERS 1
 
 /* Use Ncurses? */
-#define USE_NCURSES 1
+/* #undef USE_NCURSES */
 
 /* Use SunOS SysV curses? */
 /* #undef USE_SUNOS_CURSES */

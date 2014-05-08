@@ -83,6 +83,7 @@ The meaning is as follows:
 (defconst ecb-cedet-required-version-max '(1 0 4 9)
   "Maximum version of CEDET currently accepted by ECB.
 See `ecb-required-cedet-version-min' for an explanation.")
+;; (defconst ecb-cedet-required-version-max '(2 1 4 9))
 
 (defun ecb-cedet-missing-libs ()
   "Return a list of names of missing cedet-libs.

@@ -1,0 +1,85 @@
+;; Object python/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python/"
+  :tables (list 
+    (semanticdb-table "sort.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Sort" type
+               (:members 
+                  ( ("selection_sort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [75 79])
+                            ("unsorted" variable nil (reparse-symbol function_parameters) [81 89]))                          )
+                        (reparse-symbol indented_block_body) [56 314])
+                    ("insert_sort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [515 519])
+                            ("unsorted" variable nil (reparse-symbol function_parameters) [521 529]))                          )
+                        (reparse-symbol indented_block_body) [499 767])
+                    ("shell_sort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [783 787])
+                            ("unsorted" variable nil (reparse-symbol function_parameters) [789 797]))                          )
+                        (reparse-symbol indented_block_body) [768 818])
+                    ("merge_sort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [834 838])
+                            ("unsorted" variable nil (reparse-symbol function_parameters) [840 848]))                          )
+                        (reparse-symbol indented_block_body) [819 869]))                  
+                :type "class")
+                nil [41 869]))          
+    :file "sort.py"
+    :pointmax 1120
+    :fsize 868
+    :lastmodtime '(21141 55567 115998 513000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "insert_sort.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [41 69])
+            ("sort" include nil nil [70 91])
+            ("generate" function nil nil [93 190])
+            ("if" code nil nil [191 314]))          
+    :file "insert_sort.py"
+    :pointmax 314
+    :fsize 313
+    :lastmodtime '(21041 35471 475636 521000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "selection_sort.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [41 69])
+            ("sort" include nil nil [70 91])
+            ("generate" function nil nil [93 190])
+            ("if" code nil nil [191 317]))          
+    :file "selection_sort.py"
+    :pointmax 317
+    :fsize 316
+    :lastmodtime '(21041 35976 427623 611000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bubble_sort.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [41 69])
+            ("sort" include nil nil [70 91])
+            ("generate" function nil nil [93 190])
+            ("if" code nil nil [191 314]))          
+    :file "bubble_sort.py"
+    :pointmax 314
+    :fsize 313
+    :lastmodtime '(21041 37415 79586 827000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!inner_sort!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

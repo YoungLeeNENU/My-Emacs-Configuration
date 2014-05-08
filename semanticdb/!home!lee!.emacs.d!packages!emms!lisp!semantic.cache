@@ -1,0 +1,31 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("EMACS" variable (:default-value ("emacs")) nil [1 13])
+            ("SITEFLAG" variable (:default-value ("--no-site-file")) nil [13 37])
+            ("ALLSOURCE" variable (:default-value ("$(wildcard *.el)")) nil [37 64])
+            ("ALLCOMPILED" variable (:default-value ("$(wildcard *.elc)")) nil [64 94])
+            ("SPECIAL" variable (:default-value ("emms-auto.el" "emms-maint.el")) nil [94 129])
+            ("SOURCE" variable (:default-value ("$(filter-out $(SPECIAL),$(ALLSOURCE))")) nil [129 174])
+            ("TARGET" variable (:default-value ("$(patsubst %.el,%.elc,$(SOURCE))")) nil [174 214])
+            (".PHONY" function (:arguments ("all" "clean")) nil [215 233])
+            (".PRECIOUS" function (:arguments ("%.elc")) nil [233 250])
+            ("all" function (:arguments ("emms-auto.el" "$(TARGET)")) nil [250 278])
+            ("emms-auto.el" function (:arguments ("emms-auto.in" "$(SOURCE)")) nil [279 505])
+            ("%.elc" function (:arguments ("%.el")) nil [506 601])
+            ("clean" function nil nil [602 639]))          
+    :file "Makefile"
+    :pointmax 639
+    :fsize 638
+    :lastmodtime '(20920 16717 500123 186000)
+    :unmatched-syntax '((shell-command 610 . 638) (bol 609 . 609))
+    )
+   )
+  :file "!home!lee!.emacs.d!packages!emms!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

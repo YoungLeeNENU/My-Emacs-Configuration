@@ -1,0 +1,58 @@
+;; Object ch3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch3/"
+  :tables (list 
+   (semanticdb-table "shell.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("SEQSIZE" variable (:constant-flag t) nil [28 35])
+            ("SEQSIZE" variable (:constant-flag t) nil [28 35])
+            ("seq" variable
+               (:dereference 1
+                :type "int")
+                nil [41 84])
+            ("ShellSort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [101 109])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [110 116]))                  
+                :type "void")
+                nil [86 117])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [128 137])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [138 151]))                  
+                :type "int")
+                nil [119 373])
+            ("ShellSort" function
+               (:arguments 
+                  ( ("v" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [390 398])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [399 405]))                  
+                :type "void")
+                nil [375 706]))          
+    :file "shell.c"
+    :pointmax 727
+    :fsize 706
+    :lastmodtime '(21319 47729 276969 839000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEQSIZE" . ((number "100" 36 . 39)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpro!ch3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

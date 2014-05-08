@@ -124,14 +124,14 @@ AMTAR = $${TAR-tar}
 AUTOCONF = ${SHELL} /home/lee/.emacs.d/packages/cscope-15.8a/missing --run autoconf
 AUTOHEADER = ${SHELL} /home/lee/.emacs.d/packages/cscope-15.8a/missing --run autoheader
 AUTOMAKE = ${SHELL} /home/lee/.emacs.d/packages/cscope-15.8a/missing --run automake-1.11
-AWK = gawk
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPP = gcc -E
 CPPFLAGS = 
 CURSES_INCLUDEDIR = 
-CURSES_LIBS = -lncurses
+CURSES_LIBS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps

@@ -1,0 +1,80 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stm32f4x7_eth.h" include nil nil [993 1019])
+            ("netconf.h" include nil nil [1020 1040])
+            ("main.h" include nil nil [1041 1058])
+            ("tcp_echoserver.h" include nil nil [1059 1086])
+            ("serial_debug.h" include nil nil [1087 1112])
+            ("stdio.h" include (:system-flag t) nil [1113 1131])
+            ("SYSTEMTICK_PERIOD_MS" variable (:constant-flag t) nil [1303 1323])
+            ("MESSAGE1" variable (:constant-flag t) nil [1386 1394])
+            ("MESSAGE2" variable (:constant-flag t) nil [1428 1436])
+            ("MESSAGE3" variable (:constant-flag t) nil [1470 1478])
+            ("MESSAGE4" variable (:constant-flag t) nil [1512 1520])
+            ("LocalTime" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [1714 1737])
+            ("timingdelay" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [1813 1834])
+            ("LCD_LED_Init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1935 1940]))                  
+                :type "void")
+                nil [1917 1941])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2099 2104]))                  
+                :type "int")
+                nil [2090 3626])
+            ("Delay" function
+               (:arguments 
+                  ( ("nCount" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3751 3767]))                  
+                :type "void")
+                nil [3740 3952])
+            ("Time_Update" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4052 4057]))                  
+                :type "void")
+                nil [4035 4100])
+            ("LCD_LED_Init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4227 4232]))                  
+                :type "void")
+                nil [4209 5082]))          
+    :file "main.c"
+    :pointmax 5727
+    :fsize 5922
+    :lastmodtime '(20888 50100 0 0)
+    :unmatched-syntax '((symbol 1709 . 1713))
+    :lexical-table 
+        '(("SYSTEMTICK_PERIOD_MS" . ((number "10" 1325 . 1327)))
+          ("MESSAGE1" . ((string "\"     STM32F4x7      \"" 1397 . 1419)))
+          ("MESSAGE2" . ((string "\"  STM32F-4 Series   \"" 1439 . 1461)))
+          ("MESSAGE3" . ((string "\" TCP echoserver Demo\"" 1481 . 1503)))
+          ("MESSAGE4" . ((string "\"                    \"" 1523 . 1545)))
+          )
+
+    )
+   (semanticdb-table "tcp_echoserver.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lwip/debug.h" include nil nil [1777 1800])
+            ("lwip/stats.h" include nil nil [1801 1824])
+            ("lwip/tcp.h" include nil nil [1825 1846])
+            ("main.h" include nil nil [1847 1864])
+            ("stdio.h" include (:system-flag t) nil [1865 1883])
+            ("stdlib.h" include (:system-flag t) nil [1884 1903]))          
+    :file "tcp_echoserver.c"
+    :pointmax 13397
+    :fsize 13868
+    :lastmodtime '(20888 50100 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!Dropbox!Project!Socket LED!release!code!Project!Standalone!tcp_led_server!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,138 @@
+;; Object poj/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "poj/"
+  :tables (list 
+   (semanticdb-table "1000.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 181]))          
+    :file "1000.c"
+    :pointmax 182
+    :fsize 181
+    :lastmodtime '(21194 24877 777008 97000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "1012.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("joseph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [33 43]))                  
+                :type "void")
+                nil [21 44])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [55 64])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65 78]))                  
+                :type "int")
+                nil [46 165])
+            ("joseph" function
+               (:arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [179 189]))                  
+                :type "void")
+                nil [167 221]))          
+    :file "1012.c"
+    :pointmax 222
+    :fsize 221
+    :lastmodtime '(21194 26327 616971 27000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "1001.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("MAXSIZE" variable (:constant-flag t) nil [67 74])
+            ("info" type
+               (:members 
+                  ( ("base" variable (:type "double") (reparse-symbol classsubparts) [99 111])
+                    ("integer_part" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [116 142])
+                    ("i_digit" variable (:type "int") (reparse-symbol classsubparts) [147 159])
+                    ("float_part" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [164 188])
+                    ("f_digit" variable (:type "int") (reparse-symbol classsubparts) [193 205])
+                    ("exponent" variable (:type "int") (reparse-symbol classsubparts) [210 223]))                  
+                :type "struct")
+                nil [81 226])
+            ("sample" variable (:type ("info" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [228 247])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [258 267])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [268 281]))                  
+                :type "int")
+                nil [249 1617]))          
+    :file "1001.c"
+    :pointmax 1618
+    :fsize 1617
+    :lastmodtime '(21200 46108 77383 684000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXSIZE" . ((number "1000" 75 . 79)))
+          )
+
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MAXSIZE" variable (:constant-flag t) nil [49 56])
+            ("num" variable (:type "double") nil [62 73])
+            ("num_array" variable
+               (:dereference 1
+                :type "int")
+                nil [74 97])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [108 117])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [118 131]))                  
+                :type "int")
+                nil [99 254]))          
+    :file "test.c"
+    :pointmax 255
+    :fsize 254
+    :lastmodtime '(21200 47579 745435 198000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXSIZE" . ((number "100" 57 . 60)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!poj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1168 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "visualplayposition.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [1 19])
+            ("visualplayposition.h" include nil nil [21 52])
+            ("controlobjectslave.h" include nil nil [53 84])
+            ("controlobject.h" include nil nil [85 111])
+            ("mathstuff.h" include nil nil [112 134])
+            ("waveform/vsyncthread.h" include nil nil [135 168])
+            ("VisualPlayPosition::m_listVisualPlayPosition" variable (:type ("QMap" type
+                 (:template-specifier 
+                    ( ("QString" type nil nil nil)
+                      ("QWeakPointer" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [179 273])
+            ("VisualPlayPosition::m_timeInfo" variable (:type ("PaStreamCallbackTimeInfo" type (:type "class") nil nil)) nil [274 350])
+            ("VisualPlayPosition::m_timeInfoTime" variable (:type ("PerformanceTimer" type (:type "class") nil nil)) nil [351 403])
+            ("VisualPlayPosition" function
+               (:constructor-flag t
+                :parent "VisualPlayPosition"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [444 463]))                  
+                :type ("VisualPlayPosition" type (:type "class") nil nil))
+                nil [405 595])
+            ("VisualPlayPosition" function
+               (:destructor-flag t
+                :parent "VisualPlayPosition"
+                :type "void")
+                nil [597 716])
+            ("set" function
+               (:parent "VisualPlayPosition"
+                :arguments 
+                  ( ("playPos" variable (:type "double") (reparse-symbol arg-sub-list) [747 762])
+                    ("rate" variable (:type "double") (reparse-symbol arg-sub-list) [763 775])
+                    ("positionStep" variable (:type "double") (reparse-symbol arg-sub-list) [805 825])
+                    ("pSlipPosition" variable (:type "double") (reparse-symbol arg-sub-list) [826 847]))                  
+                :type "void")
+                nil [718 1293])
+            ("getAtNextVSync" function
+               (:parent "VisualPlayPosition"
+                :arguments 
+                  ( ("vsyncThread" variable
+                       (:pointer 1
+                        :type ("VSyncThread" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1337 1362]))                  
+                :type "double")
+                nil [1295 2195])
+            ("getPlaySlipAt" function
+               (:parent "VisualPlayPosition"
+                :arguments 
+                  ( ("usFromNow" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2250])
+                    ("playPosition" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2251 2272])
+                    ("slipPosition" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2273 2294]))                  
+                :type "void")
+                nil [2197 2941])
+            ("getEnginePlayPos" function
+               (:parent "VisualPlayPosition"
+                :type "double")
+                nil [2943 3143])
+            ("getVisualPlayPosition" function
+               (:parent "VisualPlayPosition"
+                :arguments 
+                  ( ("group" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3231 3245]))                  
+                :type ("QSharedPointer" type
+                     (:template-specifier 
+                        ( ("VisualPlayPosition" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3154 3513])
+            ("setTimeInfo" function
+               (:parent "VisualPlayPosition"
+                :arguments 
+                  ( ("timeInfo" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PaStreamCallbackTimeInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3561 3602]))                  
+                :type "void")
+                nil [3524 3925]))          
+    :file "visualplayposition.cpp"
+    :pointmax 3926
+    :fsize 3926
+    :lastmodtime '(21194 420 347970 610000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "visualplayposition.h"
+    :file "visualplayposition.h"
+    :fsize 2878
+    :lastmodtime '(21194 420 347970 610000)
+    )
+   (semanticdb-table "controlobjectslave.h"
+    :file "controlobjectslave.h"
+    :fsize 2304
+    :lastmodtime '(21194 420 207970 615000)
+    )
+   (semanticdb-table "controlobject.h"
+    :file "controlobject.h"
+    :fsize 3755
+    :lastmodtime '(21194 420 207970 615000)
+    )
+   (semanticdb-table "mathstuff.h"
+    :file "mathstuff.h"
+    :fsize 2041
+    :lastmodtime '(21194 420 287970 613000)
+    )
+   (semanticdb-table "configobject.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("configobject.h" include nil nil [1021 1046])
+            ("math.h" include (:system-flag t) nil [1164 1181])
+            ("QIODevice" include (:system-flag t) nil [1183 1203])
+            ("QTextStream" include (:system-flag t) nil [1204 1226])
+            ("QApplication" include (:system-flag t) nil [1227 1250])
+            ("QDir" include (:system-flag t) nil [1251 1266])
+            ("QtDebug" include (:system-flag t) nil [1267 1285])
+            ("widget/wwidget.h" include nil nil [1287 1314])
+            ("util/cmdlineargs.h" include nil nil [1315 1344])
+            ("xmlparse.h" include nil nil [1345 1366])
+            ("ConfigKey" function
+               (:constructor-flag t
+                :parent "ConfigKey"
+                :type ("ConfigKey" type (:type "class") nil nil))
+                nil [1368 1394])
+            ("ConfigKey" function
+               (:constructor-flag t
+                :parent "ConfigKey"
+                :arguments 
+                  ( ("g" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1417 1434])
+                    ("i" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1435 1452]))                  
+                :type ("ConfigKey" type (:type "class") nil nil))
+                nil [1396 1486])
+            ("ConfigKey" function
+               (:constructor-flag t
+                :parent "ConfigKey"
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1509 1523])
+                    ("i" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1524 1538]))                  
+                :type ("ConfigKey" type (:type "class") nil nil))
+                nil [1488 1572])
+            ("parseCommaSeparated" function
+               (:parent "ConfigKey"
+                :arguments 
+                  ( ("key" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1625 1637]))                  
+                :type ("ConfigKey" type (:type "class") nil nil))
+                nil [1584 1800])
+            ("ConfigValue" function
+               (:constructor-flag t
+                :parent "ConfigValue"
+                :type ("ConfigValue" type (:type "class") nil nil))
+                nil [1802 1832])
+            ("ConfigValue" function
+               (:constructor-flag t
+                :parent "ConfigValue"
+                :arguments 
+                  ( ("_value" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1859 1874]))                  
+                :type ("ConfigValue" type (:type "class") nil nil))
+                nil [1834 1898])
+            ("ConfigValue" function
+               (:constructor-flag t
+                :parent "ConfigValue"
+                :arguments 
+                  ( ("_value" variable (:type "int") (reparse-symbol arg-sub-list) [1925 1936]))                  
+                :type ("ConfigValue" type (:type "class") nil nil))
+                nil [1900 1977])
+            ("valCopy" function
+               (:parent "ConfigValue"
+                :arguments 
+                  ( ("_value" variable
+                       (:constant-flag t
+                        :type ("ConfigValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2005 2030]))                  
+                :type "void")
+                nil [1979 2060])
+            ("ConfigValueKbd" function
+               (:constructor-flag t
+                :parent "ConfigValueKbd"
+                :type ("ConfigValueKbd" type (:type "class") nil nil))
+                nil [2063 2099])
+            ("ConfigValueKbd" function
+               (:constructor-flag t
+                :parent "ConfigValueKbd"
+                :arguments 
+                  ( ("_value" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2132 2147]))                  
+                :type ("ConfigValueKbd" type (:type "class") nil nil))
+                nil [2101 2256])
+            ("ConfigValueKbd" function
+               (:constructor-flag t
+                :parent "ConfigValueKbd"
+                :arguments 
+                  ( ("key" variable (:type ("QKeySequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2306]))                  
+                :type ("ConfigValueKbd" type (:type "class") nil nil))
+                nil [2258 2416])
+            ("valCopy" function
+               (:parent "ConfigValueKbd"
+                :arguments 
+                  ( ("v" variable
+                       (:constant-flag t
+                        :type ("ConfigValueKbd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2447 2470]))                  
+                :type "void")
+                nil [2418 2543])
+            ("==" function
+               (:operator-flag t
+                :arguments 
+                  ( ("s1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConfigValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2561 2584])
+                    ("s2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConfigValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2585 2608]))                  
+                :type "bool")
+                nil [2545 2667])
+            ("==" function
+               (:operator-flag t
+                :arguments 
+                  ( ("s1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConfigValueKbd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2685 2711])
+                    ("s2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConfigValueKbd" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2712 2738]))                  
+                :type "bool")
+                nil [2669 2797])
+            ("ConfigObject" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("ConfigObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("file" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2864 2877]))                  
+                :parent "ConfigObject"
+                :constructor-flag t)
+                nil [2799 2899])
+            ("ConfigObject" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "ConfigObject"
+                :destructor-flag t)
+                nil [2901 3108])
+            ("set" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("ConfigOption" type
+                     (:template-specifier 
+                        ( ("ValueType" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("k" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3191 3203])
+                    ("v" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3204 3216]))                  
+                :parent "ConfigObject"
+                :pointer 1)
+                nil [3110 4265])
+            ("get" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("ConfigOption" type
+                     (:template-specifier 
+                        ( ("ValueType" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("k" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4348 4360]))                  
+                :parent "ConfigObject"
+                :pointer 1)
+                nil [4267 5037])
+            ("exists" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("k" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5103 5115]))                  
+                :parent "ConfigObject")
+                nil [5039 5417])
+            ("get" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("ConfigKey" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5486 5498]))                  
+                :parent "ConfigObject"
+                :pointer 1)
+                nil [5419 6353])
+            ("getValueString" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("QString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("k" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6430 6442]))                  
+                :parent "ConfigObject")
+                nil [6355 6477])
+            ("getValueString" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("QString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("k" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6554 6566])
+                    ("default_string" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6567 6597]))                  
+                :parent "ConfigObject")
+                nil [6479 6717])
+            ("Parse" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "bool"
+                :parent "ConfigObject")
+                nil [6719 8166])
+            ("clear" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "ConfigObject")
+                nil [8169 8628])
+            ("reopen" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("file" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8694 8707]))                  
+                :parent "ConfigObject")
+                nil [8630 8747])
+            ("Save" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "ConfigObject")
+                nil [8749 9990])
+            ("getResourcePath" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("QString" type (:type "class") nil nil)
+                :parent "ConfigObject")
+                nil [9992 13531])
+            ("ConfigObject" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("ConfigObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("node" variable (:type ("QDomNode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13599 13613]))                  
+                :parent "ConfigObject"
+                :constructor-flag t)
+                nil [13534 14108])
+            ("getSettingsPath" function
+               (:template 
+                  ( ("ValueType" type (:type "class") nil nil))                  
+                :type ("QString" type (:type "class") nil nil)
+                :parent "ConfigObject")
+                nil [14110 14295])
+            ("ConfigObject" type
+               (:prototype t
+                :template-specifier 
+                  ( ("ConfigValue" type nil nil nil))                  
+                :type "class")
+                nil [14307 14339])
+            ("ConfigObject" type
+               (:prototype t
+                :template-specifier 
+                  ( ("ConfigValueKbd" type nil nil nil))                  
+                :type "class")
+                nil [14349 14384]))          
+    :file "configobject.cpp"
+    :pointmax 14385
+    :fsize 14384
+    :lastmodtime '(21194 420 143970 615000)
+    :unmatched-syntax '((TEMPLATE 14340 . 14348) (TEMPLATE 14298 . 14306))
+    )
+   (semanticdb-table "configobject.h"
+    :file "configobject.h"
+    :fsize 4193
+    :lastmodtime '(21194 420 143970 615000)
+    )
+   (semanticdb-table "xmlparse.h"
+    :file "xmlparse.h"
+    :fsize 1971
+    :lastmodtime '(21194 420 367970 611000)
+    )
+   (semanticdb-table "audiotagger.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("audiotagger.h" include nil nil [1 25])
+            ("QtDebug" include (:system-flag t) nil [27 45])
+            ("taglib/tag.h" include (:system-flag t) nil [46 69])
+            ("taglib/id3v2frame.h" include (:system-flag t) nil [70 100])
+            ("taglib/id3v2frame.h" include (:system-flag t) nil [102 132])
+            ("taglib/id3v2header.h" include (:system-flag t) nil [133 164])
+            ("taglib/id3v1tag.h" include (:system-flag t) nil [165 193])
+            ("taglib/tmap.h" include (:system-flag t) nil [194 218])
+            ("taglib/tstringlist.h" include (:system-flag t) nil [219 250])
+            ("taglib/vorbisfile.h" include (:system-flag t) nil [252 282])
+            ("taglib/wavpackfile.h" include (:system-flag t) nil [283 314])
+            ("taglib/mpegfile.h" include (:system-flag t) nil [315 343])
+            ("taglib/mp4file.h" include (:system-flag t) nil [344 371])
+            ("taglib/oggfile.h" include (:system-flag t) nil [372 399])
+            ("taglib/flacfile.h" include (:system-flag t) nil [400 428])
+            ("taglib/aifffile.h" include (:system-flag t) nil [429 457])
+            ("taglib/rifffile.h" include (:system-flag t) nil [458 486])
+            ("taglib/wavfile.h" include (:system-flag t) nil [487 514])
+            ("taglib/textidentificationframe.h" include (:system-flag t) nil [515 558])
+            ("AudioTagger" function
+               (:constructor-flag t
+                :parent "AudioTagger"
+                :arguments 
+                  ( ("file" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [585 598]))                  
+                :type ("AudioTagger" type (:type "class") nil nil))
+                nil [560 621])
+            ("AudioTagger" function
+               (:destructor-flag t
+                :parent "AudioTagger"
+                :type "void")
+                nil [623 654])
+            ("setArtist" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("artist" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 699]))                  
+                :type "void")
+                nil [656 726])
+            ("setTitle" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [755 769]))                  
+                :type "void")
+                nil [728 794])
+            ("setAlbum" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("album" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [823 837]))                  
+                :type "void")
+                nil [796 862])
+            ("setAlbumArtist" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("albumArtist" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [898 918]))                  
+                :type "void")
+                nil [864 955])
+            ("setGenre" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("genre" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [985 999]))                  
+                :type "void")
+                nil [957 1024])
+            ("setComposer" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("composer" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1073]))                  
+                :type "void")
+                nil [1026 1104])
+            ("setGrouping" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("grouping" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1137 1154]))                  
+                :type "void")
+                nil [1106 1185])
+            ("setYear" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("year" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1214 1227]))                  
+                :type "void")
+                nil [1187 1250])
+            ("setComment" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("comment" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1297]))                  
+                :type "void")
+                nil [1252 1326])
+            ("setKey" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("key" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1353 1365]))                  
+                :type "void")
+                nil [1328 1386])
+            ("setBpm" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("bpm" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1425]))                  
+                :type "void")
+                nil [1388 1446])
+            ("setTracknumber" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("tracknumber" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1481 1501]))                  
+                :type "void")
+                nil [1448 1538])
+            ("save" function
+               (:parent "AudioTagger"
+                :type "bool")
+                nil [1540 4728])
+            ("addID3v2Tag" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("id3v2" variable
+                       (:pointer 1
+                        :type ("TagLib::ID3v2::Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4760 4786]))                  
+                :type "void")
+                nil [4730 7306])
+            ("addAPETag" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("ape" variable
+                       (:pointer 1
+                        :type ("TagLib::APE::Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7336 7358]))                  
+                :type "void")
+                nil [7308 7798])
+            ("addXiphComment" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("xiph" variable
+                       (:pointer 1
+                        :type ("TagLib::Ogg::XiphComment" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7833 7864]))                  
+                :type "void")
+                nil [7800 8707])
+            ("processMP4Tag" function
+               (:parent "AudioTagger"
+                :arguments 
+                  ( ("mp4" variable
+                       (:pointer 1
+                        :type ("TagLib::MP4::Tag" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8741 8763]))                  
+                :type "void")
+                nil [8709 9277]))          
+    :file "audiotagger.cpp"
+    :pointmax 9277
+    :fsize 9277
+    :lastmodtime '(21206 31356 243775 370000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "audiotagger.h"
+    :file "audiotagger.h"
+    :fsize 1359
+    :lastmodtime '(21194 420 139970 616000)
+    )
+   (semanticdb-table "trackinfoobject.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QDomNode" include (:system-flag t) nil [1028 1047])
+            ("QDomDocument" include (:system-flag t) nil [1048 1071])
+            ("QDomElement" include (:system-flag t) nil [1072 1094])
+            ("QFileInfo" include (:system-flag t) nil [1095 1115])
+            ("QMutexLocker" include (:system-flag t) nil [1116 1139])
+            ("QString" include (:system-flag t) nil [1140 1158])
+            ("QtDebug" include (:system-flag t) nil [1159 1177])
+            ("trackinfoobject.h" include nil nil [1179 1207])
+            ("soundsourceproxy.h" include nil nil [1209 1238])
+            ("xmlparse.h" include nil nil [1239 1260])
+            ("controlobject.h" include nil nil [1261 1287])
+            ("waveform/waveform.h" include nil nil [1288 1318])
+            ("track/beatfactory.h" include nil nil [1319 1349])
+            ("track/keyfactory.h" include nil nil [1350 1379])
+            ("track/keyutils.h" include nil nil [1380 1407])
+            ("util/compatibility.h" include nil nil [1408 1439])
+            ("mixxxutils.cpp" include nil nil [1440 1465])
+            ("TrackInfoObject" function
+               (:constructor-flag t
+                :parent "TrackInfoObject"
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1501 1521])
+                    ("parseHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [1522 1539]))                  
+                :type ("TrackInfoObject" type (:type "class") nil nil))
+                nil [1468 1735])
+            ("TrackInfoObject" function
+               (:constructor-flag t
+                :parent "TrackInfoObject"
+                :arguments 
+                  ( ("fileInfo" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QFileInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1770 1796])
+                    ("parseHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [1797 1814]))                  
+                :type ("TrackInfoObject" type (:type "class") nil nil))
+                nil [1737 2014])
+            ("TrackInfoObject" function
+               (:constructor-flag t
+                :parent "TrackInfoObject"
+                :arguments 
+                  ( ("nodeHeader" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDomNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2049 2076]))                  
+                :type ("TrackInfoObject" type (:type "class") nil nil))
+                nil [2016 3911])
+            ("initialize" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("parseHeader" variable (:type "bool") (reparse-symbol arg-sub-list) [3946 3963]))                  
+                :type "void")
+                nil [3913 4624])
+            ("TrackInfoObject" function
+               (:destructor-flag t
+                :parent "TrackInfoObject"
+                :type "void")
+                nil [4626 4784])
+            ("doSave" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [4786 4894])
+            ("parse" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [4896 5223])
+            ("parseFilename" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [5226 6255])
+            ("getDurationStr" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [6257 6453])
+            ("setLocation" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("location" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6489 6513]))                  
+                :type "void")
+                nil [6455 6725])
+            ("getLocation" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [6727 6851])
+            ("getDirectory" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [6853 6974])
+            ("getFilename" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [6976 7092])
+            ("exists" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [7094 7398])
+            ("getReplayGain" function
+               (:parent "TrackInfoObject"
+                :type "float")
+                nil [7400 7508])
+            ("setReplayGain" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [7546 7554]))                  
+                :type "void")
+                nil [7510 7800])
+            ("getBpm" function
+               (:parent "TrackInfoObject"
+                :type "double")
+                nil [7802 8067])
+            ("setBpm" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("f" variable (:type "double") (reparse-symbol arg-sub-list) [8098 8107]))                  
+                :type "void")
+                nil [8069 8856])
+            ("getBpmStr" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [8858 8953])
+            ("setBeats" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("pBeats" variable (:type ("BeatsPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8986 9006]))                  
+                :type "void")
+                nil [8955 9832])
+            ("getBeats" function
+               (:parent "TrackInfoObject"
+                :type ("BeatsPointer" type (:type "class") nil nil))
+                nil [9834 9939])
+            ("slotBeatsUpdated" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [9941 10148])
+            ("getHeaderParsed" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [10150 10262])
+            ("setHeaderParsed" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("parsed" variable (:type "bool") (reparse-symbol arg-sub-list) [10302 10314]))                  
+                :type "void")
+                nil [10264 10453])
+            ("getInfo" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [10455 10663])
+            ("getDateAdded" function
+               (:parent "TrackInfoObject"
+                :type ("QDateTime" type (:type "class") nil nil))
+                nil [10665 10774])
+            ("setDateAdded" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("dateAdded" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QDateTime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10811 10838]))                  
+                :type "void")
+                nil [10776 10905])
+            ("getDuration" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [10907 11010])
+            ("setDuration" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11046 11052]))                  
+                :type "void")
+                nil [11012 11173])
+            ("getTitle" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [11175 11275])
+            ("setTitle" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11308 11325]))                  
+                :type "void")
+                nil [11277 11481])
+            ("getArtist" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [11483 11585])
+            ("setArtist" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11619 11636]))                  
+                :type "void")
+                nil [11587 11797])
+            ("getAlbum" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [11799 11899])
+            ("setAlbum" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11932 11949]))                  
+                :type "void")
+                nil [11901 12105])
+            ("getAlbumArtist" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [12107 12220])
+            ("setAlbumArtist" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12259 12276]))                  
+                :type "void")
+                nil [12222 12435])
+            ("getYear" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [12437 12536])
+            ("setYear" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12568 12585]))                  
+                :type "void")
+                nil [12538 12736])
+            ("getGenre" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [12738 12838])
+            ("setGenre" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12871 12888]))                  
+                :type "void")
+                nil [12840 13044])
+            ("getComposer" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [13046 13152])
+            ("setComposer" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13188 13205]))                  
+                :type "void")
+                nil [13154 13376])
+            ("getGrouping" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [13378 13485])
+            ("setGrouping" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13521 13538]))                  
+                :type "void")
+                nil [13487 13709])
+            ("getTrackNumber" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [13711 13824])
+            ("setTrackNumber" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13863 13880]))                  
+                :type "void")
+                nil [13826 14039])
+            ("getTimesPlayed" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [14041 14149])
+            ("setTimesPlayed" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [14188 14194]))                  
+                :type "void")
+                nil [14151 14321])
+            ("incTimesPlayed" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [14323 14404])
+            ("getPlayed" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [14406 14533])
+            ("setPlayedAndUpdatePlaycount" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("bPlayed" variable (:type "bool") (reparse-symbol arg-sub-list) [14585 14598]))                  
+                :type "void")
+                nil [14535 14862])
+            ("setPlayed" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("bPlayed" variable (:type "bool") (reparse-symbol arg-sub-list) [14896 14909]))                  
+                :type "void")
+                nil [14864 15038])
+            ("getComment" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [15040 15144])
+            ("setComment" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15179 15196]))                  
+                :type "void")
+                nil [15146 15315])
+            ("getType" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [15317 15415])
+            ("setType" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15447 15464]))                  
+                :type "void")
+                nil [15417 15577])
+            ("setSampleRate" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("iSampleRate" variable (:type "int") (reparse-symbol arg-sub-list) [15615 15631]))                  
+                :type "void")
+                nil [15579 15779])
+            ("getSampleRate" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [15781 15887])
+            ("setChannels" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("iChannels" variable (:type "int") (reparse-symbol arg-sub-list) [15923 15937]))                  
+                :type "void")
+                nil [15889 16074])
+            ("getChannels" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [16076 16178])
+            ("getLength" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [16180 16286])
+            ("getBitrate" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [16288 16388])
+            ("getBitrateStr" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [16390 16484])
+            ("setBitrate" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [16519 16525]))                  
+                :type "void")
+                nil [16486 16644])
+            ("getId" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [16646 16736])
+            ("setId" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("iId" variable (:type "int") (reparse-symbol arg-sub-list) [16766 16774]))                  
+                :type "void")
+                nil [16738 16955])
+            ("setURL" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("url" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17403 17422]))                  
+                :type "void")
+                nil [17374 17537])
+            ("getURL" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [17539 17629])
+            ("getWaveform" function
+               (:pointer 1
+                :parent "TrackInfoObject"
+                :type ("Waveform" type (:type "class") nil nil))
+                nil [17631 17698])
+            ("getWaveformSummary" function
+               (:pointer 1
+                :parent "TrackInfoObject"
+                :type ("Waveform" type (:type "class") nil nil))
+                nil [17700 17781])
+            ("waveformSummaryNew" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [17823 17905])
+            ("setAnalyserProgress" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("progress" variable (:type "int") (reparse-symbol arg-sub-list) [17949 17962]))                  
+                :type "void")
+                nil [17907 18168])
+            ("getAnalyserProgress" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [18170 18303])
+            ("setCuePoint" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("cue" variable (:type "float") (reparse-symbol arg-sub-list) [18339 18349]))                  
+                :type "void")
+                nil [18305 18474])
+            ("getCuePoint" function
+               (:parent "TrackInfoObject"
+                :type "float")
+                nil [18476 18574])
+            ("slotCueUpdated" function
+               (:parent "TrackInfoObject"
+                :type "void")
+                nil [18576 18663])
+            ("addCue" function
+               (:pointer 1
+                :parent "TrackInfoObject"
+                :type ("Cue" type (:type "class") nil nil))
+                nil [18665 19006])
+            ("removeCue" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("cue" variable
+                       (:pointer 1
+                        :type ("Cue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19040 19049]))                  
+                :type "void")
+                nil [19008 19260])
+            ("getCuePoints" function
+               (:parent "TrackInfoObject"
+                :constant-flag t
+                :type ("QList" type
+                     (:template-specifier 
+                        ( ("Cue" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19262 19374])
+            ("setCuePoints" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("cuePoints" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("Cue" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19411 19433]))                  
+                :type "void")
+                nil [19376 19958])
+            ("setDirty" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("bDirty" variable (:type "bool") (reparse-symbol arg-sub-list) [19991 20003]))                  
+                :type "void")
+                nil [19960 20699])
+            ("isDirty" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [20701 20791])
+            ("locationChanged" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [20793 20901])
+            ("getRating" function
+               (:parent "TrackInfoObject"
+                :type "int")
+                nil [20903 21000])
+            ("setRating" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("rating" variable (:type "int") (reparse-symbol arg-sub-list) [21035 21046]))                  
+                :type "void")
+                nil [21002 21171])
+            ("setKeys" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("keys" variable (:type ("Keys" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21203 21213]))                  
+                :type "void")
+                nil [21173 21509])
+            ("getKeys" function
+               (:parent "TrackInfoObject"
+                :constant-flag t
+                :type ("Keys" type (:type "class") nil nil))
+                nil [21511 21612])
+            ("getKey" function
+               (:parent "TrackInfoObject"
+                :type ("mixxx::track::io::key::ChromaticKey" type (:type "class") nil nil))
+                nil [21614 21835])
+            ("setKey" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("key" variable (:type ("mixxx::track::io::key::ChromaticKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21866 21906])
+                    ("source" variable (:type ("mixxx::track::io::key::Source" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21936 21973]))                  
+                :type "void")
+                nil [21837 22509])
+            ("setKeyText" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("key" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22544 22556])
+                    ("source" variable (:type ("mixxx::track::io::key::Source" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22590 22627]))                  
+                :type "void")
+                nil [22511 23436])
+            ("getKeyText" function
+               (:parent "TrackInfoObject"
+                :type ("QString" type (:type "class") nil nil))
+                nil [23438 23799])
+            ("setBpmLock" function
+               (:parent "TrackInfoObject"
+                :arguments 
+                  ( ("bpmLock" variable (:type "bool") (reparse-symbol arg-sub-list) [23834 23847]))                  
+                :type "void")
+                nil [23801 23978])
+            ("hasBpmLock" function
+               (:parent "TrackInfoObject"
+                :type "bool")
+                nil [23980 24081]))          
+    :file "trackinfoobject.cpp"
+    :pointmax 24082
+    :fsize 24081
+    :lastmodtime '(21206 29915 115812 217000)
+    :unmatched-syntax '((punctuation 21998 . 21999) (punctuation 21998 . 21999) (punctuation 21998 . 21999) (punctuation 21998 . 21999))
+    )
+   (semanticdb-table "trackinfoobject.h"
+    :file "trackinfoobject.h"
+    :fsize 11786
+    :lastmodtime '(21194 420 339970 610000)
+    )
+   (semanticdb-table "soundsourceproxy.h"
+    :file "soundsourceproxy.h"
+    :fsize 2520
+    :lastmodtime '(21194 420 315970 611000)
+    )
+   (semanticdb-table "mixxxutils.cpp"
+    :file "mixxxutils.cpp"
+    :fsize 2139
+    :lastmodtime '(21194 420 291970 613000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

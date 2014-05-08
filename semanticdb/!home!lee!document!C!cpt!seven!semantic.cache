@@ -1,0 +1,170 @@
+;; Object seven/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seven/"
+  :tables (list 
+   (semanticdb-table "foo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [154 160])
+            ("strings.h" include (:system-flag t) nil [125 145])
+            ("NDEBUG" variable (:constant-flag t) nil [154 160])
+            ("assert.h" include (:system-flag t) nil [161 180])
+            ("Swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [192 199])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [200 207]))                  
+                :type "void")
+                nil [182 208])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [219 228])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [229 242]))                  
+                :type "int")
+                nil [210 607])
+            ("Swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [619 626])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [627 634]))                  
+                :type "void")
+                nil [609 722]))          
+    :file "foo.c"
+    :pointmax 728
+    :fsize 727
+    :lastmodtime '(21332 28480 979993 175000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   (semanticdb-table "foo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_FOO_H_" variable (:constant-flag t) nil [90 97]))          
+    :file "foo.h"
+    :pointmax 122
+    :fsize 121
+    :lastmodtime '(21332 25656 327941 152000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_FOO_H_")
+          )
+
+    )
+   (semanticdb-table "re.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [133 139])
+            ("assert.h" include (:system-flag t) nil [140 159])
+            ("SEQSIZE" variable (:constant-flag t) nil [168 175])
+            ("numtok" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [193 201])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [201 202])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [203 211]))                  
+                :type "void")
+                nil [181 212])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [223 232])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233 246]))                  
+                :type "int")
+                nil [214 487])
+            ("numtok" function
+               (:arguments 
+                  ( ("mem" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [501 510])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [511 519]))                  
+                :type "void")
+                nil [489 611]))          
+    :file "re.c"
+    :pointmax 652
+    :fsize 611
+    :lastmodtime '(21332 29634 963973 736000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          ("SEQSIZE" . ((number "100" 176 . 179)))
+          )
+
+    )
+   (semanticdb-table "arg.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [66 84])
+            ("stdlib.h" include (:system-flag t) nil [85 104])
+            ("string.h" include (:system-flag t) nil [105 124])
+            ("NDEBUG" variable (:constant-flag t) nil [133 139])
+            ("assert.h" include (:system-flag t) nil [140 159])
+            ("stdarg.h" include (:system-flag t) nil [160 179])
+            ("Average" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nvalues" variable (:type "int") (reparse-symbol arg-sub-list) [196 208])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [209 214]))                  
+                :type "double")
+                nil [181 215])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [226 235])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 249]))                  
+                :type "int")
+                nil [217 309])
+            ("Average" function
+               (:arguments 
+                  ( ("nvalues" variable (:type "int") (reparse-symbol arg-sub-list) [326 338])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [339 344]))                  
+                :type "double")
+                nil [311 626]))          
+    :file "arg.c"
+    :pointmax 627
+    :fsize 658
+    :lastmodtime '(21332 32161 403909 139000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!C!cpt!seven!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

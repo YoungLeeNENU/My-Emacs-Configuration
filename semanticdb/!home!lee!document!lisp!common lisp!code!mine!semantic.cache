@@ -1,0 +1,20 @@
+;; Object mine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mine/"
+  :tables (list 
+   (semanticdb-table "guess-my-number.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("_big_" variable nil nil [43 54])
+            ("_small_" variable nil nil [55 66]))          
+    :file "guess-my-number.py"
+    :pointmax 67
+    :fsize 66
+    :lastmodtime '(20971 14395 919901 191000)
+    :unmatched-syntax '((NAME 55 . 62) ($EOI 67 . 67) ($EOI 67 . 67) (ASSIGN 63 . 64) (MULT 55 . 56) (ASSIGN 49 . 50) (MULT 43 . 44) ($EOI 67 . 67) (ASSIGN 49 . 50) (MULT 43 . 44) ($EOI 420 . 420))
+    )
+    )
+  :file "!home!lee!document!lisp!common lisp!code!mine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

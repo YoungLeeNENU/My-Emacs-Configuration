@@ -1,0 +1,35 @@
+;; Object array/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "array/"
+  :tables (list 
+   (semanticdb-table "adt.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_ADT_H_" variable (:constant-flag t) nil [25 32])
+            ("TRUE" variable (:constant-flag t) nil [42 46])
+            ("FALSE" variable (:constant-flag t) nil [57 62])
+            ("OK" variable (:constant-flag t) nil [73 75])
+            ("ERROR" variable (:constant-flag t) nil [86 91])
+            ("INFEASIBLE" variable (:constant-flag t) nil [102 112])
+            ("OVERFLOW" variable (:constant-flag t) nil [124 132]))          
+    :file "adt.h"
+    :pointmax 158
+    :fsize 157
+    :lastmodtime '(20952 9835 734166 405000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OK" . ((number "1" 76 . 77)))
+          ("_ADT_H_")
+          ("TRUE" . ((number "1" 47 . 48)))
+          ("INFEASIBLE" . ((punctuation "-" 113 . 114) (number "1" 114 . 115)))
+          ("FALSE" . ((number "0" 63 . 64)))
+          ("OVERFLOW" . ((punctuation "-" 133 . 134) (number "2" 134 . 135)))
+          ("ERROR" . ((number "0" 92 . 93)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!array!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

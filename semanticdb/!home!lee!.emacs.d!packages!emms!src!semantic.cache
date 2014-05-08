@@ -1,0 +1,30 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "emms-print-metadata.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [874 893])
+            ("stdio.h" include (:system-flag t) nil [894 912])
+            ("tag_c.h" include (:system-flag t) nil [913 931])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [943 952])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [953 965]))                  
+                :type "int")
+                nil [933 2140]))          
+    :file "emms-print-metadata.c"
+    :pointmax 2181
+    :fsize 2180
+    :lastmodtime '(20920 16717 512123 186000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!.emacs.d!packages!emms!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

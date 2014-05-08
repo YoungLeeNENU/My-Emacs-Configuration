@@ -1,0 +1,256 @@
+;; Object tree/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tree/"
+  :tables (list 
+   (semanticdb-table "tree.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Node" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [91 108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [111 130]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [69 73])
+                            ("data" variable nil (reparse-symbol function_parameters) [75 79])
+                            ("level" variable nil (reparse-symbol function_parameters) [81 86]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [56 131])
+                    ("get_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [145 149]))                          )
+                        (reparse-symbol indented_block_body) [132 172])
+                    ("get_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [187 191]))                          )
+                        (reparse-symbol indented_block_body) [173 215]))                  
+                :type "class")
+                nil [41 215])
+            ("Tree" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [261 276]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [252 256]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [239 277])
+                    ("tell_me_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [295 299]))                          )
+                        (reparse-symbol indented_block_body) [278 328])
+                    ("add_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [342 346])
+                            ("node" variable nil (reparse-symbol function_parameters) [348 352]))                          )
+                        (reparse-symbol indented_block_body) [329 401]))                  
+                :type "class")
+                nil [224 401])
+            ("BinTree" type
+               (:superclasses ("Tree")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [446 461]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [437 441]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [424 462])
+                    ("add_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [476 480])
+                            ("node" variable nil (reparse-symbol function_parameters) [482 486]))                          )
+                        (reparse-symbol indented_block_body) [463 535]))                  
+                :type "class")
+                nil [402 535])
+            ("node_1" variable nil nil [536 555])
+            ("tree" variable nil nil [556 569])
+            ("bin_tree" variable nil nil [570 590])
+            ("tree" code nil nil [592 611])
+            ("bin_tree" code nil nil [614 637])
+            ("print" code nil nil [638 683]))          
+    :file "tree.py"
+    :pointmax 684
+    :fsize 683
+    :lastmodtime '(21040 21224 356074 609000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tree.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "tree.scm"
+    :pointmax 162
+    :fsize 161
+    :lastmodtime '(21089 6814 969942 776000)
+    :unmatched-syntax '((semantic-list 116 . 161) (semantic-list 19 . 114) (semantic-list 112 . 157) (semantic-list 19 . 110) (semantic-list 97 . 142) (semantic-list 19 . 95) (semantic-list 97 . 142) (semantic-list 19 . 95) (semantic-list 96 . 141) (semantic-list 19 . 94) (semantic-list 85 . 130) (semantic-list 19 . 83) (semantic-list 77 . 122) (semantic-list 19 . 75) (semantic-list 66 . 111) (semantic-list 19 . 64) (semantic-list 49 . 94) (semantic-list 19 . 47) (semantic-list 49 . 83) (semantic-list 19 . 47) (semantic-list 37 . 71))
+    )
+   (semanticdb-table "adt.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("adt.hpp" include nil nil [21 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("MaxHeap" function
+               (:arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174 184]))                  
+                :type "void")
+                nil [161 204])
+            ("HeapFull" function
+               (:arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220 230]))                  
+                :type "bool")
+                nil [206 270])
+            ("HeapEmpty" function
+               (:arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [287 297]))                  
+                :type "bool")
+                nil [272 324])
+            ("Insert" function
+               (:arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [338 348])
+                    ("element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [349 369]))                  
+                :type "void")
+                nil [326 681])
+            ("Delete" function
+               (:arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [695 705]))                  
+                :type "void")
+                nil [683 1296]))          
+    :file "adt.cpp"
+    :pointmax 1297
+    :fsize 1308
+    :lastmodtime '(21099 33844 956361 718000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adt.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_ADT_H_" variable (:constant-flag t) nil [25 32])
+            ("TRUE" variable (:constant-flag t) nil [42 46])
+            ("FALSE" variable (:constant-flag t) nil [57 62])
+            ("OK" variable (:constant-flag t) nil [73 75])
+            ("ERROR" variable (:constant-flag t) nil [86 91])
+            ("INFEASIBLE" variable (:constant-flag t) nil [102 112])
+            ("OVERFLOW" variable (:constant-flag t) nil [124 132])
+            ("Maxsize" variable (:constant-flag t) nil [145 152])
+            ("ElementType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("key" variable (:type "int") (reparse-symbol classsubparts) [179 187]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [158 201])
+            ("HEAP" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("elements" variable
+                             (:dereference 1
+                              :type ("ElementType" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [224 254])
+                          ("n" variable (:type "int") (reparse-symbol classsubparts) [259 265]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [203 272])
+            ("MaxHeap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [348 358]))                  
+                :type "void")
+                nil [335 359])
+            ("HeapFull" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [374 384]))                  
+                :type "bool")
+                nil [360 385])
+            ("HeapEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [401 411]))                  
+                :type "bool")
+                nil [386 412])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [425 435])
+                    ("element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [436 456]))                  
+                :type "void")
+                nil [413 457])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("heap" variable (:type ("HEAP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 480]))                  
+                :type "void")
+                nil [458 481]))          
+    :file "adt.hpp"
+    :pointmax 504
+    :fsize 503
+    :lastmodtime '(21101 11144 156449 545000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OK" . ((number "1" 76 . 77)))
+          ("_ADT_H_")
+          ("TRUE" . ((number "1" 47 . 48)))
+          ("INFEASIBLE" . ((punctuation "-" 113 . 114) (number "1" 114 . 115)))
+          ("FALSE" . ((number "0" 63 . 64)))
+          ("Maxsize" . ((number "200" 153 . 156)))
+          ("OVERFLOW" . ((punctuation "-" 133 . 134) (number "2" 134 . 135)))
+          ("ERROR" . ((number "0" 92 . 93)))
+          )
+
+    )
+   (semanticdb-table "heap.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("adt.hpp" include nil nil [21 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [71 80])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [81 94]))                  
+                :type "int")
+                nil [62 117]))          
+    :file "heap.cpp"
+    :pointmax 118
+    :fsize 117
+    :lastmodtime '(21099 31777 244362 837000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("heap" function nil nil [1 54])
+            ("clean" function nil nil [55 75]))          
+    :file "Makefile"
+    :pointmax 75
+    :fsize 74
+    :lastmodtime '(21099 31955 704362 740000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!tree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

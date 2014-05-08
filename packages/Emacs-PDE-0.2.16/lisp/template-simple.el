@@ -381,7 +381,8 @@ Use `template-expand-function' to expand the parsed template."
                           (y-or-n-p (format "Update file header %s to %s? "
                                             (match-string (cdar alist))
                                             fn)))
-                      (replace-match fn nil t nil (cdar alist))))
+                      (replace-match fn nil t nil (cdar alist)))
+                  )
                 (setq alist nil))
             (setq alist (cdr alist)))))))
   ;; return nil for calling other functions
@@ -396,23 +397,24 @@ Use `template-expand-function' to expand the parsed template."
            (switch-to-buffer (current-buffer))
            (if (or (null template-query)
                    (y-or-n-p (format "Use template %s? " file)))
-               (template-simple-expand-template file)))))
+               (template-simple-expand-template file))
+           )))
   nil)
 
-(if (boundp 'write-file-functions)
-    (add-hook 'write-file-functions 'template-simple-update-header)
-  (add-hook 'write-file-hooks 'template-simple-update-header))
+;; (if (boundp 'write-file-functions)
+;;     (add-hook 'write-file-functions 'template-simple-update-header)
+;;   (add-hook 'write-file-hooks 'template-simple-update-header))
 
-(let ((hook (if (boundp 'find-file-hook)
-                'find-file-hook
-              'find-file-hooks)))
-  ;; make template-auto-insert the last, so session history
-  ;; will not affect point set by template
-  (add-hook hook 'template-auto-insert t)
-  ;; make auto-insert lower priority
-  (when (memq 'auto-insert (symbol-value hook))
-    (remove-hook hook 'auto-insert)
-    (add-hook hook 'auto-insert t)))
+;; (let ((hook (if (boundp 'find-file-hook)
+;;                 'find-file-hook
+;;               'find-file-hooks)))
+;;   ;; make template-auto-insert the last, so session history
+;;   ;; will not affect point set by template
+;;   (add-hook hook 'template-auto-insert t)
+;;   ;; make auto-insert lower priority
+;;   (when (memq 'auto-insert (symbol-value hook))
+;;     (remove-hook hook 'auto-insert)
+;;     (add-hook hook 'auto-insert t)))
 
 (provide 'template-simple)
 ;;; template-simple.el ends here

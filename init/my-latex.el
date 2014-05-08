@@ -1,17 +1,19 @@
-(add-to-list 'load-path "/home/neo/.emacs.d/packages/auctex-11.86")
+(add-to-list 'load-path
+	     "~/.emacs.d/packages/auctex-11.86")
+
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
 (mapc (lambda (mode)
         (add-hook 'LaTeX-mode-hook mode))
-	  (list 'auto-fill-mode
-			'LaTeX-math-mode
-			'turn-on-reftex
-			'linum-mode))
+      (list 'auto-fill-moden
+	    'LaTeX-math-mode
+	    'turn-on-reftex
+	    'linum-mode))
 (add-hook'LaTeX-mode-hook
  (lambda ()
    (setq TeX-auto-untabifyt    ; remove all tabs before saving
-		 TeX-engine'xetex      ; use xelatex default
-		 TeX-show-compilation t) ; display compilation windows
+	 TeX-engine'xetex      ; use xelatex default
+	 TeX-show-compilation t) ; display compilation windows
    (TeX-global-PDF-modet)      ; PDF mode enable, not plain
    (setq TeX-save-query nil)
    (imenu-add-menubar-index)
@@ -40,8 +42,7 @@
 
   ;; add some extra functions.
   (define-key LaTeX-mode-map "\C-cf" 'beamer-template-frame)
-  (define-key LaTeX-mode-map "\C-\M-x" 'tex-frame)
-  )
+  (define-key LaTeX-mode-map "\C-\M-x" 'tex-frame))
 
 (defun tex-frame ()
   "Run pdflatex on current frame.  
@@ -55,9 +56,7 @@ Frame must be declared as an environment."
       (LaTeX-find-matching-end)
       (TeX-pin-region beg (point))
       (letf (( (symbol-function 'TeX-command-query) (lambda (x) "LaTeX")))
-        (TeX-command-region))
-	  )
-	))
+        (TeX-command-region)))))
 
 
 (defun beamer-template-frame ()

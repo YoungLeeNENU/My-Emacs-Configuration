@@ -19,7 +19,7 @@ Quick setup instructions
 
   Make sure your `inferior-lisp-program' is set to a compatible
   version of Lisp.
-
+  
   The function `slime-setup' can also load additional, contributed
   packages ("contribs"). The most-often used package is
   slime-fancy.el, which primarily installs a popular set of other

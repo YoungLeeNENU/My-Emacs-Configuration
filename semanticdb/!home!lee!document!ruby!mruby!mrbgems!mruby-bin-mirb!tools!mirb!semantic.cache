@@ -1,0 +1,163 @@
+;; Object mirb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mirb/"
+  :tables (list 
+   (semanticdb-table "mirb.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [168 187])
+            ("string.h" include (:system-flag t) nil [188 207])
+            ("mruby.h" include nil nil [208 226])
+            ("mruby/array.h" include nil nil [227 251])
+            ("mruby/proc.h" include nil nil [252 275])
+            ("mruby/compile.h" include nil nil [276 302])
+            ("mruby/string.h" include nil nil [303 328])
+            ("p" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mrb" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1134 1149])
+                    ("obj" variable (:type ("mrb_value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1150 1164])
+                    ("prompt" variable (:type "int") (reparse-symbol arg-sub-list) [1165 1176]))                  
+                :type "void")
+                nil [1120 1466])
+            ("is_code_block_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parser" variable
+                       (:pointer 1
+                        :type ("mrb_parser_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1600 1632]))                  
+                :type ("mrb_bool" type (:type "class") nil nil))
+                nil [1565 3980])
+            ("mrb_show_version" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4004 4016]))                  
+                :type "void")
+                nil [3982 4017])
+            ("mrb_show_copyright" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4042 4054]))                  
+                :type "void")
+                nil [4018 4055])
+            ("_args" type
+               (:members 
+                  ( ("verbose" variable
+                       (:suffix ":1"
+                        :type ("mrb_bool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4074 4100])
+                    ("argc" variable (:type "int") (reparse-symbol classsubparts) [4103 4112])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4115 4127]))                  
+                :type "struct")
+                nil [4057 4130])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4150 4167]))                  
+                :type "void")
+                nil [4132 4538])
+            ("parse_args" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mrb" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4562 4577])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4578 4587])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4588 4600])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("_args" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4601 4620]))                  
+                :type "int")
+                nil [4540 5374])
+            ("cleanup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mrb" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5396 5411])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("_args" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5412 5431]))                  
+                :type "void")
+                nil [5376 5453])
+            ("print_hint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5518 5523]))                  
+                :type "void")
+                nil [5495 5585])
+            ("print_cmdline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("code_block_open" variable (:type "int") (reparse-symbol arg-sub-list) [5685 5705]))                  
+                :type "void")
+                nil [5659 5787])
+            ("mrb_codedump_all" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("mrb_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5819 5830])
+                    ("" variable
+                       (:pointer 1
+                        :type ("RProc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5831 5845]))                  
+                :type "void")
+                nil [5797 5846])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5857 5866])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5867 5879]))                  
+                :type "int")
+                nil [5848 9560]))          
+    :file "mirb.c"
+    :pointmax 9561
+    :fsize 9560
+    :lastmodtime '(21311 30568 54240 362000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!ruby!mruby!mrbgems!mruby-bin-mirb!tools!mirb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

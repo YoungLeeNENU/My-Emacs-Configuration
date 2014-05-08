@@ -1,0 +1,185 @@
+;; Object taomee/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "taomee/"
+  :tables (list 
+    (semanticdb-table "DList.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("stdlib.h" include (:system-flag t) nil [84 103])
+            ("string.h" include (:system-flag t) nil [104 123])
+            ("NDEBUG" variable (:constant-flag t) nil [132 138])
+            ("assert.h" include (:system-flag t) nil [139 158])
+            ("Node" type
+               (:members 
+                  ( ("previous" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [178 200])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [205 223])
+                    ("element" variable (:type "long") (reparse-symbol classsubparts) [228 241]))                  
+                :type "struct")
+                nil [160 274])
+            ("sample" variable (:type ("Node" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [160 274])
+            ("ShowList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [290 305]))                  
+                :type "void")
+                nil [276 306])
+            ("Find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [316 331])
+                    ("data" variable (:type "long") (reparse-symbol arg-sub-list) [332 342]))                  
+                :type "int")
+                nil [307 343])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [367 382]))                  
+                :type ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [344 383])
+            ("IsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [396 411]))                  
+                :type "int")
+                nil [384 412])
+            ("IsLast" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [424 439]))                  
+                :type "int")
+                nil [413 440])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [451 460])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [461 474]))                  
+                :type "int")
+                nil [442 687])
+            ("ShowList" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [703 718]))                  
+                :type "void")
+                nil [689 819])
+            ("Find" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [830 845])
+                    ("data" variable (:type "long") (reparse-symbol arg-sub-list) [846 856]))                  
+                :type "int")
+                nil [821 1073])
+            ("MakeEmpty" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1113]))                  
+                :type ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1075 1150])
+            ("IsEmpty" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1164 1179]))                  
+                :type "int")
+                nil [1152 1213])
+            ("IsLast" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1226 1241]))                  
+                :type "int")
+                nil [1215 1333]))          
+    :file "DList.c"
+    :pointmax 1311
+    :fsize 1333
+    :lastmodtime '(21337 46438 100234 349000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
+   )
+  :file "!home!lee!document!job!taomee!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

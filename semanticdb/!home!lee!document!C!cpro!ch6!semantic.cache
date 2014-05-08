@@ -1,0 +1,778 @@
+;; Object ch6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch6/"
+  :tables (list 
+   (semanticdb-table "point.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("stdbool.h" include (:system-flag t) nil [58 78])
+            ("min" variable (:constant-flag t) nil [87 90])
+            ("max" variable (:constant-flag t) nil [121 124])
+            ("point" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [167 176])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [181 190]))                  
+                :type "struct")
+                nil [148 193])
+            ("rect" type
+               (:members 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [213 229])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [234 250]))                  
+                :type "struct")
+                nil [195 253])
+            ("MakePoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [278 287])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [288 297]))                  
+                :type ("point" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [255 298])
+            ("MakeRect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [320 336])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [337 353]))                  
+                :type ("rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [299 354])
+            ("Distance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [371 387]))                  
+                :type "double")
+                nil [355 388])
+            ("RectArea" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("rect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [405 420]))                  
+                :type "double")
+                nil [389 421])
+            ("InRect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("rect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [434 449])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [450 466]))                  
+                :type "bool")
+                nil [422 467])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [478 487])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [488 501]))                  
+                :type "int")
+                nil [469 1284])
+            ("MakePoint" function
+               (:arguments 
+                  ( ("a" variable (:type "double") (reparse-symbol arg-sub-list) [1309 1318])
+                    ("b" variable (:type "double") (reparse-symbol arg-sub-list) [1319 1328]))                  
+                :type ("point" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1286 1388])
+            ("MakeRect" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1411 1427])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1428 1444]))                  
+                :type ("rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1390 1503])
+            ("Distance" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1521 1537]))                  
+                :type "double")
+                nil [1505 1593])
+            ("RectArea" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("rect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1611 1626]))                  
+                :type "double")
+                nil [1595 1784])
+            ("InRect" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("rect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1798 1813])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("point" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1814 1830]))                  
+                :type "bool")
+                nil [1786 2072]))          
+    :file "point.c"
+    :pointmax 2068
+    :fsize 2072
+    :lastmodtime '(21326 30018 520725 666000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("max" (spp-arg-list ("a" "b") 124 . 130) . ((semantic-list "(a > b ? a : b)" 131 . 146)))
+          ("min" (spp-arg-list ("a" "b") 90 . 96) . ((semantic-list "(a > b ? b : a)" 97 . 112)))
+          )
+
+    )
+   (semanticdb-table "ptstruct.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("data" type
+               (:members 
+                  ( ("len" variable (:type "int") (reparse-symbol classsubparts) [39 47])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [52 62]))                  
+                :type "struct")
+                nil [21 65])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [76 85])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86 99]))                  
+                :type "int")
+                nil [67 438]))          
+    :file "ptstruct.c"
+    :pointmax 503
+    :fsize 438
+    :lastmodtime '(21326 31044 48699 446000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "arstruct.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [23 41])
+            ("stdlib.h" include (:system-flag t) nil [42 61])
+            ("string.h" include (:system-flag t) nil [62 81])
+            ("ctype.h" include (:system-flag t) nil [82 100])
+            ("MAXWORD" variable (:constant-flag t) nil [109 116])
+            ("log" type
+               (:members 
+                  ( ("keyword" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [139 153])
+                    ("keycount" variable (:type "int") (reparse-symbol classsubparts) [158 171]))                  
+                :type "struct")
+                nil [122 907])
+            ("keytab" variable
+               (:dereference 1
+                :type ("log" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [122 907])
+            ("binsearch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [923 934])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("log" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [935 951])
+                    ("nkeys" variable (:type "int") (reparse-symbol arg-sub-list) [952 962]))                  
+                :type "int")
+                nil [909 963])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [974 983])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [984 997]))                  
+                :type "int")
+                nil [965 1515])
+            ("binsearch" function
+               (:arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1531 1542])
+                    ("key" variable
+                       (:dereference 1
+                        :type ("log" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1543 1560])
+                    ("nkeys" variable (:type "int") (reparse-symbol arg-sub-list) [1561 1571]))                  
+                :type "int")
+                nil [1517 1907]))          
+    :file "arstruct.c"
+    :pointmax 1908
+    :fsize 1943
+    :lastmodtime '(21327 32709 618530 772000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXWORD" . ((number "100" 117 . 120)))
+          )
+
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("ctype.h" include (:system-flag t) nil [60 78])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [89 98])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99 112]))                  
+                :type "int")
+                nil [80 181]))          
+    :file "test.c"
+    :pointmax 182
+    :fsize 181
+    :lastmodtime '(21327 62648 965925 118000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "getword.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("ctype.h" include (:system-flag t) nil [60 78])
+            ("getch" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [90 95]))                  
+                :type "int")
+                nil [80 113])
+            ("ungetch" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [128 134]))                  
+                :type "void")
+                nil [115 138])
+            ("getword" function
+               (:arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [152 163])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [164 172]))                  
+                :type "int")
+                nil [140 536]))          
+    :file "getword.c"
+    :pointmax 537
+    :fsize 536
+    :lastmodtime '(21327 27902 38653 694000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "getword.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_GETWORD_H_" variable (:constant-flag t) nil [29 40])
+            ("getch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [52 57]))                  
+                :type "int")
+                nil [42 58])
+            ("ungetch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [72 78]))                  
+                :type "void")
+                nil [59 79])
+            ("getword" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92 103])
+                    ("lim" variable (:type "int") (reparse-symbol arg-sub-list) [104 112]))                  
+                :type "int")
+                nil [80 113]))          
+    :file "getword.h"
+    :pointmax 140
+    :fsize 139
+    :lastmodtime '(21327 27721 386658 312000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_GETWORD_H_")
+          )
+
+    )
+   (semanticdb-table "ckey.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [30 48])
+            ("string.h" include (:system-flag t) nil [49 68])
+            ("ctype.h" include (:system-flag t) nil [69 87])
+            ("MAXWORD" variable (:constant-flag t) nil [96 103])
+            ("BINSEARCH" variable (:constant-flag t) nil [116 125])
+            ("log" type
+               (:members 
+                  ( ("keyword" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [144 158])
+                    ("keycount" variable (:type "int") (reparse-symbol classsubparts) [163 176]))                  
+                :type "struct")
+                nil [127 912])
+            ("keytab" variable
+               (:dereference 1
+                :type ("log" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [127 912])
+            ("binsearch" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [936 947])
+                    ("tab" variable
+                       (:pointer 1
+                        :type ("log" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [948 964])
+                    ("nkeys" variable (:type "int") (reparse-symbol arg-sub-list) [965 975]))                  
+                :type ("log" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [914 976])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [987 996])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [997 1010]))                  
+                :type "int")
+                nil [978 1557])
+            ("binsearch" function
+               (:pointer 1
+                :arguments 
+                  ( ("word" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1582 1593])
+                    ("tab" variable
+                       (:pointer 1
+                        :type ("log" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1594 1610])
+                    ("nkeys" variable (:type "int") (reparse-symbol arg-sub-list) [1611 1621]))                  
+                :type ("log" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1559 2024]))          
+    :file "ckey.c"
+    :pointmax 2025
+    :fsize 2106
+    :lastmodtime '(21327 51432 270318 844000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BINSEARCH")
+          ("MAXWORD" . ((number "100" 104 . 107)))
+          )
+
+    )
+   (semanticdb-table "self.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [28 46])
+            ("stdlib.h" include (:system-flag t) nil [47 66])
+            ("string.h" include (:system-flag t) nil [67 86])
+            ("MAXWORD" variable (:constant-flag t) nil [96 103])
+            ("MAXNODE" variable (:constant-flag t) nil [116 123])
+            ("BTree" type
+               (:members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [149 160])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [165 177])
+                    ("left" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [182 201])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [206 226]))                  
+                :type "struct")
+                nil [130 229])
+            ("AddTree" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [253 269])
+                    ("nodeinfo" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [270 285]))                  
+                :type ("BTree" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [231 286])
+            ("PreOrder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [301 317]))                  
+                :type "void")
+                nil [287 318])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [329 338])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [339 352]))                  
+                :type "int")
+                nil [320 534])
+            ("AddTree" function
+               (:pointer 1
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [559 575])
+                    ("nodeinfo" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [576 591]))                  
+                :type ("BTree" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [536 1083])
+            ("PreOrder" function
+               (:arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("BTree" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1099 1115]))                  
+                :type "void")
+                nil [1085 1263]))          
+    :file "self.c"
+    :pointmax 1264
+    :fsize 1297
+    :lastmodtime '(21328 37066 645884 406000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAXWORD" . ((number "100" 104 . 107)))
+          ("MAXNODE" . ((number "1000" 124 . 128)))
+          )
+
+    )
+   (semanticdb-table "tree.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Node" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [114 130])
+                            ("self" variable nil (reparse-symbol indented_block_body) [133 149])
+                            ("self" variable nil (reparse-symbol indented_block_body) [152 170]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72 76])
+                            ("data" variable nil (reparse-symbol function_parameters) [78 82])
+                            ("left" variable nil (reparse-symbol function_parameters) [84 88])
+                            ("right" variable nil (reparse-symbol function_parameters) [97 102]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [59 171]))                  
+                :type "class")
+                nil [41 171])
+            ("if" code nil nil [172 277]))          
+    :file "tree.py"
+    :pointmax 277
+    :fsize 276
+    :lastmodtime '(21327 36279 238439 503000)
+    :unmatched-syntax '((PRINT 250 . 255) (NEWLINE 261 . 262) (PRINT 253 . 258) (NEWLINE 264 . 265) (NAME 114 . 118) (NEWLINE 119 . 120) (NAME 114 . 118) (NEWLINE 119 . 120) (INDENT_BLOCK 112 . 117))
+    )
+   (semanticdb-table "a.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("foo" function
+               (:documentation "
+    
+    Arguments:
+    - `a`:
+    - `b`:
+    "
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [9 10])
+                    ("b" variable nil (reparse-symbol function_parameters) [12 13]))                  )
+                nil [1 74]))          
+    :file "a.py"
+    :pointmax 79
+    :fsize 78
+    :lastmodtime '(21327 61611 533951 644000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hash.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [16 34])
+            ("stdlib.h" include (:system-flag t) nil [35 54])
+            ("string.h" include (:system-flag t) nil [55 74])
+            ("HASHSIZE" variable (:constant-flag t) nil [83 91])
+            ("defination" type
+               (:members 
+                  ( ("macro" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [121 133])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [138 150])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("defination" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [155 179]))                  
+                :type "struct")
+                nil [97 182])
+            ("hashtab" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("defination" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [195 239])
+            ("install" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [268 276])
+                    ("t" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [277 285]))                  
+                :type ("defination" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [241 286])
+            ("lookup" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [313 321]))                  
+                :type ("defination" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [287 322])
+            ("hash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [337 345]))                  
+                :type "unsigned int")
+                nil [323 346])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [357 366])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [367 380]))                  
+                :type "int")
+                nil [348 438])
+            ("install" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [468 476])
+                    ("t" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [477 485]))                  
+                :type ("defination" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [440 920])
+            ("lookup" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [949 957]))                  
+                :type ("defination" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [922 1140])
+            ("hash" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1156 1164]))                  
+                :type "unsigned int")
+                nil [1142 1342]))          
+    :file "hash.c"
+    :pointmax 1343
+    :fsize 1378
+    :lastmodtime '(21328 40593 749794 223000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C!cpro!ch6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

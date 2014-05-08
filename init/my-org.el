@@ -11,11 +11,18 @@
 (setq org-log-done 'time)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-todo-keywords
-      '((sequence "TODO" "TIPS" "CAUTION" "KNOWNCAUSE" "|" "DONE" "CANCELED" "REPORT" "BUG" "FIXED")
+      '((sequence "TODO" "OPTION" "TIPS" "CAUTION" "KNOWNCAUSE" "|" "DONE" "CANCELED" "REPORT" "BUG" "FIXED")
         ))
 
 ;;epresent
 (require 'epresent)
+(autoload 'epresent-run "epresent")
+(add-hook 'org-mode-hook
+	  (function (lambda ()
+		      (setq truncate-lines nil)
+		      (setq word-wrap t)
+		      (define-key org-mode-map [f3]
+			'epresent-run))))
 
 ;;export-latex
 (require 'org-latex)

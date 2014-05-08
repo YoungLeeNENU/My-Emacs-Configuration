@@ -1,0 +1,25 @@
+;; Object language/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "language/"
+  :tables (list 
+   (semanticdb-table "givename.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("filename" code nil nil [63 98])
+            ("touch" code nil nil [99 126])
+            ("chmod" code nil nil [127 158])
+            ("os" code nil nil [160 176])
+            ("os" code nil nil [177 193]))          
+    :file "givename.py"
+    :pointmax 194
+    :fsize 193
+    :lastmodtime '(21203 60032 251991 387000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!language!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

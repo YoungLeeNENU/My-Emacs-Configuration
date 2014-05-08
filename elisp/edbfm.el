@@ -21,13 +21,22 @@
 ;; Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 ;;
 ;; Code:
+(require 'url)
+(require 'md5)
+(require 'emms)
 
-(defun edbfm ()
-  "edbfm status message."
+(defvar status-msg-on  "EDBFM status: ON")
+(defvar status-msg-off "EDBFM status: OFF")
+
+(defun edbfm-on (filename)
+  (interactive "sPlay: ")
+  (message status-msg-on)
+  (emms-play-file filename))
+
+(defun edbfm-off ()
   (interactive)
-  (defvar status-msg-on "Edbfm status: ON")
-  (message status-msg-on))
+  (message status-msg-off))
 
 (provide 'edbfm)
 
-;; doubanfm.el ends here
+;; edbfm.el ends here

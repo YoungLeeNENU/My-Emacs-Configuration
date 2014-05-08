@@ -1,0 +1,26 @@
+;; Object fonts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fonts/"
+  :tables (list 
+   (semanticdb-table "install-font.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [68 77])
+            ("sys" include nil nil [78 88])
+            ("chmod" variable nil nil [90 115])
+            ("mkfontscale" variable nil nil [116 148])
+            ("mkfontdir" variable nil nil [189 217])
+            ("cache" variable nil nil [257 284])
+            ("install" variable nil nil [315 363])
+            ("for" code nil nil [365 468]))          
+    :file "install-font.py"
+    :pointmax 468
+    :fsize 607
+    :lastmodtime '(21265 40666 434635 58000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!tex!fonts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

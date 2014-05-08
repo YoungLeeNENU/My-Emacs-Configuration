@@ -1,0 +1,18 @@
+;; Object yacc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yacc/"
+  :tables (list 
+   (semanticdb-table "lua.lex"
+    :major-mode 'c-mode
+    :tags nil
+    :file "lua.lex"
+    :pointmax 1667
+    :fsize 1666
+    :lastmodtime '(11693 42349 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lua!source!lua!src!yacc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

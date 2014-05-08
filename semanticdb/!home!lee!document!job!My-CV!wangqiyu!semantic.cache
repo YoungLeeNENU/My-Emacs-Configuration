@@ -1,0 +1,23 @@
+;; Object wangqiyu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wangqiyu/"
+  :tables (list 
+    (semanticdb-table "run"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("xelatex" variable nil nil [63 95])
+            ("rm" variable nil nil [96 121])
+            ("if" code nil nil [159 227]))          
+    :file "run"
+    :pointmax 251
+    :fsize 250
+    :lastmodtime '(21315 65333 187959 284000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!My-CV!wangqiyu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

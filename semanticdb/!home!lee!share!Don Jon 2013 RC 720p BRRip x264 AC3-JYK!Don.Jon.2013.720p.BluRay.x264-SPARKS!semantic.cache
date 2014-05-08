@@ -1,0 +1,36 @@
+;; Object Don.Jon.2013.720p.BluRay.x264-SPARKS/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Don.Jon.2013.720p.BluRay.x264-SPARKS/"
+  :tables (list 
+   (semanticdb-table "Don.Jon.2013.720p.BluRay.x264-SPARKS.¼òÌå&Ó¢ÎÄ.srt"
+    :major-mode 'srecode-template-mode
+    :tags nil
+    :file "Don.Jon.2013.720p.BluRay.x264-SPARKS.¼òÌå&Ó¢ÎÄ.srt"
+    :pointmax 115644
+    :fsize 244780
+    :lastmodtime '(21178 39096 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Don.Jon.2013.720p.BluRay.x264-SPARKS.¼òÌå.srt"
+    :major-mode 'srecode-template-mode
+    :tags nil
+    :file "Don.Jon.2013.720p.BluRay.x264-SPARKS.¼òÌå.srt"
+    :pointmax 64236
+    :fsize 139280
+    :lastmodtime '(21178 39101 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Don.Jon.2013.720p.BluRay.x264-SPARKS.·±Ìå.srt"
+    :major-mode 'srecode-template-mode
+    :tags nil
+    :file "Don.Jon.2013.720p.BluRay.x264-SPARKS.·±Ìå.srt"
+    :pointmax 64236
+    :fsize 139280
+    :lastmodtime '(21178 39102 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!share!Don Jon 2013 RC 720p BRRip x264 AC3-JYK!Don.Jon.2013.720p.BluRay.x264-SPARKS!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

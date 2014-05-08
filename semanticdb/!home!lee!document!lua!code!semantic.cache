@@ -1,0 +1,31 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "clua.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lua.h" include (:system-flag t) nil [1 17])
+            ("lualib.h" include (:system-flag t) nil [18 37])
+            ("lauxlib.h" include (:system-flag t) nil [38 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [69 78])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [79 92]))                  
+                :type "int")
+                nil [60 210]))          
+    :file "clua.c"
+    :pointmax 211
+    :fsize 210
+    :lastmodtime '(21353 25047 770830 39000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lua!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,91 @@
+;; Object tmppp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmppp/"
+  :tables (list 
+   (semanticdb-table "a.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("a.h" include nil nil [20 34])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [45 54])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55 68]))                  
+                :type "int")
+                nil [36 154]))          
+    :file "a.c"
+    :pointmax 155
+    :fsize 154
+    :lastmodtime '(20953 20093 856063 802000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "a.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_A_H_" variable (:constant-flag t) nil [23 28])
+            ("stdio.h" include (:system-flag t) nil [30 48])
+            ("sum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("total" variable (:type "int") (reparse-symbol arg-sub-list) [59 70]))                  
+                :type "int")
+                nil [50 71]))          
+    :file "a.h"
+    :pointmax 92
+    :fsize 91
+    :lastmodtime '(20950 41262 615611 469000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_A_H_")
+          )
+
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("output" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [58 65])
+                    ("output" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("output" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [70 79])
+                    ("output" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [84 102]))                  
+                :type "class")
+                nil [43 105])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [116 125])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126 139]))                  
+                :type "int")
+                nil [107 189]))          
+    :file "main.cpp"
+    :pointmax 214
+    :fsize 189
+    :lastmodtime '(20953 20596 204050 959000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!tmppp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

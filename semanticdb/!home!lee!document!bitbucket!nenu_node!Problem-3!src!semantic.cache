@@ -1,0 +1,22 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "ssh"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [129 138])
+            ("sys" include nil nil [139 149])
+            ("cmd" variable nil nil [151 188])
+            ("if" code nil nil [190 233]))          
+    :file "ssh"
+    :pointmax 233
+    :fsize 232
+    :lastmodtime '(21350 63741 143863 490000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,45 @@
+;; Object ch1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch1/"
+  :tables (list 
+   (semanticdb-table "gcd.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "gcd.scm"
+    :pointmax 129
+    :fsize 132
+    :lastmodtime '(21196 1444 257100 466000)
+    :unmatched-syntax '((semantic-list 77 . 128) (semantic-list 1 . 75) (semantic-list 74 . 125) (semantic-list 1 . 72) (semantic-list 68 . 119) (semantic-list 1 . 66) (semantic-list 67 . 118) (semantic-list 1 . 66))
+    )
+   (semanticdb-table "fibonacci.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "fibonacci.scm"
+    :pointmax 203
+    :fsize 210
+    :lastmodtime '(20919 12786 792082 900000)
+    :unmatched-syntax '((semantic-list 155 . 202) (semantic-list 9 . 153))
+    )
+   (semanticdb-table "fast_expt.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "fast_expt.scm"
+    :pointmax 210
+    :fsize 209
+    :lastmodtime '(20919 12786 792082 900000)
+    :unmatched-syntax '((semantic-list 160 . 209) (semantic-list 1 . 159))
+    )
+   (semanticdb-table "expt.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "expt.scm"
+    :pointmax 123
+    :fsize 136
+    :lastmodtime '(20919 12786 792082 900000)
+    :unmatched-syntax '((semantic-list 78 . 122) (semantic-list 12 . 77))
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!TestSICP!ch1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

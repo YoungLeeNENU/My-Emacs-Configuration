@@ -1,0 +1,39 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("infodir" variable (:default-value ("/usr/local/info")) nil [392 416])
+            ("INSTALL_CMD" variable (:default-value ("install" "-m" "644")) nil [463 490])
+            ("infofiles" variable (:default-value ("slime.info")) nil [520 541])
+            ("TEXI" variable (:default-value ("slime.texi" "contributors.texi")) nil [542 578])
+            ("all" function (:arguments ("slime.info" "slime.pdf" "html/index.html")) nil [579 621])
+            ("slime.dvi" function (:arguments ("$(TEXI)")) nil [622 662])
+            ("slime.ps" function (:arguments ("slime.dvi")) nil [663 699])
+            ("slime.info" function (:arguments ("$(TEXI)")) nil [700 733])
+            ("slime.html" function (:arguments ("$(TEXI)")) nil [734 768])
+            ("html/index.html" function (:arguments ("$(TEXI)")) nil [769 822])
+            ("html.tgz" function (:arguments ("html/index.html")) nil [823 867])
+            ("DOCDIR" variable (:default-value ("/project/slime/public_html/doc")) nil [868 906])
+            ("publish" function (:arguments ("html.tgz")) nil [953 1086])
+            ("slime.pdf" function (:arguments ("$(TEXI)")) nil [1087 1119])
+            ("install" function (:arguments ("install-info")) nil [1120 1142])
+            ("uninstall" function (:arguments ("uninstall-info")) nil [1143 1169])
+            ("contributors.texi" function (:arguments ("../ChangeLog" "Makefile" "texinfo-tabulate.awk")) nil [1528 1925])
+            ("section" variable (:default-value ("$(shell grep INFO-DIR-SECTION $(infofiles) | sed 's/INFO-DIR-SECTION //')")) nil [2013 2098])
+            ("install-info" function (:arguments ("slime.info")) nil [2098 2674])
+            ("uninstall-info" function nil nil [2675 3168])
+            ("clean" function nil nil [3169 3436]))          
+    :file "Makefile"
+    :pointmax 3436
+    :fsize 3435
+    :lastmodtime '(20918 63561 518849 947000)
+    :unmatched-syntax '((shell-command 3415 . 3435) (bol 3414 . 3414))
+    )
+   )
+  :file "!home!lee!.emacs.d!slime!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

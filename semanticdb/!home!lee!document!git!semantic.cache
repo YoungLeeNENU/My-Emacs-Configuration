@@ -1,0 +1,1102 @@
+;; Object git/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "git/"
+  :tables (list 
+   (semanticdb-table "copy.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cache.h" include nil nil [1 19])
+            ("copy_fd" function
+               (:arguments 
+                  ( ("ifd" variable (:type "int") (reparse-symbol arg-sub-list) [33 41])
+                    ("ofd" variable (:type "int") (reparse-symbol arg-sub-list) [42 50]))                  
+                :type "int")
+                nil [21 708])
+            ("copy_times" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [732 748])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [749 765]))                  
+                :type "int")
+                nil [710 959])
+            ("copy_file" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [975 991])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [992 1008])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1009 1018]))                  
+                :type "int")
+                nil [961 1415])
+            ("copy_file_with_time" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1441 1457])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1458 1474])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1475 1484]))                  
+                :type "int")
+                nil [1417 1590]))          
+    :file "copy.c"
+    :pointmax 1591
+    :fsize 1590
+    :lastmodtime '(20967 57781 135607 176000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cache.h"
+    :file "cache.h"
+    :fsize 49590
+    :lastmodtime '(20967 57781 71607 181000)
+    )
+   (semanticdb-table "git-remote-testpy.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("try" code nil nil [676 784])
+            ("sys" include nil nil [784 794])
+            ("os" include nil nil [795 804])
+            ("time" include nil nil [805 816])
+            ("sys" code nil nil [817 866])
+            ("git_remote_helpers.util" include nil nil [868 920])
+            ("git_remote_helpers.git.repo" include nil nil [921 968])
+            ("git_remote_helpers.git.exporter" include nil nil [969 1024])
+            ("git_remote_helpers.git.importer" include nil nil [1025 1080])
+            ("git_remote_helpers.git.non_local" include nil nil [1081 1137])
+            ("if" code nil nil [1139 1300])
+            ("encode_filepath" function
+               (:documentation "Encodes a Unicode file path to a byte string.
+
+    On Python 2 this is a no-op; on Python 3 we encode the string as
+    suggested by [1] which allows an exact round-trip from the command line
+    to the filesystem.
+
+    [1] http://docs.python.org/3/c-api/unicode.html#file-system-encoding
+
+    "
+                :arguments 
+                  ( ("path" variable nil (reparse-symbol function_parameters) [1322 1326]))                  )
+                nil [1302 1761])
+            ("get_repo" function
+               (:documentation "Returns a git repository object initialized for usage.
+    "
+                :arguments 
+                  ( ("alias" variable nil (reparse-symbol function_parameters) [1776 1781])
+                    ("url" variable nil (reparse-symbol function_parameters) [1783 1786]))                  )
+                nil [1763 2427])
+            ("local_repo" function
+               (:documentation "Returns a git repository object initalized for usage.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [2444 2448])
+                    ("path" variable nil (reparse-symbol function_parameters) [2450 2454]))                  )
+                nil [2429 2842])
+            ("do_capabilities" function
+               (:documentation "Prints the supported capabilities.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [2864 2868])
+                    ("args" variable nil (reparse-symbol function_parameters) [2870 2874]))                  )
+                nil [2844 3322])
+            ("do_list" function
+               (:documentation "Lists all known references.
+
+    Bug: This will always set the remote head to master for non-local
+    repositories, since we have no way of determining what the remote
+    head is at clone time.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [3336 3340])
+                    ("args" variable nil (reparse-symbol function_parameters) [3342 3346]))                  )
+                nil [3324 3899])
+            ("update_local_repo" function
+               (:documentation "Updates (or clones) a local repo.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [3923 3927]))                  )
+                nil [3901 4154])
+            ("do_import" function
+               (:documentation "Exports a fast-import stream from testgit for git to import.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [4170 4174])
+                    ("args" variable nil (reparse-symbol function_parameters) [4176 4180]))                  )
+                nil [4156 4921])
+            ("do_export" function
+               (:documentation "Imports a fast-import stream from git to testgit.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [4937 4941])
+                    ("args" variable nil (reparse-symbol function_parameters) [4943 4947]))                  )
+                nil [4923 5372])
+            ("COMMANDS" variable nil nil [5374 5496])
+            ("sanitize" function
+               (:documentation "Cleans up the url.
+    "
+                :arguments 
+                  ( ("value" variable nil (reparse-symbol function_parameters) [5512 5517]))                  )
+                nil [5499 5637])
+            ("read_one_line" function
+               (:documentation "Reads and processes one command.
+    "
+                :arguments 
+                  ( ("repo" variable nil (reparse-symbol function_parameters) [5657 5661]))                  )
+                nil [5639 6396])
+            ("main" function
+               (:documentation "Starts a new remote helper for the specified repository.
+    "
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [6407 6411]))                  )
+                nil [6398 7349])
+            ("if" code nil nil [7350 7406]))          
+    :file "git-remote-testpy.py"
+    :pointmax 7406
+    :fsize 7405
+    :lastmodtime '(20967 57781 187607 176000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "git-p4.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [301 311])
+            ("if" code nil nil [312 467])
+            ("os" include nil nil [467 476])
+            ("optparse" include nil nil [477 492])
+            ("marshal" include nil nil [493 507])
+            ("subprocess" include nil nil [508 525])
+            ("tempfile" include nil nil [526 541])
+            ("time" include nil nil [542 553])
+            ("platform" include nil nil [554 569])
+            ("re" include nil nil [570 579])
+            ("shutil" include nil nil [580 593])
+            ("stat" include nil nil [594 605])
+            ("try" code nil nil [607 1219])
+            ("verbose" variable nil nil [1220 1235])
+            ("defaultLabelRegexp" variable nil nil [1296 1337])
+            ("p4_build_cmd" function
+               (:documentation "Build a suitable p4 command line.
+
+    This consolidates building and returning a p4 command line into one
+    location. It means that hooking into the environment, or other configuration
+    can be done more easily.
+    "
+                :arguments 
+                  ( ("cmd" variable nil (reparse-symbol function_parameters) [1356 1359]))                  )
+                nil [1339 2240])
+            ("chdir" function
+               (:documentation "Do chdir to the given path, and set the PWD environment
+       variable for use by P4.  It does not look at getcwd() output.
+       Since we're not using the shell, it is necessary to set the
+       PWD environment variable explicitly.
+
+       Normally, expand the path to force it to be absolute.  This
+       addresses the use of relative path names inside P4 settings,
+       e.g. P4CONFIG=.p4config.  P4 does not simply open the filename
+       as given; it looks for .p4config using PWD.
+
+       If is_client_path, the path was handed to us directly by p4,
+       and may be a symbolic link.  Do not call os.getcwd() in this
+       case, because it will cause p4 to think that PWD is not inside
+       the client path.
+       "
+                :arguments 
+                  ( ("path" variable nil (reparse-symbol function_parameters) [2251 2255])
+                    ("is_client_path" variable nil (reparse-symbol function_parameters) [2257 2271]))                  )
+                nil [2241 3125])
+            ("die" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [3134 3137]))              ) nil [3126 3252])
+            ("write_pipe" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [3268 3269])
+                ("stdin" variable nil (reparse-symbol function_parameters) [3271 3276]))              ) nil [3253 3595])
+            ("p4_write_pipe" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [3614 3615])
+                ("stdin" variable nil (reparse-symbol function_parameters) [3617 3622]))              ) nil [3596 3695])
+            ("read_pipe" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [3710 3711])
+                ("ignore_error" variable nil (reparse-symbol function_parameters) [3713 3725]))              ) nil [3696 4050])
+            ("p4_read_pipe" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [4068 4069])
+                ("ignore_error" variable nil (reparse-symbol function_parameters) [4071 4083]))              ) nil [4051 4168])
+            ("read_pipe_lines" function (:arguments 
+              ( ("c" variable nil (reparse-symbol function_parameters) [4189 4190]))              ) nil [4169 4510])
+            ("p4_read_pipe_lines" function
+               (:documentation "Specifically invoke p4 on the command supplied. "
+                :arguments 
+                  ( ("c" variable nil (reparse-symbol function_parameters) [4534 4535]))                  )
+                nil [4511 4665])
+            ("p4_has_command" function
+               (:documentation "Ask p4 for help on this command.  If it returns an error, the
+       command does not exist in this version of p4."
+                :arguments 
+                  ( ("cmd" variable nil (reparse-symbol function_parameters) [4685 4688]))                  )
+                nil [4666 5026])
+            ("p4_has_move_command" function (:documentation "See if the move command exists, that it supports -k, and that
+       it has not been administratively disabled.  The arguments
+       must be correct, but the filenames do not have to exist.  Use
+       ones with wildcards so even if they exist, it will fail.") nil [5027 5781])
+            ("system" function (:arguments 
+              ( ("cmd" variable nil (reparse-symbol function_parameters) [5793 5796]))              ) nil [5782 6021])
+            ("p4_system" function
+               (:documentation "Specifically invoke p4 as the system command. "
+                :arguments 
+                  ( ("cmd" variable nil (reparse-symbol function_parameters) [6036 6039]))                  )
+                nil [6022 6300])
+            ("_p4_version_string" variable nil nil [6301 6326])
+            ("p4_version_string" function (:documentation "Read the version string, showing just the last line, which
+       hopefully is the interesting version bit.
+
+       $ p4 -V
+       Perforce - The Fast Software Configuration Management System.
+       Copyright 1995-2011 Perforce Software.  All rights reserved.
+       Rev. P4/NTX86/2011.1/393975 (2011/12/16).
+    ") nil [6327 6851])
+            ("p4_integrate" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [6869 6872])
+                ("dest" variable nil (reparse-symbol function_parameters) [6874 6878]))              ) nil [6852 6962])
+            ("p4_sync" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [6975 6976])
+                ("options" variable nil (reparse-symbol function_parameters) [6978 6986]))              ) nil [6963 7052])
+            ("p4_add" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [7064 7065]))              ) nil [7053 7217])
+            ("p4_delete" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [7232 7233]))              ) nil [7218 7282])
+            ("p4_edit" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [7295 7296]))              ) nil [7283 7343])
+            ("p4_revert" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [7358 7359]))              ) nil [7344 7408])
+            ("p4_reopen" function (:arguments 
+              ( ("type" variable nil (reparse-symbol function_parameters) [7423 7427])
+                ("f" variable nil (reparse-symbol function_parameters) [7429 7430]))              ) nil [7409 7491])
+            ("p4_move" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [7504 7507])
+                ("dest" variable nil (reparse-symbol function_parameters) [7509 7513]))              ) nil [7492 7591])
+            ("p4_describe" function
+               (:documentation "Make sure it returns a valid result by checking for
+       the presence of field \"time\".  Return a dict of the
+       results."
+                :arguments 
+                  ( ("change" variable nil (reparse-symbol function_parameters) [7608 7614]))                  )
+                nil [7592 8342])
+            ("split_p4_type" function (:arguments 
+              ( ("p4type" variable nil (reparse-symbol function_parameters) [8506 8512]))              ) nil [8488 9265])
+            ("p4_type" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [9338 9342]))              ) nil [9326 9438])
+            ("p4_keywords_regexp_for_type" function (:arguments 
+              ( ("base" variable nil (reparse-symbol function_parameters) [9582 9586])
+                ("type_mods" variable nil (reparse-symbol function_parameters) [9588 9597]))              ) nil [9550 10226])
+            ("p4_keywords_regexp_for_file" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [10405 10409]))              ) nil [10373 10602])
+            ("setP4ExecBit" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [10620 10624])
+                ("mode" variable nil (reparse-symbol function_parameters) [10626 10630]))              ) nil [10603 11061])
+            ("getP4OpenedType" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [11082 11086]))              ) nil [11062 11393])
+            ("getP4Labels" function (:arguments 
+              ( ("depotPaths" variable nil (reparse-symbol function_parameters) [11444 11454]))              ) nil [11428 11697])
+            ("getGitTags" function nil nil [11731 11889])
+            ("diffTreePattern" function nil nil [11890 12195])
+            ("parseDiffTreeEntry" function
+               (:documentation "Parses a single diff tree entry into its component elements.
+
+    See git-diff-tree(1) manpage for details about the format of the diff
+    output. This method returns a dictionary with the following elements:
+
+    src_mode - The mode of the source file
+    dst_mode - The mode of the destination file
+    src_sha1 - The sha1 for the source file
+    dst_sha1 - The sha1 fr the destination file
+    status - The one letter status of the diff (i.e. 'A', 'M', 'D', etc)
+    status_score - The score for the status (applicable for 'C' and 'R'
+                   statuses). This is None if there is no score.
+    src - The path for the source file.
+    dst - The path for the destination file. This is only present for
+          copy or renames. If it is not present, this is None.
+
+    If the pattern is not matched, None is returned."
+                :arguments 
+                  ( ("entry" variable nil (reparse-symbol function_parameters) [12219 12224]))                  )
+                nil [12196 13488])
+            ("isModeExec" function (:arguments 
+              ( ("mode" variable nil (reparse-symbol function_parameters) [13504 13508]))              ) nil [13489 13636])
+            ("isModeExecChanged" function (:arguments 
+              ( ("src_mode" variable nil (reparse-symbol function_parameters) [13659 13667])
+                ("dst_mode" variable nil (reparse-symbol function_parameters) [13669 13677]))              ) nil [13637 13736])
+            ("p4CmdList" function (:arguments 
+              ( ("cmd" variable nil (reparse-symbol function_parameters) [13751 13754])
+                ("stdin" variable nil (reparse-symbol function_parameters) [13756 13761])
+                ("stdin_mode" variable nil (reparse-symbol function_parameters) [13768 13778])
+                ("cb" variable nil (reparse-symbol function_parameters) [13786 13788]))              ) nil [13737 15087])
+            ("p4Cmd" function (:arguments 
+              ( ("cmd" variable nil (reparse-symbol function_parameters) [15098 15101]))              ) nil [15088 15217])
+            ("p4Where" function (:arguments 
+              ( ("depotPath" variable nil (reparse-symbol function_parameters) [15230 15239]))              ) nil [15218 16176])
+            ("currentGitBranch" function nil nil [16177 16265])
+            ("isValidGitDir" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [16284 16288]))              ) nil [16266 16451])
+            ("parseRevision" function (:arguments 
+              ( ("ref" variable nil (reparse-symbol function_parameters) [16470 16473]))              ) nil [16452 16531])
+            ("branchExists" function (:arguments 
+              ( ("ref" variable nil (reparse-symbol function_parameters) [16549 16552]))              ) nil [16532 16684])
+            ("extractLogMessageFromGitCommit" function (:arguments 
+              ( ("commit" variable nil (reparse-symbol function_parameters) [16720 16726]))              ) nil [16685 17060])
+            ("extractSettingsGitLog" function (:arguments 
+              ( ("log" variable nil (reparse-symbol function_parameters) [17087 17090]))              ) nil [17061 17756])
+            ("gitBranchExists" function (:arguments 
+              ( ("branch" variable nil (reparse-symbol function_parameters) [17777 17783]))              ) nil [17757 17950])
+            ("_gitConfig" variable nil nil [17951 17966])
+            ("gitConfig" function (:arguments 
+              ( ("key" variable nil (reparse-symbol function_parameters) [17982 17985]))              ) nil [17968 18172])
+            ("gitConfigBool" function
+               (:documentation "Return a bool, using git config --bool.  It is True only if the
+       variable is set to true, and False if set to false or not present
+       in the config."
+                :arguments 
+                  ( ("key" variable nil (reparse-symbol function_parameters) [18191 18194]))                  )
+                nil [18173 18585])
+            ("gitConfigList" function (:arguments 
+              ( ("key" variable nil (reparse-symbol function_parameters) [18604 18607]))              ) nil [18586 18805])
+            ("p4BranchesInGit" function
+               (:documentation "Find all the branches whose names start with \"p4/\", looking
+       in remotes or heads as specified by the argument.  Return
+       a dictionary of { branch: revision } for each one found.
+       The branch names are the short names, without any
+       \"p4/\" prefix."
+                :arguments 
+                  ( ("branchesAreInRemotes" variable nil (reparse-symbol function_parameters) [18826 18846]))                  )
+                nil [18806 19687])
+            ("branch_exists" function
+               (:documentation "Make sure that the given ref name really exists."
+                :arguments 
+                  ( ("branch" variable nil (reparse-symbol function_parameters) [19706 19712]))                  )
+                nil [19688 20082])
+            ("findUpstreamBranchPoint" function (:arguments 
+              ( ("head" variable nil (reparse-symbol function_parameters) [20111 20115]))              ) nil [20083 21013])
+            ("createOrUpdateBranchesFromOrigin" function (:arguments 
+              ( ("localRefPrefix" variable nil (reparse-symbol function_parameters) [21051 21065])
+                ("silent" variable nil (reparse-symbol function_parameters) [21088 21094]))              ) nil [21014 23012])
+            ("originP4BranchesExist" function nil nil [23013 23154])
+            ("p4ChangesForPaths" function (:arguments 
+              ( ("depotPaths" variable nil (reparse-symbol function_parameters) [23177 23187])
+                ("changeRange" variable nil (reparse-symbol function_parameters) [23189 23200]))              ) nil [23155 23552])
+            ("p4PathStartsWith" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [23574 23578])
+                ("prefix" variable nil (reparse-symbol function_parameters) [23580 23586]))              ) nil [23553 24001])
+            ("getClientSpec" function (:documentation "Look at the p4 client spec, create a View() object that contains
+       all the mappings, and return it.") nil [24002 24771])
+            ("getClientRoot" function (:documentation "Grab the client directory.") nil [24772 25083])
+            ("wildcard_decode" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [25290 25294]))              ) nil [25270 25741])
+            ("wildcard_encode" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [25762 25766]))              ) nil [25742 26000])
+            ("wildcard_present" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [26022 26026]))              ) nil [26001 26088])
+            ("Command" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [26136 26173])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26182 26202])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26211 26231]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26121 26125]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26108 26232]))                  
+                :type "class")
+                nil [26089 26232])
+            ("P4UserMap" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [26282 26320])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26329 26351]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26267 26271]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26254 26352])
+                    ("p4UserId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26370 26374]))                          )
+                        (reparse-symbol indented_block_body) [26357 26663])
+                    ("p4UserIsMe" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26683 26687])
+                            ("p4User" variable nil (reparse-symbol function_parameters) [26689 26695]))                          )
+                        (reparse-symbol indented_block_body) [26668 26887])
+                    ("getUserCacheFilename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26917 26921]))                          )
+                        (reparse-symbol indented_block_body) [26892 27039])
+                    ("getUserMapFromPerforceServer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27077 27081]))                          )
+                        (reparse-symbol indented_block_body) [27044 27691])
+                    ("loadUserMapFromCache" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27721 27725]))                          )
+                        (reparse-symbol indented_block_body) [27696 28136]))                  
+                :type "class")
+                nil [26233 28136])
+            ("P4Debug" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [28193 28215])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28224 28241])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28250 28307])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28316 28337]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28178 28182]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [28165 28338])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28351 28355])
+                            ("args" variable nil (reparse-symbol function_parameters) [28357 28361]))                          )
+                        (reparse-symbol indented_block_body) [28343 28517]))                  
+                :type "class")
+                nil [28137 28517])
+            ("P4RollBack" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [28577 28599])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28608 28729])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28738 28812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28821 28855]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28562 28566]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [28549 28856])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28869 28873])
+                            ("args" variable nil (reparse-symbol function_parameters) [28875 28879]))                          )
+                        (reparse-symbol indented_block_body) [28861 30799]))                  
+                :type "class")
+                nil [28518 30799])
+            ("P4Submit" type
+               (:superclasses ("Command" "P4UserMap")
+                :members 
+                  ( ("conflict_behavior_choices" variable nil (reparse-symbol indented_block_body) [30841 30892])
+                    ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [30926 30948])
+                            ("P4UserMap" code nil (reparse-symbol indented_block_body) [30957 30981])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30990 31854])
+                            ("self" variable nil (reparse-symbol indented_block_body) [31863 31930])
+                            ("self" variable nil (reparse-symbol indented_block_body) [31939 32006])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32015 32031])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32040 32066])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32075 32131])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32140 32160])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32169 32197])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32206 32235])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32244 32293])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32302 32327])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32336 32381])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32390 32408]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30911 30915]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [30898 32409])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32424 32428]))                          )
+                        (reparse-symbol indented_block_body) [32414 32569])
+                    ("separate_jobs_from_description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32609 32613])
+                            ("message" variable nil (reparse-symbol function_parameters) [32615 32622]))                          
+                        :documentation "Extract and return a possible Jobs field in the commit
+           message.  It goes into a separate section in the p4 change
+           specification.
+
+           A jobs line starts with \"Jobs:\" and looks like a new field
+           in a form.  Values are white-space separated on the same
+           line or on following lines that start with a tab.
+
+           This does not parse and extract the full git commit message
+           like a p4 form.  It just sees the Jobs: line as a marker
+           to pass everything from then on directly into the p4 form,
+           but outside the description section.
+
+           Return a tuple (stripped log message, jobs string).")
+                        (reparse-symbol indented_block_body) [32574 33564])
+                    ("prepareLogMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33591 33595])
+                            ("template" variable nil (reparse-symbol function_parameters) [33597 33605])
+                            ("message" variable nil (reparse-symbol function_parameters) [33607 33614])
+                            ("jobs" variable nil (reparse-symbol function_parameters) [33616 33620]))                          
+                        :documentation "Edits the template returned from \"p4 change -o\" to insert
+           the message in the Description field, and the jobs text in
+           the Jobs field.")
+                        (reparse-symbol indented_block_body) [33569 34649])
+                    ("patchRCSKeywords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34675 34679])
+                            ("file" variable nil (reparse-symbol function_parameters) [34681 34685])
+                            ("pattern" variable nil (reparse-symbol function_parameters) [34687 34694]))                          )
+                        (reparse-symbol indented_block_body) [34654 35529])
+                    ("p4UserForCommit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35554 35558])
+                            ("id" variable nil (reparse-symbol function_parameters) [35559 35561]))                          )
+                        (reparse-symbol indented_block_body) [35534 35982])
+                    ("checkValidP4Users" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36009 36013])
+                            ("commits" variable nil (reparse-symbol function_parameters) [36014 36021]))                          )
+                        (reparse-symbol indented_block_body) [35987 36498])
+                    ("lastP4Changelist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36524 36528]))                          )
+                        (reparse-symbol indented_block_body) [36503 37326])
+                    ("modifyChangelistUser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37356 37360])
+                            ("changelist" variable nil (reparse-symbol function_parameters) [37362 37372])
+                            ("newUser" variable nil (reparse-symbol function_parameters) [37374 37381]))                          )
+                        (reparse-symbol indented_block_body) [37331 38311])
+                    ("canChangeChangelists" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38341 38345]))                          )
+                        (reparse-symbol indented_block_body) [38316 38755])
+                    ("prepareSubmitTemplate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38786 38790]))                          
+                        :documentation "Run \"p4 change -o\" to grab a change specification template.
+           This does not use \"p4 -G\", as it is nice to keep the submission
+           template in original order, since a human might edit it.
+
+           Remove lines in the Files section that show changes to files
+           outside the depot path we're committing into.")
+                        (reparse-symbol indented_block_body) [38760 39958])
+                    ("edit_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39981 39985])
+                            ("template_file" variable nil (reparse-symbol function_parameters) [39987 40000]))                          
+                        :documentation "Invoke the editor to let the user change the submission
+           message.  Return true if okay to continue with the submit.")
+                        (reparse-symbol indented_block_body) [39963 41318])
+                    ("applyCommit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41339 41343])
+                            ("id" variable nil (reparse-symbol function_parameters) [41345 41347]))                          
+                        :documentation "Apply one commit, return True if it succeeded.")
+                        (reparse-symbol indented_block_body) [41323 52304])
+                    ("exportGitTags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52411 52415])
+                            ("gitTags" variable nil (reparse-symbol function_parameters) [52417 52424]))                          )
+                        (reparse-symbol indented_block_body) [52393 54988])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55001 55005])
+                            ("args" variable nil (reparse-symbol function_parameters) [55007 55011]))                          )
+                        (reparse-symbol indented_block_body) [54993 63028]))                  
+                :type "class")
+                nil [30800 63028])
+            ("View" type
+               (:documentation "Represent a p4 view (\"p4 help views\"), and map files in a
+       repo according to the view."
+                :superclasses ("object")
+                :members 
+                  ( ("Path" type
+                       (:documentation "A depot or client path, possibly containing wildcards.
+           The only one supported is ... at the end, currently.
+           Initialize with the full path, with //depot or //client."
+                        :superclasses ("object")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [63435 63451])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [63464 63488])
+                                    ("self" code nil (reparse-symbol indented_block_body) [63501 63522])
+                                    ("m" variable nil (reparse-symbol indented_block_body) [63603 63640])
+                                    ("if" code nil (reparse-symbol indented_block_body) [63653 63736])
+                                    ("prefix" variable nil (reparse-symbol indented_block_body) [63748 63767])
+                                    ("if" code nil (reparse-symbol indented_block_body) [63780 63904]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [63400 63404])
+                                    ("path" variable nil (reparse-symbol function_parameters) [63406 63410])
+                                    ("is_depot" variable nil (reparse-symbol function_parameters) [63412 63420]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [63387 63904])
+                            ("find_wildcards" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [63932 63936]))                                  
+                                :documentation "Make sure wildcards are valid, and set up internal
+               variables.")
+                                (reparse-symbol indented_block_body) [63913 64931])
+                            ("ensure_compatible" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [64962 64966])
+                                    ("other_path" variable nil (reparse-symbol function_parameters) [64968 64978]))                                  
+                                :documentation "Make sure the wildcards agree.")
+                                (reparse-symbol indented_block_body) [64940 65237])
+                            ("match_wildcards" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [65266 65270])
+                                    ("test_path" variable nil (reparse-symbol function_parameters) [65272 65281]))                                  
+                                :documentation "See if this test_path matches us, and fill in the value
+               of the wildcards if so.  Returns a tuple of
+               (True|False, wildcards[]).  For now, only the ... at end
+               is supported, so at most one wildcard.")
+                                (reparse-symbol indented_block_body) [65246 65905])
+                            ("match" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [65924 65928])
+                                    ("test_path" variable nil (reparse-symbol function_parameters) [65930 65939]))                                  
+                                :documentation "Just return if it matches; don't bother with the wildcards.")
+                                (reparse-symbol indented_block_body) [65914 66092])
+                            ("fill_in_wildcards" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [66123 66127])
+                                    ("wildcards" variable nil (reparse-symbol function_parameters) [66129 66138]))                                  
+                                :documentation "Return the relative path, with the wildcards filled in
+               if there are any.")
+                                (reparse-symbol indented_block_body) [66101 66388]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [63157 66388])
+                    ("Mapping" type
+                       (:superclasses ("object")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [66567 66621])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [66634 66691])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [66704 66726])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [66759 66781])
+                                    ("assert" code nil (reparse-symbol indented_block_body) [66814 66856])
+                                    ("self" code nil (reparse-symbol indented_block_body) [66869 66920]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [66437 66441])
+                                    ("depot_side" variable nil (reparse-symbol function_parameters) [66443 66453])
+                                    ("client_side" variable nil (reparse-symbol function_parameters) [66455 66466])
+                                    ("overlay" variable nil (reparse-symbol function_parameters) [66468 66475])
+                                    ("exclude" variable nil (reparse-symbol function_parameters) [66477 66484]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [66424 66921])
+                            ("__str__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [66942 66946]))                                  )
+                                (reparse-symbol indented_block_body) [66930 67193])
+                            ("map_depot_to_client" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [67226 67230])
+                                    ("depot_path" variable nil (reparse-symbol function_parameters) [67232 67242]))                                  
+                                :documentation "Calculate the client path if using this mapping on the
+               given depot path; does not consider the effect of other
+               mappings in a view.  Even excluded mappings are returned.")
+                                (reparse-symbol indented_block_body) [67202 67696]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [66393 67696])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [67760 67778]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [67745 67749]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [67732 67779])
+                    ("append" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [67795 67799])
+                            ("view_line" variable nil (reparse-symbol function_parameters) [67801 67810]))                          
+                        :documentation "Parse a view line, splitting it into depot and client
+           sides.  Append to self.mappings, preserving order.")
+                        (reparse-symbol indented_block_body) [67784 70032])
+                    ("map_in_client" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [70055 70059])
+                            ("depot_path" variable nil (reparse-symbol function_parameters) [70061 70071]))                          
+                        :documentation "Return the relative location in the client where this
+           depot file should live.  Returns \"\" if the file should
+           not be mapped in the client.")
+                        (reparse-symbol indented_block_body) [70037 71889]))                  
+                :type "class")
+                nil [63029 71889])
+            ("P4Sync" type
+               (:superclasses ("Command" "P4UserMap")
+                :members 
+                  ( ("delete_actions" variable nil (reparse-symbol indented_block_body) [71928 71981])
+                    ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [72015 72037])
+                            ("P4UserMap" code nil (reparse-symbol indented_block_body) [72046 72070])
+                            ("self" variable nil (reparse-symbol indented_block_body) [72079 73297])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73306 73642])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73652 73692])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73701 73720])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73729 73757])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73766 73795])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73804 73820])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73829 73856])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73865 73890])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73899 73924])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73933 73954])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73963 73989])
+                            ("self" variable nil (reparse-symbol indented_block_body) [73998 74027])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74036 74056])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74065 74090])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74099 74121])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74130 74155])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74164 74186])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74195 74221])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74230 74269])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74278 74304])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74313 74335])
+                            ("self" variable nil (reparse-symbol indented_block_body) [74344 74382])
+                            ("if" code nil (reparse-symbol indented_block_body) [74392 74482]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72000 72004]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [71987 74482])
+                    ("checkpoint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [74568 74572]))                          )
+                        (reparse-symbol indented_block_body) [74553 74791])
+                    ("extractFilesFromCommit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [74823 74827])
+                            ("commit" variable nil (reparse-symbol function_parameters) [74829 74835]))                          )
+                        (reparse-symbol indented_block_body) [74796 75714])
+                    ("stripRepoPath" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [75737 75741])
+                            ("path" variable nil (reparse-symbol function_parameters) [75743 75747])
+                            ("prefixes" variable nil (reparse-symbol function_parameters) [75749 75757]))                          
+                        :documentation "When streaming files, this is called to map a p4 depot path
+           to where it should go in git.  The prefixes are either
+           self.depotPaths, or self.branchPrefixes in the case of
+           branch detection.")
+                        (reparse-symbol indented_block_body) [75719 76969])
+                    ("splitFilesIntoBranches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77001 77005])
+                            ("commit" variable nil (reparse-symbol function_parameters) [77007 77013]))                          
+                        :documentation "Look at each depotFile in the commit to figure out to what
+           branch it belongs.")
+                        (reparse-symbol indented_block_body) [76974 78391])
+                    ("streamOneP4File" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [78491 78495])
+                            ("file" variable nil (reparse-symbol function_parameters) [78497 78501])
+                            ("contents" variable nil (reparse-symbol function_parameters) [78503 78511]))                          )
+                        (reparse-symbol indented_block_body) [78471 81242])
+                    ("streamOneP4Deletion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [81271 81275])
+                            ("file" variable nil (reparse-symbol function_parameters) [81277 81281]))                          )
+                        (reparse-symbol indented_block_body) [81247 81479])
+                    ("streamP4FilesCb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [81549 81553])
+                            ("marshalled" variable nil (reparse-symbol function_parameters) [81555 81565]))                          )
+                        (reparse-symbol indented_block_body) [81529 83130])
+                    ("streamP4Files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [83214 83218])
+                            ("files" variable nil (reparse-symbol function_parameters) [83220 83225]))                          )
+                        (reparse-symbol indented_block_body) [83196 84504])
+                    ("make_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [84524 84528])
+                            ("userid" variable nil (reparse-symbol function_parameters) [84530 84536]))                          )
+                        (reparse-symbol indented_block_body) [84509 84663])
+                    ("streamTag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [84704 84708])
+                            ("gitStream" variable nil (reparse-symbol function_parameters) [84710 84719])
+                            ("labelName" variable nil (reparse-symbol function_parameters) [84721 84730])
+                            ("labelDetails" variable nil (reparse-symbol function_parameters) [84732 84744])
+                            ("commit" variable nil (reparse-symbol function_parameters) [84746 84752])
+                            ("epoch" variable nil (reparse-symbol function_parameters) [84754 84759]))                          )
+                        (reparse-symbol indented_block_body) [84690 85732])
+                    ("commit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [85748 85752])
+                            ("details" variable nil (reparse-symbol function_parameters) [85754 85761])
+                            ("files" variable nil (reparse-symbol function_parameters) [85763 85768])
+                            ("branch" variable nil (reparse-symbol function_parameters) [85770 85776])
+                            ("parent" variable nil (reparse-symbol function_parameters) [85778 85784]))                          )
+                        (reparse-symbol indented_block_body) [85737 88665])
+                    ("getLabels" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [88764 88768]))                          )
+                        (reparse-symbol indented_block_body) [88750 89715])
+                    ("importP4Labels" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [89963 89967])
+                            ("stream" variable nil (reparse-symbol function_parameters) [89969 89975])
+                            ("p4Labels" variable nil (reparse-symbol function_parameters) [89977 89985]))                          )
+                        (reparse-symbol indented_block_body) [89944 92596])
+                    ("guessProjectName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [92622 92626]))                          )
+                        (reparse-symbol indented_block_body) [92601 92848])
+                    ("getBranchMapping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [92874 92878]))                          )
+                        (reparse-symbol indented_block_body) [92853 95387])
+                    ("getBranchMappingFromGitBranches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [95428 95432]))                          )
+                        (reparse-symbol indented_block_body) [95392 95722])
+                    ("updateOptionDict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [95748 95752])
+                            ("d" variable nil (reparse-symbol function_parameters) [95754 95755]))                          )
+                        (reparse-symbol indented_block_body) [95727 95918])
+                    ("readOptions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [95939 95943])
+                            ("d" variable nil (reparse-symbol function_parameters) [95945 95946]))                          )
+                        (reparse-symbol indented_block_body) [95923 96066])
+                    ("gitRefForBranch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [96091 96095])
+                            ("branch" variable nil (reparse-symbol function_parameters) [96097 96103]))                          )
+                        (reparse-symbol indented_block_body) [96071 96295])
+                    ("gitCommitByP4Change" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [96324 96328])
+                            ("ref" variable nil (reparse-symbol function_parameters) [96330 96333])
+                            ("change" variable nil (reparse-symbol function_parameters) [96335 96341]))                          )
+                        (reparse-symbol indented_block_body) [96300 97443])
+                    ("importNewBranch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [97468 97472])
+                            ("branch" variable nil (reparse-symbol function_parameters) [97474 97480])
+                            ("maxChange" variable nil (reparse-symbol function_parameters) [97482 97491]))                          )
+                        (reparse-symbol indented_block_body) [97448 98763])
+                    ("searchParent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [98785 98789])
+                            ("parent" variable nil (reparse-symbol function_parameters) [98791 98797])
+                            ("branch" variable nil (reparse-symbol function_parameters) [98799 98805])
+                            ("target" variable nil (reparse-symbol function_parameters) [98807 98813]))                          )
+                        (reparse-symbol indented_block_body) [98768 99332])
+                    ("importChanges" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [99355 99359])
+                            ("changes" variable nil (reparse-symbol function_parameters) [99361 99368]))                          )
+                        (reparse-symbol indented_block_body) [99337 103295])
+                    ("importHeadRevision" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [103323 103327])
+                            ("revision" variable nil (reparse-symbol function_parameters) [103329 103337]))                          )
+                        (reparse-symbol indented_block_body) [103300 105590])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [105604 105608])
+                            ("args" variable nil (reparse-symbol function_parameters) [105610 105614]))                          )
+                        (reparse-symbol indented_block_body) [105596 117724]))                  
+                :type "class")
+                nil [71890 117724])
+            ("P4Rebase" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [117782 117804])
+                            ("self" variable nil (reparse-symbol indented_block_body) [117813 117938])
+                            ("self" variable nil (reparse-symbol indented_block_body) [117947 117972])
+                            ("self" variable nil (reparse-symbol indented_block_body) [117981 118127]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [117767 117771]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [117754 118128])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [118141 118145])
+                            ("args" variable nil (reparse-symbol function_parameters) [118147 118151]))                          )
+                        (reparse-symbol indented_block_body) [118133 118275])
+                    ("rebase" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [118291 118295]))                          )
+                        (reparse-symbol indented_block_body) [118280 119288]))                  
+                :type "class")
+                nil [117725 119288])
+            ("P4Clone" type
+               (:superclasses ("P4Sync")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("P4Sync" code nil (reparse-symbol indented_block_body) [119344 119365])
+                            ("self" variable nil (reparse-symbol indented_block_body) [119374 119457])
+                            ("self" variable nil (reparse-symbol indented_block_body) [119466 119527])
+                            ("self" variable nil (reparse-symbol indented_block_body) [119536 120095])
+                            ("self" variable nil (reparse-symbol indented_block_body) [120104 120132])
+                            ("self" variable nil (reparse-symbol indented_block_body) [120141 120162])
+                            ("self" variable nil (reparse-symbol indented_block_body) [120171 120193]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [119329 119333]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [119316 120194])
+                    ("ensure_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [120276 120280])
+                            ("attr" variable nil (reparse-symbol function_parameters) [120282 120286])
+                            ("value" variable nil (reparse-symbol function_parameters) [120288 120293]))                          )
+                        (reparse-symbol indented_block_body) [120259 120437])
+                    ("defaultDestination" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [120465 120469])
+                            ("args" variable nil (reparse-symbol function_parameters) [120471 120475]))                          )
+                        (reparse-symbol indented_block_body) [120442 120798])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [120811 120815])
+                            ("args" variable nil (reparse-symbol function_parameters) [120817 120821]))                          )
+                        (reparse-symbol indented_block_body) [120803 122664]))                  
+                :type "class")
+                nil [119289 122664])
+            ("P4Branches" type
+               (:superclasses ("Command")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Command" code nil (reparse-symbol indented_block_body) [122724 122746])
+                            ("self" variable nil (reparse-symbol indented_block_body) [122755 122773])
+                            ("self" variable nil (reparse-symbol indented_block_body) [122782 122923])
+                            ("self" variable nil (reparse-symbol indented_block_body) [122932 122952]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [122709 122713]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [122696 122953])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [122966 122970])
+                            ("args" variable nil (reparse-symbol function_parameters) [122972 122976]))                          )
+                        (reparse-symbol indented_block_body) [122958 123585]))                  
+                :type "class")
+                nil [122665 123585])
+            ("HelpFormatter" type
+               (:superclasses ("optparse.IndentedHelpFormatter")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("optparse" code nil (reparse-symbol indented_block_body) [123671 123716]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [123656 123660]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [123643 123717])
+                    ("format_description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [123745 123749])
+                            ("description" variable nil (reparse-symbol function_parameters) [123751 123762]))                          )
+                        (reparse-symbol indented_block_body) [123722 123863]))                  
+                :type "class")
+                nil [123586 123863])
+            ("printUsage" function (:arguments 
+              ( ("commands" variable nil (reparse-symbol function_parameters) [123879 123887]))              ) nil [123864 124115])
+            ("commands" variable nil nil [124116 124329])
+            ("main" function nil nil [124332 126080])
+            ("if" code nil nil [126082 126120]))          
+    :file "git-p4.py"
+    :pointmax 126120
+    :fsize 126119
+    :lastmodtime '(20967 57781 187607 176000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!git!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

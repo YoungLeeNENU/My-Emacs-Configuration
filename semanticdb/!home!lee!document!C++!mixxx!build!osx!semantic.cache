@@ -1,0 +1,80 @@
+;; Object osx/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "osx/"
+  :tables (list 
+   (semanticdb-table "crossosx.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("os.path" include nil nil [11 25])
+            ("string" include nil nil [26 39])
+            ("SCons.Action" include nil nil [41 60])
+            ("SCons.Builder" include nil nil [61 81])
+            ("SCons.Tool" include nil nil [82 99])
+            ("SCons.Util" include nil nil [100 117])
+            ("prefixes" variable nil nil [163 270])
+            ("find" function (:arguments 
+              ( ("env" variable nil (reparse-symbol function_parameters) [281 284]))              ) nil [272 479])
+            ("shlib_generator" function (:arguments 
+              ( ("target" variable nil (reparse-symbol function_parameters) [500 506])
+                ("source" variable nil (reparse-symbol function_parameters) [508 514])
+                ("env" variable nil (reparse-symbol function_parameters) [516 519])
+                ("for_signature" variable nil (reparse-symbol function_parameters) [521 534]))              ) nil [480 1056])
+            ("shlib_emitter" function (:arguments 
+              ( ("target" variable nil (reparse-symbol function_parameters) [1075 1081])
+                ("source" variable nil (reparse-symbol function_parameters) [1083 1089])
+                ("env" variable nil (reparse-symbol function_parameters) [1091 1094]))              ) nil [1057 2213])
+            ("shlib_action" variable nil nil [2317 2380])
+            ("res_action" variable nil nil [2382 2437])
+            ("res_builder" variable nil nil [2439 2573])
+            ("SCons" code nil nil [2574 2643])
+            ("generate" function (:arguments 
+              ( ("env" variable nil (reparse-symbol function_parameters) [2658 2661]))              ) nil [2645 4813])
+            ("exists" function (:arguments 
+              ( ("env" variable nil (reparse-symbol function_parameters) [4825 4828]))              ) nil [4814 4850]))          
+    :file "crossosx.py"
+    :pointmax 4850
+    :fsize 4849
+    :lastmodtime '(21194 418 315970 662000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "otool.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [2 11])
+            ("sys" include nil nil [2645 2658])
+            ("os" include nil nil [2645 2658])
+            ("system" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [2673 2674]))              ) nil [2662 2950])
+            ("SYSTEM_FRAMEWORKS" variable nil nil [2953 3003])
+            ("SYSTEM_LIBPATH" variable nil nil [3004 3033])
+            ("LOCAL_FRAMEWORKS" variable nil nil [3088 3221])
+            ("LOCAL_LIBPATH" variable nil nil [3222 3338])
+            ("FRAMEWORKS" code nil nil [3349 3398])
+            ("LIBPATH" code nil nil [3399 3439])
+            ("otool" function (:arguments 
+              ( ("binary" variable nil (reparse-symbol function_parameters) [3467 3473]))              ) nil [3457 4567])
+            ("dependencies" function (:arguments 
+              ( ("binary" variable nil (reparse-symbol function_parameters) [4586 4592]))              ) nil [4569 5491])
+            ("embed_dependencies" function (:arguments 
+              ( ("binary" variable nil (reparse-symbol function_parameters) [5717 5723])
+                ("LOCAL" variable nil (reparse-symbol function_parameters) [5865 5870])
+                ("SYSTEM" variable nil (reparse-symbol function_parameters) [6197 6203]))              ) nil [5694 10091])
+            ("change_id" function (:arguments 
+              ( ("binary" variable nil (reparse-symbol function_parameters) [10108 10114])
+                ("id" variable nil (reparse-symbol function_parameters) [10116 10118]))              ) nil [10094 10210])
+            ("change_ref" function (:arguments 
+              ( ("binary" variable nil (reparse-symbol function_parameters) [10226 10232])
+                ("orig" variable nil (reparse-symbol function_parameters) [10234 10238])
+                ("new" variable nil (reparse-symbol function_parameters) [10240 10243]))              ) nil [10211 10610]))          
+    :file "otool.py"
+    :pointmax 11180
+    :fsize 11179
+    :lastmodtime '(21194 418 315970 662000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!build!osx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

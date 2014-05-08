@@ -1,0 +1,19 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "hello.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("spell" function (:arguments ("string")) nil [190 305]))          
+    :file "hello.scm"
+    :pointmax 439
+    :fsize 438
+    :lastmodtime '(21201 4327 172595 438000)
+    :unmatched-syntax '((semantic-list 307 . 438) (semantic-list 159 . 188) (semantic-list 128 . 157) (semantic-list 58 . 126) (semantic-list 1 . 56) (semantic-list 1 . 56) (semantic-list 307 . 428) (semantic-list 159 . 188) (semantic-list 128 . 157) (semantic-list 58 . 126) (semantic-list 1 . 56) (semantic-list 306 . 427) (semantic-list 158 . 187) (semantic-list 127 . 156) (semantic-list 58 . 125) (semantic-list 1 . 56) (semantic-list 307 . 428) (semantic-list 159 . 188) (semantic-list 128 . 157) (semantic-list 58 . 126) (semantic-list 1 . 56) (semantic-list 1 . 56) (semantic-list 1 . 56) (semantic-list 285 . 382) (semantic-list 137 . 166) (semantic-list 106 . 135) (semantic-list 58 . 104) (semantic-list 1 . 56) (semantic-list 284 . 381) (semantic-list 136 . 165) (semantic-list 105 . 134) (semantic-list 58 . 103) (semantic-list 1 . 56) (semantic-list 276 . 373) (semantic-list 128 . 157) (semantic-list 97 . 126) (semantic-list 58 . 95) (semantic-list 1 . 56) (semantic-list 271 . 368) (semantic-list 123 . 152) (semantic-list 92 . 121) (semantic-list 58 . 90) (semantic-list 1 . 56) (semantic-list 271 . 368) (semantic-list 123 . 152) (semantic-list 92 . 121) (semantic-list 58 . 90) (semantic-list 1 . 56) (semantic-list 267 . 364) (semantic-list 119 . 148) (semantic-list 88 . 117) (semantic-list 58 . 86) (semantic-list 1 . 56) (semantic-list 264 . 361) (semantic-list 116 . 145) (semantic-list 85 . 114) (semantic-list 58 . 83) (semantic-list 1 . 56) (semantic-list 260 . 357) (semantic-list 112 . 141) (semantic-list 81 . 110) (semantic-list 58 . 79) (semantic-list 1 . 56) (semantic-list 257 . 354) (semantic-list 109 . 138) (semantic-list 78 . 107) (semantic-list 58 . 76) (semantic-list 1 . 56) (semantic-list 248 . 345) (semantic-list 100 . 129) (semantic-list 69 . 98) (semantic-list 58 . 67) (semantic-list 1 . 56) (semantic-list 237 . 334) (semantic-list 89 . 118) (semantic-list 58 . 87) (semantic-list 1 . 56) (semantic-list 237 . 334) (semantic-list 89 . 118) (semantic-list 58 . 87) (semantic-list 1 . 56) (semantic-list 232 . 301) (semantic-list 84 . 113) (semantic-list 53 . 82) (semantic-list 1 . 51) (semantic-list 224 . 293) (semantic-list 76 . 105) (semantic-list 45 . 74) (semantic-list 1 . 43) (semantic-list 223 . 292) (semantic-list 75 . 104) (semantic-list 44 . 73) (semantic-list 1 . 42) (semantic-list 211 . 280) (semantic-list 63 . 92) (semantic-list 32 . 61) (semantic-list 1 . 30) (semantic-list 31 . 60) (semantic-list 1 . 29) (semantic-list 199 . 268) (semantic-list 51 . 80) (semantic-list 20 . 49) (semantic-list 1 . 18) (semantic-list 198 . 267) (semantic-list 50 . 79) (semantic-list 19 . 48) (semantic-list 1 . 17) (semantic-list 200 . 269) (semantic-list 52 . 81) (semantic-list 21 . 50) (semantic-list 1 . 19) (semantic-list 200 . 270) (semantic-list 52 . 81) (semantic-list 21 . 50) (semantic-list 1 . 19) (semantic-list 200 . 255) (semantic-list 52 . 81) (semantic-list 21 . 50) (semantic-list 1 . 19) (semantic-list 191 . 246) (semantic-list 43 . 72) (semantic-list 12 . 41) (semantic-list 1 . 11) (semantic-list 180 . 235) (semantic-list 32 . 61) (semantic-list 1 . 30))
+    )
+   )
+  :file "!home!lee!document!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

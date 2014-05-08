@@ -1,0 +1,23 @@
+;; Object Front/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Front/"
+  :tables (list 
+   (semanticdb-table "X_Perm_T.htm"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CLHS: Permuted Symbol Index (T)" section nil nil [123 548])
+            ("Permuted Symbol Index (T)" section (:members 
+              ( ("Permuted Symbol Index (T)" section (:members 
+                  ( ("Permuted Symbol Index (T)" section (:members 
+                      ( ("Copyright 1996-2005, LispWorks Ltd.  All rights reserved." anchor nil nil [9415 9418]))                      ) nil [1222 9674]))                  ) nil [555 9674]))              ) nil [548 9674]))          
+    :file "X_Perm_T.htm"
+    :pointmax 9674
+    :fsize 9673
+    :lastmodtime '(16986 46371 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lisp!common lisp!hyperspec!HyperSpec!Front!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

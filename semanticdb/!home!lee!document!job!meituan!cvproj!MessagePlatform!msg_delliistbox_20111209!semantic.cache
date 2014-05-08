@@ -1,0 +1,764 @@
+;; Object msg_delliistbox_20111209/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msg_delliistbox_20111209/"
+  :tables (list 
+    (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("DEMOSHOW" variable (:default-value ("demoshow")) nil [1 22])
+            ("DEMOSHOWOBJS" variable (:default-value ("demoshow.o")) nil [22 48])
+            ("CC" variable (:default-value ("armv4l-unknown-linux-gcc")) nil [49 79])
+            ("CFLAGS" variable (:default-value ("-I/linux2410/kernel/include" "-Wall" "-Wstrict-prototypes" "-Wno-trigraphs" "-Os" "-I/opt/host/armv4l/src/linux/include")) nil [81 201])
+            ("LIBS" variable (:default-value ("-lminigui" "-lm" "-lpthread" "-lc")) nil [201 236])
+            ("all" function (:arguments ("$(DEMOSHOW)")) nil [237 253])
+            ("$(DEMOSHOW)" function (:arguments ("$(DEMOSHOWOBJS)")) nil [254 391])
+            ("clean" function nil nil [393 436]))          
+    :file "Makefile"
+    :pointmax 436
+    :fsize 435
+    :lastmodtime '(21314 365 919025 913000)
+    :unmatched-syntax '((shell-command 401 . 435) (bol 400 . 400))
+    )
+   (semanticdb-table "arm830.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__ARM830_H__" variable (:constant-flag t) nil [30 42])
+            ("CPLD_BASE0" variable (:constant-flag t) nil [52 62])
+            ("CPLD_BASE1" variable (:constant-flag t) nil [88 98])
+            ("OUTPUT" variable (:constant-flag t) nil [127 133])
+            ("INPUT" variable (:constant-flag t) nil [178 183])
+            ("CS0" variable (:constant-flag t) nil [236 239])
+            ("CS1" variable (:constant-flag t) nil [285 288])
+            ("CS2" variable (:constant-flag t) nil [334 337])
+            ("CS3" variable (:constant-flag t) nil [383 386])
+            ("CS1B" variable (:constant-flag t) nil [432 436])
+            ("CS2B" variable (:constant-flag t) nil [481 485])
+            ("GM450RL" variable (:constant-flag t) nil [533 540])
+            ("GM450RH" variable (:constant-flag t) nil [562 569])
+            ("LCR" variable (:constant-flag t) nil [595 598])
+            ("LSR" variable (:constant-flag t) nil [628 631])
+            ("no_null" variable
+               (:dereference 1
+                :type "char")
+                nil [652 670])
+            ("delay" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [690 696]))                  
+                :type "void")
+                nil [672 697])
+            ("delay" function
+               (:arguments 
+                  ( ("t" variable (:type "int") (reparse-symbol arg-sub-list) [709 715]))                  
+                :type "void")
+                nil [698 736])
+            ("Cmd_16c450" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [762 772])
+                    ("mode" variable (:type "char") (reparse-symbol arg-sub-list) [772 782]))                  
+                :type "char")
+                nil [738 783])
+            ("Cmd_16c450" function
+               (:pointer 1
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [801 811])
+                    ("mode" variable (:type "char") (reparse-symbol arg-sub-list) [811 821]))                  
+                :type "char")
+                nil [784 2446]))          
+    :file "arm830.h"
+    :pointmax 2510
+    :fsize 2575
+    :lastmodtime '(21314 2706 987564 54000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CS1B" . ((semantic-list "(unsigned char*)" 439 . 455) (semantic-list "(CPLD_BASE0+0x80)" 455 . 472)))
+          ("LSR" . ((punctuation "*" 642 . 643) (semantic-list "(CS0+5)" 643 . 650)))
+          ("__ARM830_H__")
+          ("OUTPUT" . 
+              ((punctuation "*" 139 . 140) (semantic-list "(unsigned char*)" 140 . 156) (symbol "CPLD_BASE0" 156 . 166)))
+          ("CS0" . ((semantic-list "(unsigned char*)" 243 . 259) (semantic-list "(CPLD_BASE0+0x30)" 259 . 276)))
+          ("CS2B" . ((semantic-list "(unsigned char*)" 488 . 504) (semantic-list "(CPLD_BASE0+0xc0)" 504 . 521)))
+          ("INPUT" . 
+              ((punctuation "*" 191 . 192) (semantic-list "(unsigned char*)" 192 . 208) (semantic-list "(CPLD_BASE0+0x16)" 208 . 225)))
+          ("CS1" . ((semantic-list "(unsigned char*)" 292 . 308) (semantic-list "(CPLD_BASE0+0x40)" 308 . 325)))
+          ("CPLD_BASE0" . ((semantic-list "(0xd3000000)" 67 . 79)))
+          ("CS2" . ((semantic-list "(unsigned char*)" 341 . 357) (semantic-list "(CPLD_BASE0+0x50)" 357 . 374)))
+          ("LCR" . ((punctuation "*" 609 . 610) (semantic-list "(CS0+3)" 610 . 617)))
+          ("CPLD_BASE1" . ((semantic-list "(0xd3100000)" 103 . 115)))
+          ("CS3" . ((semantic-list "(unsigned char*)" 390 . 406) (semantic-list "(CPLD_BASE0+0x60)" 406 . 423)))
+          ("GM450RH" . ((punctuation "*" 576 . 577) (semantic-list "(CS0+1)" 577 . 584)))
+          ("GM450RL" . ((punctuation "*" 547 . 548) (symbol "CS0" 548 . 551)))
+          )
+
+    )
+   (semanticdb-table "Confirm_Msg_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__CONFIRM_MSG_SMSG_H__" variable (:constant-flag t) nil [247 269])
+            ("smsg_common.h" include nil nil [270 294])
+            ("CONFIRMMSG_QUEST" variable (:constant-flag t) nil [304 320])
+            ("CONFIRMMSG_POP" variable (:constant-flag t) nil [338 352])
+            ("CONFIRMMSG_SURE" variable (:constant-flag t) nil [372 387])
+            ("CONFIRMMSG_QUIT" variable (:constant-flag t) nil [406 421])
+            ("CONFIRMMSG_TIMER_ID" variable (:constant-flag t) nil [440 459])
+            ("confirm_msg_button_flag" variable (:type "unsigned char") nil [469 511])
+            ("Confirm_Del" variable (:type "int") nil [512 554])
+            ("CtrlInitConfirmMsgProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [556 1085])
+            ("DlgInitConfirmMsgProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [1087 1249])
+            ("InitDialogConfirmMsgProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1287 1297])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [1298 1310])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1311 1325])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1326 1340]))                  
+                :type "int")
+                nil [1251 2906])
+            ("InitDialogConfirmMsgBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2946 2956]))                  
+                :type "void")
+                nil [2909 3115])
+            ("CONFIRM_MSG_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3146 3156]))                  
+                :type "void")
+                nil [3117 3192]))          
+    :file "Confirm_Msg_smsg.h"
+    :pointmax 3201
+    :fsize 3358
+    :lastmodtime '(21314 7571 520356 667000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CONFIRMMSG_QUIT" . ((number "2013" 427 . 431)))
+          ("CONFIRMMSG_SURE" . ((number "2012" 393 . 397)))
+          ("CONFIRMMSG_TIMER_ID" . ((number "2014" 461 . 465)))
+          ("__CONFIRM_MSG_SMSG_H__")
+          ("CONFIRMMSG_QUEST" . ((number "2010" 325 . 329)))
+          ("CONFIRMMSG_POP" . ((number "2011" 359 . 363)))
+          )
+
+    )
+   (semanticdb-table "Del_Msgs_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__DEL_MSGS_SMSG_H__" variable (:constant-flag t) nil [241 260])
+            ("smsg_common.h" include nil nil [261 285])
+            ("DEL_MSGS_LIST" variable (:constant-flag t) nil [295 308])
+            ("DEL_MSGS_BUTTON_OK" variable (:constant-flag t) nil [329 347])
+            ("DEL_MSGS_BUTTON_DEL" variable (:constant-flag t) nil [363 382])
+            ("DEL_MSGS_BUTTON_BACK" variable (:constant-flag t) nil [397 417])
+            ("DEL_MSGS_KILL" variable (:constant-flag t) nil [431 444])
+            ("DELMSGS_TIMER_ID" variable (:constant-flag t) nil [465 481])
+            ("Judge_Del_Msgs" variable (:type "int") nil [492 521])
+            ("msgs_del_button_flag" variable (:type "unsigned char") nil [522 561])
+            ("CtrlInitDelMsgsProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [564 1229])
+            ("DlgInitDelMsgsProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [1231 1386])
+            ("Init_DelMsgs_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1809]))                  
+                :type "void")
+                nil [1769 2692])
+            ("Read_DelMsgs_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2955 2965])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2966 2973])
+                    ("nc" variable (:type "int") (reparse-symbol arg-sub-list) [2974 2981])
+                    ("add_data" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2982 2997]))                  
+                :type "void")
+                nil [2925 3137])
+            ("Update_DelMsgs_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3391 3401]))                  
+                :type "void")
+                nil [3359 4781])
+            ("disp_hilight" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4816 4826]))                  
+                :type "void")
+                nil [4791 6173])
+            ("InitDialogDelMsgsProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6209 6219])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [6220 6232])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6233 6247])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6248 6262]))                  
+                :type "int")
+                nil [6176 10123])
+            ("InitDelMsgsBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10153 10163]))                  
+                :type "void")
+                nil [10125 10310])
+            ("DEL_MSGS_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10338 10348]))                  
+                :type "void")
+                nil [10312 10375]))          
+    :file "Del_Msgs_smsg.h"
+    :pointmax 10454
+    :fsize 10893
+    :lastmodtime '(21314 9108 748317 363000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEL_MSGS_KILL" . ((number "2010" 452 . 456)))
+          ("DEL_MSGS_BUTTON_OK" . ((number "2007" 350 . 354)))
+          ("__DEL_MSGS_SMSG_H__")
+          ("DEL_MSGS_LIST" . ((number "2006" 316 . 320)))
+          ("DEL_MSGS_BUTTON_DEL" . ((number "2008" 384 . 388)))
+          ("DELMSGS_TIMER_ID" . ((number "2015" 486 . 490)))
+          ("DEL_MSGS_BUTTON_BACK" . ((number "2009" 418 . 422)))
+          )
+
+    )
+   (semanticdb-table "demoshow.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [28 46])
+            ("math.h" include (:system-flag t) nil [47 64])
+            ("stdlib.h" include (:system-flag t) nil [65 84])
+            ("minigui/common.h" include (:system-flag t) nil [86 113])
+            ("minigui/minigui.h" include (:system-flag t) nil [114 142])
+            ("minigui/gdi.h" include (:system-flag t) nil [143 167])
+            ("minigui/window.h" include (:system-flag t) nil [168 195])
+            ("minigui/control.h" include (:system-flag t) nil [196 224])
+            ("arm830.h" include nil nil [226 245])
+            ("gsm_driver_app.h" include nil nil [247 274])
+            ("send_smsg.h" include nil nil [275 297])
+            ("inbox_smsg.h" include nil nil [298 321])
+            ("help_smsg.h" include nil nil [322 344])
+            ("smsg_common.h" include nil nil [345 369])
+            ("SMSG_SEND" variable (:constant-flag t) nil [379 388])
+            ("SMSG_OK" variable (:constant-flag t) nil [402 409])
+            ("SMSG_INBOX" variable (:constant-flag t) nil [423 433])
+            ("SMSG_HELP" variable (:constant-flag t) nil [447 456])
+            ("SMSG_STATE" variable (:constant-flag t) nil [470 480])
+            ("shijian" variable (:type "int") nil [487 501])
+            ("new_msmsmsg_flag" variable (:type "int") nil [502 525])
+            ("new_flag" variable (:type "int") nil [526 541])
+            ("shijian2" variable (:type "int") nil [542 557])
+            ("have_sim" variable (:type "char") nil [565 583])
+            ("sim_info" variable
+               (:pointer 1
+                :type "char")
+                nil [584 599])
+            ("MainDlgInitProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [605 746])
+            ("IDC_PROMPTINFO" variable (:constant-flag t) nil [756 770])
+            ("IDC_PROGRESS" variable (:constant-flag t) nil [783 795])
+            ("numstring" variable
+               (:dereference 1
+                :type "char")
+                nil [822 840])
+            ("MainCtrlInitProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [842 1464])
+            ("GSM_Ini" function (:type "char") nil [1465 1755])
+            ("InitMainDialogBoxProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2400 2410])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [2411 2423])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2424 2438])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2439 2453]))                  
+                :type "int")
+                nil [2366 6119])
+            ("InitMainDialogBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6153 6163]))                  
+                :type "void")
+                nil [6122 6347])
+            ("MiniGUIMain" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6366 6375])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6376 6395]))                  
+                :type "int")
+                nil [6349 6522])
+            ("minigui/dti.c" include (:system-flag t) nil [6546 6570]))          
+    :file "demoshow.c"
+    :pointmax 6579
+    :fsize 6662
+    :lastmodtime '(21314 340 175026 571000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SMSG_OK" . ((number "1002" 410 . 414)))
+          ("SMSG_HELP" . ((number "1004" 457 . 461)))
+          ("IDC_PROMPTINFO" . ((number "100" 771 . 774)))
+          ("SMSG_STATE" . ((number "1005" 481 . 485)))
+          ("IDC_PROGRESS" . ((number "110" 798 . 801)))
+          ("SMSG_SEND" . ((number "1001" 389 . 393)))
+          ("SMSG_INBOX" . ((number "1003" 434 . 438)))
+          )
+
+    )
+   (semanticdb-table "disp_inboxsmsg.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "disp_inboxsmsg.h"
+    :pointmax 6063
+    :fsize 6332
+    :lastmodtime '(21314 8182 124341 55000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gsm_driver_app.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__GSM_DRIVER_APP__" variable (:constant-flag t) nil [240 258])
+            ("smsg_common.h" include nil nil [259 283]))          
+    :file "gsm_driver_app.h"
+    :pointmax 296
+    :fsize 316
+    :lastmodtime '(21314 167 571030 985000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__GSM_DRIVER_APP__")
+          )
+
+    )
+   (semanticdb-table "help_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("smsg_common.h" include nil nil [198 222])
+            ("caojie" variable (:constant-flag t) nil [233 239])
+            ("back" variable (:constant-flag t) nil [253 257])
+            ("CtrlInitHelpProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [263 581])
+            ("DlgInitHelpProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [583 735])
+            ("InitDialogHelpBoxProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [770 780])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [781 793])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [794 808])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [809 823]))                  
+                :type "int")
+                nil [736 1156])
+            ("InitDialogHelpBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hWnd" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1189 1199]))                  
+                :type "void")
+                nil [1158 1344])
+            ("HELP_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hWnd" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1380]))                  
+                :type "void")
+                nil [1348 1410]))          
+    :file "help_smsg.h"
+    :pointmax 1412
+    :fsize 1510
+    :lastmodtime '(21314 352 671026 253000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("back" . ((number "1202" 258 . 262)))
+          ("caojie" . ((number "1201" 240 . 244)))
+          )
+
+    )
+   (semanticdb-table "inbox_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__INBOX_SMSG_H__" variable (:constant-flag t) nil [232 248])
+            ("smsg_common.h" include nil nil [249 273])
+            ("ShowMsg_smsg.h" include nil nil [274 299])
+            ("Del_Msgs_smsg.h" include nil nil [300 326])
+            ("INBOX_LIST" variable (:constant-flag t) nil [336 346])
+            ("INBOX_BUTTON_OK" variable (:constant-flag t) nil [367 382])
+            ("INBOX_BUTTON_BACK" variable (:constant-flag t) nil [398 415])
+            ("INBOX_DEL_MSGS" variable (:constant-flag t) nil [429 443])
+            ("SMSG_SHOWMSG" variable (:constant-flag t) nil [460 472])
+            ("CtrlInitInboxProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [484 1015])
+            ("DlgInitInboxProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [1018 1170])
+            ("ReadSIMInboxBox" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1172 2755])
+            ("Init_inbox_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2785 2795]))                  
+                :type "void")
+                nil [2757 3126])
+            ("Read_inbox_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3156 3166])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [3167 3174])
+                    ("nc" variable (:type "int") (reparse-symbol arg-sub-list) [3175 3182])
+                    ("add_data" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3183 3198]))                  
+                :type "void")
+                nil [3128 3257])
+            ("InitDialogInboxProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3291 3301])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [3302 3314])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3315 3329])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3330 3344]))                  
+                :type "int")
+                nil [3259 5023])
+            ("InitDialogInboxBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5059 5069]))                  
+                :type "void")
+                nil [5027 5208])
+            ("INBOX_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5243]))                  
+                :type "void")
+                nil [5210 5276]))          
+    :file "inbox_smsg.h"
+    :pointmax 5292
+    :fsize 5489
+    :lastmodtime '(21314 9326 424311 797000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("INBOX_BUTTON_OK" . ((number "1992" 385 . 389)))
+          ("INBOX_DEL_MSGS" . ((number "1994" 447 . 451)))
+          ("INBOX_BUTTON_BACK" . ((number "1993" 416 . 420)))
+          ("INBOX_LIST" . ((number "1991" 354 . 358)))
+          ("SMSG_SHOWMSG" . ((number "1995" 478 . 482)))
+          ("__INBOX_SMSG_H__")
+          )
+
+    )
+   (semanticdb-table "send_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("smsg_common.h" include nil nil [197 221])
+            ("string.h" include (:system-flag t) nil [222 241])
+            ("stdio.h" include (:system-flag t) nil [242 260])
+            ("SEND_OK" variable (:constant-flag t) nil [269 276])
+            ("SEND_BACK" variable (:constant-flag t) nil [290 299])
+            ("NUM_STATIC" variable (:constant-flag t) nil [313 323])
+            ("NUM_EDIT" variable (:constant-flag t) nil [337 345])
+            ("CONTENT_STATIC" variable (:constant-flag t) nil [359 373])
+            ("CONTENT_EDIT" variable (:constant-flag t) nil [388 400])
+            ("SEND_STATE_INFO_STATIC" variable (:constant-flag t) nil [414 436])
+            ("map" variable (:type "int") nil [443 453])
+            ("CtrlInitSendProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [456 1260])
+            ("DlgInitSendProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [1262 1420])
+            ("InitDialogSendBoxProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1456 1466])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [1467 1479])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1480 1494])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1495 1509]))                  
+                :type "int")
+                nil [1422 4900])
+            ("SEND_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hWnd" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4925 4935]))                  
+                :type "void")
+                nil [4903 5082]))          
+    :file "send_smsg.h"
+    :pointmax 5054
+    :fsize 5327
+    :lastmodtime '(21314 4952 872998 626000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SEND_OK" . ((number "2011" 277 . 281)))
+          ("SEND_BACK" . ((number "2012" 300 . 304)))
+          ("CONTENT_STATIC" . ((number "2015" 374 . 378)))
+          ("NUM_EDIT" . ((number "2014" 346 . 350)))
+          ("NUM_STATIC" . ((number "2013" 324 . 328)))
+          ("CONTENT_EDIT" . ((number "2016" 401 . 405)))
+          ("SEND_STATE_INFO_STATIC" . ((number "2017" 437 . 441)))
+          )
+
+    )
+   (semanticdb-table "ShowMsg_smsg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__SHOWMSG_SMSG_H__" variable (:constant-flag t) nil [239 257])
+            ("smsg_common.h" include nil nil [258 282])
+            ("Confirm_Msg_smsg.h" include nil nil [283 312])
+            ("SHOWMSG_NUM" variable (:constant-flag t) nil [322 333])
+            ("SHOWMSG_TIME" variable (:constant-flag t) nil [356 368])
+            ("SHOWMSG_TITLE" variable (:constant-flag t) nil [390 403])
+            ("SHOWMSG_NUMCOT" variable (:constant-flag t) nil [424 438])
+            ("SHOWMSG_TIMECOT" variable (:constant-flag t) nil [458 473])
+            ("SHOWMSG_CONTENT" variable (:constant-flag t) nil [492 507])
+            ("SHOWMSG_DELETE" variable (:constant-flag t) nil [526 540])
+            ("SHOWMSG_BACK" variable (:constant-flag t) nil [560 572])
+            ("SHOWMSG_KILL" variable (:constant-flag t) nil [594 606])
+            ("SHOWMSG_DLG_TIMER_ID" variable (:constant-flag t) nil [628 648])
+            ("showmsg_del_button_flag" variable (:type "unsigned char") nil [655 697])
+            ("CtrlInitShowMsgProgress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("CTRLDATA" type (:type "class") nil nil))
+                nil [699 1763])
+            ("DlgInitShowMsgProgress" variable
+               (:typemodifiers ("static")
+                :type ("DLGTEMPLATE" type (:type "class") nil nil))
+                nil [1765 1922])
+            ("InitDialogShowMsgProc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1958 1968])
+                    ("message" variable (:type "int") (reparse-symbol arg-sub-list) [1969 1981])
+                    ("wParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1982 1996])
+                    ("lParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1997 2011]))                  
+                :type "int")
+                nil [1924 4428])
+            ("InitDialogShowMsgBox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4466 4476]))                  
+                :type "void")
+                nil [4432 4624])
+            ("SHOWMSG_SMSG" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hDlg" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4651 4661]))                  
+                :type "void")
+                nil [4626 4694]))          
+    :file "ShowMsg_smsg.h"
+    :pointmax 4703
+    :fsize 4921
+    :lastmodtime '(21314 5575 588407 699000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SHOWMSG_KILL" . ((number "2004" 615 . 619)))
+          ("SHOWMSG_DELETE" . ((number "2002" 547 . 551)))
+          ("SHOWMSG_DLG_TIMER_ID" . ((number "2005" 649 . 653)))
+          ("SHOWMSG_TIME" . ((number "1997" 377 . 381)))
+          ("SHOWMSG_NUMCOT" . ((number "1999" 445 . 449)))
+          ("SHOWMSG_TIMECOT" . ((number "2000" 479 . 483)))
+          ("SHOWMSG_BACK" . ((number "2003" 581 . 585)))
+          ("SHOWMSG_TITLE" . ((number "1998" 411 . 415)))
+          ("SHOWMSG_NUM" . ((number "1996" 343 . 347)))
+          ("SHOWMSG_CONTENT" . ((number "2001" 513 . 517)))
+          ("__SHOWMSG_SMSG_H__")
+          )
+
+    )
+   (semanticdb-table "smsg_common.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__SMSG_COMMON_H__" variable (:constant-flag t) nil [242 259])
+            ("ListLength" variable (:constant-flag t) nil [313 323])
+            ("SIM_VOLUME" variable (:constant-flag t) nil [336 346])
+            ("del_show_screen" variable (:type "int") nil [351 375])
+            ("list_cursel" variable (:type "int") nil [376 400])
+            ("MsgListLength" variable (:type "int") nil [401 425])
+            ("Judge_MsgNum" variable (:type "int") nil [426 450])
+            ("MsgNum" variable (:type "int") nil [451 475])
+            ("SMSG_LIST" type
+               (:typedef ("__SMSG_LIST" type (:type "struct") nil nil)
+                :superclasses "__SMSG_LIST"
+                :type "typedef")
+                nil [477 674])
+            ("__SMSG_LIST" type
+               (:members 
+                  ( ("phumber" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [536 550])
+                    ("messagecontent" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [552 573])
+                    ("time" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [575 586])
+                    ("message_ID" variable (:type "int") (reparse-symbol classsubparts) [588 605])
+                    ("check_flag" variable (:type "int") (reparse-symbol classsubparts) [607 624])
+                    ("gui_list_num" variable (:type "int") (reparse-symbol classsubparts) [626 645]))                  
+                :type "struct")
+                nil [477 674])
+            ("smsg_list" variable
+               (:dereference 1
+                :type ("SMSG_LIST" type (:type "class") nil nil))
+                nil [676 739])
+            ("Kill_SIM_Msg" function
+               (:arguments 
+                  ( ("kill" variable (:type "int") (reparse-symbol arg-sub-list) [818 827]))                  
+                :type "int")
+                nil [801 1081])
+            ("ERASE_SIM_MSGS" function (:type "void") nil [1083 1751])
+            ("Inbox_Message_Content" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1781 1789]))                  
+                :type "char")
+                nil [1753 2771])
+            ("Inbox_Message_Src" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2797 2805]))                  
+                :type "char")
+                nil [2773 3072])
+            ("Inbox_Message_Time" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3099 3107]))                  
+                :type "char")
+                nil [3074 3390])
+            ("msg_num_itoa" function
+               (:pointer 1
+                :arguments 
+                  ( ("num_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3463 3480])
+                    ("msg_num" variable (:type "int") (reparse-symbol arg-sub-list) [3481 3493]))                  
+                :type "char")
+                nil [3443 3722])
+            ("Read_SIM_SMsg_num" function (:type "int") nil [3725 3991])
+            ("itoa_msg_num" function
+               (:pointer 1
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [4020 4028])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4029 4039]))                  
+                :type "char")
+                nil [4001 4360])
+            ("SearchString" function
+               (:pointer 1
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4381 4391])
+                    ("target" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4391 4404]))                  
+                :type "char")
+                nil [4362 4929])
+            ("StrToDat" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4946 4956])
+                    ("lenth" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4956 4976]))                  
+                :type "char")
+                nil [4931 5242])
+            ("Message_Content" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5266 5274]))                  
+                :type "char")
+                nil [5244 6225])
+            ("Message_Src" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6245 6253]))                  
+                :type "char")
+                nil [6227 6514])
+            ("Message_Time" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6535 6543]))                  
+                :type "char")
+                nil [6516 6815]))          
+    :file "smsg_common.h"
+    :pointmax 6823
+    :fsize 7455
+    :lastmodtime '(21314 4001 67530 967000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ListLength" . ((number "100" 324 . 327)))
+          ("SIM_VOLUME" . ((number "20" 347 . 349)))
+          ("__SMSG_COMMON_H__")
+          )
+
+    )
+   )
+  :file "!home!lee!document!job!meituan!cvproj!MessagePlatform!msg_delliistbox_20111209!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

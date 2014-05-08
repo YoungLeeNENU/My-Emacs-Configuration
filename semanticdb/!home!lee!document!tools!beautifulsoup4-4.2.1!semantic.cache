@@ -1,0 +1,21 @@
+;; Object beautifulsoup4-4.2.1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "beautifulsoup4-4.2.1/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [1 33])
+            ("try" code nil nil [35 191])
+            ("setup" code nil nil [192 1323]))          
+    :file "setup.py"
+    :pointmax 1324
+    :fsize 1323
+    :lastmodtime '(20904 43777 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!tools!beautifulsoup4-4.2.1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

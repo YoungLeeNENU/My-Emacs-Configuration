@@ -1,0 +1,454 @@
+;; Object control/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "control/"
+  :tables (list 
+   (semanticdb-table "control.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CONTROL_H" variable (:constant-flag t) nil [27 36])
+            ("QHash" include (:system-flag t) nil [38 54])
+            ("QMutex" include (:system-flag t) nil [55 72])
+            ("QString" include (:system-flag t) nil [73 91])
+            ("QObject" include (:system-flag t) nil [92 110])
+            ("QAtomicPointer" include (:system-flag t) nil [111 136])
+            ("control/controlbehavior.h" include nil nil [138 174])
+            ("control/controlvalue.h" include nil nil [175 208])
+            ("configobject.h" include nil nil [209 234])
+            ("ControlObject" type
+               (:prototype t
+                :type "class")
+                nil [236 256])
+            ("ControlDoublePrivate" type
+               (:superclasses 
+                  ( ("QObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [319 326])
+                    ("ControlDoublePrivate" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [331 363])
+                    ("getControl" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ConfigKey" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [616 637])
+                            ("warn" variable (:type "bool") (reparse-symbol arg-sub-list) [638 649])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [650 655])
+                            ("pCreatorCO" variable
+                               (:pointer 1
+                                :type ("ControlObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [668 695])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [696 701])
+                            ("bIgnoreNops" variable (:type "bool") (reparse-symbol arg-sub-list) [702 720])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [721 726])
+                            ("bTrack" variable (:type "bool") (reparse-symbol arg-sub-list) [727 740])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [741 747]))                          
+                        :type ("QSharedPointer" type
+                             (:template-specifier 
+                                ( ("ControlDoublePrivate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [548 748])
+                    ("getControls" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pControlsList" variable
+                               (:pointer 1
+                                :type ("QList" type
+                                     (:template-specifier 
+                                        ( ("ControlDoublePrivate" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [852 896]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [828 897])
+                    ("set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [943 956])
+                            ("pSender" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [957 974]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [934 975])
+                    ("setAndConfirm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [1107 1120])
+                            ("pSender" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1121 1138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1088 1139])
+                    ("get" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1175 1194])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1247 1260])
+                    ("setBehavior" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pBehavior" variable
+                               (:pointer 1
+                                :type ("ControlNumericBehavior" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1583]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1532 1584])
+                    ("setParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dParam" variable (:type "double") (reparse-symbol arg-sub-list) [1608 1622])
+                            ("pSender" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1623 1640]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1590 1641])
+                    ("getParameter" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1646 1674])
+                    ("setMidiParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opcode" variable (:type ("MidiOpCode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1702 1720])
+                            ("dParam" variable (:type "double") (reparse-symbol arg-sub-list) [1721 1735]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1680 1736])
+                    ("getMidiParameter" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1741 1773])
+                    ("ignoreNops" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1779 1847])
+                    ("setDefaultValue" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("dValue" variable (:type "double") (reparse-symbol arg-sub-list) [1881 1895]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1853 1944])
+                    ("defaultValue" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [1950 2137])
+                    ("getCreatorCO" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :type ("ControlObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2143 2222])
+                    ("removeCreatorCO" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2228 2294])
+                    ("getKey" function
+                       (:typemodifiers ("inline")
+                        :type ("ConfigKey" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2300 2355])
+                    ("connectValueChangeRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("receiver" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2798 2822])
+                            ("method" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2858 2877])
+                            ("type" variable (:type ("Qt::ConnectionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2878 2902]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2767 2903])
+                    ("valueChanged" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [3073 3086])
+                            ("pSender" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3087 3104]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3055 3105])
+                    ("valueChangeRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [3134 3147]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3110 3148])
+                    ("private" label nil (reparse-symbol classsubparts) [3152 3160])
+                    ("ControlDoublePrivate" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("key" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3186 3200])
+                            ("pCreatorCO" variable
+                               (:pointer 1
+                                :type ("ControlObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3201 3227])
+                            ("bIgnoreNops" variable (:type "bool") (reparse-symbol arg-sub-list) [3228 3245])
+                            ("bTrack" variable (:type "bool") (reparse-symbol arg-sub-list) [3246 3258]))                          
+                        :type ("ControlDoublePrivate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3165 3259])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3264 3282])
+                    ("setInner" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [3301 3314])
+                            ("pSender" variable
+                               (:pointer 1
+                                :type ("QObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3315 3332]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3287 3333])
+                    ("m_key" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3339 3355])
+                    ("m_bIgnoreNops" variable (:type "bool") (reparse-symbol classsubparts) [3418 3437])
+                    ("m_bTrack" variable (:type "bool") (reparse-symbol classsubparts) [3507 3521])
+                    ("m_trackKey" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3526 3545])
+                    ("m_trackType" variable (:type "int") (reparse-symbol classsubparts) [3550 3566])
+                    ("m_trackFlags" variable (:type "int") (reparse-symbol classsubparts) [3571 3588])
+                    ("m_confirmRequired" variable (:type "bool") (reparse-symbol classsubparts) [3593 3616])
+                    ("m_value" variable (:type ("ControlValueAtomic" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3648 3683])
+                    ("m_defaultValue" variable (:type ("ControlValueAtomic" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3722 3764])
+                    ("m_pBehavior" variable (:type ("QSharedPointer" type
+                         (:template-specifier 
+                            ( ("ControlNumericBehavior" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3770 3821])
+                    ("m_pCreatorCO" variable
+                       (:pointer 1
+                        :type ("ControlObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3827 3855])
+                    ("m_sqCOHash" variable
+                       (:typemodifiers ("static")
+                        :type ("QHash" type
+                             (:template-specifier 
+                                ( ("ConfigKey" type nil nil nil)
+                                  ("QWeakPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3913 3985])
+                    ("m_sqCOHashMutex" variable
+                       (:typemodifiers ("static")
+                        :type ("QMutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4053 4083]))                  
+                :type "class")
+                nil [258 4086]))          
+    :file "control.h"
+    :pointmax 4112
+    :fsize 4111
+    :lastmodtime '(21194 420 143970 615000)
+    :unmatched-syntax '((punctuation 2914 . 2915) (symbol 2907 . 2914) (punctuation 739 . 740) (punctuation 719 . 720) (punctuation 694 . 695) (punctuation 648 . 649) (symbol 308 . 316))
+    :lexical-table 
+        '(("CONTROL_H")
+          )
+
+    )
+   (semanticdb-table "control.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtDebug" include (:system-flag t) nil [1 19])
+            ("QMutexLocker" include (:system-flag t) nil [20 43])
+            ("control/control.h" include nil nil [45 73])
+            ("util/stat.h" include nil nil [75 97])
+            ("util/timer.h" include nil nil [98 121])
+            ("ControlDoublePrivate::m_sqCOHash" variable (:type ("QHash" type
+                 (:template-specifier 
+                    ( ("ConfigKey" type nil nil nil)
+                      ("QWeakPointer" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [160 247])
+            ("ControlDoublePrivate::m_sqCOHashMutex" variable (:type ("QMutex" type (:type "class") nil nil)) nil [248 293])
+            ("ControlDoublePrivate" function
+               (:constructor-flag t
+                :parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("key" variable (:type ("ConfigKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [683 697])
+                    ("pCreatorCO" variable
+                       (:pointer 1
+                        :type ("ControlObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [698 724])
+                    ("bIgnoreNops" variable (:type "bool") (reparse-symbol arg-sub-list) [768 785])
+                    ("bTrack" variable (:type "bool") (reparse-symbol arg-sub-list) [786 798]))                  
+                :type ("ControlDoublePrivate" type (:type "class") nil nil))
+                nil [640 1224])
+            ("initialize" function
+               (:parent "ControlDoublePrivate"
+                :type "void")
+                nil [1226 1578])
+            ("ControlDoublePrivate" function
+               (:destructor-flag t
+                :parent "ControlDoublePrivate"
+                :type "void")
+                nil [1580 1822])
+            ("getControl" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConfigKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1913 1934])
+                    ("warn" variable (:type "bool") (reparse-symbol arg-sub-list) [1935 1945])
+                    ("pCreatorCO" variable
+                       (:pointer 1
+                        :type ("ControlObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1946 1972])
+                    ("bIgnoreNops" variable (:type "bool") (reparse-symbol arg-sub-list) [1973 1990])
+                    ("bTrack" variable (:type "bool") (reparse-symbol arg-sub-list) [1991 2003]))                  
+                :type ("QSharedPointer" type
+                     (:template-specifier 
+                        ( ("ControlDoublePrivate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1834 3103])
+            ("getControls" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("pControlList" variable
+                       (:pointer 1
+                        :type ("QList" type
+                             (:template-specifier 
+                                ( ("ControlDoublePrivate" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3154 3197]))                  
+                :type "void")
+                nil [3115 3489])
+            ("get" function
+               (:parent "ControlDoublePrivate"
+                :type "double")
+                nil [3491 3566])
+            ("reset" function
+               (:parent "ControlDoublePrivate"
+                :type "void")
+                nil [3568 3914])
+            ("set" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [3947 3960])
+                    ("pSender" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3961 3978]))                  
+                :type "void")
+                nil [3916 4316])
+            ("setAndConfirm" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [4359 4372])
+                    ("pSender" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4373 4390]))                  
+                :type "void")
+                nil [4318 4424])
+            ("setInner" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [4463 4476])
+                    ("pSender" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4477 4494]))                  
+                :type "void")
+                nil [4427 4808])
+            ("setBehavior" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("pBehavior" variable
+                       (:pointer 1
+                        :type ("ControlNumericBehavior" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4849 4883]))                  
+                :type "void")
+                nil [4810 5070])
+            ("setParameter" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("dParam" variable (:type "double") (reparse-symbol arg-sub-list) [5112 5126])
+                    ("pSender" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5127 5144]))                  
+                :type "void")
+                nil [5072 5354])
+            ("getParameter" function
+               (:parent "ControlDoublePrivate"
+                :type "double")
+                nil [5356 5610])
+            ("setMidiParameter" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("opcode" variable (:type ("MidiOpCode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5656 5674])
+                    ("dParam" variable (:type "double") (reparse-symbol arg-sub-list) [5675 5689]))                  
+                :type "void")
+                nil [5612 5906])
+            ("getMidiParameter" function
+               (:parent "ControlDoublePrivate"
+                :type "double")
+                nil [5908 6170])
+            ("connectValueChangeRequest" function
+               (:parent "ControlDoublePrivate"
+                :arguments 
+                  ( ("receiver" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6225 6249])
+                    ("method" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6258 6277])
+                    ("type" variable (:type ("Qt::ConnectionType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6278 6302]))                  
+                :type "bool")
+                nil [6172 6514]))          
+    :file "control.cpp"
+    :pointmax 6515
+    :fsize 6514
+    :lastmodtime '(21194 420 143970 615000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "controlbehavior.h"
+    :file "controlbehavior.h"
+    :fsize 3223
+    :lastmodtime '(21194 420 143970 615000)
+    )
+   (semanticdb-table "controlvalue.h"
+    :file "controlvalue.h"
+    :fsize 5811
+    :lastmodtime '(21194 420 143970 615000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!src!control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

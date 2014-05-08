@@ -1,0 +1,532 @@
+;; Object cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpp/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("llist_array" function nil nil [1 72])
+            ("llist_pointer" function nil nil [73 150])
+            ("llist_cursor" function nil nil [151 225])
+            ("clean" function nil nil [226 262]))          
+    :file "Makefile"
+    :pointmax 680
+    :fsize 679
+    :lastmodtime '(21059 58109 724985 498000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "libs.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_LIBS_H_" variable (:constant-flag t) nil [26 34])
+            ("SetValue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76 84]))                  
+                :type "void")
+                nil [62 85])
+            ("DeleteVal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101 109])
+                    ("d" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110 124]))                  
+                :type "void")
+                nil [86 125])
+            ("DeleteMin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154 162]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [132 163])
+            ("Reverse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [177 185]))                  
+                :type "void")
+                nil [164 186])
+            ("DeleteX" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [200 208])
+                    ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209 223]))                  
+                :type "void")
+                nil [187 224])
+            ("DeleteRange" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242 253])
+                    ("t" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [254 265])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [266 274]))                  
+                :type "void")
+                nil [225 275])
+            ("DeleteSame" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 300]))                  
+                :type "void")
+                nil [276 301])
+            ("SortedInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [318 328])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [329 339]))                  
+                :type "void")
+                nil [302 340])
+            ("Merge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [352 362])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [363 373]))                  
+                :type ("LIST" type (:type "class") nil nil))
+                nil [341 374])
+            ("LeftMove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("len" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [389 402])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [403 411]))                  
+                :type "void")
+                nil [375 412])
+            ("Mid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [426 436])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [437 447]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [413 448]))          
+    :file "libs.hpp"
+    :pointmax 472
+    :fsize 475
+    :lastmodtime '(21072 10966 951346 129000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LIBS_H_")
+          )
+
+    )
+   (semanticdb-table "libs.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cmath" include (:system-flag t) nil [21 37])
+            ("adt.hpp" include nil nil [38 56])
+            ("libs.hpp" include nil nil [57 76])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 97])
+            ("SetValue" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139 147]))                  
+                :type "void")
+                nil [125 395])
+            ("SortedInit" function
+               (:arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [413 423])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [424 434]))                  
+                :type "void")
+                nil [397 770])
+            ("DeleteVal" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [788 796])
+                    ("d" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [797 811]))                  
+                :type "void")
+                nil [773 1001])
+            ("DeleteMin" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1076 1084]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [1054 1658])
+            ("Reverse" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1702 1710]))                  
+                :type "void")
+                nil [1689 2083])
+            ("DeleteRange" function
+               (:arguments 
+                  ( ("s" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2334 2345])
+                    ("t" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2346 2357])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2358 2366]))                  
+                :type "void")
+                nil [2317 2803])
+            ("DeleteSame" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2821 2829]))                  
+                :type "void")
+                nil [2805 3020])
+            ("Merge" function
+               (:arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3033 3043])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3044 3054]))                  
+                :type ("LIST" type (:type "class") nil nil))
+                nil [3022 3830])
+            ("LeftMove" function
+               (:arguments 
+                  ( ("len" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3846 3859])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3860 3868]))                  
+                :type "void")
+                nil [3832 4149])
+            ("Mid" function
+               (:arguments 
+                  ( ("Fir" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4164 4174])
+                    ("Sec" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4175 4185]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [4151 4335]))          
+    :file "libs.cpp"
+    :pointmax 4336
+    :fsize 4565
+    :lastmodtime '(21078 37073 353389 19000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pointer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("adt.hpp" include nil nil [20 38])
+            ("libs.hpp" include nil nil [39 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [69 78])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [79 92]))                  
+                :type "int")
+                nil [60 110]))          
+    :file "pointer.cpp"
+    :pointmax 111
+    :fsize 110
+    :lastmodtime '(21059 58191 820983 399000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cursor.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("adt.hpp" include nil nil [20 38])
+            ("libs.hpp" include nil nil [39 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [69 78])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [79 92]))                  
+                :type "int")
+                nil [60 110]))          
+    :file "cursor.cpp"
+    :pointmax 111
+    :fsize 110
+    :lastmodtime '(21059 58151 392984 433000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "array.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("adt.hpp" include nil nil [21 39])
+            ("libs.hpp" include nil nil [40 59])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [60 80])
+            ("sample" variable (:type ("LIST" type (:type "class") nil nil)) nil [90 102])
+            ("Sorted_1" variable (:type ("LIST" type (:type "class") nil nil)) nil [103 117])
+            ("Sorted_2" variable (:type ("LIST" type (:type "class") nil nil)) nil [118 132])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [143 152])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [153 166]))                  
+                :type "int")
+                nil [134 985]))          
+    :file "array.cpp"
+    :pointmax 986
+    :fsize 985
+    :lastmodtime '(21078 33792 585332 481000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adt.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("adt.hpp" include nil nil [21 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("First" function
+               (:arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89 96]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [74 179])
+            ("Previous" function
+               (:arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [199 206])
+                    ("x" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [207 218]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [181 406])
+            ("Next" function
+               (:arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [422 429])
+                    ("x" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 441]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [408 598])
+            ("End" function
+               (:arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 620]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [600 649])
+            ("Same" function
+               (:arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [661 675])
+                    ("y" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 690]))                  
+                :type "bool")
+                nil [651 762])
+            ("Insert" function
+               (:arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [776 790])
+                    ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 802])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [803 811]))                  
+                :type "void")
+                nil [764 1162])
+            ("Delete" function
+               (:arguments 
+                  ( ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1176 1187])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1188 1196]))                  
+                :type "void")
+                nil [1164 1441])
+            ("Retrieve" function
+               (:arguments 
+                  ( ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1464 1475])
+                    ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1476 1483]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [1443 1599])
+            ("Locate" function
+               (:arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1617 1631])
+                    ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1632 1639]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [1601 1780])
+            ("MakeNull" function
+               (:arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1796 1804]))                  
+                :type "void")
+                nil [1782 1840]))          
+    :file "adt.cpp"
+    :pointmax 1841
+    :fsize 1840
+    :lastmodtime '(21070 12055 702383 252000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adt.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_ADT_H_" variable (:constant-flag t) nil [25 32])
+            ("maxlength" variable (:constant-flag t) nil [42 51])
+            ("position" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [57 78])
+            ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [79 103])
+            ("LIST" type
+               (:members 
+                  ( ("elements" variable
+                       (:dereference 1
+                        :type ("ElementType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [123 155])
+                    ("last" variable (:type "int") (reparse-symbol classsubparts) [160 169]))                  
+                :type "struct")
+                nil [105 172])
+            ("First" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [201 208]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [186 209])
+            ("End" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 230]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [210 231])
+            ("Previous" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 257])
+                    ("x" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258 269]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [232 270])
+            ("Next" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [285 292])
+                    ("x" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [293 304]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [271 305])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [318 332])
+                    ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [333 344])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [345 353]))                  
+                :type "void")
+                nil [306 354])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [367 378])
+                    ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 387]))                  
+                :type "void")
+                nil [355 388])
+            ("Same" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 413])
+                    ("y" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 428]))                  
+                :type "bool")
+                nil [389 429])
+            ("Retrieve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable (:type ("position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [451 462])
+                    ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [463 470]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [430 471])
+            ("Locate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 502])
+                    ("L" variable (:type ("LIST" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [503 510]))                  
+                :type ("position" type (:type "class") nil nil))
+                nil [472 511])
+            ("MakeNull" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:reference 1
+                        :type ("LIST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [526 534]))                  
+                :type "void")
+                nil [512 535]))          
+    :file "adt.hpp"
+    :pointmax 558
+    :fsize 557
+    :lastmodtime '(21070 12085 378382 494000)
+    :unmatched-syntax '((number 52 . 55) (semantic-list 171 . 199) (symbol 112 . 120) (symbol 87 . 95) (symbol 75 . 86) (symbol 87 . 95) (symbol 75 . 86) (symbol 35 . 41) (punctuation 34 . 35) (symbol 52 . 63) (symbol 52 . 63))
+    :lexical-table 
+        '(("_ADT_H_")
+          ("maxlength" . ((number "100" 52 . 55)))
+          )
+
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!linear_list!cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

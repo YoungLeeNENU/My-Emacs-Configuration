@@ -1,0 +1,67 @@
+;; Object advio/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "advio/"
+  :tables (list 
+   (semanticdb-table "daytimeudpcli3.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 736]))          
+    :file "daytimeudpcli3.c"
+    :pointmax 737
+    :fsize 736
+    :lastmodtime '(13218 49880 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "unp.h"
+    :file "unp.h"
+    :fsize 14524
+    :lastmodtime '(21216 28778 3231 496000)
+    )
+   (semanticdb-table "daytimetcpcli.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [28 37])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 50]))                  
+                :type "int")
+                nil [19 776]))          
+    :file "daytimetcpcli.c"
+    :pointmax 777
+    :fsize 776
+    :lastmodtime '(13218 49874 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sig_chld_waitpid.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unp.h" include nil nil [1 17])
+            ("sig_chld" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [33 43]))                  
+                :type "void")
+                nil [19 176]))          
+    :file "sig_chld_waitpid.c"
+    :pointmax 177
+    :fsize 176
+    :lastmodtime '(12905 4975 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!unix-network-programming!unpv12e!advio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,44 @@
+;; Object mysite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysite/"
+  :tables (list 
+   (semanticdb-table "settings.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Django settings for mysite project.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.6/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/1.6/ref/settings/
+\"\"\"" code nil nil [1 244])
+            ("os" include nil nil [318 327])
+            ("BASE_DIR" variable nil nil [328 381])
+            ("SECRET_KEY" variable nil nil [587 652])
+            ("DEBUG" variable nil nil [720 732])
+            ("TEMPLATE_DEBUG" variable nil nil [734 755])
+            ("ALLOWED_HOSTS" variable nil nil [757 775])
+            ("INSTALLED_APPS" variable nil nil [804 1010])
+            ("MIDDLEWARE_CLASSES" variable nil nil [1012 1379])
+            ("ROOT_URLCONF" variable nil nil [1381 1409])
+            ("WSGI_APPLICATION" variable nil nil [1411 1455])
+            ("DATABASES" variable nil nil [1534 1722])
+            ("LANGUAGE_CODE" variable nil nil [1801 1824])
+            ("TIME_ZONE" variable nil nil [1826 1843])
+            ("USE_I18N" variable nil nil [1845 1860])
+            ("USE_L10N" variable nil nil [1862 1877])
+            ("USE_TZ" variable nil nil [1879 1892])
+            ("STATIC_URL" variable nil nil [1997 2020]))          
+    :file "settings.py"
+    :pointmax 2021
+    :fsize 2020
+    :lastmodtime '(21298 54326 418536 482000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!web!mysite!mysite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

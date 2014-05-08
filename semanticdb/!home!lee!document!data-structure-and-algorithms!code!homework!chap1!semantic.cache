@@ -1,0 +1,92 @@
+;; Object chap1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chap1/"
+  :tables (list 
+   (semanticdb-table "1-5-1.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("Matmpy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [33 39]))                  
+                :type "void")
+                nil [21 40])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [51 60])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [61 74]))                  
+                :type "int")
+                nil [42 92])
+            ("Matmpy" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [106 112]))                  
+                :type "void")
+                nil [94 340]))          
+    :file "1-5-1.c"
+    :pointmax 341
+    :unmatched-syntax '((symbol 46 . 49) (VOID 41 . 45) (VOID 41 . 45))
+    )
+   (semanticdb-table "1-6.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [69 69])
+            ("gcd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [77 83])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [84 90]))                  
+                :type "int")
+                nil [69 91])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [102 111])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112 125]))                  
+                :type "int")
+                nil [93 214])
+            ("gcd" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [224 230])
+                    ("num_2" variable (:type "int") (reparse-symbol arg-sub-list) [231 237]))                  
+                :type "int")
+                nil [216 314]))          
+    :file "1-6.c"
+    :pointmax 297
+    :fsize 314
+    :lastmodtime '(21044 35417 523920 749000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "1-7.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 53]))                  
+                :type "int")
+                nil [21 76]))          
+    :file "1-7.c"
+    :pointmax 83
+    :fsize 76
+    :lastmodtime '(21044 36255 239899 331000)
+    :unmatched-syntax '((INT 21 . 24))
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!homework!chap1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

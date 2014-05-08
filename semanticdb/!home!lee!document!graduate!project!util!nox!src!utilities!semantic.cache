@@ -1,0 +1,24 @@
+;; Object utilities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utilities/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("../Make.vars" include nil nil [1 22])
+            ("bin_PROGRAMS" variable nil nil [23 39])
+            ("bin_SCRIPTS" variable (:default-value ("reset-admin-pw" "nox-monitor" "switch_command.py")) nil [40 108])
+            ("dist_noinst_SCRIPTS" variable (:default-value ("dot-vm" "import.py.in" "monitor" "nox-monitor" "start-test-vm" "stop-test-vm" "reset-admin-pw" "switch_command.py" "text2cc")) nil [109 269])
+            ("all-local" function nil nil [270 281])
+            ("import.py" function (:arguments ("import.py.in" "Makefile")) nil [282 548]))          
+    :file "Makefile.am"
+    :pointmax 548
+    :fsize 547
+    :lastmodtime '(21209 59903 840730 708000)
+    :unmatched-syntax '((shell-command 521 . 547) (bol 520 . 520))
+    )
+   )
+  :file "!home!lee!document!graduate!project!util!nox!src!utilities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

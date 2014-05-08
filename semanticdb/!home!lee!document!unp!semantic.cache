@@ -1,0 +1,18 @@
+;; Object unp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unp/"
+  :tables (list 
+   (semanticdb-table "daytimetcpcli.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "daytimetcpcli.c"
+    :pointmax 2
+    :fsize 1
+    :lastmodtime '(21216 26943 879278 390000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!unp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

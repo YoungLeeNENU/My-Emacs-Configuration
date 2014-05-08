@@ -1,0 +1,159 @@
+;; Object lee/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lee/"
+  :tables (list 
+   (semanticdb-table "browser.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [43 52])
+            ("re" include nil nil [53 62])
+            ("sys" include nil nil [63 73])
+            ("urllib" include nil nil [74 87])
+            ("urllib2" include nil nil [88 102])
+            ("urlparse" include nil nil [103 118])
+            ("cookielib" include nil nil [119 135])
+            ("mechanize" include nil nil [136 152])
+            ("bs4" include nil nil [153 182])
+            ("Robot" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [244 259])
+                            ("self" variable nil (reparse-symbol indented_block_body) [268 289]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [216 220])
+                            ("url" variable nil (reparse-symbol function_parameters) [222 225])
+                            ("folder" variable nil (reparse-symbol function_parameters) [227 233]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [203 290])
+                    ("display_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [310 314]))                          )
+                        (reparse-symbol indented_block_body) [294 341])
+                    ("set_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [357 361])
+                            ("new_url" variable nil (reparse-symbol function_parameters) [363 370]))                          )
+                        (reparse-symbol indented_block_body) [345 401])
+                    ("display_folder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [424 428]))                          )
+                        (reparse-symbol indented_block_body) [405 458])
+                    ("set_folder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [477 481])
+                            ("new_folder" variable nil (reparse-symbol function_parameters) [483 493]))                          )
+                        (reparse-symbol indented_block_body) [462 530])
+                    ("download" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [547 551]))                          )
+                        (reparse-symbol indented_block_body) [534 687]))                  
+                :type "class")
+                nil [184 687])
+            ("main" function nil nil [770 958])
+            ("if" code nil nil [963 1052])
+            ("'''
+def fake_browser(url):
+    br = mechanize.Browser()
+    br.open(url)
+    response = br.follow_link(text_regex = r\"硕士招生\", nr = 1)
+    assert br.viewing_html()
+    print br.title
+    print br.response.geturl()
+    print response.info()
+    print response.read()
+'''" code nil nil [1053 1320]))          
+    :file "browser.py"
+    :pointmax 1321
+    :fsize 1328
+    :lastmodtime '(21000 57143 567946 304000)
+    :unmatched-syntax 'nil
+    )
+      (semanticdb-table "a.org"
+    :major-mode 'python-mode
+    :tags nil
+    :file "a.org"
+    :pointmax 2
+    :fsize 60
+    :lastmodtime '(21338 23254 539148 131000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "a.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("a" section nil nil [240 2240])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2240 3860])
+            ("a" section (:members 
+              ( ("a" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 西餐厅" anchor nil nil [4042 4045])
+                        ("1.1 菜单" anchor nil nil [4078 4081])
+                        ("1.2 电话" anchor nil nil [4117 4120])
+                        ("1.3 地址" anchor nil nil [4156 4159]))                      ) nil [3972 4273])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4439 4655])
+                        ("1.2" section nil nil [4655 4833])
+                        ("1.3" section (:members 
+                          ( ("Org" anchor nil nil [5101 5104])
+                            ("Emacs" anchor nil nil [5158 5161])
+                            ("Validate XHTML 1.0" anchor nil nil [5228 5231]))                          ) nil [4833 5327]))                      ) nil [4273 5327]))                  ) nil [3916 5327]))              ) nil [3860 5327]))          
+    :file "a.html"
+    :pointmax 5327
+    :fsize 5370
+    :lastmodtime '(21338 23257 503148 55000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

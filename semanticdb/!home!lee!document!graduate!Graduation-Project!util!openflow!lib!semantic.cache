@@ -1,0 +1,715 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "csum.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("config.h" include (:system-flag t) nil [1717 1736])
+            ("csum.h" include nil nil [1737 1754])
+            ("csum" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1828 1845])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1846 1855]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1814 1910])
+            ("csum_add16" function
+               (:arguments 
+                  ( ("partial" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2165 2182])
+                    ("" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2195]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2145 2226])
+            ("csum_add32" function
+               (:arguments 
+                  ( ("partial" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2481 2498])
+                    ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2499 2511]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2461 2567])
+            ("csum_continue" function
+               (:arguments 
+                  ( ("partial" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2832 2849])
+                    ("data_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2850 2868])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2869 2878]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2809 3076])
+            ("csum_finish" function
+               (:arguments 
+                  ( ("partial" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3257 3274]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3236 3330])
+            ("recalc_csum16" function
+               (:arguments 
+                  ( ("old_csum" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3545 3563])
+                    ("old_u16" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3564 3581])
+                    ("new_u16" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3582 3599]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3522 4028])
+            ("recalc_csum32" function
+               (:arguments 
+                  ( ("old_csum" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4243 4261])
+                    ("old_u32" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4262 4279])
+                    ("new_u32" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4280 4297]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [4220 4425]))          
+    :file "csum.c"
+    :pointmax 4426
+    :fsize 4540
+    :lastmodtime '(21277 15537 871810 475000)
+    :unmatched-syntax '((NEW 2508 . 2511) (NEW 2192 . 2195) (symbol 4426 . 4434) (NEW 2508 . 2511) (NEW 2192 . 2195) (symbol 4426 . 4429) (NEW 2508 . 2511) (NEW 2192 . 2195) (NEW 2508 . 2511) (NEW 2192 . 2195))
+    )
+   (semanticdb-table "csum.h"
+    :file "csum.h"
+    :fsize 2260
+    :lastmodtime '(21277 15050 0 0)
+    )
+   (semanticdb-table "dhcp.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("config.h" include (:system-flag t) nil [1717 1736])
+            ("dhcp.h" include nil nil [1737 1754])
+            ("arpa/inet.h" include (:system-flag t) nil [1755 1777])
+            ("assert.h" include (:system-flag t) nil [1778 1797])
+            ("ctype.h" include (:system-flag t) nil [1798 1816])
+            ("errno.h" include (:system-flag t) nil [1817 1835])
+            ("inttypes.h" include (:system-flag t) nil [1836 1857])
+            ("stdlib.h" include (:system-flag t) nil [1858 1877])
+            ("dynamic-string.h" include nil nil [1878 1905])
+            ("ofpbuf.h" include nil nil [1906 1925])
+            ("THIS_MODULE" variable (:constant-flag t) nil [1935 1946])
+            ("vlog.h" include nil nil [1956 1973])
+            ("arg_type" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2043 2060])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2087 2099]))                  
+                :type "struct")
+                nil [2021 2153])
+            ("types" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("arg_type" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2155 2286])
+            ("option_class" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2353 2370])
+                    ("type" variable (:type ("dhcp_arg_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2397 2421])
+                    ("min_args" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2450 2466])
+                    ("max_args" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2517 2533]))                  
+                :type "struct")
+                nil [2327 2582])
+            ("get_option_class" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("code" variable (:type "int") (reparse-symbol arg-sub-list) [2636 2645]))                  
+                :type ("option_class" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2584 3450])
+            ("rl" variable (:type ("vlog_rate_limit" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [3653 3711])
+            ("copy_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3735 3753]))                  
+                :type "void")
+                nil [3713 3754])
+            ("dhcp_type_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("type" variable (:type ("dhcp_msg_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3784 3808]))                  
+                :type "char")
+                nil [3756 3971])
+            ("dhcp_msg_init" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4119 4140]))                  
+                :type "void")
+                nil [4100 4177])
+            ("dhcp_msg_uninit" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4298 4319]))                  
+                :type "void")
+                nil [4277 4369])
+            ("dhcp_msg_copy" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4524 4545])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4546 4573]))                  
+                :type "void")
+                nil [4505 4726])
+            ("prealloc_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4754 4775])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4776 4785]))                  
+                :type "void")
+                nil [4728 5105])
+            ("append_data" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5133 5154])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5155 5172])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5173 5182]))                  
+                :type "void")
+                nil [5107 5294])
+            ("copy_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5318 5339]))                  
+                :type "void")
+                nil [5296 5659])
+            ("dhcp_msg_put" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5819 5840])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [5841 5850])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5851 5868])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5869 5878]))                  
+                :type "void")
+                nil [5801 6330])
+            ("dhcp_msg_put_bool" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6542 6563])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [6564 6573])
+                    ("b_" variable (:type "bool") (reparse-symbol arg-sub-list) [6574 6582]))                  
+                :type "void")
+                nil [6519 6641])
+            ("dhcp_msg_put_secs" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6857 6878])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [6879 6888])
+                    ("secs_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6889 6904]))                  
+                :type "void")
+                nil [6834 6991])
+            ("dhcp_msg_put_ip" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7196 7217])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [7218 7227])
+                    ("ip" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7228 7240]))                  
+                :type "void")
+                nil [7175 7289])
+            ("dhcp_msg_put_string" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7459 7480])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [7481 7490])
+                    ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7491 7510]))                  
+                :type "void")
+                nil [7434 7567])
+            ("dhcp_msg_put_uint8" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7715 7736])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [7737 7746])
+                    ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7747 7757]))                  
+                :type "void")
+                nil [7691 7804])
+            ("dhcp_msg_put_uint8_array" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7973 7994])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [7995 8004])
+                    ("data" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8035 8056])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8057 8066]))                  
+                :type "void")
+                nil [7943 8108])
+            ("dhcp_msg_put_uint16" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8298 8319])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [8320 8329])
+                    ("x_" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8330 8342]))                  
+                :type "void")
+                nil [8273 8417])
+            ("dhcp_msg_put_uint16_array" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8622 8643])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [8644 8653])
+                    ("data" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8680 8702])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8703 8712]))                  
+                :type "void")
+                nil [8591 8816])
+            ("dhcp_msg_get" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9106 9133])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [9134 9143])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9157 9171])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9172 9184]))                  
+                :type "void")
+                nil [9080 9324])
+            ("dhcp_msg_get_bool" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9606 9633])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [9634 9643])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9644 9658])
+                    ("out" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [9677 9687]))                  
+                :type "bool")
+                nil [9583 9873])
+            ("dhcp_msg_get_secs" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10238 10265])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [10266 10275])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10276 10290])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10309 10323]))                  
+                :type "bool")
+                nil [10215 10575])
+            ("dhcp_msg_get_ip" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10927 10954])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [10955 10964])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10981 10995])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10996 11010]))                  
+                :type "bool")
+                nil [10906 11255])
+            ("dhcp_msg_get_string" function
+               (:pointer 1
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11664 11691])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [11692 11701]))                  
+                :type "char")
+                nil [11637 11821])
+            ("dhcp_msg_get_uint8" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12095 12122])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [12123 12132])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12152 12166])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12167 12180]))                  
+                :type "bool")
+                nil [12071 12361])
+            ("dhcp_msg_get_uint16" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12712 12739])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [12740 12749])
+                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12770 12784])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12785 12799]))                  
+                :type "bool")
+                nil [12687 13051])
+            ("put_duration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ds" variable
+                       (:pointer 1
+                        :type ("ds" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13142 13156])
+                    ("duration" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13157 13179]))                  
+                :type "void")
+                nil [13117 13719])
+            ("dhcp_option_to_string" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("opt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13844 13874])
+                    ("code" variable (:type "int") (reparse-symbol arg-sub-list) [13875 13884])
+                    ("ds" variable
+                       (:pointer 1
+                        :type ("ds" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13885 13899]))                  
+                :type "char")
+                nil [13809 16273])
+            ("dhcp_option_equals" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16373 16401])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16402 16430]))                  
+                :type "bool")
+                nil [16349 16562])
+            ("dhcp_msg_to_string" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16776 16803])
+                    ("multiline" variable (:type "bool") (reparse-symbol arg-sub-list) [16804 16819])
+                    ("ds" variable
+                       (:pointer 1
+                        :type ("ds" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16820 16834]))                  
+                :type "char")
+                nil [16744 18498])
+            ("parse_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18526 18547])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18548 18565])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18566 18577])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18578 18590])
+                    ("option_offset" variable (:type "int") (reparse-symbol arg-sub-list) [18605 18623]))                  
+                :type "void")
+                nil [18500 19467])
+            ("validate_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19498 19519]))                  
+                :type "void")
+                nil [19469 20976])
+            ("dhcp_parse" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21190 21211])
+                    ("b_" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ofpbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21212 21236]))                  
+                :type "int")
+                nil [21175 24268])
+            ("put_option_chunk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("ofpbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24299 24316])
+                    ("code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24317 24330])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24331 24342])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24343 24352]))                  
+                :type "void")
+                nil [24270 24512])
+            ("put_option" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("ofpbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24537 24554])
+                    ("code" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24555 24568])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24569 24580])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24581 24590]))                  
+                :type "void")
+                nil [24514 25243])
+            ("dhcp_assemble" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dhcp_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25324 25351])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("ofpbuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25352 25369]))                  
+                :type "void")
+                nil [25305 26951]))          
+    :file "dhcp.c"
+    :pointmax 26953
+    :fsize 27793
+    :lastmodtime '(21308 59677 502361 869000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("THIS_MODULE" . ((symbol "VLM_dhcp" 1947 . 1955)))
+          )
+
+    )
+   (semanticdb-table "dhcp.h"
+    :file "dhcp.h"
+    :fsize 15369
+    :lastmodtime '(21277 15050 0 0)
+    )
+   (semanticdb-table "dynamic-string.h"
+    :file "dynamic-string.h"
+    :fsize 3266
+    :lastmodtime '(21277 15050 0 0)
+    )
+   (semanticdb-table "ofpbuf.h"
+    :file "ofpbuf.h"
+    :fsize 3919
+    :lastmodtime '(21277 15050 0 0)
+    )
+   (semanticdb-table "vlog.h"
+    :file "vlog.h"
+    :fsize 8818
+    :lastmodtime '(21277 15050 0 0)
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!openflow!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

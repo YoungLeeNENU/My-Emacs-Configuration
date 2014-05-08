@@ -1,0 +1,34 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "equivalence.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("root" function (:arguments ("mfset")) nil [148 183])
+            ("union" function (:arguments ("set-1" "set-2")) nil [185 236])
+            ("find" function (:arguments ("element" "mfset")) nil [238 475]))          
+    :file "equivalence.scm"
+    :pointmax 876
+    :fsize 875
+    :lastmodtime '(21104 40120 753479 508000)
+    :unmatched-syntax '((semantic-list 582 . 875) (semantic-list 502 . 580) (semantic-list 477 . 500) (semantic-list 125 . 146) (semantic-list 105 . 124) (semantic-list 84 . 104) (semantic-list 63 . 83) (semantic-list 41 . 62) (semantic-list 21 . 40) (semantic-list 1 . 20))
+    )
+   (semanticdb-table "btree.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("root" function (:arguments ("tree")) nil [113 146])
+            ("left-branch" function (:arguments ("tree")) nil [148 189])
+            ("right-branch" function (:arguments ("tree")) nil [191 234])
+            ("pre-order" function (:arguments ("tree")) nil [236 403]))          
+    :file "btree.scm"
+    :pointmax 755
+    :fsize 730
+    :lastmodtime '(21104 60342 691654 730000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!tree!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

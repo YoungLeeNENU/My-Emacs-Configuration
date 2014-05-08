@@ -1,0 +1,170 @@
+;; Object vamp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vamp/"
+  :tables (list 
+   (semanticdb-table "vampanalyser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QDir" include (:system-flag t) nil [91 106])
+            ("QtDebug" include (:system-flag t) nil [107 125])
+            ("QDesktopServices" include (:system-flag t) nil [126 153])
+            ("QCoreApplication" include (:system-flag t) nil [154 181])
+            ("QStringList" include (:system-flag t) nil [182 204])
+            ("stdlib.h" include (:system-flag t) nil [205 224])
+            ("iostream" include (:system-flag t) nil [225 244])
+            ("stdio.h" include (:system-flag t) nil [245 263])
+            ("vamp/vampanalyser.h" include nil nil [265 295])
+            ("PATH_SEPARATOR" variable (:constant-flag t) nil [390 404])
+            ("Vamp::Plugin" using (:type ("Vamp::Plugin" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [417 436])
+            ("Vamp::PluginHostAdapter" using (:type ("Vamp::PluginHostAdapter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [437 467])
+            ("initializePluginPaths" function
+               (:parent "VampAnalyser"
+                :type "void")
+                nil [469 2567])
+            ("VampAnalyser" function
+               (:constructor-flag t
+                :parent "VampAnalyser"
+                :arguments 
+                  ( ("pconfig" variable
+                       (:pointer 1
+                        :type ("ConfigObject" type
+                             (:template-specifier 
+                                ( ("ConfigValue" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2596 2631]))                  
+                :type ("VampAnalyser" type (:type "class") nil nil))
+                nil [2569 2756])
+            ("VampAnalyser" function
+               (:destructor-flag t
+                :parent "VampAnalyser"
+                :type "void")
+                nil [2758 2838])
+            ("Init" function
+               (:parent "VampAnalyser"
+                :arguments 
+                  ( ("pluginlibrary" variable
+                       (:constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2864 2892])
+                    ("pluginid" variable
+                       (:constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2893 2916])
+                    ("samplerate" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2941 2962])
+                    ("TotalSamples" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2963 2986])
+                    ("bFastAnalysis" variable (:type "bool") (reparse-symbol arg-sub-list) [2987 3006]))                  
+                :type "bool")
+                nil [2840 6664])
+            ("Process" function
+               (:parent "VampAnalyser"
+                :arguments 
+                  ( ("pIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CSAMPLE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6693 6712])
+                    ("iLen" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6713 6728]))                  
+                :type "bool")
+                nil [6666 9933])
+            ("End" function
+               (:parent "VampAnalyser"
+                :type "bool")
+                nil [9935 10475])
+            ("SetParameter" function
+               (:parent "VampAnalyser"
+                :arguments 
+                  ( ("parameter" variable
+                       (:constant-flag t
+                        :type ("QString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10509 10533])
+                    ("value" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10534 10553]))                  
+                :type "bool")
+                nil [10477 10620])
+            ("SelectOutput" function
+               (:parent "VampAnalyser"
+                :arguments 
+                  ( ("outputnumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10654 10677]))                  
+                :type "void")
+                nil [10622 10855])
+            ("GetInitFramesVector" function
+               (:parent "VampAnalyser"
+                :type ("QVector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10857 11386])
+            ("GetEndFramesVector" function
+               (:parent "VampAnalyser"
+                :type ("QVector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11388 12004])
+            ("GetLabelsVector" function
+               (:parent "VampAnalyser"
+                :type ("QVector" type
+                     (:template-specifier 
+                        ( ("QString" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12006 12265])
+            ("GetFirstValuesVector" function
+               (:parent "VampAnalyser"
+                :type ("QVector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12267 12593])
+            ("GetLastValuesVector" function
+               (:parent "VampAnalyser"
+                :type ("QVector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12595 12933]))          
+    :file "vampanalyser.cpp"
+    :pointmax 13914
+    :fsize 13913
+    :lastmodtime '(21194 420 343970 610000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PATH_SEPARATOR" . ((string "\":\"" 405 . 408)))
+          )
+
+    )
+   (semanticdb-table "vampanalyser.h"
+    :file "vampanalyser.h"
+    :fsize 1878
+    :lastmodtime '(21194 420 343970 610000)
+    )
+   )
+  :file "!home!lee!document!C++!mixxx!src!vamp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

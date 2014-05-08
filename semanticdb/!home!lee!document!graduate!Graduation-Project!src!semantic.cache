@@ -1,0 +1,20 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "adom.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("hello" function nil nil [98 134])
+            ("if" code nil nil [135 174]))          
+    :file "adom.py"
+    :pointmax 174
+    :fsize 177
+    :lastmodtime '(21209 61104 432700 10000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

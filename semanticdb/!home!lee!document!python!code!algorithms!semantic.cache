@@ -1,0 +1,162 @@
+;; Object algorithms/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "algorithms/"
+  :tables (list 
+   (semanticdb-table "init.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("Node" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [144 161])
+                            ("self" variable nil (reparse-symbol indented_block_body) [170 193]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [107 111])
+                            ("data" variable nil (reparse-symbol function_parameters) [113 117])
+                            ("pointer" variable nil (reparse-symbol function_parameters) [119 126]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [94 194])
+                    ("travel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [209 213]))                          )
+                        (reparse-symbol indented_block_body) [198 234]))                  
+                :type "class")
+                nil [76 234])
+            ("if" code nil nil [235 501]))          
+    :file "init.py"
+    :pointmax 501
+    :fsize 474
+    :lastmodtime '(21310 51546 502946 555000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "graphs.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("a, b, c, d, e, f, g, h" code nil nil [41 74])
+            ("N" variable nil nil [76 233])
+            ("print" code nil nil [235 250])
+            ("print" code nil nil [288 303])
+            ("print" code nil nil [315 328])
+            ("print" code nil nil [357 364]))          
+    :file "graphs.py"
+    :pointmax 365
+    :fsize 364
+    :lastmodtime '(21311 21672 356558 375000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "matrix.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("a, b, c, d, e, f, g, h" code nil nil [63 96])
+            ("_" variable nil nil [98 114])
+            ("W" variable nil nil [175 464])
+            ("N" variable nil nil [502 791])
+            ("GraphN" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [899 917]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [833 837])
+                            ("graph" variable nil (reparse-symbol function_parameters) [839 844]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [820 918])
+                    ("NeighborhoodMembership" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [949 953])
+                            ("edgeA" variable nil (reparse-symbol function_parameters) [955 960])
+                            ("edgeB" variable nil (reparse-symbol function_parameters) [962 967]))                          )
+                        (reparse-symbol indented_block_body) [922 1052])
+                    ("Degree" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1067 1071])
+                            ("edge" variable nil (reparse-symbol function_parameters) [1073 1077]))                          )
+                        (reparse-symbol indented_block_body) [1056 1117]))                  
+                :type "class")
+                nil [800 1117])
+            ("'''
+a, b, c, d, e, f, g, h = range(8)
+'''" code nil nil [1120 1161])
+            ("graph" variable nil nil [1162 1179])
+            ("print" code nil nil [1180 1220])
+            ("print" code nil nil [1221 1242]))          
+    :file "matrix.py"
+    :pointmax 1279
+    :fsize 1278
+    :lastmodtime '(21311 27994 782306 156000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tree.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BTree" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [101 118])
+                            ("self" variable nil (reparse-symbol indented_block_body) [127 146]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [73 77])
+                            ("left" variable nil (reparse-symbol function_parameters) [79 83])
+                            ("right" variable nil (reparse-symbol function_parameters) [85 90]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [60 147]))                  
+                :type "class")
+                nil [41 147])
+            ("Tree" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [213 242])
+                            ("self" variable nil (reparse-symbol indented_block_body) [251 268]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [179 183])
+                            ("kids" variable nil (reparse-symbol function_parameters) [185 189])
+                            ("next" variable nil (reparse-symbol function_parameters) [191 195]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [166 269]))                  
+                :type "class")
+                nil [148 269])
+            ("Bunch" type
+               (:superclasses ("dict")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [336 378])
+                            ("self" variable nil (reparse-symbol indented_block_body) [387 407]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310])
+                            ("args" variable nil (reparse-symbol function_parameters) [312 317])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [319 325]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [293 408]))                  
+                :type "class")
+                nil [270 408])
+            ("t1" variable nil nil [410 454])
+            ("t2" variable nil nil [455 508])
+            ("T" variable nil nil [509 519])
+            ("t" variable nil nil [520 584])
+            ("print" code nil nil [586 607])
+            ("print" code nil nil [608 639])
+            ("print" code nil nil [640 647]))          
+    :file "tree.py"
+    :pointmax 648
+    :fsize 647
+    :lastmodtime '(21311 50681 225726 102000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!code!algorithms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

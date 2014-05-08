@@ -1,0 +1,18 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables (list 
+   (semanticdb-table "blame_incremental.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "blame_incremental.js"
+    :pointmax 19330
+    :fsize 19329
+    :lastmodtime '(20967 57781 215607 174000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!git!gitweb!static!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

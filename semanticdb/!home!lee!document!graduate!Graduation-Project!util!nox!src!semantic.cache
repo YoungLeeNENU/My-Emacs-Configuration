@@ -1,0 +1,37 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("Make.vars" include nil nil [1 19])
+            ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [20 47])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [47 71])
+            ("EXTRA_DIST" variable (:default-value ("LICENSE")) nil [71 98])
+            ("bin_PROGRAMS" variable (:default-value ("nox_core")) nil [155 179])
+            ("pkglib_LTLIBRARIES" variable nil nil [179 200])
+            ("nox_core_SOURCES" variable (:default-value ("include/component.hh" "include/connection-manager.hh" "include/deployer.hh" "include/dso-deployer.hh" "include/kernel.hh" "include/static-deployer.hh" "builtin/component.cc" "builtin/connection-manager.cc" "builtin/deployer.cc" "builtin/dso-deployer.cc" "builtin/event-dispatcher.cc" "builtin/kernel.cc" "builtin/static-deployer.cc" "nox_main.cc")) nil [201 861])
+            ("CLEANFILES" variable nil nil [862 875])
+            ("nox_core_CPPFLAGS" variable (:default-value ("$(AM_CPPFLAGS)")) nil [876 941])
+            ("nox_core_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-dlopen" "force")) nil [942 1020])
+            ("nox_core_LDADD" variable (:default-value ("$(LDADD)" "$(builddir)/lib/libnoxcore.la" "$(BOOST_THREAD_LIB)" "$(BOOST_FILESYSTEM_LIB)" "$(BOOST_SYSTEM_LIB)" "$(OPENSSL_LIBS)" "$(LIBADD_DL)" "$(LIBADD_DLOPEN)" "$(LIBADD_SHL_LOAD)" "$(LIBLTDL)")) nil [1021 1496])
+            ("nox_core_DEPENDENCIES" variable nil nil [1497 1521])
+            ("all-local" function (:arguments ("nox-all-local")) nil [2132 2158])
+            ("clean-local" function (:arguments ("nox-clean-local")) nil [2158 2187]))          
+    :file "Makefile.am"
+    :pointmax 2224
+    :fsize 2223
+    :lastmodtime '(21209 59903 788730 709000)
+    :unmatched-syntax '((symbol 2206 . 2223) (punctuation 2204 . 2205) (symbol 2187 . 2204) (bol 2187 . 2187) (semantic-list 135 . 152) (punctuation 134 . 135) (symbol 130 . 133) (symbol 120 . 129) (symbol 116 . 119) (INCLUDE 108 . 115) (punctuation 106 . 107) (symbol 98 . 105) (bol 98 . 98))
+    )
+   (semanticdb-table "Make.vars"
+    :file "Make.vars"
+    :fsize 2598
+    :lastmodtime '(21209 59903 956730 705000)
+    )
+   )
+  :file "!home!lee!document!graduate!Graduation-Project!util!nox!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,22 @@
+;; Object hit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hit/"
+  :tables (list 
+   (semanticdb-table "mkdir.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 55])
+            ("sys" include nil nil [41 55])
+            ("mkdir" function nil nil [57 159])
+            ("if" code nil nil [160 200]))          
+    :file "mkdir.py"
+    :pointmax 200
+    :fsize 199
+    :lastmodtime '(21149 65212 423963 460000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!hit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

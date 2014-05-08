@@ -1,0 +1,26 @@
+;; Object commic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "commic/"
+  :tables (list 
+    (semanticdb-table "commic_down.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 55])
+            ("sys" include nil nil [41 55])
+            ("urllib" include nil nil [56 86])
+            ("token" variable nil nil [88 153])
+            ("page" variable nil nil [154 173])
+            ("chapter" variable nil nil [174 196])
+            ("Get" function nil nil [212 519])
+            ("if" code nil nil [520 554]))          
+    :file "commic_down.py"
+    :pointmax 554
+    :fsize 553
+    :lastmodtime '(21143 18978 229379 716000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!commic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,80 @@
+;; Object emacs-jedi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs-jedi/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [29 61])
+            ("setup" code nil nil [62 89]))          
+    :file "setup.py"
+    :pointmax 90
+    :fsize 89
+    :lastmodtime '(20974 36033 356029 16000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("ENV" variable (:default-value ("env")) nil [1 11])
+            ("VIRTUALENV" variable (:default-value ("VIRTUALENV_SYSTEM_SITE_PACKAGES=$(VIRTUALENV_SYSTEM_SITE_PACKAGES)" "virtualenv" "--python=$(PYTHON)")) nil [52 169])
+            ("PIP_INSTALL" variable (:default-value ("$(ENV)/$(BINDIR)/pip" "install" "--use-mirrors")) nil [169 226])
+            ("JEDI_DEV_URL" variable (:default-value ("https://github.com/davidhalter/jedi/archive/dev.zip")) nil [226 293])
+            ("VIRTUAL_EMACS" variable (:default-value ("${CARTON}" "exec" "${EMACS}")) nil [366 406])
+            (".PHONY" function (:arguments ("test" "test-1" "tryout" "clean-elpa" "requirements" "env" "clean-env" "clean" "print-deps" "travis-ci" "doc")) nil [407 507])
+            ("test" function (:arguments ("elpa" "requirements")) nil [508 548])
+            ("test-1" function nil nil [549 706])
+            ("compile" function (:arguments ("elpa" "clean-elc")) nil [707 795])
+            ("clean-elc" function nil nil [796 821])
+            ("tryout" function (:arguments ("compile" "requirements")) nil [822 895])
+            ("doc" function (:arguments ("elpa")) nil [896 924])
+            ("ensure-git" function nil nil [925 1006])
+            ("elpa" function (:arguments ("Carton")) nil [1007 1084])
+            ("clean-elpa" function nil nil [1085 1110])
+            ("requirements" function (:arguments ("env")) nil [1111 1176])
+            ("install-jedi-dev" function nil nil [1177 1237])
+            ("env" function (:arguments ("$(ENV)/$(BINDIR)/activate")) nil [1238 1269])
+            ("$(ENV)" function nil nil [1269 1318])
+            ("clean-env" function nil nil [1319 1345])
+            ("clean-el" function (:arguments ("clean-elpa" "clean-elc")) nil [1346 1377])
+            ("clean" function (:arguments ("clean-env" "clean-el")) nil [1377 1403])
+            ("print-deps" function (:arguments ("elpa" "requirements")) nil [1404 1708])
+            ("before-test" function (:arguments ("requirements")) nil [1709 1749])
+            ("travis-ci" function (:arguments ("print-deps" "test")) nil [1750 1777])
+            ("JOBS" variable (:default-value ("$(addprefix job-,${EMACS_LIST})")) nil [2126 2166])
+            (".PHONY" function (:arguments ("${JOBS}")) nil [2166 2182])
+            ("${JOBS}" function (:arguments ("job-%:")) nil [2183 2273])
+            ("test-all" function (:arguments ("requirements" "${JOBS}")) nil [2274 2305])
+            ("PACKAGE" variable (:default-value ("jedi")) nil [2438 2453])
+            ("VERSION" variable (:default-value ("$(shell grep ';; Version:' jedi.el | sed 's/^.* \\([0-9].*\\)$$/\\1/')")) nil [2453 2531])
+            ("DIST_FILES" variable (:default-value ("jedi-pkg.el" "jedi.el" "jediepcserver.py" "requirements.txt" "Makefile" "tryout-jedi.el")) nil [2531 2625])
+            (".PHONY" function (:arguments ("dist" "${PACKAGE}-${VERSION}.tar.gz" "${PACKAGE}-${VERSION}" "clean-dist" "clean-dist-all")) nil [2626 2719])
+            ("dist" function (:arguments ("clean-dist")) nil [2720 2753])
+            ("dist-1" function (:arguments ("dist/${PACKAGE}-${VERSION}.tar" "dist/${PACKAGE}-${VERSION}.tar.gz")) nil [2754 2827])
+            ("dist/" function (:arguments ("${PACKAGE}-${VERSION}.tar")) nil [2828 2886])
+            ("${PACKAGE}" function (:arguments ("${PACKAGE}-${VERSION}")) nil [2886 2973])
+            ("dist/" function (:arguments ("${PACKAGE}-${VERSION}.tar.gz")) nil [2974 3038])
+            ("${PACKAGE}" function (:arguments ("${PACKAGE}-${VERSION}")) nil [3038 3129])
+            ("${PACKAGE}" function (:arguments ("dist/${PACKAGE}-${VERSION}")) nil [3130 3180])
+            ("dist/" function nil nil [3180 3245])
+            ("clean-dist" function nil nil [3246 3294])
+            ("clean-dist-all" function nil nil [3295 3324])
+            ("PACKAGE_USER_DIR" variable nil nil [3353 3372])
+            ("TEST_PACKAGE_DIR" variable (:default-value ("dist/test")) nil [3372 3401])
+            ("install-dist" function nil nil [3402 3796])
+            ("test-install" function (:arguments ("dist/${PACKAGE}-${VERSION}.tar")) nil [3797 3959])
+            ("test-install-requirement" function (:arguments ("test-install")) nil [3960 4079])
+            ("MAKE_GH_PAGES" variable (:default-value ("$(MAKE)" "--directory" "doc" "--file" "gh-pages.mk")) nil [4096 4155])
+            ("gh-pages-latest" function nil nil [4156 4191])
+            ("gh-pages-released" function nil nil [4307 4450]))          
+    :file "Makefile"
+    :pointmax 4450
+    :fsize 4449
+    :lastmodtime '(20974 36033 356029 16000)
+    :unmatched-syntax '((shell-command 4416 . 4449) (bol 4415 . 4415) (bol 4081 . 4081) (bol 3326 . 3326) (bol 2307 . 2307) (bol 1779 . 1779) (symbol 361 . 364) (punctuation 359 . 360) (punctuation 358 . 359) (symbol 351 . 357) (bol 351 . 351) (symbol 344 . 349) (punctuation 342 . 343) (punctuation 341 . 342) (symbol 335 . 340) (symbol 328 . 334) (bol 328 . 328) (symbol 321 . 327) (punctuation 319 . 320) (punctuation 318 . 319) (symbol 311 . 317) (bol 311 . 311) (symbol 304 . 310) (punctuation 302 . 303) (punctuation 301 . 302) (symbol 294 . 300) (bol 294 . 294) (symbol 47 . 51) (punctuation 45 . 46) (punctuation 44 . 45) (symbol 12 . 43) (bol 12 . 12))
+    )
+   )
+  :file "!home!lee!.emacs.d!plugins!emacs-jedi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,38 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "cache.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [41 52])
+            ("hashlib" include nil nil [53 67])
+            ("pickle" include nil nil [68 81])
+            ("itertools" include nil nil [83 110])
+            ("cache" variable nil nil [112 122])
+            ("is_obsolete" function (:arguments 
+              ( ("entry" variable nil (reparse-symbol function_parameters) [140 145])
+                ("duration" variable nil (reparse-symbol function_parameters) [147 155]))              ) nil [124 208])
+            ("compute_key" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [225 233])
+                ("args" variable nil (reparse-symbol function_parameters) [235 239])
+                ("kw" variable nil (reparse-symbol function_parameters) [241 243]))              ) nil [209 342])
+            ("memoize" function (:arguments 
+              ( ("duration" variable nil (reparse-symbol function_parameters) [355 363]))              ) nil [343 845])
+            ("" code nil nil [854 856])
+            ("complex" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [869 870])
+                ("b" variable nil (reparse-symbol function_parameters) [872 873]))              ) nil [857 893])
+            ("print" code nil nil [894 913])
+            ("print" code nil nil [914 933]))          
+    :file "cache.py"
+    :pointmax 934
+    :fsize 933
+    :lastmodtime '(21306 42634 631423 621000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!job!meituan!update!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

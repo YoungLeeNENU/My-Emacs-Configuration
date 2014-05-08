@@ -1,0 +1,79 @@
+;; Object ch2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch2/"
+  :tables (list 
+   (semanticdb-table "cons.scm.gz"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "cons.scm.gz"
+    :pointmax 108
+    :fsize 114
+    :lastmodtime '(20919 12786 860082 901000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "map.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("map" function (:arguments ("proc" "items")) nil [8 116]))          
+    :file "map.scm"
+    :pointmax 176
+    :fsize 175
+    :lastmodtime '(20919 12786 884082 902000)
+    :unmatched-syntax '((semantic-list 117 . 175))
+    )
+   (semanticdb-table "lookup.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("lookup" function (:arguments ("given-key" "set-of-records")) nil [1 203]))          
+    :file "lookup.scm"
+    :pointmax 204
+    :fsize 203
+    :lastmodtime '(20972 34490 479480 104000)
+    :unmatched-syntax '((semantic-list 205 . 239) (semantic-list 199 . 233) (semantic-list 178 . 212) (semantic-list 178 . 212))
+    )
+   (semanticdb-table "list-ref.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "list-ref.scm"
+    :pointmax 152
+    :fsize 151
+    :lastmodtime '(20919 12786 884082 902000)
+    :unmatched-syntax '((semantic-list 90 . 151) (semantic-list 1 . 89))
+    )
+   (semanticdb-table "complex.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("attach-tag" function (:arguments ("type-tag" "contents")) nil [57 123])
+            ("type-tag" function (:arguments ("datum")) nil [124 233])
+            ("contents" function (:arguments ("datum")) nil [234 343])
+            ("add-complex" function (:arguments ("z1" "z2")) nil [2327 2455])
+            ("sub-complex" function (:arguments ("z1" "z2")) nil [2463 2591])
+            ("mul-complex" function (:arguments ("z1" "z2")) nil [2599 2717])
+            ("div-complex" function (:arguments ("z1" "z2")) nil [2725 2843]))          
+    :file "complex.scm"
+    :pointmax 2844
+    :fsize 2907
+    :lastmodtime '(20974 40673 11997 923000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "package.scm"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("attach-tag" function (:arguments ("type-tag" "contents")) nil [2830 2896])
+            ("type-tag" function (:arguments ("datum")) nil [2897 3006])
+            ("contents" function (:arguments ("datum")) nil [3007 3116])
+            ("add-complex" function (:arguments ("z1" "z2")) nil [5100 5228])
+            ("sub-complex" function (:arguments ("z1" "z2")) nil [5236 5364])
+            ("mul-complex" function (:arguments ("z1" "z2")) nil [5372 5490])
+            ("div-complex" function (:arguments ("z1" "z2")) nil [5498 5616]))          
+    :file "package.scm"
+    :pointmax 5617
+    :fsize 5696
+    :lastmodtime '(20975 26328 727974 379000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lisp!scheme!code!TestSICP!ch2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

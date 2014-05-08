@@ -1,0 +1,23 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "graph.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("math" include nil nil [41 52])
+            ("sample_graph" variable nil nil [54 474])
+            ("dfs" function (:arguments 
+              ( ("graph" variable nil (reparse-symbol function_parameters) [495 500]))              ) nil [487 530])
+            ("if" code nil nil [532 578]))          
+    :file "graph.py"
+    :pointmax 578
+    :fsize 593
+    :lastmodtime '(21132 54475 468655 557000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!data-structure-and-algorithms!code!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -24,13 +24,13 @@
               (setq overlay (make-overlay (point) (1+ (point)))
                     num (format "[%d]" (incf i)))
               (w3m-static-if (featurep 'xemacs)
-                  (progn
-                    (overlay-put overlay 'before-string num)
-                    (set-glyph-face (extent-begin-glyph overlay)
-                                    'w3m-link-numbering))
-                (w3m-add-face-property 0 (length num) 'w3m-link-numbering num)
-                (overlay-put overlay 'before-string num)
-                (overlay-put overlay 'evaporate t))
+			     (progn
+			       (overlay-put overlay 'before-string num)
+			       (set-glyph-face (extent-begin-glyph overlay)
+					       'w3m-link-numbering))
+			     (w3m-add-face-property 0 (length num) 'w3m-link-numbering num)
+			     (overlay-put overlay 'before-string num)
+			     (overlay-put overlay 'evaporate t))
               (overlay-put overlay 'w3m-link-numbering-overlay i))))))))
 
 (defcustom w3m-use-toolbar
@@ -44,11 +44,11 @@
   :group 'w3m
   :type 'boolean)
 (setq w3m-coding-system 'utf-8
-          w3m-file-coding-system 'utf-8
-          w3m-file-name-coding-system 'utf-8
-          w3m-input-coding-system 'utf-8
-          w3m-output-coding-system 'utf-8
-          w3m-terminal-coding-system 'utf-8)
+      w3m-file-coding-system 'utf-8
+      w3m-file-name-coding-system 'utf-8
+      w3m-input-coding-system 'utf-8
+      w3m-output-coding-system 'utf-8
+      w3m-terminal-coding-system 'utf-8)
 
 (setq w3m-use-cookies t)
 (setq w3m-add-referer t)

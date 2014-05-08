@@ -1,0 +1,291 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "iolib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("rcs_iolib" variable
+               (:pointer 1
+                :type "char")
+                nil [50 119])
+            ("stdlib.h" include (:system-flag t) nil [121 140])
+            ("string.h" include (:system-flag t) nil [141 160])
+            ("stdio.h" include (:system-flag t) nil [161 179])
+            ("ctype.h" include (:system-flag t) nil [180 198])
+            ("sys/stat.h" include (:system-flag t) nil [199 220])
+            ("floatingpoint.h" include (:system-flag t) nil [237 263])
+            ("mm.h" include nil nil [272 287])
+            ("lua.h" include nil nil [289 305])
+            ("out" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [307 342])
+            ("in" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [307 342])
+            ("io_readfrom" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [513 518]))                  
+                :type "void")
+                nil [488 1246])
+            ("io_writeto" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1417 1422]))                  
+                :type "void")
+                nil [1393 2159])
+            ("io_appendto" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2395 2400]))                  
+                :type "void")
+                nil [2370 3317])
+            ("io_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3708 3713]))                  
+                :type "void")
+                nil [3687 7023])
+            ("buildformat" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7699 7707])
+                    ("o" variable (:type ("lua_Object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7708 7721]))                  
+                :type "char")
+                nil [7673 9075])
+            ("io_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9098 9103]))                  
+                :type "void")
+                nil [9076 9876])
+            ("io_execute" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9984 9989]))                  
+                :type "void")
+                nil [9967 10281])
+            ("io_remove" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10369 10374]))                  
+                :type "void")
+                nil [10352 10712])
+            ("iolib_open" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10756 10761]))                  
+                :type "void")
+                nil [10739 11062]))          
+    :file "iolib.c"
+    :pointmax 11063
+    :fsize 11062
+    :lastmodtime '(21351 25014 526174 15000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mathlib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("rcs_mathlib" variable
+               (:pointer 1
+                :type "char")
+                nil [51 124])
+            ("stdio.h" include (:system-flag t) nil [126 144])
+            ("math.h" include (:system-flag t) nil [157 174])
+            ("lua.h" include nil nil [176 192])
+            ("TODEGREE" variable (:constant-flag t) nil [202 210])
+            ("TORAD" variable (:constant-flag t) nil [242 247])
+            ("math_abs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [297 302]))                  
+                :type "void")
+                nil [275 611])
+            ("math_sin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [636 641]))                  
+                :type "void")
+                nil [614 939])
+            ("math_cos" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [965 970]))                  
+                :type "void")
+                nil [943 1268])
+            ("math_tan" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1294 1299]))                  
+                :type "void")
+                nil [1272 1597])
+            ("math_asin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1623 1628]))                  
+                :type "void")
+                nil [1600 1932])
+            ("math_acos" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1958 1963]))                  
+                :type "void")
+                nil [1935 2267])
+            ("math_atan" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2294 2299]))                  
+                :type "void")
+                nil [2271 2603])
+            ("math_ceil" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2629 2634]))                  
+                :type "void")
+                nil [2606 2928])
+            ("math_floor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2955 2960]))                  
+                :type "void")
+                nil [2931 3257])
+            ("math_mod" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3281 3286]))                  
+                :type "void")
+                nil [3259 3595])
+            ("math_sqrt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3621 3626]))                  
+                :type "void")
+                nil [3598 3920])
+            ("math_pow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3944 3949]))                  
+                :type "void")
+                nil [3922 4254])
+            ("math_min" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4278 4283]))                  
+                :type "void")
+                nil [4256 4820])
+            ("math_max" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4845 4850]))                  
+                :type "void")
+                nil [4823 5387])
+            ("mathlib_open" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5437 5442]))                  
+                :type "void")
+                nil [5418 5985]))          
+    :file "mathlib.c"
+    :pointmax 5986
+    :fsize 5985
+    :lastmodtime '(21351 25020 614173 858000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TORAD" (spp-arg-list ("a") 247 . 250) . ((semantic-list "((a)*3.14159/180.0)" 254 . 273)))
+          ("TODEGREE" (spp-arg-list ("a") 210 . 213) . ((semantic-list "((a)*180.0/3.14159)" 214 . 233)))
+          )
+
+    )
+   (semanticdb-table "mathlib.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("mathlib_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [146 151]))                  
+                :type "void")
+                nil [127 152]))          
+    :file "mathlib.h"
+    :pointmax 162
+    :fsize 161
+    :lastmodtime '(11693 42353 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "strlib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("rcs_strlib" variable
+               (:pointer 1
+                :type "char")
+                nil [45 116])
+            ("stdlib.h" include (:system-flag t) nil [118 137])
+            ("string.h" include (:system-flag t) nil [138 157])
+            ("ctype.h" include (:system-flag t) nil [158 176])
+            ("mm.h" include nil nil [178 193])
+            ("lua.h" include nil nil [196 212])
+            ("str_find" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [371 376]))                  
+                :type "void")
+                nil [349 763])
+            ("str_len" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [863 868]))                  
+                :type "void")
+                nil [842 1053])
+            ("str_sub" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1201 1206]))                  
+                :type "void")
+                nil [1180 1884])
+            ("str_lower" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2003 2008]))                  
+                :type "void")
+                nil [1980 2311])
+            ("str_upper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2432 2437]))                  
+                :type "void")
+                nil [2409 2740])
+            ("strlib_open" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2791 2796]))                  
+                :type "void")
+                nil [2773 3000]))          
+    :file "strlib.c"
+    :pointmax 3001
+    :fsize 3000
+    :lastmodtime '(21351 25028 102173 667000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "strlib.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("strlib_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [146 151]))                  
+                :type "void")
+                nil [128 152]))          
+    :file "strlib.h"
+    :pointmax 162
+    :fsize 161
+    :lastmodtime '(11693 42356 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!lua!source!lua!clients!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
