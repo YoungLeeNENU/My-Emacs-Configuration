@@ -1,5 +1,5 @@
-(add-to-list 'load-path
-	     "~/.emacs.d/elisp")
+(add-to-list 'load-path "~/.emacs.d/elisp")
+(add-to-list 'load-path "~/.emacs.d/plugins/direx-el")
 
 ;;递归的删除目录
 (setq dired-recursive-deletes t)
@@ -39,3 +39,8 @@
 (define-key dired-mode-map
   (kbd ":")
   'dired-view-minor-mode-dired-toggle)
+
+
+;; Direx
+(require 'direx)
+(global-set-key (kbd "C-x C-i") 'direx:jump-to-directory)

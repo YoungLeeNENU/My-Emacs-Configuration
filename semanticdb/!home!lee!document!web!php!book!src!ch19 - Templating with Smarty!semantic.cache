@@ -1,0 +1,21 @@
+;; Object ch19 - Templating with Smarty/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch19 - Templating with Smarty/"
+  :tables (list 
+   (semanticdb-table "listing19-1.tpl"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{$pagetitle}" section nil nil [24 66])
+            ("{if $name eq \"Kirk\"}
+      <p>Welcome back Captain!" section nil nil [66 206]))          
+    :file "listing19-1.tpl"
+    :pointmax 206
+    :fsize 205
+    :lastmodtime '(19576 42288 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!web!php!book!src!ch19 - Templating with Smarty!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

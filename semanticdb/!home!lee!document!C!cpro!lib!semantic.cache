@@ -97,6 +97,34 @@
           )
 
     )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [65 83])
+            ("stdlib.h" include (:system-flag t) nil [84 103])
+            ("string.h" include (:system-flag t) nil [104 123])
+            ("NDEBUG" variable (:constant-flag t) nil [132 138])
+            ("assert.h" include (:system-flag t) nil [139 158])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [169 178])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [179 192]))                  
+                :type "int")
+                nil [160 246]))          
+    :file "test.c"
+    :pointmax 247
+    :fsize 246
+    :lastmodtime '(21405 24723 175653 41000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NDEBUG")
+          )
+
+    )
    )
   :file "!home!lee!document!C!cpro!lib!semantic.cache"
   :semantic-tag-version "2.0"

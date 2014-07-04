@@ -1,0 +1,491 @@
+;; Object custom/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "custom/"
+  :tables (list 
+   (semanticdb-table "base1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [861 906])
+            ("srvr" code nil nil [907 927]))          
+    :file "base1.py"
+    :pointmax 928
+    :fsize 927
+    :lastmodtime '(21386 52795 981198 530000)
+    :unmatched-syntax '(($EOI 928 . 928))
+    )
+   (semanticdb-table "base2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [862 907])
+            ("srvr" code nil nil [908 928]))          
+    :file "base2.py"
+    :pointmax 929
+    :fsize 928
+    :lastmodtime '(21386 52795 981198 530000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "page2.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Sample    Page" section nil nil [149 191])
+            ("This is a sample HTML page from server 2." section nil nil [191 328]))          
+    :file "page2.html"
+    :pointmax 328
+    :fsize 327
+    :lastmodtime '(21386 42251 449421 290000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "three.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [144 154])
+            ("mininet.net" include nil nil [156 187])
+            ("mininet.log" include nil nil [253 288])
+            ("mininet.cli" include nil nil [289 316])
+            ("mininet.log" include nil nil [317 343])
+            ("mininet.node" include nil nil [344 373])
+            ("mininet.topolib" include nil nil [374 410])
+            ("mininet.link" include nil nil [411 440])
+            ("mininet.topo" include nil nil [441 470])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [516 520])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [522 533]))                          )
+                        (reparse-symbol indented_block_body) [506 592]))                  
+                :type "class")
+                nil [472 592])
+            ("if" code nil nil [593 1808]))          
+    :file "three.py"
+    :pointmax 1808
+    :fsize 1867
+    :lastmodtime '(21398 32618 563693 218000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "younglee.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("mininet.net" include nil nil [131 162])
+            ("mininet.topolib" include nil nil [163 199])
+            ("net" variable nil nil [240 265])
+            ("net" code nil nil [267 278])
+            ("h1, h4" code nil nil [280 316])
+            ("print" code nil nil [318 355])
+            ("net" code nil nil [357 367]))          
+    :file "younglee.py"
+    :pointmax 368
+    :fsize 367
+    :lastmodtime '(21386 58914 609069 271000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 617]))                  
+                :type "class")
+                nil [193 617])
+            ("serveraddr" variable nil nil [618 639])
+            ("srvr" variable nil nil [653 698])
+            ("srvr" code nil nil [699 719]))          
+    :file "serv1.py"
+    :pointmax 720
+    :fsize 739
+    :lastmodtime '(21398 31035 267733 700000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv2.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [861 906])
+            ("srvr" code nil nil [907 927]))          
+    :file "serv2.py"
+    :pointmax 928
+    :fsize 927
+    :lastmodtime '(21391 56821 615371 840000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv3.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [861 906])
+            ("srvr" code nil nil [907 927]))          
+    :file "serv3.py"
+    :pointmax 928
+    :fsize 927
+    :lastmodtime '(21391 56813 639372 44000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv4.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [861 906])
+            ("srvr" code nil nil [907 927]))          
+    :file "serv4.py"
+    :pointmax 928
+    :fsize 927
+    :lastmodtime '(21391 56804 831372 270000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv1.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Server 1" section nil nil [149 185])
+            ("This is the page from Server 1." section nil nil [185 250]))          
+    :file "serv1.html"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(21391 54541 55430 151000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "page1.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Sample    Page" section nil nil [149 191])
+            ("This is a sample HTML page from server 1." section nil nil [191 328]))          
+    :file "page1.html"
+    :pointmax 328
+    :fsize 327
+    :lastmodtime '(21386 42264 749421 9000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv2.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Server 2" section nil nil [149 185])
+            ("This is the page from Server 2." section nil nil [185 250]))          
+    :file "serv2.html"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(21391 54525 879430 539000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv3.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Server 3" section nil nil [149 185])
+            ("This is the page from Server 3." section nil nil [185 250]))          
+    :file "serv3.html"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(21391 54496 623431 287000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serv4.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Server 4" section nil nil [149 185])
+            ("This is the page from Server 4." section nil nil [185 250]))          
+    :file "serv4.html"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(21391 54467 667432 27000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "one.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("mininet.net" include nil nil [53 84])
+            ("mininet.node" include nil nil [85 148])
+            ("mininet.log" include nil nil [149 184])
+            ("mininet.cli" include nil nil [185 212])
+            ("mininet.log" include nil nil [213 239])
+            ("mininet.node" include nil nil [240 269])
+            ("mininet.topolib" include nil nil [270 306])
+            ("mininet.link" include nil nil [307 336])
+            ("mininet.topo" include nil nil [337 366])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("\"Custom Switch() subclass that connects to different controllers\"" code nil (reparse-symbol indented_block_body) [402 467])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [482 486])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [488 499]))                          )
+                        (reparse-symbol indented_block_body) [472 558]))                  
+                :type "class")
+                nil [368 558])
+            ("if" code nil nil [559 1823]))          
+    :file "one.py"
+    :pointmax 1823
+    :fsize 1822
+    :lastmodtime '(21384 13390 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "topo-2sw-2host.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Custom topology example
+
+Two directly connected switches plus a host for each switch:
+
+   host --- switch --- switch --- host
+
+Adding the 'topos' dict with a key/value pair to generate our newly defined
+topology enables one to pass in '--topo=mytopo' from the command line.
+\"\"\"" code nil nil [1 281])
+            ("mininet.topo" include nil nil [283 312])
+            ("MyTopo" type
+               (:superclasses ("Topo")
+                :members 
+                  ( ("\"Simple topology example.\"" code nil (reparse-symbol indented_block_body) [340 366])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"Create custom topo.\"" code nil (reparse-symbol indented_block_body) [402 423])
+                            ("Topo" code nil (reparse-symbol indented_block_body) [463 484])
+                            ("leftHost" variable nil (reparse-symbol indented_block_body) [527 558])
+                            ("rightHost" variable nil (reparse-symbol indented_block_body) [567 599])
+                            ("leftSwitch" variable nil (reparse-symbol indented_block_body) [608 643])
+                            ("rightSwitch" variable nil (reparse-symbol indented_block_body) [652 688])
+                            ("self" code nil (reparse-symbol indented_block_body) [718 754])
+                            ("self" code nil (reparse-symbol indented_block_body) [763 802])
+                            ("self" code nil (reparse-symbol indented_block_body) [811 849]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [386 390]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [372 850]))                  
+                :type "class")
+                nil [314 850])
+            ("topos" variable nil nil [852 894]))          
+    :file "topo-2sw-2host.py"
+    :pointmax 895
+    :fsize 894
+    :lastmodtime '(21386 41774 533431 365000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "p3.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("mininet.net" include nil nil [53 84])
+            ("mininet.node" include nil nil [85 149])
+            ("mininet.log" include nil nil [150 185])
+            ("mininet.cli" include nil nil [186 213])
+            ("mininet.log" include nil nil [214 240])
+            ("mininet.node" include nil nil [241 270])
+            ("mininet.topolib" include nil nil [271 307])
+            ("mininet.link" include nil nil [308 337])
+            ("mininet.topo" include nil nil [338 367])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [413 417])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [419 430]))                          )
+                        (reparse-symbol indented_block_body) [403 489]))                  
+                :type "class")
+                nil [369 489])
+            ("if" code nil nil [490 1733]))          
+    :file "p3.py"
+    :pointmax 1641
+    :fsize 1732
+    :lastmodtime '(21395 1222 815993 924000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Mininet11.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("mininet.net" include nil nil [43 74])
+            ("mininet.node" include nil nil [75 104])
+            ("mininet.link" include nil nil [105 136])
+            ("mininet.log" include nil nil [137 179])
+            ("threading" include nil nil [180 207])
+            ("mininet.util" include nil nil [208 241])
+            ("time" include nil nil [242 264])
+            ("myNet" function (:arguments 
+              ( ("cname" variable nil (reparse-symbol function_parameters) [277 282])
+                ("cargs" variable nil (reparse-symbol function_parameters) [297 302]))              ) nil [267 3717])
+            ("if" code nil nil [3719 3862]))          
+    :file "Mininet11.py"
+    :pointmax 3814
+    :fsize 3861
+    :lastmodtime '(21397 18812 75973 560000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "traffic.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [131 141])
+            ("struct" include nil nil [142 155])
+            ("scapy.all" include nil nil [156 179])
+            ("data" variable nil nil [181 223])
+            ("pkt" code nil nil [224 314])
+            ("send" code nil nil [315 346]))          
+    :file "traffic.py"
+    :pointmax 347
+    :fsize 346
+    :lastmodtime '(21398 47340 183852 6000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "http.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [19 29])
+            ("mininet.net" include nil nil [31 62])
+            ("mininet.node" include nil nil [63 126])
+            ("mininet.log" include nil nil [127 162])
+            ("mininet.cli" include nil nil [163 190])
+            ("mininet.log" include nil nil [191 217])
+            ("mininet.node" include nil nil [218 247])
+            ("mininet.topolib" include nil nil [248 284])
+            ("mininet.link" include nil nil [285 314])
+            ("mininet.topo" include nil nil [315 344])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("\"Custom Switch() subclass that connects to different controllers\"" code nil (reparse-symbol indented_block_body) [383 448])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [464 468])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [470 481]))                          )
+                        (reparse-symbol indented_block_body) [453 541]))                  
+                :type "class")
+                nil [347 541])
+            ("if" code nil nil [541 1463]))          
+    :file "http.py"
+    :pointmax 1463
+    :fsize 1462
+    :lastmodtime '(21399 949 524431 973000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!mininet!custom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

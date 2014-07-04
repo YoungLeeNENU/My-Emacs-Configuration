@@ -43,12 +43,12 @@
    (semanticdb-table "tmp.py"
     :major-mode 'python-mode
     :tags 
-        '( ("main" function nil nil [24 65])
-            ("if" code nil nil [70 108]))          
+        '( ("main" function nil nil [42 83])
+            ("if" code nil nil [88 126]))          
     :file "tmp.py"
-    :pointmax 108
-    :fsize 107
-    :lastmodtime '(20940 6564 951978 438000)
+    :pointmax 126
+    :fsize 125
+    :lastmodtime '(21370 5446 979041 781000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "dig.py"

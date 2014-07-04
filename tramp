@@ -1,9 +1,9 @@
-;; -*- emacs-lisp -*- <14/02/01 22:38:30 /home/lee/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/06/30 14:59:35 /home/lee/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
 ((["sudo" "root" "localhost" nil nil]
-  ("uname" "Linux 3.2.0-51-generic-pae")
+  ("uname" "Linux 3.2.0-64-generic-pae")
   ("test" "test")
   ("remote-path"
    ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
@@ -14,5 +14,4 @@
   ("stat" "\\stat")
   ("id" "/usr/bin/id")
   ("gid-integer" 0)
-  ("uid-integer" 0)
-  ("trash" nil)))
+  ("uid-integer" 0)))

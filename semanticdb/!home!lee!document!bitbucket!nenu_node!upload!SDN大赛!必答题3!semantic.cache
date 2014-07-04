@@ -1,0 +1,74 @@
+;; Object 必答题3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "必答题3/"
+  :tables (list 
+   (semanticdb-table "http.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [19 29])
+            ("mininet.net" include nil nil [31 62])
+            ("mininet.node" include nil nil [63 126])
+            ("mininet.log" include nil nil [127 162])
+            ("mininet.cli" include nil nil [163 190])
+            ("mininet.log" include nil nil [191 217])
+            ("mininet.node" include nil nil [218 247])
+            ("mininet.topolib" include nil nil [248 284])
+            ("mininet.link" include nil nil [285 314])
+            ("mininet.topo" include nil nil [315 344])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("\"Custom Switch() subclass that connects to different controllers\"" code nil (reparse-symbol indented_block_body) [383 448])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [464 468])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [470 481]))                          )
+                        (reparse-symbol indented_block_body) [453 541]))                  
+                :type "class")
+                nil [347 541])
+            ("if" code nil nil [541 1463]))          
+    :file "http.py"
+    :pointmax 1463
+    :fsize 1462
+    :lastmodtime '(21399 2281 188397 925000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "base1.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseHTTPServer" include nil nil [130 191])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [261 265]))                          )
+                        (reparse-symbol indented_block_body) [243 381])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401]))                          )
+                        (reparse-symbol indented_block_body) [385 433])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [448 452]))                          )
+                        (reparse-symbol indented_block_body) [437 622]))                  
+                :type "class")
+                nil [193 622])
+            ("serveraddr" variable nil nil [826 847])
+            ("srvr" variable nil nil [861 906])
+            ("srvr" code nil nil [907 927]))          
+    :file "base1.py"
+    :pointmax 928
+    :fsize 927
+    :lastmodtime '(21399 1825 504409 576000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!upload!SDN大赛!必答题3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,2161 @@
+;; Object AST/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AST/"
+  :tables (list 
+   (semanticdb-table "ASTConsumer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("clang/AST/ASTConsumer.h" include nil nil [475 509])
+            ("clang/AST/Decl.h" include nil nil [510 537])
+            ("clang/AST/DeclGroup.h" include nil nil [538 570])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [571 593])
+            ("HandleTopLevelDecl" function
+               (:parent "ASTConsumer"
+                :arguments 
+                  ( ("D" variable (:type ("DeclGroupRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [632 647]))                  
+                :type "bool")
+                nil [595 666])
+            ("HandleInterestingDecl" function
+               (:parent "ASTConsumer"
+                :arguments 
+                  ( ("D" variable (:type ("DeclGroupRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [708 723]))                  
+                :type "void")
+                nil [668 752])
+            ("HandleTopLevelDeclInObjCContainer" function
+               (:parent "ASTConsumer"
+                :arguments 
+                  ( ("D" variable (:type ("DeclGroupRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [806 821]))                  
+                :type "void")
+                nil [754 824])
+            ("HandleImplicitImportDecl" function
+               (:parent "ASTConsumer"
+                :arguments 
+                  ( ("D" variable
+                       (:pointer 1
+                        :type ("ImportDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [869 883]))                  
+                :type "void")
+                nil [826 926]))          
+    :file "ASTConsumer.cpp"
+    :pointmax 927
+    :fsize 926
+    :lastmodtime '(21388 21252 612572 380000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Expr.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("clang/AST/APValue.h" include nil nil [485 515])
+            ("clang/AST/ASTContext.h" include nil nil [516 549])
+            ("clang/AST/Attr.h" include nil nil [550 577])
+            ("clang/AST/DeclCXX.h" include nil nil [578 608])
+            ("clang/AST/DeclObjC.h" include nil nil [609 640])
+            ("clang/AST/DeclTemplate.h" include nil nil [641 676])
+            ("clang/AST/EvaluatedExprVisitor.h" include nil nil [677 720])
+            ("clang/AST/Expr.h" include nil nil [721 748])
+            ("clang/AST/ExprCXX.h" include nil nil [749 779])
+            ("clang/AST/Mangle.h" include nil nil [780 809])
+            ("clang/AST/RecordLayout.h" include nil nil [810 845])
+            ("clang/AST/StmtVisitor.h" include nil nil [846 880])
+            ("clang/Basic/Builtins.h" include nil nil [881 914])
+            ("clang/Basic/CharInfo.h" include nil nil [915 948])
+            ("clang/Basic/SourceManager.h" include nil nil [949 987])
+            ("clang/Basic/TargetInfo.h" include nil nil [988 1023])
+            ("clang/Lex/Lexer.h" include nil nil [1024 1052])
+            ("clang/Lex/LiteralSupport.h" include nil nil [1053 1090])
+            ("clang/Sema/SemaDiagnostic.h" include nil nil [1091 1129])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1130 1169])
+            ("llvm/Support/raw_ostream.h" include nil nil [1170 1207])
+            ("algorithm" include (:system-flag t) nil [1208 1228])
+            ("cstring" include (:system-flag t) nil [1229 1247])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1248 1270])
+            ("getBestDynamicClassType" function
+               (:pointer 1
+                :parent "Expr"
+                :constant-flag t
+                :type ("CXXRecordDecl" type (:type "class") nil nil))
+                nil [1272 1703])
+            ("skipRValueSubobjectAdjustments" function
+               (:pointer 1
+                :parent "Expr"
+                :constant-flag t
+                :arguments 
+                  ( ("CommaLHSs" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("Expr" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1759 1800])
+                    ("Adjustments" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("SubobjectAdjustment" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1805 1855]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [1705 3487])
+            ("isKnownToHaveBooleanValue" function
+               (:parent "Expr"
+                :type "bool")
+                nil [3728 5539])
+            ("unnamed" type
+               (:members 
+                  ( ("getExprLocImpl" function
+                       (:template 
+                          ( ("E" type (:type "class") nil nil)
+                            ("T" type (:type "class") nil nil))                          
+                        :type ("SourceLocation" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("expr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Expr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5890 5907])
+                            ("" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5940 5962]))                          )
+                        (reparse-symbol namespacesubparts) [5830 6031])
+                    ("getExprLocImpl" function
+                       (:template 
+                          ( ("E" type (:type "class") nil nil))                          
+                        :type ("SourceLocation" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("expr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Expr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6351 6368])
+                            ("" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6401 6426]))                          )
+                        (reparse-symbol namespacesubparts) [6300 6496]))                  
+                :type "namespace")
+                nil [5715 6498])
+            ("getExprLoc" function
+               (:parent "Expr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [6500 6965])
+            ("computeDeclRefDependence" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7337 7359])
+                    ("D" variable
+                       (:pointer 1
+                        :type ("NamedDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7360 7373])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7411 7422])
+                    ("TypeDependent" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7423 7443])
+                    ("ValueDependent" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7481 7502])
+                    ("InstantiationDependent" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [7540 7569]))                  
+                :type "void")
+                nil [7300 10551])
+            ("computeDependence" function
+               (:parent "DeclRefExpr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10589 10611]))                  
+                :type "void")
+                nil [10553 11810])
+            ("DeclRefExpr" function
+               (:constructor-flag t
+                :parent "DeclRefExpr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11837 11859])
+                    ("QualifierLoc" variable (:type ("NestedNameSpecifierLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11885 11921])
+                    ("TemplateKWLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11947 11976])
+                    ("D" variable
+                       (:pointer 1
+                        :type ("ValueDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12002 12015])
+                    ("RefersToEnclosingLocal" variable (:type "bool") (reparse-symbol arg-sub-list) [12016 12044])
+                    ("NameInfo" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DeclarationNameInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12070 12106])
+                    ("FoundD" variable
+                       (:pointer 1
+                        :type ("NamedDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12132 12150])
+                    ("TemplateArgs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TemplateArgumentListInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12176 12221])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12247 12258])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12259 12276]))                  
+                :type ("DeclRefExpr" type (:type "class") nil nil))
+                nil [11812 13482])
+            ("Create" function
+               (:pointer 1
+                :parent "DeclRefExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13517 13543])
+                    ("QualifierLoc" variable (:type ("NestedNameSpecifierLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13577 13613])
+                    ("TemplateKWLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13647 13676])
+                    ("D" variable
+                       (:pointer 1
+                        :type ("ValueDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13710 13723])
+                    ("RefersToEnclosingLocal" variable (:type "bool") (reparse-symbol arg-sub-list) [13757 13785])
+                    ("NameLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13819 13842])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13876 13887])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13921 13938])
+                    ("FoundD" variable
+                       (:pointer 1
+                        :type ("NamedDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13972 13990])
+                    ("TemplateArgs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TemplateArgumentListInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14024 14069]))                  
+                :type ("DeclRefExpr" type (:type "class") nil nil))
+                nil [13484 14280])
+            ("Create" function
+               (:pointer 1
+                :parent "DeclRefExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14315 14341])
+                    ("QualifierLoc" variable (:type ("NestedNameSpecifierLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14375 14411])
+                    ("TemplateKWLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14445 14474])
+                    ("D" variable
+                       (:pointer 1
+                        :type ("ValueDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14508 14521])
+                    ("RefersToEnclosingLocal" variable (:type "bool") (reparse-symbol arg-sub-list) [14555 14583])
+                    ("NameInfo" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DeclarationNameInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14617 14653])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14687 14698])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14732 14749])
+                    ("FoundD" variable
+                       (:pointer 1
+                        :type ("NamedDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14783 14801])
+                    ("TemplateArgs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TemplateArgumentListInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14835 14880]))                  
+                :type ("DeclRefExpr" type (:type "class") nil nil))
+                nil [14282 15601])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "DeclRefExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15641 15667])
+                    ("HasQualifier" variable (:type "bool") (reparse-symbol arg-sub-list) [15706 15724])
+                    ("HasFoundDecl" variable (:type "bool") (reparse-symbol arg-sub-list) [15763 15781])
+                    ("HasTemplateKWAndArgsInfo" variable (:type "bool") (reparse-symbol arg-sub-list) [15820 15850])
+                    ("NumTemplateArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15889 15914]))                  
+                :type ("DeclRefExpr" type (:type "class") nil nil))
+                nil [15603 16288])
+            ("getLocStart" function
+               (:parent "DeclRefExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [16290 16445])
+            ("getLocEnd" function
+               (:parent "DeclRefExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [16446 16591])
+            ("ComputeName" function
+               (:parent "PredefinedExpr"
+                :arguments 
+                  ( ("IT" variable (:type ("IdentType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16735 16748])
+                    ("CurrentDecl" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Decl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16749 16773]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [16695 23988])
+            ("setIntValue" function
+               (:parent "APNumericStorage"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24025 24045])
+                    ("Val" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24081 24104]))                  
+                :type "void")
+                nil [23990 24448])
+            ("IntegerLiteral" function
+               (:constructor-flag t
+                :parent "IntegerLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24481 24501])
+                    ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24502 24523])
+                    ("type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24555 24569])
+                    ("l" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24570 24587]))                  
+                :type ("IntegerLiteral" type (:type "class") nil nil))
+                nil [24450 24902])
+            ("Create" function
+               (:pointer 1
+                :parent "IntegerLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24944 24964])
+                    ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24965 24986])
+                    ("type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25010 25024])
+                    ("l" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25025 25042]))                  
+                :type ("IntegerLiteral" type (:type "class") nil nil))
+                nil [24904 25094])
+            ("Create" function
+               (:pointer 1
+                :parent "IntegerLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25136 25156])
+                    ("Empty" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25157 25174]))                  
+                :type ("IntegerLiteral" type (:type "class") nil nil))
+                nil [25096 25218])
+            ("FloatingLiteral" function
+               (:constructor-flag t
+                :parent "FloatingLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25253 25273])
+                    ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::APFloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25274 25297])
+                    ("isexact" variable (:type "bool") (reparse-symbol arg-sub-list) [25331 25344])
+                    ("Type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25345 25359])
+                    ("L" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25360 25377]))                  
+                :type ("FloatingLiteral" type (:type "class") nil nil))
+                nil [25220 25580])
+            ("FloatingLiteral" function
+               (:constructor-flag t
+                :parent "FloatingLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25615 25635])
+                    ("Empty" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25636 25653]))                  
+                :type ("FloatingLiteral" type (:type "class") nil nil))
+                nil [25582 25763])
+            ("Create" function
+               (:pointer 1
+                :parent "FloatingLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25807 25827])
+                    ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::APFloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25828 25851])
+                    ("isexact" variable (:type "bool") (reparse-symbol arg-sub-list) [25876 25889])
+                    ("Type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25890 25904])
+                    ("L" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25905 25922]))                  
+                :type ("FloatingLiteral" type (:type "class") nil nil))
+                nil [25765 25984])
+            ("Create" function
+               (:pointer 1
+                :parent "FloatingLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26028 26048])
+                    ("Empty" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26049 26066]))                  
+                :type ("FloatingLiteral" type (:type "class") nil nil))
+                nil [25986 26114])
+            ("getSemantics" function
+               (:parent "FloatingLiteral"
+                :constant-flag t
+                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                nil [26116 26642])
+            ("setSemantics" function
+               (:parent "FloatingLiteral"
+                :arguments 
+                  ( ("Sem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26679 26709]))                  
+                :type "void")
+                nil [26644 27353])
+            ("getValueAsApproximateDouble" function
+               (:parent "FloatingLiteral"
+                :type "double")
+                nil [27530 27769])
+            ("mapCharByteWidth" function
+               (:parent "StringLiteral"
+                :arguments 
+                  ( ("target" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TargetInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27807 27832])
+                    ("k" variable (:type ("StringKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27832 27845]))                  
+                :type "int")
+                nil [27771 28471])
+            ("Create" function
+               (:pointer 1
+                :parent "StringLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28510 28530])
+                    ("Str" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28531 28545])
+                    ("Kind" variable (:type ("StringKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28583 28599])
+                    ("Pascal" variable (:type "bool") (reparse-symbol arg-sub-list) [28600 28612])
+                    ("Ty" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28613 28625])
+                    ("Loc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SourceLocation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28663 28689])
+                    ("NumStrs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28727 28744]))                  
+                :type ("StringLiteral" type (:type "class") nil nil))
+                nil [28473 29454])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "StringLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29498 29518])
+                    ("NumStrs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29561 29578]))                  
+                :type ("StringLiteral" type (:type "class") nil nil))
+                nil [29456 29897])
+            ("outputString" function
+               (:parent "StringLiteral"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29932 29948]))                  
+                :type "void")
+                nil [29899 33063])
+            ("setString" function
+               (:parent "StringLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33095 33115])
+                    ("Str" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33116 33130])
+                    ("Kind" variable (:type ("StringKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33161 33177])
+                    ("IsPascal" variable (:type "bool") (reparse-symbol arg-sub-list) [33178 33192]))                  
+                :type "void")
+                nil [33065 34233])
+            ("getLocationOfByte" function
+               (:parent "StringLiteral"
+                :arguments 
+                  ( ("ByteNo" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34628 34644])
+                    ("SM" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SourceManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34645 34669])
+                    ("Features" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34688 34716])
+                    ("Target" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TargetInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34717 34742]))                  
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [34579 36792])
+            ("getOpcodeStr" function
+               (:parent "UnaryOperator"
+                :arguments 
+                  ( ("Op" variable (:type ("Opcode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36956 36966]))                  
+                :type ("StringRef" type (:type "class") nil nil))
+                nil [36918 37467])
+            ("getOverloadedOpcode" function
+               (:parent "UnaryOperator"
+                :arguments 
+                  ( ("OO" variable (:type ("OverloadedOperatorKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37522 37548])
+                    ("Postfix" variable (:type "bool") (reparse-symbol arg-sub-list) [37549 37562]))                  
+                :type ("UnaryOperatorKind" type (:type "class") nil nil))
+                nil [37469 38017])
+            ("getOverloadedOperator" function
+               (:parent "UnaryOperator"
+                :arguments 
+                  ( ("Opc" variable (:type ("Opcode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38079 38090]))                  
+                :type ("OverloadedOperatorKind" type (:type "class") nil nil))
+                nil [38019 38453])
+            ("CallExpr" function
+               (:constructor-flag t
+                :parent "CallExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38660 38680])
+                    ("SC" variable (:type ("StmtClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38681 38694])
+                    ("fn" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38695 38704])
+                    ("NumPreArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [38724 38744])
+                    ("args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [38745 38766])
+                    ("t" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38767 38778])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38798 38815])
+                    ("rparenloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38816 38841]))                  
+                :type ("CallExpr" type (:type "class") nil nil))
+                nil [38641 39663])
+            ("CallExpr" function
+               (:constructor-flag t
+                :parent "CallExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39684 39704])
+                    ("fn" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39705 39714])
+                    ("args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [39715 39736])
+                    ("t" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39756 39767])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39768 39785])
+                    ("rparenloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39786 39811]))                  
+                :type ("CallExpr" type (:type "class") nil nil))
+                nil [39665 40613])
+            ("CallExpr" function
+               (:constructor-flag t
+                :parent "CallExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40634 40654])
+                    ("SC" variable (:type ("StmtClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40655 40668])
+                    ("Empty" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40669 40686]))                  
+                :type ("CallExpr" type (:type "class") nil nil))
+                nil [40615 40852])
+            ("CallExpr" function
+               (:constructor-flag t
+                :parent "CallExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40873 40893])
+                    ("SC" variable (:type ("StmtClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40894 40907])
+                    ("NumPreArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40908 40928])
+                    ("Empty" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40948 40965]))                  
+                :type ("CallExpr" type (:type "class") nil nil))
+                nil [40854 41151])
+            ("getCalleeDecl" function
+               (:pointer 1
+                :parent "CallExpr"
+                :type ("Decl" type (:type "class") nil nil))
+                nil [41153 41964])
+            ("getDirectCallee" function
+               (:pointer 1
+                :parent "CallExpr"
+                :type ("FunctionDecl" type (:type "class") nil nil))
+                nil [41966 42069])
+            ("setNumArgs" function
+               (:parent "CallExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42265 42285])
+                    ("NumArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [42286 42303]))                  
+                :type "void")
+                nil [42239 43102])
+            ("getBuiltinCallee" function
+               (:parent "CallExpr"
+                :type "unsigned int")
+                nil [43204 43864])
+            ("isUnevaluatedBuiltinCall" function
+               (:parent "CallExpr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43906 43922]))                  
+                :type "bool")
+                nil [43866 44034])
+            ("getCallReturnType" function
+               (:parent "CallExpr"
+                :type ("QualType" type (:type "class") nil nil))
+                nil [44036 44680])
+            ("getLocStart" function
+               (:parent "CallExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [44682 44980])
+            ("getLocEnd" function
+               (:parent "CallExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [44981 45268])
+            ("Create" function
+               (:pointer 1
+                :parent "OffsetOfExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45305 45325])
+                    ("type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45326 45340])
+                    ("OperatorLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45376 45403])
+                    ("tsi" variable
+                       (:pointer 1
+                        :type ("TypeSourceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45439 45459])
+                    ("comps" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("OffsetOfNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [45496 45525])
+                    ("exprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [45561 45583])
+                    ("RParenLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45619 45644]))                  
+                :type ("OffsetOfExpr" type (:type "class") nil nil))
+                nil [45270 45933])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "OffsetOfExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45975 45995])
+                    ("numComps" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46036 46054])
+                    ("numExprs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46055 46073]))                  
+                :type ("OffsetOfExpr" type (:type "class") nil nil))
+                nil [45935 46289])
+            ("OffsetOfExpr" function
+               (:constructor-flag t
+                :parent "OffsetOfExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46318 46338])
+                    ("type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46339 46353])
+                    ("OperatorLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46381 46408])
+                    ("tsi" variable
+                       (:pointer 1
+                        :type ("TypeSourceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46409 46429])
+                    ("comps" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("OffsetOfNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [46457 46486])
+                    ("exprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [46487 46509])
+                    ("RParenLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46537 46562]))                  
+                :type ("OffsetOfExpr" type (:type "class") nil nil))
+                nil [46291 47344])
+            ("getFieldName" function
+               (:pointer 1
+                :parent "OffsetOfExpr::OffsetOfNode"
+                :type ("IdentifierInfo" type (:type "class") nil nil))
+                nil [47346 47611])
+            ("Create" function
+               (:pointer 1
+                :parent "MemberExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47644 47664])
+                    ("base" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47665 47676])
+                    ("isarrow" variable (:type "bool") (reparse-symbol arg-sub-list) [47677 47690])
+                    ("QualifierLoc" variable (:type ("NestedNameSpecifierLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47722 47758])
+                    ("TemplateKWLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47790 47819])
+                    ("memberdecl" variable
+                       (:pointer 1
+                        :type ("ValueDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47851 47873])
+                    ("founddecl" variable (:type ("DeclAccessPair" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47905 47930])
+                    ("nameinfo" variable (:type ("DeclarationNameInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47962 47991])
+                    ("targs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TemplateArgumentListInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48023 48061])
+                    ("ty" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48093 48105])
+                    ("vk" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48137 48154])
+                    ("ok" variable (:type ("ExprObjectKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48186 48204]))                  
+                :type ("MemberExpr" type (:type "class") nil nil))
+                nil [47613 50156])
+            ("getLocStart" function
+               (:parent "MemberExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [50158 50594])
+            ("getLocEnd" function
+               (:parent "MemberExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [50595 50849])
+            ("CastConsistency" function
+               (:parent "CastExpr"
+                :type "bool")
+                nil [50851 54531])
+            ("getCastKindName" function
+               (:pointer 1
+                :parent "CastExpr"
+                :constant-flag t
+                :type "char")
+                nil [54533 58163])
+            ("getSubExprAsWritten" function
+               (:pointer 1
+                :parent "CastExpr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [58165 59262])
+            ("path_buffer" function
+               (:pointer 2
+                :parent "CastExpr"
+                :type ("CXXBaseSpecifier" type (:type "class") nil nil))
+                nil [59264 59638])
+            ("setCastPath" function
+               (:parent "CastExpr"
+                :arguments 
+                  ( ("Path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CXXCastPath" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59667 59691]))                  
+                :type "void")
+                nil [59640 59812])
+            ("Create" function
+               (:pointer 1
+                :parent "ImplicitCastExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59857 59877])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59878 59889])
+                    ("Kind" variable (:type ("CastKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59933 59947])
+                    ("Operand" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59948 59962])
+                    ("BasePath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CXXCastPath" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60006 60034])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60078 60095]))                  
+                :type ("ImplicitCastExpr" type (:type "class") nil nil))
+                nil [59814 60400])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "ImplicitCastExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60450 60470])
+                    ("PathSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [60519 60537]))                  
+                :type ("ImplicitCastExpr" type (:type "class") nil nil))
+                nil [60402 60703])
+            ("Create" function
+               (:pointer 1
+                :parent "CStyleCastExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60745 60765])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60766 60777])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60817 60834])
+                    ("K" variable (:type ("CastKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60835 60846])
+                    ("Op" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60847 60856])
+                    ("BasePath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CXXCastPath" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60896 60924])
+                    ("WrittenTy" variable
+                       (:pointer 1
+                        :type ("TypeSourceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60964 60990])
+                    ("L" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61030 61047])
+                    ("R" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61048 61065]))                  
+                :type ("CStyleCastExpr" type (:type "class") nil nil))
+                nil [60706 61373])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "CStyleCastExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61419 61439])
+                    ("PathSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [61484 61502]))                  
+                :type ("CStyleCastExpr" type (:type "class") nil nil))
+                nil [61375 61664])
+            ("getOpcodeStr" function
+               (:parent "BinaryOperator"
+                :arguments 
+                  ( ("Op" variable (:type ("Opcode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61811 61821]))                  
+                :type ("StringRef" type (:type "class") nil nil))
+                nil [61772 62964])
+            ("getOverloadedOpcode" function
+               (:parent "BinaryOperator"
+                :arguments 
+                  ( ("OO" variable (:type ("OverloadedOperatorKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63021 63047]))                  
+                :type ("BinaryOperatorKind" type (:type "class") nil nil))
+                nil [62966 64293])
+            ("getOverloadedOperator" function
+               (:parent "BinaryOperator"
+                :arguments 
+                  ( ("Opc" variable (:type ("Opcode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64356 64367]))                  
+                :type ("OverloadedOperatorKind" type (:type "class") nil nil))
+                nil [64295 64970])
+            ("InitListExpr" function
+               (:constructor-flag t
+                :parent "InitListExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64999 65019])
+                    ("lbraceloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65020 65045])
+                    ("initExprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [65073 65099])
+                    ("rbraceloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65100 65125]))                  
+                :type ("InitListExpr" type (:type "class") nil nil))
+                nil [64972 65878])
+            ("reserveInits" function
+               (:parent "InitListExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65912 65932])
+                    ("NumInits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [65933 65951]))                  
+                :type "void")
+                nil [65880 66026])
+            ("resizeInits" function
+               (:parent "InitListExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66059 66079])
+                    ("NumInits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [66080 66098]))                  
+                :type "void")
+                nil [66028 66144])
+            ("updateInit" function
+               (:pointer 1
+                :parent "InitListExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66177 66197])
+                    ("Init" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [66198 66212])
+                    ("expr" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66213 66224]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [66146 66486])
+            ("setArrayFiller" function
+               (:parent "InitListExpr"
+                :arguments 
+                  ( ("filler" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66522 66535]))                  
+                :type "void")
+                nil [66488 66842])
+            ("isStringLiteralInit" function
+               (:parent "InitListExpr"
+                :type "bool")
+                nil [66844 67277])
+            ("getLocStart" function
+               (:parent "InitListExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [67279 67778])
+            ("getLocEnd" function
+               (:parent "InitListExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [67780 68268])
+            ("getFunctionType" function
+               (:pointer 1
+                :parent "BlockExpr"
+                :constant-flag t
+                :type ("FunctionProtoType" type (:type "class") nil nil))
+                nil [68348 68587])
+            ("getCaretLocation" function
+               (:parent "BlockExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [68589 68682])
+            ("getBody" function
+               (:pointer 1
+                :parent "BlockExpr"
+                :constant-flag t
+                :type ("Stmt" type (:type "class") nil nil))
+                nil [68683 68755])
+            ("getBody" function
+               (:pointer 1
+                :parent "BlockExpr"
+                :type ("Stmt" type (:type "class") nil nil))
+                nil [68756 68816])
+            ("isUnusedResultAWarning" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69285 69298])
+                    ("" variable (:type ("WarnE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69298 69304])
+                    ("Loc" variable
+                       (:reference 1
+                        :type ("SourceLocation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69305 69325])
+                    ("R1" variable
+                       (:reference 1
+                        :type ("SourceRange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69361 69377])
+                    ("R2" variable
+                       (:reference 1
+                        :type ("SourceRange" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69378 69394])
+                    ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69429 69445]))                  
+                :type "bool")
+                nil [69251 80360])
+            ("isOBJCGCCandidate" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80500 80516]))                  
+                :type "bool")
+                nil [80471 81852])
+            ("isBoundMemberFunction" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81887 81903]))                  
+                :type "bool")
+                nil [81854 82013])
+            ("findBoundMemberType" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("expr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82050 82067]))                  
+                :type ("QualType" type (:type "class") nil nil))
+                nil [82015 82774])
+            ("IgnoreParens" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [82776 83449])
+            ("IgnoreParenCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [83593 84182])
+            ("IgnoreCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [84184 84678])
+            ("IgnoreParenLValueCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [84952 85615])
+            ("ignoreParenBaseCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [85617 85999])
+            ("IgnoreParenImpCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [86001 86603])
+            ("IgnoreConversionOperator" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [86605 86859])
+            ("IgnoreParenNoopCasts" function
+               (:pointer 1
+                :parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87096 87112]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [87063 88049])
+            ("isDefaultArgument" function
+               (:parent "Expr"
+                :type "bool")
+                nil [88051 88373])
+            ("skipTemporaryBindingsNoOpCastsAndParens" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("E" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88514 88528]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [88455 89111])
+            ("isTemporaryObject" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89246 89260])
+                    ("TempTy" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CXXRecordDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89261 89289]))                  
+                :type "bool")
+                nil [89217 90341])
+            ("isImplicitCXXThis" function
+               (:parent "Expr"
+                :type "bool")
+                nil [90343 91443])
+            ("hasAnyTypeDependentArguments" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Exprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [91589 91612]))                  
+                :type "bool")
+                nil [91549 91735])
+            ("isConstantInitializer" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91770 91786])
+                    ("IsForRef" variable (:type "bool") (reparse-symbol arg-sub-list) [91787 91801])
+                    ("Culprit" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91835 91856]))                  
+                :type "bool")
+                nil [91737 97288])
+            ("HasSideEffects" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97316 97338]))                  
+                :type "bool")
+                nil [97290 103949])
+            ("unnamed" type
+               (:members 
+                  ( ("NonTrivialCallFinder" type
+                       (:superclasses 
+                          ( ("EvaluatedExprVisitor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Inherited" type
+                               (:typedef ("EvaluatedExprVisitor" type
+                                     (:template-specifier 
+                                        ( ("NonTrivialCallFinder" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "EvaluatedExprVisitor"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [104129 104190])
+                            ("NonTrivial" variable (:type "bool") (reparse-symbol classsubparts) [104200 104216])
+                            ("public" label nil (reparse-symbol classsubparts) [104224 104231])
+                            ("NonTrivialCallFinder" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Context" variable
+                                       (:reference 1
+                                        :type ("ASTContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [104266 104286]))                                  
+                                :type ("NonTrivialCallFinder" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [104245 104337])
+                            ("hasNonTrivialCall" function (:type "bool") (reparse-symbol classsubparts) [104347 104400])
+                            ("VisitCallExpr" function
+                               (:arguments 
+                                  ( ("E" variable
+                                       (:pointer 1
+                                        :type ("CallExpr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [104429 104441]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [104410 104732])
+                            ("VisitCXXConstructExpr" function
+                               (:arguments 
+                                  ( ("E" variable
+                                       (:pointer 1
+                                        :type ("CXXConstructExpr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [104769 104789]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [104742 104976])
+                            ("VisitCXXBindTemporaryExpr" function
+                               (:arguments 
+                                  ( ("E" variable
+                                       (:pointer 1
+                                        :type ("CXXBindTemporaryExpr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [105017 105041]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [104986 105199]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [104042 105204]))                  
+                :type "namespace")
+                nil [103951 105206])
+            ("hasNonTrivialCall" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105237 105253]))                  
+                :type "bool")
+                nil [105208 105354])
+            ("isNullPointerConstant" function
+               (:parent "Expr"
+                :arguments 
+                  ( ("Ctx" variable
+                       (:reference 1
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105731 105747])
+                    ("NPC" variable (:type ("NullPointerConstantValueDependence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105776 105815]))                  
+                :type ("Expr::NullPointerConstantKind" type (:type "class") nil nil))
+                nil [105673 110280])
+            ("getObjCProperty" function
+               (:pointer 1
+                :parent "Expr"
+                :constant-flag t
+                :type ("ObjCPropertyRefExpr" type (:type "class") nil nil))
+                nil [110410 110917])
+            ("isObjCSelfExpr" function
+               (:parent "Expr"
+                :type "bool")
+                nil [110919 111339])
+            ("getSourceBitField" function
+               (:pointer 1
+                :parent "Expr"
+                :type ("FieldDecl" type (:type "class") nil nil))
+                nil [111341 112518])
+            ("refersToVectorElement" function
+               (:parent "Expr"
+                :type "bool")
+                nil [112520 113032])
+            ("isArrow" function
+               (:parent "ExtVectorElementExpr"
+                :type "bool")
+                nil [113160 113254])
+            ("getNumElements" function
+               (:parent "ExtVectorElementExpr"
+                :type "unsigned int")
+                nil [113256 113419])
+            ("containsDuplicateElements" function
+               (:parent "ExtVectorElementExpr"
+                :type "bool")
+                nil [113500 114173])
+            ("getEncodedElementAccess" function
+               (:parent "ExtVectorElementExpr"
+                :arguments 
+                  ( ("Elts" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [114337 114369]))                  
+                :type "void")
+                nil [114251 114945])
+            ("ObjCMessageExpr" function
+               (:constructor-flag t
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114980 114991])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115025 115042])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115076 115100])
+                    ("SuperLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115134 115158])
+                    ("IsInstanceSuper" variable (:type "bool") (reparse-symbol arg-sub-list) [115192 115213])
+                    ("SuperType" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115247 115266])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115300 115313])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [115348 115381])
+                    ("SelLocsK" variable (:type ("SelectorLocationsKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115415 115446])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115480 115503])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [115537 115559])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115593 115617])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [115651 115667]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [114947 116327])
+            ("ObjCMessageExpr" function
+               (:constructor-flag t
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116362 116373])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116407 116424])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116458 116482])
+                    ("Receiver" variable
+                       (:pointer 1
+                        :type ("TypeSourceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116516 116541])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116575 116588])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [116622 116655])
+                    ("SelLocsK" variable (:type ("SelectorLocationsKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116689 116720])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116754 116777])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [116811 116833])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116867 116891])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [116925 116941]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [116329 117501])
+            ("ObjCMessageExpr" function
+               (:constructor-flag t
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117536 117547])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117581 117598])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117632 117656])
+                    ("Receiver" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117690 117705])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117739 117752])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [117787 117820])
+                    ("SelLocsK" variable (:type ("SelectorLocationsKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117854 117885])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117919 117942])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [117976 117998])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118032 118056])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [118090 118106]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [117503 118702])
+            ("initArgsAndSelLocs" function
+               (:parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [118745 118767])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [118809 118842])
+                    ("SelLocsK" variable (:type ("SelectorLocationsKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118884 118915]))                  
+                :type "void")
+                nil [118704 119564])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119607 119633])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119634 119645])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119687 119704])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119746 119770])
+                    ("SuperLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119812 119836])
+                    ("IsInstanceSuper" variable (:type "bool") (reparse-symbol arg-sub-list) [119878 119899])
+                    ("SuperType" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119941 119960])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120002 120015])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [120058 120091])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120133 120156])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [120198 120220])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120262 120286])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [120328 120344]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [119566 120886])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120929 120955])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120956 120967])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121009 121026])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121068 121092])
+                    ("Receiver" variable
+                       (:pointer 1
+                        :type ("TypeSourceInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121134 121159])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121201 121214])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [121257 121290])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121332 121355])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [121397 121419])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121461 121485])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [121527 121543]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [120888 122057])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122100 122126])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122127 122138])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122180 122197])
+                    ("LBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122239 122263])
+                    ("Receiver" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122305 122320])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122362 122375])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [122417 122450])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122492 122515])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [122557 122579])
+                    ("RBracLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122621 122645])
+                    ("isImplicit" variable (:type "bool") (reparse-symbol arg-sub-list) [122687 122703]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [122059 123217])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123265 123291])
+                    ("NumArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [123338 123355])
+                    ("NumStoredSelLocs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [123402 123428]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [123219 123559])
+            ("alloc" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123601 123621])
+                    ("Args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [123662 123684])
+                    ("RBraceLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123725 123750])
+                    ("SelLocs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("SourceLocation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [123791 123824])
+                    ("Sel" variable (:type ("Selector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123865 123878])
+                    ("SelLocsK" variable
+                       (:reference 1
+                        :type ("SelectorLocationsKind" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123919 123951]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [123561 124222])
+            ("alloc" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124264 124284])
+                    ("NumArgs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [124325 124342])
+                    ("NumStoredSelLocs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [124383 124409]))                  
+                :type ("ObjCMessageExpr" type (:type "class") nil nil))
+                nil [124224 124675])
+            ("getSelectorLocs" function
+               (:parent "ObjCMessageExpr"
+                :arguments 
+                  ( ("SelLocs" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("SourceLocation" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [124747 124788]))                  
+                :type "void")
+                nil [124677 124902])
+            ("getReceiverRange" function
+               (:parent "ObjCMessageExpr"
+                :type ("SourceRange" type (:type "class") nil nil))
+                nil [124904 125264])
+            ("getSelector" function
+               (:parent "ObjCMessageExpr"
+                :type ("Selector" type (:type "class") nil nil))
+                nil [125266 125520])
+            ("getReceiverType" function
+               (:parent "ObjCMessageExpr"
+                :type ("QualType" type (:type "class") nil nil))
+                nil [125522 125834])
+            ("getReceiverInterface" function
+               (:pointer 1
+                :parent "ObjCMessageExpr"
+                :type ("ObjCInterfaceDecl" type (:type "class") nil nil))
+                nil [125836 126163])
+            ("getBridgeKindName" function
+               (:parent "ObjCBridgedCastExpr"
+                :type ("StringRef" type (:type "class") nil nil))
+                nil [126165 126462])
+            ("ShuffleVectorExpr" function
+               (:constructor-flag t
+                :parent "ShuffleVectorExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126501 126521])
+                    ("args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [126522 126543])
+                    ("Type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126581 126595])
+                    ("BLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126596 126616])
+                    ("RP" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126654 126672]))                  
+                :type ("ShuffleVectorExpr" type (:type "class") nil nil))
+                nil [126464 127428])
+            ("setExprs" function
+               (:parent "ShuffleVectorExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127463 127483])
+                    ("Exprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [127484 127507]))                  
+                :type "void")
+                nil [127430 127688])
+            ("GenericSelectionExpr" function
+               (:constructor-flag t
+                :parent "GenericSelectionExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127733 127759])
+                    ("GenericLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127791 127817])
+                    ("ControllingExpr" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127818 127840])
+                    ("AssocTypes" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("TypeSourceInfo" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [127872 127909])
+                    ("AssocExprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [127941 127968])
+                    ("DefaultLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128000 128026])
+                    ("RParenLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128058 128083])
+                    ("ContainsUnexpandedParameterPack" variable (:type "bool") (reparse-symbol arg-sub-list) [128115 128152])
+                    ("ResultIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [128184 128205]))                  
+                :type ("GenericSelectionExpr" type (:type "class") nil nil))
+                nil [127690 129097])
+            ("GenericSelectionExpr" function
+               (:constructor-flag t
+                :parent "GenericSelectionExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129142 129168])
+                    ("GenericLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129200 129226])
+                    ("ControllingExpr" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129227 129249])
+                    ("AssocTypes" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("TypeSourceInfo" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [129281 129318])
+                    ("AssocExprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [129350 129377])
+                    ("DefaultLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129409 129435])
+                    ("RParenLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129467 129492])
+                    ("ContainsUnexpandedParameterPack" variable (:type "bool") (reparse-symbol arg-sub-list) [129524 129561]))                  
+                :type ("GenericSelectionExpr" type (:type "class") nil nil))
+                nil [129099 130317])
+            ("getFieldName" function
+               (:pointer 1
+                :parent "DesignatedInitExpr::Designator"
+                :type ("IdentifierInfo" type (:type "class") nil nil))
+                nil [130505 130801])
+            ("DesignatedInitExpr" function
+               (:constructor-flag t
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130842 130862])
+                    ("Ty" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130863 130875])
+                    ("NumDesignators" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [130915 130939])
+                    ("Designators" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130979 131009])
+                    ("EqualOrColonLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131049 131080])
+                    ("GNUSyntax" variable (:type "bool") (reparse-symbol arg-sub-list) [131120 131135])
+                    ("IndexExprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [131175 131202])
+                    ("Init" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131242 131253]))                  
+                :type ("DesignatedInitExpr" type (:type "class") nil nil))
+                nil [130803 133637])
+            ("Create" function
+               (:pointer 1
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133687 133707])
+                    ("Designators" variable
+                       (:pointer 1
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133708 133732])
+                    ("NumDesignators" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [133760 133784])
+                    ("IndexExprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [133812 133839])
+                    ("ColonOrEqualLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133867 133898])
+                    ("UsesColonSyntax" variable (:type "bool") (reparse-symbol arg-sub-list) [133926 133947])
+                    ("Init" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133948 133959]))                  
+                :type ("DesignatedInitExpr" type (:type "class") nil nil))
+                nil [133639 134297])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134351 134371])
+                    ("NumIndexExprs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [134424 134447]))                  
+                :type ("DesignatedInitExpr" type (:type "class") nil nil))
+                nil [134299 134630])
+            ("setDesignators" function
+               (:parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134672 134692])
+                    ("Desigs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134733 134758])
+                    ("NumDesigs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [134799 134818]))                  
+                :type "void")
+                nil [134632 134975])
+            ("getDesignatorsSourceRange" function
+               (:parent "DesignatedInitExpr"
+                :type ("SourceRange" type (:type "class") nil nil))
+                nil [134977 135308])
+            ("getLocStart" function
+               (:parent "DesignatedInitExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [135310 135810])
+            ("getLocEnd" function
+               (:parent "DesignatedInitExpr"
+                :type ("SourceLocation" type (:type "class") nil nil))
+                nil [135812 135901])
+            ("getArrayIndex" function
+               (:pointer 1
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("D" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135943 135963]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [135903 136183])
+            ("getArrayRangeStart" function
+               (:pointer 1
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("D" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136230 136250]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [136185 136490])
+            ("getArrayRangeEnd" function
+               (:pointer 1
+                :parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("D" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136535 136555]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [136492 136795])
+            ("ExpandDesignator" function
+               (:parent "DesignatedInitExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136943 136963])
+                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [136964 136977])
+                    ("First" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137020 137044])
+                    ("Last" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Designator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137087 137110]))                  
+                :type "void")
+                nil [136901 137872])
+            ("ParenListExpr" function
+               (:constructor-flag t
+                :parent "ParenListExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137903 137923])
+                    ("lparenloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137924 137949])
+                    ("exprs" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [137979 138001])
+                    ("rparenloc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [138031 138056]))                  
+                :type ("ParenListExpr" type (:type "class") nil nil))
+                nil [137874 138702])
+            ("findInCopyConstruct" function
+               (:pointer 1
+                :parent "OpaqueValueExpr"
+                :constant-flag t
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138764 138778]))                  
+                :type ("OpaqueValueExpr" type (:type "class") nil nil))
+                nil [138704 139164])
+            ("Create" function
+               (:pointer 1
+                :parent "PseudoObjectExpr"
+                :arguments 
+                  ( ("Context" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139209 139235])
+                    ("sh" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139279 139293])
+                    ("numSemanticExprs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [139337 139363]))                  
+                :type ("PseudoObjectExpr" type (:type "class") nil nil))
+                nil [139166 139635])
+            ("PseudoObjectExpr" function
+               (:constructor-flag t
+                :parent "PseudoObjectExpr"
+                :arguments 
+                  ( ("shell" variable (:type ("EmptyShell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139672 139689])
+                    ("numSemanticExprs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [139690 139716]))                  
+                :type ("PseudoObjectExpr" type (:type "class") nil nil))
+                nil [139637 139818])
+            ("Create" function
+               (:pointer 1
+                :parent "PseudoObjectExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139863 139883])
+                    ("syntax" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139884 139897])
+                    ("semantics" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [139941 139967])
+                    ("resultIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [140011 140032]))                  
+                :type ("PseudoObjectExpr" type (:type "class") nil nil))
+                nil [139820 140785])
+            ("PseudoObjectExpr" function
+               (:constructor-flag t
+                :parent "PseudoObjectExpr"
+                :arguments 
+                  ( ("type" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140822 140836])
+                    ("VK" variable (:type ("ExprValueKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140837 140854])
+                    ("syntax" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140890 140903])
+                    ("semantics" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [140904 140930])
+                    ("resultIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [140966 140987]))                  
+                :type ("PseudoObjectExpr" type (:type "class") nil nil))
+                nil [140787 141916])
+            ("[]" function
+               (:operator-flag t
+                :pointer 1
+                :parent "ExprIterator"
+                :arguments 
+                  ( ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142130 142141]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142099 142172])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142173 142237])
+            ("->" function
+               (:operator-flag t
+                :pointer 1
+                :parent "ExprIterator"
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142238 142303])
+            ("[]" function
+               (:operator-flag t
+                :pointer 1
+                :parent "ConstExprIterator"
+                :constant-flag t
+                :arguments 
+                  ( ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142346 142357]))                  
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142304 142396])
+            ("" variable
+               (:functionpointer-flag t
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142397 142472])
+            ("->" function
+               (:operator-flag t
+                :pointer 1
+                :parent "ConstExprIterator"
+                :constant-flag t
+                :type ("Expr" type (:type "class") nil nil))
+                nil [142473 142549])
+            ("children" function
+               (:parent "UnaryExprOrTypeTraitExpr"
+                :type ("Stmt::child_range" type (:type "class") nil nil))
+                nil [142810 143399])
+            ("children" function
+               (:parent "ObjCMessageExpr"
+                :type ("Stmt::child_range" type (:type "class") nil nil))
+                nil [143420 143731])
+            ("ObjCArrayLiteral" function
+               (:constructor-flag t
+                :parent "ObjCArrayLiteral"
+                :arguments 
+                  ( ("Elements" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [143768 143794])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143831 143842])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143843 143866])
+                    ("SR" variable (:type ("SourceRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143902 143917]))                  
+                :type ("ObjCArrayLiteral" type (:type "class") nil nil))
+                nil [143733 144557])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCArrayLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144602 144622])
+                    ("Elements" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [144666 144692])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144736 144747])
+                    ("Method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144748 144772])
+                    ("SR" variable (:type ("SourceRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144816 144831]))                  
+                :type ("ObjCArrayLiteral" type (:type "class") nil nil))
+                nil [144559 145010])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "ObjCArrayLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145060 145080])
+                    ("NumElements" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [145129 145150]))                  
+                :type ("ObjCArrayLiteral" type (:type "class") nil nil))
+                nil [145012 145330])
+            ("ObjCDictionaryLiteral" function
+               (:constructor-flag t
+                :parent "ObjCDictionaryLiteral"
+                :arguments 
+                  ( ("VK" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("ObjCDictionaryElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [145423 145458])
+                    ("HasPackExpansions" variable (:type "bool") (reparse-symbol arg-sub-list) [145505 145528])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145574 145585])
+                    ("method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145586 145609])
+                    ("SR" variable (:type ("SourceRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145655 145670]))                  
+                :type ("ObjCDictionaryLiteral" type (:type "class") nil nil))
+                nil [145332 146890])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCDictionaryLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146946 146966])
+                    ("VK" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("ObjCDictionaryElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [146997 147032])
+                    ("HasPackExpansions" variable (:type "bool") (reparse-symbol arg-sub-list) [147064 147087])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147118 147129])
+                    ("method" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147130 147153])
+                    ("SR" variable (:type ("SourceRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147184 147199]))                  
+                :type ("ObjCDictionaryLiteral" type (:type "class") nil nil))
+                nil [146892 147535])
+            ("CreateEmpty" function
+               (:pointer 1
+                :parent "ObjCDictionaryLiteral"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147596 147616])
+                    ("NumElements" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [147617 147638])
+                    ("HasPackExpansions" variable (:type "bool") (reparse-symbol arg-sub-list) [147674 147697]))                  
+                :type ("ObjCDictionaryLiteral" type (:type "class") nil nil))
+                nil [147537 148082])
+            ("Create" function
+               (:pointer 1
+                :parent "ObjCSubscriptRefExpr"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASTContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148135 148155])
+                    ("base" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148207 148218])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("Expr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148270 148280])
+                    ("T" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148281 148292])
+                    ("getMethod" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148345 148371])
+                    ("setMethod" variable
+                       (:pointer 1
+                        :type ("ObjCMethodDecl" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148423 148449])
+                    ("RB" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148502 148520]))                  
+                :type ("ObjCSubscriptRefExpr" type (:type "class") nil nil))
+                nil [148084 148771])
+            ("AtomicExpr" function
+               (:constructor-flag t
+                :parent "AtomicExpr"
+                :arguments 
+                  ( ("BLoc" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148796 148816])
+                    ("args" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Expr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [148817 148838])
+                    ("t" variable (:type ("QualType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148862 148873])
+                    ("op" variable (:type ("AtomicOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148874 148886])
+                    ("RP" variable (:type ("SourceLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148887 148905]))                  
+                :type ("AtomicExpr" type (:type "class") nil nil))
+                nil [148773 149577])
+            ("getNumSubExprs" function
+               (:parent "AtomicExpr"
+                :arguments 
+                  ( ("Op" variable (:type ("AtomicOp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149615 149627]))                  
+                :type "unsigned int")
+                nil [149579 150721]))          
+    :file "Expr.cpp"
+    :pointmax 150722
+    :fsize 150721
+    :lastmodtime '(21388 21252 624572 379000)
+    :unmatched-syntax '((EXPLICIT 104236 . 104244) (punctuation 69297 . 69298) (CONST 6429 . 6434) (semantic-list 6426 . 6428) (semantic-list 6416 . 6426) (CONST 5965 . 5970) (semantic-list 5962 . 5964) (semantic-list 5955 . 5962))
+    )
+   )
+  :file "!home!lee!document!C++!llvm!llvm!tools!clang!lib!AST!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

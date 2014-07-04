@@ -1,0 +1,1588 @@
+;; Object mininet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mininet/"
+  :tables (list 
+   (semanticdb-table "net.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+
+    Mininet: A simple networking testbed for OpenFlow/SDN!
+
+author: Bob Lantz (rlantz@cs.stanford.edu)
+author: Brandon Heller (brandonh@stanford.edu)
+
+Mininet creates scalable OpenFlow test networks by using
+process-based virtualization and network namespaces.
+
+Simulated hosts are created as processes in separate network
+namespaces. This allows a complete OpenFlow network to be simulated on
+top of a single Linux kernel.
+
+Each host has:
+
+A virtual console (pipes to a shell)
+A virtual interfaces (half of a veth pair)
+A parent shell (and possibly some child processes) in a namespace
+
+Hosts have a network interface which is configured via ifconfig/ip
+link/etc.
+
+This version supports both the kernel and user space datapaths
+from the OpenFlow reference implementation (openflowswitch.org)
+as well as OpenVSwitch (openvswitch.org.)
+
+In kernel datapath mode, the controller and switches are simply
+processes in the root namespace.
+
+Kernel OpenFlow datapaths are instantiated using dpctl(8), and are
+attached to the one side of a veth pair; the other side resides in the
+host namespace. In this mode, switch processes can simply connect to the
+controller via the loopback interface.
+
+In user datapath mode, the controller and switches can be full-service
+nodes that live in their own network namespaces and have management
+interfaces and IP addresses on a control network (e.g. 192.168.123.1,
+currently routed although it could be bridged.)
+
+In addition to a management interface, user mode switches also have
+several switch interfaces, halves of veth pairs whose other halves
+reside in the host nodes that the switches are connected to.
+
+Consistent, straightforward naming is important in order to easily
+identify hosts, switches and controllers, both from the CLI and
+from program code. Interfaces are named to make it easy to identify
+which interfaces belong to which node.
+
+The basic naming scheme is as follows:
+
+    Host nodes are named h1-hN
+    Switch nodes are named s1-sN
+    Controller nodes are named c0-cN
+    Interfaces are named {nodename}-eth0 .. {nodename}-ethN
+
+Note: If the network topology is created using mininet.topo, then
+node numbers are unique among hosts and switches (e.g. we have
+h1..hN and SN..SN+M) and also correspond to their default IP addresses
+of 10.x.y.z/8 where x.y.z is the base-256 representation of N for
+hN. This mapping allows easy determination of a node's IP
+address from its name, e.g. h1 -> 10.0.0.1, h257 -> 10.0.1.1.
+
+Note also that 10.0.0.1 can often be written as 10.1 for short, e.g.
+\"ping 10.1\" is equivalent to \"ping 10.0.0.1\".
+
+Currently we wrap the entire network in a 'mininet' object, which
+constructs a simulated network based on a network topology created
+using a topology object (e.g. LinearTopo) from mininet.topo or
+mininet.topolib, and a Controller which the switches will connect
+to. Several configuration options are provided for functions such as
+automatically setting MAC addresses, populating the ARP table, or
+even running a set of terminals to allow direct interaction with nodes.
+
+After the network is created, it can be started using start(), and a
+variety of useful tasks maybe performed, including basic connectivity
+and bandwidth tests and running the mininet CLI.
+
+Once the network is up and running, test code can easily get access
+to host and switch objects which can then be used for arbitrary
+experiments, typically involving running a series of commands on the
+hosts.
+
+After all desired tests or activities have been completed, the stop()
+method may be called to shut down the network.
+
+\"\"\"" code nil nil [1 3579])
+            ("os" include nil nil [3581 3590])
+            ("re" include nil nil [3591 3600])
+            ("select" include nil nil [3601 3614])
+            ("signal" include nil nil [3615 3628])
+            ("time" include nil nil [3629 3651])
+            ("itertools" include nil nil [3652 3679])
+            ("mininet.cli" include nil nil [3681 3708])
+            ("mininet.log" include nil nil [3709 3759])
+            ("mininet.node" include nil nil [3760 3818])
+            ("mininet.link" include nil nil [3819 3854])
+            ("mininet.util" include nil nil [3855 3921])
+            ("mininet.util" include nil nil [3922 3991])
+            ("mininet.term" include nil nil [3992 4042])
+            ("VERSION" variable nil nil [4108 4126])
+            ("Mininet" type
+               (:superclasses ("object")
+                :members 
+                  ( ("\"Network emulation with hosts spawned in network namespaces.\"" code nil (reparse-symbol indented_block_body) [4157 4218])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Create Mininet object.
+           topo: Topo (topology) object or None
+           switch: default Switch class
+           host: default Host class/constructor
+           controller: default Controller class/constructor
+           link: default Link class/constructor
+           intf: default Intf class/constructor
+           ipBase: base IP address for hosts,
+           build: build now from topo?
+           xterms: if build now, spawn xterms?
+           cleanup: if build now, cleanup before creating?
+           inNamespace: spawn switches and controller in net namespaces?
+           autoSetMacs: set MAC addrs automatically like IP addresses?
+           autoStaticArp: set all-pairs static MAC addrs?
+           autoPinCpus: pin hosts to (real) cores (requires CPULimitedHost)?
+           listenPort: base listening port to open; will be incremented for
+               each additional switch in the net if inNamespace=False\"\"\"" code nil (reparse-symbol indented_block_body) [4592 5528])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5537 5553])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5562 5582])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5591 5607])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5616 5644])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5653 5669])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5678 5694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5703 5723])
+                            ("self, self" code nil (reparse-symbol indented_block_body) [5732 5788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5797 5812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5853 5883])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5892 5912])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5921 5943])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5952 5982])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5991 6025])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6034 6064])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6073 6099])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6108 6125])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6173 6201])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6211 6226])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6235 6253])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6262 6283])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6293 6313])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6361 6376])
+                            ("Mininet" code nil (reparse-symbol indented_block_body) [6421 6435])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6480 6498])
+                            ("if" code nil (reparse-symbol indented_block_body) [6507 6551]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4238 4242])
+                            ("topo" variable nil (reparse-symbol function_parameters) [4244 4248])
+                            ("switch" variable nil (reparse-symbol function_parameters) [4255 4261])
+                            ("host" variable nil (reparse-symbol function_parameters) [4279 4283])
+                            ("controller" variable nil (reparse-symbol function_parameters) [4308 4318])
+                            ("link" variable nil (reparse-symbol function_parameters) [4331 4335])
+                            ("intf" variable nil (reparse-symbol function_parameters) [4342 4346])
+                            ("build" variable nil (reparse-symbol function_parameters) [4371 4376])
+                            ("xterms" variable nil (reparse-symbol function_parameters) [4383 4389])
+                            ("cleanup" variable nil (reparse-symbol function_parameters) [4397 4404])
+                            ("ipBase" variable nil (reparse-symbol function_parameters) [4412 4418])
+                            ("inNamespace" variable nil (reparse-symbol function_parameters) [4451 4462])
+                            ("autoSetMacs" variable nil (reparse-symbol function_parameters) [4488 4499])
+                            ("autoStaticArp" variable nil (reparse-symbol function_parameters) [4507 4520])
+                            ("autoPinCpus" variable nil (reparse-symbol function_parameters) [4528 4539])
+                            ("listenPort" variable nil (reparse-symbol function_parameters) [4565 4575]))                          
+                        :documentation "Create Mininet object.
+           topo: Topo (topology) object or None
+           switch: default Switch class
+           host: default Host class/constructor
+           controller: default Controller class/constructor
+           link: default Link class/constructor
+           intf: default Intf class/constructor
+           ipBase: base IP address for hosts,
+           build: build now from topo?
+           xterms: if build now, spawn xterms?
+           cleanup: if build now, cleanup before creating?
+           inNamespace: spawn switches and controller in net namespaces?
+           autoSetMacs: set MAC addrs automatically like IP addresses?
+           autoStaticArp: set all-pairs static MAC addrs?
+           autoPinCpus: pin hosts to (real) cores (requires CPULimitedHost)?
+           listenPort: base listening port to open; will be incremented for
+               each additional switch in the net if inNamespace=False"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4224 6551])
+                    ("addHost" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6569 6573])
+                            ("name" variable nil (reparse-symbol function_parameters) [6575 6579])
+                            ("cls" variable nil (reparse-symbol function_parameters) [6581 6584])
+                            ("params" variable nil (reparse-symbol function_parameters) [6591 6599]))                          
+                        :documentation "Add host.
+           name: name of host to add
+           cls: custom host class/constructor (optional)
+           params: parameters for host
+           returns: added host")
+                        (reparse-symbol indented_block_body) [6556 7516])
+                    ("addSwitch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7536 7540])
+                            ("name" variable nil (reparse-symbol function_parameters) [7542 7546])
+                            ("cls" variable nil (reparse-symbol function_parameters) [7548 7551])
+                            ("params" variable nil (reparse-symbol function_parameters) [7558 7566]))                          
+                        :documentation "Add switch.
+           name: name of switch to add
+           cls: custom switch class/constructor (optional)
+           returns: added switch
+           side effect: increments listenPort ivar .")
+                        (reparse-symbol indented_block_body) [7521 8184])
+                    ("addController" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8208 8212])
+                            ("name" variable nil (reparse-symbol function_parameters) [8214 8218])
+                            ("controller" variable nil (reparse-symbol function_parameters) [8225 8235])
+                            ("params" variable nil (reparse-symbol function_parameters) [8242 8250]))                          
+                        :documentation "Add controller.
+           controller: Controller class")
+                        (reparse-symbol indented_block_body) [8189 9017])
+                    ("getNodeByName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9144 9148])
+                            ("args" variable nil (reparse-symbol function_parameters) [9150 9155]))                          )
+                        (reparse-symbol indented_block_body) [9125 9334])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9348 9352])
+                            ("args" variable nil (reparse-symbol function_parameters) [9354 9359]))                          )
+                        (reparse-symbol indented_block_body) [9339 9452])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9538 9542])
+                            ("key" variable nil (reparse-symbol function_parameters) [9544 9547]))                          
+                        :documentation "net [ name ] operator: Return node(s) with given name(s)")
+                        (reparse-symbol indented_block_body) [9521 9660])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9679 9683]))                          )
+                        (reparse-symbol indented_block_body) [9665 9831])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9849 9853]))                          )
+                        (reparse-symbol indented_block_body) [9836 10001])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10024 10028])
+                            ("item" variable nil (reparse-symbol function_parameters) [10030 10034]))                          )
+                        (reparse-symbol indented_block_body) [10006 10127])
+                    ("keys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10142 10146]))                          )
+                        (reparse-symbol indented_block_body) [10132 10234])
+                    ("values" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10251 10255]))                          )
+                        (reparse-symbol indented_block_body) [10239 10359])
+                    ("items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10375 10379]))                          )
+                        (reparse-symbol indented_block_body) [10364 10494])
+                    ("addLink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10512 10516])
+                            ("node1" variable nil (reparse-symbol function_parameters) [10518 10523])
+                            ("node2" variable nil (reparse-symbol function_parameters) [10525 10530])
+                            ("port1" variable nil (reparse-symbol function_parameters) [10532 10537])
+                            ("port2" variable nil (reparse-symbol function_parameters) [10544 10549])
+                            ("cls" variable nil (reparse-symbol function_parameters) [10573 10576])
+                            ("params" variable nil (reparse-symbol function_parameters) [10583 10591]))                          
+                        :documentation "\"Add a link from node1 to node2
+            node1: source node
+            node2: dest node
+            port1: source port
+            port2: dest port
+            returns: link object")
+                        (reparse-symbol indented_block_body) [10499 11038])
+                    ("configHosts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11060 11064]))                          )
+                        (reparse-symbol indented_block_body) [11043 11777])
+                    ("buildFromTopo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11801 11805])
+                            ("topo" variable nil (reparse-symbol function_parameters) [11807 11811]))                          
+                        :documentation "Build mininet from a topology object
+           At the end of this function, everything should be connected
+           and up.")
+                        (reparse-symbol indented_block_body) [11782 13291])
+                    ("configureControlNetwork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13325 13329]))                          )
+                        (reparse-symbol indented_block_body) [13296 13509])
+                    ("build" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13525 13529]))                          )
+                        (reparse-symbol indented_block_body) [13514 13909])
+                    ("startTerms" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13930 13934]))                          )
+                        (reparse-symbol indented_block_body) [13914 14386])
+                    ("stopXterms" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14407 14411]))                          )
+                        (reparse-symbol indented_block_body) [14391 14547])
+                    ("staticArp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14567 14571]))                          )
+                        (reparse-symbol indented_block_body) [14552 14809])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14825 14829]))                          )
+                        (reparse-symbol indented_block_body) [14814 15253])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15268 15272]))                          )
+                        (reparse-symbol indented_block_body) [15258 16039])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16053 16057])
+                            ("test" variable nil (reparse-symbol function_parameters) [16059 16063])
+                            ("args" variable nil (reparse-symbol function_parameters) [16065 16070])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16072 16080]))                          )
+                        (reparse-symbol indented_block_body) [16044 16277])
+                    ("monitor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16295 16299])
+                            ("hosts" variable nil (reparse-symbol function_parameters) [16301 16306])
+                            ("timeoutms" variable nil (reparse-symbol function_parameters) [16313 16322]))                          
+                        :documentation "Monitor a set of hosts (or all hosts by default),
+           and return their output, a line at a time.
+           hosts: (optional) set of hosts to monitor
+           timeoutms: (optional) timeout value in ms
+           returns: iterator which returns host, line")
+                        (reparse-symbol indented_block_body) [16282 17257])
+                    ("_parsePing" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("pingOutput" variable nil (reparse-symbol function_parameters) [17413 17423]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [17379 17948])
+                    ("ping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17963 17967])
+                            ("hosts" variable nil (reparse-symbol function_parameters) [17969 17974])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [17981 17988]))                          
+                        :documentation "Ping between all specified hosts.
+           hosts: list of hosts
+           timeout: time to wait for a response, as string
+           returns: ploss packet loss percentage")
+                        (reparse-symbol indented_block_body) [17953 19540])
+                    ("_parsePingFull" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("pingOutput" variable nil (reparse-symbol function_parameters) [19583 19593]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [19545 20668])
+                    ("pingFull" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20687 20691])
+                            ("hosts" variable nil (reparse-symbol function_parameters) [20693 20698])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [20705 20712]))                          
+                        :documentation "Ping between all specified hosts and return all data.
+           hosts: list of hosts
+           timeout: time to wait for a response, as string
+           returns: all ping data; see function body.")
+                        (reparse-symbol indented_block_body) [20673 22221])
+                    ("pingAll" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22239 22243]))                          
+                        :documentation "Ping between all hosts.
+           returns: ploss packet loss percentage")
+                        (reparse-symbol indented_block_body) [22226 22361])
+                    ("pingPair" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22380 22384]))                          
+                        :documentation "Ping between first two hosts, useful for testing.
+           returns: ploss packet loss percentage")
+                        (reparse-symbol indented_block_body) [22366 22594])
+                    ("pingAllFull" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22616 22620]))                          
+                        :documentation "Ping between all hosts.
+           returns: ploss packet loss percentage")
+                        (reparse-symbol indented_block_body) [22599 22742])
+                    ("pingPairFull" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22765 22769]))                          
+                        :documentation "Ping between first two hosts, useful for testing.
+           returns: ploss packet loss percentage")
+                        (reparse-symbol indented_block_body) [22747 22983])
+                    ("_parseIperf" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("iperfOutput" variable nil (reparse-symbol function_parameters) [23023 23034]))                          
+                        :documentation "Parse iperf output and return bandwidth.
+           iperfOutput: string
+           returns: result string")
+                        (reparse-symbol indented_block_body) [22988 23415])
+                    ("iperf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23468 23472])
+                            ("hosts" variable nil (reparse-symbol function_parameters) [23474 23479])
+                            ("l4Type" variable nil (reparse-symbol function_parameters) [23486 23492])
+                            ("udpBw" variable nil (reparse-symbol function_parameters) [23500 23505]))                          
+                        :documentation "Run iperf between two hosts.
+           hosts: list of hosts; if None, uses opposite hosts
+           l4Type: string, one of [ TCP, UDP ]
+           returns: results two-element array of server and client speeds")
+                        (reparse-symbol indented_block_body) [23457 25342])
+                    ("runCpuLimitTest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25368 25372])
+                            ("cpu" variable nil (reparse-symbol function_parameters) [25374 25377])
+                            ("duration" variable nil (reparse-symbol function_parameters) [25379 25387]))                          
+                        :documentation "run CPU limit test with 'while true' processes.
+        cpu: desired CPU fraction of each host
+        duration: test duration in seconds
+        returns a single list of measured CPU fractions as floats.
+        ")
+                        (reparse-symbol indented_block_body) [25347 26847])
+                    ("configLinkStatus" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26956 26960])
+                            ("src" variable nil (reparse-symbol function_parameters) [26962 26965])
+                            ("dst" variable nil (reparse-symbol function_parameters) [26967 26970])
+                            ("status" variable nil (reparse-symbol function_parameters) [26972 26978]))                          
+                        :documentation "Change status of src <-> dst links.
+           src: node name
+           dst: node name
+           status: string {up, down}")
+                        (reparse-symbol indented_block_body) [26934 28009])
+                    ("interact" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28028 28032]))                          )
+                        (reparse-symbol indented_block_body) [28014 28176])
+                    ("inited" variable nil (reparse-symbol indented_block_body) [28181 28195])
+                    ("init" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [28228 28231]))                          )
+                        (reparse-symbol indented_block_body) [28201 28373]))                  
+                :type "class")
+                nil [4128 28373])
+            ("MininetWithControlNet" type
+               (:documentation "Control network support:
+
+       Create an explicit control network. Currently this is only
+       used/usable with the user datapath.
+
+       Notes:
+
+       1. If the controller and switches are in the same (e.g. root)
+          namespace, they can just use the loopback connection.
+
+       2. If we can get unix domain sockets to work, we can use them
+          instead of an explicit control network.
+
+       3. Instead of routing, we could bridge or use 'in-band' control.
+
+       4. Even if we dispense with this in general, it could still be
+          useful for people who wish to simulate a separate control
+          network (since real networks may need one!)
+
+       5. Basically nobody ever used this code, so it has been moved
+          into its own class.
+
+       6. Ultimately we may wish to extend this to allow us to create a
+          control network which every node's control interface is
+          attached to."
+                :superclasses ("Mininet")
+                :members 
+                  ( ("configureControlNetwork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29392 29396]))                          )
+                        (reparse-symbol indented_block_body) [29363 29482])
+                    ("configureRoutedControlNetwork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29618 29622])
+                            ("ip" variable nil (reparse-symbol function_parameters) [29624 29626])
+                            ("prefixLen" variable nil (reparse-symbol function_parameters) [29683 29692]))                          
+                        :documentation "Configure a routed control network on controller and switches.
+           For use with the user datapath only right now.")
+                        (reparse-symbol indented_block_body) [29583 31021]))                  
+                :type "class")
+                nil [28375 31021]))          
+    :file "net.py"
+    :pointmax 31021
+    :fsize 31020
+    :lastmodtime '(21209 58129 2737 87000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "node.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Node objects for Mininet.
+
+Nodes provide a simple abstraction for interacting with hosts, switches
+and controllers. Local nodes are simply one or more processes on the local
+machine.
+
+Node: superclass for all (primarily local) network nodes.
+
+Host: a virtual host. By default, a host is simply a shell; commands
+    may be sent using Cmd (which waits for output), or using sendCmd(),
+    which returns immediately, allowing subsequent monitoring using
+    monitor(). Examples of how to run experiments using this
+    functionality are provided in the examples/ directory.
+
+CPULimitedHost: a virtual host whose CPU bandwidth is limited by
+    RT or CFS bandwidth limiting.
+
+Switch: superclass for switch nodes.
+
+UserSwitch: a switch using the user-space switch from the OpenFlow
+    reference implementation.
+
+KernelSwitch: a switch using the kernel switch from the OpenFlow reference
+    implementation.
+
+OVSSwitch: a switch using the OpenVSwitch OpenFlow-compatible switch
+    implementation (openvswitch.org).
+
+Controller: superclass for OpenFlow controllers. The default controller
+    is controller(8) from the reference implementation.
+
+NOXController: a controller node using NOX (noxrepo.org).
+
+RemoteController: a remote controller node, which may use any
+    arbitrary OpenFlow-compatible controller, and which is not
+    created or managed by mininet.
+
+Future enhancements:
+
+- Possibly make Node, Switch and Controller more abstract so that
+  they can be used for both local and remote nodes
+
+- Create proxy objects for remote nodes (Mininet: Cluster Edition)
+\"\"\"" code nil nil [1 1577])
+            ("os" include nil nil [1579 1588])
+            ("re" include nil nil [1589 1598])
+            ("signal" include nil nil [1599 1612])
+            ("select" include nil nil [1613 1626])
+            ("subprocess" include nil nil [1627 1669])
+            ("operator" include nil nil [1670 1694])
+            ("time" include nil nil [1695 1717])
+            ("mininet.log" include nil nil [1719 1767])
+            ("" code nil nil [1793 1906])
+            ("mininet.moduledeps" include nil nil [1907 1983])
+            ("mininet.link" include nil nil [1984 2027])
+            ("Node" type
+               (:documentation "A virtual network node is simply a shell in a network namespace.
+       We communicate with it using pipes."
+                :superclasses ("object")
+                :members 
+                  ( ("portBase" variable nil (reparse-symbol indented_block_body) [2174 2186])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"name: name of node
+           inNamespace: in network namespace?
+           params: Node parameters (see config() for details)\"\"\"" code nil (reparse-symbol indented_block_body) [2310 2442])
+                            ("self" code nil (reparse-symbol indented_block_body) [2493 2510])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2520 2536])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2545 2575])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2647 2667])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2677 2692])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2739 2754])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2868 2888])
+                            ("" code nil (reparse-symbol indented_block_body) [2962 3147])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3156 3176])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3185 3202])
+                            ("self" code nil (reparse-symbol indented_block_body) [3254 3271]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2260 2264])
+                            ("name" variable nil (reparse-symbol function_parameters) [2266 2270])
+                            ("inNamespace" variable nil (reparse-symbol function_parameters) [2272 2283])
+                            ("params" variable nil (reparse-symbol function_parameters) [2290 2298]))                          
+                        :documentation "name: name of node
+           inNamespace: in network namespace?
+           params: Node parameters (see config() for details)"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2246 3272])
+                    ("inToNode" variable nil (reparse-symbol indented_block_body) [3358 3371])
+                    ("outToNode" variable nil (reparse-symbol indented_block_body) [3409 3423])
+                    ("fdToNode" function
+                       (:documentation "Return node corresponding to given file descriptor.
+           fd: file descriptor
+           returns: node"
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3494 3497])
+                            ("fd" variable nil (reparse-symbol function_parameters) [3499 3501]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3463 3712])
+                    ("startShell" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3787 3791]))                          )
+                        (reparse-symbol indented_block_body) [3771 5003])
+                    ("cleanup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5021 5025]))                          )
+                        (reparse-symbol indented_block_body) [5008 5270])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5327 5331])
+                            ("maxbytes" variable nil (reparse-symbol function_parameters) [5333 5341]))                          
+                        :documentation "Buffered read from node, non-blocking.
+           maxbytes: maximum number of bytes to return")
+                        (reparse-symbol indented_block_body) [5317 5869])
+                    ("readline" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5888 5892]))                          
+                        :documentation "Buffered readline from node, non-blocking.
+           returns: line (minus newline) or None")
+                        (reparse-symbol indented_block_body) [5874 6251])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6267 6271])
+                            ("data" variable nil (reparse-symbol function_parameters) [6273 6277]))                          
+                        :documentation "Write data to node.
+           data: string")
+                        (reparse-symbol indented_block_body) [6256 6385])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6405 6409]))                          )
+                        (reparse-symbol indented_block_body) [6390 6567])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6582 6586]))                          )
+                        (reparse-symbol indented_block_body) [6572 6636])
+                    ("waitReadable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6659 6663])
+                            ("timeoutms" variable nil (reparse-symbol function_parameters) [6665 6674]))                          
+                        :documentation "Wait until node's output is readable.
+           timeoutms: timeout in ms or None to wait indefinitely.")
+                        (reparse-symbol indented_block_body) [6641 6881])
+                    ("sendCmd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6899 6903])
+                            ("args" variable nil (reparse-symbol function_parameters) [6905 6910])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6912 6920]))                          
+                        :documentation "Send a command, followed by a command to echo a sentinel,
+           and return without waiting for the command to complete.
+           args: command and arguments, or string
+           printPid: print command's PID?")
+                        (reparse-symbol indented_block_body) [6886 8202])
+                    ("sendInt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8220 8224])
+                            ("sig" variable nil (reparse-symbol function_parameters) [8226 8229]))                          )
+                        (reparse-symbol indented_block_body) [8207 8420])
+                    ("monitor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8438 8442])
+                            ("timeoutms" variable nil (reparse-symbol function_parameters) [8444 8453]))                          
+                        :documentation "Monitor and return the output of a command.
+           Set self.waiting to False if command has completed.
+           timeoutms: timeout in ms or None to wait indefinitely.")
+                        (reparse-symbol indented_block_body) [8425 9279])
+                    ("waitOutput" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9300 9304])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [9306 9313]))                          
+                        :documentation "Wait for a command to complete.
+           Completion is signaled by a sentinel character, ASCII(127)
+           appearing in the output stream.  Wait for the sentinel and return
+           the output, including trailing newline.
+           verbose: print output interactively")
+                        (reparse-symbol indented_block_body) [9284 9810])
+                    ("cmd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9824 9828])
+                            ("args" variable nil (reparse-symbol function_parameters) [9830 9835])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9837 9845]))                          
+                        :documentation "Send a command, wait for output, and return it.
+           cmd: string")
+                        (reparse-symbol indented_block_body) [9815 10159])
+                    ("cmdPrint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10178 10182])
+                            ("args" variable nil (reparse-symbol function_parameters) [10184 10189]))                          
+                        :documentation "Call cmd and printing its output
+           cmd: string")
+                        (reparse-symbol indented_block_body) [10164 10318])
+                    ("popen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10334 10338])
+                            ("args" variable nil (reparse-symbol function_parameters) [10340 10345])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10347 10355]))                          
+                        :documentation "Return a Popen() object in our namespace
+           args: Popen() args, single list, or string
+           kwargs: Popen() keyword args")
+                        (reparse-symbol indented_block_body) [10323 11462])
+                    ("pexec" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11478 11482])
+                            ("args" variable nil (reparse-symbol function_parameters) [11484 11489])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11491 11499]))                          
+                        :documentation "Execute a command using popen
+           returns: out, err, exitcode")
+                        (reparse-symbol indented_block_body) [11467 11736])
+                    ("newPort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12117 12121]))                          )
+                        (reparse-symbol indented_block_body) [12104 12289])
+                    ("addIntf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12307 12311])
+                            ("intf" variable nil (reparse-symbol function_parameters) [12313 12317])
+                            ("port" variable nil (reparse-symbol function_parameters) [12319 12323]))                          
+                        :documentation "Add an interface.
+           intf: interface
+           port: port number (optional, typically OpenFlow port number)")
+                        (reparse-symbol indented_block_body) [12294 12877])
+                    ("defaultIntf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12899 12903]))                          )
+                        (reparse-symbol indented_block_body) [12882 13162])
+                    ("intf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13177 13181])
+                            ("intf" variable nil (reparse-symbol function_parameters) [13183 13187]))                          
+                        :documentation "Return our interface object with given string name,
+           default intf if name is falsy (None, empty string, etc).
+           or the input intf arg.
+
+        Having this fcn return its arg for Intf objects makes it
+        easier to construct functions with flexible input args for
+        interfaces (those that accept both string names and Intf objects).
+        ")
+                        (reparse-symbol indented_block_body) [13167 13753])
+                    ("connectionsTo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13777 13781])
+                            ("node" variable nil (reparse-symbol function_parameters) [13783 13787]))                          )
+                        (reparse-symbol indented_block_body) [13758 14349])
+                    ("deleteIntfs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14371 14375])
+                            ("checkName" variable nil (reparse-symbol function_parameters) [14377 14386]))                          
+                        :documentation "Delete all of our interfaces.
+           checkName: only delete interfaces that contain our name")
+                        (reparse-symbol indented_block_body) [14354 15067])
+                    ("setARP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15107 15111])
+                            ("ip" variable nil (reparse-symbol function_parameters) [15113 15115])
+                            ("mac" variable nil (reparse-symbol function_parameters) [15117 15120]))                          
+                        :documentation "Add an ARP entry.
+           ip: IP address as string
+           mac: MAC address as string")
+                        (reparse-symbol indented_block_body) [15095 15302])
+                    ("setHostRoute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15325 15329])
+                            ("ip" variable nil (reparse-symbol function_parameters) [15331 15333])
+                            ("intf" variable nil (reparse-symbol function_parameters) [15335 15339]))                          
+                        :documentation "Add route to host.
+           ip: IP address as dotted decimal
+           intf: string, interface name")
+                        (reparse-symbol indented_block_body) [15307 15522])
+                    ("setDefaultRoute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15548 15552])
+                            ("intf" variable nil (reparse-symbol function_parameters) [15554 15558]))                          
+                        :documentation "Set the default route to go through intf.
+           intf: Intf or {dev <intfname> via <gw-ip> ...}")
+                        (reparse-symbol indented_block_body) [15527 15961])
+                    ("setMAC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16023 16027])
+                            ("mac" variable nil (reparse-symbol function_parameters) [16029 16032])
+                            ("intf" variable nil (reparse-symbol function_parameters) [16034 16038]))                          
+                        :documentation "Set the MAC address for an interface.
+           intf: intf or intf name
+           mac: MAC address as string")
+                        (reparse-symbol indented_block_body) [16011 16219])
+                    ("setIP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16235 16239])
+                            ("ip" variable nil (reparse-symbol function_parameters) [16241 16243])
+                            ("prefixLen" variable nil (reparse-symbol function_parameters) [16245 16254])
+                            ("intf" variable nil (reparse-symbol function_parameters) [16258 16262]))                          
+                        :documentation "Set the IP address for an interface.
+           intf: intf or intf name
+           ip: IP address as a string
+           prefixLen: prefix length, e.g. 8 for /8 or 16M addrs")
+                        (reparse-symbol indented_block_body) [16224 16619])
+                    ("IP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16632 16636])
+                            ("intf" variable nil (reparse-symbol function_parameters) [16638 16642]))                          )
+                        (reparse-symbol indented_block_body) [16624 16750])
+                    ("MAC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16764 16768])
+                            ("intf" variable nil (reparse-symbol function_parameters) [16770 16774]))                          )
+                        (reparse-symbol indented_block_body) [16755 16884])
+                    ("intfIsUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16903 16907])
+                            ("intf" variable nil (reparse-symbol function_parameters) [16909 16913]))                          )
+                        (reparse-symbol indented_block_body) [16889 17001])
+                    ("setParam" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17277 17281])
+                            ("results" variable nil (reparse-symbol function_parameters) [17283 17290])
+                            ("method" variable nil (reparse-symbol function_parameters) [17292 17298])
+                            ("param" variable nil (reparse-symbol function_parameters) [17300 17307]))                          
+                        :documentation "Internal method: configure a *single* parameter
+           results: dict of results to update
+           method: config method name
+           param: arg=value (ignore if value=None)
+           value may also be list or dict")
+                        (reparse-symbol indented_block_body) [17263 17925])
+                    ("config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17942 17946])
+                            ("mac" variable nil (reparse-symbol function_parameters) [17948 17951])
+                            ("ip" variable nil (reparse-symbol function_parameters) [17958 17960])
+                            ("defaultRoute" variable nil (reparse-symbol function_parameters) [17983 17995])
+                            ("lo" variable nil (reparse-symbol function_parameters) [18002 18004])
+                            ("_params" variable nil (reparse-symbol function_parameters) [18011 18020]))                          
+                        :documentation "Configure Node according to (optional) parameters:
+           mac: MAC address for default interface
+           ip: IP address for default interface
+           ifconfig: arbitrary interface configuration
+           Subclasses should override this method and call
+           the parent class's config(**params)")
+                        (reparse-symbol indented_block_body) [17930 18772])
+                    ("configDefault" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18796 18800])
+                            ("moreParams" variable nil (reparse-symbol function_parameters) [18802 18814]))                          )
+                        (reparse-symbol indented_block_body) [18777 18940])
+                    ("linkTo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19003 19007])
+                            ("node" variable nil (reparse-symbol function_parameters) [19009 19013])
+                            ("link" variable nil (reparse-symbol function_parameters) [19015 19019]))                          
+                        :documentation "(Deprecated) Link to another node
+           replace with Link( node1, node2)")
+                        (reparse-symbol indented_block_body) [18991 19154])
+                    ("intfList" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19194 19198]))                          )
+                        (reparse-symbol indented_block_body) [19180 19333])
+                    ("intfNames" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19353 19357]))                          )
+                        (reparse-symbol indented_block_body) [19338 19474])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19493 19497]))                          )
+                        (reparse-symbol indented_block_body) [19479 19777])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19795 19799]))                          )
+                        (reparse-symbol indented_block_body) [19782 19872])
+                    ("isSetup" variable nil (reparse-symbol indented_block_body) [19914 19929])
+                    ("checkSetup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [19968 19971]))                          )
+                        (reparse-symbol indented_block_body) [19935 20238])
+                    ("setup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [20271 20274]))                          )
+                        (reparse-symbol indented_block_body) [20243 20398]))                  
+                :type "class")
+                nil [2029 20398])
+            ("Host" type
+               (:superclasses ("Node")
+                :members 
+                  ( ("\"A host is simply a Node\"" code nil (reparse-symbol indented_block_body) [20424 20449])
+                    ("pass" code nil (reparse-symbol indented_block_body) [20454 20458]))                  
+                :type "class")
+                nil [20400 20459])
+            ("CPULimitedHost" type
+               (:superclasses ("Host")
+                :members 
+                  ( ("\"CPU limited host\"" code nil (reparse-symbol indented_block_body) [20496 20514])
+                    ("__init__" function
+                       (:suite 
+                          ( ("Host" code nil (reparse-symbol indented_block_body) [20579 20616])
+                            ("if" code nil (reparse-symbol indented_block_body) [20665 20729])
+                            ("self" code nil (reparse-symbol indented_block_body) [20786 20834])
+                            ("errFail" code nil (reparse-symbol indented_block_body) [20843 20882])
+                            ("errFail" code nil (reparse-symbol indented_block_body) [21006 21077])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21343 21393])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21402 21420])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21429 21445]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20534 20538])
+                            ("name" variable nil (reparse-symbol function_parameters) [20540 20544])
+                            ("sched" variable nil (reparse-symbol function_parameters) [20546 20551])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [20559 20567]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [20520 21446])
+                    ("cgroupSet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21466 21470])
+                            ("param" variable nil (reparse-symbol function_parameters) [21472 21477])
+                            ("value" variable nil (reparse-symbol function_parameters) [21479 21484])
+                            ("resource" variable nil (reparse-symbol function_parameters) [21486 21494]))                          )
+                        (reparse-symbol indented_block_body) [21451 21900])
+                    ("cgroupGet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21920 21924])
+                            ("param" variable nil (reparse-symbol function_parameters) [21926 21931])
+                            ("resource" variable nil (reparse-symbol function_parameters) [21933 21941]))                          )
+                        (reparse-symbol indented_block_body) [21905 22126])
+                    ("cgroupDel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22146 22150]))                          )
+                        (reparse-symbol indented_block_body) [22131 22342])
+                    ("popen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22358 22362])
+                            ("args" variable nil (reparse-symbol function_parameters) [22364 22369])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [22371 22379]))                          
+                        :documentation "Return a Popen() object in node's namespace
+           args: Popen() args, single list, or string
+           kwargs: Popen() keyword args")
+                        (reparse-symbol indented_block_body) [22347 22823])
+                    ("cleanup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22841 22845]))                          )
+                        (reparse-symbol indented_block_body) [22828 23006])
+                    ("chrt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23021 23025]))                          )
+                        (reparse-symbol indented_block_body) [23011 23416])
+                    ("rtInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23433 23437])
+                            ("f" variable nil (reparse-symbol function_parameters) [23439 23440]))                          )
+                        (reparse-symbol indented_block_body) [23421 23718])
+                    ("cfsInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23736 23740])
+                            ("f" variable nil (reparse-symbol function_parameters) [23742 23743]))                          )
+                        (reparse-symbol indented_block_body) [23723 24232])
+                    ("setCPUFrac" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24622 24626])
+                            ("f" variable nil (reparse-symbol function_parameters) [24628 24629])
+                            ("sched" variable nil (reparse-symbol function_parameters) [24634 24639]))                          
+                        :documentation "Set overall CPU fraction for this host
+           f: CPU bandwidth limit (fraction)
+           sched: 'rt' or 'cfs'
+           Note 'cfs' requires CONFIG_CFS_BANDWIDTH")
+                        (reparse-symbol indented_block_body) [24606 25469])
+                    ("setCPUs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25487 25491])
+                            ("cores" variable nil (reparse-symbol function_parameters) [25493 25498])
+                            ("mems" variable nil (reparse-symbol function_parameters) [25500 25504]))                          )
+                        (reparse-symbol indented_block_body) [25474 26115])
+                    ("config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26132 26136])
+                            ("cpu" variable nil (reparse-symbol function_parameters) [26138 26141])
+                            ("cores" variable nil (reparse-symbol function_parameters) [26148 26153])
+                            ("params" variable nil (reparse-symbol function_parameters) [26160 26168]))                          
+                        :documentation "cpu: desired overall system CPU fraction
+           cores: (real) core(s) this host can run on
+           params: parameters for Node.config()")
+                        (reparse-symbol indented_block_body) [26120 26585])
+                    ("inited" variable nil (reparse-symbol indented_block_body) [26590 26604])
+                    ("init" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [26637 26640]))                          )
+                        (reparse-symbol indented_block_body) [26610 26743]))                  
+                :type "class")
+                nil [20461 26743])
+            ("Switch" type
+               (:documentation "A Switch is a Node that is running (or has execed?)
+       an OpenFlow switch."
+                :superclasses ("Node")
+                :members 
+                  ( ("portBase" variable nil (reparse-symbol indented_block_body) [27818 27830])
+                    ("dpidLen" variable nil (reparse-symbol indented_block_body) [27877 27889])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"dpid: dpid for switch (or None to derive from name, e.g. s1 -> 1)
+           opts: additional switch options
+           listenPort: port to listen on for dpctl connections\"\"\"" code nil (reparse-symbol indented_block_body) [28012 28189])
+                            ("Node" code nil (reparse-symbol indented_block_body) [28198 28235])
+                            ("self" code nil (reparse-symbol indented_block_body) [28274 28292])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28301 28317])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28326 28354])
+                            ("if" code nil (reparse-symbol indented_block_body) [28363 28446]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27944 27948])
+                            ("name" variable nil (reparse-symbol function_parameters) [27950 27954])
+                            ("dpid" variable nil (reparse-symbol function_parameters) [27956 27960])
+                            ("opts" variable nil (reparse-symbol function_parameters) [27967 27971])
+                            ("listenPort" variable nil (reparse-symbol function_parameters) [27976 27986])
+                            ("params" variable nil (reparse-symbol function_parameters) [27993 28001]))                          
+                        :documentation "dpid: dpid for switch (or None to derive from name, e.g. s1 -> 1)
+           opts: additional switch options
+           listenPort: port to listen on for dpctl connections"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [27930 28446])
+                    ("defaultDpid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28468 28472]))                          )
+                        (reparse-symbol indented_block_body) [28451 28960])
+                    ("defaultIntf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28982 28986]))                          )
+                        (reparse-symbol indented_block_body) [28965 29148])
+                    ("sendCmd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29166 29170])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [29172 29176])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [29178 29186]))                          
+                        :documentation "Send command to Node.
+           cmd: string")
+                        (reparse-symbol indented_block_body) [29153 29500])
+                    ("connected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29520 29524]))                          )
+                        (reparse-symbol indented_block_body) [29505 29650])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29669 29673]))                          )
+                        (reparse-symbol indented_block_body) [29655 29953]))                  
+                :type "class")
+                nil [27702 29953])
+            ("UserSwitch" type
+               (:superclasses ("Switch")
+                :members 
+                  ( ("\"User-space switch.\"" code nil (reparse-symbol indented_block_body) [29986 30006])
+                    ("dpidLen" variable nil (reparse-symbol indented_block_body) [30012 30024])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Init.
+           name: name for the switch
+           dpopts: additional arguments to ofdatapath (--no-slicing)\"\"\"" code nil (reparse-symbol indented_block_body) [30099 30216])
+                            ("Switch" code nil (reparse-symbol indented_block_body) [30225 30264])
+                            ("pathCheck" code nil (reparse-symbol indented_block_body) [30273 30429])
+                            ("if" code nil (reparse-symbol indented_block_body) [30438 30522])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30530 30550]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30044 30048])
+                            ("name" variable nil (reparse-symbol function_parameters) [30050 30054])
+                            ("dpopts" variable nil (reparse-symbol function_parameters) [30056 30062])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [30079 30087]))                          
+                        :documentation "Init.
+           name: name for the switch
+           dpopts: additional arguments to ofdatapath (--no-slicing)"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [30030 30551])
+                    ("setup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [30584 30587]))                          )
+                        (reparse-symbol indented_block_body) [30556 30746])
+                    ("dpctl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30762 30766])
+                            ("args" variable nil (reparse-symbol function_parameters) [30768 30773]))                          )
+                        (reparse-symbol indented_block_body) [30751 31025])
+                    ("connected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31045 31049]))                          )
+                        (reparse-symbol indented_block_body) [31030 31172])
+                    ("TCReapply" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("intf" variable nil (reparse-symbol function_parameters) [31210 31214]))                          
+                        :documentation "Unfortunately user switch and Mininet are fighting
+           over tc queuing disciplines. To resolve the conflict,
+           we re-create the user switch's configuration, but as a
+           leaf of the TCIntf-created configuration.")
+                        (reparse-symbol indented_block_body) [31177 32192])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32208 32212])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [32214 32225]))                          
+                        :documentation "Start OpenFlow reference user datapath.
+           Log to /tmp/sN-{ofd,ofp}.log.
+           controllers: list of controller objects")
+                        (reparse-symbol indented_block_body) [32197 33428])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33443 33447]))                          )
+                        (reparse-symbol indented_block_body) [33433 33605]))                  
+                :type "class")
+                nil [29954 33605])
+            ("OVSLegacyKernelSwitch" type
+               (:documentation "Open VSwitch legacy kernel-space switch using ovs-openflowd.
+       Currently only works in the root namespace."
+                :superclasses ("Switch")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Init.
+           name: name for switch
+           dp: netlink id (0, 1, 2, ...)
+           defaultMAC: default MAC as unsigned int; random value if None\"\"\"" code nil (reparse-symbol indented_block_body) [33828 33986])
+                            ("Switch" code nil (reparse-symbol indented_block_body) [33995 34034])
+                            ("self" code nil (reparse-symbol indented_block_body) [34067 34076])
+                            ("self" variable nil (reparse-symbol indented_block_body) [34085 34104])
+                            ("if" code nil (reparse-symbol indented_block_body) [34113 34263]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33787 33791])
+                            ("name" variable nil (reparse-symbol function_parameters) [33793 33797])
+                            ("dp" variable nil (reparse-symbol function_parameters) [33799 33801])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [33808 33816]))                          
+                        :documentation "Init.
+           name: name for switch
+           dp: netlink id (0, 1, 2, ...)
+           defaultMAC: default MAC as unsigned int; random value if None"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [33773 34263])
+                    ("setup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [34296 34299]))                          )
+                        (reparse-symbol indented_block_body) [34268 34541])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34557 34561])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [34563 34574]))                          )
+                        (reparse-symbol indented_block_body) [34546 35458])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35473 35477]))                          )
+                        (reparse-symbol indented_block_body) [35463 35637]))                  
+                :type "class")
+                nil [33607 35637])
+            ("OVSSwitch" type
+               (:superclasses ("Switch")
+                :members 
+                  ( ("\"Open vSwitch switch. Depends on ovs-vsctl.\"" code nil (reparse-symbol indented_block_body) [35670 35714])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Init.
+           name: name for switch
+           failMode: controller loss behavior (secure|open)
+           datapath: userspace or kernel mode (kernel|user)\"\"\"" code nil (reparse-symbol indented_block_body) [35804 35968])
+                            ("Switch" code nil (reparse-symbol indented_block_body) [35977 36016])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36025 36049])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36058 36082]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35734 35738])
+                            ("name" variable nil (reparse-symbol function_parameters) [35740 35744])
+                            ("failMode" variable nil (reparse-symbol function_parameters) [35746 35754])
+                            ("datapath" variable nil (reparse-symbol function_parameters) [35765 35773])
+                            ("params" variable nil (reparse-symbol function_parameters) [35784 35792]))                          
+                        :documentation "Init.
+           name: name for switch
+           failMode: controller loss behavior (secure|open)
+           datapath: userspace or kernel mode (kernel|user)"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [35720 36083])
+                    ("setup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [36116 36119]))                          )
+                        (reparse-symbol indented_block_body) [36088 37006])
+                    ("dpctl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37022 37026])
+                            ("args" variable nil (reparse-symbol function_parameters) [37028 37033]))                          )
+                        (reparse-symbol indented_block_body) [37011 37138])
+                    ("TCReapply" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("intf" variable nil (reparse-symbol function_parameters) [37176 37180]))                          
+                        :documentation "Unfortunately OVS and Mininet are fighting
+           over tc queuing disciplines. As a quick hack/
+           workaround, we clear OVS's and reapply our own.")
+                        (reparse-symbol indented_block_body) [37143 37433])
+                    ("attach" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37450 37454])
+                            ("intf" variable nil (reparse-symbol function_parameters) [37456 37460]))                          )
+                        (reparse-symbol indented_block_body) [37438 37621])
+                    ("detach" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37638 37642])
+                            ("intf" variable nil (reparse-symbol function_parameters) [37644 37648]))                          )
+                        (reparse-symbol indented_block_body) [37626 37738])
+                    ("controllerUUIDs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37764 37768]))                          )
+                        (reparse-symbol indented_block_body) [37743 38170])
+                    ("connected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38190 38194]))                          )
+                        (reparse-symbol indented_block_body) [38175 38498])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38514 38518])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [38520 38531]))                          )
+                        (reparse-symbol indented_block_body) [38503 40082])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40097 40101]))                          )
+                        (reparse-symbol indented_block_body) [40087 40289]))                  
+                :type "class")
+                nil [35639 40289])
+            ("OVSKernelSwitch" variable nil nil [40290 40317])
+            ("IVSSwitch" type
+               (:documentation "IVS virtual switch"
+                :superclasses ("Switch")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Switch" code nil (reparse-symbol indented_block_body) [40425 40464]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40393 40397])
+                            ("name" variable nil (reparse-symbol function_parameters) [40399 40403])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [40405 40413]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [40379 40465])
+                    ("setup" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [40498 40501]))                          )
+                        (reparse-symbol indented_block_body) [40470 40979])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40995 40999])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [41001 41012]))                          )
+                        (reparse-symbol indented_block_body) [40984 41711])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41726 41730]))                          )
+                        (reparse-symbol indented_block_body) [41716 41825])
+                    ("attach" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41842 41846])
+                            ("intf" variable nil (reparse-symbol function_parameters) [41848 41852]))                          )
+                        (reparse-symbol indented_block_body) [41830 41959])
+                    ("detach" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41976 41980])
+                            ("intf" variable nil (reparse-symbol function_parameters) [41982 41986]))                          )
+                        (reparse-symbol indented_block_body) [41964 42096])
+                    ("dpctl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42112 42116])
+                            ("args" variable nil (reparse-symbol function_parameters) [42118 42123]))                          )
+                        (reparse-symbol indented_block_body) [42101 42379]))                  
+                :type "class")
+                nil [40320 42379])
+            ("Controller" type
+               (:documentation "A Controller is a Node that is running (or has execed?) an
+       OpenFlow controller."
+                :superclasses ("Node")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [42690 42712])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42721 42739])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42748 42764])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42773 42785])
+                            ("self" variable nil (reparse-symbol indented_block_body) [42794 42810])
+                            ("Node" code nil (reparse-symbol indented_block_body) [42819 42912])
+                            ("self" code nil (reparse-symbol indented_block_body) [42921 42949])
+                            ("self" code nil (reparse-symbol indented_block_body) [42984 43005]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42523 42527])
+                            ("name" variable nil (reparse-symbol function_parameters) [42529 42533])
+                            ("inNamespace" variable nil (reparse-symbol function_parameters) [42535 42546])
+                            ("command" variable nil (reparse-symbol function_parameters) [42554 42561])
+                            ("cargs" variable nil (reparse-symbol function_parameters) [42594 42599])
+                            ("cdir" variable nil (reparse-symbol function_parameters) [42614 42618])
+                            ("ip" variable nil (reparse-symbol function_parameters) [42625 42627])
+                            ("port" variable nil (reparse-symbol function_parameters) [42659 42663])
+                            ("params" variable nil (reparse-symbol function_parameters) [42670 42678]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [42509 43006])
+                    ("checkListening" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43031 43035]))                          )
+                        (reparse-symbol indented_block_body) [43011 43961])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43977 43981]))                          
+                        :documentation "Start <controller> <args> on controller.
+           Log to /tmp/cN.log")
+                        (reparse-symbol indented_block_body) [43966 44370])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44385 44389]))                          )
+                        (reparse-symbol indented_block_body) [44375 44489])
+                    ("IP" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44502 44506])
+                            ("intf" variable nil (reparse-symbol function_parameters) [44508 44512]))                          )
+                        (reparse-symbol indented_block_body) [44494 44686])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44705 44709]))                          )
+                        (reparse-symbol indented_block_body) [44691 44899]))                  
+                :type "class")
+                nil [42381 44899])
+            ("OVSController" type
+               (:superclasses ("Controller")
+                :members 
+                  ( ("\"Open vSwitch controller\"" code nil (reparse-symbol indented_block_body) [44940 44965])
+                    ("__init__" function
+                       (:suite 
+                          ( ("Controller" code nil (reparse-symbol indented_block_body) [45042 45102]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44984 44988])
+                            ("name" variable nil (reparse-symbol function_parameters) [44990 44994])
+                            ("command" variable nil (reparse-symbol function_parameters) [44996 45003])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [45022 45030]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [44970 45103]))                  
+                :type "class")
+                nil [44901 45103])
+            ("NOX" type
+               (:superclasses ("Controller")
+                :members 
+                  ( ("\"Controller to run a NOX application.\"" code nil (reparse-symbol indented_block_body) [45134 45172])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Init.
+           name: name to give controller
+           noxArgs: arguments (strings) to pass to NOX\"\"\"" code nil (reparse-symbol indented_block_body) [45234 45341])
+                            ("if" code nil (reparse-symbol indented_block_body) [45350 45596])
+                            ("if" code nil (reparse-symbol indented_block_body) [45605 45713])
+                            ("noxCoreDir" variable nil (reparse-symbol indented_block_body) [45721 45762])
+                            ("Controller" code nil (reparse-symbol indented_block_body) [45772 46081]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45192 45196])
+                            ("name" variable nil (reparse-symbol function_parameters) [45198 45202])
+                            ("noxArgs" variable nil (reparse-symbol function_parameters) [45204 45212])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [45214 45222]))                          
+                        :documentation "Init.
+           name: name to give controller
+           noxArgs: arguments (strings) to pass to NOX"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [45178 46082]))                  
+                :type "class")
+                nil [45105 46082])
+            ("RemoteController" type
+               (:superclasses ("Controller")
+                :members 
+                  ( ("\"Controller running outside of Mininet's control.\"" code nil (reparse-symbol indented_block_body) [46126 46176])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Init.
+           name: name to give controller
+           ip: the IP address where the remote controller is
+           listening
+           port: the port where the remote controller is listening\"\"\"" code nil (reparse-symbol indented_block_body) [46272 46473])
+                            ("Controller" code nil (reparse-symbol indented_block_body) [46482 46543]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46196 46200])
+                            ("name" variable nil (reparse-symbol function_parameters) [46202 46206])
+                            ("ip" variable nil (reparse-symbol function_parameters) [46208 46210])
+                            ("port" variable nil (reparse-symbol function_parameters) [46242 46246])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [46253 46261]))                          
+                        :documentation "Init.
+           name: name to give controller
+           ip: the IP address where the remote controller is
+           listening
+           port: the port where the remote controller is listening"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [46182 46544])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46560 46564]))                          )
+                        (reparse-symbol indented_block_body) [46549 46619])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46634 46638]))                          )
+                        (reparse-symbol indented_block_body) [46624 46693])
+                    ("checkListening" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46718 46722]))                          )
+                        (reparse-symbol indented_block_body) [46698 47056]))                  
+                :type "class")
+                nil [46084 47056]))          
+    :file "node.py"
+    :pointmax 47057
+    :fsize 47056
+    :lastmodtime '(21209 58129 10737 87000)
+    :unmatched-syntax '((NAME 34043 . 34047) (IF 34056 . 34058) (ELSE 34062 . 34066) (NAME 28244 . 28248) (IF 28261 . 28263) (ELSE 28269 . 28273) (NAME 9991 . 9994) (IF 10002 . 10004) (ELSE 10013 . 10017) (NAME 9622 . 9625) (IF 9633 . 9635) (ELSE 9644 . 9648))
+    )
+   (semanticdb-table "link.py"
+    :file "link.py"
+    :fsize 15107
+    :lastmodtime '(21209 58129 18737 88000)
+    )
+   (semanticdb-table "log.py"
+    :file "log.py"
+    :fsize 6068
+    :lastmodtime '(21209 58129 6737 87000)
+    )
+   (semanticdb-table "util.py"
+    :file "util.py"
+    :fsize 17606
+    :lastmodtime '(21209 58129 6737 87000)
+    )
+   (semanticdb-table "moduledeps.py"
+    :file "moduledeps.py"
+    :fsize 2447
+    :lastmodtime '(21209 58129 10737 87000)
+    )
+   (semanticdb-table "topolib.py"
+    :file "topolib.py"
+    :fsize 1151
+    :lastmodtime '(21209 58129 14737 87000)
+    )
+   (semanticdb-table "cli.py"
+    :file "cli.py"
+    :fsize 12741
+    :lastmodtime '(21209 58129 18737 88000)
+    )
+   (semanticdb-table "topo.py"
+    :file "topo.py"
+    :fsize 8452
+    :lastmodtime '(21209 58129 2737 87000)
+    )
+   (semanticdb-table "term.py"
+    :file "term.py"
+    :fsize 2720
+    :lastmodtime '(21209 58129 14737 87000)
+    )
+   )
+  :file "!usr!local!lib!python2.7!dist-packages!mininet-2.1.0_-py2.7.egg!mininet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

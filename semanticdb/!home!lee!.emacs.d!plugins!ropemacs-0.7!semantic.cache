@@ -1,0 +1,23 @@
+;; Object ropemacs-0.7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ropemacs-0.7/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("extra_kwargs" variable nil nil [1 18])
+            ("try" code nil nil [19 190])
+            ("classifiers" variable nil nil [191 648])
+            ("get_long_description" function nil nil [650 818])
+            ("setup" code nil nil [819 1254]))          
+    :file "setup.py"
+    :pointmax 1255
+    :fsize 1254
+    :lastmodtime '(21358 55331 101421 317000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!.emacs.d!plugins!ropemacs-0.7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

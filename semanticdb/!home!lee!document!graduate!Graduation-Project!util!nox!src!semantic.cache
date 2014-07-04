@@ -30,6 +30,15 @@
     :fsize 2598
     :lastmodtime '(21209 59903 956730 705000)
     )
+   (semanticdb-table "nox_main.cc"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "nox_main.cc"
+    :pointmax 17120
+    :fsize 17119
+    :lastmodtime '(21209 59903 864730 707000)
+    :unmatched-syntax 'nil
+    )
    )
   :file "!home!lee!document!graduate!Graduation-Project!util!nox!src!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,185 @@
+   (setq line-move-visual fci-saved-line-move-visual)
+        (kill-local-variable 'line-move-visual)))
+    (when fci-handle-truncate-lines
+      (setq truncate-lines fci-saved-truncate-lines))))
+
+(defun fci-restore-display-table ()
+  "Restore the buffer display table when fci-mode is disabled."
+  (when (and buffer-display-table
+             fci-display-table-processed)
+    (aset buffer-display-table 10 fci-saved-eol)
+    ;; Don't set buffer-display-table to nil even if we created the display
+    ;; table; only do so if nothing else has changed it.
+    (when (and fci-made-display-table
+               (equal buffer-display-table (make-display-table)))
+      (setq buffer-display-table nil))))
+
+;;; ---------------------------------------------------------------------
+;;; Drawing and Erasing
+;;; ---------------------------------------------------------------------
+
+(defun fci-get-overlays-region (start end)
+  "Return all overlays between START and END displaying the fill-column rule."
+  (delq nil (mapcar #'(lambda (o) (if (overlay-get o 'fci) o))
+                    (overlays-in start end))))
+
+(defun fci-delete-overlays-region (start end)
+  "Delete overlays displaying the fill-column rule between START and END."
+  (mapc #'(lambda (o) (if (overlay-get o 'fci) (delete-overlay o)))
+        (overlays-in start end)))
+
+(defun fci-delete-overlays-buffer ()
+  "Delete all overlays displaying the fill-column rule in the current buffer."
+  (save-restriction
+    (widen)
+    (fci-delete-overlays-region (point-min) (point-max))))
+
+(defsubst fci-posn-visible-p (posn ranges)
+  "Return true if POSN falls within an interval in RANGES."
+  (memq t (mapcar #'(lambda (range) (and (<= (car range) posn)
+                                         (< posn (cdr range))))
+                  ranges)))
+
+(defsubst fci-get-visible-ranges ()
+  "Return the window start and end for each window on the current buffer."
+  (mapcar #'(lambda (w) (cons (window-start w) (window-end w 'updated)))
+          (fci-get-buffer-windows t)))
+
+(defun fci-delete-unneeded ()
+  "Erase the fill-column rule at buffer positions not visible in any window."
+  (let ((olays (fci-get-overlays-region (point-min) (point-max)))
+        (ranges (fci-get-visible-ranges)))
+    (dolist (o olays)
+      (unless (fci-posn-visible-p (overlay-start o) ranges)
+        (delete-overlay o)))))
+
+;; It would be slightly faster to run this backwards from END to START, but
+;; only if we maintained the overlay center at an early position in the
+;; buffer.  Since other packages that use overlays typically place them while
+;; traversing the buffer in a forward direction, that would be a bad idea.
+(defun fci-put-overlays-region (start end)
+  "Place overlays displaying the fill-column rule between START and END."
+  (goto-char start)
+  (let (o cc)
+    (while (search-forward "\n" end t)
+      (goto-char (match-beginning 0))
+      (setq cc (current-column)
+            o (make-overlay (match-beginning 0) (match-beginning 0)))
+      (overlay-put o 'fci t)
+      (cond
+       ((< cc fci-limit)
+        (overlay-put o 'after-string fci-pre-limit-string))
+       ((> cc fci-limit)
+        (overlay-put o 'after-string fci-post-limit-string))
+       (t
+        (overlay-put o 'after-string fci-at-limit-string)))
+      (goto-char (match-end 0)))))
+
+(defun fci-redraw-region (start end _ignored)
+  "Erase and redraw the fill-column rule between START and END."
+  (save-match-data
+    (save-excursion
+      (let ((inhibit-point-motion-hooks t))
+        (goto-char end)
+        (setq end (line-beginning-position 2))
+        (fci-delete-overlays-region start end)
+        (when (> (+ (window-width) (window-hscroll))
+                 fci-limit)
+          (fci-put-overlays-region start end))))))
+
+(defun fci-redraw-window (win &optional start)
+  "Redraw the fill-column rule in WIN starting from START."
+  (fci-redraw-region (or start (window-start win)) (window-end win t) 'ignored))
+
+;; This doesn't determine the strictly minimum amount by which the rule needs
+;; to be extended, but the amount used is always sufficient, and determininga
+;; the genuine minimum is more expensive than doing the extra drawing.
+(defun fci-extend-rule-for-deletion (start end)
+  "Extend the fill-column rule after a deletion that spans newlines."
+  (unless (= start end)
+    (let ((delenda (fci-get-overlays-region start end)))
+      (when delenda
+        (let ((lossage (1+ (length delenda)))
+              (max-end 0)
+              win-end)
+          (mapc #'delete-overlay delenda)
+          (dolist (win (fci-get-buffer-windows t))
+            ;; Do not ask for an updated value of window-end.
+            (setq win-end (window-end win))
+            (when (and (< 0 (- (min win-end end)
+                               (max (window-start win) start)))
+                       (< max-end win-end))
+              (setq max-end win-end)))
+          (unless (= max-end (point-max))
+            (fci-redraw-region max-end
+                               (save-excursion
+                                 (goto-char max-end)
+                                 (line-beginning-position lossage))
+                               nil)))))))
+
+(defun fci-update-window-for-scroll (win start)
+  "Redraw the fill-column rule in WIN after it has been been scrolled."
+   (fci-delete-unneeded)
+   (fci-redraw-window win start))
+
+(defun fci-update-all-windows (&optional all-frames)
+  "Redraw the fill-column rule in all windows showing the current buffer."
+  (dolist (win (fci-get-buffer-windows all-frames))
+    (fci-redraw-window win)))
+
+(defun fci-redraw-frame ()
+  "Redraw the fill-column rule in all windows on the selected frame."
+  (let* ((wins (window-list (selected-frame) 'no-minibuf))
+         (bufs (delete-dups (mapcar #'window-buffer wins))))
+    (dolist (buf bufs)
+      (with-current-buffer buf
+        (when fci-mode
+          (fci-delete-unneeded)
+          (fci-update-all-windows))))))
+
+;;; ---------------------------------------------------------------------
+;;; Workarounds
+;;; ---------------------------------------------------------------------
+
+;; This in placed in post-command-hook and does four things:
+;; 1. If the display table has been deleted or something has changed the
+;;    display table for newline chars, we regenerate overlay strings after
+;;    reprocessing the display table.
+;; 2. If the default char width or height has changed, we regenerate the rule
+;;    image.  (This handles both font changes and also cases where we
+;;    activate the mode while displaying on a char terminal then subsequently
+;;    display the buffer on a window frame.)
+;; 3. If the value of `tab-width' or `fill-column' has changed, we reset the
+;;    rule.  (We could set things up so that the rule adjusted automatically
+;;    to such changes, but it wouldn't work on v22 or v23.)
+;; 4. Cursor properties are ignored when they're out of sight because of
+;;    horizontal scrolling.  We detect such situations and force a return
+;;    from hscrolling to bring our requested cursor position back into view.
+;; These are all fast tests, so despite the large remit this function
+;; shouldn't noticeably affect editing speed.
+(defun fci-post-command-check ()
+  "This function is a gross hack."
+  (cond
+   ((not (and buffer-display-table
+              (equal (aref buffer-display-table 10) fci-newline)))
+    (setq fci-display-table-processed nil)
+    (fci-mode 1))
+   ((and (< 1 (frame-char-width))
+         (not fci-always-use-textual-rule)
+         (not (and (= (frame-char-width) fci-char-width)
+                   (= (frame-char-height) fci-char-height))))
+    (fci-mode 1))
+   ((not (and (= (or fci-rule-column fill-column) fci-column)
+              (= tab-width fci-tab-width)))
+    (fci-mode 1))
+   ((and (< 0 (window-hscroll))
+         auto-hscroll-mode
+         (<= (current-column) (window-hscroll)))
+    ;; Fix me:  Rather than setting hscroll to 0, this should reproduce the
+    ;; relevant part of the auto-hscrolling algorithm.  Most people won't
+    ;; notice the difference in behavior, though.
+    (set-window-hscroll (selected-window) 0))))
+
+(provide 'fill-column-indicator)
+
+;;; fill-column-indicator.el ends here

@@ -1,0 +1,1016 @@
+;; Object php/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php/"
+  :tables (list 
+    (semanticdb-table "PHP与Mysql程序设计-IO.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-IO" section nil nil [240 2270])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2270 3890])
+            ("PHP与Mysql程序设计-IO" section (:members 
+              ( ("PHP与Mysql程序设计-IO" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 I/O" anchor nil nil [4087 4090])
+                        ("1.1 文件和目录" anchor nil nil [4123 4126])
+                        ("1.1.1 basename" anchor nil nil [4165 4168])
+                        ("1.1.2 dirname" anchor nil nil [4214 4217])
+                        ("1.1.3 pathinfo" anchor nil nil [4262 4265])
+                        ("1.1.4 realpath" anchor nil nil [4311 4314])
+                        ("1.2 文件目录和磁盘大小" anchor nil nil [4372 4375])
+                        ("1.2.1 filesize" anchor nil nil [4418 4421])
+                        ("1.2.2 disk_free_space" anchor nil nil [4467 4470])
+                        ("1.2.3 disk_total_space" anchor nil nil [4523 4526])
+                        ("1.2.4 确定目录内容大小" anchor nil nil [4580 4583])
+                        ("1.2.5 fileatime" anchor nil nil [4629 4632])
+                        ("1.2.6 filectime" anchor nil nil [4679 4682])
+                        ("1.3 文件的处理" anchor nil nil [4741 4744])
+                        ("1.3.1 fopen" anchor nil nil [4783 4786])
+                        ("1.3.2 fclose" anchor nil nil [4829 4832])
+                        ("1.3.3 文件的读取" anchor nil nil [4876 4879])
+                        ("1.4 执行 shell 命令" anchor nil nil [4934 4937])
+                        ("1.4.1 rmdir" anchor nil nil [4982 4985])
+                        ("1.4.2 rename" anchor nil nil [5028 5031])
+                        ("1.4.3 touch" anchor nil nil [5075 5078])
+                        ("1.5 系统级程序的执行" anchor nil nil [5133 5136])
+                        ("1.5.1 exec" anchor nil nil [5178 5181])
+                        ("1.5.2 system" anchor nil nil [5223 5226]))                      ) nil [4017 5360])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5702 6150])
+                            ("1.1.2" section nil nil [6150 6511])
+                            ("1.1.3" section nil nil [6511 6737])
+                            ("1.1.4" section nil nil [6737 6963]))                          ) nil [5526 6963])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [7143 7367])
+                            ("1.2.2" section nil nil [7367 7606])
+                            ("1.2.3" section nil nil [7606 7845])
+                            ("1.2.4" section nil nil [7845 8097])
+                            ("1.2.5" section nil nil [8097 8338])
+                            ("1.2.6" section nil nil [8338 8585]))                          ) nil [6963 8585])
+                        ("1.3" section (:members 
+                          ( ("1.3.1" section nil nil [8761 9010])
+                            ("1.3.2" section nil nil [9010 9235])
+                            ("1.3.3" section nil nil [9235 9607]))                          ) nil [8585 9607])
+                        ("1.4" section (:members 
+                          ( ("1.4.1" section nil nil [9871 10087])
+                            ("1.4.2" section nil nil [10087 10305])
+                            ("1.4.3" section nil nil [10305 10550]))                          ) nil [9607 10550])
+                        ("1.5" section (:members 
+                          ( ("1.5.1" section nil nil [10729 11051])
+                            ("1.5.2" section (:members 
+                              ( ("Org" anchor nil nil [11447 11450])
+                                ("Emacs" anchor nil nil [11504 11507])
+                                ("Validate XHTML 1.0" anchor nil nil [11574 11577]))                              ) nil [11051 11673]))                          ) nil [10550 11673]))                      ) nil [5360 11673]))                  ) nil [3946 11673]))              ) nil [3890 11673]))          
+    :file "PHP与Mysql程序设计-IO.html"
+    :pointmax 11673
+    :fsize 12440
+    :lastmodtime '(21425 15085 667269 943000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-php安全.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-php安全" section nil nil [240 2276])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2276 3896])
+            ("PHP与Mysql程序设计-php安全" section (:members 
+              ( ("PHP与Mysql程序设计-php安全" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 安全问题" anchor nil nil [4096 4099])
+                        ("1.1 隐藏数据" anchor nil nil [4133 4136])
+                        ("1.2 加密" anchor nil nil [4174 4177])
+                        ("1.2.1 md5加密" anchor nil nil [4213 4216])
+                        ("1.2.2 MCrypt包" anchor nil nil [4259 4262]))                      ) nil [4026 4397])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4746 5135])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [5308 5584])
+                            ("1.2.2" section (:members 
+                              ( ("Org" anchor nil nil [6052 6055])
+                                ("Emacs" anchor nil nil [6109 6112])
+                                ("Validate XHTML 1.0" anchor nil nil [6179 6182]))                              ) nil [5584 6278]))                          ) nil [5135 6278]))                      ) nil [4397 6278]))                  ) nil [3952 6278]))              ) nil [3896 6278]))          
+    :file "PHP与Mysql程序设计-php安全.html"
+    :pointmax 6278
+    :fsize 6455
+    :lastmodtime '(21425 15100 123269 572000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-PHP基础概念.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-PHP基础概念" section nil nil [240 2280])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2280 3900])
+            ("PHP与Mysql程序设计-PHP基础概念" section (:members 
+              ( ("PHP与Mysql程序设计-PHP基础概念" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 第三章" anchor nil nil [4102 4105])
+                        ("1.1 一些概念" anchor nil nil [4138 4141])
+                        ("1.1.1 PHP 是在 &lt;?php?&gt; 中编写的" anchor nil nil [4179 4182])
+                        ("1.1.2 输出方式" anchor nil nil [4245 4248])
+                        ("1.1.3 PHP 也是不需要声明静态类型的" anchor nil nil [4290 4293])
+                        ("1.1.4 类型转换" anchor nil nil [4347 4350])
+                        ("1.1.5 OOP 比 C++ 简单" anchor nil nil [4392 4395])
+                        ("1.1.6 字符串连接和转义与 Perl 方式相同" anchor nil nil [4445 4448])
+                        ("1.1.7 插入长文档我已经做成了插件配置到 emacs 中" anchor nil nil [4505 4508])
+                        ("1.1.8 PHP 数组有进行字典操作（哈希）的能力" anchor nil nil [4570 4573])
+                        ("1.1.9 对数组进行 foreach 迭代" anchor nil nil [4631 4634])
+                        ("1.2 勘误和更正" anchor nil nil [4700 4703])
+                        ("1.2.1 Page 51" anchor nil nil [4742 4745])
+                        ("1.2.2 Page 52" anchor nil nil [4790 4793]))                      ) nil [4032 4928])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5305 5514])
+                            ("1.1.2" section nil nil [5514 5841])
+                            ("1.1.3" section nil nil [5841 6041])
+                            ("1.1.4" section nil nil [6041 6333])
+                            ("1.1.5" section nil nil [6333 6563])
+                            ("1.1.6" section nil nil [6563 6766])
+                            ("1.1.7" section nil nil [6766 6974])
+                            ("1.1.8" section nil nil [6974 7178])
+                            ("1.1.9" section nil nil [7178 7928]))                          ) nil [5094 7928])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [8104 8499])
+                            ("1.2.2" section (:members 
+                              ( ("Org" anchor nil nil [8884 8887])
+                                ("Emacs" anchor nil nil [8941 8944])
+                                ("Validate XHTML 1.0" anchor nil nil [9011 9014]))                              ) nil [8499 9110]))                          ) nil [7928 9110]))                      ) nil [4928 9110]))                  ) nil [3956 9110]))              ) nil [3900 9110]))          
+    :file "PHP与Mysql程序设计-PHP基础概念.html"
+    :pointmax 9110
+    :fsize 9839
+    :lastmodtime '(21425 15110 171269 316000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-RSS.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-RSS" section nil nil [240 2272])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2272 3892])
+            ("PHP与Mysql程序设计-RSS" section (:members 
+              ( ("PHP与Mysql程序设计-RSS" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 RSS" anchor nil nil [4090 4093])
+                        ("2 SimplePie" anchor nil nil [4126 4129])
+                        ("2.1 安装" anchor nil nil [4168 4171])
+                        ("2.1.1 下载" anchor nil nil [4207 4210])
+                        ("2.1.2 安装" anchor nil nil [4250 4253])
+                        ("3 SimpleXML" anchor nil nil [4316 4319]))                      ) nil [4020 4424])
+                    ("1" section nil nil [4424 6317])
+                    ("2" section (:members 
+                      ( ("2.1" section (:members 
+                          ( ("2.1.1" section nil nil [6722 6993])
+                            ("2.1.2" section nil nil [6993 7288]))                          ) nil [6549 7288]))                      ) nil [6317 7288])
+                    ("3" section (:members 
+                      ( ("Org" anchor nil nil [8408 8411])
+                        ("Emacs" anchor nil nil [8465 8468])
+                        ("Validate XHTML 1.0" anchor nil nil [8535 8538]))                      ) nil [7288 8634]))                  ) nil [3948 8634]))              ) nil [3892 8634]))          
+    :file "PHP与Mysql程序设计-RSS.html"
+    :pointmax 8634
+    :fsize 8823
+    :lastmodtime '(21425 15123 219268 982000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-处理文件上传.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-处理文件上传" section nil nil [240 2278])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2278 3898])
+            ("PHP与Mysql程序设计-处理文件上传" section (:members 
+              ( ("PHP与Mysql程序设计-处理文件上传" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 文件上传" anchor nil nil [4099 4102])
+                        ("1.1 通过 PHP 上传文件" anchor nil nil [4136 4139])
+                        ("1.1.1 上传指令" anchor nil nil [4184 4187])
+                        ("1.1.2 $_FILES 数组" anchor nil nil [4229 4232])
+                        ("1.1.3 PHP 上传文件函数" anchor nil nil [4280 4283])
+                        ("1.1.4 上传错误信息" anchor nil nil [4331 4334])
+                        ("1.2 利用 PEAR 的 HTTP_Upload" anchor nil nil [4390 4393]))                      ) nil [4029 4526])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [4875 5276])
+                            ("1.1.2" section nil nil [5276 5991])
+                            ("1.1.3" section nil nil [5991 6371])
+                            ("1.1.4" section nil nil [6371 6599]))                          ) nil [4693 6599])
+                        ("1.2" section (:members 
+                          ( ("Org" anchor nil nil [7365 7368])
+                            ("Emacs" anchor nil nil [7422 7425])
+                            ("Validate XHTML 1.0" anchor nil nil [7492 7495]))                          ) nil [6599 7591]))                      ) nil [4526 7591]))                  ) nil [3954 7591]))              ) nil [3898 7591]))          
+    :file "PHP与Mysql程序设计-处理文件上传.html"
+    :pointmax 7591
+    :fsize 7908
+    :lastmodtime '(21425 15132 191268 753000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-错误和异常.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-错误和异常" section nil nil [240 2276])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2276 3896])
+            ("PHP与Mysql程序设计-错误和异常" section (:members 
+              ( ("PHP与Mysql程序设计-错误和异常" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 配置命令" anchor nil nil [4096 4099])
+                        ("1.1 设置错误敏感级别" anchor nil nil [4133 4136])
+                        ("1.2 在浏览器上显示错误" anchor nil nil [4178 4181])
+                        ("2 错误日志" anchor nil nil [4236 4239])
+                        ("3 异常处理" anchor nil nil [4273 4276])
+                        ("3.1 try/catch" anchor nil nil [4310 4313])
+                        ("3.1.1 实例产生一个异常" anchor nil nil [4356 4359])
+                        ("3.1.2 异常类的7个方法" anchor nil nil [4405 4408])
+                        ("3.1.3 扩展异常类" anchor nil nil [4454 4457])
+                        ("3.1.4 捕获多个异常" anchor nil nil [4500 4503]))                      ) nil [4026 4637])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4804 5020])
+                        ("1.2" section nil nil [5020 5285]))                      ) nil [4637 5285])
+                    ("2" section nil nil [5285 5540])
+                    ("3" section (:members 
+                      ( ("3.1" section (:members 
+                          ( ("3.1.1" section nil nil [5887 6430])
+                            ("3.1.2" section nil nil [6430 7259])
+                            ("3.1.3" section nil nil [7259 8101])
+                            ("3.1.4" section (:members 
+                              ( ("Org" anchor nil nil [9974 9977])
+                                ("Emacs" anchor nil nil [10031 10034])
+                                ("Validate XHTML 1.0" anchor nil nil [10101 10104]))                              ) nil [8101 10200]))                          ) nil [5707 10200]))                      ) nil [5540 10200]))                  ) nil [3952 10200]))              ) nil [3896 10200]))          
+    :file "PHP与Mysql程序设计-错误和异常.html"
+    :pointmax 10200
+    :fsize 10919
+    :lastmodtime '(21425 15143 715268 458000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-第三方程序PEAR.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-第三方程序PEAR" section nil nil [240 2284])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2284 3904])
+            ("PHP与Mysql程序设计-第三方程序PEAR" section (:members 
+              ( ("PHP与Mysql程序设计-第三方程序PEAR" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 PEAR" anchor nil nil [4108 4111])
+                        ("1.1 安装PEAR" anchor nil nil [4145 4148])
+                        ("1.2 安装包" anchor nil nil [4188 4191])
+                        ("1.3 使用安装后包" anchor nil nil [4228 4231]))                      ) nil [4038 4349])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4554 4798])
+                        ("1.2" section nil nil [4798 5040])
+                        ("1.3" section (:members 
+                          ( ("Org" anchor nil nil [5708 5711])
+                            ("Emacs" anchor nil nil [5765 5768])
+                            ("Validate XHTML 1.0" anchor nil nil [5835 5838]))                          ) nil [5040 5934]))                      ) nil [4349 5934]))                  ) nil [3960 5934]))              ) nil [3904 5934]))          
+    :file "PHP与Mysql程序设计-第三方程序PEAR.html"
+    :pointmax 5934
+    :fsize 6065
+    :lastmodtime '(21425 15156 475268 132000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-函数.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-函数" section nil nil [240 2270])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2270 3890])
+            ("PHP与Mysql程序设计-函数" section (:members 
+              ( ("PHP与Mysql程序设计-函数" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 第四章" anchor nil nil [4087 4090])
+                        ("1.1 PHP 函数的一些测试" anchor nil nil [4123 4126])
+                        ("1.1.1 PHP 对高阶函数的支持" anchor nil nil [4171 4174])
+                        ("1.1.2 PHP 对嵌套函数的支持" anchor nil nil [4224 4227])
+                        ("1.1.3 PHP 对尾递归的支持" anchor nil nil [4277 4280])
+                        ("1.1.4 PHP 函数的 lambda" anchor nil nil [4329 4332]))                      ) nil [4017 4474])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [4822 5558])
+                            ("1.1.2" section nil nil [5558 5978])
+                            ("1.1.3" section (:members 
+                              ( ("http://www.nowamagic.net/librarys/veda/detail/2334" anchor nil nil [6116 6119]))                              ) nil [5978 6314])
+                            ("1.1.4" section (:members 
+                              ( ("Org" anchor nil nil [6747 6750])
+                                ("Emacs" anchor nil nil [6804 6807])
+                                ("Validate XHTML 1.0" anchor nil nil [6874 6877]))                              ) nil [6314 6973]))                          ) nil [4640 6973]))                      ) nil [4474 6973]))                  ) nil [3946 6973]))              ) nil [3890 6973]))          
+    :file "PHP与Mysql程序设计-函数.html"
+    :pointmax 6973
+    :fsize 7212
+    :lastmodtime '(21425 15166 975267 864000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-时间和日期.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-时间和日期" section nil nil [240 2276])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2276 3896])
+            ("PHP与Mysql程序设计-时间和日期" section (:members 
+              ( ("PHP与Mysql程序设计-时间和日期" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 时间和日期" anchor nil nil [4096 4099])
+                        ("1.1 PHP 的时间和日期库" anchor nil nil [4134 4137])
+                        ("1.1.1 验证日期" anchor nil nil [4182 4185])
+                        ("1.1.2 格式化时间和日期" anchor nil nil [4227 4230])
+                        ("1.1.3 将时间戳转换为友好的值" anchor nil nil [4276 4279])
+                        ("1.1.4 处理时间戳" anchor nil nil [4328 4331])
+                        ("1.2 日期函数" anchor nil nil [4386 4389])
+                        ("1.2.1 显示本地化日期和时间" anchor nil nil [4427 4430])
+                        ("1.2.2 显示网页最新修改时间" anchor nil nil [4478 4481])
+                        ("1.2.3 确定月份中的天数" anchor nil nil [4529 4532])
+                        ("1.2.4 计算当前日期后Ｘ天的日期" anchor nil nil [4578 4581]))                      ) nil [4026 4721])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5253 5569])
+                            ("1.1.2" section nil nil [5569 5937])
+                            ("1.1.3" section nil nil [5937 6271])
+                            ("1.1.4" section nil nil [6271 6846]))                          ) nil [5071 6846])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [7021 8184])
+                            ("1.2.2" section nil nil [8184 8549])
+                            ("1.2.3" section nil nil [8549 9058])
+                            ("1.2.4" section (:members 
+                              ( ("Org" anchor nil nil [9506 9509])
+                                ("Emacs" anchor nil nil [9563 9566])
+                                ("Validate XHTML 1.0" anchor nil nil [9633 9636]))                              ) nil [9058 9732]))                          ) nil [6846 9732]))                      ) nil [4721 9732]))                  ) nil [3952 9732]))              ) nil [3896 9732]))          
+    :file "PHP与Mysql程序设计-时间和日期.html"
+    :pointmax 9732
+    :fsize 10533
+    :lastmodtime '(21425 15185 279267 396000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-数组.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-数组" section nil nil [240 2270])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2270 3890])
+            ("PHP与Mysql程序设计-数组" section (:members 
+              ( ("PHP与Mysql程序设计-数组" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 PHP 数组" anchor nil nil [4087 4090])
+                        ("1.1 PHP 数组的一些概念" anchor nil nil [4126 4129])
+                        ("1.1.1 数组的构成" anchor nil nil [4174 4177])
+                        ("1.1.2 list 的使用" anchor nil nil [4220 4223])
+                        ("1.1.3 和 Python 一样，PHP 也有 range 快速构建序列" anchor nil nil [4269 4272])
+                        ("1.1.4 多维数组" anchor nil nil [4341 4344])
+                        ("1.1.5 使用 print_r 进行输出整个数组" anchor nil nil [4386 4389])
+                        ("1.2 数组上的操作" anchor nil nil [4458 4461])
+                        ("1.2.1 在数组头增加元素" anchor nil nil [4501 4504])
+                        ("1.2.2 在数组尾增加元素" anchor nil nil [4550 4553])
+                        ("1.2.3 在数组头删除元素" anchor nil nil [4599 4602])
+                        ("1.2.4 在数组尾删除元素" anchor nil nil [4648 4651])
+                        ("1.2.5 元素是否在数组中" anchor nil nil [4697 4700])
+                        ("1.2.6 获取数组值" anchor nil nil [4746 4749])
+                        ("1.2.7 获取数组键" anchor nil nil [4792 4795])
+                        ("1.2.8 移动数组指针" anchor nil nil [4838 4841])
+                        ("1.2.9 计数" anchor nil nil [4885 4888])
+                        ("1.2.10 频率计算" anchor nil nil [4928 4931])
+                        ("1.2.11 单个元素" anchor nil nil [4975 4978])
+                        ("1.2.12 翻转" anchor nil nil [5022 5025])
+                        ("1.2.13 交换键值与数组值" anchor nil nil [5067 5070])
+                        ("1.2.14 排序" anchor nil nil [5118 5121])
+                        ("1.2.15 合并" anchor nil nil [5163 5166])
+                        ("1.2.16 分片" anchor nil nil [5208 5211])
+                        ("1.2.17 接合" anchor nil nil [5253 5256])
+                        ("1.2.18 集合操作" anchor nil nil [5298 5301])
+                        ("1.2.19 其他操作" anchor nil nil [5345 5348]))                      ) nil [4017 5482])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [6079 6789])
+                            ("1.1.2" section nil nil [6789 7021])
+                            ("1.1.3" section nil nil [7021 7402])
+                            ("1.1.4" section nil nil [7402 7851])
+                            ("1.1.5" section nil nil [7851 8059]))                          ) nil [5897 8059])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [8297 8527])
+                            ("1.2.2" section nil nil [8527 8754])
+                            ("1.2.3" section nil nil [8754 8982])
+                            ("1.2.4" section nil nil [8982 9208])
+                            ("1.2.5" section nil nil [9208 9487])
+                            ("1.2.6" section nil nil [9487 9750])
+                            ("1.2.7" section nil nil [9750 9967])
+                            ("1.2.8" section nil nil [9967 10325])
+                            ("1.2.9" section nil nil [10325 10556])
+                            ("1.2.10" section nil nil [10556 10800])
+                            ("1.2.11" section nil nil [10800 11029])
+                            ("1.2.12" section nil nil [11029 11257])
+                            ("1.2.13" section nil nil [11257 11488])
+                            ("1.2.14" section nil nil [11488 12062])
+                            ("1.2.15" section nil nil [12062 12394])
+                            ("1.2.16" section nil nil [12394 12620])
+                            ("1.2.17" section nil nil [12620 12864])
+                            ("1.2.18" section nil nil [12864 13335])
+                            ("1.2.19" section (:members 
+                              ( ("Org" anchor nil nil [13747 13750])
+                                ("Emacs" anchor nil nil [13804 13807])
+                                ("Validate XHTML 1.0" anchor nil nil [13874 13877]))                              ) nil [13335 13973]))                          ) nil [8059 13973]))                      ) nil [5482 13973]))                  ) nil [3946 13973]))              ) nil [3890 13973]))          
+    :file "PHP与Mysql程序设计-数组.html"
+    :pointmax 13973
+    :fsize 15352
+    :lastmodtime '(21425 15196 111267 119000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-网络.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-网络" section nil nil [240 2270])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2270 3890])
+            ("PHP与Mysql程序设计-网络" section (:members 
+              ( ("PHP与Mysql程序设计-网络" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 网络" anchor nil nil [4087 4090])
+                        ("1.1 DNS，服务器和服务" anchor nil nil [4122 4125])
+                        ("1.1.1 检查 DNS 记录是否存在" anchor nil nil [4169 4172])
+                        ("1.1.2 DNS 资源记录" anchor nil nil [4223 4226])
+                        ("1.1.3 获得 MX 记录" anchor nil nil [4272 4275])
+                        ("1.1.4 服务" anchor nil nil [4321 4324])
+                        ("1.1.5 套接字连接" anchor nil nil [4364 4367])
+                        ("1.2 电子邮件的发送" anchor nil nil [4422 4425])
+                        ("1.2.1 mail 函数" anchor nil nil [4466 4469])
+                        ("1.2.2 发送邮件" anchor nil nil [4514 4517])
+                        ("1.3 常见的网络任务" anchor nil nil [4571 4574])
+                        ("1.3.1 连接服务器" anchor nil nil [4615 4618])
+                        ("1.3.2 测试带宽" anchor nil nil [4661 4664]))                      ) nil [4017 4796])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("1.1.1" section nil nil [5142 5425])
+                            ("1.1.2" section nil nil [5425 5824])
+                            ("1.1.3" section nil nil [5824 6174])
+                            ("1.1.4" section nil nil [6174 6457])
+                            ("1.1.5" section nil nil [6457 7356]))                          ) nil [4961 7356])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section (:members 
+                              ( ("http://cn2.php.net/manual/en/function.mail.php" anchor nil nil [7668 7671]))                              ) nil [7534 8011])
+                            ("1.2.2" section nil nil [8011 10566]))                          ) nil [7356 10566])
+                        ("1.3" section (:members 
+                          ( ("1.3.1" section nil nil [10744 10979])
+                            ("1.3.2" section (:members 
+                              ( ("Org" anchor nil nil [11596 11599])
+                                ("Emacs" anchor nil nil [11653 11656])
+                                ("Validate XHTML 1.0" anchor nil nil [11723 11726]))                              ) nil [10979 11822]))                          ) nil [10566 11822]))                      ) nil [4796 11822]))                  ) nil [3946 11822]))              ) nil [3890 11822]))          
+    :file "PHP与Mysql程序设计-网络.html"
+    :pointmax 11822
+    :fsize 12725
+    :lastmodtime '(21425 15208 103266 812000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PHP与Mysql程序设计-正则表达式.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-正则表达式" section nil nil [240 2276])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2276 3896])
+            ("PHP与Mysql程序设计-正则表达式" section (:members 
+              ( ("PHP与Mysql程序设计-正则表达式" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 字符串和正则表达式" anchor nil nil [4096 4099])
+                        ("1.1 正则表达式" anchor nil nil [4138 4141])
+                        ("1.2 PHP 中使用正则表达式" anchor nil nil [4180 4183])
+                        ("1.2.1 ereg" anchor nil nil [4229 4232])
+                        ("1.2.2 ereg_replace" anchor nil nil [4274 4277])
+                        ("1.2.3 eregi" anchor nil nil [4327 4330])
+                        ("1.2.4 eregi_replace" anchor nil nil [4373 4376])
+                        ("1.2.5 split" anchor nil nil [4427 4430])
+                        ("1.2.6 spliti" anchor nil nil [4473 4476])
+                        ("1.2.7 sql_regcase" anchor nil nil [4520 4523])
+                        ("1.3 PHP 的正则表达式语法参考 Perl 的正则表达式语法" anchor nil nil [4584 4587])
+                        ("1.4 其他字符串函数" anchor nil nil [4649 4652])
+                        ("1.5 正则表达式函数的替代函数" anchor nil nil [4693 4696])
+                        ("1.6 勘误" anchor nil nil [4742 4745])
+                        ("1.6.1 Page151" anchor nil nil [4781 4784]))                      ) nil [4026 4919])
+                    ("1" section (:members 
+                      ( ("1.1" section (:members 
+                          ( ("http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html" anchor nil nil [5406 5409]))                          ) nil [5273 5620])
+                        ("1.2" section (:members 
+                          ( ("1.2.1" section nil nil [5803 6137])
+                            ("1.2.2" section nil nil [6137 6724])
+                            ("1.2.3" section nil nil [6724 7040])
+                            ("1.2.4" section nil nil [7040 7377])
+                            ("1.2.5" section nil nil [7377 7694])
+                            ("1.2.6" section nil nil [7694 8014])
+                            ("1.2.7" section nil nil [8014 8319]))                          ) nil [5620 8319])
+                        ("1.3" section nil nil [8319 8555])
+                        ("1.4" section nil nil [8555 9229])
+                        ("1.5" section nil nil [9229 9718])
+                        ("1.6" section (:members 
+                          ( ("1.6.1" section (:members 
+                              ( ("Org" anchor nil nil [10248 10251])
+                                ("Emacs" anchor nil nil [10305 10308])
+                                ("Validate XHTML 1.0" anchor nil nil [10375 10378]))                              ) nil [9891 10474]))                          ) nil [9718 10474]))                      ) nil [4919 10474]))                  ) nil [3952 10474]))              ) nil [3896 10474]))          
+    :file "PHP与Mysql程序设计-正则表达式.html"
+    :pointmax 10474
+    :fsize 11255
+    :lastmodtime '(21425 15223 955266 406000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!web!php!doc!php!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

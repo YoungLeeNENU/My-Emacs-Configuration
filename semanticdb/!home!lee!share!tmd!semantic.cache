@@ -1,0 +1,23 @@
+;; Object tmd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmd/"
+  :tables (list 
+   (semanticdb-table "name.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("token" variable nil nil [63 90])
+            ("cmd" variable nil nil [91 101])
+            ("if" code nil nil [103 303]))          
+    :file "name.py"
+    :pointmax 303
+    :fsize 302
+    :lastmodtime '(21358 49180 753578 571000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!share!tmd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,125 @@
+;; Object 台电酷闪/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "台电酷闪/"
+  :tables (list 
+   (semanticdb-table "1008.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("vector" include (:system-flag t) nil [19 35])
+            ("map" include (:system-flag t) nil [36 49])
+            ("queue" include (:system-flag t) nil [50 65])
+            ("string.h" include (:system-flag t) nil [66 84])
+            ("algorithm" include (:system-flag t) nil [85 104])
+            ("stdlib.h" include (:system-flag t) nil [105 123])
+            ("stop" variable (:constant-flag t) nil [132 136])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [154 174])
+            ("maxn" variable
+               (:constant-flag t
+                :type "int")
+                nil [175 195])
+            ("inf" variable
+               (:constant-flag t
+                :type "int")
+                nil [196 221])
+            ("node" type
+               (:members 
+                  ( ("v" variable (:type "int") (reparse-symbol classsubparts) [239 247])
+                    ("u" variable (:type "int") (reparse-symbol classsubparts) [239 247])
+                    ("node" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_u" variable (:type "int") (reparse-symbol arg-sub-list) [257 264])
+                            ("_v" variable (:type "int") (reparse-symbol arg-sub-list) [266 273]))                          
+                        :type ("node" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [252 301])
+                    ("<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [328 342])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [342 356]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [306 424]))                  
+                :type "struct")
+                nil [222 427])
+            ("m" variable (:type "int") nil [428 440])
+            ("n" variable (:type "int") nil [428 440])
+            ("mym" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("node" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [441 459])
+            ("it" variable (:type ("iterator" type (:type "class") nil nil)) nil [476 488])
+            ("myv" variable
+               (:dereference 1
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [489 511])
+            ("dist" variable
+               (:dereference 1
+                :type "int")
+                nil [512 538])
+            ("path" variable
+               (:dereference 1
+                :type "int")
+                nil [512 538])
+            ("vis" variable
+               (:dereference 1
+                :type "bool")
+                nil [539 554])
+            ("q" variable (:type ("queue" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [555 568])
+            ("print" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [580 586])
+                    ("cost" variable (:type "int") (reparse-symbol arg-sub-list) [586 595]))                  
+                :type "void")
+                nil [569 747])
+            ("relax" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [758 764])
+                    ("v" variable (:type "int") (reparse-symbol arg-sub-list) [764 770])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [770 776]))                  
+                :type "int")
+                nil [748 862])
+            ("spfa" function
+               (:arguments 
+                  ( ("st" variable (:type "int") (reparse-symbol arg-sub-list) [872 879])
+                    ("en" variable (:type "int") (reparse-symbol arg-sub-list) [879 886]))                  
+                :type "int")
+                nil [863 1381])
+            ("main" function (:type "int") nil [1383 2327]))          
+    :file "1008.cpp"
+    :pointmax 2328
+    :fsize 2428
+    :lastmodtime '(21392 29117 506396 0)
+    :unmatched-syntax '((punctuation 475 . 476) (punctuation 474 . 475) (punctuation 472 . 473) (INT 469 . 472) (punctuation 468 . 469) (symbol 464 . 468) (punctuation 463 . 464) (symbol 460 . 463) (number 273 . 274) (punctuation 272 . 273) (number 264 . 265) (punctuation 263 . 264) (punctuation 475 . 476) (punctuation 474 . 475) (punctuation 472 . 473) (INT 469 . 472) (punctuation 468 . 469) (symbol 464 . 468) (punctuation 463 . 464) (symbol 460 . 463) (number 273 . 274) (punctuation 272 . 273) (number 264 . 265) (punctuation 263 . 264))
+    :lexical-table 
+        '(("stop" . 
+              ((symbol "system" 137 . 143) (semantic-list "(\"pause\")" 143 . 152) (punctuation ";" 152 . 153)))
+          )
+
+    )
+   )
+  :file "!media!台电酷闪!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

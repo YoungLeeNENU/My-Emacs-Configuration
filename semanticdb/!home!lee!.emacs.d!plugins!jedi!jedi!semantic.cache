@@ -1,0 +1,102 @@
+;; Object jedi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jedi/"
+  :tables (list 
+   (semanticdb-table "keywords.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [1 38])
+            ("pydoc" include nil nil [40 52])
+            ("keyword" include nil nil [53 67])
+            ("jedi._compatibility" include nil nil [69 108])
+            ("jedi" include nil nil [109 132])
+            ("builtin" include nil nil [133 147])
+            ("try" code nil nil [149 265])
+            ("if" code nil nil [266 364])
+            ("get_keywords" function (:arguments 
+              ( ("string" variable nil (reparse-symbol function_parameters) [383 389])
+                ("pos" variable nil (reparse-symbol function_parameters) [394 397])
+                ("all" variable nil (reparse-symbol function_parameters) [406 409]))              ) nil [366 565])
+            ("get_operator" function (:arguments 
+              ( ("string" variable nil (reparse-symbol function_parameters) [584 590])
+                ("pos" variable nil (reparse-symbol function_parameters) [592 595]))              ) nil [567 630])
+            ("Keyword" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [698 714])
+                            ("self" variable nil (reparse-symbol indented_block_body) [723 743])
+                            ("self" variable nil (reparse-symbol indented_block_body) [752 787]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [672 676])
+                            ("name" variable nil (reparse-symbol function_parameters) [678 682])
+                            ("pos" variable nil (reparse-symbol function_parameters) [684 687]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [659 788])
+                    ("get_parent_until" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [814 818]))                          )
+                        (reparse-symbol indented_block_body) [793 848])
+                    ("names" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [877 881]))                          
+                        :documentation " For a `parsing.Name` like comparision ")
+                        (reparse-symbol indented_block_body) [853 965])
+                    ("docstr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [995 999]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [970 1042])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1060 1064]))                          )
+                        (reparse-symbol indented_block_body) [1047 1128]))                  
+                :type "class")
+                nil [632 1128])
+            ("imitate_pydoc" function
+               (:documentation "
+    It's not possible to get the pydoc's without starting the annoying pager
+    stuff.
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [1148 1154]))                  )
+                nil [1130 1921]))          
+    :file "keywords.py"
+    :pointmax 1921
+    :fsize 1920
+    :lastmodtime '(20974 35733 752035 344000)
+    :unmatched-syntax '((RETURN 1824 . 1830) (IF 1858 . 1860) (ELSE 1874 . 1878))
+    )
+   (semanticdb-table "tokenizer.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "tokenizer.py"
+    :pointmax 10684
+    :fsize 10683
+    :lastmodtime '(20974 35733 752035 344000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "_compatibility.py"
+    :file "_compatibility.py"
+    :fsize 4816
+    :lastmodtime '(20974 35733 744035 344000)
+    )
+   (semanticdb-table "builtin.py"
+    :file "builtin.py"
+    :fsize 15144
+    :lastmodtime '(20974 35733 748035 344000)
+    )
+   )
+  :file "!home!lee!.emacs.d!plugins!jedi!jedi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

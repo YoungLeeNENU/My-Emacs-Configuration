@@ -1,0 +1,89 @@
+;; Object zhutieying/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zhutieying/"
+  :tables (list 
+   (semanticdb-table "basic.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("if" code nil nil [130 175]))          
+    :file "basic.py"
+    :pointmax 175
+    :fsize 174
+    :lastmodtime '(21411 63819 95980 294000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tetris.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [130 140])
+            ("math" include nil nil [141 152])
+            ("random" include nil nil [153 166])
+            ("Tetris" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [218 232])
+                            ("self" variable nil (reparse-symbol indented_block_body) [241 255])
+                            ("self" variable nil (reparse-symbol indented_block_body) [264 279])
+                            ("self" variable nil (reparse-symbol indented_block_body) [288 302])
+                            ("self" variable nil (reparse-symbol indented_block_body) [311 328])
+                            ("self" variable nil (reparse-symbol indented_block_body) [337 412]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [201 205]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [188 413])
+                    ("Spin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [426 430]))                          )
+                        (reparse-symbol indented_block_body) [417 456])
+                    ("New" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [468 472]))                          )
+                        (reparse-symbol indented_block_body) [460 502])
+                    ("Fall" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [515 519]))                          )
+                        (reparse-symbol indented_block_body) [506 545])
+                    ("Vanish" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [560 564]))                          )
+                        (reparse-symbol indented_block_body) [549 589])
+                    ("MoveRight" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [607 611]))                          )
+                        (reparse-symbol indented_block_body) [593 629])
+                    ("MoveLeft" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [646 650]))                          )
+                        (reparse-symbol indented_block_body) [633 668])
+                    ("MoveDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [685 689]))                          )
+                        (reparse-symbol indented_block_body) [672 707])
+                    ("IfGameOver" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [726 730]))                          )
+                        (reparse-symbol indented_block_body) [711 819]))                  
+                :type "class")
+                nil [168 819])
+            ("if" code nil nil [820 871]))          
+    :file "tetris.py"
+    :pointmax 871
+    :fsize 902
+    :lastmodtime '(21412 10121 886933 530000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!python!zhutieying!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

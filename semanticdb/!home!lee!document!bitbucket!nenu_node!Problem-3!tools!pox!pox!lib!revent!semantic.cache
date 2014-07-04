@@ -1,0 +1,443 @@
+;; Object revent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "revent/"
+  :tables (list 
+   (semanticdb-table "revent.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Revent is an event system wherein objects become a composition of data,
+methods, and now events.  It fits with the publish/subscribe communication
+pattern.
+
+Events themselves are generally instances of some subclass of the Event
+class.  In fact, they can be arbitrary values of any sort, though
+subclasses of Event get special handling (and support for values of other
+sorts may eventually be removed).
+
+To subscribe to an event, you create a callback function and register it
+with the source.  For example:
+
+def bar_handler(self, event):
+  print(\"bar!\", event)
+
+pox.core.addListener(UpEvent, bar_handler)
+
+
+Often (especially if you are going to listen to multiple events from a
+single source), it is easier to inherit from EventMixin just so that you
+can use the listenTo() method.  For example:
+
+class Sink (EventMixin):
+  def __init__(self):
+   # Listen to events sourced by pox.core
+   pox.core.addListeners(self)
+   self.listenTo(pox.core)
+
+  def _handle_ComponentRegistered (self, event):
+    # The name of this method has a special meaning to addListeners().
+    # If a method name starts with _handle_ and ends with the name of
+    # an event that the source publishes, the method is automatically
+    # registered as an event handler.
+    #  
+    # This method will now be called whenever pox.core triggers a 
+    # ComponentRegistered event.
+
+    # Most event handlers are passed an event object as a parameter (though
+    # individual Event classes can override this behavior by altering their
+    # _invoke() method).
+    component = event.component
+    name = event.name
+    print(\"I see you,\", name, \"!\")
+
+
+Event sources can also use the EventMixin library:
+
+class Source (EventMixin):
+  # Defining this variable tells the revent library what kind of events
+  # this source can raise.
+  _eventMixin_events = set([ComponentRegistered])
+
+  def __init__ (self):
+    foo()
+
+  def foo (self):
+    # We can raise events as follows:
+    component = \"fake_pox_component\"
+    self.raiseEvent(ComponentRegistered(component))
+
+    # In the above invocation, the argument is an instance of
+    # ComponentRegistered (which is a subclass of Event).  The following is
+    # functionally equivalent, but has the nice property that 
+    # ComponentRegistered is never instantiated if there are no listeners.
+    #self.raiseEvent(ComponentRegistered, component)
+    # In both cases, \"component\" is passed to the __init__ method for the
+    # ComponentRegistered class.
+
+    # The above method invocation will raise an exception if an event
+    # handler rauses an exception.  To project yourself from exceptions in
+    # handlers, see raiseEventNoErrors().
+\"\"\"" code nil nil [813 3474])
+            ("__future__" include nil nil [3476 3513])
+            ("operator" include nil nil [3515 3530])
+            ("weakref" include nil nil [3663 3677])
+            ("_nextEventID" variable nil nil [3680 3696])
+            ("_generateEventID" function (:documentation "
+  Generates an event ID
+  This is (at present) mostly so that an event can later be removed.
+  Note that this function is not threadsafe.
+  ") nil [3697 3936])
+            ("EventReturn" function
+               (:documentation "
+  Event handlers can return special values.  You can craft these with this
+  function.
+
+  If halt is True, further handlers will not be called for this particular
+  event.
+
+  If remove is True, the handler will be removed (i.e. unsubscribed) and
+  will not be called anymore.
+
+  Shortcut names are also available.  You can also simply do:
+  return EventHalt
+  return EventRemove
+  return HaltAndRemove
+  "
+                :arguments 
+                  ( ("halt" variable nil (reparse-symbol function_parameters) [3955 3959])
+                    ("remove" variable nil (reparse-symbol function_parameters) [3969 3975]))                  )
+                nil [3938 4424])
+            ("EventContinue" variable nil nil [4425 4478])
+            ("EventHalt" variable nil nil [4552 4586])
+            ("EventRemove" variable nil nil [4659 4697])
+            ("EventHaltAndRemove" variable nil nil [4789 4845])
+            ("Event" type
+               (:documentation "
+  Superclass for events
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4933 4950])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4955 4973]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4922 4926]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4908 4974])
+                    ("_invoke" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4990 4994])
+                            ("handler" variable nil (reparse-symbol function_parameters) [4996 5003])
+                            ("args" variable nil (reparse-symbol function_parameters) [5005 5010])
+                            ("kw" variable nil (reparse-symbol function_parameters) [5012 5016]))                          )
+                        (reparse-symbol indented_block_body) [4977 5057]))                  
+                :type "class")
+                nil [4848 5057])
+            ("handleEventException" function
+               (:documentation "
+  Called when an exception is raised by an event handler when the event
+  was raised by raiseEventNoErrors().
+
+  You can replace this method if you'd like to replace the default handling
+  (printing an error message an a traceback) with your own (for example if
+  you are using a logging system and would like to use that).  You can also
+  replace it with None to have events fail silently.
+
+  \"source\" is the object sourcing the event.  \"event\" is the event that was
+  being raised when the exception occurred.  \"args\" and \"kw\" were the args
+  and kwargs passed to raiseEventNoErrors.  \"exc_info\" is the exception
+  info as returned by sys.exc_info()).
+  "
+                :arguments 
+                  ( ("source" variable nil (reparse-symbol function_parameters) [5084 5090])
+                    ("event" variable nil (reparse-symbol function_parameters) [5092 5097])
+                    ("args" variable nil (reparse-symbol function_parameters) [5099 5103])
+                    ("kw" variable nil (reparse-symbol function_parameters) [5105 5107])
+                    ("exc_info" variable nil (reparse-symbol function_parameters) [5109 5117]))                  )
+                nil [5058 6135])
+            ("EventMixin" type
+               (:documentation "
+  Mixin for classes that want to source events
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("_eventMixin_events" variable nil (reparse-symbol indented_block_body) [6441 6467])
+                    ("_eventMixin_addEvents" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6498 6502])
+                            ("events" variable nil (reparse-symbol function_parameters) [6504 6510]))                          )
+                        (reparse-symbol indented_block_body) [6471 6569])
+                    ("_eventMixin_addEvent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6597 6601])
+                            ("eventType" variable nil (reparse-symbol function_parameters) [6603 6612]))                          )
+                        (reparse-symbol indented_block_body) [6571 6967])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [6995 7018]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6984 6988]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6970 7019])
+                    ("_eventMixin_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7044 7048]))                          )
+                        (reparse-symbol indented_block_body) [7022 7245])
+                    ("raiseEventNoErrors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7272 7276])
+                            ("event" variable nil (reparse-symbol function_parameters) [7278 7283])
+                            ("args" variable nil (reparse-symbol function_parameters) [7285 7290])
+                            ("kw" variable nil (reparse-symbol function_parameters) [7292 7296]))                          
+                        :documentation "
+    Raise an event, catching exceptions thrown by the handler.
+    If exceptions are caught, the global handleEventExceptions() is called.
+    Also see raiseEvent()
+    ")
+                        (reparse-symbol indented_block_body) [7248 7816])
+                    ("raiseEvent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7835 7839])
+                            ("event" variable nil (reparse-symbol function_parameters) [7841 7846])
+                            ("args" variable nil (reparse-symbol function_parameters) [7848 7853])
+                            ("kw" variable nil (reparse-symbol function_parameters) [7855 7859]))                          
+                        :documentation "
+    Raises an event.
+    If \"event\" is an Event type, it will be initialized with args and kw,
+    but only if there are actually listeners.
+    Returns the event object, unless it was never created (because there
+    were no listeners) in which case returns None.
+    ")
+                        (reparse-symbol indented_block_body) [7819 9938])
+                    ("removeListeners" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9962 9966])
+                            ("listeners" variable nil (reparse-symbol function_parameters) [9968 9977]))                          )
+                        (reparse-symbol indented_block_body) [9941 10091])
+                    ("_eventMixin_get_listener_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10130 10134]))                          
+                        :documentation "
+    Returns the number of listeners.
+    ")
+                        (reparse-symbol indented_block_body) [10094 10263])
+                    ("removeListener" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10286 10290])
+                            ("handlerOrEID" variable nil (reparse-symbol function_parameters) [10292 10304])
+                            ("eventType" variable nil (reparse-symbol function_parameters) [10306 10315]))                          
+                        :documentation "
+    handlerOrEID : a reference to a handler object, an event ID (EID)
+                   identifying the event type, or (eventType, EID) pair
+    eventType : the type of event to remove the listener(s) for
+    ")
+                        (reparse-symbol indented_block_body) [10266 12538])
+                    ("addListenerByName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12564 12568])
+                            ("args" variable nil (reparse-symbol function_parameters) [12570 12575])
+                            ("kw" variable nil (reparse-symbol function_parameters) [12577 12581]))                          
+                        :documentation "
+    Add a listener by name. An eventType argument must be present, which is
+    used as the name. A handler argument must also be present.
+
+    Also see addListener().
+    ")
+                        (reparse-symbol indented_block_body) [12541 12832])
+                    ("addListener" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12852 12856])
+                            ("eventType" variable nil (reparse-symbol function_parameters) [12858 12867])
+                            ("handler" variable nil (reparse-symbol function_parameters) [12869 12876])
+                            ("once" variable nil (reparse-symbol function_parameters) [12878 12882])
+                            ("weak" variable nil (reparse-symbol function_parameters) [12890 12894])
+                            ("priority" variable nil (reparse-symbol function_parameters) [12921 12929])
+                            ("byName" variable nil (reparse-symbol function_parameters) [12936 12942]))                          
+                        :documentation "
+    Add an event handler for an event triggered by this object (subscribe).
+
+    eventType : event class object (e.g. ConnectionUp). If byName is True,
+                should be a string (e.g. \"ConnectionUp\") 
+    handler : function/method to be invoked when event is raised 
+    once : if True, this handler is removed after being fired once
+    weak : If handler is a method on object A, then listening to an event
+           on object B will normally make B have a reference to A, so A
+           can not be released until after B is released or the listener
+           is removed.
+           If weak is True, there is no relationship between the lifetimes
+           of the publisher and subscriber.
+    priority : The order in which to call event handlers if there are
+               multiple for an event type.  Should probably be an integer,
+               where higher means to call it earlier.  Do not specify if
+               you don't care.
+    byName : True if eventType is a string name, else an Event subclass
+
+    Raises an exception unless eventType is in the source's
+    _eventMixin_events set (or, alternately, _eventMixin_events must
+    be True).
+
+    The return value can be used for removing the listener.
+    ")
+                        (reparse-symbol indented_block_body) [12835 15463])
+                    ("listenTo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15480 15484])
+                            ("source" variable nil (reparse-symbol function_parameters) [15486 15492])
+                            ("args" variable nil (reparse-symbol function_parameters) [15494 15499])
+                            ("kv" variable nil (reparse-symbol function_parameters) [15501 15505]))                          
+                        :documentation "
+    Automatically subscribe to events on source.
+
+    This method tries to bind all _handle_ methods on self to events
+    on source.  Kind of the opposite of addListeners().
+
+    See also: addListeners(), autoBindEvents()
+    ")
+                        (reparse-symbol indented_block_body) [15466 15800])
+                    ("addListeners" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15821 15825])
+                            ("sink" variable nil (reparse-symbol function_parameters) [15827 15831])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [15833 15839])
+                            ("weak" variable nil (reparse-symbol function_parameters) [15844 15848])
+                            ("priority" variable nil (reparse-symbol function_parameters) [15856 15864]))                          
+                        :documentation "
+    Automatically subscribe sink to our events.
+
+    Tries to bind all _handle_ methods on sink to events that this object
+    raises.  Kind of the opposite of listenTo().
+
+    See also: listenTo(), autoBindEvents()
+    ")
+                        (reparse-symbol indented_block_body) [15803 16166])
+                    ("clearHandlers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16189 16193]))                          
+                        :documentation "
+    Remove all handlers from this object
+    ")
+                        (reparse-symbol indented_block_body) [16171 16288]))                  
+                :type "class")
+                nil [6137 16288])
+            ("autoBindEvents" function
+               (:documentation "
+  Automatically set up listeners on sink for events raised by source.
+
+  Often you have a \"sink\" object that is interested in multiple events
+  raised by some other \"source\" object.  This method makes setting that
+  up easy.
+  You name handler methods on the sink object in a special way.  For
+  example, lets say you have an object mySource which raises events of
+  types FooEvent and BarEvent.  You have an object mySink which wants to
+  listen to these events.  To do so, it names its handler methods
+  \"_handle_FooEvent\" and \"_handle_BarEvent\".  It can then simply call
+  autoBindEvents(mySink, mySource), and the handlers are set up.
+
+  You can also set a prefix which changes how the handlers are to be named.
+  For example, autoBindEvents(mySink, mySource, \"source1\") would use a
+  handler named \"_handle_source1_FooEvent\".
+
+  \"weak\" has the same meaning as with addListener().
+
+  Returns the added listener IDs (so that you can remove them later).
+  "
+                :arguments 
+                  ( ("sink" variable nil (reparse-symbol function_parameters) [16310 16314])
+                    ("source" variable nil (reparse-symbol function_parameters) [16316 16322])
+                    ("prefix" variable nil (reparse-symbol function_parameters) [16324 16330])
+                    ("weak" variable nil (reparse-symbol function_parameters) [16335 16339])
+                    ("priority" variable nil (reparse-symbol function_parameters) [16347 16355]))                  )
+                nil [16290 18595])
+            ("CallProxy" type
+               (:documentation "
+  Internal use.
+
+  Custom proxy wrapper for /weak reference/ event handlers.  When the
+  publisher or subscriber objects are lost, this cleans up by removing
+  the listener entry in the publisher object.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+    source : Event source (publisher)
+    handler : A \"weak handler\" callback
+    removeData :  The identifier used for removal of the handler
+    \"\"\"" code nil (reparse-symbol indented_block_body) [18895 19049])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19054 19103])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19108 19163])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19168 19197])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19202 19230])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19235 19259]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18855 18859])
+                            ("source" variable nil (reparse-symbol function_parameters) [18861 18867])
+                            ("handler" variable nil (reparse-symbol function_parameters) [18869 18876])
+                            ("removeData" variable nil (reparse-symbol function_parameters) [18878 18888]))                          
+                        :documentation "
+    source : Event source (publisher)
+    handler : A \"weak handler\" callback
+    removeData :  The identifier used for removal of the handler
+    "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18841 19260])
+                    ("_forgetMe" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19278 19282])
+                            ("o" variable nil (reparse-symbol function_parameters) [19284 19285]))                          )
+                        (reparse-symbol indented_block_body) [19263 19514])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19530 19534])
+                            ("args" variable nil (reparse-symbol function_parameters) [19536 19541])
+                            ("kw" variable nil (reparse-symbol function_parameters) [19543 19547]))                          )
+                        (reparse-symbol indented_block_body) [19516 19779])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19794 19798]))                          )
+                        (reparse-symbol indented_block_body) [19781 19848]))                  
+                :type "class")
+                nil [18597 19848]))          
+    :file "revent.py"
+    :pointmax 19849
+    :fsize 19848
+    :lastmodtime '(21371 16547 70958 884000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.lib.revent.revent" include nil nil [2 37]))          
+    :file "__init__.py"
+    :pointmax 38
+    :fsize 37
+    :lastmodtime '(21344 58702 324984 357000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!lib!revent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

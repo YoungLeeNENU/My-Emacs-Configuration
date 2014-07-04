@@ -1,0 +1,408 @@
+;; Object topology/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "topology/"
+  :tables (list 
+   (semanticdb-table "topology.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+The Topology module is the root of an object model composed of entities
+like switches, hosts, links, etc.  This object model is populated by other
+modules.  For example, openflow.topology populates the topology object
+with OpenFlow switches.
+
+Note that this means that you often want to invoke something like:
+   $ ./pox.py topology openflow.discovery openflow.topology
+\"\"\"" code nil nil [673 1050])
+            ("pox.lib.revent" include nil nil [1052 1080])
+            ("pox.core" include nil nil [1081 1106])
+            ("pox.lib.addresses" include nil nil [1107 1138])
+            ("traceback" include nil nil [1139 1155])
+            ("pickle" include nil nil [1157 1170])
+            ("EntityEvent" type
+               (:superclasses ("Event")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Event" code nil (reparse-symbol indented_block_body) [1235 1255])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1260 1280]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1216 1220])
+                            ("entity" variable nil (reparse-symbol function_parameters) [1222 1228]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1202 1281]))                  
+                :type "class")
+                nil [1173 1281])
+            ("EntityJoin" type
+               (:documentation "
+  An entity has been added.
+
+  Note that if there is a more specific join event defined for a particular
+  entity, (e.g., SwitchJoin), this event will not be fired.
+
+  TODO: or we could always raise EntityJoins along with SwitchJoins, which
+  seems more intuitive to me.
+  "
+                :superclasses ("EntityEvent")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1599 1603]))                  
+                :type "class")
+                nil [1282 1604])
+            ("EntityLeave" type
+               (:documentation "
+  An entity has been removed
+
+  Note that if there is a more specific leave event defined for a particular
+  entity, (e.g., SwitchLeave), this event will not be fired.
+
+  TODO: or we could always raise EntityLeaves along with SwitchLeaves, which
+  seems more intuitive to me.
+  "
+                :superclasses ("EntityEvent")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1928 1932]))                  
+                :type "class")
+                nil [1605 1933])
+            ("SwitchEvent" type
+               (:superclasses ("EntityEvent")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [1934 1972])
+            ("SwitchJoin" type
+               (:documentation "
+  As opposed to ConnectionUp, SwitchJoin occurs over large time scales
+  (e.g. an administrator physically moving a switch).
+  "
+                :superclasses ("SwitchEvent")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("SwitchEvent" code nil (reparse-symbol indented_block_body) [2177 2211])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2216 2236]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2158 2162])
+                            ("switch" variable nil (reparse-symbol function_parameters) [2164 2170]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2144 2237]))                  
+                :type "class")
+                nil [1973 2237])
+            ("SwitchLeave" type
+               (:documentation "
+  As opposed to ConnectionDown, SwitchLeave occurs over large time scales
+  (e.g. an administrator physically moving a switch).
+  "
+                :superclasses ("SwitchEvent")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [2413 2417]))                  
+                :type "class")
+                nil [2238 2418])
+            ("SwitchConnectionUp" type
+               (:superclasses ("SwitchEvent")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("SwitchEvent" code nil (reparse-symbol indented_block_body) [2504 2538])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2543 2563])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2568 2596]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2473 2477])
+                            ("switch" variable nil (reparse-symbol function_parameters) [2479 2485])
+                            ("connection" variable nil (reparse-symbol function_parameters) [2487 2497]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2460 2597]))                  
+                :type "class")
+                nil [2419 2597])
+            ("SwitchConnectionDown" type
+               (:superclasses ("SwitchEvent")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [2598 2644])
+            ("HostEvent" type
+               (:superclasses ("EntityEvent")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [2645 2681])
+            ("HostJoin" type
+               (:superclasses ("HostEvent")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [2681 2714])
+            ("HostLeave" type
+               (:superclasses ("HostEvent")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [2714 2748])
+            ("Update" type
+               (:documentation "
+  Fired by Topology whenever anything has changed
+  "
+                :superclasses ("Event")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Event" code nil (reparse-symbol indented_block_body) [2872 2892])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2897 2915]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2849 2853])
+                            ("event" variable nil (reparse-symbol function_parameters) [2855 2860]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2835 2916]))                  
+                :type "class")
+                nil [2749 2916])
+            ("Entity" type
+               (:documentation "
+  Note that the Entity class is intentionally simple; It only serves as a
+  convenient SuperClass type.
+
+  It's up to subclasses to implement specific functionality (e.g.
+  OpenFlow1.0 switch functionality).  The purpose of this design decision
+  is to prevent protocol specific details from being leaked into this
+  module... but this design decision does /not/ imply that pox.toplogy
+  serves to define a generic interface to abstract entity types.
+
+  NOTE: /all/ subclasses must call this superconstructor, since
+        the unique self.id is field is used by Topology
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("_next_id" variable nil (reparse-symbol indented_block_body) [3682 3696])
+                    ("_all_ids" variable nil (reparse-symbol indented_block_body) [3699 3715])
+                    ("_tb" variable nil (reparse-symbol indented_block_body) [3718 3726])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [3764 4034])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4039 4079])
+                            ("Entity" code nil (reparse-symbol indented_block_body) [4084 4107])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4112 4124]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3744 3748])
+                            ("id" variable nil (reparse-symbol function_parameters) [3750 3752]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3730 4125])
+                    ("serialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4142 4146]))                          )
+                        (reparse-symbol indented_block_body) [4128 4193])
+                    ("deserialize" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4227 4230]))                          )
+                        (reparse-symbol indented_block_body) [4196 4276]))                  
+                :type "class")
+                nil [2917 4276])
+            ("Host" type
+               (:documentation "
+  A generic Host entity.
+  "
+                :superclasses ("Entity")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Entity" code nil (reparse-symbol indented_block_body) [4369 4394]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4350 4354])
+                            ("id" variable nil (reparse-symbol function_parameters) [4355 4357]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4337 4395]))                  
+                :type "class")
+                nil [4277 4395])
+            ("Switch" type
+               (:documentation "
+  Subclassed by protocol-specific switch classes,
+  e.g. pox.openflow.topology.OpenFlowSwitch
+  "
+                :superclasses ("Entity")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Entity" code nil (reparse-symbol indented_block_body) [4697 4722]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4540 4544])
+                            ("id" variable nil (reparse-symbol function_parameters) [4546 4548]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4527 4723]))                  
+                :type "class")
+                nil [4396 4723])
+            ("Port" type
+               (:superclasses ("Entity")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Entity" code nil (reparse-symbol indented_block_body) [4791 4812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4817 4834])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4839 4868])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4873 4889]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4761 4765])
+                            ("num" variable nil (reparse-symbol function_parameters) [4767 4770])
+                            ("hwAddr" variable nil (reparse-symbol function_parameters) [4772 4778])
+                            ("name" variable nil (reparse-symbol function_parameters) [4780 4784]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4747 4890]))                  
+                :type "class")
+                nil [4724 4890])
+            ("Controller" type
+               (:superclasses ("Entity")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4976 4990])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5023 5039])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5044 5088]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4933 4937])
+                            ("name" variable nil (reparse-symbol function_parameters) [4939 4943])
+                            ("handshake_complete" variable nil (reparse-symbol function_parameters) [4945 4963]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4920 5089])
+                    ("handshake_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5116 5120]))                          )
+                        (reparse-symbol indented_block_body) [5092 5158]))                  
+                :type "class")
+                nil [4891 5158])
+            ("Topology" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("_eventMixin_events" variable nil (reparse-symbol indented_block_body) [5190 5323])
+                    ("_core_name" variable nil (reparse-symbol indented_block_body) [5327 5350])
+                    ("__init__" function
+                       (:suite 
+                          ( ("EventMixin" code nil (reparse-symbol indented_block_body) [5426 5451])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5456 5475])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5480 5496])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5501 5532])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5695 5777]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5398 5402])
+                            ("name" variable nil (reparse-symbol function_parameters) [5404 5408]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5384 5778])
+                    ("getEntityByID" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5800 5804])
+                            ("ID" variable nil (reparse-symbol function_parameters) [5806 5808])
+                            ("fail" variable nil (reparse-symbol function_parameters) [5810 5814]))                          
+                        :documentation "
+    Raises an exception if fail is True and the entity doesn't exist
+    See also: The 'entity' property.
+    ")
+                        (reparse-symbol indented_block_body) [5781 6042])
+                    ("removeEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6063 6067])
+                            ("entity" variable nil (reparse-symbol function_parameters) [6069 6075]))                          )
+                        (reparse-symbol indented_block_body) [6045 6360])
+                    ("addEntity" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6378 6382])
+                            ("entity" variable nil (reparse-symbol function_parameters) [6384 6390]))                          
+                        :documentation " Will raise an exception if entity.id already exists ")
+                        (reparse-symbol indented_block_body) [6363 6851])
+                    ("getEntitiesOfType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6877 6881])
+                            ("t" variable nil (reparse-symbol function_parameters) [6883 6884])
+                            ("subtypes" variable nil (reparse-symbol function_parameters) [6893 6901]))                          )
+                        (reparse-symbol indented_block_body) [6854 7089])
+                    ("addListener" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7108 7112])
+                            ("eventType" variable nil (reparse-symbol function_parameters) [7114 7123])
+                            ("handler" variable nil (reparse-symbol function_parameters) [7125 7132])
+                            ("once" variable nil (reparse-symbol function_parameters) [7134 7138])
+                            ("weak" variable nil (reparse-symbol function_parameters) [7146 7150])
+                            ("priority" variable nil (reparse-symbol function_parameters) [7176 7184])
+                            ("byName" variable nil (reparse-symbol function_parameters) [7191 7197]))                          
+                        :documentation "
+    We interpose on EventMixin.addListener to check if the eventType is
+    in our promise list. If so, trigger the handler for all previously
+    triggered events.
+    ")
+                        (reparse-symbol indented_block_body) [7092 7661])
+                    ("raiseEvent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7680 7684])
+                            ("event" variable nil (reparse-symbol function_parameters) [7686 7691])
+                            ("args" variable nil (reparse-symbol function_parameters) [7693 7698])
+                            ("kw" variable nil (reparse-symbol function_parameters) [7700 7704]))                          
+                        :documentation "
+    Whenever we raise any event, we also raise an Update, so we extend
+    the implementation in EventMixin.
+    ")
+                        (reparse-symbol indented_block_body) [7664 7986])
+                    ("serialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8004 8008]))                          
+                        :documentation "
+    Picklize our current entities.
+
+    Returns a hash: { id -> pickled entitiy }
+    ")
+                        (reparse-symbol indented_block_body) [7989 8254])
+                    ("deserializeAndMerge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8282 8286])
+                            ("id2entity" variable nil (reparse-symbol function_parameters) [8288 8297]))                          
+                        :documentation "
+    Given the output of topology.serialize(), deserialize each entity, and:
+      - insert a new Entry if it didn't already exist here, or
+      - update a pre-existing entry if it already existed
+    ")
+                        (reparse-symbol indented_block_body) [8257 9140])
+                    ("_fulfill_SwitchJoin_promise" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9175 9179])
+                            ("handler" variable nil (reparse-symbol function_parameters) [9181 9188]))                          
+                        :documentation " Trigger the SwitchJoin handler for all pre-existing switches ")
+                        (reparse-symbol indented_block_body) [9143 9354])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9369 9373]))                          )
+                        (reparse-symbol indented_block_body) [9357 9407])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9422 9426]))                          )
+                        (reparse-symbol indented_block_body) [9410 9689]))                  
+                :type "class")
+                nil [5159 9689]))          
+    :file "topology.py"
+    :pointmax 9689
+    :fsize 9688
+    :lastmodtime '(21344 58702 772984 347000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!topology!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

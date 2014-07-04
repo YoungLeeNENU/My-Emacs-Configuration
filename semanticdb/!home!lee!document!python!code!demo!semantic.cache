@@ -58,9 +58,9 @@
     :major-mode 'python-mode
     :tags nil
     :file "add.py"
-    :pointmax 68
-    :fsize 67
-    :lastmodtime '(21290 64459 127990 650000)
+    :pointmax 79
+    :fsize 78
+    :lastmodtime '(21359 689 824150 433000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "local.py"

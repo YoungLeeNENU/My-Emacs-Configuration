@@ -5,46 +5,80 @@
    (semanticdb-table "algorithm.py"
     :major-mode 'python-mode
     :tags 
-        '( ("os" include nil nil [129 138])
-            ("re" include nil nil [139 148])
-            ("sys" include nil nil [149 159])
-            ("math" include nil nil [160 171])
-            ("glob" include nil nil [172 183])
-            ("os.path" include nil nil [184 198])
+        '( ("os" include nil nil [131 140])
+            ("re" include nil nil [141 150])
+            ("sys" include nil nil [151 161])
+            ("math" include nil nil [162 173])
             ("Algorithm" type
-               (:members 
+               (:documentation "
+    "
+                :members 
                   ( ("__init__" function
                        (:suite 
-                          ( ("self" variable nil (reparse-symbol indented_block_body) [242 274]))                          
+                          ( ("\"\"\"
+        \"\"\"" code nil (reparse-symbol indented_block_body) [249 264]))                          
                         :parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [233 237]))                          
+                          ( ("self" variable nil (reparse-symbol function_parameters) [232 236]))                          
+                        :documentation "
+        "
                         :constructor-flag t)
-                        (reparse-symbol indented_block_body) [220 283])
+                        (reparse-symbol indented_block_body) [219 265])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [287 291]))                          
+                        :documentation "
+        ")
+                        (reparse-symbol indented_block_body) [278 320]))                  
+                :type "class")
+                nil [175 320])
+            ("IO" type
+               (:documentation "
+    Read/Write data 
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        \"\"\"" code nil (reparse-symbol indented_block_body) [418 433])
+                            ("self" variable nil (reparse-symbol indented_block_body) [442 474]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [401 405]))                          
+                        :documentation "
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [388 475])
                     ("Read" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [293 297])
-                            ("file" variable nil (reparse-symbol function_parameters) [299 303]))                          )
-                        (reparse-symbol indented_block_body) [284 430])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [497 501])
+                            ("filename" variable nil (reparse-symbol function_parameters) [503 511]))                          
+                        :documentation "
+        Read from the Input.txt
+        Arguments:
+        - `filename`: the input file
+        ")
+                        (reparse-symbol indented_block_body) [488 764])
                     ("Write" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [441 445])
-                            ("file" variable nil (reparse-symbol function_parameters) [447 451]))                          )
-                        (reparse-symbol indented_block_body) [431 539])
-                    ("Calc" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [549 553]))                          )
-                        (reparse-symbol indented_block_body) [540 573]))                  
+                          ( ("self" variable nil (reparse-symbol function_parameters) [779 783])
+                            ("filename" variable nil (reparse-symbol function_parameters) [785 793]))                          
+                        :documentation "
+        Write into the Output.txt
+        Arguments:
+        - `filename`:
+        ")
+                        (reparse-symbol indented_block_body) [769 988]))                  
                 :type "class")
-                nil [200 573])
-            ("if" code nil nil [574 757]))          
+                nil [330 988])
+            ("if" code nil nil [989 1025]))          
     :file "algorithm.py"
-    :pointmax 757
-    :fsize 756
-    :lastmodtime '(21339 44038 217220 595000)
+    :pointmax 862
+    :fsize 1029
+    :lastmodtime '(21392 29026 549013 333000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "README.html"
@@ -114,6 +148,116 @@ for the JavaScript code in this tag.
     :fsize 6852
     :lastmodtime '(21339 40137 789320 323000)
     :unmatched-syntax 'nil
+    )
+   (semanticdb-table "1008.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("vector" include (:system-flag t) nil [19 35])
+            ("map" include (:system-flag t) nil [36 49])
+            ("queue" include (:system-flag t) nil [50 65])
+            ("string.h" include (:system-flag t) nil [66 84])
+            ("algorithm" include (:system-flag t) nil [85 104])
+            ("stdlib.h" include (:system-flag t) nil [105 123])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [124 144])
+            ("maxn" variable
+               (:constant-flag t
+                :type "int")
+                nil [146 168])
+            ("inf" variable
+               (:constant-flag t
+                :type "int")
+                nil [181 208])
+            ("Edge" type
+               (:members 
+                  ( ("v" variable (:type "int") (reparse-symbol classsubparts) [263 272])
+                    ("u" variable (:type "int") (reparse-symbol classsubparts) [263 272])
+                    ("Edge" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_u" variable (:type "int") (reparse-symbol arg-sub-list) [309 317])
+                            ("_v" variable (:type "int") (reparse-symbol arg-sub-list) [320 328]))                          
+                        :type ("Edge" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [304 362])
+                    ("<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [394 408])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [408 422]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [372 507]))                  
+                :type "struct")
+                nil [221 510])
+            ("m" variable (:type "int") nil [512 529])
+            ("n" variable (:type "int") nil [512 529])
+            ("mym" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("Edge" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [530 548])
+            ("it" variable (:type ("iterator" type (:type "class") nil nil)) nil [565 577])
+            ("myv" variable
+               (:dereference 1
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [578 600])
+            ("dist" variable
+               (:dereference 1
+                :type "int")
+                nil [601 627])
+            ("path" variable
+               (:dereference 1
+                :type "int")
+                nil [601 627])
+            ("vis" variable
+               (:dereference 1
+                :type "bool")
+                nil [628 643])
+            ("q" variable (:type ("queue" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [644 657])
+            ("print" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [670 676])
+                    ("cost" variable (:type "int") (reparse-symbol arg-sub-list) [676 685]))                  
+                :type "void")
+                nil [659 869])
+            ("relax" function
+               (:arguments 
+                  ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [881 887])
+                    ("v" variable (:type "int") (reparse-symbol arg-sub-list) [888 894])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [895 901]))                  
+                :type "int")
+                nil [871 1031])
+            ("spfa" function
+               (:arguments 
+                  ( ("st" variable (:type "int") (reparse-symbol arg-sub-list) [1042 1049])
+                    ("en" variable (:type "int") (reparse-symbol arg-sub-list) [1050 1057]))                  
+                :type "int")
+                nil [1033 1734])
+            ("main" function (:type "int") nil [1736 2696]))          
+    :file "1008.cpp"
+    :pointmax 2697
+    :fsize 2898
+    :lastmodtime '(21392 30381 52978 700000)
+    :unmatched-syntax '((punctuation 564 . 565) (punctuation 563 . 564) (punctuation 561 . 562) (INT 558 . 561) (punctuation 557 . 558) (symbol 553 . 557) (punctuation 552 . 553) (symbol 549 . 552) (number 329 . 330) (punctuation 327 . 328) (number 318 . 319) (punctuation 316 . 317) (punctuation 564 . 565) (punctuation 563 . 564) (punctuation 561 . 562) (INT 558 . 561) (punctuation 557 . 558) (symbol 553 . 557) (punctuation 552 . 553) (symbol 549 . 552) (number 329 . 330) (punctuation 327 . 328) (number 318 . 319) (punctuation 316 . 317))
     )
    )
   :file "!home!lee!document!bitbucket!nenu_node!Problem-2!algorithm!semantic.cache"

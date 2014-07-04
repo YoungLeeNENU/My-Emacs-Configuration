@@ -1,0 +1,48 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "decorator.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("WhatFor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("it" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [182 185]))                          )
+                        (reparse-symbol indented_block_body) [158 223])
+                    ("uncommon" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [227 306]))                  
+                :type "class")
+                nil [131 306])
+            ("this_is" variable nil nil [525 544])
+            ("this_is" code nil nil [545 557])
+            ("this_is" code nil nil [558 576]))          
+    :file "decorator.py"
+    :pointmax 577
+    :fsize 576
+    :lastmodtime '(21387 16982 540570 626000)
+    :unmatched-syntax '((INDENT_BLOCK 171 . 306))
+    )
+   (semanticdb-table "mydecorator.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("mydecorator" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [146 154]))              ) nil [130 271]))          
+    :file "mydecorator.py"
+    :pointmax 271
+    :fsize 270
+    :lastmodtime '(21387 17428 804561 200000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!pox!pox!misc!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

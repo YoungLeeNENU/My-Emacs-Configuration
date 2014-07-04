@@ -1,0 +1,22 @@
+;; Object samples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "samples/"
+  :tables (list 
+   (semanticdb-table "topo.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Fires up topology, discovery, and a l2 learning switch controller
+\"\"\"" code nil nil [673 746])
+            ("launch" function nil nil [748 1013]))          
+    :file "topo.py"
+    :pointmax 1013
+    :fsize 1012
+    :lastmodtime '(21344 58702 580984 351000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!samples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

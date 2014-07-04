@@ -1,0 +1,610 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "addresses.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Classes for addresses of various types.
+\"\"\"" code nil nil [673 720])
+            ("__future__" include nil nil [722 759])
+            ("struct" include nil nil [760 773])
+            ("socket" include nil nil [774 787])
+            ("sys" include nil nil [840 850])
+            ("if" code nil nil [851 918])
+            ("\"\"\"
+# Unfinished oui name stuff formerly from packet library.
+
+    oui = int(a[0]) << 16 | int(a[1]) << 8 | int(a[2])
+
+    # check if globally unique
+    if resolve_name and not (a[0] & 0x2):
+        if _ethoui2name.has_key(oui):
+            return \"(%s):%02x:%02x:%02x\" %( _ethoui2name[oui], a[3],a[4],a[5])
+\"\"\"" code nil nil [920 1232])
+            ("_eth_oui_to_name" variable nil nil [1233 1254])
+            ("_load_oui_names" function nil nil [1256 2217])
+            ("_load_oui_names" code nil nil [2217 2234])
+            ("EthAddr" type
+               (:documentation "
+  An Ethernet (MAC) address type.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+    Understands Ethernet address is various forms.  Hex strings, raw byte
+    strings, etc.
+    \"\"\"" code nil (reparse-symbol indented_block_body) [2340 2443])
+                            ("if" code nil (reparse-symbol indented_block_body) [2492 3965]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2323 2327])
+                            ("addr" variable nil (reparse-symbol function_parameters) [2329 2333]))                          
+                        :documentation "
+    Understands Ethernet address is various forms.  Hex strings, raw byte
+    strings, etc.
+    "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2309 3965])
+                    ("isBridgeFiltered" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3990 3994]))                          
+                        :documentation "
+    Returns True if this is IEEE 802.1D MAC Bridge Filtered MAC Group Address,
+    01-80-C2-00-00-00 to 01-80-C2-00-00-0F. MAC frames that have a destination MAC address
+    within this range are not relayed by MAC bridges conforming to IEEE 802.1D
+    ")
+                        (reparse-symbol indented_block_body) [3968 4501])
+                    ("is_bridge_filtered" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4540 4544]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4504 4582])
+                    ("isGlobal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4599 4603]))                          
+                        :documentation "
+    Returns True if this is a globally unique (OUI enforced) address.
+    ")
+                        (reparse-symbol indented_block_body) [4585 4722])
+                    ("isLocal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4738 4742]))                          
+                        :documentation "
+    Returns True if this is a locally-administered (non-global) address.
+    ")
+                        (reparse-symbol indented_block_body) [4725 4890])
+                    ("is_local" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4919 4923]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4893 4952])
+                    ("is_global" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4982 4986]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4955 5016])
+                    ("isMulticast" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5036 5040]))                          
+                        :documentation "
+    Returns True if this is a multicast address.
+    ")
+                        (reparse-symbol indented_block_body) [5019 5164])
+                    ("is_multicast" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5197 5201]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5167 5234])
+                    ("toRaw" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5248 5252]))                          
+                        :documentation "
+    Returns the address as a 6-long bytes object.
+    ")
+                        (reparse-symbol indented_block_body) [5237 5344])
+                    ("toTuple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5360 5364]))                          
+                        :documentation "
+    Returns a 6-entry long tuple where each entry is the numeric value
+    of the corresponding byte of the address.
+    ")
+                        (reparse-symbol indented_block_body) [5347 5548])
+                    ("toStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5562 5566])
+                            ("separator" variable nil (reparse-symbol function_parameters) [5568 5577])
+                            ("resolveNames" variable nil (reparse-symbol function_parameters) [5585 5597]))                          
+                        :documentation "
+    Returns the address as string consisting of 12 hex chars separated
+    by separator.
+    If resolveNames is True, it may return company names based on
+    the OUI. (Currently unimplemented)
+    ")
+                        (reparse-symbol indented_block_body) [5551 5931])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5947 5951]))                          )
+                        (reparse-symbol indented_block_body) [5934 5978])
+                    ("__cmp__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5994 5998])
+                            ("other" variable nil (reparse-symbol function_parameters) [6000 6005]))                          )
+                        (reparse-symbol indented_block_body) [5981 6422])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6439 6443]))                          )
+                        (reparse-symbol indented_block_body) [6425 6480])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6497 6501]))                          )
+                        (reparse-symbol indented_block_body) [6483 6568])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6584 6588]))                          )
+                        (reparse-symbol indented_block_body) [6571 6604])
+                    ("__setattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6624 6628])
+                            ("a" variable nil (reparse-symbol function_parameters) [6630 6631])
+                            ("v" variable nil (reparse-symbol function_parameters) [6633 6634]))                          )
+                        (reparse-symbol indented_block_body) [6607 6754]))                  
+                :type "class")
+                nil [2237 6754])
+            ("IPAddr" type
+               (:documentation "
+  Represents an IPv4 address.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\" Can be initialized with several formats.
+        If addr is an int/long, then it is assumed to be in host byte order
+        unless networkOrder = True
+        Stored in network byte order as a signed int
+    \"\"\"" code nil (reparse-symbol indented_block_body) [6876 7092])
+                            ("if" code nil (reparse-symbol indented_block_body) [7148 7733]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6837 6841])
+                            ("addr" variable nil (reparse-symbol function_parameters) [6843 6847])
+                            ("networkOrder" variable nil (reparse-symbol function_parameters) [6849 6861]))                          
+                        :documentation " Can be initialized with several formats.
+        If addr is an int/long, then it is assumed to be in host byte order
+        unless networkOrder = True
+        Stored in network byte order as a signed int
+    "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6823 7733])
+                    ("toSignedN" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7751 7755]))                          
+                        :documentation " A shortcut ")
+                        (reparse-symbol indented_block_body) [7736 7827])
+                    ("toUnsignedN" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7847 7851]))                          
+                        :documentation " A shortcut ")
+                        (reparse-symbol indented_block_body) [7830 7925])
+                    ("toSigned" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7942 7946])
+                            ("networkOrder" variable nil (reparse-symbol function_parameters) [7948 7960]))                          
+                        :documentation " Return the address as a signed int ")
+                        (reparse-symbol indented_block_body) [7928 8165])
+                    ("toRaw" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8179 8183]))                          
+                        :documentation "
+    Returns the address as a four-character byte string.
+    ")
+                        (reparse-symbol indented_block_body) [8168 8300])
+                    ("toUnsigned" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8319 8323])
+                            ("networkOrder" variable nil (reparse-symbol function_parameters) [8325 8337]))                          
+                        :documentation "
+    Returns the address as an integer in either network or host (the
+    default) byte order.
+    ")
+                        (reparse-symbol indented_block_body) [8303 8571])
+                    ("toStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8585 8589]))                          
+                        :documentation " Return dotted quad representation ")
+                        (reparse-symbol indented_block_body) [8574 8680])
+                    ("in_network" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8699 8703])
+                            ("args" variable nil (reparse-symbol function_parameters) [8705 8710])
+                            ("kw" variable nil (reparse-symbol function_parameters) [8712 8716]))                          )
+                        (reparse-symbol indented_block_body) [8683 8758])
+                    ("inNetwork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8776 8780])
+                            ("network" variable nil (reparse-symbol function_parameters) [8782 8789])
+                            ("netmask" variable nil (reparse-symbol function_parameters) [8791 8798]))                          
+                        :documentation "
+    Returns True if this network is in the specified network.
+    network is a dotted quad (with or without a CIDR or normal style
+    netmask, which can also be specified separately via the netmask
+    parameter), or it can be a tuple of (address,network-bits) like that
+    returned by parse_cidr().
+    ")
+                        (reparse-symbol indented_block_body) [8761 9447])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9463 9467]))                          )
+                        (reparse-symbol indented_block_body) [9450 9494])
+                    ("__cmp__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9510 9514])
+                            ("other" variable nil (reparse-symbol function_parameters) [9516 9521]))                          )
+                        (reparse-symbol indented_block_body) [9497 9736])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9753 9757]))                          )
+                        (reparse-symbol indented_block_body) [9739 9794])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9811 9815]))                          )
+                        (reparse-symbol indented_block_body) [9797 9882])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9898 9902]))                          )
+                        (reparse-symbol indented_block_body) [9885 9918])
+                    ("__setattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9938 9942])
+                            ("a" variable nil (reparse-symbol function_parameters) [9944 9945])
+                            ("v" variable nil (reparse-symbol function_parameters) [9947 9948]))                          )
+                        (reparse-symbol indented_block_body) [9921 10068]))                  
+                :type "class")
+                nil [6756 10068])
+            ("netmask_to_cidr" function
+               (:documentation "
+  Takes a netmask as either an IPAddr or a string, and returns the number
+  of network bits.  e.g., 255.255.255.0 -> 24
+  Raise exception if subnet mask is not CIDR-compatible.
+  "
+                :arguments 
+                  ( ("dq" variable nil (reparse-symbol function_parameters) [10091 10093]))                  )
+                nil [10070 10546])
+            ("cidr_to_netmask" function
+               (:documentation "
+  Takes a number of network bits, and returns the corresponding netmask
+  as an IPAddr.  e.g., 24 -> 255.255.255.0
+  "
+                :arguments 
+                  ( ("bits" variable nil (reparse-symbol function_parameters) [10569 10573]))                  )
+                nil [10548 10787])
+            ("parse_cidr" function
+               (:documentation "
+  Takes a CIDR address or plain dotted-quad, and returns a tuple of address
+  and count-of-network-bits.
+  Can infer the network bits based on network classes if infer=True.
+  Can also take a string in the form 'address/netmask', as long as the
+  netmask is representable in CIDR.
+
+  FIXME: This function is badly named.
+  "
+                :arguments 
+                  ( ("addr" variable nil (reparse-symbol function_parameters) [10805 10809])
+                    ("infer" variable nil (reparse-symbol function_parameters) [10811 10816])
+                    ("allow_host" variable nil (reparse-symbol function_parameters) [10823 10833]))                  )
+                nil [10789 12292])
+            ("infer_netmask" function
+               (:documentation "
+  Uses network classes to guess the number of network bits
+  "
+                :arguments 
+                  ( ("addr" variable nil (reparse-symbol function_parameters) [12313 12317]))                  )
+                nil [12294 12852])
+            ("IP_ANY" variable nil nil [12854 12880])
+            ("IP_BROADCAST" variable nil nil [12881 12921])
+            ("if" code nil nil [12924 13647]))          
+    :file "addresses.py"
+    :pointmax 13648
+    :fsize 13647
+    :lastmodtime '(21344 58702 532984 353000)
+    :unmatched-syntax '((RETURN 5112 . 5118) (IF 5124 . 5126) (ELSE 5153 . 5157) (RETURN 4838 . 4844) (IF 4850 . 4852) (ELSE 4879 . 4883))
+    )
+   (semanticdb-table "util.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Various utility functions
+\"\"\"" code nil nil [678 711])
+            ("__future__" include nil nil [713 750])
+            ("traceback" include nil nil [752 768])
+            ("struct" include nil nil [769 782])
+            ("sys" include nil nil [783 793])
+            ("os" include nil nil [794 803])
+            ("time" include nil nil [804 815])
+            ("socket" include nil nil [816 829])
+            ("logging" include nil nil [891 905])
+            ("log" variable nil nil [906 937])
+            ("DirtyList" type
+               (:superclasses ("list")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("list" code nil (reparse-symbol indented_block_body) [1249 1281])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1286 1304])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1309 1329]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1225 1229])
+                            ("args" variable nil (reparse-symbol function_parameters) [1231 1236])
+                            ("kw" variable nil (reparse-symbol function_parameters) [1238 1242]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1211 1330])
+                    ("__setslice__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1351 1355])
+                            ("k" variable nil (reparse-symbol function_parameters) [1357 1358])
+                            ("v" variable nil (reparse-symbol function_parameters) [1360 1361]))                          )
+                        (reparse-symbol indented_block_body) [1333 1474])
+                    ("__delslice__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1495 1499])
+                            ("k" variable nil (reparse-symbol function_parameters) [1501 1502]))                          )
+                        (reparse-symbol indented_block_body) [1477 1615])
+                    ("append" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1630 1634])
+                            ("v" variable nil (reparse-symbol function_parameters) [1636 1637]))                          )
+                        (reparse-symbol indented_block_body) [1618 1701])
+                    ("extend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1716 1720])
+                            ("v" variable nil (reparse-symbol function_parameters) [1722 1723]))                          )
+                        (reparse-symbol indented_block_body) [1704 1787])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1802 1806])
+                            ("i" variable nil (reparse-symbol function_parameters) [1808 1809])
+                            ("v" variable nil (reparse-symbol function_parameters) [1811 1812]))                          )
+                        (reparse-symbol indented_block_body) [1790 1873])
+                    ("pop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1885 1889])
+                            ("i" variable nil (reparse-symbol function_parameters) [1891 1892]))                          )
+                        (reparse-symbol indented_block_body) [1876 1953])
+                    ("remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1968 1972])
+                            ("v" variable nil (reparse-symbol function_parameters) [1974 1975]))                          )
+                        (reparse-symbol indented_block_body) [1956 2059])
+                    ("reverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2075 2079]))                          )
+                        (reparse-symbol indented_block_body) [2062 2165])
+                    ("sort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2178 2182])
+                            ("arg" variable nil (reparse-symbol function_parameters) [2184 2188])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2190 2194]))                          )
+                        (reparse-symbol indented_block_body) [2168 2296])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2316 2320])
+                            ("k" variable nil (reparse-symbol function_parameters) [2322 2323])
+                            ("v" variable nil (reparse-symbol function_parameters) [2325 2326]))                          )
+                        (reparse-symbol indented_block_body) [2299 2550])
+                    ("__delitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2570 2574])
+                            ("k" variable nil (reparse-symbol function_parameters) [2576 2577]))                          )
+                        (reparse-symbol indented_block_body) [2553 2774])
+                    ("_smudge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2790 2794])
+                            ("reason" variable nil (reparse-symbol function_parameters) [2796 2802])
+                            ("k" variable nil (reparse-symbol function_parameters) [2804 2805])
+                            ("v" variable nil (reparse-symbol function_parameters) [2807 2808]))                          )
+                        (reparse-symbol indented_block_body) [2777 2943]))                  
+                :type "class")
+                nil [940 2943])
+            ("DirtyDict" type
+               (:documentation "
+  A dict that tracks whether values have been changed shallowly.
+  If you set a callback, it will be called when the value changes, and
+  passed three values: \"add\"/\"modify\"/\"delete\", key, value
+  "
+                :superclasses ("dict")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("dict" code nil (reparse-symbol indented_block_body) [3216 3248])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3253 3271])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3276 3296]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3192 3196])
+                            ("args" variable nil (reparse-symbol function_parameters) [3198 3203])
+                            ("kw" variable nil (reparse-symbol function_parameters) [3205 3209]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3178 3297])
+                    ("_smudge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3313 3317])
+                            ("reason" variable nil (reparse-symbol function_parameters) [3319 3325])
+                            ("k" variable nil (reparse-symbol function_parameters) [3327 3328])
+                            ("v" variable nil (reparse-symbol function_parameters) [3330 3331]))                          )
+                        (reparse-symbol indented_block_body) [3300 3466])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3486 3490])
+                            ("k" variable nil (reparse-symbol function_parameters) [3492 3493])
+                            ("v" variable nil (reparse-symbol function_parameters) [3495 3496]))                          )
+                        (reparse-symbol indented_block_body) [3469 3662])
+                    ("__delitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3682 3686])
+                            ("k" variable nil (reparse-symbol function_parameters) [3688 3689]))                          )
+                        (reparse-symbol indented_block_body) [3665 3763]))                  
+                :type "class")
+                nil [2945 3763])
+            ("set_extend" function
+               (:documentation "
+  Adds item to the list l at position index.  If index is beyond the end
+  of the list, it will pad the list out until it's large enough, using
+  emptyValue for the new entries.
+  "
+                :arguments 
+                  ( ("l" variable nil (reparse-symbol function_parameters) [3781 3782])
+                    ("index" variable nil (reparse-symbol function_parameters) [3784 3789])
+                    ("item" variable nil (reparse-symbol function_parameters) [3791 3795])
+                    ("emptyValue" variable nil (reparse-symbol function_parameters) [3797 3807]))                  )
+                nil [3765 4097])
+            ("str_to_dpid" function
+               (:documentation "
+  Convert a DPID in the canonical string form into a long int.
+  "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [4116 4117]))                  )
+                nil [4099 4443])
+            ("strToDPID" variable nil nil [4443 4466])
+            ("dpid_to_str" function
+               (:documentation "
+  Convert a DPID from a long into into the canonical string form.
+  "
+                :arguments 
+                  ( ("dpid" variable nil (reparse-symbol function_parameters) [4486 4490])
+                    ("alwaysLong" variable nil (reparse-symbol function_parameters) [4492 4502]))                  )
+                nil [4469 4897])
+            ("dpidToStr" variable nil nil [4897 4920])
+            ("assert_type" function
+               (:documentation "
+  Assert that a parameter is of a given type.
+  Raise an Assertion Error with a descriptive error msg if not.
+
+  name: name of the parameter for error messages
+  obj: parameter value to be checked
+  types: type or list or tuple of types that is acceptable
+  none_ok: whether 'None' is an ok value
+  "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4952 4956])
+                    ("obj" variable nil (reparse-symbol function_parameters) [4958 4961])
+                    ("types" variable nil (reparse-symbol function_parameters) [4963 4968])
+                    ("none_ok" variable nil (reparse-symbol function_parameters) [4970 4977]))                  )
+                nil [4936 5938])
+            ("init_helper" function
+               (:documentation "
+  Inside a class's __init__, this will copy keyword arguments to fields
+  of the same name.  See libopenflow for an example.
+  "
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [5957 5960])
+                    ("kw" variable nil (reparse-symbol function_parameters) [5962 5964]))                  )
+                nil [5940 6302])
+            ("initHelper" variable nil nil [6302 6326])
+            ("make_pinger" function (:documentation "
+  A pinger is basically a thing to let you wake a select().
+  On Unix systems, this makes a pipe pair.  But on Windows, select() only
+  works with sockets, so it makes a pair of connected sockets.
+  ") nil [6342 9406])
+            ("makePinger" variable nil nil [9406 9430])
+            ("is_subclass" function
+               (:documentation "
+  A more sensible version of the issubclass builtin
+  "
+                :arguments 
+                  ( ("cls" variable nil (reparse-symbol function_parameters) [9463 9466])
+                    ("classinfo" variable nil (reparse-symbol function_parameters) [9468 9477]))                  )
+                nil [9446 9626])
+            ("str_to_bool" function
+               (:documentation "
+  Given a string, parses out whether it is meant to be True or not
+  "
+                :arguments 
+                  ( ("s" variable nil (reparse-symbol function_parameters) [9645 9646]))                  )
+                nil [9628 10050])
+            ("hexdump" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [10065 10069]))              ) nil [10052 10610])
+            ("connect_socket_with_backoff" function (:arguments 
+              ( ("address" variable nil (reparse-symbol function_parameters) [10645 10652])
+                ("port" variable nil (reparse-symbol function_parameters) [10654 10658])
+                ("max_backoff_seconds" variable nil (reparse-symbol function_parameters) [10660 10679]))              ) nil [10612 11539])
+            ("_scalar_types" variable nil nil [11541 11593])
+            ("is_scalar" function (:arguments 
+              ( ("v" variable nil (reparse-symbol function_parameters) [11610 11611]))              ) nil [11595 11651])
+            ("fields_of" function
+               (:documentation "
+  Returns key/value pairs of things that seem like public fields of an object.
+  "
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [11668 11671])
+                    ("primitives_only" variable nil (reparse-symbol function_parameters) [11673 11688])
+                    ("primitives_and_composites_only" variable nil (reparse-symbol function_parameters) [11711 11741])
+                    ("allow_caps" variable nil (reparse-symbol function_parameters) [11749 11759]))                  )
+                nil [11653 12406])
+            ("if" code nil nil [12408 12565]))          
+    :file "util.py"
+    :pointmax 12565
+    :fsize 12564
+    :lastmodtime '(21370 5417 339041 271000)
+    :unmatched-syntax '((INDENT_BLOCK 11184 . 11525) (NEWLINE 11183 . 11184) (COLON 11182 . 11183) (TRY 11070 . 11073) (AS 11178 . 11180))
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

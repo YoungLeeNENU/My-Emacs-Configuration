@@ -1,0 +1,452 @@
+;; Object web/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web/"
+  :tables (list 
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+This just launches the webcore component.
+
+Possibly, webcore should just be moved here.
+\"\"\"" code nil nil [673 768])
+            ("launch" function (:arguments 
+              ( ("address" variable nil (reparse-symbol function_parameters) [782 789])
+                ("port" variable nil (reparse-symbol function_parameters) [794 798])
+                ("static" variable nil (reparse-symbol function_parameters) [805 811]))              ) nil [770 886]))          
+    :file "__init__.py"
+    :pointmax 886
+    :fsize 885
+    :lastmodtime '(21344 58702 736984 347000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "webcore.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Webcore is a basic web server framework based on the SocketServer-based
+BaseHTTPServer that comes with Python.  The big difference is that this
+one can carve up URL-space by prefix, such that \"/foo/*\" gets handled by
+a different request handler than \"/bar/*\".  I refer to this as \"splitting\".
+
+You should also be able to make a request handler written without splitting
+run under Webcore.  This may not work for all request handlers, but it
+definitely works for some. :)  The easiest way to do this is with the
+wrapRequestHandler() function, like so:
+  from CGIHTTPServer import CGIHTTPRequestHandler as CHRH
+  core.WebServer.set_handler(\"/foo\", wrapRequestHandler(CHRH))
+
+.. now URLs under the /foo/ directory will let you browse through the
+filesystem next to pox.py.  If you create a cgi-bin directory next to
+pox.py, you'll be able to run executables in it.
+
+For this specific purpose, there's actually a SplitCGIRequestHandler
+which demonstrates wrapping a normal request handler while also
+customizing it a bit -- SplitCGIRequestHandler shoehorns in functionality
+to use arbitrary base paths.
+
+BaseHTTPServer is not very fast and needs to run on its own thread.
+It'd actually be great to have a version of this written against, say,
+CherryPy, but I did want to include a simple, dependency-free web solution.
+\"\"\"" code nil nil [678 2000])
+            ("SocketServer" include nil nil [2002 2041])
+            ("BaseHTTPServer" include nil nil [2042 2070])
+            ("time" include nil nil [2071 2093])
+            ("select" include nil nil [2094 2107])
+            ("threading" include nil nil [2108 2124])
+            ("random" include nil nil [2126 2139])
+            ("hashlib" include nil nil [2140 2154])
+            ("base64" include nil nil [2155 2168])
+            ("pox.core" include nil nil [2170 2195])
+            ("os" include nil nil [2197 2206])
+            ("posixpath" include nil nil [2207 2223])
+            ("urllib" include nil nil [2224 2237])
+            ("cgi" include nil nil [2238 2248])
+            ("errno" include nil nil [2249 2261])
+            ("try" code nil nil [2262 2356])
+            ("log" variable nil nil [2357 2379])
+            ("try" code nil nil [2380 2571])
+            ("_setAttribs" function (:arguments 
+              ( ("parent" variable nil (reparse-symbol function_parameters) [2589 2595])
+                ("child" variable nil (reparse-symbol function_parameters) [2597 2602]))              ) nil [2572 2883])
+            ("SimpleHTTPServer" include nil nil [2884 2907])
+            ("SimpleHTTPServer" include nil nil [2908 2961])
+            ("SplitRequestHandler" type
+               (:documentation "
+  To write HTTP handlers for POX, inherit from this class instead of
+  BaseHTTPRequestHandler.  The interface should be the same -- the same
+  variables should be set, and the same do_GET(), etc. methods should
+  be called.
+
+  In addition, there will be a self.args which can be specified
+  when you set_handler() on the server.
+  "
+                :superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("_setAttribs" code nil (reparse-symbol indented_block_body) [3439 3464])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3470 3490])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3495 3511])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3516 3536])
+                            ("self" code nil (reparse-symbol indented_block_body) [3542 3554]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3406 3410])
+                            ("parent" variable nil (reparse-symbol function_parameters) [3412 3418])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [3420 3426])
+                            ("args" variable nil (reparse-symbol function_parameters) [3428 3432]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3392 3555])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3569 3573]))                          
+                        :documentation "
+    This is called by __init__ during initialization.  You can
+    override it to, for example, parse .args.
+    ")
+                        (reparse-symbol indented_block_body) [3558 3710])
+                    ("handle_one_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3737 3741]))                          )
+                        (reparse-symbol indented_block_body) [3713 3784])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3798 3802]))                          )
+                        (reparse-symbol indented_block_body) [3787 3845])
+                    ("_split_dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3869 3873])
+                            ("command" variable nil (reparse-symbol function_parameters) [3875 3882])
+                            ("handler" variable nil (reparse-symbol function_parameters) [3884 3891]))                          )
+                        (reparse-symbol indented_block_body) [3848 4152])
+                    ("log_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4172 4176])
+                            ("code" variable nil (reparse-symbol function_parameters) [4178 4182])
+                            ("size" variable nil (reparse-symbol function_parameters) [4190 4194]))                          )
+                        (reparse-symbol indented_block_body) [4155 4308])
+                    ("log_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4326 4330])
+                            ("fmt" variable nil (reparse-symbol function_parameters) [4332 4335])
+                            ("args" variable nil (reparse-symbol function_parameters) [4337 4342]))                          )
+                        (reparse-symbol indented_block_body) [4311 4396])
+                    ("log_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4416 4420])
+                            ("fmt" variable nil (reparse-symbol function_parameters) [4422 4425])
+                            ("args" variable nil (reparse-symbol function_parameters) [4427 4432]))                          )
+                        (reparse-symbol indented_block_body) [4399 4485]))                  
+                :type "class")
+                nil [2964 4485])
+            ("_favicon" variable nil nil [4487 4776])
+            ("_favicon" variable nil nil [4777 4881])
+            ("CoreHandler" type
+               (:documentation "
+  A default page to say hi from POX.
+  "
+                :superclasses ("SplitRequestHandler")
+                :members 
+                  ( ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4987 4991]))                          
+                        :documentation "Serve a GET request.")
+                        (reparse-symbol indented_block_body) [4975 5051])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5067 5071]))                          
+                        :documentation "Serve a HEAD request.")
+                        (reparse-symbol indented_block_body) [5054 5133])
+                    ("do_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5152 5156])
+                            ("is_get" variable nil (reparse-symbol function_parameters) [5158 5164]))                          )
+                        (reparse-symbol indented_block_body) [5136 5367])
+                    ("send_favicon" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5388 5392])
+                            ("is_get" variable nil (reparse-symbol function_parameters) [5394 5400]))                          )
+                        (reparse-symbol indented_block_body) [5370 5619])
+                    ("send_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5637 5641])
+                            ("is_get" variable nil (reparse-symbol function_parameters) [5643 5649]))                          )
+                        (reparse-symbol indented_block_body) [5622 6405]))                  
+                :type "class")
+                nil [4883 6405])
+            ("StaticContentHandler" type
+               (:documentation "
+  A SplitRequestHandler for serving static content
+
+  This is largely the same as the Python SimpleHTTPRequestHandler, but
+  we modify it to serve from arbitrary directories at arbitrary
+  positions in the URL space.
+  "
+                :superclasses ("SplitRequestHandler" "SimpleHTTPRequestHandler")
+                :members 
+                  ( ("server_version" variable nil (reparse-symbol indented_block_body) [6924 6967])
+                    ("send_head" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6986 6990]))                          )
+                        (reparse-symbol indented_block_body) [6971 7420])
+                    ("list_directory" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7443 7447])
+                            ("dirpath" variable nil (reparse-symbol function_parameters) [7449 7456]))                          )
+                        (reparse-symbol indented_block_body) [7423 9042])
+                    ("translate_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9065 9069])
+                            ("path" variable nil (reparse-symbol function_parameters) [9071 9075])
+                            ("include_prefix" variable nil (reparse-symbol function_parameters) [9077 9091]))                          
+                        :documentation "
+    Translate a web-path to a local filesystem path
+
+    Odd path elements (e.g., ones that contain local filesystem path
+    separators) are stripped.
+    ")
+                        (reparse-symbol indented_block_body) [9045 10168]))                  
+                :type "class")
+                nil [6407 10168])
+            ("wrapRequestHandler" function (:arguments 
+              ( ("handlerClass" variable nil (reparse-symbol function_parameters) [10194 10206]))              ) nil [10170 10319])
+            ("CGIHTTPServer" include nil nil [10321 10368])
+            ("SplitCGIRequestHandler" type
+               (:documentation "
+  Runs CGIRequestHandler serving from an arbitrary path.
+  This really should be a feature of CGIRequestHandler and the way of
+  implementing it here is scary and awful, but it at least sort of works.
+  "
+                :superclasses ("SplitRequestHandler" "CGIHTTPRequestHandler" "object")
+                :members 
+                  ( ("__lock" variable nil (reparse-symbol indented_block_body) [10697 10722])
+                    ("_split_dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10746 10750])
+                            ("command" variable nil (reparse-symbol function_parameters) [10752 10759]))                          )
+                        (reparse-symbol indented_block_body) [10725 10956]))                  
+                :type "class")
+                nil [10369 10956])
+            ("SplitterRequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("BaseHTTPRequestHandler" code nil (reparse-symbol indented_block_body) [11255 11305]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11029 11033])
+                            ("args" variable nil (reparse-symbol function_parameters) [11035 11040])
+                            ("kw" variable nil (reparse-symbol function_parameters) [11042 11046]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11015 11306])
+                    ("log_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11326 11330])
+                            ("code" variable nil (reparse-symbol function_parameters) [11332 11336])
+                            ("size" variable nil (reparse-symbol function_parameters) [11344 11348]))                          )
+                        (reparse-symbol indented_block_body) [11309 11454])
+                    ("log_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11472 11476])
+                            ("fmt" variable nil (reparse-symbol function_parameters) [11478 11481])
+                            ("args" variable nil (reparse-symbol function_parameters) [11483 11488]))                          )
+                        (reparse-symbol indented_block_body) [11457 11534])
+                    ("log_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11554 11558])
+                            ("fmt" variable nil (reparse-symbol function_parameters) [11560 11563])
+                            ("args" variable nil (reparse-symbol function_parameters) [11565 11570]))                          )
+                        (reparse-symbol indented_block_body) [11537 11615])
+                    ("handle_one_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11641 11645]))                          )
+                        (reparse-symbol indented_block_body) [11618 12722]))                  
+                :type "class")
+                nil [10958 12722])
+            ("SplitThreadedServer" type
+               (:superclasses ("ThreadingMixIn" "HTTPServer")
+                :members 
+                  ( ("matches" variable nil (reparse-symbol indented_block_body) [12781 12793])
+                    ("set_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13025 13029])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [13031 13037])
+                            ("handler" variable nil (reparse-symbol function_parameters) [13039 13046])
+                            ("args" variable nil (reparse-symbol function_parameters) [13048 13052])
+                            ("trim_prefix" variable nil (reparse-symbol function_parameters) [13061 13072]))                          )
+                        (reparse-symbol indented_block_body) [13008 13397])
+                    ("add_static_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13420 13424])
+                            ("www_path" variable nil (reparse-symbol function_parameters) [13426 13434])
+                            ("local_path" variable nil (reparse-symbol function_parameters) [13436 13446])
+                            ("relative" variable nil (reparse-symbol function_parameters) [13453 13461]))                          
+                        :documentation "
+    Serves a directory of static content.
+    www_path is the prefix of the URL that maps to this directory.
+    local_path is the directory to serve content from.  If it's not
+    specified, it is assume to be a directory with the same name as
+    www_path.
+    relative, if True, means that the local path is to be a sibling
+    of the calling module.
+    For an example, see the launch() function in this module.
+    ")
+                        (reparse-symbol indented_block_body) [13400 14458]))                  
+                :type "class")
+                nil [12724 14458])
+            ("launch" function (:arguments 
+              ( ("address" variable nil (reparse-symbol function_parameters) [14472 14479])
+                ("port" variable nil (reparse-symbol function_parameters) [14484 14488])
+                ("static" variable nil (reparse-symbol function_parameters) [14495 14501]))              ) nil [14460 15821]))          
+    :file "webcore.py"
+    :pointmax 15821
+    :fsize 15820
+    :lastmodtime '(21382 38052 7949 452000)
+    :unmatched-syntax '((INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (NAME 15823 . 15839) (NEWLINE 15840 . 15841) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (NAME 15823 . 15839) (NEWLINE 15840 . 15841) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547) (INDENT_BLOCK 7551 . 7822) (NEWLINE 7550 . 7551) (COLON 7549 . 7550) (TRY 7491 . 7494) (AS 7545 . 7547))
+    )
+   (semanticdb-table "jsonrpc.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A library for implementing JSON-RPC based web services
+
+This is lightweight, low on features, and not a whole lot of effort
+has been paid to really complying with the JSON-RPC spec.  Feel
+free to improve it. ;)
+
+It'd be nice to factor the JSON-RPC stuff out so that it could
+be used with something besides just HTTP.
+
+Also, it has some capability for compatibility with Qooxdoo.
+\"\"\"" code nil nil [678 1064])
+            ("json" include nil nil [1066 1077])
+            ("sys" include nil nil [1078 1088])
+            ("pox.web.webcore" include nil nil [1089 1118])
+            ("pox.core" include nil nil [1119 1144])
+            ("log" variable nil nil [1145 1167])
+            ("ABORT" variable nil nil [1259 1275])
+            ("JSONRPCHandler" type
+               (:documentation "
+  Meant for implementing JSON-RPC web services
+
+  Implement RPC methods by prefacing them with \"_exec_\".
+
+  config keys of note:
+   \"auth\" is a function which takes a username and password and returns
+       True if they are a valid user.  If set, turns on authentication.
+   \"auth_realm\" is the optional authentication realm name.
+   \"qx\" turns on Qooxdoo mode by default (it's usually switched on by
+       seeing a \"service\" key in the request).
+
+  There are a couple of extensions to JSON-RPC:
+
+  If you want to use positional AND named parameters, in a request, use
+  \"params\" for the former and \"kwparams\" for the latter.
+
+  There's an optional \"service\" key in requests.  This comes from qooxdoo.
+  If it is given, look for the _exec_ method on some otherobject instead
+  of self.  Put the additional services in an arg named 'services'.
+  "
+                :superclasses ("SplitRequestHandler")
+                :members 
+                  ( ("protocol_version" variable nil (reparse-symbol indented_block_body) [2181 2210])
+                    ("QX_ERR_ILLEGAL_SERVICE" variable nil (reparse-symbol indented_block_body) [2214 2240])
+                    ("QX_ERR_SERVICE_NOT_FOUND" variable nil (reparse-symbol indented_block_body) [2243 2271])
+                    ("QX_ERR_CLASS_NOT_FOUND" variable nil (reparse-symbol indented_block_body) [2274 2300])
+                    ("QX_ERR_METHOD_NOT_FOUND" variable nil (reparse-symbol indented_block_body) [2303 2330])
+                    ("QX_ERR_PARAMETER_MISMATCH" variable nil (reparse-symbol indented_block_body) [2333 2362])
+                    ("QX_ERR_PERMISSION_DENIED" variable nil (reparse-symbol indented_block_body) [2365 2393])
+                    ("QX_ORIGIN_SERVER" variable nil (reparse-symbol indented_block_body) [2397 2417])
+                    ("QX_ORIGIN_METHOD" variable nil (reparse-symbol indented_block_body) [2420 2440])
+                    ("ERR_PARSE_ERROR" code nil (reparse-symbol indented_block_body) [2444 2468])
+                    ("ERR_INVALID_REQUEST" code nil (reparse-symbol indented_block_body) [2497 2525])
+                    ("ERR_METHOD_NOT_FOUND" code nil (reparse-symbol indented_block_body) [2528 2557])
+                    ("ERR_INVALID_PARAMS" code nil (reparse-symbol indented_block_body) [2581 2608])
+                    ("ERR_INTERNAL_ERROR" code nil (reparse-symbol indented_block_body) [2611 2638])
+                    ("ERR_SERVER_ERROR" code nil (reparse-symbol indented_block_body) [2664 2689])
+                    ("ERR_METHOD_ERROR" variable nil (reparse-symbol indented_block_body) [2718 2739])
+                    ("ERROR_XLATE" variable nil (reparse-symbol indented_block_body) [2779 2984])
+                    ("_qx" variable nil (reparse-symbol indented_block_body) [2988 2999])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3014 3018]))                          )
+                        (reparse-symbol indented_block_body) [3003 3352])
+                    ("_send_auth_header" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3378 3382]))                          )
+                        (reparse-symbol indented_block_body) [3355 3519])
+                    ("_do_auth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3536 3540]))                          )
+                        (reparse-symbol indented_block_body) [3522 4024])
+                    ("_translate_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4049 4053])
+                            ("e" variable nil (reparse-symbol function_parameters) [4055 4056]))                          )
+                        (reparse-symbol indented_block_body) [4027 4304])
+                    ("_handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4328 4332])
+                            ("data" variable nil (reparse-symbol function_parameters) [4334 4338]))                          )
+                        (reparse-symbol indented_block_body) [4315 5681])
+                    ("do_POST" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5697 5701]))                          )
+                        (reparse-symbol indented_block_body) [5684 7997]))                  
+                :type "class")
+                nil [1278 7997])
+            ("QXJSONRPCHandler" type
+               (:documentation "
+  A subclass of JSONRPCHandler which speaks something closer to
+  qooxdoo's version JSON-RPC.
+  "
+                :superclasses ("JSONRPCHandler")
+                :members 
+                  ( ("_qx" variable nil (reparse-symbol indented_block_body) [8148 8158]))                  
+                :type "class")
+                nil [7999 8159])
+            ("make_error" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [8243 8246])
+                ("code" variable nil (reparse-symbol function_parameters) [8282 8286])
+                ("data" variable nil (reparse-symbol function_parameters) [8338 8342]))              ) nil [8227 8459]))          
+    :file "jsonrpc.py"
+    :pointmax 8459
+    :fsize 8458
+    :lastmodtime '(21366 57010 715075 939000)
+    :unmatched-syntax '((INDENT_BLOCK 7020 . 7115) (NEWLINE 7019 . 7020) (COLON 7018 . 7019) (EXCEPT 7012 . 7018) (INDENT_BLOCK 6541 . 7006) (NEWLINE 6540 . 6541) (COLON 6539 . 6540) (TRY 6290 . 6293) (AS 6535 . 6537))
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

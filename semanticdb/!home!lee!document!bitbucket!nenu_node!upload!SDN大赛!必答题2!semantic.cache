@@ -1,0 +1,77 @@
+;; Object 必答题2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "必答题2/"
+  :tables (list 
+   (semanticdb-table "ssh_pox.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.core" include nil nil [41 66])
+            ("pox.lib.addresses" include nil nil [67 103])
+            ("pox.lib.addresses" include nil nil [104 141])
+            ("pox.openflow.libopenflow_01" include nil nil [142 182])
+            ("log" variable nil nil [246 268])
+            ("_handle_PacketIn" function (:arguments 
+              ( ("event" variable nil (reparse-symbol function_parameters) [333 338]))              ) nil [311 887])
+            ("launch" function nil nil [888 1002]))          
+    :file "ssh_pox.py"
+    :pointmax 1002
+    :fsize 1001
+    :lastmodtime '(21399 1910 276407 408000)
+    :unmatched-syntax '((INDENT_BLOCK 307 . 1106) (INDENT_BLOCK 1 . 307) (INDENT_BLOCK 308 . 1107) (INDENT_BLOCK 2 . 308))
+    )
+   (semanticdb-table "ssh_topo.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("mininet.net" include nil nil [53 84])
+            ("mininet.node" include nil nil [85 148])
+            ("mininet.log" include nil nil [149 184])
+            ("mininet.cli" include nil nil [185 212])
+            ("mininet.log" include nil nil [213 239])
+            ("mininet.node" include nil nil [240 269])
+            ("mininet.topolib" include nil nil [270 306])
+            ("mininet.link" include nil nil [307 336])
+            ("mininet.topo" include nil nil [337 366])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("\"Custom Switch() subclass that connects to different controllers\"" code nil (reparse-symbol indented_block_body) [405 470])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [486 490])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [492 503]))                          )
+                        (reparse-symbol indented_block_body) [475 569]))                  
+                :type "class")
+                nil [369 569])
+            ("connectToRootNS" function
+               (:documentation "Connect hosts to root namespace via switch. Starts network.
+      network: Mininet() network object
+      switch: switch to connect to root namespace
+      ip: IP address for root namespace node
+      routes: host networks to route to"
+                :arguments 
+                  ( ("network" variable nil (reparse-symbol function_parameters) [592 599])
+                    ("switch" variable nil (reparse-symbol function_parameters) [601 607])
+                    ("ip" variable nil (reparse-symbol function_parameters) [609 611])
+                    ("routes" variable nil (reparse-symbol function_parameters) [613 619]))                  )
+                nil [571 1257])
+            ("sshd" function (:arguments 
+              ( ("network" variable nil (reparse-symbol function_parameters) [1268 1275])
+                ("cmd" variable nil (reparse-symbol function_parameters) [1277 1280])
+                ("opts" variable nil (reparse-symbol function_parameters) [1299 1303])
+                ("ip" variable nil (reparse-symbol function_parameters) [1309 1311])
+                ("routes" variable nil (reparse-symbol function_parameters) [1331 1337])
+                ("switch" variable nil (reparse-symbol function_parameters) [1344 1350]))              ) nil [1258 2207])
+            ("if" code nil nil [2208 2949]))          
+    :file "ssh_topo.py"
+    :pointmax 2949
+    :fsize 2948
+    :lastmodtime '(21399 1944 936406 522000)
+    :unmatched-syntax '((INDENT_BLOCK 337 . 3241))
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!upload!SDN大赛!必答题2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,56 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SPHINXOPTS" variable nil nil [93 109])
+            ("SPHINXBUILD" variable (:default-value ("sphinx-build")) nil [109 138])
+            ("PAPER" variable nil nil [138 154])
+            ("BUILDDIR" variable (:default-value ("build")) nil [154 176])
+            ("PAPEROPT_a4" variable (:default-value ("-D" "latex_paper_size=a4")) nil [199 240])
+            ("PAPEROPT_letter" variable (:default-value ("-D" "latex_paper_size=letter")) nil [240 285])
+            ("ALLSPHINXOPTS" variable (:default-value ("-d" "$(BUILDDIR)/doctrees" "$(PAPEROPT_$(PAPER))" "$(SPHINXOPTS)" "source")) nil [285 369])
+            ("I18NSPHINXOPTS" variable (:default-value ("$(PAPEROPT_$(PAPER))" "$(SPHINXOPTS)" "source")) nil [446 506])
+            (".PHONY" function (:arguments ("help" "clean" "html" "dirhtml" "singlehtml" "pickle" "json" "htmlhelp" "qthelp" "devhelp" "epub" "latex" "latexpdf" "text" "man" "changes" "linkcheck" "doctest" "gettext")) nil [507 658])
+            ("help" function nil nil [658 1851])
+            ("clean" function nil nil [1852 1884])
+            ("html" function nil nil [1885 2021])
+            ("dirhtml" function nil nil [2022 2170])
+            ("singlehtml" function nil nil [2171 2329])
+            ("pickle" function nil nil [2330 2470])
+            ("json" function nil nil [2471 2603])
+            ("htmlhelp" function nil nil [2604 2810])
+            ("qthelp" function nil nil [2811 3193])
+            ("devhelp" function nil nil [3194 3483])
+            ("epub" function nil nil [3484 3618])
+            ("latex" function nil nil [3619 3896])
+            ("latexpdf" function nil nil [3897 4122])
+            ("text" function nil nil [4123 4259])
+            ("man" function nil nil [4260 4394])
+            ("texinfo" function nil nil [4395 4676])
+            ("info" function nil nil [4677 4903])
+            ("gettext" function nil nil [4904 5057])
+            ("changes" function nil nil [5058 5192])
+            ("linkcheck" function nil nil [5193 5401])
+            ("doctest" function nil nil [5402 5596])
+            ("RELEASES" variable (:default-value ("$(wildcard source/releases/v*)")) nil [5631 5673])
+            ("RELEASES_AUTHORS" variable (:default-value ("$(addsuffix /authors.txt, $(RELEASES))")) nil [5673 5731])
+            ("RELEASES_CLOSED" variable (:default-value ("$(addsuffix /closed.txt, $(RELEASES))")) nil [5731 5787])
+            ("ISSUE_URL" variable (:default-value ("https://github.com/tkf/emacs-jedi/issues")) nil [5787 5840])
+            ("releases" function (:arguments ("$(RELEASES_AUTHORS)" "$(RELEASES_CLOSED)")) nil [5841 5890])
+            ("source/releases/%/authors.txt" function (:arguments ("source/releases/%/range" "Makefile")) nil [5891 6101])
+            ("source/releases/%/closed.txt" function (:arguments ("source/releases/%/range" "Makefile")) nil [6102 6484])
+            ("*.mk" include nil nil [6539 6552]))          
+    :file "Makefile"
+    :pointmax 6552
+    :fsize 6551
+    :lastmodtime '(20974 36033 356029 16000)
+    :unmatched-syntax '((bol 5598 . 5598))
+    )
+   )
+  :file "!home!lee!.emacs.d!plugins!emacs-jedi!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

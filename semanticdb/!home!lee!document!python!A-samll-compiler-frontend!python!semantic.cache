@@ -32,7 +32,7 @@
     :file "main.py"
     :pointmax 541
     :fsize 700
-    :lastmodtime '(20953 27618 879871 400000)
+    :lastmodtime '(21416 55510 59977 806000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "symbol_list.py"
@@ -238,9 +238,65 @@
     :lastmodtime '(20953 27618 835871 402000)
     )
    (semanticdb-table "tree.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("node" type
+               (:members 
+                  ( ("is_root" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [69 73])
+                            ("judge" variable nil (reparse-symbol function_parameters) [75 80]))                          )
+                        (reparse-symbol indented_block_body) [57 128])
+                    ("is_terminal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [149 153])
+                            ("token" variable nil (reparse-symbol function_parameters) [155 160]))                          )
+                        (reparse-symbol indented_block_body) [133 212])
+                    ("set_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [230 234])
+                            ("node_value" variable nil (reparse-symbol function_parameters) [236 246])
+                            ("children" variable nil (reparse-symbol function_parameters) [255 263])
+                            ("parent" variable nil (reparse-symbol function_parameters) [270 276]))                          )
+                        (reparse-symbol indented_block_body) [217 527])
+                    ("level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [542 546]))                          )
+                        (reparse-symbol indented_block_body) [532 664])
+                    ("get_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [682 686]))                          )
+                        (reparse-symbol indented_block_body) [669 761])
+                    ("refresh_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [784 788])
+                            ("new_value" variable nil (reparse-symbol function_parameters) [790 799]))                          )
+                        (reparse-symbol indented_block_body) [766 869])
+                    ("drop_child" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [889 893])
+                            ("child" variable nil (reparse-symbol function_parameters) [895 900]))                          )
+                        (reparse-symbol indented_block_body) [874 1085])
+                    ("add_child" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1104 1108])
+                            ("child" variable nil (reparse-symbol function_parameters) [1110 1115]))                          )
+                        (reparse-symbol indented_block_body) [1090 1186]))                  
+                :type "class")
+                nil [39 1186]))          
     :file "tree.py"
+    :pointmax 1186
     :fsize 1295
     :lastmodtime '(20953 27618 915871 399000)
+    :unmatched-syntax 'nil
     )
    )
   :file "!home!lee!document!python!A-samll-compiler-frontend!python!semantic.cache"

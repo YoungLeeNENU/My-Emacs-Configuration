@@ -10,16 +10,405 @@ A super simple OpenFlow learning switch that installs rules for
 each pair of L2 addresses.
 \"\"\"" code nil nil [673 771])
             ("pox.core" include nil nil [824 849])
-            ("pox.openflow.libopenflow_01" include nil nil [850 890])
             ("log" variable nil nil [955 977])
             ("table" variable nil nil [1158 1168])
             ("_handle_PacketIn" function (:arguments 
-              ( ("event" variable nil (reparse-symbol function_parameters) [1269 1274]))              ) nil [1247 2721])
-            ("launch" function nil nil [2723 2849]))          
+              ( ("event" variable nil (reparse-symbol function_parameters) [1269 1274]))              ) nil [1247 2797])
+            ("launch" function nil nil [2799 2925]))          
     :file "l2_pairs.py"
-    :pointmax 2849
-    :fsize 2848
-    :lastmodtime '(21350 58809 923989 573000)
+    :pointmax 2925
+    :fsize 2924
+    :lastmodtime '(21369 29475 795733 863000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "loadbalancer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.core" include nil nil [146 171])
+            ("pox.openflow.libopenflow_01" include nil nil [197 237])
+            ("pox.lib.revent" include nil nil [238 266])
+            ("pox.lib.util" include nil nil [277 311])
+            ("pox.lib.packet.ethernet" include nil nil [312 356])
+            ("pox.lib.packet.arp" include nil nil [368 402])
+            ("pox.lib.addresses" include nil nil [418 454])
+            ("pox.lib.addresses" include nil nil [466 503])
+            ("time" include nil nil [516 527])
+            ("log" variable nil nil [529 551])
+            ("IDLE_TIMEOUT" variable nil nil [553 569])
+            ("HARD_TIMEOUT" variable nil nil [577 593])
+            ("LOAD_BALANCER_IP" variable nil nil [609 646])
+            ("LOAD_BALANCER_MAC" variable nil nil [647 695])
+            ("LoadBalancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("Server" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [814 834])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [865 888])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [920 936]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [786 790])
+                                    ("ip" variable nil (reparse-symbol function_parameters) [792 794])
+                                    ("mac" variable nil (reparse-symbol function_parameters) [796 799])
+                                    ("port" variable nil (reparse-symbol function_parameters) [801 805]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [772 937])
+                            ("__str__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [954 958]))                                  )
+                                (reparse-symbol indented_block_body) [942 1029]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [743 1029])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1079 1107])
+                            ("self" code nil (reparse-symbol indented_block_body) [1112 1137])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1162 1288])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1308 1328]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1046 1050])
+                            ("connection" variable nil (reparse-symbol function_parameters) [1052 1062]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1032 1329])
+                    ("get_next_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1353 1357]))                          )
+                        (reparse-symbol indented_block_body) [1332 1500])
+                    ("'''
+  def random_get_next_server(self):
+    pass
+
+  def load_based_get_next_server(self):
+    pass
+'''" code nil (reparse-symbol indented_block_body) [1503 1605])
+                    ("handle_arp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1629 1633])
+                            ("packet" variable nil (reparse-symbol function_parameters) [1635 1641])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [1643 1650]))                          )
+                        (reparse-symbol indented_block_body) [1613 2462])
+                    ("handle_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2485 2489])
+                            ("packet" variable nil (reparse-symbol function_parameters) [2491 2497])
+                            ("event" variable nil (reparse-symbol function_parameters) [2499 2504]))                          )
+                        (reparse-symbol indented_block_body) [2465 4418])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4443 4447])
+                            ("event" variable nil (reparse-symbol function_parameters) [4449 4454]))                          )
+                        (reparse-symbol indented_block_body) [4421 5383]))                  
+                :type "class")
+                nil [697 5383])
+            ("load_balancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [5333 5361]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5448 5452]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5434 5521])
+                    ("_handle_ConnectionUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5550 5554])
+                            ("event" variable nil (reparse-symbol function_parameters) [5556 5561]))                          )
+                        (reparse-symbol indented_block_body) [5524 5689]))                  
+                :type "class")
+                nil [5385 5689])
+            ("launch" function nil nil [5691 5815]))          
+    :file "loadbalancer.py"
+    :pointmax 5862
+    :fsize 6221
+    :lastmodtime '(21383 60593 793551 276000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "l2_learning.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+An L2 learning switch.
+
+It is derived from one written live for an SDN crash course.
+It is somwhat similar to NOX's pyswitch in that it installs
+exact-match rules for each flow.
+\"\"\"" code nil nil [673 858])
+            ("pox.core" include nil nil [860 885])
+            ("pox.openflow.libopenflow_01" include nil nil [886 926])
+            ("pox.lib.util" include nil nil [927 963])
+            ("pox.lib.util" include nil nil [964 1000])
+            ("time" include nil nil [1001 1012])
+            ("log" variable nil nil [1014 1036])
+            ("_flood_delay" variable nil nil [1134 1150])
+            ("LearningSwitch" type
+               (:documentation "
+  The learning switch \"brain\" associated with a single OpenFlow switch.
+
+  When we see a packet, we'd like to output it on a port which will
+  eventually lead to the destination.  To accomplish this, we build a
+  table that maps addresses to ports.
+
+  We populate the table by observing traffic.  When we see a packet
+  from some source coming from some port, we know that source is out
+  that port.
+
+  When we want to forward traffic, we look up the desintation in our
+  table.  If we don't know the port, we simply send the message out
+  all ports except the one it came in on.  (In the presence of loops,
+  this is bad!).
+
+  In short, our algorithm looks like this:
+
+  For each packet from the switch:
+  1) Use source address and switch port to update address/port table
+  2) Is transparent = False and either Ethertype is LLDP or the packet's
+     destination address is a Bridge Filtered address?
+     Yes:
+        2a) Drop packet -- don't forward link-local traffic (LLDP, 802.1x)
+            DONE
+  3) Is destination multicast?
+     Yes:
+        3a) Flood the packet
+            DONE
+  4) Port for destination address in our address/port table?
+     No:
+        4a) Flood the packet
+            DONE
+  5) Is output port the same as input port?
+     Yes:
+        5a) Drop packet and similar ones for a while
+  6) Install flow table entry in the switch so that this
+     flow goes out the appopriate port
+     6a) Send the packet out appropriate port
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2767 2795])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2800 2830])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2852 2871])
+                            ("connection" code nil (reparse-symbol indented_block_body) [2955 2984])
+                            ("self" code nil (reparse-symbol indented_block_body) [3051 3093]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2667 2671])
+                            ("connection" variable nil (reparse-symbol function_parameters) [2673 2683])
+                            ("transparent" variable nil (reparse-symbol function_parameters) [2685 2696]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2653 3094])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3220 3224])
+                            ("event" variable nil (reparse-symbol function_parameters) [3226 3231]))                          
+                        :documentation "
+    Handle packet in messages from the switch to implement above algorithm.
+    ")
+                        (reparse-symbol indented_block_body) [3198 6070]))                  
+                :type "class")
+                nil [1152 6070])
+            ("l2_learning" type
+               (:documentation "
+  Waits for OpenFlow switches to connect and makes them learning switches.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("core" code nil (reparse-symbol indented_block_body) [6227 6259])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6264 6294]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6203 6207])
+                            ("transparent" variable nil (reparse-symbol function_parameters) [6209 6220]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6189 6295])
+                    ("_handle_ConnectionUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6324 6328])
+                            ("event" variable nil (reparse-symbol function_parameters) [6330 6335]))                          )
+                        (reparse-symbol indented_block_body) [6298 6446]))                  
+                :type "class")
+                nil [6072 6446])
+            ("launch" function
+               (:documentation "
+  Starts an L2 learning switch.
+  "
+                :arguments 
+                  ( ("transparent" variable nil (reparse-symbol function_parameters) [6460 6471])
+                    ("hold_down" variable nil (reparse-symbol function_parameters) [6479 6488]))                  )
+                nil [6448 6780]))          
+    :file "l2_learning.py"
+    :pointmax 6780
+    :fsize 6779
+    :lastmodtime '(21344 58702 660984 348000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "myapp.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.core" include nil nil [95 120])
+            ("pox.lib.addresses" include nil nil [121 157])
+            ("pox.lib.addresses" include nil nil [174 211])
+            ("MyComponent" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [329 346])
+                            ("print" code nil (reparse-symbol indented_block_body) [355 414]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310])
+                            ("an_arg" variable nil (reparse-symbol function_parameters) [312 318]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [293 415])
+                    ("foo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [427 431]))                          )
+                        (reparse-symbol indented_block_body) [419 482]))                  
+                :type "class")
+                nil [235 482])
+            ("launch" function nil nil [483 690]))          
+    :file "myapp.py"
+    :pointmax 690
+    :fsize 689
+    :lastmodtime '(21362 50061 520173 440000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hub.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Turns your complex OpenFlow switches into stupid hubs.
+\"\"\"" code nil nil [673 735])
+            ("pox.core" include nil nil [737 762])
+            ("pox.openflow.libopenflow_01" include nil nil [763 803])
+            ("pox.lib.util" include nil nil [804 838])
+            ("log" variable nil nil [840 862])
+            ("_handle_ConnectionUp" function (:arguments 
+              ( ("event" variable nil (reparse-symbol function_parameters) [891 896]))              ) nil [865 1069])
+            ("launch" function nil nil [1070 1185]))          
+    :file "hub.py"
+    :pointmax 1185
+    :fsize 1184
+    :lastmodtime '(21344 58702 676984 348000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+This package contains some components to implement forwarding.
+\"\"\"" code nil nil [673 743]))          
+    :file "__init__.py"
+    :pointmax 744
+    :fsize 743
+    :lastmodtime '(21344 58702 664984 348000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "l2_flowvisor.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A modification of l2_pairs to work with FlowVisor on looped topologies.
+
+The spanning_tree component doesn't work with FlowVisor because FlowVisor
+does not virtualize the NO_FLOOD bit on switch ports, which is what
+the spanning_tree component would need to work properly.
+
+This hack of l2_pairs uses the spanning tree construction from the
+spanning_tree component, but instead of using it to modify port bits,
+instead of ever actually flooding, it \"simulates\" flooding by just
+adding all of the ports on the spanning tree as individual output
+actions.
+
+Requires discovery.
+\"\"\"" code nil nil [673 1253])
+            ("pox.core" include nil nil [1306 1331])
+            ("pox.openflow.libopenflow_01" include nil nil [1332 1372])
+            ("pox.openflow.spanning_tree" include nil nil [1373 1423])
+            ("log" variable nil nil [1487 1509])
+            ("table" variable nil nil [1690 1700])
+            ("tree" variable nil nil [1745 1754])
+            ("_handle_links" function
+               (:documentation "
+  Handle discovery link events to update the spanning tree
+  "
+                :arguments 
+                  ( ("event" variable nil (reparse-symbol function_parameters) [1775 1780]))                  )
+                nil [1756 1913])
+            ("_handle_PacketIn" function
+               (:documentation "
+  Handle messages the switch has sent us because it has no
+  matching rule.
+  "
+                :arguments 
+                  ( ("event" variable nil (reparse-symbol function_parameters) [1937 1942]))                  )
+                nil [1915 4238])
+            ("launch" function nil nil [4240 4519]))          
+    :file "l2_flowvisor.py"
+    :pointmax 4519
+    :fsize 4518
+    :lastmodtime '(21362 56179 516414 776000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "l2_nx.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A quick-and-dirty learning switch for Open vSwitch
+
+This learning switch requires Nicira extensions as found in Open vSwitch.
+Run with something like:
+  ./pox.py openflow.nicira --convert-packet-in forwarding.l2_nx
+
+This forwards based on ethernet source and destination addresses.  Where
+l2_pairs installs rules for each pair of source and destination address,
+this component uses two tables on the switch -- one for source addresses
+and one for destination addresses.  Specifically, we use tables 0 and 1
+on the switch to implement the following logic:
+0. Is this source address known?
+   NO: Send to controller (so we can learn it)
+1. Is this destination address known?
+   YES:  Forward out correct port
+   NO: Flood
+
+Note that unlike the other learning switches *we keep no state in the
+controller*.  In truth, we could implement this whole thing using OVS's
+learn action, but doing it something like is done here will still allow
+us to implement access control or something at the controller.
+\"\"\"" code nil nil [581 1586])
+            ("pox.core" include nil nil [1588 1613])
+            ("pox.lib.addresses" include nil nil [1614 1651])
+            ("pox.openflow.libopenflow_01" include nil nil [1652 1692])
+            ("pox.openflow.nicira" include nil nil [1693 1725])
+            ("pox.lib.revent" include nil nil [1726 1764])
+            ("log" variable nil nil [1829 1851])
+            ("_handle_PacketIn" function (:arguments 
+              ( ("event" variable nil (reparse-symbol function_parameters) [1876 1881]))              ) nil [1854 2491])
+            ("_handle_ConnectionUp" function (:arguments 
+              ( ("event" variable nil (reparse-symbol function_parameters) [2519 2524]))              ) nil [2493 3976])
+            ("launch" function nil nil [3978 4221]))          
+    :file "l2_nx.py"
+    :pointmax 4221
+    :fsize 4220
+    :lastmodtime '(21344 58702 620984 350000)
     :unmatched-syntax 'nil
     )
    )

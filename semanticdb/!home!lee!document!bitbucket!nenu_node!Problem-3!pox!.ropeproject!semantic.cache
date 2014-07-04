@@ -1,0 +1,28 @@
+;; Object .ropeproject/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".ropeproject/"
+  :tables (list 
+   (semanticdb-table "config.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("set_prefs" function
+               (:documentation "This function is called before opening the project"
+                :arguments 
+                  ( ("prefs" variable nil (reparse-symbol function_parameters) [45 50]))                  )
+                nil [31 3338])
+            ("project_opened" function
+               (:documentation "This function is called after opening the project"
+                :arguments 
+                  ( ("project" variable nil (reparse-symbol function_parameters) [3359 3366]))                  )
+                nil [3340 3429]))          
+    :file "config.py"
+    :pointmax 3462
+    :fsize 3461
+    :lastmodtime '(21386 42871 973408 181000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!pox!.ropeproject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

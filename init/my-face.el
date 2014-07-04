@@ -18,7 +18,7 @@
 ;; (require 'oneonone)
 
 (require 'emacs-color-themes)
-(load-theme 'spolsky t)
+(load-theme 'mccarthy t)
 ;; (load-theme 'dorsey t)
 
 ;;fullscreen

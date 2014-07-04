@@ -1,0 +1,331 @@
+;; Object loadbalancer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "loadbalancer/"
+  :tables (list 
+   (semanticdb-table "loadbalancer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Author Haichen Shen
+
+Module to perform round-robin load balancing.
+\"\"\"" code nil nil [23 97])
+            ("pox.core" include nil nil [99 124])
+            ("pox.openflow.libopenflow_01" include nil nil [150 190])
+            ("pox.lib.revent" include nil nil [191 219])
+            ("pox.lib.util" include nil nil [238 272])
+            ("pox.lib.packet.ethernet" include nil nil [273 317])
+            ("pox.lib.packet.arp" include nil nil [339 373])
+            ("pox.lib.addresses" include nil nil [390 426])
+            ("pox.lib.addresses" include nil nil [443 480])
+            ("time" include nil nil [503 514])
+            ("log" variable nil nil [516 538])
+            ("IDLE_TIMEOUT" variable nil nil [540 557])
+            ("HARD_TIMEOUT" variable nil nil [574 590])
+            ("LOAD_BALANCER_IP" variable nil nil [606 643])
+            ("LOAD_BALANCER_MAC" variable nil nil [662 710])
+            ("LoadBalancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("Server" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [854 874])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [905 928])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [960 976]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [826 830])
+                                    ("ip" variable nil (reparse-symbol function_parameters) [832 834])
+                                    ("mac" variable nil (reparse-symbol function_parameters) [836 839])
+                                    ("port" variable nil (reparse-symbol function_parameters) [841 845]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [812 977])
+                            ("__str__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [994 998]))                                  )
+                                (reparse-symbol indented_block_body) [982 1069]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [783 1069])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1119 1147])
+                            ("self" code nil (reparse-symbol indented_block_body) [1152 1177])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1215 1341])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1361 1381]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1086 1090])
+                            ("connection" variable nil (reparse-symbol function_parameters) [1092 1102]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1072 1382])
+                    ("get_next_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1406 1410]))                          )
+                        (reparse-symbol indented_block_body) [1385 1570])
+                    ("handle_arp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1589 1593])
+                            ("packet" variable nil (reparse-symbol function_parameters) [1595 1601])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [1603 1610]))                          )
+                        (reparse-symbol indented_block_body) [1573 2409])
+                    ("handle_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2432 2436])
+                            ("packet" variable nil (reparse-symbol function_parameters) [2438 2444])
+                            ("event" variable nil (reparse-symbol function_parameters) [2446 2451]))                          )
+                        (reparse-symbol indented_block_body) [2412 4368])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4393 4397])
+                            ("event" variable nil (reparse-symbol function_parameters) [4399 4404]))                          )
+                        (reparse-symbol indented_block_body) [4371 5353]))                  
+                :type "class")
+                nil [737 5353])
+            ("load_balancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [5435 5463]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5424 5428]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5410 5464])
+                    ("_handle_ConnectionUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5493 5497])
+                            ("event" variable nil (reparse-symbol function_parameters) [5499 5504]))                          )
+                        (reparse-symbol indented_block_body) [5467 5592]))                  
+                :type "class")
+                nil [5355 5592])
+            ("launch" function nil nil [5594 5718]))          
+    :file "loadbalancer.py"
+    :pointmax 5718
+    :fsize 5777
+    :lastmodtime '(21369 39014 239743 530000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ip_loadbalancer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+This component (which started in the carp branch) is a simple TCP load balancer.
+
+./pox.py misc.ip_loadbalancer --ip=<Service IP> --servers=<Server1 IP>,<Server2 IP>,...
+Give it a service_ip and a list of server IP addresses.  New TCP flows to the service IP will be randomly redirected to one of the server IPs.
+
+Servers are periodically probed to see if they're alive by sending them ARPs.
+\"\"\"" code nil nil [620 1019])
+            ("\"\"\"
+A very sloppy IP load balancer.
+
+Run it with --ip=<Service IP> --servers=IP1,IP2,...
+
+Please submit improvements. :)
+\"\"\"" code nil nil [1021 1145])
+            ("pox.core" include nil nil [1147 1172])
+            ("pox" include nil nil [1173 1183])
+            ("log" variable nil nil [1184 1212])
+            ("pox.lib.packet.ethernet" include nil nil [1214 1275])
+            ("pox.lib.packet.ipv4" include nil nil [1276 1312])
+            ("pox.lib.packet.arp" include nil nil [1313 1347])
+            ("pox.lib.addresses" include nil nil [1348 1393])
+            ("pox.lib.util" include nil nil [1394 1443])
+            ("pox.openflow.libopenflow_01" include nil nil [1445 1485])
+            ("time" include nil nil [1487 1498])
+            ("random" include nil nil [1499 1512])
+            ("FLOW_IDLE_TIMEOUT" variable nil nil [1514 1536])
+            ("FLOW_MEMORY_TIMEOUT" code nil nil [1537 1565])
+            ("MemoryEntry" type
+               (:documentation "
+  Record for flows we are balancing
+
+  Table entries in the switch \"remember\" flows for a period of time, but
+  rather than set their expirations to some long value (potentially leading
+  to lots of rules for dead connections), we let them expire from the
+  switch relatively quickly and remember them here in the controller for
+  longer.
+
+  Another tactic would be to increase the timeouts on the switch and use
+  the Nicira extension witch can match packets with FIN set to remove them
+  when the connection closes.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2149 2169])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2174 2206])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2211 2241])
+                            ("self" code nil (reparse-symbol indented_block_body) [2246 2260]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2143 2147])
+                            ("server" variable nil (reparse-symbol function_parameters) [2149 2155])
+                            ("first_packet" variable nil (reparse-symbol function_parameters) [2157 2169])
+                            ("client_port" variable nil (reparse-symbol function_parameters) [2171 2182]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2129 2301])
+                    ("refresh" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2317 2321]))                          )
+                        (reparse-symbol indented_block_body) [2304 2377])
+                    ("is_expired" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2408 2412]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2380 2453])
+                    ("key1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2478 2482]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2456 2628])
+                    ("key2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2653 2657]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2631 2805]))                  
+                :type "class")
+                nil [1569 2805])
+            ("iplb" type
+               (:documentation "
+  A simple IP load balancer
+
+  Give it a service_ip and a list of server IP addresses.  New TCP flows
+  to service_ip will be randomly redirected to one of the servers.
+
+  We probe the servers to see if they're alive by sending them ARPs.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3104 3140])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3145 3188])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3193 3214])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3219 3247])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3252 3274])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3296 3316])
+                            ("try" code nil (reparse-symbol indented_block_body) [3322 3454])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3459 3487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3544 3569])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3652 3672])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3848 3864])
+                            ("self" code nil (reparse-symbol indented_block_body) [3917 3933]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3095 3099])
+                            ("connection" variable nil (reparse-symbol function_parameters) [3101 3111])
+                            ("service_ip" variable nil (reparse-symbol function_parameters) [3113 3123])
+                            ("servers" variable nil (reparse-symbol function_parameters) [3125 3132]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3081 3997])
+                    ("_do_expire" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4111 4115]))                          
+                        :documentation "
+    Expire probes and \"memorized\" flows
+
+    Each of these should only have a limited lifetime.
+    ")
+                        (reparse-symbol indented_block_body) [4095 4750])
+                    ("_do_probe" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4768 4772]))                          
+                        :documentation "
+    Send an ARP to a server to see if it's still up
+    ")
+                        (reparse-symbol indented_block_body) [4753 5614])
+                    ("_probe_wait_time" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5651 5655]))                          
+                        :documentation "
+    Time to wait between probes
+    ")
+                        (reparse-symbol indented_block_body) [5617 5824])
+                    ("_pick_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5845 5849])
+                            ("key" variable nil (reparse-symbol function_parameters) [5851 5854])
+                            ("inport" variable nil (reparse-symbol function_parameters) [5856 5862]))                          
+                        :documentation "
+    Pick a server for a (hopefully) new connection
+    ")
+                        (reparse-symbol indented_block_body) [5827 6081])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6159 6163])
+                            ("event" variable nil (reparse-symbol function_parameters) [6165 6170]))                          )
+                        (reparse-symbol indented_block_body) [6137 9902]))                  
+                :type "class")
+                nil [2807 9902])
+            ("_dpid" variable nil nil [9968 9980])
+            ("launch" function (:arguments 
+              ( ("ip" variable nil (reparse-symbol function_parameters) [9994 9996])
+                ("servers" variable nil (reparse-symbol function_parameters) [9998 10005]))              ) nil [9982 10866]))          
+    :file "ip_loadbalancer.py"
+    :pointmax 10866
+    :fsize 10865
+    :lastmodtime '(21383 60335 217557 889000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "config.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [41 51])
+            ("mininet.net" include nil nil [53 84])
+            ("mininet.node" include nil nil [85 148])
+            ("mininet.log" include nil nil [149 184])
+            ("mininet.cli" include nil nil [185 212])
+            ("mininet.log" include nil nil [213 239])
+            ("mininet.node" include nil nil [240 269])
+            ("mininet.topolib" include nil nil [270 306])
+            ("mininet.link" include nil nil [307 336])
+            ("mininet.topo" include nil nil [337 366])
+            ("MultiSwitch" type
+               (:superclasses ("OVSSwitch")
+                :members 
+                  ( ("\"Custom Switch() subclass that connects to different controllers\"" code nil (reparse-symbol indented_block_body) [402 467])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [482 486])
+                            ("controllers" variable nil (reparse-symbol function_parameters) [488 499]))                          )
+                        (reparse-symbol indented_block_body) [472 558]))                  
+                :type "class")
+                nil [368 558])
+            ("if" code nil nil [559 1859]))          
+    :file "config.py"
+    :pointmax 1843
+    :fsize 1858
+    :lastmodtime '(21383 62856 997493 410000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!loadbalancer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

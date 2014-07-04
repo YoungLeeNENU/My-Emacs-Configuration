@@ -124,22 +124,13 @@
    (semanticdb-table "test.py"
     :major-mode 'python-mode
     :tags 
-        '( ("param" function (:arguments 
-              ( ("a" variable nil (reparse-symbol function_parameters) [51 52])
-                ("b" variable nil (reparse-symbol function_parameters) [54 56])
-                ("c" variable nil (reparse-symbol function_parameters) [58 61]))              ) nil [41 82])
-            ("foo" function (:arguments 
-              ( ("a" variable nil (reparse-symbol function_parameters) [91 92])
-                ("b" variable nil (reparse-symbol function_parameters) [94 95])
-                ("c" variable nil (reparse-symbol function_parameters) [97 98])
-                ("d" variable nil (reparse-symbol function_parameters) [100 101]))              ) nil [83 125])
-            ("args" variable nil nil [126 157])
-            ("args" variable nil nil [158 171])
-            ("param" code nil nil [206 234]))          
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("if" code nil nil [63 115]))          
     :file "test.py"
-    :pointmax 214
-    :fsize 234
-    :lastmodtime '(21313 5419 726561 596000)
+    :pointmax 115
+    :fsize 114
+    :lastmodtime '(21359 4583 544050 876000)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "def.py"

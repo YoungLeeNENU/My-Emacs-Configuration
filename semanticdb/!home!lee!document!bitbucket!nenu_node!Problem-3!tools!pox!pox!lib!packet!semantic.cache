@@ -1,0 +1,399 @@
+;; Object packet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "packet/"
+  :tables (list 
+   (semanticdb-table "arp.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("struct" include nil nil [1993 2006])
+            ("packet_base" include nil nil [2008 2043])
+            ("ipv4" include nil nil [2044 2065])
+            ("ethernet" include nil nil [2067 2096])
+            ("ethernet" include nil nil [2097 2127])
+            ("ethernet" include nil nil [2128 2164])
+            ("ipv4" include nil nil [2166 2189])
+            ("ipv4" include nil nil [2190 2219])
+            ("pox.lib.addresses" include nil nil [2221 2266])
+            ("packet_utils" include nil nil [2268 2300])
+            ("arp" type
+               (:superclasses ("packet_base")
+                :members 
+                  ( ("\"ARP/RARP packet struct\"" code nil (reparse-symbol indented_block_body) [2331 2355])
+                    ("MIN_LEN" variable nil (reparse-symbol indented_block_body) [2361 2373])
+                    ("HW_TYPE_ETHERNET" variable nil (reparse-symbol indented_block_body) [2379 2399])
+                    ("PROTO_TYPE_IP" variable nil (reparse-symbol indented_block_body) [2404 2429])
+                    ("REQUEST" variable nil (reparse-symbol indented_block_body) [2449 2464])
+                    ("REPLY" variable nil (reparse-symbol indented_block_body) [2475 2490])
+                    ("REV_REQUEST" variable nil (reparse-symbol indented_block_body) [2501 2516])
+                    ("REV_REPLY" variable nil (reparse-symbol indented_block_body) [2528 2543])
+                    ("__init__" function
+                       (:suite 
+                          ( ("packet_base" code nil (reparse-symbol indented_block_body) [2611 2637])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2647 2663])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2673 2711])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2720 2755])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2764 2791])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2800 2827])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2836 2855])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2864 2883])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2892 2911])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2920 2944])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2954 2978])
+                            ("''" code nil (reparse-symbol indented_block_body) [3006 3008])
+                            ("if" code nil (reparse-symbol indented_block_body) [3018 3066])
+                            ("self" code nil (reparse-symbol indented_block_body) [3075 3089]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2569 2573])
+                            ("raw" variable nil (reparse-symbol function_parameters) [2575 2578])
+                            ("prev" variable nil (reparse-symbol function_parameters) [2585 2589])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2596 2600]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2556 3090])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3106 3110])
+                            ("raw" variable nil (reparse-symbol function_parameters) [3112 3115]))                          )
+                        (reparse-symbol indented_block_body) [3095 4234])
+                    ("hdr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4247 4251])
+                            ("payload" variable nil (reparse-symbol function_parameters) [4253 4260]))                          )
+                        (reparse-symbol indented_block_body) [4239 4972])
+                    ("_to_str" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4989 4993]))                          )
+                        (reparse-symbol indented_block_body) [4977 6251]))                  
+                :type "class")
+                nil [2302 6251]))          
+    :file "arp.py"
+    :pointmax 6251
+    :fsize 6250
+    :lastmodtime '(21344 58702 392984 355000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "packet_base.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("logging" include nil nil [801 815])
+            ("lg" variable nil nil [816 848])
+            ("pox.lib.util" include nil nil [850 885])
+            ("packet_base" type
+               (:documentation "
+    TODO: This description is somewhat outdated and should be fixed.
+
+    Base class for packets.
+
+    Classes that perform packet manipulation (parsing and contruction)
+    should derive from this class.
+
+    The general layout of such a subclass is as follows:
+
+    class foo (packet_base):
+
+        def __init__(data=None, prev=None):
+          packet_base.__init__(self)
+
+          # data: is the data for the packet as a \"bytes\" object.
+          # prev: is a pointer to the previous header
+          # which is expected to be of type packet_base
+          self.parsed = False
+          self.prev = prev
+
+          # define field variables here
+          self.bar = 0
+
+          if arr != None:
+              self.data = data # Phasing out?
+              self.parse(data)
+
+        def parse(self, data):
+            # parse packet here and set member variables
+            self.parsed = True # signal that packet was succesfully parsed
+
+        def hdr(self, payload):
+            # return fields as a string
+            return struct.pack('!I',self.bar)
+
+        def __str__(self):
+            # optionally convert to human readable string
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2110 2126])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2135 2151])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2160 2179])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2188 2203]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2095 2099]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2081 2204])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2220 2224])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2226 2228]))                          )
+                        (reparse-symbol indented_block_body) [2209 2358])
+                    ("msg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2371 2375])
+                            ("args" variable nil (reparse-symbol function_parameters) [2377 2382]))                          
+                        :documentation " Shortcut for logging ")
+                        (reparse-symbol indented_block_body) [2363 2468])
+                    ("err" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2481 2485])
+                            ("args" variable nil (reparse-symbol function_parameters) [2487 2492]))                          
+                        :documentation " Shortcut for logging ")
+                        (reparse-symbol indented_block_body) [2473 2579])
+                    ("warn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2593 2597])
+                            ("args" variable nil (reparse-symbol function_parameters) [2599 2604]))                          
+                        :documentation " Shortcut for logging ")
+                        (reparse-symbol indented_block_body) [2584 2693])
+                    ("__nonzero__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2714 2718]))                          )
+                        (reparse-symbol indented_block_body) [2698 2756])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2773 2777]))                          )
+                        (reparse-symbol indented_block_body) [2761 2812])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2829 2833]))                          )
+                        (reparse-symbol indented_block_body) [2817 3266])
+                    ("dump" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3280 3284]))                          )
+                        (reparse-symbol indented_block_body) [3271 4055])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4069 4073])
+                            ("proto" variable nil (reparse-symbol function_parameters) [4075 4080]))                          
+                        :documentation "
+        Find the specified protocol layer based on its class type or name.
+        ")
+                        (reparse-symbol indented_block_body) [4060 4518])
+                    ("payload" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4550 4554]))                          
+                        :documentation "
+        The packet payload property.
+        Reading this property is generally the same as the \"next\" field.
+        Setting this generally sets this packet's \"next\" field, as well as
+        setting the new payload's \"prev\" field to point back to its new
+        container (the same as the set_payload() method).
+        ")
+                        (reparse-symbol indented_block_body) [4523 4921])
+                    ("payload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4959 4963])
+                            ("new_payload" variable nil (reparse-symbol function_parameters) [4965 4976]))                          
+                        :decorators 
+                          ( ("payload.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4926 5015])
+                    ("set_payload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5036 5040])
+                            ("payload" variable nil (reparse-symbol function_parameters) [5042 5049]))                          )
+                        (reparse-symbol indented_block_body) [5020 5418])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5433 5437])
+                            ("raw" variable nil (reparse-symbol function_parameters) [5439 5442]))                          )
+                        (reparse-symbol indented_block_body) [5423 5557])
+                    ("pre_hdr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5574 5578]))                          )
+                        (reparse-symbol indented_block_body) [5562 5653])
+                    ("hdr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5666 5670])
+                            ("payload" variable nil (reparse-symbol function_parameters) [5672 5679]))                          )
+                        (reparse-symbol indented_block_body) [5658 5792])
+                    ("unpack" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5826 5829])
+                            ("raw" variable nil (reparse-symbol function_parameters) [5831 5834])
+                            ("prev" variable nil (reparse-symbol function_parameters) [5836 5840]))                          )
+                        (reparse-symbol indented_block_body) [5797 5887])
+                    ("pack" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5901 5905]))                          )
+                        (reparse-symbol indented_block_body) [5892 6212]))                  
+                :type "class")
+                nil [887 6212]))          
+    :file "packet_base.py"
+    :pointmax 6212
+    :fsize 6211
+    :lastmodtime '(21344 58702 372984 357000)
+    :unmatched-syntax '((INDENT_BLOCK 3020 . 3087) (NEWLINE 2954 . 2955) (COLON 2953 . 2954) (TRY 2883 . 2886) (AS 2949 . 2951) (INDENT_BLOCK 3020 . 3087) (NEWLINE 2954 . 2955) (COLON 2953 . 2954) (TRY 2883 . 2886) (AS 2949 . 2951) (INDENT_BLOCK 3020 . 3087) (NEWLINE 2954 . 2955) (COLON 2953 . 2954) (TRY 2883 . 2886) (AS 2949 . 2951))
+    )
+   (semanticdb-table "ipv4.py"
+    :file "ipv4.py"
+    :fsize 6512
+    :lastmodtime '(21344 58702 420984 356000)
+    )
+   (semanticdb-table "ethernet.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("struct" include nil nil [976 989])
+            ("packet_base" include nil nil [991 1026])
+            ("packet_utils" include nil nil [1027 1066])
+            ("pox.lib.addresses" include nil nil [1068 1099])
+            ("ETHER_ANY" variable nil nil [1101 1160])
+            ("ETHER_BROADCAST" variable nil nil [1161 1220])
+            ("BRIDGE_GROUP_ADDRESS" variable nil nil [1221 1280])
+            ("LLDP_MULTICAST" variable nil nil [1281 1340])
+            ("PAE_MULTICAST" variable nil nil [1341 1400])
+            ("NDP_MULTICAST" variable nil nil [1492 1551])
+            ("ethernet" type
+               (:superclasses ("packet_base")
+                :members 
+                  ( ("\"Ethernet packet struct\"" code nil (reparse-symbol indented_block_body) [1676 1700])
+                    ("resolve_names" variable nil (reparse-symbol indented_block_body) [1704 1725])
+                    ("MIN_LEN" variable nil (reparse-symbol indented_block_body) [1729 1741])
+                    ("IP_TYPE" variable nil (reparse-symbol indented_block_body) [1745 1764])
+                    ("ARP_TYPE" variable nil (reparse-symbol indented_block_body) [1767 1786])
+                    ("RARP_TYPE" variable nil (reparse-symbol indented_block_body) [1789 1808])
+                    ("VLAN_TYPE" variable nil (reparse-symbol indented_block_body) [1811 1830])
+                    ("LLDP_TYPE" variable nil (reparse-symbol indented_block_body) [1833 1852])
+                    ("PAE_TYPE" variable nil (reparse-symbol indented_block_body) [1855 1874])
+                    ("MPLS_UNICAST_TYPE" variable nil (reparse-symbol indented_block_body) [1915 1941])
+                    ("MPLS_MULTICAST_TYPE" variable nil (reparse-symbol indented_block_body) [1944 1972])
+                    ("IPV6_TYPE" variable nil (reparse-symbol indented_block_body) [1975 1994])
+                    ("PPP_TYPE" variable nil (reparse-symbol indented_block_body) [1997 2016])
+                    ("LWAPP_TYPE" variable nil (reparse-symbol indented_block_body) [2019 2038])
+                    ("GSMP_TYPE" variable nil (reparse-symbol indented_block_body) [2041 2060])
+                    ("IPX_TYPE" variable nil (reparse-symbol indented_block_body) [2063 2082])
+                    ("IPX_TYPE" variable nil (reparse-symbol indented_block_body) [2085 2104])
+                    ("WOL_TYPE" variable nil (reparse-symbol indented_block_body) [2107 2126])
+                    ("TRILL_TYPE" variable nil (reparse-symbol indented_block_body) [2129 2148])
+                    ("JUMBO_TYPE" variable nil (reparse-symbol indented_block_body) [2151 2170])
+                    ("SCSI_TYPE" variable nil (reparse-symbol indented_block_body) [2173 2192])
+                    ("ATA_TYPE" variable nil (reparse-symbol indented_block_body) [2195 2214])
+                    ("QINQ_TYPE" variable nil (reparse-symbol indented_block_body) [2217 2236])
+                    ("INVALID_TYPE" variable nil (reparse-symbol indented_block_body) [2240 2261])
+                    ("type_parsers" variable nil (reparse-symbol indented_block_body) [2265 2282])
+                    ("__init__" function
+                       (:suite 
+                          ( ("packet_base" code nil (reparse-symbol indented_block_body) [2337 2363])
+                            ("if" code nil (reparse-symbol indented_block_body) [2369 3083])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3088 3104])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3110 3131])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3136 3157])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3163 3176])
+                            ("''" code nil (reparse-symbol indented_block_body) [3194 3196])
+                            ("if" code nil (reparse-symbol indented_block_body) [3202 3244])
+                            ("self" code nil (reparse-symbol indented_block_body) [3249 3263]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2299 2303])
+                            ("raw" variable nil (reparse-symbol function_parameters) [2305 2308])
+                            ("prev" variable nil (reparse-symbol function_parameters) [2315 2319])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2326 2330]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2286 3264])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3278 3282])
+                            ("raw" variable nil (reparse-symbol function_parameters) [3284 3287]))                          )
+                        (reparse-symbol indented_block_body) [3267 3826])
+                    ("parse_next" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("prev" variable nil (reparse-symbol function_parameters) [3861 3865])
+                            ("typelen" variable nil (reparse-symbol function_parameters) [3867 3874])
+                            ("raw" variable nil (reparse-symbol function_parameters) [3876 3879])
+                            ("offset" variable nil (reparse-symbol function_parameters) [3881 3887])
+                            ("allow_llc" variable nil (reparse-symbol function_parameters) [3891 3900]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3829 4145])
+                    ("getNameForType" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("ethertype" variable nil (reparse-symbol function_parameters) [4184 4193]))                          
+                        :documentation " Returns a string name for a numeric ethertype ")
+                        (reparse-symbol indented_block_body) [4148 4291])
+                    ("effective_ethertype" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4331 4335]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4294 4385])
+                    ("_get_effective_ethertype" function
+                       (:typemodifiers ("static")
+                        :documentation "
+    Get the \"effective\" ethertype of a packet.
+
+    This means that if the payload is something like a VLAN or SNAP header,
+    we want the type from that deeper header.  This is kind of ugly here in
+    the packet library, but it should make user code somewhat simpler.
+    "
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4434 4438]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :parent "dummy")
+                        (reparse-symbol indented_block_body) [4388 4997])
+                    ("_to_str" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5012 5016]))                          )
+                        (reparse-symbol indented_block_body) [5000 5165])
+                    ("hdr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5176 5180])
+                            ("payload" variable nil (reparse-symbol function_parameters) [5182 5189]))                          )
+                        (reparse-symbol indented_block_body) [5168 5390]))                  
+                :type "class")
+                nil [1645 5390]))          
+    :file "ethernet.py"
+    :pointmax 5390
+    :fsize 5389
+    :lastmodtime '(21344 58702 364984 356000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "packet_utils.py"
+    :file "packet_utils.py"
+    :fsize 2860
+    :lastmodtime '(21344 58702 444984 354000)
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!lib!packet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

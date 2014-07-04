@@ -44,18 +44,18 @@
    (semanticdb-table "cet.py"
     :major-mode 'python-mode
     :tags 
-        '( ("os" include nil nil [24 33])
-            ("sys" include nil nil [34 44])
-            ("xlrd" include nil nil [45 56])
-            ("data" variable nil nil [58 108])
-            ("table" variable nil nil [109 133])
+        '( ("os" include nil nil [27 36])
+            ("sys" include nil nil [37 47])
+            ("xlrd" include nil nil [48 59])
+            ("data" variable nil nil [61 111])
+            ("table" variable nil nil [112 136])
             ("check" function (:arguments 
-              ( ("table" variable nil (reparse-symbol function_parameters) [145 150]))              ) nil [135 1426])
-            ("if" code nil nil [1427 1471]))          
+              ( ("table" variable nil (reparse-symbol function_parameters) [148 153]))              ) nil [138 1715])
+            ("if" code nil nil [1716 1760]))          
     :file "cet.py"
-    :pointmax 1471
-    :fsize 1564
-    :lastmodtime '(21332 64577 525178 339000)
+    :pointmax 1760
+    :fsize 1857
+    :lastmodtime '(21416 54411 735981 492000)
     :unmatched-syntax 'nil
     )
    )

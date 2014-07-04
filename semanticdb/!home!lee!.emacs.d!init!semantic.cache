@@ -1,0 +1,21 @@
+;; Object init/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "init/"
+  :tables (list 
+   (semanticdb-table "testcase.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [41 59])
+            ("data" variable nil nil [61 93])
+            ("print" code nil nil [94 104]))          
+    :file "testcase.py"
+    :pointmax 105
+    :fsize 104
+    :lastmodtime '(21359 20571 931642 79000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!.emacs.d!init!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

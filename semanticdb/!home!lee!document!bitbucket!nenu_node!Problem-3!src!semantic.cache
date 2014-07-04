@@ -7,12 +7,410 @@
     :tags 
         '( ("os" include nil nil [129 138])
             ("sys" include nil nil [139 149])
-            ("cmd" variable nil nil [151 188])
-            ("if" code nil nil [190 233]))          
+            ("password" variable nil nil [151 171])
+            ("cmd" variable nil nil [172 209])
+            ("if" code nil nil [221 267]))          
     :file "ssh"
-    :pointmax 233
-    :fsize 232
-    :lastmodtime '(21350 63741 143863 490000)
+    :pointmax 267
+    :fsize 266
+    :lastmodtime '(21372 5626 228553 680000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "loadbalancer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Author Haichen Shen
+
+Module to perform round-robin load balancing.
+\"\"\"" code nil nil [41 115])
+            ("pox.core" include nil nil [117 142])
+            ("pox.openflow.libopenflow_01" include nil nil [143 183])
+            ("pox.lib.revent" include nil nil [184 212])
+            ("pox.lib.util" include nil nil [213 247])
+            ("pox.lib.packet.ethernet" include nil nil [248 292])
+            ("pox.lib.packet.arp" include nil nil [293 327])
+            ("pox.lib.addresses" include nil nil [328 373])
+            ("time" include nil nil [374 385])
+            ("log" variable nil nil [387 409])
+            ("IDLE_TIMEOUT" variable nil nil [411 427])
+            ("HARD_TIMEOUT" variable nil nil [441 457])
+            ("LOAD_BALANCER_IP" variable nil nil [470 509])
+            ("LOAD_BALANCER_MAC" variable nil nil [510 558])
+            ("LoadBalancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("Server" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [656 676])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [683 706])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [713 729]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [628 632])
+                                    ("ip" variable nil (reparse-symbol function_parameters) [634 636])
+                                    ("mac" variable nil (reparse-symbol function_parameters) [638 641])
+                                    ("port" variable nil (reparse-symbol function_parameters) [643 647]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [614 730])
+                            ("__str__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [747 751]))                                  )
+                                (reparse-symbol indented_block_body) [735 822]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [596 822])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [862 890])
+                            ("self" code nil (reparse-symbol indented_block_body) [895 920])
+                            ("self" variable nil (reparse-symbol indented_block_body) [958 1084])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1089 1109]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [839 843])
+                            ("connection" variable nil (reparse-symbol function_parameters) [845 855]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [825 1110])
+                    ("get_next_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1134 1138]))                          )
+                        (reparse-symbol indented_block_body) [1113 1284])
+                    ("handle_arp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1322 1326])
+                            ("packet" variable nil (reparse-symbol function_parameters) [1328 1334])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [1336 1343]))                          )
+                        (reparse-symbol indented_block_body) [1306 2029])
+                    ("handle_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2052 2056])
+                            ("packet" variable nil (reparse-symbol function_parameters) [2058 2064])
+                            ("event" variable nil (reparse-symbol function_parameters) [2066 2071]))                          )
+                        (reparse-symbol indented_block_body) [2032 3968])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3993 3997])
+                            ("event" variable nil (reparse-symbol function_parameters) [3999 4004]))                          )
+                        (reparse-symbol indented_block_body) [3971 4929]))                  
+                :type "class")
+                nil [560 4929])
+            ("load_balancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [4979 5007]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4982 4986]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4968 5022])
+                    ("_handle_ConnectionUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5051 5055])
+                            ("event" variable nil (reparse-symbol function_parameters) [5057 5062]))                          )
+                        (reparse-symbol indented_block_body) [5025 5150]))                  
+                :type "class")
+                nil [4931 5150])
+            ("launch" function nil nil [5152 5225]))          
+    :file "loadbalancer.py"
+    :pointmax 5225
+    :fsize 5248
+    :lastmodtime '(21378 40713 306505 707000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "simplehttpserver.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [130 139])
+            ("sys" include nil nil [140 150])
+            ("cgi" include nil nil [151 161])
+            ("time" include nil nil [162 173])
+            ("collections" include nil nil [174 192])
+            ("SocketServer" include nil nil [193 212])
+            ("SimpleHTTPServer" include nil nil [213 236])
+            ("PORT" variable nil nil [238 249])
+            ("Handler" variable nil nil [266 317])
+            ("ServerHandler" type
+               (:superclasses ("SimpleHTTPServer.SimpleHTTPRequestHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        \"\"\"" code nil (reparse-symbol indented_block_body) [417 432])
+                            ("self" variable nil (reparse-symbol indented_block_body) [441 473]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [400 404]))                          
+                        :documentation "
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [387 474])
+                    ("_calc_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [502 506])
+                            ("stmp1" variable nil (reparse-symbol function_parameters) [508 513])
+                            ("stmp2" variable nil (reparse-symbol function_parameters) [515 520]))                          )
+                        (reparse-symbol indented_block_body) [487 780])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [804 808]))                          
+                        :documentation "
+        
+        Arguments:
+        - `self`:
+        ")
+                        (reparse-symbol indented_block_body) [793 1449])
+                    ("do_POST" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1474 1478]))                          
+                        :documentation "
+        
+        Arguments:
+        - `self`:
+        ")
+                        (reparse-symbol indented_block_body) [1462 1648]))                  
+                :type "class")
+                nil [319 1648])
+            ("Handler" variable nil nil [1649 1672])
+            ("httpd" variable nil nil [1674 1725])
+            ("print" code nil nil [1727 1756])
+            ("httpd" code nil nil [1757 1778]))          
+    :file "simplehttpserver.py"
+    :pointmax 1779
+    :fsize 1778
+    :lastmodtime '(21395 54298 516228 887000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "loadbalancing.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [128 139])
+            ("pox.openflow.libopenflow_01" include nil nil [140 180])
+            ("pox.core" include nil nil [181 206])
+            ("pox.lib.revent" include nil nil [207 235])
+            ("pox.lib.util" include nil nil [236 270])
+            ("pox.lib.packet.ethernet" include nil nil [271 315])
+            ("pox.lib.packet.arp" include nil nil [316 350])
+            ("pox.lib.addresses" include nil nil [351 396])
+            ("log" variable nil nil [398 420])
+            ("IDLE_TIMEOUT" variable nil nil [422 438])
+            ("HARD_TIMEOUT" variable nil nil [439 455])
+            ("LOAD_BALANCER_IP" variable nil nil [457 494])
+            ("LOAD_BALANCER_MAC" variable nil nil [495 543])
+            ("LoadBalancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("Server" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [652 664])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [677 691])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [704 720]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [618 622])
+                                    ("ip" variable nil (reparse-symbol function_parameters) [624 626])
+                                    ("mac" variable nil (reparse-symbol function_parameters) [628 631])
+                                    ("port" variable nil (reparse-symbol function_parameters) [633 637]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [605 721])
+                            ("__str__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [741 745]))                                  )
+                                (reparse-symbol indented_block_body) [729 822]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [581 822])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [879 907])
+                            ("self" code nil (reparse-symbol indented_block_body) [916 941])
+                            ("self" variable nil (reparse-symbol indented_block_body) [950 1087])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1096 1116]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [852 856])
+                            ("connection" variable nil (reparse-symbol function_parameters) [858 868]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [839 1117])
+                    ("get_next_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1150 1154]))                          )
+                        (reparse-symbol indented_block_body) [1130 1273])
+                    ("handle_arp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1297 1301])
+                            ("packet" variable nil (reparse-symbol function_parameters) [1303 1309])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [1311 1318]))                          )
+                        (reparse-symbol indented_block_body) [1282 2084])
+                    ("handle_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2116 2120])
+                            ("packet" variable nil (reparse-symbol function_parameters) [2122 2128])
+                            ("event" variable nil (reparse-symbol function_parameters) [2130 2135]))                          )
+                        (reparse-symbol indented_block_body) [2097 4199])
+                    ("_handle_PacketIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4233 4237])
+                            ("event" variable nil (reparse-symbol function_parameters) [4239 4244]))                          )
+                        (reparse-symbol indented_block_body) [4212 5294]))                  
+                :type "class")
+                nil [545 5307])
+            ("load_balancer" type
+               (:superclasses ("EventMixin")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [5340 5368]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5370 5374]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5357 5414])
+                    ("_handle_ConnectionUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5443 5447])
+                            ("event" variable nil (reparse-symbol function_parameters) [5449 5454]))                          )
+                        (reparse-symbol indented_block_body) [5418 5550]))                  
+                :type "class")
+                nil [5320 5559])
+            ("launch" function nil nil [5560 5610]))          
+    :file "loadbalancing.py"
+    :pointmax 5556
+    :fsize 5609
+    :lastmodtime '(21381 24508 276971 377000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "basehttpserver.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [130 141])
+            ("SocketServer" include nil nil [142 161])
+            ("SimpleHTTPServer" include nil nil [162 185])
+            ("collections" include nil nil [186 215])
+            ("BaseHTTPServer" include nil nil [216 277])
+            ("PORT" variable nil nil [279 290])
+            ("RequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [372 392]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [355 359]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [342 393])
+                    ("_writeheaders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [415 419]))                          )
+                        (reparse-symbol indented_block_body) [397 535])
+                    ("do_HEAD" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [551 555]))                          )
+                        (reparse-symbol indented_block_body) [539 587])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [602 606]))                          )
+                        (reparse-symbol indented_block_body) [591 757]))                  
+                :type "class")
+                nil [292 757])
+            ("serveraddr" variable nil nil [758 781])
+            ("srvr" variable nil nil [795 840])
+            ("srvr" code nil nil [841 861]))          
+    :file "basehttpserver.py"
+    :pointmax 862
+    :fsize 861
+    :lastmodtime '(21390 27693 946462 811000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "page.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Sample    Page" section nil nil [149 191])
+            ("This is a sample HTML page." section nil nil [191 314]))          
+    :file "page.html"
+    :pointmax 314
+    :fsize 313
+    :lastmodtime '(21385 11878 145538 110000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ip.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("function GetLocalIPAddr(){ 
+	  var oSetting = null; 
+	  var ip = null; 
+	  try{ 
+	  oSetting = new ActiveXObject(\"rcbdyctl.Setting\"); 
+	  ip = oSetting.GetIPAddress; 
+	  alert(ip); 
+	  if (ip.length == 0){ 
+	  return \"没有连接到Internet\"; 
+	  } 
+	  oSetting = null; 
+	  }catch(e){ 
+	  return ip; 
+	  } 
+	  return ip; 
+	  } 
+	  alert(GetLocalIPAddr())" section nil nil [18 424])
+            ("" section nil nil [424 449]))          
+    :file "ip.html"
+    :pointmax 449
+    :fsize 458
+    :lastmodtime '(21385 13749 225490 270000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rsync.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("rsync_mininet" variable nil nil [63 148])
+            ("rsync_pox" variable nil nil [149 222])
+            ("if" code nil nil [224 305]))          
+    :file "rsync.py"
+    :pointmax 305
+    :fsize 304
+    :lastmodtime '(21386 60843 541028 521000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "spam.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("time" include nil nil [131 142])
+            ("print" code nil nil [144 197])
+            ("print" code nil nil [198 251])
+            ("print" code nil nil [252 305])
+            ("print" code nil nil [306 359])
+            ("print" code nil nil [360 413])
+            ("print" code nil nil [414 467]))          
+    :file "spam.py"
+    :pointmax 468
+    :fsize 467
+    :lastmodtime '(21390 24683 969658 717000)
     :unmatched-syntax 'nil
     )
    )

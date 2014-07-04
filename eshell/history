@@ -1,128 +1,128 @@
+cd document/
 clear
-./pdfreport 
-..
+cd web/
 ls
+clear2
 clear
-ls
-csd src/
-ls
-cd doc/
-ls
-ls
-..
-ls
+cd php/
+sljcle
 clear
-clear
-ls
-cd src/
-ls
-clear
-chmod 700 ssh.py 
-ls
-clear
-ls
-ls
-clear
-ls
-clear
-ls
-clear
-cd
-clear
-cd document/ruby/
 ls
 cd code/
 ls
 clear
-chmod 700 test.rb 
-./test.rb
-./test.rb
-./test.rb
-./test.rb
-cle
+ls
+cel
 clear
-cle
-le
-./test.rb
 clear
-./test.rb
+ls
 clear
-./test.rb
-./test.rb
+touch mysqlmon.sql
+ls
+clear
+clear
+clear
+ls
+cler
+clear
+ls
+clear
+ls
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+cd do
+cd ..
+cd doc/
+ls
+clear
+touch php连接mysql.org
+ls
+clear
+ls
+clear
+ls
+mkdir mysql php 
+ls
+clear
+clear
+ls
+clear
+clear
+cd
+clear
+cd .emacs.d/init/
 clear
 cd document/
+clear
+cd web/
 ls
-cd lu
+clear
+cd php/
 ls
-cd game/
+clear
+cd doc/
 ls
-cd lua/
+clear
+ls
+cd php/
+ls
+clear
+clear
+ls
+clear
+..
+ls
+clear
+..
+ls
+clear
+..
+..
+ls
+clear
+clear
+ls
+cd web/
+ls
+cd php/
+ls
+clear
+ls
+ls
+clear
+clear
+cd code/
+ls
+clear
+cd 12/
 sl
+s
+clear
+cle
+ls
 clear
 ..
-mv lua/ ..
-ls
-cd ..
-ls
-cd lisp/
-..
-cd lua/
-ls
-clear
-ls
-cd source/
-ls
-cd lua-5.2.3/
-ls
-cd src/
 ls
 clear
 ls
 ..
-ls
-..
-ls
-clear
-mv ~/lua-1.1.tar.gz .
-mv ~/lua/.
-mv ~/lua/ .
-ls
-cd lua-5.2.3/
-cd ..
-ls
-cd lua-5.2.3/
-cd ..
-ls
-clear
-ls
-cd lua/
-ls
-cd src/
-clear
-sl
-ls
-cd yacc/
-ls
-ls
-ls
-clear
-ls
-cd ..
-ls
-..
-ls
-cd document/
-ls
-clear
-cd bitbucket/
-ls
-cd nenu_node/
-ls
-cd Problem-3/
 ls
 cd doc/
 ls
-cd 
 clear
-cd share/taomee/
+mkdir 读书笔记
 ls
+clear
+ls
+cp -rf *.html 读书笔记
+ls
+ls
+clear
+ls
+cp -rf php/*.html 读书笔记
+cp -rf mysql/*.html 读书笔记

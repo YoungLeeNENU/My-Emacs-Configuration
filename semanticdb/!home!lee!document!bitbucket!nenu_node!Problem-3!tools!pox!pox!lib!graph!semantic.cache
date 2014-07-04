@@ -1,0 +1,887 @@
+;; Object graph/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graph/"
+  :tables (list 
+   (semanticdb-table "graph.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.lib.graph.minigraph" include nil nil [728 764])
+            ("collections" include nil nil [765 800])
+            ("copy" include nil nil [801 822])
+            ("LINK" variable nil nil [824 837])
+            ("Link" type
+               (:superclasses ("object")
+                :members 
+                  ( ("reorder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [876 880])
+                            ("l" variable nil (reparse-symbol function_parameters) [882 883]))                          
+                        :documentation "
+    Flips a list of Links so that this node is first in each
+    ")
+                        (reparse-symbol indented_block_body) [863 994])
+                    ("order" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("links" variable nil (reparse-symbol function_parameters) [1024 1029])
+                            ("n" variable nil (reparse-symbol function_parameters) [1031 1032]))                          
+                        :documentation "
+    Give a list of Links that each contain node n, flips any links so
+    that n is always the first element of the link.
+    ")
+                        (reparse-symbol indented_block_body) [997 1319])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1357 1382])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1387 1412]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1336 1340])
+                            ("np1" variable nil (reparse-symbol function_parameters) [1342 1345])
+                            ("np2" variable nil (reparse-symbol function_parameters) [1347 1350]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1322 1413])
+                    ("_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1428 1432])
+                            ("i" variable nil (reparse-symbol function_parameters) [1434 1435]))                          )
+                        (reparse-symbol indented_block_body) [1416 1527])
+                    ("flip" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1540 1544]))                          
+                        :documentation "
+    Returns the same link, but flipped (a,b) becomes (b,a)
+    ")
+                        (reparse-symbol indented_block_body) [1530 1656])
+                    ("port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1669 1673])
+                            ("n" variable nil (reparse-symbol function_parameters) [1675 1676]))                          )
+                        (reparse-symbol indented_block_body) [1659 1709])
+                    ("other_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1728 1732])
+                            ("n" variable nil (reparse-symbol function_parameters) [1734 1735]))                          
+                        :documentation "
+    Returns the other end's port.
+    See other().
+    ")
+                        (reparse-symbol indented_block_body) [1712 1833])
+                    ("other" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1847 1851])
+                            ("n" variable nil (reparse-symbol function_parameters) [1853 1854]))                          
+                        :documentation "
+    Returns the other end of a link.
+    Given a node or (node,port) that is part of this link, it returns
+    the opposite end's (node,port).
+    ")
+                        (reparse-symbol indented_block_body) [1836 2226])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2247 2251])
+                            ("n" variable nil (reparse-symbol function_parameters) [2253 2254]))                          
+                        :documentation "
+    Does this link contain (node,port) or node?
+    ")
+                        (reparse-symbol indented_block_body) [2229 2421])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2437 2441]))                          )
+                        (reparse-symbol indented_block_body) [2424 2457])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2477 2481])
+                            ("i" variable nil (reparse-symbol function_parameters) [2483 2484]))                          
+                        :documentation "
+    Gets (node,port) based on index
+    ")
+                        (reparse-symbol indented_block_body) [2460 2598])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2615 2619]))                          )
+                        (reparse-symbol indented_block_body) [2601 2669]))                  
+                :type "class")
+                nil [839 2669])
+            ("Node" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [2694 2698]))                  
+                :type "class")
+                nil [2671 2699])
+            ("_void" function nil nil [2817 2845])
+            ("LeaveException" type
+               (:superclasses ("RuntimeError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [2885 2889]))                  
+                :type "class")
+                nil [2846 2890])
+            ("Operator" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2932 2936]))                          )
+                        (reparse-symbol indented_block_body) [2918 2985]))                  
+                :type "class")
+                nil [2891 2985])
+            ("Literal" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3042 3053]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3028 3032])
+                            ("v" variable nil (reparse-symbol function_parameters) [3034 3035]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3014 3054])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3070 3074])
+                            ("n" variable nil (reparse-symbol function_parameters) [3076 3077])
+                            ("li" variable nil (reparse-symbol function_parameters) [3079 3081]))                          )
+                        (reparse-symbol indented_block_body) [3056 3108])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3124 3128]))                          )
+                        (reparse-symbol indented_block_body) [3110 3156]))                  
+                :type "class")
+                nil [2986 3156])
+            ("Anything" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3200 3204])
+                            ("n" variable nil (reparse-symbol function_parameters) [3206 3207])
+                            ("li" variable nil (reparse-symbol function_parameters) [3209 3211]))                          )
+                        (reparse-symbol indented_block_body) [3186 3230])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3247 3251]))                          )
+                        (reparse-symbol indented_block_body) [3233 3276]))                  
+                :type "class")
+                nil [3157 3276])
+            ("Self" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3316 3320])
+                            ("n" variable nil (reparse-symbol function_parameters) [3322 3323])
+                            ("li" variable nil (reparse-symbol function_parameters) [3325 3327]))                          )
+                        (reparse-symbol indented_block_body) [3302 3348])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3364 3368]))                          )
+                        (reparse-symbol indented_block_body) [3350 3389]))                  
+                :type "class")
+                nil [3277 3389])
+            ("Port" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3429 3433])
+                            ("n" variable nil (reparse-symbol function_parameters) [3435 3436])
+                            ("li" variable nil (reparse-symbol function_parameters) [3438 3440]))                          )
+                        (reparse-symbol indented_block_body) [3415 3549])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3566 3570]))                          )
+                        (reparse-symbol indented_block_body) [3552 3591]))                  
+                :type "class")
+                nil [3390 3591])
+            ("OtherPort" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3636 3640])
+                            ("n" variable nil (reparse-symbol function_parameters) [3642 3643])
+                            ("li" variable nil (reparse-symbol function_parameters) [3645 3647]))                          )
+                        (reparse-symbol indented_block_body) [3622 3761])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3778 3782]))                          )
+                        (reparse-symbol indented_block_body) [3764 3808]))                  
+                :type "class")
+                nil [3592 3808])
+            ("Other" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3849 3853])
+                            ("n" variable nil (reparse-symbol function_parameters) [3855 3856])
+                            ("li" variable nil (reparse-symbol function_parameters) [3858 3860]))                          )
+                        (reparse-symbol indented_block_body) [3835 3970])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3987 3991]))                          )
+                        (reparse-symbol indented_block_body) [3973 4013]))                  
+                :type "class")
+                nil [3809 4013])
+            ("Call" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("_self" variable nil (reparse-symbol indented_block_body) [4077 4092])
+                            ("for" code nil (reparse-symbol indented_block_body) [4097 4240])
+                            ("_self" variable nil (reparse-symbol indented_block_body) [4244 4258])
+                            ("for" code nil (reparse-symbol indented_block_body) [4263 4421]))                          
+                        :arguments 
+                          ( ("_self" variable nil (reparse-symbol function_parameters) [4053 4058])
+                            ("arg" variable nil (reparse-symbol function_parameters) [4060 4064])
+                            ("kw" variable nil (reparse-symbol function_parameters) [4066 4070]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4039 4421])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4438 4442])
+                            ("n" variable nil (reparse-symbol function_parameters) [4444 4445])
+                            ("li" variable nil (reparse-symbol function_parameters) [4447 4449]))                          )
+                        (reparse-symbol indented_block_body) [4424 4656])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4673 4677]))                          )
+                        (reparse-symbol indented_block_body) [4659 4863]))                  
+                :type "class")
+                nil [4014 4863])
+            ("UnaryOp" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [4926 5039]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4906 4910])
+                            ("operand" variable nil (reparse-symbol function_parameters) [4912 4919]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4892 5039])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5056 5060])
+                            ("n" variable nil (reparse-symbol function_parameters) [5062 5063])
+                            ("li" variable nil (reparse-symbol function_parameters) [5065 5067]))                          )
+                        (reparse-symbol indented_block_body) [5042 5125])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5140 5144])
+                            ("attr" variable nil (reparse-symbol function_parameters) [5146 5150]))                          )
+                        (reparse-symbol indented_block_body) [5128 5193]))                  
+                :type "class")
+                nil [4864 5193])
+            ("BinaryOp" type
+               (:superclasses ("Operator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [5261 5360])
+                            ("if" code nil (reparse-symbol indented_block_body) [5364 5467]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5237 5241])
+                            ("left" variable nil (reparse-symbol function_parameters) [5243 5247])
+                            ("right" variable nil (reparse-symbol function_parameters) [5249 5254]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5223 5467])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5484 5488])
+                            ("n" variable nil (reparse-symbol function_parameters) [5490 5491])
+                            ("li" variable nil (reparse-symbol function_parameters) [5493 5495]))                          )
+                        (reparse-symbol indented_block_body) [5470 5580])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5595 5599])
+                            ("l" variable nil (reparse-symbol function_parameters) [5601 5602])
+                            ("r" variable nil (reparse-symbol function_parameters) [5604 5605]))                          )
+                        (reparse-symbol indented_block_body) [5583 5648])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5665 5669]))                          )
+                        (reparse-symbol indented_block_body) [5651 5860]))                  
+                :type "class")
+                nil [5194 5860])
+            ("Or" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [5884 5898])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5913 5917])
+                            ("l" variable nil (reparse-symbol function_parameters) [5919 5920])
+                            ("r" variable nil (reparse-symbol function_parameters) [5922 5923]))                          )
+                        (reparse-symbol indented_block_body) [5901 5944]))                  
+                :type "class")
+                nil [5861 5944])
+            ("And" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [5969 5984])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5999 6003])
+                            ("l" variable nil (reparse-symbol function_parameters) [6005 6006])
+                            ("r" variable nil (reparse-symbol function_parameters) [6008 6009]))                          )
+                        (reparse-symbol indented_block_body) [5987 6031]))                  
+                :type "class")
+                nil [5945 6031])
+            ("LessThan" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [6061 6074])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6089 6093])
+                            ("value" variable nil (reparse-symbol function_parameters) [6095 6100]))                          )
+                        (reparse-symbol indented_block_body) [6077 6134]))                  
+                :type "class")
+                nil [6032 6134])
+            ("GreaterThan" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [6167 6180])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6195 6199])
+                            ("l" variable nil (reparse-symbol function_parameters) [6201 6202])
+                            ("r" variable nil (reparse-symbol function_parameters) [6204 6205]))                          )
+                        (reparse-symbol indented_block_body) [6183 6239]))                  
+                :type "class")
+                nil [6135 6239])
+            ("LessThanEqualTo" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [6276 6290])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6305 6309])
+                            ("l" variable nil (reparse-symbol function_parameters) [6311 6312])
+                            ("r" variable nil (reparse-symbol function_parameters) [6314 6315]))                          )
+                        (reparse-symbol indented_block_body) [6293 6350]))                  
+                :type "class")
+                nil [6240 6350])
+            ("GreaterThanEqualTo" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [6390 6404])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6419 6423])
+                            ("l" variable nil (reparse-symbol function_parameters) [6425 6426])
+                            ("r" variable nil (reparse-symbol function_parameters) [6428 6429]))                          )
+                        (reparse-symbol indented_block_body) [6407 6463]))                  
+                :type "class")
+                nil [6351 6463])
+            ("Not" type
+               (:superclasses ("UnaryOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6499 6503])
+                            ("v" variable nil (reparse-symbol function_parameters) [6505 6506]))                          )
+                        (reparse-symbol indented_block_body) [6487 6526])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6543 6547]))                          )
+                        (reparse-symbol indented_block_body) [6529 6591]))                  
+                :type "class")
+                nil [6464 6591])
+            ("Length" type
+               (:superclasses ("UnaryOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6630 6634])
+                            ("v" variable nil (reparse-symbol function_parameters) [6636 6637]))                          )
+                        (reparse-symbol indented_block_body) [6618 6658])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6675 6679]))                          )
+                        (reparse-symbol indented_block_body) [6661 6722]))                  
+                :type "class")
+                nil [6592 6722])
+            ("Index" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6761 6765])
+                            ("l" variable nil (reparse-symbol function_parameters) [6767 6768])
+                            ("r" variable nil (reparse-symbol function_parameters) [6770 6771]))                          )
+                        (reparse-symbol indented_block_body) [6749 6790])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6807 6811]))                          )
+                        (reparse-symbol indented_block_body) [6793 6862]))                  
+                :type "class")
+                nil [6723 6862])
+            ("_dummy" variable nil nil [6863 6880])
+            ("NodeOp" type
+               (:documentation "
+  Can be a binary operator, or if only one argument supplied, the
+  left one defaults to the node.
+  "
+                :superclasses ("Operator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [7064 7123])
+                            ("if" code nil (reparse-symbol indented_block_body) [7128 7227])
+                            ("if" code nil (reparse-symbol indented_block_body) [7231 7334]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7033 7037])
+                            ("left" variable nil (reparse-symbol function_parameters) [7039 7043])
+                            ("right" variable nil (reparse-symbol function_parameters) [7045 7050]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7019 7334])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7351 7355])
+                            ("n" variable nil (reparse-symbol function_parameters) [7357 7358])
+                            ("li" variable nil (reparse-symbol function_parameters) [7360 7362]))                          )
+                        (reparse-symbol indented_block_body) [7337 7447])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7462 7466])
+                            ("l" variable nil (reparse-symbol function_parameters) [7468 7469])
+                            ("r" variable nil (reparse-symbol function_parameters) [7471 7472]))                          )
+                        (reparse-symbol indented_block_body) [7450 7515])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7532 7536]))                          )
+                        (reparse-symbol indented_block_body) [7518 7727]))                  
+                :type "class")
+                nil [6881 7727])
+            ("Equal" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [7752 7766])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7781 7785])
+                            ("l" variable nil (reparse-symbol function_parameters) [7787 7788])
+                            ("r" variable nil (reparse-symbol function_parameters) [7790 7791]))                          )
+                        (reparse-symbol indented_block_body) [7769 7855]))                  
+                :type "class")
+                nil [7728 7855])
+            ("Is" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [7877 7891])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7906 7910])
+                            ("l" variable nil (reparse-symbol function_parameters) [7912 7913])
+                            ("r" variable nil (reparse-symbol function_parameters) [7915 7916]))                          )
+                        (reparse-symbol indented_block_body) [7894 7937]))                  
+                :type "class")
+                nil [7856 7937])
+            ("Field" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("NodeOp" code nil (reparse-symbol indented_block_body) [8022 8056])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8061 8086]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7976 7980])
+                            ("left" variable nil (reparse-symbol function_parameters) [7982 7986])
+                            ("right" variable nil (reparse-symbol function_parameters) [7988 7993])
+                            ("optional" variable nil (reparse-symbol function_parameters) [8002 8010]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7962 8087])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8102 8106])
+                            ("l" variable nil (reparse-symbol function_parameters) [8108 8109])
+                            ("r" variable nil (reparse-symbol function_parameters) [8111 8112]))                          )
+                        (reparse-symbol indented_block_body) [8090 8383]))                  
+                :type "class")
+                nil [7938 8383])
+            ("F" variable nil nil [8383 8392])
+            ("IsInstance" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8449 8453])
+                            ("l" variable nil (reparse-symbol function_parameters) [8455 8456])
+                            ("r" variable nil (reparse-symbol function_parameters) [8458 8459]))                          )
+                        (reparse-symbol indented_block_body) [8437 8490])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8506 8510]))                          )
+                        (reparse-symbol indented_block_body) [8492 8573]))                  
+                :type "class")
+                nil [8408 8573])
+            ("IsType" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8611 8615])
+                            ("l" variable nil (reparse-symbol function_parameters) [8617 8618])
+                            ("r" variable nil (reparse-symbol function_parameters) [8620 8621]))                          )
+                        (reparse-symbol indented_block_body) [8599 8710])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8726 8730]))                          )
+                        (reparse-symbol indented_block_body) [8712 8789]))                  
+                :type "class")
+                nil [8574 8789])
+            ("ConnectedTo" type
+               (:superclasses ("NodeOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8832 8836])
+                            ("l" variable nil (reparse-symbol function_parameters) [8838 8839])
+                            ("r" variable nil (reparse-symbol function_parameters) [8841 8842]))                          )
+                        (reparse-symbol indented_block_body) [8820 8874])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8890 8894]))                          )
+                        (reparse-symbol indented_block_body) [8876 8958]))                  
+                :type "class")
+                nil [8790 8958])
+            ("InValues" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [9026 9067])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9072 9097]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9002 9006])
+                            ("left" variable nil (reparse-symbol function_parameters) [9008 9012])
+                            ("right" variable nil (reparse-symbol function_parameters) [9014 9019]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8988 9098])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9113 9117])
+                            ("l" variable nil (reparse-symbol function_parameters) [9119 9120])
+                            ("r" variable nil (reparse-symbol function_parameters) [9122 9123]))                          )
+                        (reparse-symbol indented_block_body) [9101 9153]))                  
+                :type "class")
+                nil [8959 9153])
+            ("In" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9189 9193])
+                            ("l" variable nil (reparse-symbol function_parameters) [9195 9196])
+                            ("r" variable nil (reparse-symbol function_parameters) [9198 9199]))                          )
+                        (reparse-symbol indented_block_body) [9177 9220]))                  
+                :type "class")
+                nil [9154 9220])
+            ("Member" type
+               (:superclasses ("BinaryOp")
+                :members 
+                  ( ("_symbol" variable nil (reparse-symbol indented_block_body) [9248 9261])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [9319 9360])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9365 9390]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9278 9282])
+                            ("left" variable nil (reparse-symbol function_parameters) [9284 9288])
+                            ("right" variable nil (reparse-symbol function_parameters) [9290 9295])
+                            ("optional" variable nil (reparse-symbol function_parameters) [9297 9305]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9264 9391])
+                    ("_apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9406 9410])
+                            ("l" variable nil (reparse-symbol function_parameters) [9412 9413])
+                            ("r" variable nil (reparse-symbol function_parameters) [9415 9416]))                          )
+                        (reparse-symbol indented_block_body) [9394 9516]))                  
+                :type "class")
+                nil [9221 9516])
+            ("Graph" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9567 9592])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9597 9616]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9556 9560]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9542 9617])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9638 9642])
+                            ("n" variable nil (reparse-symbol function_parameters) [9644 9645]))                          )
+                        (reparse-symbol indented_block_body) [9620 9672])
+                    ("add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9684 9688])
+                            ("node" variable nil (reparse-symbol function_parameters) [9690 9694]))                          )
+                        (reparse-symbol indented_block_body) [9675 9754])
+                    ("remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9769 9773])
+                            ("node" variable nil (reparse-symbol function_parameters) [9775 9779]))                          )
+                        (reparse-symbol indented_block_body) [9757 9812])
+                    ("neighbors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9830 9834])
+                            ("n" variable nil (reparse-symbol function_parameters) [9836 9837]))                          )
+                        (reparse-symbol indented_block_body) [9815 9872])
+                    ("find_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9890 9894])
+                            ("node1" variable nil (reparse-symbol function_parameters) [9896 9901])
+                            ("node2" variable nil (reparse-symbol function_parameters) [9903 9908]))                          )
+                        (reparse-symbol indented_block_body) [9875 10056])
+                    ("connected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10075 10079])
+                            ("node1" variable nil (reparse-symbol function_parameters) [10081 10086])
+                            ("node2" variable nil (reparse-symbol function_parameters) [10088 10093]))                          )
+                        (reparse-symbol indented_block_body) [10061 10146])
+                    ("disconnect_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10170 10174])
+                            ("np" variable nil (reparse-symbol function_parameters) [10176 10178]))                          
+                        :documentation "
+    Disconnects the given (node,port)
+    ")
+                        (reparse-symbol indented_block_body) [10149 10693])
+                    ("unlink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10708 10712])
+                            ("np1" variable nil (reparse-symbol function_parameters) [10714 10717])
+                            ("np2" variable nil (reparse-symbol function_parameters) [10719 10722]))                          )
+                        (reparse-symbol indented_block_body) [10696 11133])
+                    ("link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11146 11150])
+                            ("np1" variable nil (reparse-symbol function_parameters) [11152 11155])
+                            ("np2" variable nil (reparse-symbol function_parameters) [11157 11160]))                          
+                        :documentation "
+    Links two nodes on given ports
+    np1 is (node1, port1)
+    np2 is (node2, port2)
+    ")
+                        (reparse-symbol indented_block_body) [11136 11964])
+                    ("find_links" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11983 11987])
+                            ("query1" variable nil (reparse-symbol function_parameters) [11989 11995])
+                            ("query2" variable nil (reparse-symbol function_parameters) [12002 12008]))                          )
+                        (reparse-symbol indented_block_body) [11967 12747])
+                    ("ports_for_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12770 12774])
+                            ("node" variable nil (reparse-symbol function_parameters) [12776 12780]))                          
+                        :documentation "
+    Map of local port -> (other, other_port)
+    ")
+                        (reparse-symbol indented_block_body) [12750 13083])
+                    ("port_for_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13105 13109])
+                            ("node" variable nil (reparse-symbol function_parameters) [13111 13115])
+                            ("port" variable nil (reparse-symbol function_parameters) [13117 13121]))                          )
+                        (reparse-symbol indented_block_body) [13087 13200])
+                    ("disconnect_nodes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13224 13228])
+                            ("node1" variable nil (reparse-symbol function_parameters) [13230 13235])
+                            ("node2" variable nil (reparse-symbol function_parameters) [13237 13242]))                          
+                        :documentation " Disconnect node1 from node2. Either of node1 or node2
+      can be a node, or a (node, port) pair
+      Returns number of nodes disconnected
+    ")
+                        (reparse-symbol indented_block_body) [13203 13432])
+                    ("disconnect_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13457 13461])
+                            ("node1" variable nil (reparse-symbol function_parameters) [13463 13468]))                          
+                        :documentation " Disconnecte node from all neighbours ")
+                        (reparse-symbol indented_block_body) [13437 13608])
+                    ("get_one_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13629 13633])
+                            ("query1" variable nil (reparse-symbol function_parameters) [13635 13641])
+                            ("query2" variable nil (reparse-symbol function_parameters) [13648 13654])
+                            ("kw" variable nil (reparse-symbol function_parameters) [13659 13663]))                          )
+                        (reparse-symbol indented_block_body) [13611 13723])
+                    ("get_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13740 13744])
+                            ("query1" variable nil (reparse-symbol function_parameters) [13746 13752])
+                            ("query2" variable nil (reparse-symbol function_parameters) [13759 13765])
+                            ("kw" variable nil (reparse-symbol function_parameters) [13770 13774]))                          
+                        :documentation "
+    Keyword argument \"default\" lets you set a default value if
+    no node is found.  Note that this means you must use
+    Equal(F(\"default\"), <value>) to actually check a field called
+    \"default\" on a node.
+    ")
+                        (reparse-symbol indented_block_body) [13726 14493])
+                    ("has_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14510 14514])
+                            ("query1" variable nil (reparse-symbol function_parameters) [14516 14522])
+                            ("query2" variable nil (reparse-symbol function_parameters) [14529 14535]))                          )
+                        (reparse-symbol indented_block_body) [14496 14654])
+                    ("_test_node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14673 14677])
+                            ("n" variable nil (reparse-symbol function_parameters) [14679 14680])
+                            ("args" variable nil (reparse-symbol function_parameters) [14682 14686])
+                            ("kw" variable nil (reparse-symbol function_parameters) [14691 14693])
+                            ("link" variable nil (reparse-symbol function_parameters) [14698 14702]))                          )
+                        (reparse-symbol indented_block_body) [14657 15176])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15189 15193])
+                            ("args" variable nil (reparse-symbol function_parameters) [15195 15200])
+                            ("kw" variable nil (reparse-symbol function_parameters) [15202 15206]))                          )
+                        (reparse-symbol indented_block_body) [15179 15361])
+                    ("get_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15377 15381])
+                            ("args" variable nil (reparse-symbol function_parameters) [15383 15388])
+                            ("kw" variable nil (reparse-symbol function_parameters) [15390 15394]))                          )
+                        (reparse-symbol indented_block_body) [15364 15451])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15463 15467])
+                            ("args" variable nil (reparse-symbol function_parameters) [15469 15474])
+                            ("kw" variable nil (reparse-symbol function_parameters) [15476 15480]))                          
+                        :documentation "
+    Keyword argument \"default\" lets you set a default value if
+    no node is found.  Note that this means you must use
+    Equal(F(\"default\"), <value>) to actually check a field called
+    \"default\" on a node.
+    ")
+                        (reparse-symbol indented_block_body) [15454 16160])
+                    ("has" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16172 16176])
+                            ("args" variable nil (reparse-symbol function_parameters) [16178 16183])
+                            ("kw" variable nil (reparse-symbol function_parameters) [16185 16189]))                          )
+                        (reparse-symbol indented_block_body) [16163 16295])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16311 16315]))                          )
+                        (reparse-symbol indented_block_body) [16298 16342]))                  
+                :type "class")
+                nil [9518 16342])
+            ("test" function nil nil [16343 17806])
+            ("if" code nil nil [17809 17845]))          
+    :file "graph.py"
+    :pointmax 17845
+    :fsize 17844
+    :lastmodtime '(21344 58702 488984 354000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "minigraph.py"
+    :file "minigraph.py"
+    :fsize 4103
+    :lastmodtime '(21344 58702 488984 354000)
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!lib!graph!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -11,11 +11,13 @@
 		c-electric-lt-gt
 		c-electric-pound
 		c-electric-semi&comma
+		c-electric-slash
 		c-electric-star
 		comment-region
 		cperl-electric-paren
 		cperl-electric-rparen
 		cperl-electric-semi
+		cua-copy-region
 		cua-cut-region
 		cua-paste
 		end-of-buffer
@@ -24,6 +26,7 @@
 		lua-electric-match
 		org-beginning-of-line
 		org-delete-char
+		org-end-of-line
 		org-kill-line
 		org-self-insert-command
 		org-yank

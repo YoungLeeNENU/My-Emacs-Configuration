@@ -1,0 +1,178 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables (list 
+   (semanticdb-table "givename.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [41 50])
+            ("sys" include nil nil [51 61])
+            ("filename" code nil nil [63 98])
+            ("touch" code nil nil [99 126])
+            ("chmod" code nil nil [127 158])
+            ("os" code nil nil [160 176])
+            ("os" code nil nil [177 193]))          
+    :file "givename.py"
+    :pointmax 194
+    :fsize 193
+    :lastmodtime '(21203 60035 519991 304000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "spam.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("Sample" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [97 117]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [74 78])
+                            ("sample" variable nil (reparse-symbol function_parameters) [80 86]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [61 118])
+                    ("show" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [131 135]))                          )
+                        (reparse-symbol indented_block_body) [122 164])
+                    ("testcase" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [181 185]))                          )
+                        (reparse-symbol indented_block_body) [168 208]))                  
+                :type "class")
+                nil [41 208])
+            ("spam" variable nil nil [209 233])
+            ("spam" code nil nil [235 250]))          
+    :file "spam.py"
+    :pointmax 251
+    :fsize 250
+    :lastmodtime '(21416 55383 875978 228000)
+    :unmatched-syntax '((NAME 283 . 287) (NEWLINE 288 . 289) (INDENT_BLOCK 275 . 289) (INDENT_BLOCK 181 . 221))
+    )
+   (semanticdb-table "py.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("py" section nil nil [240 2242])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2242 3862])
+            ("py" section (:members 
+              ( ("py" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 python 是解释型语言" anchor nil nil [4045 4048])
+                        ("2 动态语言" anchor nil nil [4091 4094])
+                        ("2.1 不需要定义静态变量的定义" anchor nil nil [4128 4131])
+                        ("3 基本的程序结构" anchor nil nil [4189 4192])
+                        ("3.1 循环" anchor nil nil [4229 4232])
+                        ("3.1.1 for" anchor nil nil [4268 4271])
+                        ("3.1.2 while" anchor nil nil [4312 4315])
+                        ("3.2 条件判断" anchor nil nil [4370 4373])
+                        ("3.2.1 if" anchor nil nil [4411 4414])
+                        ("3.2.2 if else" anchor nil nil [4454 4457])
+                        ("3.2.3 if elif else" anchor nil nil [4502 4505])
+                        ("3.3 异常处理" anchor nil nil [4567 4570])
+                        ("3.3.1 try except" anchor nil nil [4608 4611])
+                        ("4 基本的数据结构" anchor nil nil [4682 4685])
+                        ("4.1 列表" anchor nil nil [4722 4725])
+                        ("4.2 字典" anchor nil nil [4761 4764])
+                        ("4.3 集合" anchor nil nil [4800 4803])
+                        ("4.4 字符串" anchor nil nil [4839 4842])
+                        ("4.5 数字" anchor nil nil [4879 4882])
+                        ("5 函数" anchor nil nil [4930 4933])
+                        ("5.1 def" anchor nil nil [4965 4968])
+                        ("5.2 lambda" anchor nil nil [5005 5008])
+                        ("6 面向对象" anchor nil nil [5060 5063])
+                        ("6.1 class" anchor nil nil [5097 5100])
+                        ("7 一些技巧" anchor nil nil [5151 5154]))                      ) nil [3975 5254])
+                    ("1" section nil nil [5254 5617])
+                    ("2" section (:members 
+                      ( ("2.1" section nil nil [5966 6159]))                      ) nil [5617 6159])
+                    ("3" section (:members 
+                      ( ("3.1" section (:members 
+                          ( ("3.1.1" section nil nil [6684 6937])
+                            ("3.1.2" section nil nil [6937 7191]))                          ) nil [6329 7191])
+                        ("3.2" section (:members 
+                          ( ("3.2.1" section nil nil [7548 7734])
+                            ("3.2.2" section nil nil [7734 7925])
+                            ("3.2.3" section nil nil [7925 8275]))                          ) nil [7191 8275])
+                        ("3.3" section (:members 
+                          ( ("3.3.1" section nil nil [8632 8836]))                          ) nil [8275 8836]))                      ) nil [6159 8836])
+                    ("4" section (:members 
+                      ( ("4.1" section nil nil [9006 9220])
+                        ("4.2" section nil nil [9220 9434])
+                        ("4.3" section nil nil [9434 9648])
+                        ("4.4" section nil nil [9648 9863])
+                        ("4.5" section nil nil [9863 10082]))                      ) nil [8836 10082])
+                    ("5" section (:members 
+                      ( ("5.1" section nil nil [10247 10426])
+                        ("5.2" section nil nil [10426 10613]))                      ) nil [10082 10613])
+                    ("6" section (:members 
+                      ( ("6.1" section nil nil [10780 10966]))                      ) nil [10613 10966])
+                    ("7" section (:members 
+                      ( ("Org" anchor nil nil [11223 11226])
+                        ("Emacs" anchor nil nil [11280 11283])
+                        ("Validate XHTML 1.0" anchor nil nil [11350 11353]))                      ) nil [10966 11449]))                  ) nil [3918 11449]))              ) nil [3862 11449]))          
+    :file "py.html"
+    :pointmax 11449
+    :fsize 11726
+    :lastmodtime '(21421 15581 110937 991000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filter.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "filter.scm"
+    :pointmax 2
+    :fsize 1
+    :lastmodtime '(21416 53657 831984 20000)
+    :unmatched-syntax '((semantic-list 29 . 69) (semantic-list 1 . 27) (semantic-list 29 . 69) (semantic-list 1 . 27) (semantic-list 29 . 77) (semantic-list 1 . 27) (semantic-list 79 . 90) (semantic-list 29 . 77) (semantic-list 1 . 27) (semantic-list 29 . 76) (semantic-list 1 . 27) (semantic-list 29 . 68) (semantic-list 1 . 27) (semantic-list 29 . 70) (semantic-list 1 . 27) (semantic-list 29 . 68) (semantic-list 1 . 27) (semantic-list 29 . 62) (semantic-list 1 . 27) (semantic-list 29 . 60) (semantic-list 1 . 27) (semantic-list 28 . 56) (semantic-list 1 . 27) (semantic-list 28 . 49) (semantic-list 1 . 27) (semantic-list 28 . 49) (semantic-list 1 . 27) (semantic-list 1 . 27) (semantic-list 28 . 37) (semantic-list 1 . 27) (semantic-list 28 . 36) (semantic-list 1 . 27) (semantic-list 28 . 30) (semantic-list 1 . 27) (semantic-list 1 . 27) (semantic-list 1 . 10))
+    )
+   )
+  :file "!home!lee!document!python!code!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

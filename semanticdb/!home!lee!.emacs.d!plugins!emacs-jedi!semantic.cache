@@ -73,6 +73,136 @@
     :lastmodtime '(20974 36033 356029 16000)
     :unmatched-syntax '((shell-command 4416 . 4449) (bol 4415 . 4415) (bol 4081 . 4081) (bol 3326 . 3326) (bol 2307 . 2307) (bol 1779 . 1779) (symbol 361 . 364) (punctuation 359 . 360) (punctuation 358 . 359) (symbol 351 . 357) (bol 351 . 351) (symbol 344 . 349) (punctuation 342 . 343) (punctuation 341 . 342) (symbol 335 . 340) (symbol 328 . 334) (bol 328 . 328) (symbol 321 . 327) (punctuation 319 . 320) (punctuation 318 . 319) (symbol 311 . 317) (bol 311 . 311) (symbol 304 . 310) (punctuation 302 . 303) (punctuation 301 . 302) (symbol 294 . 300) (bol 294 . 294) (symbol 47 . 51) (punctuation 45 . 46) (punctuation 44 . 45) (symbol 12 . 43) (bol 12 . 12))
     )
+   (semanticdb-table "jediepcserver.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Jedi EPC server.
+
+Copyright (C) 2012 Takafumi Arakaki
+
+Author: Takafumi Arakaki <aka.tkf at gmail.com>
+
+This file is NOT part of GNU Emacs.
+
+Jedi EPC server is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+Jedi EPC server is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Jedi EPC server.
+If not, see <http://www.gnu.org/licenses/>.
+
+\"\"\"" code nil nil [1 770])
+            ("os" include nil nil [772 781])
+            ("sys" include nil nil [782 792])
+            ("re" include nil nil [793 802])
+            ("itertools" include nil nil [803 819])
+            ("logging" include nil nil [820 834])
+            ("site" include nil nil [835 846])
+            ("jedi" variable nil nil [848 859])
+            ("PY3" variable nil nil [886 918])
+            ("NEED_ENCODE" code nil nil [919 940])
+            ("jedi_script" function (:arguments 
+              ( ("source" variable nil (reparse-symbol function_parameters) [959 965])
+                ("line" variable nil (reparse-symbol function_parameters) [967 971])
+                ("column" variable nil (reparse-symbol function_parameters) [973 979])
+                ("source_path" variable nil (reparse-symbol function_parameters) [981 992]))              ) nil [943 1185])
+            ("candidate_symbol" function
+               (:documentation "
+    Return a character representing completion type.
+
+    :type comp: jedi.api.Completion
+    :arg  comp: A completion object returned by `jedi.Script.complete`.
+
+    "
+                :arguments 
+                  ( ("comp" variable nil (reparse-symbol function_parameters) [1208 1212]))                  )
+                nil [1187 1498])
+            ("candidates_description" function
+               (:documentation "
+    Return `comp.description` in an appropriate format.
+
+    * Avoid return a string 'None'.
+    * Strip off all newlines. This is required for using
+      `comp.description` as candidate summary.
+
+    "
+                :arguments 
+                  ( ("comp" variable nil (reparse-symbol function_parameters) [1527 1531]))                  )
+                nil [1500 1853])
+            ("_WHITESPACES_RE" variable nil nil [1853 1889])
+            ("complete" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [1905 1910]))              ) nil [1892 2181])
+            ("get_in_function_call" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [2208 2213]))              ) nil [2183 2634])
+            ("_goto" function
+               (:documentation "
+    Helper function for `goto` and `related_names`.
+
+    :arg  method: `jedi.Script.goto` or `jedi.Script.related_names`
+    :arg    args: Arguments to `jedi_script`
+
+    "
+                :arguments 
+                  ( ("method" variable nil (reparse-symbol function_parameters) [2646 2652])
+                    ("args" variable nil (reparse-symbol function_parameters) [2654 2659]))                  )
+                nil [2636 3321])
+            ("goto" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3332 3337]))              ) nil [3323 3382])
+            ("related_names" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3402 3407]))              ) nil [3384 3461])
+            ("definition_to_dict" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [3486 3487]))              ) nil [3463 3820])
+            ("get_definition" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3841 3846]))              ) nil [3822 3957])
+            ("get_names_recursively" function
+               (:documentation "
+    Fetch interesting defined names in sub-scopes under `definition`.
+
+    :type names: jedi.api_classes.Definition
+
+    "
+                :arguments 
+                  ( ("definition" variable nil (reparse-symbol function_parameters) [3985 3995])
+                    ("parent" variable nil (reparse-symbol function_parameters) [3997 4003]))                  )
+                nil [3959 4500])
+            ("defined_names" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4520 4525]))              ) nil [4502 4603])
+            ("get_module_version" function (:arguments 
+              ( ("module" variable nil (reparse-symbol function_parameters) [4628 4634]))              ) nil [4605 5064])
+            ("get_jedi_version" function nil nil [5066 5317])
+            ("jedi_epc_server" function (:arguments 
+              ( ("address" variable nil (reparse-symbol function_parameters) [5339 5346])
+                ("port" variable nil (reparse-symbol function_parameters) [5360 5364])
+                ("port_file" variable nil (reparse-symbol function_parameters) [5368 5377])
+                ("sys_path" variable nil (reparse-symbol function_parameters) [5410 5418])
+                ("virtual_env" variable nil (reparse-symbol function_parameters) [5423 5434])
+                ("debugger" variable nil (reparse-symbol function_parameters) [5459 5467])
+                ("log" variable nil (reparse-symbol function_parameters) [5474 5477])
+                ("log_level" variable nil (reparse-symbol function_parameters) [5484 5493])
+                ("log_traceback" variable nil (reparse-symbol function_parameters) [5520 5533]))              ) nil [5319 7504])
+            ("import_jedi" function nil nil [7506 7642])
+            ("add_virtualenv_path" function
+               (:documentation "Add virtualenv's site-packages to `sys.path`."
+                :arguments 
+                  ( ("venv" variable nil (reparse-symbol function_parameters) [7668 7672]))                  )
+                nil [7644 7977])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [7988 7992]))              ) nil [7979 9447])
+            ("if" code nil nil [9449 9487]))          
+    :file "jediepcserver.py"
+    :pointmax 9487
+    :fsize 9486
+    :lastmodtime '(20974 36033 356029 16000)
+    :unmatched-syntax '((RETURN 1780 . 1786) (IF 1818 . 1820) (ELSE 1845 . 1849))
+    )
    )
   :file "!home!lee!.emacs.d!plugins!emacs-jedi!semantic.cache"
   :semantic-tag-version "2.0"

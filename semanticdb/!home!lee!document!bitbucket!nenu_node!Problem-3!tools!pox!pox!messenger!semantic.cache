@@ -1,0 +1,268 @@
+;; Object messenger/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "messenger/"
+  :tables (list 
+   (semanticdb-table "web_transport.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+Connects the POX messenger bus to HTTP.
+
+Requires the \"webserver\" component.
+
+NOTE: The web_transport keeps its own session IDs.  Since it was first
+      written, though, sessions IDs have become part of every
+      Connection, and we could (but are not) reuse those.
+\"\"\"" code nil nil [678 954])
+            ("SocketServer" include nil nil [956 995])
+            ("BaseHTTPServer" include nil nil [996 1024])
+            ("time" include nil nil [1025 1036])
+            ("select" include nil nil [1037 1050])
+            ("random" include nil nil [1052 1065])
+            ("hashlib" include nil nil [1066 1080])
+            ("base64" include nil nil [1081 1094])
+            ("json" include nil nil [1095 1106])
+            ("pox.lib.recoco" include nil nil [1108 1140])
+            ("pox.messenger" include nil nil [1142 1189])
+            ("pox.core" include nil nil [1191 1216])
+            ("pox.web.webcore" include nil nil [1218 1247])
+            ("log" variable nil nil [1249 1271])
+            ("HTTPConnection" type
+               (:superclasses ("Connection")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Connection" code nil (reparse-symbol indented_block_body) [1347 1383])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1388 1407])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1412 1446])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1451 1473])
+                            ("self" code nil (reparse-symbol indented_block_body) [1548 1565])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1598 1617])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1701 1728])
+                            ("self" code nil (reparse-symbol indented_block_body) [1734 1754]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1325 1329])
+                            ("transport" variable nil (reparse-symbol function_parameters) [1331 1340]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1311 1755])
+                    ("_check_timeout" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1778 1782]))                          )
+                        (reparse-symbol indented_block_body) [1758 1903])
+                    ("_new_tx_seq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1923 1927]))                          )
+                        (reparse-symbol indented_block_body) [1906 2005])
+                    ("_check_rx_seq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2027 2031])
+                            ("seq" variable nil (reparse-symbol function_parameters) [2033 2036]))                          )
+                        (reparse-symbol indented_block_body) [2008 2216])
+                    ("_close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2231 2235]))                          )
+                        (reparse-symbol indented_block_body) [2219 2355])
+                    ("send_raw" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2372 2376])
+                            ("data" variable nil (reparse-symbol function_parameters) [2378 2382]))                          )
+                        (reparse-symbol indented_block_body) [2358 2491])
+                    ("_do_rx_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2514 2518])
+                            ("items" variable nil (reparse-symbol function_parameters) [2520 2525]))                          )
+                        (reparse-symbol indented_block_body) [2494 2580]))                  
+                :type "class")
+                nil [1274 2580])
+            ("HTTPTransport" type
+               (:superclasses ("Transport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Transport" code nil (reparse-symbol indented_block_body) [2656 2687])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2692 2714])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2781 2840]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2631 2635])
+                            ("nexus" variable nil (reparse-symbol function_parameters) [2637 2642]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2617 2841])
+                    ("_check_timeouts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2865 2869]))                          )
+                        (reparse-symbol indented_block_body) [2844 2938])
+                    ("_forget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2954 2958])
+                            ("connection" variable nil (reparse-symbol function_parameters) [2960 2970]))                          )
+                        (reparse-symbol indented_block_body) [2941 3172])
+                    ("create_session" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3195 3199]))                          )
+                        (reparse-symbol indented_block_body) [3175 3293])
+                    ("get_session" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3313 3317])
+                            ("key" variable nil (reparse-symbol function_parameters) [3319 3322]))                          )
+                        (reparse-symbol indented_block_body) [3296 3369]))                  
+                :type "class")
+                nil [2582 3369])
+            ("CometRequestHandler" type
+               (:superclasses ("SplitRequestHandler")
+                :members 
+                  ( ("protocol_version" variable nil (reparse-symbol indented_block_body) [3423 3452])
+                    ("_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3565 3569]))                          )
+                        (reparse-symbol indented_block_body) [3554 3669])
+                    ("_doAuth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3685 3689]))                          )
+                        (reparse-symbol indented_block_body) [3672 4211])
+                    ("_getSession" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4231 4235]))                          )
+                        (reparse-symbol indented_block_body) [4214 4699])
+                    ("_enter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4714 4718]))                          )
+                        (reparse-symbol indented_block_body) [4702 4904])
+                    ("do_POST" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4920 4924]))                          )
+                        (reparse-symbol indented_block_body) [4907 6486])
+                    ("do_GET" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6505 6509]))                          )
+                        (reparse-symbol indented_block_body) [6493 8449]))                  
+                :type "class")
+                nil [3372 8449])
+            ("launch" function (:arguments 
+              ( ("username" variable nil (reparse-symbol function_parameters) [8463 8471])
+                ("password" variable nil (reparse-symbol function_parameters) [8476 8484]))              ) nil [8451 8919]))          
+    :file "web_transport.py"
+    :pointmax 8920
+    :fsize 8919
+    :lastmodtime '(21344 58702 604984 350000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tcp_transport.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pox.lib.revent.revent" include nil nil [678 713])
+            ("pox.core" include nil nil [714 747])
+            ("pox.messenger" include nil nil [748 775])
+            ("log" variable nil nil [777 799])
+            ("pox.lib.recoco.recoco" include nil nil [801 836])
+            ("TCPTransport" type
+               (:superclasses ("Task" "Transport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("port" variable nil (reparse-symbol indented_block_body) [951 967])
+                            ("Task" code nil (reparse-symbol indented_block_body) [972 991])
+                            ("Transport" code nil (reparse-symbol indented_block_body) [996 1027])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1032 1059])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1064 1089]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [892 896])
+                            ("address" variable nil (reparse-symbol function_parameters) [898 905])
+                            ("port" variable nil (reparse-symbol function_parameters) [919 923])
+                            ("nexus" variable nil (reparse-symbol function_parameters) [932 937]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [878 1090])
+                    ("_forget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1106 1110])
+                            ("connection" variable nil (reparse-symbol function_parameters) [1112 1122]))                          
+                        :documentation " Forget about a connection (because it has closed) ")
+                        (reparse-symbol indented_block_body) [1093 1309])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1321 1325]))                          )
+                        (reparse-symbol indented_block_body) [1312 2030]))                  
+                :type "class")
+                nil [838 2030])
+            ("TCPConnection" type
+               (:superclasses ("Connection" "Task")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2118 2139])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2263 2312])
+                            ("Connection" code nil (reparse-symbol indented_block_body) [2317 2353])
+                            ("Task" code nil (reparse-symbol indented_block_body) [2358 2377])
+                            ("self" code nil (reparse-symbol indented_block_body) [2401 2421]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2088 2092])
+                            ("transport" variable nil (reparse-symbol function_parameters) [2094 2103])
+                            ("socket" variable nil (reparse-symbol function_parameters) [2105 2111]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2074 2422])
+                    ("_close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2437 2441]))                          )
+                        (reparse-symbol indented_block_body) [2425 2562])
+                    ("send_raw" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2579 2583])
+                            ("data" variable nil (reparse-symbol function_parameters) [2585 2589]))                          )
+                        (reparse-symbol indented_block_body) [2565 2747])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2759 2763]))                          )
+                        (reparse-symbol indented_block_body) [2750 3018])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3034 3038]))                          )
+                        (reparse-symbol indented_block_body) [3021 3117])
+                    ("_get_socket_name" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("socket" variable nil (reparse-symbol function_parameters) [3157 3163]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3120 3259]))                  
+                :type "class")
+                nil [2032 3259])
+            ("pox.core" include nil nil [3261 3276])
+            ("launch" function (:arguments 
+              ( ("tcp_address" variable nil (reparse-symbol function_parameters) [3290 3301])
+                ("tcp_port" variable nil (reparse-symbol function_parameters) [3315 3323]))              ) nil [3278 3465]))          
+    :file "tcp_transport.py"
+    :pointmax 3465
+    :fsize 3464
+    :lastmodtime '(21344 58702 596984 350000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!messenger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

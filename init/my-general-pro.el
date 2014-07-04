@@ -205,3 +205,10 @@
 
 (global-set-key  [f1] (lambda () (interactive) (manual-entry (current-word))))
 (current-line)
+
+
+;; Fill Column Indicator
+;; (require 'fill-column-indicator)
+;; (define-globalized-minor-mode
+;;   global-fci-mode fci-mode (lambda () (fci-mode 1)))
+;; (global-fci-mode t)

@@ -1,0 +1,769 @@
+;; Object datapaths/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "datapaths/"
+  :tables (list 
+   (semanticdb-table "switch.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"
+A software OpenFlow switch
+\"\"\"" code nil nil [712 746])
+            ("\"\"\"
+TODO
+----
+* Don't reply to HELLOs -- just send one on connect
+* Pass raw OFP packet to rx handlers as well as parsed
+* Once previous is done, use raw OFP for error data when appropriate
+* Check self.features to see if various features/actions are enabled,
+  and act appropriately if they're not (rather than just doing them).
+* Virtual ports currently have no config/state, but probably should.
+* Provide a way to rebuild, e.g., the action handler table when the
+  features object is adjusted.
+\"\"\"" code nil nil [748 1249])
+            ("pox.lib.util" include nil nil [1252 1313])
+            ("pox.lib.revent" include nil nil [1314 1358])
+            ("pox.openflow.libopenflow_01" include nil nil [1359 1400])
+            ("pox.openflow.libopenflow_01" include nil nil [1401 1441])
+            ("pox.openflow.util" include nil nil [1442 1499])
+            ("pox.openflow.flow_table" include nil nil [1500 1551])
+            ("pox.lib.packet" include nil nil [1552 1580])
+            ("logging" include nil nil [1582 1596])
+            ("DpPacketOut" type
+               (:documentation "
+  Event raised when a dataplane packet is sent out a port
+  "
+                :superclasses ("Event")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("assert" code nil (reparse-symbol indented_block_body) [1743 1804])
+                            ("Event" code nil (reparse-symbol indented_block_body) [1809 1829])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1834 1850])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1855 1875])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1880 1896])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1901 1919]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1712 1716])
+                            ("node" variable nil (reparse-symbol function_parameters) [1718 1722])
+                            ("packet" variable nil (reparse-symbol function_parameters) [1724 1730])
+                            ("port" variable nil (reparse-symbol function_parameters) [1732 1736]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1698 1950]))                  
+                :type "class")
+                nil [1599 1950])
+            ("_generate_port" function (:arguments 
+              ( ("port_no" variable nil (reparse-symbol function_parameters) [1972 1979])
+                ("dpid" variable nil (reparse-symbol function_parameters) [1981 1985]))              ) nil [1952 2315])
+            ("_generate_ports" function (:arguments 
+              ( ("num_ports" variable nil (reparse-symbol function_parameters) [2337 2346])
+                ("dpid" variable nil (reparse-symbol function_parameters) [2350 2354]))              ) nil [2316 2425])
+            ("SoftwareSwitchBase" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+    Initialize switch
+     - ports is a list of ofp_phy_ports
+    \"\"\"" code nil (reparse-symbol indented_block_body) [2582 2655])
+                            ("if" code nil (reparse-symbol indented_block_body) [2660 2702])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2706 2722])
+                            ("if" code nil (reparse-symbol indented_block_body) [2728 2813])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2818 2834])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2839 2869])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2874 2908])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2913 2941])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2947 2977])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2982 3004])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3009 3032])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3038 3077])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3082 3105])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3153 3177])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3244 3259])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3264 3284])
+                            ("for" code nil (reparse-symbol indented_block_body) [3289 3421])
+                            ("if" code nil (reparse-symbol indented_block_body) [3426 4331])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4486 4508])
+                            ("for" code nil (reparse-symbol indented_block_body) [4513 4778])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4919 4944])
+                            ("for" code nil (reparse-symbol indented_block_body) [4949 5226]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2478 2482])
+                            ("dpid" variable nil (reparse-symbol function_parameters) [2484 2488])
+                            ("name" variable nil (reparse-symbol function_parameters) [2490 2494])
+                            ("ports" variable nil (reparse-symbol function_parameters) [2501 2506])
+                            ("miss_send_len" variable nil (reparse-symbol function_parameters) [2510 2523])
+                            ("max_buffers" variable nil (reparse-symbol function_parameters) [2545 2556])
+                            ("features" variable nil (reparse-symbol function_parameters) [2562 2570]))                          
+                        :documentation "
+    Initialize switch
+     - ports is a list of ofp_phy_ports
+    "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2464 5226])
+                    ("rx_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5245 5249])
+                            ("connection" variable nil (reparse-symbol function_parameters) [5251 5261])
+                            ("msg" variable nil (reparse-symbol function_parameters) [5263 5266]))                          
+                        :documentation "
+    Handle an incoming OpenFlow message
+    ")
+                        (reparse-symbol indented_block_body) [5229 5650])
+                    ("set_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5673 5677])
+                            ("connection" variable nil (reparse-symbol function_parameters) [5679 5689]))                          
+                        :documentation "
+    Set this switch's connection.
+    ")
+                        (reparse-symbol indented_block_body) [5653 5828])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5841 5845])
+                            ("message" variable nil (reparse-symbol function_parameters) [5847 5854]))                          
+                        :documentation "
+    Send a message to this switch's communication partner
+    ")
+                        (reparse-symbol indented_block_body) [5831 6081])
+                    ("_rx_hello" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6099 6103])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [6105 6108])
+                            ("connection" variable nil (reparse-symbol function_parameters) [6110 6120]))                          )
+                        (reparse-symbol indented_block_body) [6084 6145])
+                    ("_rx_echo_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6170 6174])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [6176 6179])
+                            ("connection" variable nil (reparse-symbol function_parameters) [6181 6191]))                          
+                        :documentation "
+    Handles echo requests
+    ")
+                        (reparse-symbol indented_block_body) [6148 6293])
+                    ("_rx_features_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6322 6326])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [6328 6331])
+                            ("connection" variable nil (reparse-symbol function_parameters) [6333 6343]))                          
+                        :documentation "
+    Handles feature requests
+    ")
+                        (reparse-symbol indented_block_body) [6296 6809])
+                    ("_rx_flow_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6830 6834])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [6836 6839])
+                            ("connection" variable nil (reparse-symbol function_parameters) [6841 6851]))                          
+                        :documentation "
+    Handles flow mods
+    ")
+                        (reparse-symbol indented_block_body) [6812 7153])
+                    ("_rx_packet_out" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7176 7180])
+                            ("packet_out" variable nil (reparse-symbol function_parameters) [7182 7192])
+                            ("connection" variable nil (reparse-symbol function_parameters) [7194 7204]))                          
+                        :documentation "
+    Handles packet_outs
+    ")
+                        (reparse-symbol indented_block_body) [7156 7853])
+                    ("_rx_echo_reply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7876 7880])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [7882 7885])
+                            ("connection" variable nil (reparse-symbol function_parameters) [7887 7897]))                          )
+                        (reparse-symbol indented_block_body) [7856 7909])
+                    ("_rx_barrier_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7937 7941])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [7943 7946])
+                            ("connection" variable nil (reparse-symbol function_parameters) [7948 7958]))                          )
+                        (reparse-symbol indented_block_body) [7912 8023])
+                    ("_rx_get_config_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8054 8058])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [8060 8063])
+                            ("connection" variable nil (reparse-symbol function_parameters) [8065 8075]))                          )
+                        (reparse-symbol indented_block_body) [8026 8143])
+                    ("_rx_stats_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8169 8173])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [8175 8178])
+                            ("connection" variable nil (reparse-symbol function_parameters) [8180 8190]))                          )
+                        (reparse-symbol indented_block_body) [8146 10178])
+                    ("_rx_set_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10201 10205])
+                            ("config" variable nil (reparse-symbol function_parameters) [10207 10213])
+                            ("connection" variable nil (reparse-symbol function_parameters) [10215 10225]))                          )
+                        (reparse-symbol indented_block_body) [10181 10237])
+                    ("_rx_port_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10258 10262])
+                            ("port_mod" variable nil (reparse-symbol function_parameters) [10264 10272])
+                            ("connection" variable nil (reparse-symbol function_parameters) [10274 10284]))                          )
+                        (reparse-symbol indented_block_body) [10240 12117])
+                    ("_rx_vendor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12136 12140])
+                            ("vendor" variable nil (reparse-symbol function_parameters) [12142 12148])
+                            ("connection" variable nil (reparse-symbol function_parameters) [12150 12160]))                          )
+                        (reparse-symbol indented_block_body) [12120 12394])
+                    ("send_hello" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12413 12417])
+                            ("force" variable nil (reparse-symbol function_parameters) [12419 12424]))                          
+                        :documentation "
+    Send hello (once)
+    ")
+                        (reparse-symbol indented_block_body) [12397 12634])
+                    ("send_packet_in" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12657 12661])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [12663 12670])
+                            ("buffer_id" variable nil (reparse-symbol function_parameters) [12672 12681])
+                            ("reason" variable nil (reparse-symbol function_parameters) [12700 12706])
+                            ("data_length" variable nil (reparse-symbol function_parameters) [12735 12746]))                          
+                        :documentation "
+    Send PacketIn
+    ")
+                        (reparse-symbol indented_block_body) [12637 13269])
+                    ("send_port_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13294 13298])
+                            ("port" variable nil (reparse-symbol function_parameters) [13300 13304])
+                            ("reason" variable nil (reparse-symbol function_parameters) [13306 13312]))                          
+                        :documentation "
+    Send port status
+
+    port is an ofp_phy_port
+    reason is one of OFPPR_xxx
+    ")
+                        (reparse-symbol indented_block_body) [13272 13603])
+                    ("rx_packet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13621 13625])
+                            ("packet" variable nil (reparse-symbol function_parameters) [13627 13633])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [13635 13642]))                          
+                        :documentation "
+    process a dataplane packet
+
+    packet: an instance of ethernet
+    in_port: the integer port number
+    ")
+                        (reparse-symbol indented_block_body) [13606 14610])
+                    ("delete_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14630 14634])
+                            ("port" variable nil (reparse-symbol function_parameters) [14636 14640]))                          
+                        :documentation "
+    Removes a port
+
+    Sends a port_status message to the controller
+
+    Returns the removed phy_port
+    ")
+                        (reparse-symbol indented_block_body) [14613 15106])
+                    ("add_port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15123 15127])
+                            ("port" variable nil (reparse-symbol function_parameters) [15129 15133]))                          
+                        :documentation "
+    Adds a port
+
+    Sends a port_status message to the controller
+    ")
+                        (reparse-symbol indented_block_body) [15109 15506])
+                    ("_output_packet_physical" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15538 15542])
+                            ("packet" variable nil (reparse-symbol function_parameters) [15544 15550])
+                            ("port_no" variable nil (reparse-symbol function_parameters) [15552 15559]))                          
+                        :documentation "
+    send a packet out a single physical port
+
+    This is called by the more general _output_packet().
+    ")
+                        (reparse-symbol indented_block_body) [15509 15754])
+                    ("_output_packet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15777 15781])
+                            ("packet" variable nil (reparse-symbol function_parameters) [15783 15789])
+                            ("out_port" variable nil (reparse-symbol function_parameters) [15791 15799])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [15801 15808])
+                            ("max_len" variable nil (reparse-symbol function_parameters) [15810 15817]))                          
+                        :documentation "
+    send a packet out some port
+
+    This handles virtual ports and does validation.
+
+    packet: instance of ethernet
+    out_port, in_port: the integer port number
+    max_len: maximum packet payload length to send to controller
+    ")
+                        (reparse-symbol indented_block_body) [15757 18152])
+                    ("_buffer_packet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18175 18179])
+                            ("packet" variable nil (reparse-symbol function_parameters) [18181 18187])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [18189 18196]))                          
+                        :documentation "
+    Buffer packet and return buffer ID
+
+    If no buffer is available, return None.
+    ")
+                        (reparse-symbol indented_block_body) [18155 18729])
+                    ("_process_actions_for_packet_from_buffer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18777 18781])
+                            ("actions" variable nil (reparse-symbol function_parameters) [18783 18790])
+                            ("buffer_id" variable nil (reparse-symbol function_parameters) [18792 18801])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [18850 18853]))                          
+                        :documentation "
+    output and release a packet from the buffer
+
+    ofp is the message which triggered this processing, if any (used for error
+    generation)
+    ")
+                        (reparse-symbol indented_block_body) [18732 19467])
+                    ("_process_actions_for_packet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19503 19507])
+                            ("actions" variable nil (reparse-symbol function_parameters) [19509 19516])
+                            ("packet" variable nil (reparse-symbol function_parameters) [19518 19524])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [19526 19533])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [19535 19538]))                          
+                        :documentation "
+    process the output actions for a packet
+
+    ofp is the message which triggered this processing, if any (used for error
+    generation)
+    ")
+                        (reparse-symbol indented_block_body) [19470 20384])
+                    ("_action_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20407 20411])
+                            ("action" variable nil (reparse-symbol function_parameters) [20413 20419])
+                            ("packet" variable nil (reparse-symbol function_parameters) [20421 20427])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [20429 20436]))                          )
+                        (reparse-symbol indented_block_body) [20387 20527])
+                    ("_action_set_vlan_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20554 20558])
+                            ("action" variable nil (reparse-symbol function_parameters) [20560 20566])
+                            ("packet" variable nil (reparse-symbol function_parameters) [20568 20574])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [20576 20583]))                          )
+                        (reparse-symbol indented_block_body) [20529 20802])
+                    ("_action_set_vlan_pcp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20830 20834])
+                            ("action" variable nil (reparse-symbol function_parameters) [20836 20842])
+                            ("packet" variable nil (reparse-symbol function_parameters) [20844 20850])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [20852 20859]))                          )
+                        (reparse-symbol indented_block_body) [20804 21075])
+                    ("_action_strip_vlan" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21101 21105])
+                            ("action" variable nil (reparse-symbol function_parameters) [21107 21113])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21115 21121])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21123 21130]))                          )
+                        (reparse-symbol indented_block_body) [21077 21267])
+                    ("_action_set_dl_src" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21293 21297])
+                            ("action" variable nil (reparse-symbol function_parameters) [21299 21305])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21307 21313])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21315 21322]))                          )
+                        (reparse-symbol indented_block_body) [21269 21375])
+                    ("_action_set_dl_dst" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21401 21405])
+                            ("action" variable nil (reparse-symbol function_parameters) [21407 21413])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21415 21421])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21423 21430]))                          )
+                        (reparse-symbol indented_block_body) [21377 21483])
+                    ("_action_set_nw_src" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21509 21513])
+                            ("action" variable nil (reparse-symbol function_parameters) [21515 21521])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21523 21529])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21531 21538]))                          )
+                        (reparse-symbol indented_block_body) [21485 21639])
+                    ("_action_set_nw_dst" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21665 21669])
+                            ("action" variable nil (reparse-symbol function_parameters) [21671 21677])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21679 21685])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21687 21694]))                          )
+                        (reparse-symbol indented_block_body) [21641 21795])
+                    ("_action_set_nw_tos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21821 21825])
+                            ("action" variable nil (reparse-symbol function_parameters) [21827 21833])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21835 21841])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21843 21850]))                          )
+                        (reparse-symbol indented_block_body) [21797 21947])
+                    ("_action_set_tp_src" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21973 21977])
+                            ("action" variable nil (reparse-symbol function_parameters) [21979 21985])
+                            ("packet" variable nil (reparse-symbol function_parameters) [21987 21993])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [21995 22002]))                          )
+                        (reparse-symbol indented_block_body) [21949 22135])
+                    ("_action_set_tp_dst" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22161 22165])
+                            ("action" variable nil (reparse-symbol function_parameters) [22167 22173])
+                            ("packet" variable nil (reparse-symbol function_parameters) [22175 22181])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [22183 22190]))                          )
+                        (reparse-symbol indented_block_body) [22137 22323])
+                    ("_action_enqueue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22346 22350])
+                            ("action" variable nil (reparse-symbol function_parameters) [22352 22358])
+                            ("packet" variable nil (reparse-symbol function_parameters) [22360 22366])
+                            ("in_port" variable nil (reparse-symbol function_parameters) [22368 22375]))                          )
+                        (reparse-symbol indented_block_body) [22325 22525])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24188 24192]))                          )
+                        (reparse-symbol indented_block_body) [24174 24383]))                  
+                :type "class")
+                nil [2427 24383])
+            ("SoftwareSwitch" type
+               (:superclasses ("SoftwareSwitchBase" "EventMixin")
+                :members 
+                  ( ("_eventMixin_events" variable nil (reparse-symbol indented_block_body) [24442 24481])
+                    ("_output_packet_physical" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24514 24518])
+                            ("packet" variable nil (reparse-symbol function_parameters) [24520 24526])
+                            ("port_no" variable nil (reparse-symbol function_parameters) [24528 24535]))                          
+                        :documentation "
+    send a packet out a single physical port
+
+    This is called by the more general _output_packet().
+    ")
+                        (reparse-symbol indented_block_body) [24485 24725]))                  
+                :type "class")
+                nil [24385 24725])
+            ("OFConnection" type
+               (:documentation "
+  A codec for OpenFlow messages.
+
+  Decodes and encodes OpenFlow messages (ofp_message) into byte arrays.
+
+  Wraps an io_worker that does the actual io work, and calls a
+  receiver_callback function when a new message as arrived.
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("ID" variable nil (reparse-symbol indented_block_body) [25183 25189])
+                    ("msg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25254 25258])
+                            ("m" variable nil (reparse-symbol function_parameters) [25260 25261]))                          )
+                        (reparse-symbol indented_block_body) [25245 25311])
+                    ("err" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25322 25326])
+                            ("m" variable nil (reparse-symbol function_parameters) [25328 25329]))                          )
+                        (reparse-symbol indented_block_body) [25313 25379])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25391 25395])
+                            ("m" variable nil (reparse-symbol function_parameters) [25397 25398]))                          )
+                        (reparse-symbol indented_block_body) [25381 25447])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [25486 25512])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25517 25554])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25559 25610])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25615 25640])
+                            ("OFConnection" variable nil (reparse-symbol indented_block_body) [25645 25665])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25670 25695])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25700 25772])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25777 25823])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25829 25860]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25464 25468])
+                            ("io_worker" variable nil (reparse-symbol function_parameters) [25470 25479]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [25450 25861])
+                    ("set_message_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25889 25893])
+                            ("handler" variable nil (reparse-symbol function_parameters) [25895 25902]))                          )
+                        (reparse-symbol indented_block_body) [25864 25944])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25957 25961])
+                            ("data" variable nil (reparse-symbol function_parameters) [25963 25967]))                          
+                        :documentation "
+    Send raw data to the controller.
+
+    Generally, data is a bytes object. If not, we check if it has a pack()
+    method and call it (hoping the result will be a bytes object).  This
+    way, you can just pass one of the OpenFlow objects from the OpenFlow
+    library to it and get the expected result, for example.
+    ")
+                        (reparse-symbol indented_block_body) [25947 26426])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26439 26443])
+                            ("io_worker" variable nil (reparse-symbol function_parameters) [26445 26454]))                          )
+                        (reparse-symbol indented_block_body) [26429 27637])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27651 27655]))                          )
+                        (reparse-symbol indented_block_body) [27640 27685])
+                    ("get_controller_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27711 27715]))                          
+                        :documentation "
+    Return a tuple of the controller's (address, port) we are connected to
+    ")
+                        (reparse-symbol indented_block_body) [27688 27839])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27855 27859]))                          )
+                        (reparse-symbol indented_block_body) [27842 27902]))                  
+                :type "class")
+                nil [24727 27902])
+            ("SwitchFeatures" type
+               (:documentation "
+  Stores switch features
+
+  Keeps settings for switch capabilities and supported actions.
+  Automatically has attributes of the form \".act_foo\" for all OFPAT_FOO,
+  and \".cap_foo\" for all OFPC_FOO (as gathered from libopenflow).
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [28209 28228])
+                            ("for" code nil (reparse-symbol indented_block_body) [28233 28420])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28425 28444])
+                            ("for" code nil (reparse-symbol indented_block_body) [28449 28636])
+                            ("initHelper" code nil (reparse-symbol indented_block_body) [28641 28661]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28192 28196])
+                            ("kw" variable nil (reparse-symbol function_parameters) [28198 28202]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [28178 28662])
+                    ("capability_bits" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28698 28702]))                          
+                        :documentation "
+    Value used in features reply
+    ")
+                        (reparse-symbol indented_block_body) [28665 28857])
+                    ("action_bits" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28889 28893]))                          
+                        :documentation "
+    Value used in features reply
+    ")
+                        (reparse-symbol indented_block_body) [28860 29048])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29064 29068]))                          )
+                        (reparse-symbol indented_block_body) [29051 29215]))                  
+                :type "class")
+                nil [27904 29215]))          
+    :file "switch.py"
+    :pointmax 29215
+    :fsize 29214
+    :lastmodtime '(21344 58702 756984 346000)
+    :unmatched-syntax '((INDENT_BLOCK 27518 . 27620) (NEWLINE 27517 . 27518) (COLON 27516 . 27517) (TRY 27436 . 27439) (AS 27512 . 27514) (COMMA 12698 . 12699) (NAME 12688 . 12694) (STRING_LITERAL 12696 . 12698))
+    )
+   (semanticdb-table "nx_switch.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("inspect" include nil nil [679 693])
+            ("pox.openflow.libopenflow_01" include nil nil [695 735])
+            ("pox.openflow.nicira_ext" include nil nil [736 772])
+            ("pox.datapaths.switch" include nil nil [773 834])
+            ("_slave_blacklist" variable nil nil [836 961])
+            ("_messages_for_all" variable nil nil [962 1007])
+            ("NXSoftwareSwitch" type
+               (:documentation "
+  Software datapath with Nicira (NX) extensions
+
+  Extension of the software switch that supports some of the Nicira (NX) vendor
+  extensions that are part of Open vSwitch.
+  
+  In particular, this include the ability for a switch to connect to multiple
+  controllers at the same time.
+
+  In the beginning, all controllers start out as equals (ROLE_OTHER). Through
+  the NX vendor message role_request, one controller can be promoted to
+  ROLE_MASTER, in which case all other controllers are downgraded to slave
+  status.
+
+  The switch doesn't accept state-mutating messages (e.g., FLOW_MOD, see
+  _slave_blacklist) from slave controllers.
+
+  Messages are distributed to controllers according to their type:
+    - symmetric message replies are sent to the controller that initiated them
+      (e.g., STATS_REQUEST -> REPLY)
+    - port_status messages are distributed to all controllers
+    - all other messages are distributed to the master controller, or if none
+      is present, any controller in ROLE_OTHER
+  "
+                :superclasses ("SoftwareSwitch")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("SoftwareSwitch" code nil (reparse-symbol indented_block_body) [2115 2157])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2162 2182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2187 2208])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2213 2245])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2352 2371])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2524 2549]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2091 2095])
+                            ("args" variable nil (reparse-symbol function_parameters) [2097 2102])
+                            ("kw" variable nil (reparse-symbol function_parameters) [2104 2108]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2077 2550])
+                    ("rx_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2569 2573])
+                            ("connection" variable nil (reparse-symbol function_parameters) [2575 2585])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2587 2590]))                          
+                        :documentation "
+    Handles incoming messages
+    
+    @overrides SoftwareSwitch.rx_message
+    ")
+                        (reparse-symbol indented_block_body) [2553 3030])
+                    ("check_rights" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3051 3055])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [3057 3060])
+                            ("connection" variable nil (reparse-symbol function_parameters) [3062 3072]))                          )
+                        (reparse-symbol indented_block_body) [3033 3208])
+                    ("send_vendor_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3234 3238])
+                            ("connection" variable nil (reparse-symbol function_parameters) [3240 3250]))                          )
+                        (reparse-symbol indented_block_body) [3211 3355])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3368 3372])
+                            ("message" variable nil (reparse-symbol function_parameters) [3374 3381]))                          )
+                        (reparse-symbol indented_block_body) [3358 4656])
+                    ("add_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4679 4683])
+                            ("connection" variable nil (reparse-symbol function_parameters) [4685 4695]))                          )
+                        (reparse-symbol indented_block_body) [4659 4865])
+                    ("set_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4888 4892])
+                            ("connection" variable nil (reparse-symbol function_parameters) [4894 4904]))                          )
+                        (reparse-symbol indented_block_body) [4868 4943])
+                    ("set_role" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4960 4964])
+                            ("connection" variable nil (reparse-symbol function_parameters) [4966 4976])
+                            ("role" variable nil (reparse-symbol function_parameters) [4978 4982]))                          )
+                        (reparse-symbol indented_block_body) [4946 5171])
+                    ("_rx_hello" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5189 5193])
+                            ("ofp" variable nil (reparse-symbol function_parameters) [5195 5198])
+                            ("connection" variable nil (reparse-symbol function_parameters) [5200 5210]))                          )
+                        (reparse-symbol indented_block_body) [5174 5373])
+                    ("_rx_vendor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5392 5396])
+                            ("vendor" variable nil (reparse-symbol function_parameters) [5398 5404])
+                            ("connection" variable nil (reparse-symbol function_parameters) [5406 5416]))                          )
+                        (reparse-symbol indented_block_body) [5376 6010]))                  
+                :type "class")
+                nil [1010 6010]))          
+    :file "nx_switch.py"
+    :pointmax 6010
+    :fsize 6009
+    :lastmodtime '(21344 58702 768984 347000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!datapaths!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

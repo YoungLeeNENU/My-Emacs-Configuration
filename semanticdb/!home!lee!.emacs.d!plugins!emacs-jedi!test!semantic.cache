@@ -1,0 +1,30 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "scum.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("a" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [86 96]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [69 73]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [56 97]))                  
+                :type "class")
+                nil [41 97]))          
+    :file "scum.py"
+    :pointmax 97
+    :fsize 96
+    :lastmodtime '(21359 2488 472104 444000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!.emacs.d!plugins!emacs-jedi!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

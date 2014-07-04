@@ -1,0 +1,68 @@
+;; Object document/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "document/"
+  :tables (list 
+   (semanticdb-table "个人感悟.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("第一次接到淘米的电话，还是在今年3月份在北京的时候，当时刚参加完高德地图的春招，淘米的第一个电话被我错过去了，后来我打了回去才确认了后续的面试；而在上海终面结束后，通知终面过了的电话我又错过了，第二天中午第二个电话我才收到了终面通过的通知。想想可能如果我不打回去，可能和淘米就这样错过了。" section nil nil [240 2526])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2526 4146])
+            ("第一次接到淘米的电话，还是在今年3月份在北京的时候，当时刚参加完高德地图的春招，淘米的第一个电话被我错过去了，后来我打了回去才确认了后续的面试；而在上海终面结束后，通知终面过了的电话我又错过了，第二天中午第二个电话我才收到了终面通过的通知。想想可能如果我不打回去，可能和淘米就这样错过了。" section (:members 
+              ( ("第一次接到淘米的电话，还是在今年3月份在北京的时候，当时刚参加完高德地图的春招，淘米的第一个电话被我错过去了，后来我打了回去才确认了后续的面试；而在上海终面结束后，通知终面过了的电话我又错过了，第二天中午第二个电话我才收到了终面通过的通知。想想可能如果我不打回去，可能和淘米就这样错过了。" section (:members 
+                  ( ("Org" anchor nil nil [4654 4657])
+                    ("Emacs" anchor nil nil [4711 4714])
+                    ("Validate XHTML 1.0" anchor nil nil [4781 4784]))                  ) nil [4202 4880]))              ) nil [4146 4880]))          
+    :file "个人感悟.html"
+    :pointmax 4880
+    :fsize 5971
+    :lastmodtime '(21424 11128 820560 240000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

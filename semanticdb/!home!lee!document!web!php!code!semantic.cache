@@ -1,0 +1,138 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "rsync.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [82 91])
+            ("sys" include nil nil [92 102])
+            ("php_local" variable nil nil [104 124])
+            ("html_local" variable nil nil [125 147])
+            ("local" variable nil nil [148 160])
+            ("remote" variable nil nil [161 192])
+            ("php" code nil nil [193 238])
+            ("html" code nil nil [239 286])
+            ("cmd" code nil nil [287 328])
+            ("Rsync" function (:arguments 
+              ( ("filetype" variable nil (reparse-symbol function_parameters) [340 348]))              ) nil [330 468])
+            ("Rsync_All" function nil nil [469 521])
+            ("if" code nil nil [522 565]))          
+    :file "rsync.py"
+    :pointmax 698
+    :fsize 697
+    :lastmodtime '(21423 32682 345684 799000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "environment.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("PHP与Mysql程序设计-软件和环境配置" section nil nil [240 2280])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2280 3900])
+            ("PHP与Mysql程序设计-软件和环境配置" section (:members 
+              ( ("PHP与Mysql程序设计-软件和环境配置" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 环境的选择" anchor nil nil [4102 4105])
+                        ("2 PHP" anchor nil nil [4140 4143])
+                        ("3 MySQL" anchor nil nil [4176 4179])
+                        ("4 关于服务器的选择和配置" anchor nil nil [4214 4217])
+                        ("5 localhost 的 HTTP 服务" anchor nil nil [4258 4261])
+                        ("5.1 服务器的目录" anchor nil nil [4310 4313])
+                        ("5.2 同步文件到服务器目录" anchor nil nil [4353 4356]))                      ) nil [4032 4478])
+                    ("1" section nil nil [4478 4732])
+                    ("2" section (:members 
+                      ( ("https://launchpad.net/~ondrej/+archive/apache2?field.series_filter=precise" anchor nil nil [4883 4886]))                      ) nil [4732 5433])
+                    ("3" section nil nil [5433 5685])
+                    ("4" section (:members 
+                      ( ("http://blog.csdn.net/hursing/article/details/21527159" anchor nil nil [5888 5891]))                      ) nil [5685 6088])
+                    ("5" section (:members 
+                      ( ("5.1" section nil nil [6270 6495])
+                        ("5.2" section (:members 
+                          ( ("Org" anchor nil nil [7381 7384])
+                            ("Emacs" anchor nil nil [7438 7441])
+                            ("Validate XHTML 1.0" anchor nil nil [7508 7511]))                          ) nil [6495 7607]))                      ) nil [6088 7607]))                  ) nil [3956 7607]))              ) nil [3900 7607]))          
+    :file "environment.html"
+    :pointmax 7607
+    :fsize 7992
+    :lastmodtime '(21423 27537 601816 341000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "phpinfo.php"
+    :major-mode 'c-mode
+    :tags nil
+    :file "phpinfo.php"
+    :pointmax 61
+    :fsize 60
+    :lastmodtime '(21423 28786 429784 412000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "spam.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("AddOne" function (:arguments 
+              ( ("num" variable nil (reparse-symbol function_parameters) [52 55]))              ) nil [41 77])
+            ("foo" function nil nil [78 107])
+            ("print" code nil nil [108 122]))          
+    :file "spam.py"
+    :pointmax 123
+    :fsize 122
+    :lastmodtime '(21423 43163 321416 818000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tail.scm"
+    :major-mode 'scheme-mode
+    :tags nil
+    :file "tail.scm"
+    :pointmax 1
+    :fsize 51
+    :lastmodtime '(21423 44657 649378 611000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!web!php!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

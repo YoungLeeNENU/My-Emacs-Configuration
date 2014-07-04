@@ -1,0 +1,18 @@
+;; Object telnetd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "telnetd/"
+  :tables (list 
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 54090
+    :fsize 54089
+    :lastmodtime '(21385 9364 937602 369000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!document!bitbucket!nenu_node!Problem-3!tools!pox!pox!misc!telnetd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

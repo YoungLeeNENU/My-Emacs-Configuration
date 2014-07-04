@@ -1,0 +1,21 @@
+;; Object mmm-mode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mmm-mode/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("lisp_LISP" variable (:default-value ("mmm-compat.el" "mmm-vars.el" "mmm-utils.el" "mmm-auto.el" "mmm-region.el" "mmm-class.el" "mmm-cmds.el" "mmm-mode.el" "mmm-sample.el" "mmm-mason.el" "mmm-univ.el" "mmm-rpm.el" "mmm-cweb.el" "mmm-noweb.el" "mmm-myghty.el" "mmm-erb.el")) nil [130 356])
+            ("info_TEXINFOS" variable (:default-value ("mmm.texinfo")) nil [357 385])
+            ("EXTRA_DIST" variable (:default-value ("$(lisp_LISP)" "README.Mason" "FAQ")) nil [515 558]))          
+    :file "Makefile.am"
+    :pointmax 601
+    :fsize 600
+    :lastmodtime '(21414 12147 507048 461000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!lee!.emacs.d!packages!mmm-mode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
